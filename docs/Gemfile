@@ -31,3 +31,7 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 # GitHub integration per step 10:
 # https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll
 gem "github-pages", "~> 215", group: :jekyll_plugins
+
+# Jekyll SEO Tag:
+# https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/installation.md
+gem 'jekyll-seo-tag'
