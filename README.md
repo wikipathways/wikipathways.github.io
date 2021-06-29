@@ -1,2 +1,4 @@
 # Demo
-GitHub pages for GPML-Repo
+Jekyll powered GitHub pages for GPML-Repo content
+
+Visit site at: https://wikipathways.github.io/
