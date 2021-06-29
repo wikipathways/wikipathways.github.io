@@ -50,3 +50,29 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pathways"
+    values:
+      layout: "pathway"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Browse pages
+browse-pages: [pathways,organisms,portals]
+
+# Custom collections
+collections:
+  pathways:
+    output: true
+  organisms:
+    output: true
+
+organism-list: [Homo sapiens, Mus musculus, Danio rerio]
+portal-list: [Adverse Outcome Pathways, CIRM, COVID-19, CPTAC, Diseases, ExRNA, Lipids, Micronutrients, Nanomaterials, NetPath, Plants, Rare Disease, Renal Genomics, Reactome, Skeletal Dysplasia, WormBase] 
+tag-list: [Approved, Featured, Under construction, Incomplete]
