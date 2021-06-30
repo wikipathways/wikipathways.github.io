@@ -15,6 +15,6 @@ layout: home
       <h3><a href="organisms.html">Organisms</a></h3>
     </li>
     <li>
-      <h3><a href="communities.html">Communitiess</a></h3>
+      <h3><a href="communities.html">Communities</a></h3>
     </li>
 </ul>
