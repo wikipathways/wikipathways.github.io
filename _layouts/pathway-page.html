@@ -29,10 +29,8 @@ layout: default
       {{page.organisms}}
 
       <h2 id="participants">Participants</h2>
-      {% assign mydata=site.data.WP554-participants %}
-
+      {% assign mydata=site.data.[page.wpid]-participants %}
 <table>
-    <caption>Table caption</caption>
     <thead>
     {% for column in mydata[0] %}
         <th>{{ column[0] }}</th>
