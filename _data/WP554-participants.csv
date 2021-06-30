@@ -1,0 +1,7 @@
+﻿Name  ,Type  ,Database reference  ,Comment  
+ACE Inhibitor,Metabolite,CHEBI:35457 (ChEBI),
+ACE,GeneProduct,1636 (Entrez Gene),
+ACE2,GeneProduct,59272 (Entrez Gene),
+AGT,GeneProduct,183 (Entrez Gene),test comment
+AGTR1,GeneProduct,185 (Entrez Gene),
+AGTR2,GeneProduct,186 (Entrez Gene),

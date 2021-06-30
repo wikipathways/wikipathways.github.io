@@ -1,0 +1,65 @@
+---
+layout: default
+---
+<html>
+  <head>
+  {% seo %}
+  </head>
+  <body>
+    <div style="float:right;">
+    {% include  share.html %}
+    </div>
+
+    <div class="container">
+      <h1 id="title"> {{ page.title }}</h1>
+
+      <div id="description" style="height:4.5em; overflow-y:auto;">
+        {{ page.description }}
+      </div>
+
+      <div id="pathway-viewer" style="height:400px;">
+        <iframe class="embed-responsive-item" src="https://pathway-viewer.toolforge.org/?id={{page.wpid}}" style="border-width: 1px; border-color: rgb(222,226,230); border
+-style: solid; height:100%; width:100%" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+      </div>
+
+      <h2 id="authors">Authors</h2>
+      {{page.authors}}
+
+      <h2 id="organism">Organism</h2>
+      {{page.organisms}}
+
+      <h2 id="participants">Participants</h2>
+<ul>
+{% for member in site.data.members %}
+  <li>
+    <a href="https://github.com/{{ member.github }}">
+      {{ member.name }}
+    </a>
+  </li>
+{% endfor %}
+</ul>
+<!--
+      {% assign mydata=site.data.WP554-participants %}
+
+<table>
+    <caption>Table caption</caption>
+    <thead>
+    {% for column in mydata[0] %}
+        <th>{{ column[0] }}</th>
+    {% endfor %}
+    </thead>
+    <tbody>
+    {% for row in mydata %}
+        <tr>
+        {% for cell in row %}
+            <td>{{ cell[1] }}</td>
+        {% endfor %}
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+->
+  
+    </div>
+  </body>
+</html>
