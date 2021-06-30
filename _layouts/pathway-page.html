@@ -48,6 +48,16 @@ layout: default
     </tbody>
 </table>
   
+      <h2 id="references">References</h2>
+        <ol>
+	  {% for pmid in page.references %}
+          <li><a href="http://www.ncbi.nlm.nih.gov/pubmed/{{pmid}}">PubMed</a>,
+	      <a href="https://europepmc.org/abstract/MED/{{pmid}}">EuropePMC</a>,
+	      <a href="https://scholia.toolforge.org/pubmed/{{pmid}}">Scholia</a>
+          </li>
+          {% endfor %}
+        </ol>
+
     </div>
   </body>
 </html>
