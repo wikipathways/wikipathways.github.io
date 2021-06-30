@@ -32,7 +32,7 @@ layout: default
 
       <h2 id="participants">Participants</h2>
       {% assign wpid-p=page.wpid | append: "-participants" %}
-      {% assign mydata=site.data.wpid-p}
+      {% assign mydata=site.data.{{wpid-p}} %}
 <table>
     <thead>
     {% for column in mydata[0] %}
