@@ -3,6 +3,7 @@ layout: default
 ---
 <html>
   <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   {% seo %}
   </head>
   <body>
@@ -31,7 +32,7 @@ layout: default
       <h2 id="participants">Participants</h2>
       {% assign wpid-p=page.wpid | append: "-participants" %}
       {% assign mydata=site.data[wpid-p] %}
-<table>
+<table id="participants-table">
     <thead>
     {% for column in mydata[0] %}
         <th>{{ column[0] }}</th>
@@ -47,6 +48,8 @@ layout: default
     {% endfor %}
     </tbody>
 </table>
+<input type="button" id="tableMore" value="More">
+<input type="button" id="tableLess" value="Less">
   
       <h2 id="references">References</h2>
         <ol>
@@ -59,5 +62,51 @@ layout: default
         </ol>
 
     </div>
+
+    <script>
+var trs = $("#participants-table tr");
+var btnMore = $("#tableMore");
+var btnLess = $("#tableLess");
+var trsLength = trs.length;
+var startIndex = 5;
+var currentIndex = startIndex;
+var addIndex = 40;
+
+trs.hide();
+trs.slice(0, startIndex).show(); 
+checkButton();
+
+btnMore.click(function (e) { 
+    e.preventDefault();
+    $("#participants-table tr").slice(currentIndex, currentIndex + addIndex).show();
+    currentIndex += addIndex;
+    checkButton();
+});
+
+btnLess.click(function (e) { 
+    e.preventDefault();
+    $("#participants-table tr").slice(currentIndex - addIndex, currentIndex).hide();          
+    currentIndex -= addIndex;
+    checkButton();
+});
+
+function checkButton() {
+    var currentLength = $("#participants-table tr:visible").length;
+    
+    if (currentLength >= trsLength) {
+        btnMore.hide();            
+    } else {
+        btnMore.show();   
+    }
+    
+    if (trsLength > startIndex && currentLength > startIndex) {
+        btnLess.show();
+    } else {
+        btnLess.hide();
+    }
+    
+}
+</script>
+
   </body>
 </html>
