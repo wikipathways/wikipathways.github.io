@@ -24,12 +24,9 @@ layout: default
 
       <h2 id="authors">Authors</h2>
       {{ page.authors | join: ', ' }}
-      {% for a in page.authors %}
-        {{ a }}{% unless forloop.last %}, {% endunless %} 
-      {% endfor %}
 
       <h2 id="organism">Organism</h2>
-      {{page.organisms}}
+      {{page.organisms | join: ', ' }}
 
       <h2 id="participants">Participants</h2>
       {% assign wpid-p=page.wpid | append: "-participants" %}

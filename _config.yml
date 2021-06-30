@@ -64,7 +64,7 @@ defaults:
       layout: "default"
 
 # Browse pages
-browse-pages: [pathways,organisms,portals]
+browse-pages: [pathways,organisms,communities]
 
 # Custom collections
 collections:
@@ -74,5 +74,5 @@ collections:
     output: true
 
 organism-list: [Homo sapiens, Mus musculus, Danio rerio]
-portal-list: [Adverse Outcome Pathways, CIRM, COVID-19, CPTAC, Diseases, ExRNA, Lipids, Micronutrients, Nanomaterials, NetPath, Plants, Rare Disease, Renal Genomics, Reactome, Skeletal Dysplasia, WormBase] 
+community-list: [Adverse Outcome Pathways, CIRM, COVID-19, CPTAC, Diseases, ExRNA, Lipids, Micronutrients, Nanomaterials, NetPath, Plants, Rare Disease, Renal Genomics, Reactome, Skeletal Dysplasia, WormBase] 
 tag-list: [Approved, Featured, Under construction, Incomplete]
