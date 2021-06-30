@@ -30,16 +30,16 @@ layout: default
       {{page.organisms | join: ', ' }}
 
       <h2 id="participants">Participants</h2>
-      {% assign wpid-p=page.wpid | append: "-participants" %}
-      {% assign mydata=site.data[wpid-p] %}
+      {% assign wpid-parts=page.wpid | append: "-participants" %}
+      {% assign parts=site.data[wpid-parts] %}
 <table id="participants-table">
     <thead>
-    {% for column in mydata[0] %}
+    {% for column in parts[0] %}
         <th>{{ column[0] }}</th>
     {% endfor %}
     </thead>
     <tbody>
-    {% for row in mydata %}
+    {% for row in parts %}
         <tr>
         {% for cell in row %}
             <td>{{ cell[1] }}</td>
@@ -52,11 +52,13 @@ layout: default
 <input type="button" id="tableLess" value="Less">
   
       <h2 id="references">References</h2>
+      {% assign wpid-refs=page.wpid | append: "-references" %}
+      {% assign refs=site.data[wpid-refs] %}
         <ol>
-	  {% for pmid in page.references %}
-          <li>...citation text... (<a href="http://www.ncbi.nlm.nih.gov/pubmed/{{pmid}}">PubMed</a>,
-	      <a href="https://europepmc.org/abstract/MED/{{pmid}}">EuropePMC</a>,
-	      <a href="https://scholia.toolforge.org/pubmed/{{pmid}}">Scholia</a>)
+	  {% for ref in refs %}
+          <li>{{ ref.citation }} (<a href="http://www.ncbi.nlm.nih.gov/pubmed/{{ref.pmid}}">PubMed</a>,
+	      <a href="https://europepmc.org/abstract/MED/{{ref.pmid}}">EuropePMC</a>,
+	      <a href="https://scholia.toolforge.org/pubmed/{{ref.pmid}}">Scholia</a>)
           </li>
           {% endfor %}
         </ol>

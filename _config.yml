@@ -75,4 +75,3 @@ collections:
 
 organism-list: [Homo sapiens, Mus musculus, Danio rerio]
 community-list: [Adverse Outcome Pathways, CIRM, COVID-19, CPTAC, Diseases, ExRNA, Lipids, Micronutrients, Nanomaterials, NetPath, Plants, Rare Disease, Renal Genomics, Reactome, Skeletal Dysplasia, WormBase] 
-tag-list: [Approved, Featured, Under construction, Incomplete]
