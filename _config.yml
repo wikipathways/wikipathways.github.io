@@ -24,6 +24,10 @@ description: A community curated pathway database with biological pathway diagra
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://wikipathways.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: wikipathways
+github_username: wikipathways
+tumblr_username: wikipathways
+email_contact: wikipathways-discuss@googlegroups.com
+
 
 # Build settings
 theme: minima 
