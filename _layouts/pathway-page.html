@@ -23,7 +23,9 @@ layout: default
       </div>
 
       <h2 id="authors">Authors</h2>
-      {{page.authors}}
+      {% for a in page.authors %}
+        {{ a }}, 
+      {% endfor %}
 
       <h2 id="organism">Organism</h2>
       {{page.organisms}}
