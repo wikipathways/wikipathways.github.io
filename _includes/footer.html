@@ -5,16 +5,16 @@
 
 
     <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
+      <div class="footer-col footer-col-A1">
         <p>{{- site.description | escape -}}</p>
         
       </div>
 
-      <div class="footer-col footer-col-2">
+      <div class="footer-col footer-col-A2">
         {%- include social.html -%}
       </div>
 
-      <div class="footer-col footer-col-3">
+      <div class="footer-col footer-col-A3">
         <ul class="contact-list">
           <li><a href="help.html">Help</a></li>
           <li><a href="download.html">Download</a></li>
@@ -22,7 +22,15 @@
         </ul>
       </div>
 
-      <div class="footer-col footer-col-4">
+      <div class="footer-col footer-col-A4">
+        <ul class="contact-list">
+          <li><a href="browse.html">Browse</a></li>
+          <li><a href="communities.html">Communities</a></li>
+          <li><a href="activity.html">Activity</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-A5">
         <ul class="contact-list">
           <li><a href="stats.html">Statistics</a></li>
           <li><a href="about.html">About</a></li>
@@ -31,6 +39,10 @@
       </div>
 
     </div>
+    <div class="footer-col-wrapper">
+      {%- include thanks.html -%}
+    </div>
+
 
   </div>
 
