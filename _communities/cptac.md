@@ -1,11 +1,13 @@
 ---
+display-name: "CPTAC"
+
 title: "Cancer Proteogenomic Tumor Assessment Consortium (CPTAC) community page at WikiPathways"
 
-description: "<add description>"
+description: "add description"
 
-logo: "<path to image>"
+logo: "path to image"
 
-logo-link: "<url to external site>"
+logo-link: "url to external site"
 
-community-tag: [CPTAC]
+community-tag: CPTAC
 ---

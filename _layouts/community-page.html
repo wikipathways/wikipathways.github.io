@@ -7,12 +7,14 @@ layout: default
   </head>
   <body>
     <!-- add content here -->
-    <!-- 
-        Example variables:
-        {{ page.title }}
-        {{ page.description }}
-        {{ page.logo }}
-        {{ page.community-tag }}
-     -->
+    <h2 id="title"> {{ page.title }}</h2>
+    <p>{{ page.description }}</p>
+    <ul>
+      {% for pw in site.pathways %}
+          {% if pw.communities contains page.community-tag %}
+              <li><a href="{{ pw.url }}">{{ pw.title }}</a></li>
+            {% endif %}
+      {% endfor %}
+    </ul>
   </body>
 </html>

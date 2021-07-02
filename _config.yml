@@ -64,6 +64,16 @@ defaults:
       layout: "pathway-page"
   - scope:
       path: ""
+      type: "communities"
+    values:
+      layout: "community-page"
+  - scope:
+      path: ""
+      type: "organisms"
+    values:
+      layout: "organism-page"
+  - scope:
+      path: ""
     values:
       layout: "default"
 
@@ -74,8 +84,7 @@ browse-pages: [pathways,organisms,communities]
 collections:
   pathways:
     output: true
+  communities:
+    output: true
   organisms:
     output: true
-
-organism-list: [Homo sapiens, Mus musculus, Danio rerio]
-community-list: [Adverse Outcome Pathways, CIRM, COVID-19, CPTAC, Diseases, ExRNA, Lipids, Micronutrients, Nanomaterials, NetPath, Plants, Rare Disease, Renal Genomics, Reactome, Skeletal Dysplasia, WormBase] 
