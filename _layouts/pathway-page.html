@@ -23,10 +23,10 @@ layout: default
       </div>
 
       <h2 id="authors">Authors</h2>
-      {{ page.authors | join: ', ' }}
+      {{ page.authors | array_to_sentence_string }}
 
       <h2 id="organism">Organism</h2>
-      {{page.organisms | join: ', ' }}
+      {{page.organisms | array_to_sentence_string  }}
 
       <h2 id="participants">Participants</h2>
       {% assign wpid-parts=page.wpid | append: "-participants" %}

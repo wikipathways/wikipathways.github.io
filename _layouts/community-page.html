@@ -9,6 +9,8 @@ layout: default
     <!-- add content here -->
     <h2 id="title"> {{ page.title }}</h2>
     <p>{{ page.description }}</p>
+
+    <h3>Pathways</h3>
     <ul>
       {% for pw in site.pathways %}
           {% if pw.communities contains page.community-tag %}
@@ -16,5 +18,10 @@ layout: default
             {% endif %}
       {% endfor %}
     </ul>
+
+<h3>Contributors</h3>
+{% assign all_authors = site.pathways | where:'communities',page.community-tag | map: "authors" | join: ','  | split: ',' | uniq  %}
+{{ all_authors | array_to_sentence_string }}
+
   </body>
 </html>
