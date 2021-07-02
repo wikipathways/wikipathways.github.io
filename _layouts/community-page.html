@@ -23,5 +23,6 @@ layout: default
 {% assign all_authors = site.pathways | where:'communities',page.community-tag | map: "authors" | join: ','  | split: ',' | uniq  %}
 {{ all_authors | array_to_sentence_string }}
 
+<h3>How to Contribute</h3>
   </body>
 </html>
