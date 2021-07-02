@@ -31,6 +31,14 @@ layout: default
       <h2 id="organism">Organism</h2>
       {{page.organisms | array_to_sentence_string  }}
 
+      <h2 id="ontologies">Ontologies</h2>
+      <b>Pathway ontology: </b>{{page.ontology-pathway-terms | join: ", "  }}
+      <br />
+      <b>Disease ontology: </b>{{page.ontology-disease-terms | join: ", "  }}
+      <br />
+      <b>Cell type ontology: </b>{{page.ontology-cell-type-terms | join: ", "  }}
+
+
       <h2 id="participants">Participants</h2>
       {% assign wpid-parts=page.wpid | append: "-participants" %}
       {% assign parts=site.data[wpid-parts] %}
