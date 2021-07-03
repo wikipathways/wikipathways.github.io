@@ -6,7 +6,7 @@ layout: default
     </div>
 
     <div class="container">
-      <h1 id="title"> {{ page.title }}</h1>
+      <h1 id="title"> {{ page.title }} ({{ page.wpid }})</h1>
 
       <div id="description" style="height:4.5em; overflow-y:auto;">
         {{ page.description }}
@@ -20,19 +20,34 @@ layout: default
         sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
       </div>
 
+      <i>Last edited: {{ page.last-edited | date_to_string}}</i>
+
       <h2 id="authors">Authors</h2>
       {{ page.authors | array_to_sentence_string }}
 
+      <h2 id="communities">Communities</h2>
+      {% for com in site.communities %}
+        {% if page.communities contains com.community-tag %}
+          <a class="collection-link" href="{{com.url}}">{{com.display-name}}</a>
+        {% endif %}
+      {% endfor %}
+
       <h2 id="organism">Organism</h2>
-      {{page.organisms | array_to_sentence_string  }}
+      {% for org in site.organisms %}
+      {% if page.organisms contains org.latin %}
+        <a class="collection-link" href="{{org.url}}">{{org.latin}}</a>
+      {% endif %}
+    {% endfor %}
 
       <h2 id="ontologies">Ontologies</h2>
-      <b>Pathway ontology: </b>{{page.ontology-pathway-terms | join: ", "  }}
+      {% assign po-terms= page.annotations | where: "type", "Pathway Ontology" | map: "value" %}
+      <b>Pathway ontology: </b>{{po-terms | join: ", "  }}
       <br />
-      <b>Disease ontology: </b>{{page.ontology-disease-terms | join: ", "  }}
+      {% assign doid-terms= page.annotations | where: "type", "Disease" | map: "value" %}
+      <b>Disease ontology: </b>{{doid-terms | join: ", "  }}
       <br />
-      <b>Cell type ontology: </b>{{page.ontology-cell-type-terms | join: ", "  }}
-
+      {% assign cl-terms= page.annotations | where: "type", "Cell Type" | map: "value" %}
+      <b>Cell type ontology: </b>{{cl-terms | join: ", "  }}
 
       <h2 id="participants">Participants</h2>
       {% assign wpid-parts=page.wpid | append: "-participants" %}
@@ -71,6 +86,7 @@ layout: default
     </div>
 
     <script>
+
 var trs = $("#participants-table tr");
 var btnMore = $("#tableMore");
 var btnLess = $("#tableLess");
