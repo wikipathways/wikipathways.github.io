@@ -14,4 +14,7 @@ layout: home
     <li>
       <h3><a href="communities.html">Communities</a></h3>
     </li>
+    <li>
+      <h3><a href="annotations.html">Annotations</a></h3>
+    </li>
 </ul>

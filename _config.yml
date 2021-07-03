@@ -60,9 +60,9 @@ plugins:
 defaults:
   - scope:
       path: ""
-      type: "pathways"
+      type: "annotations"
     values:
-      layout: "pathway-page"
+      layout: "annotation-page"
   - scope:
       path: ""
       type: "communities"
@@ -75,6 +75,11 @@ defaults:
       layout: "organism-page"
   - scope:
       path: ""
+      type: "pathways"
+    values:
+      layout: "pathway-page"
+  - scope:
+      path: ""
     values:
       layout: "default"
 
@@ -83,9 +88,12 @@ browse-pages: [pathways,organisms,communities]
 
 # Custom collections
 collections:
-  pathways:
+  annotations:
     output: true
   communities:
     output: true
   organisms:
     output: true
+  pathways:
+    output: true
+

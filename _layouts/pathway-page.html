@@ -39,16 +39,19 @@ layout: default
       {% endif %}
     {% endfor %}
 
-      <h2 id="ontologies">Ontologies</h2>
-      {% assign po-terms= page.annotations | where: "type", "Pathway Ontology" | map: "value" %}
-      <b>Pathway ontology: </b>{{po-terms | join: ", "  }}
-      <br />
-      {% assign doid-terms= page.annotations | where: "type", "Disease" | map: "value" %}
-      <b>Disease ontology: </b>{{doid-terms | join: ", "  }}
-      <br />
-      {% assign cl-terms= page.annotations | where: "type", "Cell Type" | map: "value" %}
-      <b>Cell type ontology: </b>{{cl-terms | join: ", "  }}
-
+      <h2 id="annotations">Annotations</h2>
+      {% assign annot-types = page.annotations | map: "type" | uniq %}
+      {% for type in annot-types %}
+        <b>{{ type }}: </b>
+        {% assign annot-values= page.annotations | where: "type", type | map: "value" %}
+        {% for annot in site.annotations %}
+          {% if annot-values contains annot.value and type == annot.type %}
+            <a class="collection-link" href="{{annot.url}}">{{annot.value}}</a>
+          {% endif %}
+        {% endfor %}
+        <br />
+      {% endfor %}
+      
       <h2 id="participants">Participants</h2>
       {% assign wpid-parts=page.wpid | append: "-participants" %}
       {% assign parts=site.data[wpid-parts] %}
