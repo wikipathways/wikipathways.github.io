@@ -23,7 +23,7 @@
   {% if page.wpid %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="application/ld+json">
-      {{ page.bioschemas | jsonify }}
+      {{ page.schema-jsonld | jsonify }}
     </script>
   {% endif %}
   {%- seo -%}
