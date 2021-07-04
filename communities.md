@@ -1,5 +1,6 @@
-<h1>Pathways by Community</h1>
+<h2>Pathways by Community</h2>
 {% for x in site.communities %}
-### <a href="{{ x.url }}">{{ x.display-name }}</a>
+  <a class="collection-link" href="{{ x.url }}">{{ x.display-name }}</a>
+<p>{{x.description}}</p>
 {% endfor %}
 

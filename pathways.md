@@ -1,4 +1,4 @@
-<h1>Pathways</h1>
+<h2>Pathways</h2>
 
 <ul>
   {% for pw in site.pathways %}

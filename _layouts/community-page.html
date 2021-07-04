@@ -15,6 +15,6 @@ layout: default
 
 <h3>Contributors</h3>
 {% assign all_authors = site.pathways | where:'communities',page.community-tag | map: "authors" | join: ','  | split: ',' | uniq  %}
-{{ all_authors | array_to_sentence_string }}
+<p>{{ all_authors | array_to_sentence_string }}</p>
 
 <h3>How to Contribute</h3>

@@ -1,4 +1,9 @@
-<h1>Pathways by Annotation</h1>
-{% for x in site.annotations %}
-### <a href="{{ x.url }}">{{ x.type }}: {{ x.value }}</a>
-{% endfor %}  
+<h2>Pathways by Annotation</h2>
+<p>TODO: organize as collapsable ontologies</p>
+{% assign type-group = site.annotations | group_by: "type" %}
+{% for type in type-group %}
+  <b>{{ type.name }}: </b>
+  {% for annot in type.items %}
+  <a class="collection-link" href="{{annot.url}}">{{annot.value}}</a>
+  {% endfor %}
+{% endfor %}

@@ -84,7 +84,7 @@ defaults:
       layout: "default"
 
 # Browse pages
-browse-pages: [pathways,organisms,communities]
+browse-pages: [pathways,organisms,communities,annotations]
 
 # Custom collections
 collections:
