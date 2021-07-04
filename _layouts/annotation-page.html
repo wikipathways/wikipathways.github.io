@@ -6,11 +6,9 @@ layout: default
         target="_blank">
         {{ page.xref-dataSource }}_{{page.xref-identifier}}</a></h3>
     <p>This is an annotation page.</p>
-    <ul>
         {% for pw in site.pathways %}
             {% assign annot-values= pw.annotations | where: "type", page.type | map: "value" %}
             {% if annot-values contains page.value %}
-              <li><a href="{{ pw.url }}">{{ pw.title }}</a></li>
+              <p><a class="collection-link" href="{{ pw.url }}">{{ pw.title }}</a></p>
             {% endif %}   
          {% endfor %}  
-    </ul>

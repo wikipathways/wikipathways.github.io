@@ -5,13 +5,11 @@ layout: default
     <p>{{ page.description }}</p>
 
     <h3>Pathways</h3>
-    <ul>
       {% for pw in site.pathways %}
           {% if pw.communities contains page.community-tag %}
-              <li><a href="{{ pw.url }}">{{ pw.title }}</a></li>
-            {% endif %}
+            <p><a class="collection-link" href="{{ pw.url }}">{{ pw.title }}</a></p>
+          {% endif %}
       {% endfor %}
-    </ul>
 
 <h3>Contributors</h3>
 {% assign all_authors = site.pathways | where:'communities',page.community-tag | map: "authors" | join: ','  | split: ',' | uniq  %}

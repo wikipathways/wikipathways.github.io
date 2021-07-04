@@ -3,13 +3,11 @@ layout: default
 ---
     <h1 id="title"> {{ page.title }}</h1>
     <p>This is an organism page.</p>
-    <ul>
       {% for pw in site.pathways %}
           {% if pw.organisms contains page.latin %}
-              <li><a href="{{ pw.url }}">{{ pw.title }}</a></li>
+              <p><a class="collection-link" href="{{ pw.url }}">{{ pw.title }}</a></p>
             {% endif %}   
       {% endfor %}  
-    </ul>
     <!-- 
         Example variables:
         {{ page.title }}
