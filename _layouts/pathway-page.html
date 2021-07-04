@@ -42,14 +42,14 @@ layout: default
       <h2 id="annotations">Annotations</h2>
       {% assign annot-types = page.annotations | map: "type" | uniq %}
       {% for type in annot-types %}
-        <b>{{ type }}: </b>
+        <p><b>{{ type }}: </b>
         {% assign annot-values= page.annotations | where: "type", type | map: "value" %}
         {% for annot in site.annotations %}
           {% if annot-values contains annot.value and type == annot.type %}
             <a class="collection-link" href="{{annot.url}}">{{annot.value}}</a>
           {% endif %}
         {% endfor %}
-        <br />
+        </p>
       {% endfor %}
       
       <h2 id="participants">Participants</h2>
