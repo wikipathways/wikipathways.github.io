@@ -1,9 +1,6 @@
 ---
-common: "Human"
-
+common: "human"
 latin: "Homo sapiens"
-
-icon: "path to image"
-
+ncbi: " 9606"
 title: "Human pathways"
 ---

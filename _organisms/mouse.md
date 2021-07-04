@@ -1,9 +1,6 @@
 ---
-common: "Mouse"
-
+common: "mouse"
 latin: "Mus musculus"
-
-icon: "path to image"
-
+ncbi: "10090"
 title: "Mouse pathways"
 ---
