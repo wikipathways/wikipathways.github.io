@@ -3,7 +3,6 @@
 {% assign type-group = site.annotations | group_by: "type" %}
 
 <table>
-  <th>Image</th>
   <th>Title</th>
   <th>ID</th>
   <th>Organism</th>
@@ -15,7 +14,6 @@
   {% for pw in site.pathways %}
   {% assign pw-type-group = pw.annotations | group_by: "type" %}
   <tr>
-    <td>...</td>
     <td style="white-space: nowrap;">
       <a class="collection-link" href="{{ pw.url }}">{{ pw.title }}</a>
     </td>
