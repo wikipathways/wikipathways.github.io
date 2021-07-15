@@ -1,7 +1,7 @@
 ---
 display-name: "CIRM related"
 title: "CIRM related"
-description: "Use this tag to mark pathways that are related to the research topics of CIRM grantees. CIRM is the California Institute for Regenerative Medicine and maintains a WikiPathways portal highlighting CIRM-related pathways."
+description: "The CIRM page at WikiPathways highlights pathway content contributed and maintained by the stem cell research community."
 logo: 
 logo-link: 
 community-tag: "CIRM_Related"
