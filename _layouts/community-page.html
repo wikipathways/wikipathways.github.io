@@ -20,3 +20,8 @@ layout: default
 <p>{{ all_authors | array_to_sentence_string }}</p>
 
 <h3>How to Contribute</h3>
+
+<h3>Support</h3>
+{% if page.support %}
+<p>{{ page.support }}</p>
+{% endif %}
