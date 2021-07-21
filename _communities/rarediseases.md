@@ -7,5 +7,6 @@ short-description: "This page highlights WikiPathways content related to rare ge
 
 logo: 
 logo-link: 
+support: "This project has received funding from the European Union’s Horizon 2020 research and innovation programme."
 community-tag: "RareDiseases"
 ---
