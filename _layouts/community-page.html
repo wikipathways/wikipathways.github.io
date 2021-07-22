@@ -6,7 +6,7 @@ layout: default
     {% endif %}
 
     <h2 id="title"> {{ page.title }}</h2>
-    <p>{{ page.description | escape }}</p>
+    <p>{{ page.description | markdownify }}</p>
 
     <h3>Pathways</h3>
       {% for pw in site.pathways %}
@@ -21,10 +21,10 @@ layout: default
 
 {% if page.contribute %}
 <h3>How to Contribute</h3>
-<p>{{ page.contribute }}</p>
+<p>{{ page.contribute | markdownify }}</p>
 {% endif %}
 
 {% if page.support %}
 <h3>Support</h3>
-<p>{{ page.support }}</p>
+<p>{{ page.support | markdownify }}</p>
 {% endif %}
