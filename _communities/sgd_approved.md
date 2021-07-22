@@ -5,5 +5,7 @@ description: "The SGD page at WikiPathways contains a collection of pathways cur
 short-description: "The SGD page at WikiPathways contains a collection of pathways curated by the SGD team."
 logo: "../assets/img/sgd.jpeg"
 logo-link: "http://pathway.yeastgenome.org/"
+support:
+contribute:
 community-tag: "SGD_Approved"
 ---
