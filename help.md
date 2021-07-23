@@ -1,6 +1,0 @@
----
-title: Help
----
-
-Coming soon...
-
