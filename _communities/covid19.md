@@ -15,13 +15,14 @@ logo-link: "https://covid.pages.uni.lu/"
 support:
 
 contribute: "We are helping to coordinate an international effort to build and curate pathway models relevant to the COVID-19 pandemic. If you find or add a pathway at WikiPathways that should be included in this collection, please let us know. Resources to get started:
-- [Growing collection of COVID-19 pathways](https://www.wikipathways.org/index.php/Portal:Disease/COVIDPathways)
-- [Published pathway figures related to COVID-19](https://gladstone-bioinformatics.shinyapps.io/shiny-covidpathways/)
-- [Protein sequence alignments of SARS-CoV-2](https://alexanderpico.github.io/SARS-CoV-2_Alignments/)
-- [COVID-19 disease map initiative](https://covid.pages.uni.lu/map_curation): a broader community of pathway curators working with WikiPathways, Pathway Commons, Reactome, Cell Designer and more.
-- [Human Coronavirus protein identifiers](https://egonw.github.io/SARS-CoV-2-Queries/sparql/virusProteinsAll.code.html) and [SARS-CoV-2 protein identifiers](https://egonw.github.io/SARS-CoV-2-Queries/sparql/virusProteins.code.html)
-- [PubChem list of the COVID-19 Portal pathways](https://pubchem.ncbi.nlm.nih.gov/#query=coronavirus&tab=pathway)
-- [KG COVID-19](https://knowledge-graph-hub.github.io/kg-covid-19-dashboard/): a knowledge graph aggregating many sources as RDF"
+
+-[Growing collection of COVID-19 pathways](https://www.wikipathways.org/index.php/Portal:Disease/COVIDPathways)
+-[Published pathway figures related to COVID-19](https://gladstone-bioinformatics.shinyapps.io/shiny-covidpathways/)
+-[Protein sequence alignments of SARS-CoV-2](https://alexanderpico.github.io/SARS-CoV-2_Alignments/)
+-[COVID-19 disease map initiative](https://covid.pages.uni.lu/map_curation): a broader community of pathway curators working with WikiPathways, Pathway Commons, Reactome, Cell Designer and more.
+-[Human Coronavirus protein identifiers](https://egonw.github.io/SARS-CoV-2-Queries/sparql/virusProteinsAll.code.html) and [SARS-CoV-2 protein identifiers](https://egonw.github.io/SARS-CoV-2-Queries/sparql/virusProteins.code.html)
+-[PubChem list of the COVID-19 Portal pathways](https://pubchem.ncbi.nlm.nih.gov/#query=coronavirus&tab=pathway)
+-[KG COVID-19](https://knowledge-graph-hub.github.io/kg-covid-19-dashboard/): a knowledge graph aggregating many sources as RDF"
 
 community-tag: COVID19
 ---
