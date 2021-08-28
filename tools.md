@@ -144,6 +144,10 @@ title: Tools
     </th><td>Generates a co-activity map across pathways, assessing the correlation based on gene content within and across pathway resources.
     </td></tr>
     <tr>
+    <th><a href="https://github.com/kozo2/pywikipathways" target="_blank" class="external " title="https://github.com/kozo2/pywikipathways" rel="nofollow">pywikipathways</a>
+    </th><td>Python Client Package for the WikiPathways API.
+    </td></tr>
+    <tr>
     <th><a href="https://github.com/Mathelab/RaMP-DB/" target="_blank" class="external " title="https://github.com/Mathelab/RaMP-DB/" rel="nofollow">RaMP</a>
     </th><td>Combines biological pathways from KEGG, Reactome, WikiPathways, and HMDB. For consistent and comprehensive analysis, RaMP enables batch and complex queries (e.g. list all metabolites involved in glycolysis and lung cancer), can readily be integrated into pathway analysis tools, and supports pathway overrepresentation analysis given a list of genes and/or metabolites of interest.
     </td></tr>
