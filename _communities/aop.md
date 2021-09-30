@@ -11,7 +11,7 @@ logo: "../assets/img/eutoxrisk.jpg"
 
 logo-link: "http://aopkb.org/"
 
-support: "This project has received funding from the European Union’s Horizon 2020 research and innovation programme project [EU-ToxRisk](http://www.eu-toxrisk.eu/) under grant agreement [No. 681002](http://cordis.europa.eu/project/rcn/198787_en.html) and EINFRA-22-2016 programme project [OpenRiskNet](http://orn.cloud.douglasconnect.com/) under grant agreement [No. 731075](http://cordis.europa.eu/project/rcn/206759_en.html."
+support: "This project has received funding from the European Union’s Horizon 2020 research and innovation programme project [EU-ToxRisk](http://www.eu-toxrisk.eu/) under grant agreement [No. 681002](http://cordis.europa.eu/project/rcn/198787_en.html) and EINFRA-22-2016 programme project [OpenRiskNet](http://orn.cloud.douglasconnect.com/) under grant agreement [No. 731075](http://cordis.europa.eu/project/rcn/206759_en.html)."
 
 contribute: 
 

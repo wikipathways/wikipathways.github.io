@@ -26,7 +26,7 @@ Salomonis N, Pico A, Hanspers K: SIDS Susceptibility Pathways (Homo sapiens). <a
 
 <p><b>WikiPathways Web Services</b></p>
 <ul>
-<li>Kelder T, Pico AR, Hanspers K, van Iersel MP, Evelo C, Conklin BR. (2009) Mining Biological Pathways Using WikiPathways Web Services. <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2714472/">PLoS ONE 4(7)</a>.</li>
+<li>Kelder T, Pico AR, Hanspers K, van Iersel MP, Evelo C, Conklin BR. (2009) Mining Biological Pathways Using WikiPathways Web Services, <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2714472/">PLoS One. 2009; 4(7): e6447</a>.</li>
 </ul>
 
 <p><b>Adverse Outcome Pathways (AOPs) and WikiPathways:</b></p>
@@ -36,6 +36,6 @@ Salomonis N, Pico A, Hanspers K: SIDS Susceptibility Pathways (Homo sapiens). <a
 
 <p><b>Origins of WikiPathways:</b></p>
 <ul>
-<li>Pico AR, Kelder T, van Iersel MP, Hanspers K, Conklin BR, Evelo C. (2008) WikiPathways: Pathway Editing for the People. <a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.0060184">PLoS Biol 6(7): e184.</a></li>
+<li>Pico AR, Kelder T, van Iersel MP, Hanspers K, Conklin BR, Evelo C. (2008) WikiPathways: Pathway Editing for the People, <a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.0060184">PLoS Biol 6(7): e184.</a></li>
 </ul>
 

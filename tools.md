@@ -189,5 +189,5 @@ title: Tools
     </td></tr></table>
 
 <p>
-<b>If you know of a tool or resource that makes use of our curated pathway content, announce them on <a href="http://groups.google.com/group/wikipathways-discuss" target="_blank" class="external " title="http://groups.google.com/group/wikipathways-discuss" rel="nofollow">our mailing list</a> and add them to the list below.</b></font>
+<b>If you know of a tool or resource that makes use of our curated pathway content, announce them on <a href="http://groups.google.com/group/wikipathways-discuss" target="_blank" class="external " title="http://groups.google.com/group/wikipathways-discuss" rel="nofollow">our mailing list</a> and add them to the list below.</b>
 </p>
