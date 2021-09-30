@@ -41,7 +41,11 @@ title: Tools
     </td></tr>
     <tr>
     <th> <a href="http://cytoscape.org" target="_blank" class="external " title="http://cytoscape.org" rel="nofollow">Cytoscape</a>
-    </th><td> Cytoscape is an open source software platform for visualizing complex-networks and integrating these with any type of attribute data. A lot of plugins are available for various kinds of problem domains, including bioinformatics, social network analysis, and semantic web. WikiPathways can be easily imported via web services using the <a href="http://apps.cytoscape.org/apps/wikipathways" target="_blank" class="external " title="http://apps.cytoscape.org/apps/wikipathways" rel="nofollow">WikiPathways app</a>. Pathways in gpml format created in PathVisio or WikiPathways can be loaded as either their native diagram format or as simplified network graphs, supporting either data visualization or network analysis and augmentation use cases. Tutorials are available at <a href="https://github.com/cytoscape/cytoscape-tutorials/wiki" target="_blank" class="external " title="https://github.com/cytoscape/cytoscape-tutorials/wiki" rel="nofollow">tutorials.cytoscape.org</a> and a detailed description of the app and its usage was published in the <a href="http://f1000research.com/articles/10.12688/f1000research.4254.2/doi" target="_blank" class="external " title="http://f1000research.com/articles/10.12688/f1000research.4254.2/doi" rel="nofollow">Cytoscape App Collection</a> in F1000Research.
+    </th><td>Cytoscape is an open source software platform for visualizing complex-networks and integrating these with any type of attribute data. Apps are available for various kinds of problem domains, including bioinformatics, social network analysis, and semantic web. WikiPathways can be easily imported via web services using the <a href="http://apps.cytoscape.org/apps/wikipathways" target="_blank" class="external " title="http://apps.cytoscape.org/apps/wikipathways" rel="nofollow">WikiPathways app</a>. Pathways in gpml format created in PathVisio or WikiPathways can be loaded as either their native diagram format or as simplified network graphs, supporting either data visualization or network analysis and augmentation use cases. Tutorials are available at <a href="https://github.com/cytoscape/cytoscape-tutorials/wiki" target="_blank" class="external " title="https://github.com/cytoscape/cytoscape-tutorials/wiki" rel="nofollow">tutorials.cytoscape.org</a> and a detailed description of the app and its usage was published in the <a href="http://f1000research.com/articles/10.12688/f1000research.4254.2/doi" target="_blank" class="external " title="http://f1000research.com/articles/10.12688/f1000research.4254.2/doi" rel="nofollow">Cytoscape App Collection</a> in F1000Research.
+    </td></tr>
+    <tr>
+    <th> <a href="https://decopath.scai.fraunhofer.de/" target="_blank" class="external " title="https://decopath.scai.fraunhofer.de/" rel="nofollow">DecoPath</a>
+    </th><td>DecoPath is a web application to assist in the interpretation of results of pathway enrichment analysis.
     </td></tr>
     <tr>
     <th><a href="http://amp.pharm.mssm.edu/Enrichr/" target="_blank" class="external " title="http://amp.pharm.mssm.edu/Enrichr/" rel="nofollow">Enrichr</a>
@@ -184,6 +188,6 @@ title: Tools
     </th><td>The free encyclopedia that anyone can edit. In collaboration with MCB and GeneWiki, we have added interactive pathway maps using WikiPathways (<a href="http://en.wikipedia.org/wiki/DPYD" target="_blank" class="external " title="http://en.wikipedia.org/wiki/DPYD" rel="nofollow">example</a>).
     </td></tr></table>
 
-    <p>
-        <font size="2"><b>If you know of a tool or resource that makes use of our curated pathway content, announce them on <a href="http://groups.google.com/group/wikipathways-discuss" target="_blank" class="external " title="http://groups.google.com/group/wikipathways-discuss" rel="nofollow">our mailing list</a> and add them to the list below.</b></font>
-    </p>
+<p>
+<b>If you know of a tool or resource that makes use of our curated pathway content, announce them on <a href="http://groups.google.com/group/wikipathways-discuss" target="_blank" class="external " title="http://groups.google.com/group/wikipathways-discuss" rel="nofollow">our mailing list</a> and add them to the list below.</b></font>
+</p>
