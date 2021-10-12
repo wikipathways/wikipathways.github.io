@@ -17,5 +17,3 @@ title: About
 <li>Alex Pico: alex.pico[AT]gladstone.ucsf.edu</li>
 <li>Martina Kutmon: mkutmon[AT]gmail.com</li>
 </ul>
-
-<p>Note that though WikiPathways is inspired by the open philosophy of Wikipedia and other wiki's, it is an independent project and not directly related to Wikipedia or other projects of the Wikimedia foundation</p>
