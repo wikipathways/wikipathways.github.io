@@ -9,4 +9,7 @@ logo-link: "http://www.cirm.ca.gov/"
 support:
 contribute: "We encourage researchers in the stem cell community to edit or annotate existing pathways or create new pathways. You can also recommend additional pathways to be included in the stem cell portal."
 community-tag: "CIRM_Related"
+
+redirect_from:
+  - /index.php/Portal:CIRM
 ---
