@@ -16,6 +16,10 @@ support: "This project has received funding from the European Union’s Horizon 
 contribute: 
 
 community-tag: AOP
+
+redirect_from:
+  - /index.php/Portal:AOP
+
 ---       
         
         
