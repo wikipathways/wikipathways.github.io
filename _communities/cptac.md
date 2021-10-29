@@ -17,5 +17,8 @@ support: "This work is supported by [The National Cancer Institute](https://www.
 contribute: "The CPTAC set of pathways can be edited, updated and added to by anyone using PathVisio. Contact Alex Pico (apico[AT]gladstone.ucsf.edu) if interested in curating, adding or using CPTAC pathways."
 
 community-tag: CPTAC
+
+redirect_from:
+  - /index.php/Portal:CPTAC
 ---
 
