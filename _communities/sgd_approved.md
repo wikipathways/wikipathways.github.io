@@ -8,4 +8,6 @@ logo-link: "http://pathway.yeastgenome.org/"
 support:
 contribute: "SGD's YeastPathways Database is a collection of manually curated cellular pathways of Saccharomyces cerevisiae. Manual curation of cellular pathways is an ongoing process at SGD and we welcome feedback from the research community."
 community-tag: "SGD_Approved"
+redirect_from:
+  - /index.php/Portal:SGD
 ---
