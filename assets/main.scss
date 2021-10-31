@@ -49,6 +49,12 @@ a.logo-link img {
   @extend %clearfix;
 }
 
+.footer-col-wrapper img{
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  margin: 5px;
+}
+
 .footer-col {
   float: left;
   margin-bottom: $spacing-unit / 2;

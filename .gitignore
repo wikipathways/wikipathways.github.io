@@ -5,3 +5,4 @@ _site
 .vscode/
 vendor
 **/.DS_Store
+Gemfile.lock

@@ -19,9 +19,14 @@ layout: default
         referrerpolicy="origin" 
         sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
       </div>
-
-      <i>Last edited: {{ page.last-edited | date_to_string}}</i>
-
+        <!-- This badge is updated by Jekyll via the value of "last-edited" in each pathway .md-->
+        <a href="https://github.com/wikipathways/wikipathways.github.io/commits/main/_pathways/{{page.wpid}}.md" target="_blank">
+          <img alt="last edited" src="https://img.shields.io/static/v1?label=last edited&message={{page.last-edited | date_to_string}}&color=success">
+        </a>
+        <!--This badge is updated async to Jekyll by edits to the corresponding .json (Note: 5 minute cache by shields.io)-->
+        <a href="https://github.com/wikipathways/wikipathways.github.io/commits/main/_pathways/{{page.wpid}}.md" target="_blank">
+          <img alt="pathway status" src="https://img.shields.io/endpoint?url={{page.badge-json}}">
+        </a>
       <h2 id="authors">Authors</h2>
       {{ page.authors | array_to_sentence_string }}
 
