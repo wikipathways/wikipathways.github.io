@@ -19,6 +19,11 @@ layout: default
         referrerpolicy="origin" 
         sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
       </div>
+      <div style="float:right;">
+        <a href="https://pathway-viewer.toolforge.org/?id={{page.wpid}}" target="_blank">
+          <input type="button" class="button-gray" value="Full size">
+        </a>
+      </div>
         <!-- Evaluate last-edited date to set badge color -->
         {% assign edit = page.last-edited | date: '%s' %}
         {% assign now = 'now' | date: '%s' %}
