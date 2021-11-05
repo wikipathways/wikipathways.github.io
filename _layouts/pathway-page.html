@@ -1,11 +1,16 @@
 ---
 layout: default
 ---
-    <div style="float:right;">
+    <div style="float:right; margin-top:-20px;">
     {% include  share.html %}
+    <a href="{{site.url}}/instance/{{ page.wpid }}" target="_blank">
+      <input type="button" class="button-gray" value="Copy link">
+    </a>
+    <br />
     <a href="https://www.sejda.com/html-to-pdf?save-link={{site.url}}/pathways/{{ page.wpid }}.html" target="_blank">
       <input type="button" class="button-gray" value="Save as PDF">
     </a>
+
     </div>
 
     <div class="container">
