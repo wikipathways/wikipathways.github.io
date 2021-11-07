@@ -3,6 +3,14 @@
 
 @import "{{ site.theme }}";
 
+.site-title::before {
+	content: url("./img/wikipathways-logo.png");
+	display: inline-block;
+	position: relative;
+	width: 37px;
+	top: 5px;
+}
+
 h2 {
   margin-bottom:0px;
   margin-top:15px;
