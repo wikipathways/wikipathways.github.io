@@ -37,14 +37,13 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-redirect-from
-  - jekyll-commonmark
   - jekyll-include-cache
   
 #markdown: kramdown
-markdown: CommonMark
+markdown: CommonMarkGhPages
 commonmark:
   options: ["SMART", "FOOTNOTES"]
-  extensions: ["strikethrough", "autolink", "table"]
+  extensions: ["strikethrough", "autolink", "table", "tagfilter"]
 
 # Exclude from processing.
 # The following items will not be processed, by default.

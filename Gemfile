@@ -13,13 +13,13 @@ gem "liquid-c"
 gem "minima", "~> 2.5"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
-# gem "github-pages", group: :jekyll_plugins
+# (See gem github-pages below)
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-sitemap"
   gem "jekyll-redirect-from"
-  gem "jekyll-commonmark"
+  gem "jekyll-commonmark-ghpages"
   gem "jekyll-include-cache"
 end
 
@@ -35,7 +35,7 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
 # GitHub integration per step 10:
 # https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll
-gem "github-pages", "~> 215", group: :jekyll_plugins
+gem "github-pages", group: :jekyll_plugins
 
 # Jekyll SEO Tag:
 # https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/installation.md

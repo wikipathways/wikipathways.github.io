@@ -270,8 +270,8 @@ PLATFORMS
   x86_64-darwin-19
 
 DEPENDENCIES
-  github-pages (~> 215)
-  jekyll-commonmark
+  github-pages
+  jekyll-commonmark-ghpages
   jekyll-feed (~> 0.12)
   jekyll-include-cache
   jekyll-redirect-from
