@@ -5,8 +5,8 @@ title: Tools
 <p>These are some of the resources and software tools out there that make use of WikiPathways 
     content or provide novel ways to query and display our collection of 
     community-contributed pathways.</p>
-<table cellspacing="5" cellpadding="5" align="left">
 
+<table cellspacing="5" cellpadding="5" align="left">
     <tr>
     <th><a href="http://www.agilent.com/" target="_blank" class="external " title="http://www.agilent.com/" rel="nofollow">Agilent Technologies</a>
     </th><td>Agilent Technologies produces commercial sequencing technology and analysis suites (GeneSpring and EnViz) that uses WikiPathways content via web services.
