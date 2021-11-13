@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div style="float:right;">
+<div style="float:right; margin-top: -10px;">
   <button class="copy-btn" to-copy="{{site.url}}/instance/{{ page.wpid }}"
     style="border:none; background-color:#FFFFFF; font-size: larger; margin-left:-4px">
     <span title="Copy link to clipboard" style="color: #666;"><i class="fa fa-link"></i></span>
@@ -32,10 +32,18 @@ layout: default
       style="border-width: 1px; border-color: rgb(222,226,230); border-style: solid; height:100%; width:100%"
       referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
   </div>
-  <div style="float:right;">
-    <a href="https://pathway-viewer.toolforge.org/?id={{page.wpid}}" target="_blank">
-      <input type="button" class="button-gray" value="open in new tab">
-    </a>
+  <div class="dropdown" style="float:right;">
+    <button class="badge badge-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+      aria-haspopup="true" aria-expanded="false">
+      options
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="https://pathway-viewer.toolforge.org/?id={{page.wpid}}" target="_blank">Open in new
+        tab</a>
+      <a class="dropdown-item" href="#">Download PNG</a>
+      <a class="dropdown-item" href="#">Download SVG</a>
+      <a class="dropdown-item" href="#">Download GPML</a>
+    </div>
   </div>
   <!-- Evaluate last-edited date to set badge color -->
   {% assign edit = page.last-edited | date: '%s' %}
@@ -58,17 +66,17 @@ layout: default
     <h2 id="authors">Authors</h2>
     {{ page.authors | array_to_sentence_string }}
 
-    <h2 id="communities">Communities</h2>
-    {% for com in site.communities %}
-    {% if page.communities contains com.community-tag %}
-    <a class="collection-link" href="{{com.url}}">{{com.display-name}}</a>
-    {% endif %}
-    {% endfor %}
-
     <h2 id="organism">Organism</h2>
     {% for org in site.organisms %}
     {% if page.organisms contains org.latin %}
-    <a class="collection-link" href="{{org.url}}">{{org.latin}}</a>
+    <a class="btn btn-sm btn-pill btn-primary" href="{{org.url}}">{{org.latin}}</a>
+    {% endif %}
+    {% endfor %}
+
+    <h2 id="communities">Communities</h2>
+    {% for com in site.communities %}
+    {% if page.communities contains com.community-tag %}
+    <a class="btn btn-sm btn-pill btn-success" href="{{com.url}}">{{com.display-name}}</a>
     {% endif %}
     {% endfor %}
 
@@ -79,7 +87,7 @@ layout: default
       {% assign annot-values= page.annotations | where: "type", type | map: "value" %}
       {% for annot in site.annotations %}
       {% if annot-values contains annot.value and type == annot.type %}
-      <a class="collection-link" href="{{annot.url}}">{{annot.value}}</a>
+      <a class="btn btn-sm btn-pill btn-info" href="{{annot.url}}">{{annot.value}}</a>
       {% endif %}
       {% endfor %}
     </p>
@@ -104,8 +112,8 @@ layout: default
         {% endfor %}
       </tbody>
     </table>
-    <input type="button" class="button-gray" id="tableMore" value="more" style="float: left; margin-top: -8px;">
-    <input type="button" class="button-gray" id="tableLess" value="less" style="float: left; margin-top: -8px;">
+    <input type="button" class="badge badge-secondary" id="tableMore" value="more" style="float: left; margin-top: -8px;">
+    <input type="button" class="badge badge-secondary" id="tableLess" value="less" style="float: left; margin-top: -8px;">
     <br />
     <h2 id="references">References</h2>
     {% assign wpid-refs=page.wpid | append: "-references" %}

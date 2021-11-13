@@ -3,16 +3,24 @@
 
 @import "{{ site.theme }}";
 
-.site-title::before {
-	content: url("./img/wikipathways-logo.png");
-	display: inline-block;
-	position: relative;
-	width: 37px;
-	top: 5px;
+* {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
+h1 {
+  font-size: 2em;
+}
 h2 {
-  margin-bottom:0px;
+  font-size: 1.5em;
+  margin-bottom:5px;
   margin-top:15px;
 }
 
@@ -20,22 +28,27 @@ table {
   margin-bottom:10px;
 }
 
-.button-gray {
-  color: white; 
-  background-color: #666;
-  border-style: none;
-  border-radius: 3px;
-  padding: 3px;
-  font-size: 0.7em;
+.badge {
+  font-weight: 400;
 }
 
-a.collection-link {
-  font-size: 16px;
-  border-radius: 12px;
+.btn-pill {
+  border-radius:23px;
+}
+
+a.badge:visited{
   text-decoration: none;
-  background-color: #626262;
   color: #ffffff;
-  padding: 4px 8px 6px 8px;
+}
+
+a.btn:visited{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a.dropdown-item:visited{
+  text-decoration: none;
+  color: #000000;
 }
 
 a.logo-link {

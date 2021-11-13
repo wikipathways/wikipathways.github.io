@@ -9,6 +9,12 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    autoprefixer-rails (10.3.3.0)
+      execjs (~> 2)
+    bootstrap (4.0.0)
+      autoprefixer-rails (>= 6.0.3)
+      popper_js (>= 1.12.9, < 2)
+      sass (>= 3.5.2)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -230,6 +236,7 @@ GEM
       sawyer (~> 0.8.0, >= 0.5.3)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
+    popper_js (1.16.0)
     public_suffix (4.0.6)
     racc (1.5.2)
     rb-fsevent (0.11.0)
@@ -270,8 +277,8 @@ PLATFORMS
   x86_64-darwin-19
 
 DEPENDENCIES
+  bootstrap (~> 4.0.0)
   github-pages
-  jekyll-commonmark-ghpages
   jekyll-feed (~> 0.12)
   jekyll-include-cache
   jekyll-redirect-from

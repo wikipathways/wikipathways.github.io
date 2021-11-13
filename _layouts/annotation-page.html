@@ -9,6 +9,6 @@ layout: default
         {% for pw in site.pathways %}
             {% assign annot-values= pw.annotations | where: "type", page.type | map: "value" %}
             {% if annot-values contains page.value %}
-              <p><a class="collection-link" href="{{ pw.url }}">{{ pw.title }}</a></p>
+              <p><a class="btn btn-sm btn-pill btn-secondary" href="{{ pw.url }}">{{ pw.title }}</a></p>
             {% endif %}   
          {% endfor %}  

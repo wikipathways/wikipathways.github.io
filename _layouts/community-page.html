@@ -11,7 +11,7 @@ layout: default
     <h3>Pathways</h3>
       {% for pw in site.pathways %}
           {% if pw.communities contains page.community-tag %}
-            <p><a class="collection-link" href="{{ pw.url }}">{{ pw.title }}</a></p>
+            <p><a class="btn btn-sm btn-pill btn-secondary" href="{{ pw.url }}">{{ pw.title }}</a></p>
           {% endif %}
       {% endfor %}
 

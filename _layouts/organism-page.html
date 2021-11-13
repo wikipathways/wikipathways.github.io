@@ -5,7 +5,7 @@ layout: default
     <p>This is an organism page.</p>
       {% for pw in site.pathways %}
           {% if pw.organisms contains page.latin %}
-              <p><a class="collection-link" href="{{ pw.url }}">{{ pw.title }}</a></p>
+              <p><a class="btn btn-sm btn-pill btn-secondary" href="{{ pw.url }}">{{ pw.title }}</a></p>
             {% endif %}   
       {% endfor %}  
     <!-- 
