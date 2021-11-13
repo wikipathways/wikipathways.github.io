@@ -4,6 +4,6 @@
 {% for type in type-group %}
   <b>{{ type.name }}: </b>
   {% for annot in type.items %}
-  <a class="collection-link" href="{{annot.url}}">{{annot.value}}</a>
+  <a class="btn btn-sm btn-pill btn-info" href="{{annot.url}}">{{annot.value}}</a>
   {% endfor %}
 {% endfor %}

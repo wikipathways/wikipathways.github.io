@@ -1,4 +1,4 @@
 <h2>Pathways by Organism</h2>
 {% for x in site.organisms %}
-  <a class="collection-link" href="{{ x.url }}">{{ x.common }}</a>
+  <a class="btn btn-sm btn-pill btn-primary" href="{{ x.url }}">{{ x.common }}</a>
 {% endfor %}  
