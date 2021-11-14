@@ -10,14 +10,14 @@ layout: table-page
   <col style="width:75px" />
   <col style="width:auto" />
   <col style="width:110px" />
-  <th data-field="title" data-filter-control="input">Pathway Title<br /><input type="text" id="title" style="width:250px;" onkeyup="myFunction(this.id,0)"></th>
+  <th data-field="title" data-filter-control="input">Pathway Title<br /><input type="text" id="tit" style="width:250px;" onkeyup="filterTable()"></th>
   <th>ID</th>
-  <th data-field="org" data-filter-control="select">Organism<br /><input type="text" id="org" style="width:100px;" onkeyup="myFunction(this.id,2)"></th>
+  <th data-field="org" data-filter-control="select">Organism<br /><input type="text" id="org" style="width:100px;" onkeyup="filterTable()"></th>
   <th>Last Edited</th>
-  <th>Communities<br /><input type="text" id="com" style="width:100px;" onkeyup="myFunction(this.id,4)"></th>
-  <th>Pathway Terms<br /><input type="text" id="pw" style="width:100px;" onkeyup="myFunction(this.id,5)"></th>
-  <th>Disease Terms<br /><input type="text" id="diod" style="width:100px;" onkeyup="myFunction(this.id,6)"></th>
-  <th>Cell Types<br /><input type="text" id="ct" style="width:100px;" onkeyup="myFunction(this.id,7)"></th>
+  <th>Communities<br /><input type="text" id="com" style="width:100px;" onkeyup="filterTable()"></th>
+  <th>Pathway Terms<br /><input type="text" id="pwo" style="width:100px;" onkeyup="filterTable()"></th>
+  <th>Disease Terms<br /><input type="text" id="dio" style="width:100px;" onkeyup="filterTable()"></th>
+  <th>Cell Types<br /><input type="text" id="cto" style="width:100px;" onkeyup="filterTable()"></th>
   {% for pw in site.pathways %}
   {% assign pw-type-group = pw.annotations | group_by: "type" %}
   <tr>
@@ -47,25 +47,61 @@ layout: table-page
 </div>
 
 <script>
-function myFunction(id, col) {
-  // Declare variables
-  var input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById(id);
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable");
-  tr = table.getElementsByTagName("tr");
+// Define Filter input id and position
+var fils = {
+              'tit': 0,
+              'org': 2,
+              'com': 4,
+              'pwo': 5,
+              'dio': 6,
+              'cto': 7
+          };
 
-  // Loop through all table rows, and hide those who don't match the search query
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[col];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
+// Declare one-time variables
+var table = document.getElementById("myTable");
+var tr = table.getElementsByTagName("tr");
+
+function filterTable() {
+  // Declare variables
+  var activeFils, emptyFils, input, filter, td, i, txtValue;
+  activeFils = [];
+  emptyFils = [];
+
+  // Define empty and active filter sets
+  Object.keys(fils).forEach(key => {
+    input = document.getElementById(key);
+    filter = input.value.toUpperCase();
+    if (filter.length > 0){
+      activeFils.push(key);
+    } else {
+      emptyFils.push(key);
     }
+  });
+
+  // Loop through all table rows
+  for (i = 0; i < tr.length; i++) {
+    // Loop through column filters
+    if(emptyFils.length > 0) {
+      // Show all rows if an column filter is empty 
+      tr[i].style.display = "";
+    }
+    // Loop through active column filters
+    activeFils.forEach(key => {
+      input = document.getElementById(key);
+      filter = input.value.toUpperCase();
+      td = tr[i].getElementsByTagName("td")[fils[key]];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1 
+        && tr[i].style.display != "none") {
+          // Show those that match the filter and aren't already hidden
+          tr[i].style.display = "";
+        } else {
+          // Hide those that don't match the filter
+          tr[i].style.display = "none";
+        }
+      } 
+    });
   }
 }
 </script>
