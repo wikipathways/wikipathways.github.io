@@ -4,20 +4,19 @@ layout: table-page
 
 {% assign type-group = site.annotations | group_by: "type" | reverse %}
 <div class="table-responsive-sm">
-<table  class="table table-sm" id="myTable" data-filter-control="true"
-  data-show-search-clear-button="true">
+<table  class="table table-sm" id="myTable">
   <col style="width:500px" />
   <col style="width:75px" />
   <col style="width:auto" />
   <col style="width:110px" />
-  <th data-field="title" data-filter-control="input">Pathway Title<br /><input type="text" id="tit" style="width:250px;" onkeyup="filterTable()"></th>
-  <th>ID</th>
-  <th data-field="org" data-filter-control="select">Organism<br /><input type="text" id="org" style="width:100px;" onkeyup="filterTable()"></th>
-  <th>Last Edited</th>
-  <th>Communities<br /><input type="text" id="com" style="width:100px;" onkeyup="filterTable()"></th>
-  <th>Pathway Terms<br /><input type="text" id="pwo" style="width:100px;" onkeyup="filterTable()"></th>
-  <th>Disease Terms<br /><input type="text" id="dio" style="width:100px;" onkeyup="filterTable()"></th>
-  <th>Cell Types<br /><input type="text" id="cto" style="width:100px;" onkeyup="filterTable()"></th>
+  <th>Pathway Title<br /><input type="text" id="0" style="width:250px;" onkeyup="filterTable()"></th>
+  <th>ID<br /><input type="text" id="1" style="width:50px;" onkeyup="filterTable()"></th>
+  <th>Organism<br /><input type="text" id="2" style="width:100px;" onkeyup="filterTable()"></th>
+  <th>Last Edited<br /><input type="text" id="3" style="width:70px;" onkeyup="filterTable()"></th>
+  <th>Communities<br /><input type="text" id="4" style="width:100px;" onkeyup="filterTable()"></th>
+  <th>Pathway Terms<br /><input type="text" id="5" style="width:100px;" onkeyup="filterTable()"></th>
+  <th>Disease Terms<br /><input type="text" id="6" style="width:100px;" onkeyup="filterTable()"></th>
+  <th>Cell Types<br /><input type="text" id="7" style="width:100px;" onkeyup="filterTable()"></th>
   {% for pw in site.pathways %}
   {% assign pw-type-group = pw.annotations | group_by: "type" %}
   <tr>
@@ -47,19 +46,16 @@ layout: table-page
 </div>
 
 <script>
-// Define Filter input id and position
-var fils = {
-              'tit': 0,
-              'org': 2,
-              'com': 4,
-              'pwo': 5,
-              'dio': 6,
-              'cto': 7
-          };
-
 // Declare one-time variables
 var table = document.getElementById("myTable");
 var tr = table.getElementsByTagName("tr");
+
+// Assume filter input ids are incrementing numbers as Strings
+var numCols = table.rows[0].cells.length;
+var fils = {}
+for (var c=0; c < numCols; c++){
+  fils[c.toString()] = c;
+}
 
 function filterTable() {
   // Declare variables
