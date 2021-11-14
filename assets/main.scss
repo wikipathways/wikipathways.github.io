@@ -40,8 +40,11 @@ table {
   padding: 0px;
   padding-left: 5px;
 }
+.card-text {
+  font-size: 0.8em;
+}
 
-a.card-body:visited {
+a.card-link {
   text-decoration: none;
   color: #000000;
 }

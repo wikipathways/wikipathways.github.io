@@ -9,11 +9,22 @@ layout: default
     <p>{{ page.description | markdownify }}</p>
 
     <h3>Pathways</h3>
+    <div class="row">
       {% for pw in site.pathways %}
           {% if pw.communities contains page.community-tag %}
-            <p><a class="btn btn-sm btn-pill btn-secondary" href="{{ pw.url }}">{{ pw.title }}</a></p>
+          <div class="col-sm-auto">
+            <div class="card" style="width: 10rem;">
+              <a class="card-link" href="{{ pw.url }}">
+              <img class="card-img-top" src="https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:{{pw.wpid}}" alt="{{ pw.title }}p">
+              <div class="card-body">
+                <p class="card-text">{{ pw.title }}</p>
+              </div>
+              </a>
+            </div>
+          </div>
           {% endif %}
       {% endfor %}
+    </div>
 
 <h3>Contributors</h3>
 {% assign all_authors = site.pathways | where:'communities',page.community-tag | map: "authors" | join: ','  | split: ',' | uniq  %}

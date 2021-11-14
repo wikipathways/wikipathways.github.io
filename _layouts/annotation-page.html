@@ -6,9 +6,20 @@ layout: default
         target="_blank">
         {{ page.xref-dataSource }}:{{page.xref-identifier}}</a></h3>
     <p>This is an annotation page.</p>
+    <div class="row">
         {% for pw in site.pathways %}
             {% assign annot-values= pw.annotations | where: "type", page.type | map: "value" %}
             {% if annot-values contains page.value %}
-              <p><a class="btn btn-sm btn-pill btn-secondary" href="{{ pw.url }}">{{ pw.title }}</a></p>
+            <div class="col-sm-auto">
+              <div class="card" style="width: 10rem;">
+                <a class="card-link" href="{{ pw.url }}">
+                <img class="card-img-top" src="https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:{{pw.wpid}}" alt="{{ pw.title }}p">
+                <div class="card-body">
+                  <p class="card-text">{{ pw.title }}</p>
+                </div>
+                </a>
+              </div>
+            </div>
             {% endif %}   
          {% endfor %}  
+    </div>

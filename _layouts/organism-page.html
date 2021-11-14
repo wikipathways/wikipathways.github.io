@@ -6,9 +6,9 @@ layout: default
     <div class="row">
       {% for pw in site.pathways %}
           {% if pw.organisms contains page.latin %}
-          <div class="col-sm-6">
-            <div class="card" style="width: 13rem;">
-              <a href="{{ pw.url }}">
+          <div class="col-sm-auto">
+            <div class="card" style="width: 10rem;">
+              <a class="card-link" href="{{ pw.url }}">
               <img class="card-img-top" src="https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:{{pw.wpid}}" alt="{{ pw.title }}p">
               <div class="card-body">
                 <p class="card-text">{{ pw.title }}</p>
