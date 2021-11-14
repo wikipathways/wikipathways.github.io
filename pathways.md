@@ -15,7 +15,7 @@
   {% assign pw-type-group = pw.annotations | group_by: "type" %}
   <tr>
     <td style="white-space: nowrap;">
-      <a class="collection-link" href="{{ pw.url }}">{{ pw.title }}</a>
+      <a class="btn btn-sm btn-pill btn-secondary" href="{{ pw.url }}">{{ pw.title }}</a>
     </td>
     <td>{{ pw.wpid }}</td>
     <td>{{ pw.organisms | join: ", "}}</td>
