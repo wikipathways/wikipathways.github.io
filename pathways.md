@@ -88,7 +88,7 @@ function filterTable() {
       td = tr[i].getElementsByTagName("td")[fils[key]];
       if (td) {
         txtValue = td.textContent || td.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1 
+        if (txtValue.toUpperCase().indexOf(filter) !== -1 
         && tr[i].style.display != "none") {
           // Show those that match the filter and aren't already hidden
           tr[i].style.display = "";
