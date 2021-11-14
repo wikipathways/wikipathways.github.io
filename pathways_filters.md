@@ -104,6 +104,9 @@ layout: table-page
 
 <script>
 // CHECKBOXES
+// Check org:human by default
+document.querySelectorAll("input[type='checkbox'][value='Homo sapiens']")[0].checked = true;
+
 // Listen for organism checkboxes
 var orgList = []
 var interests = document.querySelectorAll("[name=organisms"); 
@@ -192,11 +195,14 @@ function filterTable() {
       emptyFils.push(key);
     }
   });
-
+ 
   // Loop through all table rows
   for (i = 0; i < tr.length; i++) {
     // Loop through column filters
-    if(emptyFils.length > 0) {
+    if(activeFils.length == 0) {
+      // Hide all if nothing selected 
+      tr[i].style.display = "none";
+    } else if (emptyFils.length > 0) {
       // Show all rows if an column filter is empty 
       tr[i].style.display = "";
     }
