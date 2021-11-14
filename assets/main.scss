@@ -36,6 +36,16 @@ table {
   border-radius:23px;
 }
 
+.card-body {
+  padding: 0px;
+  padding-left: 5px;
+}
+
+a.card-body:visited {
+  text-decoration: none;
+  color: #000000;
+}
+
 a.badge:visited{
   text-decoration: none;
   color: #ffffff;

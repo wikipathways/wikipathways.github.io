@@ -3,11 +3,22 @@ layout: default
 ---
     <h1 id="title"> {{ page.title }}</h1>
     <p>This is an organism page.</p>
+    <div class="row">
       {% for pw in site.pathways %}
           {% if pw.organisms contains page.latin %}
-              <p><a class="btn btn-sm btn-pill btn-secondary" href="{{ pw.url }}">{{ pw.title }}</a></p>
+          <div class="col-sm-6">
+            <div class="card" style="width: 13rem;">
+              <a href="{{ pw.url }}">
+              <img class="card-img-top" src="https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:{{pw.wpid}}" alt="{{ pw.title }}p">
+              <div class="card-body">
+                <p class="card-text">{{ pw.title }}</p>
+              </div>
+              </a>
+            </div>
+          </div>
             {% endif %}   
       {% endfor %}  
+    </div>
     <!-- 
         Example variables:
         {{ page.title }}
