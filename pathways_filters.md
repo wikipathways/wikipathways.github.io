@@ -42,11 +42,11 @@ layout: table-page
   {% assign type-group = site.annotations | group_by: "type" | reverse %}
   {% for type in type-group %}
       <div class="facet-header">
-    <button type="button" class="btn btn-link facet-toggle" data-toggle="collapse" href="#{{ type.name }}" aria-expanded="true" aria-controls="collapseExample">
+    <button type="button" class="btn btn-link facet-toggle" data-toggle="collapse" href="#{{ type.name |downcase | replace:" ","_"}}" aria-expanded="true" aria-controls="collapseExample">
       <strong class="facet-title">{{ type.name }}</strong>
     </button>
   </div>
-  <div class="facet-body collapse" id="{{ type.name }}">
+  <div class="facet-body collapse" id="{{ type.name |downcase | replace:" ","_"}}">
     <ul class="facet-group">
     {% for annot in type.items %}
       <li class="facet-group-item">
@@ -103,71 +103,6 @@ layout: table-page
 </div>
 
 <script>
-// CHECKBOXES
-// Check org:human by default
-document.querySelectorAll("input[type='checkbox'][value='Homo sapiens']")[0].checked = true;
-
-// Listen for organism checkboxes
-var orgList = []
-var interests = document.querySelectorAll("[name=organisms"); 
-for (var index = 0; index < interests.length; index++) { 
-    interests[index].addEventListener("change", function(evt){ 
-        var checkbox = evt.target; 
-        //console.log(checkbox.value + " changed to " + checkbox.checked); 
-        orgList = $("input:checkbox[name=organisms]:checked").map(function(){return $(this).val()}).get();
-        document.getElementById('org').value = orgList;
-        filterTable();
-    }); 
-}
-// Listen for community checkboxes
-var comList = []
-var interests = document.querySelectorAll("[name=communities"); 
-for (var index = 0; index < interests.length; index++) { 
-    interests[index].addEventListener("change", function(evt){ 
-        var checkbox = evt.target; 
-        //console.log(checkbox.value + " changed to " + checkbox.checked); 
-        comList = $("input:checkbox[name=communities]:checked").map(function(){return $(this).val()}).get();
-        document.getElementById('com').value = comList;
-        filterTable();
-    }); 
-}
-// Listen for Pathway Ontology checkboxes
-var pwoList = []
-var interests = document.querySelectorAll("[name=pathway_ontology"); 
-for (var index = 0; index < interests.length; index++) { 
-    interests[index].addEventListener("change", function(evt){ 
-        var checkbox = evt.target; 
-        //console.log(checkbox.value + " changed to " + checkbox.checked); 
-        pwoList = $("input:checkbox[name=pathway_ontology]:checked").map(function(){return $(this).val()}).get();
-        document.getElementById('pwo').value = pwoList;
-        filterTable();
-    }); 
-}
-// Listen for Disease checkboxes
-var dioList = []
-var interests = document.querySelectorAll("[name=Disease"); 
-for (var index = 0; index < interests.length; index++) { 
-    interests[index].addEventListener("change", function(evt){ 
-        var checkbox = evt.target; 
-        //console.log(checkbox.value + " changed to " + checkbox.checked); 
-        dioList = $("input:checkbox[name=Disease]:checked").map(function(){return $(this).val()}).get();
-        document.getElementById('dio').value = dioList;
-        filterTable();
-    }); 
-}
-// Listen for Pathway Ontology checkboxes
-var ctoList = []
-var interests = document.querySelectorAll("[name=cell_type"); 
-for (var index = 0; index < interests.length; index++) { 
-    interests[index].addEventListener("change", function(evt){ 
-        var checkbox = evt.target; 
-        //console.log(checkbox.value + " changed to " + checkbox.checked); 
-        ctoList = $("input:checkbox[name=cell_type]:checked").map(function(){return $(this).val()}).get();
-        document.getElementById('cto').value = ctoList;
-        filterTable();
-    }); 
-}
-
 // TABLE FILTER
 // Declare one-time variables
 var table = document.getElementById("myTable");
@@ -227,5 +162,153 @@ function filterTable() {
       } 
     });
   }
+}
+
+// Listen for organism checkboxes
+var orgList = []
+var interests = document.querySelectorAll("[name=organisms"); 
+for (var index = 0; index < interests.length; index++) { 
+    interests[index].addEventListener("change", function(evt){ 
+        var checkbox = evt.target; 
+        //console.log(checkbox.value + " changed to " + checkbox.checked); 
+        orgList = $("input:checkbox[name=organisms]:checked").map(function(){return $(this).val()}).get();
+        document.getElementById('org').value = orgList;
+        filterTable();
+    }); 
+}
+// Listen for community checkboxes
+var comList = []
+var interests = document.querySelectorAll("[name=communities"); 
+for (var index = 0; index < interests.length; index++) { 
+    interests[index].addEventListener("change", function(evt){ 
+        var checkbox = evt.target; 
+        //console.log(checkbox.value + " changed to " + checkbox.checked); 
+        comList = $("input:checkbox[name=communities]:checked").map(function(){return $(this).val()}).get();
+        document.getElementById('com').value = comList;
+        filterTable();
+    }); 
+}
+// Listen for Pathway Ontology checkboxes
+var pwoList = []
+var interests = document.querySelectorAll("[name=pathway_ontology"); 
+for (var index = 0; index < interests.length; index++) { 
+    interests[index].addEventListener("change", function(evt){ 
+        var checkbox = evt.target; 
+        //console.log(checkbox.value + " changed to " + checkbox.checked); 
+        pwoList = $("input:checkbox[name=pathway_ontology]:checked").map(function(){return $(this).val()}).get();
+        document.getElementById('pwo').value = pwoList;
+        filterTable();
+    }); 
+}
+// Listen for Disease checkboxes
+var dioList = []
+var interests = document.querySelectorAll("[name=disease"); 
+for (var index = 0; index < interests.length; index++) { 
+    interests[index].addEventListener("change", function(evt){ 
+        var checkbox = evt.target; 
+        //console.log(checkbox.value + " changed to " + checkbox.checked); 
+        dioList = $("input:checkbox[name=disease]:checked").map(function(){return $(this).val()}).get();
+        document.getElementById('dio').value = dioList;
+        filterTable();
+    }); 
+}
+// Listen for Pathway Ontology checkboxes
+var ctoList = []
+var interests = document.querySelectorAll("[name=cell_type"); 
+for (var index = 0; index < interests.length; index++) { 
+    interests[index].addEventListener("change", function(evt){ 
+        var checkbox = evt.target; 
+        //console.log(checkbox.value + " changed to " + checkbox.checked); 
+        ctoList = $("input:checkbox[name=cell_type]:checked").map(function(){return $(this).val()}).get();
+        document.getElementById('cto').value = ctoList;
+        filterTable();
+    }); 
+}
+
+
+// URL PARAMETERS
+var orgList, comList, pwoList, dioList, ctoList;
+var url_string = window.location.href;
+var url = new URL(url_string);
+if (url.searchParams.toString().length > 0){
+  orgList = url.searchParams.get("org");
+  comList = url.searchParams.get("com");
+  pwoList = url.searchParams.get("pwo");
+  dioList = url.searchParams.get("dio");
+  ctoList = url.searchParams.get("cto");
+} else {
+  // Check org:human by default if no other parameters
+  orgList = "Homo sapiens";
+  comList = null;
+  pwoList = null;
+  dioList = null;
+  ctoList = null;
+
+}  
+//console.log(orgList);
+
+// CHECKBOXES
+var event = document.createEvent("HTMLEvents");
+event.initEvent('change', false, true);
+
+if(null != orgList){
+  document.getElementById("organisms").classList.add('show');
+  document.getElementById("organisms").classList.remove('hide');  
+orgList.split(",").forEach(key => {
+  var checkbox = document.querySelectorAll(`input[type='checkbox'][name='organisms'][value=${CSS.escape(key)}]`)[0];
+  checkbox.checked = true;
+  checkbox.dispatchEvent(event);
+});
+} else {
+  document.getElementById("organisms").classList.add('hide');
+  document.getElementById("organisms").classList.remove('show');
+}
+if(null != comList){
+  document.getElementById("communities").classList.add('show');
+  document.getElementById("communities").classList.remove('hide'); 
+comList.split(",").forEach(key => {
+  var checkbox = document.querySelectorAll(`input[type='checkbox'][name='communities'][value=${CSS.escape(key)}]`)[0];
+  checkbox.checked = true;
+  checkbox.dispatchEvent(event);
+});
+} else {
+  document.getElementById("communities").classList.add('hide');
+  document.getElementById("communities").classList.remove('show');
+}
+if(null != pwoList){
+  document.getElementById("pathway_ontology").classList.add('show');
+  document.getElementById("pathway_ontology").classList.remove('hide'); 
+pwoList.split(",").forEach(key => {
+  var checkbox = document.querySelectorAll(`input[type='checkbox'][name='pathway_ontology'][value=${CSS.escape(key)}]`)[0];
+  checkbox.checked = true;
+  checkbox.dispatchEvent(event);
+});
+} else {
+  document.getElementById("pathway_ontology").classList.add('hide');
+  document.getElementById("pathway_ontology").classList.remove('show');
+}
+if(null != dioList){
+  document.getElementById("disease").classList.add('show');
+  document.getElementById("disease").classList.remove('hide'); 
+dioList.split(",").forEach(key => {
+  var checkbox = document.querySelectorAll(`input[type='checkbox'][name='disease'][value=${CSS.escape(key)}]`)[0];
+  checkbox.checked = true;
+  checkbox.dispatchEvent(event);
+});
+} else {
+  document.getElementById("disease").classList.add('hide');
+  document.getElementById("disease").classList.remove('show');
+}
+if(null != ctoList){
+  document.getElementById("cell_type").classList.add('show');
+  document.getElementById("cell_type").classList.remove('hide'); 
+ctoList.split(",").forEach(key => {
+  var checkbox = document.querySelectorAll(`input[type='checkbox'][name='cell_type'][value=${CSS.escape(key)}]`)[0];
+  checkbox.checked = true;
+  checkbox.dispatchEvent(event);
+});
+} else {
+  document.getElementById("cell_type").classList.add('hide');
+  document.getElementById("cell_type").classList.remove('show');
 }
 </script>
