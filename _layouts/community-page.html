@@ -9,6 +9,17 @@ layout: default
     <p>{{ page.description | markdownify }}</p>
 
     <h3>Pathways</h3>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#gallery">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#list">List</a>
+      </li>
+    </ul>
+    <div class="tab-content" >
+      <div class="tab-pane fade show active" id="gallery" role="tabpanel">
+        <br/>
     <div class="row">
       {% for pw in site.pathways %}
           {% if pw.communities contains page.community-tag %}
@@ -25,7 +36,21 @@ layout: default
           {% endif %}
       {% endfor %}
     </div>
-
+  </div>
+  <div class="tab-pane fade" id="list" role="tabpanel">
+    <br/>
+    <div class="row" style="margin-left: 10px;">
+      <ul>
+        {% for pw in site.pathways %}
+          {% if pw.communities contains page.community-tag %}
+              <li><a href="{{ pw.url }}">{{ pw.title }} <em>({{ pw.organisms.first }})</em></a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>  
+  </div>
+</div>
+<br/><hr/>
 <h3>Contributors</h3>
 {% assign all_authors = site.pathways | where:'communities',page.community-tag | map: "authors" | join: ','  | split: ',' | uniq  %}
 <p>{{ all_authors | array_to_sentence_string }}.</p>

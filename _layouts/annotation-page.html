@@ -6,20 +6,48 @@ layout: default
         target="_blank">
         {{ page.xref-dataSource }}:{{page.xref-identifier}}</a></h3>
     <p>This is an annotation page.</p>
+
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#gallery">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#list">List</a>
+      </li>
+    </ul>
+    <div class="tab-content" >
+      <div class="tab-pane fade show active" id="gallery" role="tabpanel">
+        <br/>
     <div class="row">
-        {% for pw in site.pathways %}
-            {% assign annot-values= pw.annotations | where: "type", page.type | map: "value" %}
-            {% if annot-values contains page.value %}
-            <div class="col-sm-auto">
-              <div class="card" style="width: 10rem;">
-                <a class="card-link" href="{{ pw.url }}">
-                <img class="card-img-top" src="https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:{{pw.wpid}}" alt="{{ pw.title }}">
-                <div class="card-body">
-                  <p class="card-text">{{ pw.title }} <em>({{ pw.organisms.first }})</em></p>
-                </div>
-                </a>
+      {% for pw in site.pathways %}
+        {% assign annot-values= pw.annotations | where: "type", page.type | map: "value" %}
+        {% if annot-values contains page.value %}
+          <div class="col-sm-auto">
+            <div class="card" style="width: 10rem;">
+              <a class="card-link" href="{{ pw.url }}">
+              <img class="card-img-top" src="https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:{{pw.wpid}}" alt="{{ pw.title }}">
+              <div class="card-body">
+                <p class="card-text">{{ pw.title }} <em>({{ pw.organisms.first }})</em></p>
               </div>
+              </a>
             </div>
-            {% endif %}   
-         {% endfor %}  
+          </div>
+          {% endif %}
+      {% endfor %}
     </div>
+  </div>
+  <div class="tab-pane fade" id="list" role="tabpanel">
+    <br/>
+    <div class="row" style="margin-left: 10px;">
+      <ul>
+        {% for pw in site.pathways %}
+          {% assign annot-values= pw.annotations | where: "type", page.type | map: "value" %}
+          {% if annot-values contains page.value %}
+              <li><a href="{{ pw.url }}">{{ pw.title }} <em>({{ pw.organisms.first }})</em></a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>  
+  </div>
+</div>
+<br/><hr/>
