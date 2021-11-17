@@ -60,24 +60,39 @@ layout: table-page
   </div>
   {% endfor %}
 </section>
+
+<!-- NCBO Ontology Tree Widget
+    https://www.bioontology.org/wiki/NCBO_Widgets#NCBO_Ontology_Tree_Widget
+ -->
+<!-- Or, subset of parent terms per ontology? -->
+
+  </div>
+
+  <div class="col-sm">
+    <div class="row" id="cards">
+      <!-- Add cards here -->
+    </div>
+  </div>
 </div>
+
+<!-- Hidden table -->
 <div class="col-sm">
     <div class="row">
     <div class="results"></div>
 <div class="table-responsive-sm">
 <table  class="table table-sm" id="myTable"> 
-  <th>Pathway Title</th>
   <th style="display:none;">Organism<br /><input type="text" id="org" style="width:50px;" onkeyup="filterTable()"></th>
   <th style="display:none;">Communities<br /><input type="text" id="com" style="width:50px;" onkeyup="filterTable()"></th>
   <th style="display:none;">Pathway Terms<br /><input type="text" id="pwo" style="width:50px;" onkeyup="filterTable()"></th>
   <th style="display:none;">Disease Terms<br /><input type="text" id="dio" style="width:50px;" onkeyup="filterTable()"></th>
   <th style="display:none;">Cell Types<br /><input type="text" id="cto" style="width:50px;" onkeyup="filterTable()"></th>
+ <th style="display:none;" >wpid</th>
+ <th style="display:none;" >title</th>
+ <th style="display:none;" >url</th>
+ <th style="display:none;" >firstorg</th>
   {% for pw in site.pathways %}
   {% assign pw-type-group = pw.annotations | group_by: "type" %}
   <tr>
-    <td title="{{ pw.title }}" style="overflow: hidden; max-height: 50px; white-space: nowrap; text-overflow: ellipsis;">
-      <a href="{{ pw.url }}">{{ pw.title }}</a>
-    </td>
     <td style="display:none;" title="{{ pw.organisms | join: ", "}}">{{ pw.organisms | join: ", "}}</td>
     <td style="display:none;" title="{{ pw.communities | join: ", "}}">{{ pw.communities | join: ", "}}</td>
     {% for type in type-group %}  
@@ -93,12 +108,15 @@ layout: table-page
       </div>
       </td>
     {% endfor %}
+    <td style="display:none;" >{{ pw.wpid }}</td>
+    <td style="display:none;" >{{ pw.title }}</td>
+    <td style="display:none;" >{{ pw.url }}</td>
+    <td style="display:none;" >{{ pw.organisms.first }}</td>
   </tr>
   {% endfor %}
 </table>
 </div>
     </div>
-</div>
 </div>
 </div>
 
@@ -107,20 +125,23 @@ layout: table-page
 // Declare one-time variables
 var table = document.getElementById("myTable");
 var tr = table.getElementsByTagName("tr");
+var cardDiv = document.getElementById('cards');
 var fils = {
-  'org':1,
-  'com':2,
-  'pwo':3,
-  'dio':4,
-  'cto':5
+  'org':0,
+  'com':1,
+  'pwo':2,
+  'dio':3,
+  'cto':4
 };
 
 function filterTable() {
   // Declare variables
-  var activeFils, emptyFils, input, filSplit, td, i, txtValue;
+  var activeFils, emptyFils, input, filSplit, td, i, txtValue, cardVars;
   activeFils = [];
   emptyFils = [];
-
+  cardVars = {};
+  cardDiv.innerHTML = "";
+  
   // Define empty and active filter sets
   Object.keys(fils).forEach(key => {
     input = document.getElementById(key).value;
@@ -161,8 +182,18 @@ function filterTable() {
         }
       } 
     });
+    if (tr[i].style.display == "" && i > 0){
+      cardVars["wpid"] = tr[i].cells[5].innerText;
+      cardVars["title"] = tr[i].cells[6].innerText;
+      cardVars["url"] = tr[i].cells[7].innerText;
+      cardVars["org"] = tr[i].cells[8].innerText;
+      addCard(cardVars);
+    } 
+    // console.log(tr[i]);
   }
 }
+
+// $("#myTable tbody tr:visible").each(function(){$(this)[1]})[2].textContent
 
 // Listen for organism checkboxes
 var orgList = []
@@ -311,4 +342,27 @@ ctoList.split(",").forEach(key => {
   document.getElementById("cell_type").classList.add('hide');
   document.getElementById("cell_type").classList.remove('show');
 }
+
+// function to add cards
+function addCard(c){
+  cardDiv.innerHTML += '<div class="col-sm-auto">' +
+    '<div class="card" style="width: 10rem;">' +
+      '<a class="card-link" href="'+c["url"]+'">' +
+        '<img class="card-img-top" src="https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:'+c["wpid"]+'" alt="'+c["title"]+'">' +
+        '<div class="card-body">' +
+          '<p class="card-text">'+c["title"]+' <em>('+c["org"]+')</em></p>' +
+  '</div></a></div></div>';
+}
+
+  // <div class="col-sm-auto">
+  //   <div class="card" style="width: 10rem;">
+  //     <a class="card-link" href="{{ pw.url }}">
+  //       <img class="card-img-top" src="https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:{{pw.wpid}}" alt="{{ pw.title }}p">
+  //       <div class="card-body">
+  //         <p class="card-text">{{ pw.title }} <em>({{ pw.organisms.first }})</em></p>
+  //       </div>
+  //     </a>
+  //   </div>
+  // </div>
+
 </script>
