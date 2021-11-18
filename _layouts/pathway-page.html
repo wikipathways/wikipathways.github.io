@@ -59,10 +59,12 @@ layout: default
         src="https://img.shields.io/static/v1?label=last edited&message={{page.last-edited | date_to_string}}&color={{badgeColor}}">
     </a>
     <!--This badge is updated async to Jekyll by edits to the corresponding .json (Note: 5 minute cache by shields.io)-->
-    <a href="https://github.com/wikipathways/wikipathways.github.io/commits/main/_pathways/{{page.wpid}}.md"
-      target="_blank">
-      <img alt="pathway status" src="https://img.shields.io/endpoint?url={{page.badge-json}}">
+    <a id="badge-json" target="_blank"
+    href="https://github.com/wikipathways/wikipathways.github.io/commits/main/_pathways/{{page.wpid}}.md"
+    file="https://raw.githubusercontent.com/wikipathways/repository/main/{{page.wpid}}/status.json">
+    <!-- fill-in with img tag if file exists -->
     </a>
+    </div>
     <h2 id="authors">Authors</h2>
     {{ page.authors | array_to_sentence_string }}
 
@@ -130,7 +132,8 @@ layout: default
 </div>
 
 <script>
-
+  var badgeJson = $("#badge-json")[0];
+  var badgeJsonFileUrl = badgeJson.getAttribute("file");
   var trs = $("#participants-table tr");
   var btnMore = $("#tableMore");
   var btnLess = $("#tableLess");
@@ -138,6 +141,20 @@ layout: default
   var startIndex = 5;
   var currentIndex = startIndex;
   var addIndex = 40;
+
+  if (UrlExists(badgeJsonFileUrl)){
+    badgeJson.innerHTML = '<img alt="pathway status" src="https://img.shields.io/endpoint?url='+badgeJsonFileUrl+'">';
+  }
+  
+  function UrlExists(url) {
+    var http = new XMLHttpRequest();
+    http.open('HEAD', url, false);
+    http.send();
+    if (http.status != 404)
+      return true;
+    else
+      return false;
+  }
 
   trs.hide();
   trs.slice(0, startIndex).show();
