@@ -128,9 +128,9 @@ layout: default
     {% assign refs=site.data[wpid-refs] %}
     <ol>
       {% for ref in refs %}
-      <li><div class="citation-js" data-input="pmid:{{ ref.pmid }}"  data-output-format="bibliography" data-output-template="apa">{{ ref.citation }} (<a href="http://www.ncbi.nlm.nih.gov/pubmed/{{ref.pmid}}">PubMed</a>,
+      <li><span class="citation-js" data-input="pmid:{{ ref.pmid }}"  data-output-format="bibliography" data-output-template="vancouver">{{ ref.citation }}</span> (<a href="http://www.ncbi.nlm.nih.gov/pubmed/{{ref.pmid}}">PubMed</a>,
         <a href="https://europepmc.org/abstract/MED/{{ref.pmid}}">EuropePMC</a>,
-        <a href="https://scholia.toolforge.org/pubmed/{{ref.pmid}}">Scholia</a>)</div> 
+        <a href="https://scholia.toolforge.org/pubmed/{{ref.pmid}}">Scholia</a>) 
       </li>
       {% endfor %}
     </ol>
