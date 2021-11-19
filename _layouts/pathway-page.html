@@ -64,6 +64,12 @@ layout: default
     file="https://raw.githubusercontent.com/wikipathways/repository/main/{{page.wpid}}/status.json">
     <!-- fill-in with img tag if file exists -->
     </a>
+    <!--This badge shows the curation status-->
+    <a id="badge-curation" target="_blank"
+    href="https://new.wikipathways.org/SARS-CoV-2-WikiPathways/reports/{{page.wpid}}.md"
+    file="https://new.wikipathways.org/SARS-CoV-2-WikiPathways/reports/{{page.wpid}}.json">
+    <!-- fill-in with img tag if file exists -->
+    </a>
     </div>
     <h2 id="authors">Authors</h2>
     {{ page.authors | array_to_sentence_string }}
