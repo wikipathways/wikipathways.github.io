@@ -138,8 +138,6 @@ layout: default
 </div>
 
 <script>
-  var badgeJson = $("#badge-json")[0];
-  var badgeJsonFileUrl = badgeJson.getAttribute("file");
   var trs = $("#participants-table tr");
   var btnMore = $("#tableMore");
   var btnLess = $("#tableLess");
@@ -148,8 +146,15 @@ layout: default
   var currentIndex = startIndex;
   var addIndex = 40;
 
+  var badgeJson = $("#badge-json")[0];
+  var badgeJsonFileUrl = badgeJson.getAttribute("file");
   if (UrlExists(badgeJsonFileUrl)){
     badgeJson.innerHTML = '<img alt="pathway status" src="https://img.shields.io/endpoint?url='+badgeJsonFileUrl+'">';
+  }
+  var badgeCuration = $("#badge-curation")[0];
+  var badgeCurationFileUrl = badgeCuration.getAttribute("file");
+  if (UrlExists(badgeCurationFileUrl)){
+    badgeCuration.innerHTML = '<img alt="pathway status" src="https://img.shields.io/endpoint?url='+badgeCurationFileUrl+'">';
   }
   
   function UrlExists(url) {
