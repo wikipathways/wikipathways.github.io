@@ -18,7 +18,7 @@ layout: default
     <span title="Edit markdown" style="color: #666;"><i
         class="fa fa-pencil"></i></span>
   </a>
-  {% include share.html %}
+  {% include_cached share.html %}
 
 </div>
 
@@ -225,7 +225,7 @@ layout: default
         console.log('Something went wrong', err);
       })
   });
-  
+
   const embedBtn = document.querySelector('.embed-btn');
   const toEmbed = document.querySelector('.embed-btn').getAttribute('to-copy');
 
