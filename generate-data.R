@@ -6,7 +6,7 @@ library(lubridate)
 
 
 ### Collect data
-getPathwayIdsByCurationTag()
+# getPathwayIdsByCurationTag()
 # all_wpid<-listPathwayIds()
 # reactome_wpid <- getPathwayIdsByCurationTag("Curation:Reactome_approved")
 # all_wpid<-setdiff(all_wpid, reactome_wpid)
