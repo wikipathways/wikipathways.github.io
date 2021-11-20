@@ -363,7 +363,7 @@ function addCard(c){
   cardDiv.innerHTML += '<div class="col-sm-auto">' +
     '<div class="card" style="width: 10rem;">' +
       '<a class="card-link" href="'+c["url"]+'">' +
-        '<img class="card-img-top" src="/assets/img/'+c["wpid"]+'/'+c["wpid"]+'-thumb.png">' +
+        '<img class="card-img-top" loading="lazy" src="/assets/img/'+c["wpid"]+'/'+c["wpid"]+'-thumb.png">' +
         '<div class="card-body">' +
           '<p class="card-text">'+c["title"]+' <em>('+c["org"]+')</em></p>' +
   '</div></a></div></div>';
