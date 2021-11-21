@@ -20,7 +20,7 @@ pw.df2 <- pw.df %>%
 
 l0 <- "PW:0000001"
 l1 <- as.list(pw.df2 %>%
-  filter(Parents == l0) %>%
+  filter(Parents == l0| ID == l0) %>%
   select(ID))$ID
 l2 <- as.list(pw.df2 %>%
                 filter(map_lgl(strsplit(Parents, "|", fixed=T), ~ any(.x %in% l1))) %>%
@@ -53,7 +53,7 @@ cl.df2 <- cl.df %>%
 
 l0 <- "CL:0000000"
 l1 <- as.list(cl.df2 %>%
-                filter(Parents == l0) %>%
+                filter(Parents == l0| ID == l0) %>%
                 select(ID))$ID
 l2 <- as.list(cl.df2 %>%
                 filter(map_lgl(strsplit(Parents, "|", fixed=T), ~ any(.x %in% l1))) %>%
@@ -86,7 +86,7 @@ di.df2 <- di.df %>%
 
 l0 <- "DOID:4"
 l1 <- as.list(di.df2 %>%
-                filter(Parents == l0) %>%
+                filter(Parents == l0 | ID == l0) %>%
                 select(ID))$ID
 l2 <- as.list(di.df2 %>%
                 filter(map_lgl(strsplit(Parents, "|", fixed=T), ~ any(.x %in% l1))) %>%
