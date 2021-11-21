@@ -77,6 +77,8 @@ layout: table-page
           <div class="row" id="pwcards">
             <!-- Add cards here -->
           </div>
+          <br/>
+          <input type="button" class="badge badge-secondary" id="cardsMore" value="show more" style="">
         </div>
         <div class="tab-pane fade" id="list" role="tabpanel">
           <br/>
@@ -135,6 +137,8 @@ layout: table-page
 <script>
 // TABLE FILTER
 // Declare one-time variables
+var btnMore = $("#cardsMore");
+btnMore.hide();
 var table = document.getElementById("myTable");
 var tr = table.getElementsByTagName("tr");
 var cardDiv = document.getElementById('pwcards');
@@ -149,13 +153,16 @@ var fils = {
 
 function filterTable() {
   // Declare variables
-  var activeFils, emptyFils, input, filSplit, td, i, txtValue, cardVars;
+  var activeFils, emptyFils, input, filSplit, td, i, j, txtValue, cardVars;
   activeFils = [];
   emptyFils = [];
   cardVars = {};
+  cardVarsMore = [];
   cardDiv.innerHTML = "";
   listDiv.innerHTML = "";
-  
+  j = 0;
+  btnMore.hide();
+
   // Define empty and active filter sets
   Object.keys(fils).forEach(key => {
     input = document.getElementById(key).value;
@@ -166,8 +173,8 @@ function filterTable() {
     }
   });
  
-  // Loop through all table rows
-  for (i = 0; i < tr.length; i++) {
+  // Loop through all table rows //TODO: sort table alphabetically by pathway title 
+  for (var i = 0; i < tr.length; i++) {
     // Loop through column filters
     if(activeFils.length == 0) {
       // Hide all if nothing selected 
@@ -197,18 +204,24 @@ function filterTable() {
       } 
     });
     if (tr[i].style.display == "" && i > 0){
+      j++;
+      cardVars = {};
       cardVars["wpid"] = tr[i].cells[5].innerText;
       cardVars["title"] = tr[i].cells[6].innerText;
       cardVars["url"] = tr[i].cells[7].innerText;
       cardVars["org"] = tr[i].cells[8].innerText;
-      addCard(cardVars);
       addList(cardVars);
-    } 
+      if(j <= 50){
+        addCard(cardVars); //display "show more" button and store cards at i > 50
+      } else {
+        btnMore.show();
+        cardVarsMore.push(cardVars);
+      }
+    }
     // console.log(tr[i]);
   }
+  // console.log(cardVarsMore);
 }
-
-// $("#myTable tbody tr:visible").each(function(){$(this)[1]})[2].textContent
 
 // Listen for organism checkboxes
 var orgList = []
@@ -372,5 +385,21 @@ function addCard(c){
 function addList(c){
   listDiv.innerHTML += '<li><a href="'+c["url"]+'">'+c["title"]+' <em>('+c["org"]+')</em></a></li>';
 }
+
+  btnMore.click(function (e) {
+    e.preventDefault();
+    btnMore.hide();
+    console.log("Show more!");
+    var k=0;
+    Object.values(cardVarsMore).forEach(val => {
+      if(k <= 50){ // show 50 at a time
+        addCard(val); 
+        cardVarsMore.shift();
+      } else {
+        btnMore.show();
+      }
+      k++;
+    });
+  });
 
 </script>
