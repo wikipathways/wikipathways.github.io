@@ -392,7 +392,7 @@ function addList(c){
     console.log("Show more!");
     var k=0;
     Object.values(cardVarsMore).forEach(val => {
-      if(k <= 40){ // show 40 at a time
+      if(k <= 80){ // show 80 at a time
         addCard(val); 
         cardVarsMore.shift();
       } else {
