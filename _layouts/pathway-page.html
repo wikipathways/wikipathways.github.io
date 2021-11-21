@@ -39,14 +39,14 @@ layout: default
       aria-haspopup="true" aria-expanded="false">
       options
     </button>
-  </div>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <a class="dropdown-item" href="https://pathway-viewer.toolforge.org/?id={{page.wpid}}" target="_blank">Open in new
       tab</a>
     <a class="dropdown-item" href="https://www.ndexbio.org/viewer/networks/{{page.ndex}}" target="_blank">Open in NDEx</a>
     <a class="dropdown-item" href="#">Download PNG</a>
     <a class="dropdown-item" href="#">Download SVG</a>
     <a class="dropdown-item" href="#">Download GPML</a>
+    </div>
   </div>
   <div>
   <!-- Evaluate last-edited date to set badge color -->
@@ -74,7 +74,6 @@ layout: default
     file="https://new.wikipathways.org/SARS-CoV-2-WikiPathways/reports/{{page.wpid}}.json">
     <!-- fill-in with img tag if file exists -->
     </a>
-  </div>
     <h2 id="authors">Authors</h2>
     {{ page.authors | array_to_sentence_string }}
 
