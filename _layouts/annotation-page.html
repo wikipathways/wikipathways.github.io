@@ -1,11 +1,23 @@
 ---
 layout: default
 ---
-    <h1> {{ page.type }}: {{ page.value }}</h1>
-    <h3> <a href="http://bioportal.bioontology.org/ontologies/{{ page.xref-dataSource }}?p=classes&conceptid=http://purl.obolibrary.org/obo/{{ page.xref-dataSource }}_{{page.xref-identifier}}"
+    <h1> {{ page.type }}</h1>
+    <h2> 
+      <a href="http://bioportal.bioontology.org/ontologies/{{ page.xref-dataSource }}?p=classes&conceptid=http://purl.obolibrary.org/obo/{{ page.xref-dataSource }}_{{page.xref-identifier}}"
         target="_blank">
-        {{ page.xref-dataSource }}:{{page.xref-identifier}}</a></h3>
+        {{ page.value }} <font size="+1">({{ page.xref-dataSource }}:{{page.xref-identifier}})</font>
+      </a>
+    </h2>
     <p>{{ page.definition }}</p>
+    {% if page.parents.size > 0 %}
+      <p>Parent terms: 
+      {% for parent in page.parents %}
+        <a href="/annotations/{{page.xref-dataSource }}:{{parent}}.html">
+          {{ page.xref-dataSource }}:{{parent}}
+        </a>
+      {% endfor %}
+      </p>
+    {% endif %}
 
     <ul class="nav nav-tabs">
       <li class="nav-item">

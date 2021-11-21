@@ -4,5 +4,6 @@ type: "Disease"
 xref-identifier: "445"
 xref-dataSource: "DOID"
 definition: ""
-level: "4"
+level: "Level 3"
+parents: [447,0050177]
 ---

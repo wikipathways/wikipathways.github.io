@@ -4,5 +4,6 @@ type: "Disease"
 xref-identifier: "557"
 xref-dataSource: "DOID"
 definition: "A urinary system disease that is located_in the kidney."
-level: "4"
+level: "Level 2"
+parents: [18,4]
 ---

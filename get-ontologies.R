@@ -16,6 +16,10 @@ pw.df2 <- pw.df %>%
   rename(ID = Class.ID) %>%
   mutate(ID = gsub("_",":",gsub("http://purl.obolibrary.org/obo/","",ID))) %>%
   mutate(Parents = gsub("_",":",gsub("http://purl.obolibrary.org/obo/","",Parents))) %>%
+  mutate(ParentsXref = gsub("PW:","",Parents)) %>%
+  mutate(ParentsXref = gsub("|",",",ParentsXref, fixed = T)) %>%
+  mutate(Definitions = gsub("[\r\n]", "", Definitions)) %>%
+  mutate(Definitions = gsub('"', '\\\\"', Definitions)) %>%
   filter(Obsolete == "false") 
 
 l0 <- "PW:0000001"
@@ -30,9 +34,9 @@ l3 <- as.list(pw.df2 %>%
                 select(ID))$ID
 
 pw.df3 <- pw.df2 %>%
-  mutate(Level = if_else(Parents == l0, 1, 
-                         if_else(Parents %in% l1, 2,
-                                 if_else(Parents %in% l2, 3, 4))))
+  mutate(Level = if_else(ID %in% l1, "", 
+                         if_else(ID %in% l2, "Level 2",
+                                 if_else(ID %in% l3, "Level 3", "Level 4+"))))
 
 update_md_annotations(pw.df3)
 
@@ -48,6 +52,10 @@ cl.df2 <- cl.df %>%
   rename(ID = Class.ID) %>%
   mutate(ID = gsub("_",":",gsub("http://purl.obolibrary.org/obo/","",ID))) %>%
   mutate(Parents = gsub("_",":",gsub("http://purl.obolibrary.org/obo/","",Parents))) %>%
+  mutate(ParentsXref = gsub("CL:","",Parents)) %>%
+  mutate(ParentsXref = gsub("|",",",ParentsXref, fixed = T)) %>%
+  mutate(Definitions = gsub("[\r\n]", "", Definitions)) %>%
+  mutate(Definitions = gsub('"', '\\\\"', Definitions)) %>%
   filter(Obsolete == "false") %>%
   filter(str_detect(ID, "^CL:"))
 
@@ -63,9 +71,9 @@ l3 <- as.list(cl.df2 %>%
                 select(ID))$ID
 
 cl.df3 <- cl.df2 %>%
-  mutate(Level = if_else(Parents == l0, 1, 
-                         if_else(Parents %in% l1, 2,
-                                 if_else(Parents %in% l2, 3, 4))))
+  mutate(Level = if_else(ID %in% l1, "", 
+                         if_else(ID %in% l2, "Level 2",
+                                 if_else(ID %in% l3, "Level 3", "Level 4+"))))
 
 update_md_annotations(cl.df3)
 
@@ -81,6 +89,10 @@ di.df2 <- di.df %>%
   rename(ID = Class.ID) %>%
   mutate(ID = gsub("_",":",gsub("http://purl.obolibrary.org/obo/","",ID))) %>%
   mutate(Parents = gsub("_",":",gsub("http://purl.obolibrary.org/obo/","",Parents))) %>%
+  mutate(ParentsXref = gsub("DOID:","",Parents)) %>%
+  mutate(ParentsXref = gsub("|",",",ParentsXref, fixed = T)) %>%
+  mutate(Definitions = gsub("[\r\n]", "", Definitions)) %>%
+  mutate(Definitions = gsub('"', '\\\\"', Definitions)) %>%
   filter(Obsolete == "false") %>%
   filter(str_detect(ID, "^DOID:"))
 
@@ -96,9 +108,9 @@ l3 <- as.list(di.df2 %>%
                 select(ID))$ID
 
 di.df3 <- di.df2 %>%
-  mutate(Level = if_else(Parents == l0, 1, 
-                         if_else(Parents %in% l1, 2,
-                                 if_else(Parents %in% l2, 3, 4))))
+  mutate(Level = if_else(ID %in% l1, "", 
+                         if_else(ID %in% l2, "Level 2",
+                                 if_else(ID %in% l3, "Level 3", "Level 4+"))))
 
 update_md_annotations(di.df3)
 
@@ -114,21 +126,50 @@ update_md_annotations<-function(dl){
     fn<-p["ID"]
     def<-p["Definitions"]
     level<-p["Level"]
+    parents<-p["ParentsXref"]
+    #clean parents
+    par.split <- strsplit(parents, ",")[[1]]
+    par.sub <- par.split[grepl("^\\d+$", par.split)]
+    parents <- toString(shQuote(par.sub))
     filename <- file.path('_annotations', paste(fn,'md', sep = "."))
     if(file.exists(filename)){
       print(fn)
       con <- file(filename)
       on.exit(close(con))
       dat <- readLines(con, warn=FALSE)
-      if(length(dat)==6){
-        new.line <- paste0('level: "',level,'"')
-        dat <- insert_line_at(dat, new.line, insert_after=5)
+      if(length(dat)>6){
+        # new.line <- paste0('level: "',level,'"')
+        # dat <- insert_line_at(dat, new.line, insert_after=5)
+        # new.line <- paste0('definition: "',def,'"')
+        # dat <- insert_line_at(dat, new.line, insert_after=5)
+        dat <- dat[1:5]
         new.line <- paste0('definition: "',def,'"')
-        dat <- insert_line_at(dat, new.line, insert_after=5)
+        dat[6] <- new.line
+        new.line <- paste0('level: "',level,'"')
+        dat[7] <- new.line
+        new.line <- paste0('parents: [',parents,']')
+        dat[8] <- new.line
+        dat[9] <- '---'
         write(dat, file = filename, append = F)
       }
     }
   })
+}
+
+# set_obsolete md annotations
+for (fn in list.files("_annotations")){
+  filename <- file.path('_annotations', fn)
+  con <- file(filename)
+  on.exit(close(con))
+  dat <- readLines(con, warn=FALSE)
+  if(length(dat)==6){
+    print(fn)
+    new.line <- paste0('level: "Obsolete"')
+    dat[6] <- new.line
+    dat[7] <- '---'
+    write(dat, file = filename, append = F)
+  }
+  close(con)
 }
 
 
