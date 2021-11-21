@@ -49,7 +49,6 @@ layout: default
       <a class="dropdown-item" href="#">Download SVG</a>
       <a class="dropdown-item" href="#">Download GPML</a>
     </div>
-  </div>
   <!-- Evaluate last-edited date to set badge color -->
   {% assign edit = page.last-edited | date: '%s' %}
   {% assign now = 'now' | date: '%s' %}
@@ -139,8 +138,7 @@ layout: default
       </li>
       {% endfor %}
     </ol>
-
-</div>
+  </div>
 
 <script>
   var trs = $("#participants-table tr");
