@@ -84,7 +84,14 @@ layout: default
     {% endif %}
     {% endfor %}
 
-    <h2 id="communities">Communities</h2>
+
+    <h2 id="communities">Communities
+    <a href="https://github.com/wikipathways/playground-database/tree/main/communities"
+    target="_blank">
+      <span title="Edit communities" style="color: #666; font-size: 0.8em;"><i
+        class="fa fa-pencil"></i></span>
+    </a>
+    </h2>
     {% for com in site.communities %}
     {% if page.communities contains com.community-tag %}
     <a class="btn btn-sm btn-pill btn-success" href="{{com.url}}">{{com.display-name}}</a>
