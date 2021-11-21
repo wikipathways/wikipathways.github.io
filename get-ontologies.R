@@ -8,6 +8,7 @@ library(R.utils)
 pw.url <- "https://data.bioontology.org/ontologies/PW/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb&download_format=csv"
 con <- gzcon(url(pw.url))
 txt <- readLines(con)
+close(con)
 pw.df <- read.csv(textConnection(txt))
 
 pw.df <- select(pw.df, c(Class.ID, Definitions, Obsolete, Parents))
@@ -33,6 +34,75 @@ pw.df3 <- pw.df2 %>%
                          if_else(Parents %in% l1, 2,
                                  if_else(Parents %in% l2, 3, 4))))
 
+update_md_annotations(pw.df3)
+
+## CELL TYPE
+cl.url <- "https://data.bioontology.org/ontologies/CL/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb&download_format=csv"
+con <- gzcon(url(cl.url))
+txt <- readLines(con)
+close(con)
+cl.df <- read.csv(textConnection(txt))
+
+cl.df <- select(cl.df, c(Class.ID, Definitions, Obsolete, Parents))
+cl.df2 <- cl.df %>%
+  rename(ID = Class.ID) %>%
+  mutate(ID = gsub("_",":",gsub("http://purl.obolibrary.org/obo/","",ID))) %>%
+  mutate(Parents = gsub("_",":",gsub("http://purl.obolibrary.org/obo/","",Parents))) %>%
+  filter(Obsolete == "false") %>%
+  filter(str_detect(ID, "^CL:"))
+
+l0 <- "CL:0000000"
+l1 <- as.list(cl.df2 %>%
+                filter(Parents == l0) %>%
+                select(ID))$ID
+l2 <- as.list(cl.df2 %>%
+                filter(map_lgl(strsplit(Parents, "|", fixed=T), ~ any(.x %in% l1))) %>%
+                select(ID))$ID
+l3 <- as.list(cl.df2 %>%
+                filter(map_lgl(strsplit(Parents, "|", fixed=T), ~ any(.x %in% l2))) %>%
+                select(ID))$ID
+
+cl.df3 <- cl.df2 %>%
+  mutate(Level = if_else(Parents == l0, 1, 
+                         if_else(Parents %in% l1, 2,
+                                 if_else(Parents %in% l2, 3, 4))))
+
+update_md_annotations(cl.df3)
+
+## DISEASE
+di.url <- "https://data.bioontology.org/ontologies/DOID/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb&download_format=csv"
+con <- gzcon(url(di.url))
+txt <- readLines(con)
+close(con)
+di.df <- read.csv(textConnection(txt))
+
+di.df <- select(di.df, c(Class.ID, Definitions, Obsolete, Parents))
+di.df2 <- di.df %>%
+  rename(ID = Class.ID) %>%
+  mutate(ID = gsub("_",":",gsub("http://purl.obolibrary.org/obo/","",ID))) %>%
+  mutate(Parents = gsub("_",":",gsub("http://purl.obolibrary.org/obo/","",Parents))) %>%
+  filter(Obsolete == "false") %>%
+  filter(str_detect(ID, "^DOID:"))
+
+l0 <- "DOID:4"
+l1 <- as.list(di.df2 %>%
+                filter(Parents == l0) %>%
+                select(ID))$ID
+l2 <- as.list(di.df2 %>%
+                filter(map_lgl(strsplit(Parents, "|", fixed=T), ~ any(.x %in% l1))) %>%
+                select(ID))$ID
+l3 <- as.list(di.df2 %>%
+                filter(map_lgl(strsplit(Parents, "|", fixed=T), ~ any(.x %in% l2))) %>%
+                select(ID))$ID
+
+di.df3 <- di.df2 %>%
+  mutate(Level = if_else(Parents == l0, 1, 
+                         if_else(Parents %in% l1, 2,
+                                 if_else(Parents %in% l2, 3, 4))))
+
+update_md_annotations(di.df3)
+
+#### FUNCTIONS ####
 insert_line_at <- function(dat, to_insert, insert_after){
   pre <- dat[1:insert_after]
   post <- dat[(insert_after+1):length(dat)]
@@ -61,7 +131,7 @@ update_md_annotations<-function(dl){
   })
 }
 
-update_md_annotations(pw.df3)
+
 
 
   
