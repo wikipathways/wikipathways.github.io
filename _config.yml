@@ -93,7 +93,7 @@ defaults:
       layout: "default"
 
 # Browse pages
-browse-pages: [pathways,organisms,communities,annotations]
+browse-pages: [pathways-table,pathways-filters,organisms,communities,annotations]
 
 # Custom collections
 collections:
