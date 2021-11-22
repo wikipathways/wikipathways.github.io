@@ -25,11 +25,12 @@ layout: default
         <a class="nav-link" data-toggle="tab" href="#list">List</a>
       </li>
     </ul>
+    {% assign sorted_pathways = site.pathways | sort: "title" %}
     <div class="tab-content" >
       <div class="tab-pane fade show active" id="gallery" role="tabpanel">
         <br/>
     <div class="row">
-      {% for pw in site.pathways %}
+      {% for pw in sorted_pathways %}
           {% if pw.communities contains page.community-tag %}
           <div class="col-sm-auto">
             <div class="card" style="width: 10rem;">
@@ -49,7 +50,7 @@ layout: default
     <br/>
     <div class="row" style="margin-left: 10px;">
       <ul>
-        {% for pw in site.pathways %}
+        {% for pw in sorted_pathways %}
           {% if pw.communities contains page.community-tag %}
               <li><a href="{{ pw.url }}">{{ pw.title }} <em>({{ pw.organisms.first }})</em></a></li>
           {% endif %}

@@ -28,11 +28,12 @@ layout: default
         <a class="nav-link" data-toggle="tab" href="#list">List</a>
       </li>
     </ul>
+    {% assign sorted_pathways = site.pathways | sort: "title" %}
     <div class="tab-content" >
       <div class="tab-pane fade show active" id="gallery" role="tabpanel">
         <br/>
     <div class="row">
-      {% for pw in site.pathways %}
+      {% for pw in sorted_pathways %}
         {% assign annot-values= pw.annotations | where: "type", page.type | map: "value" %}
         {% if annot-values contains page.value %}
           <div class="col-sm-auto">
@@ -53,7 +54,7 @@ layout: default
     <br/>
     <div class="row" style="margin-left: 10px;">
       <ul>
-        {% for pw in site.pathways %}
+        {% for pw in sorted_pathways %}
           {% assign annot-values= pw.annotations | where: "type", page.type | map: "value" %}
           {% if annot-values contains page.value %}
               <li><a href="{{ pw.url }}">{{ pw.title }} <em>({{ pw.organisms.first }})</em></a></li>
