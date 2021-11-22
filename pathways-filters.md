@@ -63,7 +63,7 @@ layout: table-page
       </section>
     </div> <!-- End checkboxes div -->
     <div class="col-sm" id="tabs">
-      <ul class="nav nav-tabs">
+      <ul class="nav nav-tabs" style="float:left;">
         <li class="nav-item">
           <a class="nav-link active" data-toggle="tab" href="#gallery">Gallery</a>
         </li>
@@ -71,6 +71,11 @@ layout: table-page
           <a class="nav-link" data-toggle="tab" href="#list">List</a>
         </li>
       </ul>
+      <div style="margin-left:300px;"> 
+      <button type="button" class="btn btn-sm btn-outline-secondary" onclick="sortTable(6)" title="Sort by title">Title <i class="fa fa-sort"></i></button>
+      <button type="button" class="btn btn-sm btn-outline-secondary" onclick="sortTable(5)" title="Sort by ID">ID <i class="fa fa-sort"></i></button>
+      <button type="button" class="btn btn-sm btn-outline-secondary" onclick="sortTable(9)" title="Sort by last edited date">Date <i class="fa fa-sort"></i></button>
+      </div>
       <div class="tab-content" >
         <div class="tab-pane fade show active" id="gallery" role="tabpanel">
           <br/>
@@ -104,6 +109,7 @@ layout: table-page
             <th style="display:none;" >title</th>
             <th style="display:none;" >url</th>
             <th style="display:none;" >firstorg</th>
+            <th style="display:none;" >lastedited</th>
             {% for pw in site.pathways %}
               {% assign pw-type-group = pw.annotations | group_by: "type" %}
               <tr>
@@ -126,6 +132,7 @@ layout: table-page
                 <td style="display:none;" >{{ pw.title }}</td>
                 <td style="display:none;" >{{ pw.url }}</td>
                 <td style="display:none;" >{{ pw.organisms.first }}</td>
+                <td style="display:none;" >{{ pw.last-edited }}</td>
               </tr>
             {% endfor %}
         </table>
@@ -138,7 +145,6 @@ layout: table-page
 // TABLE FILTER
 // Declare one-time variables
 var btnMore = $("#cardsMore");
-btnMore.hide();
 var table = document.getElementById("myTable");
 var tr = table.getElementsByTagName("tr");
 var cardDiv = document.getElementById('pwcards');
@@ -150,6 +156,9 @@ var fils = {
   'dio':3,
   'cto':4
 };
+// Initialize states
+btnMore.hide();
+sortTable(6);
 
 function filterTable() {
   // Declare variables
@@ -402,4 +411,62 @@ function addList(c){
     });
   });
 
+function sortTable(n) {
+  console.log(n);
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable");
+  switching = true;
+  dir = "asc";
+  while (switching) {
+    switching = false;
+    rows = table.rows;
+    /* Loop through all table rows (except the
+    first, which contains table headers): */
+    for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      /* Get the two elements you want to compare,
+      one from current row and one from the next: */
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /* Check if the two rows should switch place,
+      based on the direction, asc or desc: */
+      if (dir == "asc") {
+        if (n == 9){ // Date
+          if (new Date(x.innerHTML) > new Date(y.innerHTML)) {
+            shouldSwitch = true;
+            break;
+          }
+        } else {
+          if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+            shouldSwitch = true;
+            break;
+          }
+        }
+      } else if (dir == "desc") {
+        if (n == 9){ // Date
+          if (new Date(x.innerHTML) < new Date(y.innerHTML)) {
+            shouldSwitch = true;
+            break;
+          }
+        } else {
+          if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+            shouldSwitch = true;
+            break;
+          }
+        }
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount ++;
+    } else {
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+  filterTable()
+}
 </script>

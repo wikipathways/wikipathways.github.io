@@ -10,28 +10,28 @@ layout: table-page
   <col style="width:auto" />
   <col style="width:120px" />
   <th>Pathway Title
-  <span onclick="sortTable(0)" title="Copy link to clipboard" style="color: #666;"><i class="fa fa-sort"></i></span>
+  <span onclick="sortTable(0)" title="Sort by title" style="color: #666;"><i class="fa fa-sort"></i></span>
   <br /><input type="text" id="0" style="width:250px;" onkeyup="filterTable()"></th>
   <th>ID
-  <span onclick="sortTable(1)" title="Copy link to clipboard" style="color: #666;"><i class="fa fa-sort"></i></span>
+  <span onclick="sortTable(1)" title="Sort by ID" style="color: #666;"><i class="fa fa-sort"></i></span>
   <br /><input type="text" id="1" style="width:50px;" onkeyup="filterTable()"></th>
   <th>Organism
-  <span onclick="sortTable(2)" title="Copy link to clipboard" style="color: #666;"><i class="fa fa-sort"></i></span>
+  <span onclick="sortTable(2)" title="Sort by organism" style="color: #666;"><i class="fa fa-sort"></i></span>
   <br /><input type="text" id="2" style="width:100px;" onkeyup="filterTable()"></th>
   <th>Last Edited
-  <span onclick="sortTable(3)" title="Copy link to clipboard" style="color: #666;"><i class="fa fa-sort"></i></span>
+  <span onclick="sortTable(3)" title="Sort by last edited date" style="color: #666;"><i class="fa fa-sort"></i></span>
   <br /><input type="text" id="3" style="width:70px;" onkeyup="filterTable()"></th>
   <th>Communities
-  <span onclick="sortTable(4)" title="Copy link to clipboard" style="color: #666;"><i class="fa fa-sort"></i></span>
+  <span onclick="sortTable(4)" title="Sort by communities" style="color: #666;"><i class="fa fa-sort"></i></span>
   <br /><input type="text" id="4" style="width:100px;" onkeyup="filterTable()"></th>
   <th>Pathway Terms
-  <span onclick="sortTable(5)" title="Copy link to clipboard" style="color: #666;"><i class="fa fa-sort"></i></span>
+  <span onclick="sortTable(5)" title="Sort by pathway ontology terms" style="color: #666;"><i class="fa fa-sort"></i></span>
   <br /><input type="text" id="5" style="width:100px;" onkeyup="filterTable()"></th>
   <th>Disease Terms
-  <span onclick="sortTable(6)" title="Copy link to clipboard" style="color: #666;"><i class="fa fa-sort"></i></span>
+  <span onclick="sortTable(6)" title="Sort by disease ontology terms" style="color: #666;"><i class="fa fa-sort"></i></span>
   <br /><input type="text" id="6" style="width:100px;" onkeyup="filterTable()"></th>
   <th>Cell Types
-  <span onclick="sortTable(7)" title="Copy link to clipboard" style="color: #666;"><i class="fa fa-sort"></i></span>
+  <span onclick="sortTable(7)" title="Sort by cell type ontology terms" style="color: #666;"><i class="fa fa-sort"></i></span>
   <br /><input type="text" id="7" style="width:100px;" onkeyup="filterTable()"></th>
   {% for pw in site.pathways %}
   {% assign pw-type-group = pw.annotations | group_by: "type" %}
