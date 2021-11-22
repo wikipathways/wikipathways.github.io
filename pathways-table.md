@@ -8,15 +8,31 @@ layout: table-page
   <col style="width:500px" />
   <col style="width:75px" />
   <col style="width:auto" />
-  <col style="width:110px" />
-  <th>Pathway Title<br /><input type="text" id="0" style="width:250px;" onkeyup="filterTable()"></th>
-  <th>ID<br /><input type="text" id="1" style="width:50px;" onkeyup="filterTable()"></th>
-  <th>Organism<br /><input type="text" id="2" style="width:100px;" onkeyup="filterTable()"></th>
-  <th>Last Edited<br /><input type="text" id="3" style="width:70px;" onkeyup="filterTable()"></th>
-  <th>Communities<br /><input type="text" id="4" style="width:100px;" onkeyup="filterTable()"></th>
-  <th>Pathway Terms<br /><input type="text" id="5" style="width:100px;" onkeyup="filterTable()"></th>
-  <th>Disease Terms<br /><input type="text" id="6" style="width:100px;" onkeyup="filterTable()"></th>
-  <th>Cell Types<br /><input type="text" id="7" style="width:100px;" onkeyup="filterTable()"></th>
+  <col style="width:120px" />
+  <th>Pathway Title
+  <span onclick="sortTable(0)" title="Copy link to clipboard" style="color: #666;"><i class="fa fa-sort"></i></span>
+  <br /><input type="text" id="0" style="width:250px;" onkeyup="filterTable()"></th>
+  <th>ID
+  <span onclick="sortTable(1)" title="Copy link to clipboard" style="color: #666;"><i class="fa fa-sort"></i></span>
+  <br /><input type="text" id="1" style="width:50px;" onkeyup="filterTable()"></th>
+  <th>Organism
+  <span onclick="sortTable(2)" title="Copy link to clipboard" style="color: #666;"><i class="fa fa-sort"></i></span>
+  <br /><input type="text" id="2" style="width:100px;" onkeyup="filterTable()"></th>
+  <th>Last Edited
+  <span onclick="sortTable(3)" title="Copy link to clipboard" style="color: #666;"><i class="fa fa-sort"></i></span>
+  <br /><input type="text" id="3" style="width:70px;" onkeyup="filterTable()"></th>
+  <th>Communities
+  <span onclick="sortTable(4)" title="Copy link to clipboard" style="color: #666;"><i class="fa fa-sort"></i></span>
+  <br /><input type="text" id="4" style="width:100px;" onkeyup="filterTable()"></th>
+  <th>Pathway Terms
+  <span onclick="sortTable(5)" title="Copy link to clipboard" style="color: #666;"><i class="fa fa-sort"></i></span>
+  <br /><input type="text" id="5" style="width:100px;" onkeyup="filterTable()"></th>
+  <th>Disease Terms
+  <span onclick="sortTable(6)" title="Copy link to clipboard" style="color: #666;"><i class="fa fa-sort"></i></span>
+  <br /><input type="text" id="6" style="width:100px;" onkeyup="filterTable()"></th>
+  <th>Cell Types
+  <span onclick="sortTable(7)" title="Copy link to clipboard" style="color: #666;"><i class="fa fa-sort"></i></span>
+  <br /><input type="text" id="7" style="width:100px;" onkeyup="filterTable()"></th>
   {% for pw in site.pathways %}
   {% assign pw-type-group = pw.annotations | group_by: "type" %}
   <tr>
@@ -98,6 +114,63 @@ function filterTable() {
         }
       } 
     });
+  }
+}
+
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable");
+  switching = true;
+  dir = "asc";
+  while (switching) {
+    switching = false;
+    rows = table.rows;
+    /* Loop through all table rows (except the
+    first, which contains table headers): */
+    for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      /* Get the two elements you want to compare,
+      one from current row and one from the next: */
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /* Check if the two rows should switch place,
+      based on the direction, asc or desc: */
+      if (dir == "asc") {
+        if (n == 3){ // Date
+          if (new Date(x.innerHTML) > new Date(y.innerHTML)) {
+            shouldSwitch = true;
+            break;
+          }
+        } else {
+          if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+            shouldSwitch = true;
+            break;
+          }
+        }
+      } else if (dir == "desc") {
+        if (n == 3){ // Date
+          if (new Date(x.innerHTML) < new Date(y.innerHTML)) {
+            shouldSwitch = true;
+            break;
+          }
+        } else {
+          if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+            shouldSwitch = true;
+            break;
+          }
+        }
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount ++;
+    } else {
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
   }
 }
 </script>
