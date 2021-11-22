@@ -1,4 +1,5 @@
-<h2>Pathways by Community</h2>
+<h1>Pathways by Community</h1>
+<p>Browse the communities below and explore their curated pathways.</p>
 {% for x in site.communities %}
   <p><a class="btn btn-sm btn-pill btn-success" href="{{ x.url }}">{{ x.display-name }}</a>
 <br />{{x.short-description}}</p>

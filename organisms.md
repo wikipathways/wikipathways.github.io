@@ -1,4 +1,4 @@
-<h2>Pathways by Organism</h2>
+<h1>Pathways by Organism</h1>
 <p>Browse species groupings below to identify pathways.</p>
 {% assign type-group = site.organisms | group_by: "group" | sort: "name" | reverse  %}
 {% for type in type-group %}
