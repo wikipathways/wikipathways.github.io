@@ -118,21 +118,29 @@ function filterTable() {
 }
 
 function sortTable(n) {
-  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  var table, rows, switching, q ,r, x, y, shouldSwitch, dir, switchcount = 0;
+  var visibleRows = [];
   table = document.getElementById("myTable");
   switching = true;
   dir = "asc";
+  rows = table.rows;
+  /* Collect visible rows (except the
+  first, which contains table headers) */
+  for (q = 1; q < rows.length; q++) {
+    if (rows[q].style.display == ""){ //visible row
+      visibleRows.push(q);
+    }
+  }
   while (switching) {
     switching = false;
-    rows = table.rows;
     /* Loop through all table rows (except the
     first, which contains table headers): */
-    for (i = 1; i < (rows.length - 1); i++) {
+    for (r = 0; r < (visibleRows.length - 1); r++) {
       shouldSwitch = false;
       /* Get the two elements you want to compare,
       one from current row and one from the next: */
-      x = rows[i].getElementsByTagName("TD")[n];
-      y = rows[i + 1].getElementsByTagName("TD")[n];
+      x = rows[visibleRows[r]].getElementsByTagName("TD")[n];
+      y = rows[visibleRows[r + 1]].getElementsByTagName("TD")[n];
       /* Check if the two rows should switch place,
       based on the direction, asc or desc: */
       if (dir == "asc") {
@@ -162,7 +170,7 @@ function sortTable(n) {
       }
     }
     if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      rows[visibleRows[r]].parentNode.insertBefore(rows[visibleRows[r + 1]], rows[visibleRows[r]]);
       switching = true;
       switchcount ++;
     } else {

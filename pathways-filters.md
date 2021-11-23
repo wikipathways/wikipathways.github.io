@@ -182,7 +182,7 @@ function filterTable() {
     }
   });
  
-  // Loop through all table rows //TODO: sort table alphabetically by pathway title 
+  // Loop through all table rows  
   for (var i = 0; i < tr.length; i++) {
     // Loop through column filters
     if(activeFils.length == 0) {
@@ -398,7 +398,6 @@ function addList(c){
   btnMore.click(function (e) {
     e.preventDefault();
     btnMore.hide();
-    console.log("Show more!");
     var k=0;
     Object.values(cardVarsMore).forEach(val => {
       if(k <= 80){ // show 80 at a time
@@ -412,22 +411,29 @@ function addList(c){
   });
 
 function sortTable(n) {
-  console.log(n);
-  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  var table, rows, switching, q ,r, x, y, shouldSwitch, dir, switchcount = 0;
+  var visibleRows = [];
   table = document.getElementById("myTable");
   switching = true;
   dir = "asc";
+  rows = table.rows;
+  /* Collect visible rows (except the
+  first, which contains table headers) */
+  for (q = 1; q < rows.length; q++) {
+    if (rows[q].style.display == ""){ //visible row
+      visibleRows.push(q);
+    }
+  }
   while (switching) {
     switching = false;
-    rows = table.rows;
-    /* Loop through all table rows (except the
-    first, which contains table headers): */
-    for (i = 1; i < (rows.length - 1); i++) {
+    /* Loop through all VISIBLE table rows (+1) */
+    for (r = 0; r < (visibleRows.length -1); r++){
+      // console.log(visibleRows[r]);
       shouldSwitch = false;
       /* Get the two elements you want to compare,
       one from current row and one from the next: */
-      x = rows[i].getElementsByTagName("TD")[n];
-      y = rows[i + 1].getElementsByTagName("TD")[n];
+      x = rows[visibleRows[r]].getElementsByTagName("TD")[n];
+      y = rows[visibleRows[r + 1]].getElementsByTagName("TD")[n];
       /* Check if the two rows should switch place,
       based on the direction, asc or desc: */
       if (dir == "asc") {
@@ -455,9 +461,9 @@ function sortTable(n) {
           }
         }
       }
-    }
+    } // end for each row
     if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      rows[visibleRows[r]].parentNode.insertBefore(rows[visibleRows[r + 1]], rows[visibleRows[r]]);
       switching = true;
       switchcount ++;
     } else {
@@ -466,7 +472,7 @@ function sortTable(n) {
         switching = true;
       }
     }
-  }
+  } 
   filterTable()
 }
 </script>

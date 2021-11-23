@@ -6,3 +6,6 @@ _site
 vendor
 **/.DS_Store
 Gemfile.lock
+.RData
+.Rhistory
+_pathways_hold
