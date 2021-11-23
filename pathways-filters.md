@@ -71,12 +71,12 @@ layout: table-page
           <a class="nav-link" data-toggle="tab" href="#list">List</a>
         </li>
       </ul>
-      <div style="margin-left:300px;"> 
+      <div id="sortable" style="margin-left:300px;"> 
       <button type="button" class="btn btn-sm btn-outline-secondary" onclick="sortTable(6)" title="Sort by title">Title <i class="fa fa-sort"></i></button>
       <button type="button" class="btn btn-sm btn-outline-secondary" onclick="sortTable(5)" title="Sort by ID">ID <i class="fa fa-sort"></i></button>
       <button type="button" class="btn btn-sm btn-outline-secondary" onclick="sortTable(9)" title="Sort by last edited date">Date <i class="fa fa-sort"></i></button>
       </div>
-      <div class="tab-content" >
+      <div class="tab-content"  style="clear:both;">
         <div class="tab-pane fade show active" id="gallery" role="tabpanel">
           <br/>
           <div class="row" id="pwcards">
@@ -144,6 +144,7 @@ layout: table-page
 <script>
 // TABLE FILTER
 // Declare one-time variables
+var sortDiv = document.getElementById("sortable");
 var btnMore = $("#cardsMore");
 var table = document.getElementById("myTable");
 var tr = table.getElementsByTagName("tr");
@@ -158,7 +159,29 @@ var fils = {
 };
 // Initialize states
 btnMore.hide();
+countVisibleRows();
 // sortTable(6); // TOO SLOW PRIOR TO FILTERING
+
+function countVisibleRows() {
+  var rows = table.rows;
+  var z = 0;
+  var sort = true;
+  for (var q = 1; q < rows.length; q++) {
+    if (rows[q].style.display == ""){ //visible row
+      z++;
+      if (z > 100){ // SORT THRESHOLD
+        sort = false;
+        break;
+      }
+    }
+  }
+  if (sort){
+    sortDiv.style.display = ''; 
+  } else {
+    sortDiv.style.display = 'none'; 
+  }
+}
+
 
 function filterTable() {
   // Declare variables
@@ -230,6 +253,7 @@ function filterTable() {
     // console.log(tr[i]);
   }
   // console.log(cardVarsMore);
+  countVisibleRows();
 }
 
 // Listen for organism checkboxes
@@ -428,7 +452,6 @@ function sortTable(n) {
     switching = false;
     /* Loop through all VISIBLE table rows (+1) */
     for (r = 0; r < (visibleRows.length -1); r++){
-      // console.log(visibleRows[r]);
       shouldSwitch = false;
       /* Get the two elements you want to compare,
       one from current row and one from the next: */
@@ -466,6 +489,13 @@ function sortTable(n) {
       rows[visibleRows[r]].parentNode.insertBefore(rows[visibleRows[r + 1]], rows[visibleRows[r]]);
       switching = true;
       switchcount ++;
+      // recollect visible rows
+      visibleRows = [];
+      for (q = 1; q < rows.length; q++) {
+        if (rows[q].style.display == ""){ //visible row
+          visibleRows.push(q);
+        }
+      }
     } else {
       if (switchcount == 0 && dir == "asc") {
         dir = "desc";

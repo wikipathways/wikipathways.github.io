@@ -69,7 +69,7 @@ var tr = table.getElementsByTagName("tr");
 var sortSpans = document.getElementsByClassName("fa-sort");
 countVisibleRows()
 
-function showhideSpans(spans, state){
+function showhideSort(spans, state){
   for (var i=0; i< spans.length; i++){
     spans[i].style.display= state; 
   }
@@ -132,7 +132,7 @@ function countVisibleRows() {
   var rows = table.rows;
   var z = 0;
   var sort = true;
-  for (q = 1; q < rows.length; q++) {
+  for (var q = 1; q < rows.length; q++) {
     if (rows[q].style.display == ""){ //visible row
       z++;
       if (z > 100){ // SORT THRESHOLD
@@ -142,9 +142,9 @@ function countVisibleRows() {
     }
   }
   if (sort){
-    showhideSpans(sortSpans, '');
+    showhideSort(sortSpans, '');
   } else {
-    showhideSpans(sortSpans, 'none');
+    showhideSort(sortSpans, 'none');
   }
 }
 
