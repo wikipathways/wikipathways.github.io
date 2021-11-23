@@ -158,7 +158,7 @@ var fils = {
 };
 // Initialize states
 btnMore.hide();
-sortTable(6);
+// sortTable(6); // TOO SLOW PRIOR TO FILTERING
 
 function filterTable() {
   // Declare variables
