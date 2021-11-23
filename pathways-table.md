@@ -214,6 +214,13 @@ function sortTable(n) {
       rows[visibleRows[r]].parentNode.insertBefore(rows[visibleRows[r + 1]], rows[visibleRows[r]]);
       switching = true;
       switchcount ++;
+      // recollect visible rows
+      visibleRows = [];
+      for (q = 1; q < rows.length; q++) {
+        if (rows[q].style.display == ""){ //visible row
+          visibleRows.push(q);
+        }
+      }
     } else {
       if (switchcount == 0 && dir == "asc") {
         dir = "desc";
