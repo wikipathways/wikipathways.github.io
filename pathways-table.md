@@ -10,28 +10,29 @@ layout: table-page
   <col style="width:auto" />
   <col style="width:120px" />
   <th>Pathway Title
-  <span onclick="sortTable(0)" title="Sort by title" style="color: #666;"><i class="fa fa-sort"></i></span>
+  <!-- NOTE: TOO SLOW FOR FULL TABLE -->
+  <!-- <span onclick="sortTable(0)" title="Sort by title" style="color: #666;"><i class="fa fa-sort"></i></span>-->
   <br /><input type="text" id="0" style="width:250px;" onkeyup="filterTable()"></th>
   <th>ID
-  <span onclick="sortTable(1)" title="Sort by ID" style="color: #666;"><i class="fa fa-sort"></i></span>
+  <!-- <span onclick="sortTable(1)" title="Sort by ID" style="color: #666;"><i class="fa fa-sort"></i></span>-->
   <br /><input type="text" id="1" style="width:50px;" onkeyup="filterTable()"></th>
   <th>Organism
-  <span onclick="sortTable(2)" title="Sort by organism" style="color: #666;"><i class="fa fa-sort"></i></span>
+  <!-- <span onclick="sortTable(2)" title="Sort by organism" style="color: #666;"><i class="fa fa-sort"></i></span>-->
   <br /><input type="text" id="2" style="width:100px;" onkeyup="filterTable()"></th>
   <th>Last Edited
-  <span onclick="sortTable(3)" title="Sort by last edited date" style="color: #666;"><i class="fa fa-sort"></i></span>
+  <!-- <span onclick="sortTable(3)" title="Sort by last edited date" style="color: #666;"><i class="fa fa-sort"></i></span>-->
   <br /><input type="text" id="3" style="width:70px;" onkeyup="filterTable()"></th>
   <th>Communities
-  <span onclick="sortTable(4)" title="Sort by communities" style="color: #666;"><i class="fa fa-sort"></i></span>
+  <!-- <span onclick="sortTable(4)" title="Sort by communities" style="color: #666;"><i class="fa fa-sort"></i></span>-->
   <br /><input type="text" id="4" style="width:100px;" onkeyup="filterTable()"></th>
   <th>Pathway Terms
-  <span onclick="sortTable(5)" title="Sort by pathway ontology terms" style="color: #666;"><i class="fa fa-sort"></i></span>
+  <!-- <span onclick="sortTable(5)" title="Sort by pathway ontology terms" style="color: #666;"><i class="fa fa-sort"></i></span>-->
   <br /><input type="text" id="5" style="width:100px;" onkeyup="filterTable()"></th>
   <th>Disease Terms
-  <span onclick="sortTable(6)" title="Sort by disease ontology terms" style="color: #666;"><i class="fa fa-sort"></i></span>
+  <!-- <span onclick="sortTable(6)" title="Sort by disease ontology terms" style="color: #666;"><i class="fa fa-sort"></i></span>-->
   <br /><input type="text" id="6" style="width:100px;" onkeyup="filterTable()"></th>
   <th>Cell Types
-  <span onclick="sortTable(7)" title="Sort by cell type ontology terms" style="color: #666;"><i class="fa fa-sort"></i></span>
+  <!-- <span onclick="sortTable(7)" title="Sort by cell type ontology terms" style="color: #666;"><i class="fa fa-sort"></i></span>-->
   <br /><input type="text" id="7" style="width:100px;" onkeyup="filterTable()"></th>
   {% for pw in site.pathways %}
   {% assign pw-type-group = pw.annotations | group_by: "type" %}
@@ -117,68 +118,70 @@ function filterTable() {
   }
 }
 
-function sortTable(n) {
-  var table, rows, switching, q ,r, x, y, shouldSwitch, dir, switchcount = 0;
-  var visibleRows = [];
-  table = document.getElementById("myTable");
-  switching = true;
-  dir = "asc";
-  rows = table.rows;
-  /* Collect visible rows (except the
-  first, which contains table headers) */
-  for (q = 1; q < rows.length; q++) {
-    if (rows[q].style.display == ""){ //visible row
-      visibleRows.push(q);
-    }
-  }
-  while (switching) {
-    switching = false;
-    /* Loop through all table rows (except the
-    first, which contains table headers): */
-    for (r = 0; r < (visibleRows.length - 1); r++) {
-      shouldSwitch = false;
-      /* Get the two elements you want to compare,
-      one from current row and one from the next: */
-      x = rows[visibleRows[r]].getElementsByTagName("TD")[n];
-      y = rows[visibleRows[r + 1]].getElementsByTagName("TD")[n];
-      /* Check if the two rows should switch place,
-      based on the direction, asc or desc: */
-      if (dir == "asc") {
-        if (n == 3){ // Date
-          if (new Date(x.innerHTML) > new Date(y.innerHTML)) {
-            shouldSwitch = true;
-            break;
-          }
-        } else {
-          if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-            shouldSwitch = true;
-            break;
-          }
-        }
-      } else if (dir == "desc") {
-        if (n == 3){ // Date
-          if (new Date(x.innerHTML) < new Date(y.innerHTML)) {
-            shouldSwitch = true;
-            break;
-          }
-        } else {
-          if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-            shouldSwitch = true;
-            break;
-          }
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[visibleRows[r]].parentNode.insertBefore(rows[visibleRows[r + 1]], rows[visibleRows[r]]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount == 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+// NOTE: TOO SLOW FOR FULL TABLE
+
+// function sortTable(n) {
+//   var table, rows, switching, q ,r, x, y, shouldSwitch, dir, switchcount = 0;
+//   var visibleRows = [];
+//   table = document.getElementById("myTable");
+//   switching = true;
+//   dir = "asc";
+//   rows = table.rows;
+//   /* Collect visible rows (except the
+//   first, which contains table headers) */
+//   for (q = 1; q < rows.length; q++) {
+//     if (rows[q].style.display == ""){ //visible row
+//       visibleRows.push(q);
+//     }
+//   }
+//   while (switching) {
+//     switching = false;
+//     /* Loop through all table rows (except the
+//     first, which contains table headers): */
+//     for (r = 0; r < (visibleRows.length - 1); r++) {
+//       shouldSwitch = false;
+//       /* Get the two elements you want to compare,
+//       one from current row and one from the next: */
+//       x = rows[visibleRows[r]].getElementsByTagName("TD")[n];
+//       y = rows[visibleRows[r + 1]].getElementsByTagName("TD")[n];
+//       /* Check if the two rows should switch place,
+//       based on the direction, asc or desc: */
+//       if (dir == "asc") {
+//         if (n == 3){ // Date
+//           if (new Date(x.innerHTML) > new Date(y.innerHTML)) {
+//             shouldSwitch = true;
+//             break;
+//           }
+//         } else {
+//           if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+//             shouldSwitch = true;
+//             break;
+//           }
+//         }
+//       } else if (dir == "desc") {
+//         if (n == 3){ // Date
+//           if (new Date(x.innerHTML) < new Date(y.innerHTML)) {
+//             shouldSwitch = true;
+//             break;
+//           }
+//         } else {
+//           if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+//             shouldSwitch = true;
+//             break;
+//           }
+//         }
+//       }
+//     }
+//     if (shouldSwitch) {
+//       rows[visibleRows[r]].parentNode.insertBefore(rows[visibleRows[r + 1]], rows[visibleRows[r]]);
+//       switching = true;
+//       switchcount ++;
+//     } else {
+//       if (switchcount == 0 && dir == "asc") {
+//         dir = "desc";
+//         switching = true;
+//       }
+//     }
+//   }
+// }
 </script>
