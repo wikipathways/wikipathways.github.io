@@ -67,7 +67,7 @@ layout: table-page
 var table = document.getElementById("myTable");
 var tr = table.getElementsByTagName("tr");
 var sortSpans = document.getElementsByClassName("fa-sort");
-showhideSpans(sortSpans, 'none'); //default
+countVisibleRows()
 
 function showhideSpans(spans, state){
   for (var i=0; i< spans.length; i++){
@@ -165,8 +165,7 @@ function sortTable(n) {
   }
   while (switching) {
     switching = false;
-    /* Loop through all table rows (except the
-    first, which contains table headers): */
+    /* Loop through all VISIBLE table rows (+1) */
     for (r = 0; r < (visibleRows.length - 1); r++) {
       shouldSwitch = false;
       /* Get the two elements you want to compare,
@@ -181,7 +180,12 @@ function sortTable(n) {
             shouldSwitch = true;
             break;
           }
-        } else {
+        } else if (n == 0) { // hyperlinked title
+          if (x.innerHTML.toLowerCase().split(">")[1] > y.innerHTML.toLowerCase().split(">")[1]) {
+            shouldSwitch = true;
+            break;
+          }
+        } else { // all other columns
           if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
             shouldSwitch = true;
             break;
@@ -190,6 +194,11 @@ function sortTable(n) {
       } else if (dir == "desc") {
         if (n == 3){ // Date
           if (new Date(x.innerHTML) < new Date(y.innerHTML)) {
+            shouldSwitch = true;
+            break;
+          }
+        } else if (n == 0) { // hyperlinked title
+          if (x.innerHTML.toLowerCase().split(">")[1] < y.innerHTML.toLowerCase().split(">")[1]) {
             shouldSwitch = true;
             break;
           }
