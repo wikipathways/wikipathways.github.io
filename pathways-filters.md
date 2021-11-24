@@ -110,7 +110,8 @@ layout: table-page
             <th style="display:none;" >url</th>
             <th style="display:none;" >firstorg</th>
             <th style="display:none;" >lastedited</th>
-            {% for pw in site.pathways %}
+            {% assign pw-sorted = site.pathways | sort: "title" %}
+            {% for pw in pw-sorted %}
               {% assign pw-type-group = pw.annotations | group_by: "type" %}
               <tr>
                 <td style="display:none;" title="{{ pw.organisms | join: ", "}}">{{ pw.organisms | join: ", "}}</td>

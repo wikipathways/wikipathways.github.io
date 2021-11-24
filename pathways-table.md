@@ -34,7 +34,8 @@ layout: table-page
   <th>Cell Types
   <span id="sortable" onclick="sortTable(7)" title="Sort by cell type ontology terms" style="color: #666;"><i class="fa fa-sort"></i></span>
   <br /><input type="text" id="7" style="width:100px;" onkeyup="filterTable()"></th>
-  {% for pw in site.pathways %}
+  {% assign pw-sorted = site.pathways | sort: "title" %}
+  {% for pw in pw-sorted %}
   {% assign pw-type-group = pw.annotations | group_by: "type" %}
   <tr>
     <td title="{{ pw.title }}" style="overflow: hidden; max-height: 50px; white-space: nowrap; text-overflow: ellipsis;">
