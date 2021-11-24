@@ -25,9 +25,12 @@ layout: default
     <h1 id="title"> {{ page.title }} ({{ page.wpid }})</h1>
   </a>
 
-  <div id="description" style="height:4.5em; overflow-y:auto;">
+  <div id="description" style="max-height:75px; overflow-y:hidden;">
     {{ page.description }}
   </div>
+  <input type="button" class="badge badge-secondary" id="descMore" value="more text" style="float: right; margin-top: -8px;">
+  <input type="button" class="badge badge-secondary" id="descLess" value="less text" style="float: right; margin-top: -8px;">
+<br />
 
   <div id="pathway-viewer" style="height:400px;">
     <iframe class="embed-responsive-item" src="https://pathway-viewer.toolforge.org/?id={{page.wpid}}"
@@ -131,8 +134,8 @@ layout: default
         {% endfor %}
       </tbody>
     </table>
-    <input type="button" class="badge badge-secondary" id="tableMore" value="more" style="float: left; margin-top: -8px;">
-    <input type="button" class="badge badge-secondary" id="tableLess" value="less" style="float: left; margin-top: -8px;">
+    <input type="button" class="badge badge-secondary" id="tableMore" value="more rows" style="float: left; margin-top: -8px;">
+    <input type="button" class="badge badge-secondary" id="tableLess" value="fewer rows" style="float: left; margin-top: -8px;">
     <br />
     <h2 id="references">References</h2>
     {% assign wpid-refs=page.wpid | append: "-references" %}
@@ -149,6 +152,8 @@ layout: default
 
 <script>
   var trs = $("#participants-table tr");
+  var btnMoreDesc = $("#descMore");
+  var btnLessDesc = $("#descLess");
   var btnMore = $("#tableMore");
   var btnLess = $("#tableLess");
   var trsLength = trs.length;
@@ -180,6 +185,37 @@ layout: default
   trs.hide();
   trs.slice(0, startIndex).show();
   checkButton();
+  checkButtonDesc();
+
+  btnMoreDesc.click(function (e) {
+    e.preventDefault();
+    document.getElementById("description").style.maxHeight = ""; 
+    checkButtonDesc();
+  });
+
+  btnLessDesc.click(function (e) {
+    e.preventDefault();
+    document.getElementById("description").style.maxHeight = "75px"; 
+    checkButtonDesc();
+  });
+
+  function checkButtonDesc() {
+    var currentHeight = $("#description").height();
+    var scrollHeight = document.getElementById("description").scrollHeight;
+
+    if (scrollHeight <= 75){ // no need to expand/collapse
+      btnMoreDesc.hide();
+      btnLessDesc.hide();
+    } else {
+      if (currentHeight > 75) { // time to collapse
+        btnMoreDesc.hide();
+        btnLessDesc.show();
+      } else {                  // time to expand
+        btnMoreDesc.show();
+        btnLessDesc.hide();
+      }
+    }
+  }
 
   btnMore.click(function (e) {
     e.preventDefault();
@@ -211,6 +247,7 @@ layout: default
     }
 
   }
+
   const copyBtn = document.querySelector('.copy-btn');
   const toCopy = document.querySelector('.copy-btn').getAttribute('to-copy');
 
