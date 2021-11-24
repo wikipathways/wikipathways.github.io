@@ -15,6 +15,13 @@
           box-sizing: content-box;
 }
 
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 1190px;
+    width: 100%;
+  }
+}
+
 .navbar-brand {
   font-size: 2em;
 }
@@ -67,6 +74,11 @@ bottom: .5em;
 }
 .card-text {
   font-size: 0.8em;
+}
+
+.col-sm-auto {
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .dropdown-item {

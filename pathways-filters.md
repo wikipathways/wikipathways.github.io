@@ -243,8 +243,8 @@ function filterTable() {
       cardVars["url"] = tr[i].cells[7].innerText;
       cardVars["org"] = tr[i].cells[8].innerText;
       addList(cardVars);
-      if(j <= 40){
-        addCard(cardVars); //display "show more" button and store cards at i > 40
+      if(j <= 50){
+        addCard(cardVars); //display "show more" button and store cards at i > 50
       } else {
         btnMore.show();
         cardVarsMore.push(cardVars);
@@ -424,7 +424,7 @@ function addList(c){
     btnMore.hide();
     var k=0;
     Object.values(cardVarsMore).forEach(val => {
-      if(k <= 80){ // show 80 at a time
+      if(k <= 100){ // show 100 at a time
         addCard(val); 
         cardVarsMore.shift();
       } else {
