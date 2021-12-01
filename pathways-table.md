@@ -136,7 +136,7 @@ function countVisibleRows() {
   for (var q = 1; q < rows.length; q++) {
     if (rows[q].style.display == ""){ //visible row
       z++;
-      if (z > 300){ // SORT THRESHOLD
+      if (z > 200){ // SORT THRESHOLD
         sort = false;
         break;
       }
