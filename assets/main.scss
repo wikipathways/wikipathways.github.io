@@ -99,9 +99,16 @@ a.badge:visited{
   color: #ffffff;
 }
 
-a.btn:visited{
+a.btn:visited,
+a.btn:link {
   text-decoration: none;
   color: #ffffff;
+}
+
+a.btn-outline-warning:visited,
+a.btn-outline-warning:link {
+  text-decoration: none;
+  color: #1756a9;
 }
 
 a.dropdown-item:visited{

@@ -92,9 +92,6 @@ defaults:
     values:
       layout: "default"
 
-# Browse pages
-browse-pages: [pathways-table,pathways-filters,organisms,communities,annotations]
-
 # Custom collections
 collections:
   annotations:
@@ -104,5 +101,7 @@ collections:
   organisms:
     output: true
   pathways:
+    output: true
+  browse:
     output: true
 

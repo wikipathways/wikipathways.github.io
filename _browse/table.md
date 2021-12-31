@@ -1,5 +1,8 @@
 ---
 layout: table-page
+order: 2
+display-title: "Table"
+btn-class: "btn-danger"
 ---
 
 {% assign type-group = site.annotations | group_by: "type" | reverse %}

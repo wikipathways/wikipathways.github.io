@@ -1,3 +1,9 @@
+---
+order: 5
+display-title: "Annotation"
+btn-class: "btn-info"
+---
+
 <h1>Pathways by Annotation</h1>
 <p>Exlpore ontologies below to identify pathways tagged with particular terms.</p>
 {% assign type-group = site.annotations | group_by: "type" | reverse %}

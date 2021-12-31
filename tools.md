@@ -8,15 +8,15 @@ title: Tools
 
 <table cellspacing="5" cellpadding="5" align="left">
     <tr>
-    <th><a href="http://www.agilent.com/" target="_blank" class="external " title="http://www.agilent.com/" rel="nofollow">Agilent Technologies</a>
+    <th><a href="https://www.agilent.com/" target="_blank" class="external " title="https://www.agilent.com/" rel="nofollow">Agilent Technologies</a>
     </th><td>Agilent Technologies produces commercial sequencing technology and analysis suites (GeneSpring and EnViz) that uses WikiPathways content via web services.
     </td></tr>
     <tr>
-    <th><a href="http://www.altanalyze.org/" target="_blank" class="external " title="http://www.altanalyze.org/" rel="nofollow">AltAnalyze</a>
+    <th><a href="https://www.altanalyze.org/" target="_blank" class="external " title="https://www.altanalyze.org/" rel="nofollow">AltAnalyze</a>
     </th><td>AltAnalyze is an easy-to-use application for the end-to-end analysis of microarry, single-cell (ICGS) and bulk RNA-Seq data. AltAnalyze uses WikiPathways as its official pathway source.
     </td></tr>
     <tr>
-    <th><a href="http://bioportal.bioontology.org/" target="_blank" class="external " title="http://bioportal.bioontology.org/" rel="nofollow">BioPortal</a>
+    <th><a href="https://bioportal.bioontology.org/" target="_blank" class="external " title="https://bioportal.bioontology.org/" rel="nofollow">BioPortal</a>
     </th><td>Use BioPortal to access and share ontologies that are actively used in biomedical communities. WikiPathways uses BioPortal to power its ontology tagging system and BioPortal lists all ontology-tagged pathways as <a href="http://bioportal.bioontology.org/resources" target="_blank" class="external " title="http://bioportal.bioontology.org/resources" rel="nofollow">resources</a>.
     </td></tr>
     <tr>
@@ -40,7 +40,7 @@ title: Tools
     </th><td>The goal of the portal is to widely disseminate highly characterized proteomic assays to the global research community, with access to SOPs, reagents, and assay characterization/validation data. You can browse assays by protein via clickable pathway models from WikiPathways. Learn how they incorpated <a href="/img_auth.php/f/f3/CPTAC_WikiPathways_Assays_Coordination.pdf" class="internal" title="CPTAC WikiPathways Assays Coordination.pdf">WikiPathways images with custom links on their site</a>.
     </td></tr>
     <tr>
-    <th> <a href="http://cytoscape.org" target="_blank" class="external " title="http://cytoscape.org" rel="nofollow">Cytoscape</a>
+    <th> <a href="https://cytoscape.org" target="_blank" class="external " title="https://cytoscape.org" rel="nofollow">Cytoscape</a>
     </th><td>Cytoscape is an open source software platform for visualizing complex-networks and integrating these with any type of attribute data. Apps are available for various kinds of problem domains, including bioinformatics, social network analysis, and semantic web. WikiPathways can be easily imported via web services using the <a href="http://apps.cytoscape.org/apps/wikipathways" target="_blank" class="external " title="http://apps.cytoscape.org/apps/wikipathways" rel="nofollow">WikiPathways app</a>. Pathways in gpml format created in PathVisio or WikiPathways can be loaded as either their native diagram format or as simplified network graphs, supporting either data visualization or network analysis and augmentation use cases. Tutorials are available at <a href="https://github.com/cytoscape/cytoscape-tutorials/wiki" target="_blank" class="external " title="https://github.com/cytoscape/cytoscape-tutorials/wiki" rel="nofollow">tutorials.cytoscape.org</a> and a detailed description of the app and its usage was published in the <a href="http://f1000research.com/articles/10.12688/f1000research.4254.2/doi" target="_blank" class="external " title="http://f1000research.com/articles/10.12688/f1000research.4254.2/doi" rel="nofollow">Cytoscape App Collection</a> in F1000Research.
     </td></tr>
     <tr>
@@ -48,7 +48,7 @@ title: Tools
     </th><td>DecoPath is a web application to assist in the interpretation of results of pathway enrichment analysis.
     </td></tr>
     <tr>
-    <th><a href="http://amp.pharm.mssm.edu/Enrichr/" target="_blank" class="external " title="http://amp.pharm.mssm.edu/Enrichr/" rel="nofollow">Enrichr</a>
+    <th><a href="https://amp.pharm.mssm.edu/Enrichr/" target="_blank" class="external " title="https://amp.pharm.mssm.edu/Enrichr/" rel="nofollow">Enrichr</a>
     </th><td>Enrichr is a comprehensive gene set enrichment analysis web server. Includes WikiPathways as one of their data sources.
     </td></tr>
     <tr>
@@ -80,7 +80,7 @@ title: Tools
     </th><td>g:Profiler is a public web server for characterising and manipulating gene lists.
     </td></tr>
     <tr>
-    <th><a href="http://homer.ucsd.edu/homer/" target="_blank" class="external " title="http://homer.ucsd.edu/homer/" rel="nofollow">HOMER</a>
+    <th><a href="https://homer.ucsd.edu/homer/" target="_blank" class="external " title="http://homer.ucsd.edu/homer/" rel="nofollow">HOMER</a>
     </th><td>HOMER (Hypergeometric Optimization of Motif EnRichment) is a suite of tools for Motif Discovery and next-gen sequencing analysis. It is a collection of command line programs for unix-style operating systems written in Perl and C++. HOMER includes a wide range of "ontologies" for functional enrichment analysis, including WikiPathways.
     </td></tr>
     <tr>
@@ -96,7 +96,7 @@ title: Tools
     </th><td>IRNdb is a database that combines microRNA, PIWI-interacting RNAs, and long non-coding RNA information with immunologically relevant target genes. The database is intended to advance research on the influence of ncRNAs on immunological processes, and includes WikiPathways as a data source.
     </td></tr>
     <tr>
-    <th><a href="http://iquery.ndexbio.org/" target="_blank" class="external " title="http://iquery.ndexbio.org/" rel="nofollow">IQuery at NDEx</a>
+    <th><a href="https://iquery.ndexbio.org/" target="_blank" class="external " title="http://iquery.ndexbio.org/" rel="nofollow">IQuery at NDEx</a>
     </th><td>NDEx is a network database for community-contrinbuted and reference networks. IQuery is a enrichment-based seach tool for networks and pathways in NDEx via gene lists. IQuery includes WikiPathways in its default tab of serach results, plus it includes a "Pathway Figures" tab for our <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02181-2" target="_blank" class="external " title="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02181-2" rel="nofollow">OCR-extraction project for published pathway figures</a>.
     </td></tr>
     <tr>
@@ -104,7 +104,7 @@ title: Tools
     </th><td>Lynx is a database and knowledge extraction engine for integrative medicine.
     </td></tr>
     <tr>
-    <th><a href="http://www.ebi.ac.uk/metabolights/" target="_blank" class="external " title="http://www.ebi.ac.uk/metabolights/" rel="nofollow">MetaboLights</a>
+    <th><a href="https://www.ebi.ac.uk/metabolights/" target="_blank" class="external " title="http://www.ebi.ac.uk/metabolights/" rel="nofollow">MetaboLights</a>
     </th><td>MetaboLights is a database for Metabolomics experiments and derived information. It lists more then 20 thousand metabolites and for each in which pathways they are found, deriving from pathways from WikiPathways and Reactome.
     </td></tr>
     <tr>
@@ -132,15 +132,15 @@ title: Tools
     </th><td>Pathprinting integrates pathway curation, profiling methods, and public repositories, to represent any expression profile as a ternary score (-1, 0, +1) in a standardized pathway panel.
     </td></tr>
     <tr>
-    <th> <a href="http://pathvisio.org" target="_blank" class="external " title="http://pathvisio.org" rel="nofollow">PathVisio</a>
-    </th><td> PathVisio is a tool for displaying and editing biological pathways. In a sense PathVisio lets you draw pathways as you would in any drawing program, like PowerPoint or Photoshop. But the difference is that PathVisio can understand the biological context of a pathway, because you can link biological entities (genes or proteins) in your pathways to biological data using database identifiers. This will let you map experimental data (e.g. microarray data) and visualize it on top of the pathway drawing.
+    <th> <a href="https://pathvisio.org" target="_blank" class="external " title="http://pathvisio.org" rel="nofollow">PathVisio</a>
+    </th><td> PathVisio is a free open-source pathway analysis and drawing software which allows drawing, editing, and analyzing biological pathways. It is developed in Java and can be extended with plugins. PathVisio is the pathway editor for WikiPathways, a community-curated pathway database enabling collaborative pathway editing.
     </td></tr>
     <tr>
-    <th><a href="http://www.pathwaycommons.org/" target="_blank" class="external " title="http://www.pathwaycommons.org/" rel="nofollow">Pathway Commons</a>
+    <th><a href="https://www.pathwaycommons.org/" target="_blank" class="external " title="http://www.pathwaycommons.org/" rel="nofollow">Pathway Commons</a>
     </th><td>Pathway Commons aims to store and disseminate knowledge about biological pathways, and includes pathway data from multiple sources, including WikiPathways.
     </td></tr>
     <tr>
-    <th><a href="http://wikipathways.org/pathway-finder/?database=mirtarbase&amp;identifiers=hsa-miR-148a-3p,hsa-miR-21-3p,hsa-miR-29a-3p,hsa-miR-20a-5p" target="_blank" class="external " title="http://wikipathways.org/pathway-finder/?database=mirtarbase&amp;amp;identifiers=hsa-miR-148a-3p,hsa-miR-21-3p,hsa-miR-29a-3p,hsa-miR-20a-5p" rel="nofollow">Pathway Finder</a>
+    <th><a href="https://wikipathways.org/pathway-finder/?database=mirtarbase&amp;identifiers=hsa-miR-148a-3p,hsa-miR-21-3p,hsa-miR-29a-3p,hsa-miR-20a-5p" target="_blank" class="external " title="http://wikipathways.org/pathway-finder/?database=mirtarbase&amp;amp;identifiers=hsa-miR-148a-3p,hsa-miR-21-3p,hsa-miR-29a-3p,hsa-miR-20a-5p" rel="nofollow">Pathway Finder</a>
     </th><td>Query pathways based on miRNA targeting.
     </td></tr>
     <tr>
@@ -149,7 +149,7 @@ title: Tools
     </td></tr>
     <tr>
     <th><a href="https://github.com/kozo2/pywikipathways" target="_blank" class="external " title="https://github.com/kozo2/pywikipathways" rel="nofollow">pywikipathways</a>
-    </th><td>Python Client Package for the WikiPathways API.
+    </th><td>Python client package for the WikiPathways webservice API.
     </td></tr>
     <tr>
     <th><a href="https://github.com/Mathelab/RaMP-DB/" target="_blank" class="external " title="https://github.com/Mathelab/RaMP-DB/" rel="nofollow">RaMP</a>
@@ -158,6 +158,10 @@ title: Tools
     <tr>
     <th><a href="https://cran.r-project.org/web/packages/rSEA/vignettes/rSEA_vignette.html" target="_blank" class="external " title="https://cran.r-project.org/web/packages/rSEA/vignettes/rSEA_vignette.html" rel="nofollow">rSEA</a>
     </th><td>TBD.
+    </td></tr>
+    <tr>
+    <th><a href="https://bioconductor.org/packages/release/bioc/html/rWikiPathways.html" target="_blank" class="external " title="https://bioconductor.org/packages/release/bioc/html/rWikiPathways.html" rel="nofollow">rWikiPathways</a>
+    </th><td>R package for the WikiPathways webservice API.
     </td></tr>
     <tr>
     <th><a href="http://101.200.211.232/skeletongenetics/" target="_blank" class="external " title="http://101.200.211.232/skeletongenetics/" rel="nofollow">SkeletonGenetics</a>
@@ -176,15 +180,15 @@ title: Tools
     </th><td>TTD is a database to provide information about the known and explored therapeutic protein and nucleic acid targets, the targeted disease, pathway information and the corresponding drugs directed at each of these targets.
     </td></tr>
     <tr>
-    <th><a href="http://www.webgestalt.org" target="_blank" class="external " title="http://www.webgestalt.org" rel="nofollow">WebGestalt</a>
+    <th><a href="https://www.webgestalt.org" target="_blank" class="external " title="http://www.webgestalt.org" rel="nofollow">WebGestalt</a>
     </th><td>WebGestalt is a "WEB-based GEne SeT AnaLysis Toolkit". It is designed for functional genomic, proteomic and large-scale genetic studies from which large number of gene lists (e.g. differentially expressed gene sets, co-expressed gene sets etc) are continuously generated. WebGestalt incorporates information from different public resources, including WikiPathways, and provides an easy way for biologists to make sense out of gene lists.
     </td></tr>
     <tr>
-    <th><a href="http://wikidata.org" target="_blank" class="external " title="http://wikidata.org" rel="nofollow">Wikidata</a>
+    <th><a href="https://wikidata.org" target="_blank" class="external " title="http://wikidata.org" rel="nofollow">Wikidata</a>
     </th><td>Wikidata is a free and open knowledge base that can be read and edited by both humans and machines.  We have added interactive pathway pages for WikiPathways content via Scholia (<a href="https://tools.wmflabs.org/scholia/pathway/" target="_blank" class="external " title="https://tools.wmflabs.org/scholia/pathway/" rel="nofollow">examples</a>).
     </td></tr>
     <tr>
-    <th><a href="http://wikipedia.org" target="_blank" class="external " title="http://wikipedia.org" rel="nofollow">Wikipedia</a>
+    <th><a href="https://wikipedia.org" target="_blank" class="external " title="http://wikipedia.org" rel="nofollow">Wikipedia</a>
     </th><td>The free encyclopedia that anyone can edit. In collaboration with MCB and GeneWiki, we have added interactive pathway maps using WikiPathways (<a href="http://en.wikipedia.org/wiki/DPYD" target="_blank" class="external " title="http://en.wikipedia.org/wiki/DPYD" rel="nofollow">example</a>).
     </td></tr></table>
 

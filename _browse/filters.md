@@ -1,5 +1,8 @@
 ---
 layout: table-page
+order: 1
+display-title: "Filters"
+btn-class: "btn-danger"
 ---
 <div class="container">
   <div class="row">

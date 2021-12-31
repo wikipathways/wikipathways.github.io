@@ -1,3 +1,9 @@
+---
+order: 4
+display-title: "Community"
+btn-class: "btn-success"
+---
+
 <h1>Pathways by Community</h1>
 <p>Browse the communities below and explore their curated pathways.</p>
 {% for x in site.communities %}
