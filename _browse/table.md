@@ -1,8 +1,8 @@
 ---
 layout: table-page
 order: 2
-display-title: "Table"
-btn-class: "btn-danger"
+display-title: "Table column filters"
+btn-class: "btn-outline-warning"
 ---
 
 {% assign type-group = site.annotations | group_by: "type" | reverse %}

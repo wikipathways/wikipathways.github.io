@@ -1,13 +1,13 @@
 ---
 layout: default
 ---
-<a class="btn btn-sm btn-pill btn-success" style="float: right;" href="/browse/communities.html">Communities</a>
+<a class="btn btn-sm btn-pill btn-community" style="float: right;" href="/browse/communities.html">Communities</a>
     {% if page.logo %}
     <p><a class="logo-link" href="{{ page.logo-link }}"><img src="{{ page.logo }}"></a></p>
     {% endif %}
 
     <h2 id="title"> {{ page.title }}</h2>
-    <p>{{ page.description | markdownify }}</p>
+    <p>{{ page.description | markdownify }}</p> 
 
     <h2>Pathways
       <a href="https://github.com/wikipathways/playground-database/tree/main/communities/{{ page.community-tag }}"

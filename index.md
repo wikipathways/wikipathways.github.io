@@ -4,22 +4,22 @@ layout: home
 <div class="container">
   <div class="row g-6 py-3">
     <div class="col">
-      <div class="bg-light bg-gradient p-3">
+      <div class="bg-gradient p-3" style="background-color: #eeeeee;">
       What is WikiPathways...
       </div>
     </div>
     <div class="col">
-      <div class="bg-light bg-gradient p-3">
+      <div class="bg-gradient p-3" style="background-color: #eeeeee;">
       Active community and growth stats...
       </div>
     </div>
   </div>
   <div class="row gy-6 py-3 text-center">
     <div class="col">
-      <div class="bg-light bg-gradient p-3">
+      <div class="bg-gradient p-3" style="background-color: #eeeeee;">
       <h2>Search</h2>
       <div id="blue-searchbox">
-   <script>
+   <script> 
 	 (function() {
 	   var gcse = document.createElement("script");
 	   gcse.type = "text/javascript";
@@ -50,7 +50,7 @@ layout: home
       </div>
     </div> 
     <div class="col">
-      <div class="bg-light bg-gradient p-3">
+      <div class="bg-gradient p-3" style="background-color: #eeeeee;">
       <h2>Download</h2>
       <ul style="list-style: none; margin-left:-3px; line-height:250%;">
       <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="https://data.wikipathways.org/current/" target="_blank">Latest monthly release </a></li>
@@ -68,7 +68,7 @@ layout: home
       </div>
     </div>
     <div class="col">
-      <div class="bg-light bg-gradient p-3">
+      <div class="bg-gradient p-3" style="background-color: #eeeeee;">
       <h2>Analyze</h2>
       <ul style="list-style: none; margin-left:-3px; line-height:250%;">
       <li><a class="btn btn-sm btn-pill btn-outline-warning" href="https://pathvisio.org/" 
@@ -80,7 +80,7 @@ layout: home
       WebGestalt (online)</a></li>
       <li><a class="btn btn-sm btn-pill btn-outline-warning" href="https://bioconductor.org/packages/clusterProfiler/" title="The clusterProfiler R package supports GO and pathway analysis performed as overrepresentation or GSEA." target="_blank">
       clusterProfiler (R)</a></li>
-      <li><a href="/tools.html" style="font-size:0.8em;">and many more...</a></li>
+      <li><a href="/tools.html" style="font-size:0.8em; text-decoration:none;">and many more...</a></li>
       </ul>
       <h2>Publish</h2>
       <ul style="list-style: none; margin-left:-3px; line-height:250%;">
@@ -92,12 +92,13 @@ layout: home
       </div>
     </div>
     <div class="col">
-      <div class="bg-light bg-gradient p-3">
-      <h2>Participate</h2>
+      <div class="bg-gradient p-3" style="background-color: #eeeeee;">
+      <h2>Learn</h2>
       <ul style="list-style: none; margin-left:-3px; line-height:250%;">
-      <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="" target="_blank">Curation </a></li>
-      <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="" target="_blank">Modeling </a></li>
-      <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="" target="_blank">Development </a></li>
+      <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="" target="_blank">How to Contribute </a></li>
+      <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="" target="_blank">How to Curate </a></li>
+      <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="" target="_blank">How to Use</a></li>
+      <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="" target="_blank">How to Develop</a></li>
       </ul>
       </div>
     </div>

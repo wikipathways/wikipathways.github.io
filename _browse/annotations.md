@@ -1,10 +1,10 @@
 ---
 order: 5
 display-title: "Annotation"
-btn-class: "btn-info"
+btn-class: "btn-annotation"
 ---
 
-<h1>Pathways by Annotation</h1>
+<h1>Pathways by Annotation</h1> 
 <p>Exlpore ontologies below to identify pathways tagged with particular terms.</p>
 {% assign type-group = site.annotations | group_by: "type" | reverse %}
 {% for type in type-group %}
@@ -24,7 +24,7 @@ btn-class: "btn-info"
     </div>
     <div class="facet-body collapse" id="{{ type.name }}{{ level.name }}">
       {% for annot in level.items %}
-        <a class="btn btn-sm btn-pill btn-info" href="{{annot.url}}">{{annot.value}}</a>
+        <a class="btn btn-sm btn-pill btn-annotation" href="{{annot.url}}">{{annot.value}}</a>
       {% endfor %}
     </div>
     {% endfor %}

@@ -1,7 +1,7 @@
 ---
 order: 3
 display-title: "Organism"
-btn-class: "btn-primary"
+btn-class: "btn-organism"
 ---
 
 <h1>Pathways by Organism</h1>
@@ -15,7 +15,7 @@ btn-class: "btn-primary"
   <div class="facet-body" id="{{ type.name }}">
   {% assign sorted_items = type.items | sort: "common" %} 
   {% for x in sorted_items %} 
-    <a class="btn btn-sm btn-pill btn-primary" href="{{ x.url }}">{{ x.common }}</a>
+    <a class="btn btn-sm btn-pill btn-organism" href="{{ x.url }}">{{ x.common }}</a>
   {% endfor %} 
   </div>
 </section>

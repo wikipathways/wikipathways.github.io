@@ -60,12 +60,17 @@ table.dataTable thead .sorting_desc_disabled:before {
 bottom: .5em;
 }
 
+.bg-light {
+  background-color: #eeeeee ;
+}
+
 .badge {
   font-weight: 400;
 }
 
 .btn-pill {
   border-radius:23px;
+  margin: 1px;
 }
 
 .card-body {
@@ -105,10 +110,56 @@ a.btn:link {
   color: #ffffff;
 }
 
+a.btn-organism:visited,
+a.btn-organism:link {
+  background-color: #496993;
+  border-color: #496993;
+}
+a.btn-organism:hover {
+  background-color: #394953;
+  border-color: white;
+}
+
+a.btn-community:visited,
+a.btn-community:link {
+  background-color: #499373;
+  border-color: #499373;
+}
+a.btn-community:hover {
+  background-color: #397333;
+  border-color: white;
+}
+
+a.btn-annotation:visited,
+a.btn-annotation:link {
+  background-color: #734993;
+  border-color: #734993;
+}
+a.btn-annotation:hover {
+  background-color: #632953;
+  border-color: white;
+}
+
+a.btn-warning:visited,
+a.btn-warning:link {
+  background-color: #937349;
+  border-color: #937349;
+}
+a.btn-warning:hover {
+  background-color: #835309;
+  border-color: white;
+}
+
 a.btn-outline-warning:visited,
 a.btn-outline-warning:link {
   text-decoration: none;
   color: #1756a9;
+  background-color: white;
+  border-color: white;
+}
+a.btn-outline-warning:hover {
+  //background-color: transparent;
+  border-color: #937349;
 }
 
 a.dropdown-item:visited{

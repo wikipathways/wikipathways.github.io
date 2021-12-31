@@ -1,8 +1,8 @@
 ---
 layout: table-page
 order: 1
-display-title: "Filters"
-btn-class: "btn-danger"
+display-title: "Category filters"
+btn-class: "btn-outline-warning"
 ---
 <div class="container">
   <div class="row">

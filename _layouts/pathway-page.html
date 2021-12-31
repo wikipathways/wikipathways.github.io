@@ -83,7 +83,7 @@ layout: default
     <h2 id="organism">Organism</h2>
     {% for org in site.organisms %}
     {% if page.organisms contains org.latin %}
-    <a class="btn btn-sm btn-pill btn-primary" href="{{org.url}}">{{org.latin}}</a>
+    <a class="btn btn-sm btn-pill btn-organism" href="{{org.url}}">{{org.latin}}</a>
     {% endif %}
     {% endfor %}
 
@@ -98,7 +98,7 @@ layout: default
     </h2>
     {% for com in site.communities %}
     {% if page.communities contains com.community-tag %}
-    <a class="btn btn-sm btn-pill btn-success" href="{{com.url}}">{{com.display-name}}</a>
+    <a class="btn btn-sm btn-pill btn-community" href="{{com.url}}">{{com.display-name}}</a>
     {% endif %}
     {% endfor %}
 
@@ -109,7 +109,7 @@ layout: default
       {% assign annot-values= page.annotations | where: "type", type | map: "value" %}
       {% for annot in site.annotations %}
       {% if annot-values contains annot.value and type == annot.type %}
-      <a class="btn btn-sm btn-pill btn-info" href="{{annot.url}}">{{annot.value}}</a>
+      <a class="btn btn-sm btn-pill btn-annotation" href="{{annot.url}}">{{annot.value}}</a>
       {% endif %}
       {% endfor %}
     </p>
