@@ -17,6 +17,29 @@ layout: home
   <div class="row gy-6 py-3 text-center">
     <div class="col">
       <div class="bg-light bg-gradient p-3">
+      <h2>Search</h2>
+      <div id="blue-searchbox">
+   <script>
+	 (function() {
+	   var gcse = document.createElement("script");
+	   gcse.type = "text/javascript";
+	   gcse.async = true;
+	   gcse.src = "https://cse.google.com/cse.js?cx=c1b9a23fc5f2875e3";
+	   var s = document.getElementsByTagName("script")[0];
+	   s.parentNode.insertBefore(gcse, s);
+	 })();
+	 window.onload = function()
+	 { 
+	   var searchBox1 =  document.getElementById("gsc-i-id1");
+	   searchBox1.placeholder=" ";
+	   searchBox1.title="Search WikiPathways"; 
+	   var searchBox2 =  document.getElementById("gsc-i-id2");
+	   searchBox2.placeholder=" e.g., AKT1 or cancer";
+	   searchBox2.title="Search WikiPathways"; 
+	 }
+   </script>
+   <gcse:search></gcse:search>
+</div>
       <h2>Browse</h2>
       <ul style="list-style: none; margin-left:-3px; line-height:250%;">
       {% assign sorted_browse = site.browse | sort: "order" %} 

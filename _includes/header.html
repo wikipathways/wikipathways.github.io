@@ -1,14 +1,16 @@
 <header class="site-header" role="banner">
     <div class="wrapper">
+      <!-- NAV BAR -->
       <nav class="navbar navbar-light" style="background-color: #fff;">
         <a class="navbar-brand" href="{{ "/" | relative_url }}">
           <img src="/assets/img/wikipathways-logo.png" width="37" class="d-inline-block align-top" alt="">
           WikiPathways
-        </a>
-        <!-- SEARCH -->
+        </a>     
+        <div>
+        <!-- SEARCH  -->
         <script async src="https://cse.google.com/cse.js?cx=c1b9a23fc5f2875e3"></script>
-        <div style="width:400px; margin-left:230px;">
-          <div class="gcse-searchbox-only" data-personalizedAds="false">...</div> 
+        <div style="width:300px; float:left; margin:3px 20px 0px 0px;">
+          <div class="gcse-search" data-personalizedAds="false">...</div> 
         </div>
         <!-- MENU -->         
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,6 +23,7 @@
             <a class="nav-item nav-link" href="/cite.html">Cite</a>
             <a class="nav-item nav-link" href="/tools.html">Tools</a>
           </div>
+        </div>
         </div>
       </nav>
     </div>
