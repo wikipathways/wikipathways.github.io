@@ -41,9 +41,9 @@ layout: home
       </div>
     </div>
   </div>
-  <div class="row gy-6 py-3 text-center" >
-    <div class="col">
-      <div class="bg-gradient p-3" style="background-color: #eeeeee;">
+  <div class="row gy-6 py-3 text-center" style="display:flex; flex-wrap: wrap;">
+    <div class="col" style="display:flex; flex-direction:row;">
+      <div class="bg-gradient p-3 w-100" style="background-color: #eeeeee;">
       <h2>Search</h2>
       <div id="blue-searchbox">
    <script> 
@@ -76,8 +76,8 @@ layout: home
       </ul>
       </div>
     </div> 
-    <div class="col">
-      <div class="bg-gradient p-3" style="background-color: #eeeeee;">
+    <div class="col" style="display:flex; flex-direction:row;">
+      <div class="bg-gradient p-3 w-100" style="background-color: #eeeeee;">
       <h2>Download</h2>
       <ul style="list-style: none; margin-left:-3px; line-height:250%;">
       <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="https://data.wikipathways.org/current/" target="_blank">Latest monthly release </a></li>
@@ -94,8 +94,8 @@ layout: home
       </ul>
       </div>
     </div>
-    <div class="col">
-      <div class="bg-gradient p-3" style="background-color: #eeeeee;">
+    <div class="col" style="display:flex; flex-direction:row;">
+      <div class="bg-gradient p-3 w-100" style="background-color: #eeeeee;">
       <h2>Analyze</h2>
       <ul style="list-style: none; margin-left:-3px; line-height:250%;">
       <li><a class="btn btn-sm btn-pill btn-outline-warning" href="https://pathvisio.org/" 
@@ -116,8 +116,8 @@ layout: home
       </ul>
       </div>
     </div>
-    <div class="col">
-      <div class="bg-gradient p-3" style="background-color: #eeeeee;">
+    <div class="col" style="display:flex; flex-direction:row;">
+      <div class="bg-gradient p-3 w-100" style="background-color: #eeeeee;">
       <h2>Publish</h2>
       <ul style="list-style: none; margin-left:-3px; line-height:250%;">
       <li><a class="btn btn-sm btn-pill btn-outline-warning" href="/cite.html">
