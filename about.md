@@ -11,9 +11,10 @@ title: About
 <p>Each pathway at WikiPathways has a dedicated wiki page, displaying the current diagram, description, references, download options, version history, and component gene and protein lists. Any pathway can be edited from within its wiki page by activating an embedded pathway editor. After editing, an updated pathway image is displayed on the wiki page along with the version history and list of component genes and proteins. Users can easily monitor and undo changes, compare differences and search for overlapping pathways. Using the search feature, one can locate particular pathways by name, by the genes and proteins they contain, or by the text displayed in their descriptions and comments. One can also browse the collection of pathways with combinations of species names and ontology-based categories. The pathway content at WikiPathways is freely available for download in a variety of data and image formats, including GPML, which is a custom XML format compatible with pathway visualization and analysis tools such as Cytoscape, GenMAPP and PathVisio. We are adding new features all the time.</p>
 
 <h2>Who is Involved</h2>
-<p>For questions, comments or suggestions, please post a message to the <a href="https://groups.google.com/forum/#!forum/wikipathways-discuss">discussion mailinglist</a>.</p>
+<p>Find information about the <a href="/team.html">WikiPathways Team</a></p>
+<p>For questions, comments or suggestions, please post a message to the <a href="https://github.com/wikipathways/wikipathways.github.io/discussions">discussion board</a>.</p>
 <p>Additional contact:</p>
 <ul>
-<li>Alex Pico: alex.pico[AT]gladstone.ucsf.edu</li>
-<li>Martina Kutmon: mkutmon[AT]gmail.com</li>
+<li>Alex Pico: <a href="mailto:alex.pico@gladstone.ucsf.edu">alex.pico@gladstone.ucsf.edu</a></li>
+<li>Martina Kutmon: <a href="mailto:mkutmon@gmail.com">mkutmon@gmail.com</a></li>
 </ul>

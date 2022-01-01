@@ -5,7 +5,17 @@ layout: home
   <div class="row g-6 py-3">
     <div class="col">
       <div class="bg-gradient p-3" style="background-color: #eeeeee;">
-      What is WikiPathways...
+        <div class="container">
+          <div class="row" style="margin-right: 13px; background-color: #ffffff;">
+            <div class="col-7" >
+              <h2>WikiPathways <small class="text-muted">is an open, collaborative platform dedicated to the collection and reuse of biological pathways contributed and updated by the research community. <a href="/about.html">Read more</a></small></h2>
+            </div>
+            <div class="col-4 text-right align-self-center" style="padding-left:0px; margin-left:-2px;">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Wplogo_500.png"
+              width="150px">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="col">
