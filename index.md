@@ -41,7 +41,7 @@ layout: home
       </div>
     </div>
   </div>
-  <div class="row gy-6 py-3 text-center">
+  <div class="row gy-6 py-3 text-center" >
     <div class="col">
       <div class="bg-gradient p-3" style="background-color: #eeeeee;">
       <h2>Search</h2>
@@ -101,14 +101,23 @@ layout: home
       <li><a class="btn btn-sm btn-pill btn-outline-warning" href="https://pathvisio.org/" 
       title="PathVisio is a free open-source pathway analysis and drawing software which allows drawing, editing, and analyzing biological pathways." target="_blank">
       PathVisio (install)</a></li>
+      <li><a class="btn btn-sm btn-pill btn-outline-warning" href="http://apps.cytoscape.org/apps/wikipathways" 
+      title="Cytoscape is an open source software platform for visualizing complex-networks and integrating these with any type of attribute data." target="_blank">
+      Cytoscape (install)</a></li>
       <li><a class="btn btn-sm btn-pill btn-outline-warning" href="https://biit.cs.ut.ee/gprofiler/gost" title="g:Profiler is a public web server for characterising and manipulating gene lists." target="_blank">
       g:Profiler (online)</a></li>
       <li><a class="btn btn-sm btn-pill btn-outline-warning" href="https://www.webgestalt.org/" title="WebGestalt is designed for functional genomic, proteomic and large-scale genetic studies from which large number of gene lists." target="_blank">
       WebGestalt (online)</a></li>
+      <li><a class="btn btn-sm btn-pill btn-outline-warning" href="https://amp.pharm.mssm.edu/Enrichr/" title="Enrichr is a comprehensive gene set enrichment analysis web server. Includes WikiPathways as one of their data sources." target="_blank">
+      Enrichr (online)</a></li>
       <li><a class="btn btn-sm btn-pill btn-outline-warning" href="https://bioconductor.org/packages/clusterProfiler/" title="The clusterProfiler R package supports GO and pathway analysis performed as overrepresentation or GSEA." target="_blank">
       clusterProfiler (R)</a></li>
       <li><a href="/tools.html" style="font-size:0.8em; text-decoration:none;">and many more...</a></li>
       </ul>
+      </div>
+    </div>
+    <div class="col">
+      <div class="bg-gradient p-3" style="background-color: #eeeeee;">
       <h2>Publish</h2>
       <ul style="list-style: none; margin-left:-3px; line-height:250%;">
       <li><a class="btn btn-sm btn-pill btn-outline-warning" href="/cite.html">
@@ -116,10 +125,6 @@ layout: home
       <li><a class="btn btn-sm btn-pill btn-outline-warning" href="https://wikipathways.tumblr.com/" title="Blog of WikiPathways used or mentinoed in publications." target="_blank">
       Published examples</a></li>
       </ul>
-      </div>
-    </div>
-    <div class="col">
-      <div class="bg-gradient p-3" style="background-color: #eeeeee;">
       <h2>Learn</h2>
       <ul style="list-style: none; margin-left:-3px; line-height:250%;">
       <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="" target="_blank">How to Contribute </a></li>
