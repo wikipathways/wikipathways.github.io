@@ -2,8 +2,8 @@
 layout: home
 ---
 <div class="container">
-  <div class="row g-6 py-3">
-    <div class="col">
+  <div class="row gy-6 py-3" style="display:flex; flex-wrap: wrap;">
+    <div class="col" style="display:flex;">
       <div class="bg-gradient p-3" style="background-color: #eeeeee;">
         <div class="container">
           <div class="row" style="margin-right: 13px; background-color: #ffffff;">
@@ -18,9 +18,26 @@ layout: home
         </div>
       </div>
     </div>
-    <div class="col">
+    <div class="col" style="display:flex;">
       <div class="bg-gradient p-3" style="background-color: #eeeeee;">
-      Active community and growth stats...
+        <div class="container">
+          <div class="row py-3" style="margin-right: 13px; background-color: #ffffff;">
+            <div class="col-3 text-center" >
+              <img src="/assets/img/stats-figure-1.jpg"/>
+            </div>
+            <div class="col-3 text-center" >
+              <img src="/assets/img/stats-figure-2.jpg"/>
+            </div>
+            <div class="col-3 text-center" >
+              <img src="/assets/img/stats-figure-3.jpg"/>
+            </div>            
+          </div>
+          <div class="row" style="margin-right: 13px; background-color: #ffffff;">
+            <div class="col-11 text-center" >
+              Active community and growth stats
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
