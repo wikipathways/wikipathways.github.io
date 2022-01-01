@@ -54,6 +54,7 @@ markdown: kramdown
 # their entries' file path in the `include:` list.
 #
 exclude:
+  - rmd_rstudio/
 #   - .sass-cache/
   - .jekyll-cache/
 #   - gemfiles/
@@ -103,5 +104,7 @@ collections:
   pathways:
     output: true
   browse:
+    output: true
+  rmd:
     output: true
 
