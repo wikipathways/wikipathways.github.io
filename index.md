@@ -28,8 +28,14 @@ layout: home
             <div class="col text-center" >
               <img src="/assets/img/stats-figure-2.jpg" style="height:160px; min-width:145px;"/>
             </div>
-            <div class="col text-center" >
-              <img src="/assets/img/stats-figure-3.jpg" style="height:160px; min-width:145px;"/>
+            <div class="col text-left align-self-center" style="margin-left: -5px;" >
+            {% assign doid = site.annotations | where: "type", "Disease" %}
+              <ul>
+                <li>{{ site.pathways.size }} pathways</li>
+                <li>{{ doid.size }} diseases</li>
+                <li>{{ site.organisms.size }} organisms</li>
+                <li>{{ site.communities.size }} communities</li>
+              </ul>
             </div>            
           </div>
         </div>
