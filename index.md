@@ -22,13 +22,10 @@ layout: home
       <div class="bg-gradient p-3" style="background-color: #eeeeee;">
         <div class="container">
           <div class="row py-3" style="margin-right: 13px; background-color: #ffffff;">
-            <div class="col text-center" >
-              <img src="/assets/img/stats-figure-1.jpg" style="height:160px; min-width:145px;" />
+            <div class="col-7 text-center" >
+              <img src="/assets/img/main_stats.png" style="height:160px; min-width:145px;" />
             </div>
-            <div class="col text-center" >
-              <img src="/assets/img/stats-figure-2.jpg" style="height:160px; min-width:145px;"/>
-            </div>
-            <div class="col text-left align-self-center" style="margin-left: -5px;" >
+            <div class="col text-left align-self-center text-nowrap" style="margin-left: -5px;" >
             {% assign doid = site.annotations | where: "type", "Disease" %}
               <ul>
                 <li>{{ site.pathways.size }} pathways</li>
@@ -38,7 +35,7 @@ layout: home
               </ul>
             </div>            
           </div>
-        </div>
+        </div> 
       </div>
     </div>
   </div>

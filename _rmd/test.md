@@ -1,7 +1,3 @@
----
-title: "This is a test post for an Rmd"
----
-
 ## R Markdown
 
 This is an R Markdown document. Markdown is a simple formatting syntax
