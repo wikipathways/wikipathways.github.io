@@ -1,3 +1,6 @@
+---
+title: stats
+---
 # WikiPathways Stats
 
 This R notebooks prepares figures to summarize WikiPathways activity.

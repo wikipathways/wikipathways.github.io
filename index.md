@@ -23,7 +23,8 @@ layout: home
         <div class="container">
           <div class="row py-3" style="margin-right: 13px; background-color: #ffffff;">
             <div class="col-7 text-center" >
-              <img src="/assets/img/main_stats.png" style="height:160px; min-width:145px;" />
+              <a href="/rmd/stats">
+              <img src="/assets/img/main_stats.png" style="height:160px; min-width:145px;" /></a>
             </div>
             <div class="col text-left align-self-center text-nowrap" style="margin-left: -5px;" >
             {% assign doid = site.annotations | where: "type", "Disease" %}
