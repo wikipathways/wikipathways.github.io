@@ -51,8 +51,8 @@ First, let’s combine our data frames and make a proper date column and
 factor by month
 
 ``` r
-combo.df <- wpid.all.df.cnts %>%
-  inner_join(edits.user.df, by="date")
+combo.df <- edits.user.df %>%
+  full_join(wpid.all.df.cnts, by="date")
 
 combo.df$date <- strptime(paste0(combo.df$date,"01"), "%Y%m%d")
 combo.df$month <- factor(format(combo.df$date, "%B"),
@@ -66,16 +66,19 @@ Next, let’s plot a time series
 bcols <- RColorBrewer::brewer.pal(3,"Set1")
 
 # scaling
-ylim.prim <- c(0, max(combo.df$edits)) # range for edits
-ylim.sec <- c(min(combo.df$pathways), max(combo.df$pathways))    # range for pathways
+ylim.prim <- c(0, max(combo.df$edits, na.rm = T)) # range for edits
+ylim.sec <- c(min(combo.df$pathways, na.rm = T), max(combo.df$pathways, na.rm = T))    # range for pathways
 b <- diff(ylim.prim)/diff(ylim.sec)
 a <- b*(ylim.prim[1] - ylim.sec[1])
 
 p <- ggplot(combo.df) +
   geom_bar(aes(x = as.Date(date),y=edits),stat="identity", fill=bcols[2]) +
-  geom_line(aes(x = as.Date(date),y=a + pathways * b), 
+  geom_line(data=combo.df[which(combo.df$month %in% c("February","December")),], # hand-picked dates due to patchy pathway counts
+            aes(x = as.Date(date),y=a + pathways * b), 
             color = bcols[1], size = 2) +
-  scale_x_date(date_breaks = "1 year", date_labels = "%Y") +
+  scale_x_date(date_breaks = "1 year", date_labels = "%Y",
+               name = "",
+               limits = c(as.Date(strptime("2018","%Y")),as.Date(strptime("2022","%Y")))) +
   scale_y_continuous(name="# Edits",  
                      sec.axis=sec_axis(~ (. - a)/b, 
                                        name="# Pathways")) +
@@ -90,9 +93,17 @@ p <- ggplot(combo.df) +
 p
 ```
 
+    ## Warning: Removed 13 rows containing missing values (position_stack).
+
+    ## Warning: Removed 2 row(s) containing missing values (geom_path).
+
 ![](stats_files/figure-markdown_github/plot-1.png)
 
 ``` r
 ggsave("../assets/img/main_stats.png", plot = last_plot(), 
        width = 1100, height = 550, units = "px", dpi = 250)
 ```
+
+    ## Warning: Removed 13 rows containing missing values (position_stack).
+
+    ## Warning: Removed 2 row(s) containing missing values (geom_path).
