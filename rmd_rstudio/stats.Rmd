@@ -2,9 +2,10 @@
 title: "stats"
 author: "Alex"
 date: "1/2/2022"
-output: html_document
-  # md_document:
-  #   variant: markdown_github
+# output: html_document
+output:
+  md_document:
+    variant: markdown_github
 ---
 
 ```{r setup, include=FALSE}
@@ -13,10 +14,10 @@ knitr::opts_chunk$set(echo = TRUE)
 # WikiPathways Stats
 This R notebooks prepares figures to summarize WikiPathways activity. The output files are displayed on the website and used in publications and grant applications. Please edit in coordination with the WikiPathways development team.
 
-* Data points are collected in _data/
-* Plots are saved in assets/img/
+* Data points are collected in _*data/*
+* Plots are saved in *assets/img/*
  
-```{r install}
+```{r install, include=FALSE}
 library(rWikiPathways) 
 library(RColorBrewer)
 library(scales)
@@ -26,17 +27,17 @@ library(tidyverse)
 
 ## Collect Data
 
-### Initialize Table
+### Initialize Pathway Count Table
 Collect history from old webservice, using getPathwayHistory on "Approved" 
 pathways and checking oldest revision on pathways after WP3959 against a 
 cutoff "oldest.date". 
 
-**This was used to populate the data table; only run once.** Subsequent chunks
-will update the table using data sourced from GitHub repos.
+**This was used to populate the data table; only run once.** See GitHub 
+Collections to update the table using data sourced from GitHub repos.
 
-```{r collect, eval=F}
+```{r collect, eval=FALSE, include=FALSE}
 wpid.all <- getPathwayIdsByCurationTag('Curation:AnalysisCollection')
-oldest.date <- "20170101"
+oldest.date <- "201701"
 oldest.wpid <- "WP3959" # manually confirmed
 wpid.all.df <- plyr::ldply(wpid.all, function(p){
   if(p > oldest.wpid){
@@ -47,56 +48,95 @@ wpid.all.df <- plyr::ldply(wpid.all, function(p){
         data.frame(date=substr(t,0,6),wpid=p)
       }
       else
-        data.frame(date=substr(oldest.date,0,6),wpid=p)
+        data.frame(date=oldest.date,wpid=p)
     } else
-      data.frame(date=substr(oldest.date,0,6),wpid=p)
+      data.frame(date=oldest.date,wpid=p)
   } else
-    data.frame(date=substr(oldest.date,0,6),wpid=p)
+    data.frame(date=oldest.date,wpid=p)
 })
 
 ## save raw data
-write.table(wpid.all.df, "../_data/wpid_oldest_rev_2017-2022.csv", sep = ",", row.names = F)
+write.table(wpid.all.df, "../_data/old/wpid_oldest_rev_2017-2022.csv", sep = ",", row.names = F)
 
 ## summarize counts
 wpid.all.df.cnts <- wpid.all.df %>%
   dplyr::group_by(date) %>%
-  dplyr:: summarise(pathway_count_all = n()) %>%
-  dplyr::mutate(pathway_count_all = cumsum(pathway_count_all))
+  dplyr:: summarise(pathways = n()) %>%
+  dplyr::mutate(pathways = cumsum(pathways))
 
 ## save count data
 write.table(wpid.all.df.cnts, "../_data/pathway_counts.csv", sep = ",", row.names = F)
 ```
 
-### GitHub Collection
+### Initialize Monthly Activity Table
+Collect monthly edit history from "User edits in month" from old server at 
+*wpi/statistics/editCounts.txt*, manually simplified to *editCounts.csv*.
+
+**This was used to populate the data table; only run once.** See GitHub 
+Collections to update the table using data sourced from GitHub repos.
+
+```{r edits, eval=FALSE, include=FALSE}
+edits.user.df <- read.csv("../_data/old/editCounts.csv", stringsAsFactors = F)
+edits.user.df$date <- as.character(strftime(strptime(edits.user.df$date,"%m/%d/%y"), "%Y%m"))
+
+## save count data
+write.table(edits.user.df, "../_data/edit_counts.csv", sep = ",", row.names = F)
+```
+
+### GitHub Collections
 
 ```{r github}
-# TODO
+wpid.all.df.cnts <- read.csv("../_data/pathway_counts.csv", stringsAsFactors = F)
+edits.user.df <- read.csv("../_data/edit_counts.csv", stringsAsFactors = F)
+
+# TODO: count WP folders in _pathways/
+# TODO: commits per time frame, see https://git-scm.com/docs/git-rev-list with
+# parms --since and --until
 ```
 
 ## Plot data
 
 Composite plot for main page: pathway count and number of edits per month.
 
-First, let's make a proper date column and helpful factor by month
+First, let's combine our data frames and make a proper date column and factor by 
+month
 ```{r prep}
-wpid.all.df.cnts$date <- strptime(paste0(wpid.all.df.cnts$date,"01"), "%Y%m%d")
-wpid.all.df.cnts$month <- factor(format(wpid.all.df.cnts$date, "%B"),
+combo.df <- wpid.all.df.cnts %>%
+  inner_join(edits.user.df, by="date")
+
+combo.df$date <- strptime(paste0(combo.df$date,"01"), "%Y%m%d")
+combo.df$month <- factor(format(combo.df$date, "%B"),
                                 levels = month.name)
 ```
 
 Next, let's plot a time series
 ```{r plot}
-p <- ggplot(wpid.all.df.cnts[which(wpid.all.df.cnts$month=='December'),],
-           aes(x = as.Date(date),
-               y=pathway_count_all)
-           #     fill = factor(subcluster))
-           ) + 
-  geom_line(color = "#FC4E07", size = 2) +
+
+# RColorBrewer::display.brewer.all()
+bcols <- RColorBrewer::brewer.pal(3,"Set1")
+
+# scaling
+ylim.prim <- c(0, max(combo.df$edits)) # range for edits
+ylim.sec <- c(min(combo.df$pathways), max(combo.df$pathways))    # range for pathways
+b <- diff(ylim.prim)/diff(ylim.sec)
+a <- b*(ylim.prim[1] - ylim.sec[1])
+
+p <- ggplot(combo.df) +
+  geom_bar(aes(x = as.Date(date),y=edits),stat="identity", fill=bcols[2]) +
+  geom_line(aes(x = as.Date(date),y=a + pathways * b), 
+            color = bcols[1], size = 2) +
+  scale_x_date(date_breaks = "1 year", date_labels = "%Y") +
+  scale_y_continuous(name="# Edits",  
+                     sec.axis=sec_axis(~ (. - a)/b, 
+                                       name="# Pathways")) +
   ggtitle("Active community and growing database") +
   xlab("") +
-  ylab("Number of pathways") +
-  # ylim(c(1200,1900)) +
-  scale_x_date(date_breaks = "1 year", date_labels = "%Y") 
+  theme(axis.text.y.left=element_text(colour=bcols[2]),
+        axis.text.y.right=element_text(colour=bcols[1]),
+        axis.ticks.y.left=element_line(colour=bcols[2]),
+        axis.ticks.y.right=element_line(colour=bcols[1]))
+
+
 p
 ```
 
