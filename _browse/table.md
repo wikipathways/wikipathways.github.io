@@ -1,7 +1,7 @@
 ---
 layout: table-page
 order: 2
-display-title: "Table column filters"
+display-title: "Table filters"
 btn-class: "btn-outline-warning"
 ---
 
