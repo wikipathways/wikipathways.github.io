@@ -60,7 +60,7 @@ layout: home
 	   searchBox1.placeholder=" ";
 	   searchBox1.title="Search WikiPathways"; 
 	   var searchBox2 =  document.getElementById("gsc-i-id2");
-	   searchBox2.placeholder=" e.g., AKT1 or cancer";
+	   searchBox2.placeholder=" e.g., ACE or cancer";
 	   searchBox2.title="Search WikiPathways"; 
 	 }
    </script>
