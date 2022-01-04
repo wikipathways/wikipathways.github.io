@@ -34,7 +34,7 @@ layout: home
                 <li>{{ site.organisms.size }} organisms</li>
                 <li>{{ site.communities.size }} communities</li>
               </ul>
-            </div>            
+            </div>           
           </div>
         </div> 
       </div>
