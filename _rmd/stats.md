@@ -1,7 +1,6 @@
 ---
 title: stats
 ---
-
 # WikiPathways Stats
 
 This R notebooks prepares figures to summarize WikiPathways activity.
@@ -35,9 +34,11 @@ Collections to update the table using data sourced from GitHub repos.
 ### GitHub Collections
 
 ``` r
+## read saved data
 wpid.all.df.cnts <- read.csv("../_data/pathway_counts.csv", stringsAsFactors = F)
 edits.user.df <- read.csv("../_data/edit_counts.csv", stringsAsFactors = F)
 
+## add new row of data
 # TODO: count WP folders in _pathways/
 # TODO: commits per time frame, see https://git-scm.com/docs/git-rev-list with
 # parms --since and --until
@@ -66,11 +67,7 @@ Next, let’s plot a time series
 # RColorBrewer::display.brewer.all()
 bcols <- RColorBrewer::brewer.pal(3,"Set1")
 
-# remove outliers (replace with average)
-combo.df <- combo.df %>%
-  mutate(edits = ifelse(edits > 2000, 250, edits))
-
-# scaling
+# scaling for primary and secondary y-axes
 ylim.prim <- c(0, max(combo.df$edits, na.rm = T)) # range for edits
 ylim.sec <- c(min(combo.df$pathways, na.rm = T), max(combo.df$pathways, na.rm = T))    # range for pathways
 b <- diff(ylim.prim)/diff(ylim.sec)
@@ -78,7 +75,7 @@ a <- b*(ylim.prim[1] - ylim.sec[1])
 
 p <- ggplot(combo.df) +
   geom_bar(aes(x = as.Date(date),y=edits),stat="identity", fill=bcols[2]) +
-  geom_line(data=combo.df[which(combo.df$month %in% c("February","December")),], # hand-picked dates due to patchy pathway counts
+  geom_line(data=na.omit(combo.df), 
             aes(x = as.Date(date),y=a + pathways * b), 
             color = bcols[1], size = 2) +
   scale_x_date(date_breaks = "1 year", date_labels = "%Y",
@@ -99,9 +96,7 @@ p <- ggplot(combo.df) +
 p
 ```
 
-    ## Warning: Removed 13 rows containing missing values (position_stack).
-
-    ## Warning: Removed 2 row(s) containing missing values (geom_path).
+    ## Warning: Removed 12 rows containing missing values (position_stack).
 
 ![](stats_files/figure-markdown_github/plot-1.png)
 
@@ -110,6 +105,4 @@ ggsave("../assets/img/main_stats.png", plot = last_plot(),
        width = 1100, height = 550, units = "px", dpi = 250)
 ```
 
-    ## Warning: Removed 13 rows containing missing values (position_stack).
-
-    ## Warning: Removed 2 row(s) containing missing values (geom_path).
+    ## Warning: Removed 12 rows containing missing values (position_stack).

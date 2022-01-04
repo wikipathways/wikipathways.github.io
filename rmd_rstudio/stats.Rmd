@@ -40,7 +40,7 @@ wpid.all <- getPathwayIdsByCurationTag('Curation:AnalysisCollection')
 oldest.date <- "201701"
 oldest.wpid <- "WP3959" # manually confirmed
 wpid.all.df <- plyr::ldply(wpid.all, function(p){
-  if(p > oldest.wpid){
+  if(p > oldest.wpid || nchar(p) >=6){
     wp.hist <- getPathwayHistory(p, oldest.date)
     if(length(wp.hist) > 0){
       t <- wp.hist[[1]]$timestamp
@@ -59,13 +59,14 @@ wpid.all.df <- plyr::ldply(wpid.all, function(p){
 write.table(wpid.all.df, "../_data/old/wpid_oldest_rev_2017-2022.csv", sep = ",", row.names = F)
 
 ## summarize counts
-wpid.all.df.cnts <- wpid.all.df %>%
+wpid.all.df.cnts2 <- wpid.all.df2 %>%
   dplyr::group_by(date) %>%
   dplyr:: summarise(pathways = n()) %>%
   dplyr::mutate(pathways = cumsum(pathways))
 
 ## save count data
 write.table(wpid.all.df.cnts, "../_data/pathway_counts.csv", sep = ",", row.names = F)
+### Note: manually overwrote last 12 months with data from https://www.wikipathways.org/index.php/WikiPathways:Updates
 ```
 
 ### Initialize Monthly Activity Table
@@ -79,6 +80,10 @@ Collections to update the table using data sourced from GitHub repos.
 edits.user.df <- read.csv("../_data/old/editCounts.csv", stringsAsFactors = F)
 edits.user.df$date <- as.character(strftime(strptime(edits.user.df$date,"%m/%d/%y"), "%Y%m"))
 
+# remove outliers (replace with average)
+edits.user.df <- edits.user.df %>%
+  mutate(edits = ifelse(edits > 2000, 250, edits))
+
 ## save count data
 write.table(edits.user.df, "../_data/edit_counts.csv", sep = ",", row.names = F)
 ```
@@ -86,9 +91,11 @@ write.table(edits.user.df, "../_data/edit_counts.csv", sep = ",", row.names = F)
 ### GitHub Collections
 
 ```{r github}
+## read saved data
 wpid.all.df.cnts <- read.csv("../_data/pathway_counts.csv", stringsAsFactors = F)
 edits.user.df <- read.csv("../_data/edit_counts.csv", stringsAsFactors = F)
 
+## add new row of data
 # TODO: count WP folders in _pathways/
 # TODO: commits per time frame, see https://git-scm.com/docs/git-rev-list with
 # parms --since and --until
@@ -115,11 +122,7 @@ Next, let's plot a time series
 # RColorBrewer::display.brewer.all()
 bcols <- RColorBrewer::brewer.pal(3,"Set1")
 
-# remove outliers (replace with average)
-combo.df <- combo.df %>%
-  mutate(edits = ifelse(edits > 2000, 250, edits))
-
-# scaling
+# scaling for primary and secondary y-axes
 ylim.prim <- c(0, max(combo.df$edits, na.rm = T)) # range for edits
 ylim.sec <- c(min(combo.df$pathways, na.rm = T), max(combo.df$pathways, na.rm = T))    # range for pathways
 b <- diff(ylim.prim)/diff(ylim.sec)
@@ -127,7 +130,7 @@ a <- b*(ylim.prim[1] - ylim.sec[1])
 
 p <- ggplot(combo.df) +
   geom_bar(aes(x = as.Date(date),y=edits),stat="identity", fill=bcols[2]) +
-  geom_line(data=combo.df[which(combo.df$month %in% c("February","December")),], # hand-picked dates due to patchy pathway counts
+  geom_line(data=na.omit(combo.df), 
             aes(x = as.Date(date),y=a + pathways * b), 
             color = bcols[1], size = 2) +
   scale_x_date(date_breaks = "1 year", date_labels = "%Y",
