@@ -127,7 +127,7 @@ layout: home
       <h2>Learn</h2>
       <ul style="list-style: none; margin-left:-3px; line-height:250%;">
       <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="" target="_blank">How to Contribute </a></li>
-      <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="" target="_blank">How to Curate </a></li>
+      <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="https://new.wikipathways.org/academy/path.html" target="_blank">How to Curate </a></li>
       <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="" target="_blank">How to Use</a></li>
       <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="" target="_blank">How to Develop</a></li>
       </ul>
