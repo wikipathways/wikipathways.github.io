@@ -1,6 +1,7 @@
 ---
 title: stats
 ---
+
 # WikiPathways Stats
 
 This R notebooks prepares figures to summarize WikiPathways activity.
@@ -80,7 +81,7 @@ p <- ggplot(combo.df) +
             color = bcols[1], size = 2) +
   scale_x_date(date_breaks = "1 year", date_labels = "%Y",
                name = "",
-               limits = c(as.Date(strptime("2018","%Y")),as.Date(strptime("2022","%Y")))) +
+               limits = c(as.Date(strptime("2018","%Y")),as.Date(strptime("202201","%Y%m")))) +
   scale_y_continuous(name="# Edits", 
                      limits = ylim.prim,
                      sec.axis=sec_axis(~ (. - a)/b, 
