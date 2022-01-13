@@ -95,24 +95,35 @@ layout: home
     </div>
     <div class="col" style="display:flex; flex-direction:row;">
       <div class="bg-gradient p-3 w-100" style="background-color: #eeeeee;">
+      <h2>Latest</h2>
+        {% assign sorted_pathways = site.pathways | sort: "last-edited" %}
+        {% assign pw = sorted_pathways.last %}
+            <div class="card w-100" style="width: 10rem;">
+              <a class="card-link" href="{{ pw.url }}">
+              <img class="card-img-top" loading="lazy" src="/assets/img/{{pw.wpid}}/{{pw.wpid}}-thumb.png" alt="{{ pw.title }}">
+              <div class="card-body">
+                <p class="card-text">{{ pw.title }} <em>({{ pw.organisms.first }})</em></p>
+              </div>
+              </a>
+            </div>
       <h2>Analyze</h2>
-      <ul style="list-style: none; margin-left:-3px; line-height:250%;">
-      <li><a class="btn btn-sm btn-pill btn-outline-warning" href="https://pathvisio.org/" 
+      <p style="margin-left:-3px; line-height:250%;">
+      <a href="https://pathvisio.org/" 
       title="PathVisio is a free open-source pathway analysis and drawing software which allows drawing, editing, and analyzing biological pathways." target="_blank">
-      PathVisio (install)</a></li>
-      <li><a class="btn btn-sm btn-pill btn-outline-warning" href="http://apps.cytoscape.org/apps/wikipathways" 
+      <img src="/assets/img/logo-pathvisio.png" height="30px" /></a>
+      <a href="http://apps.cytoscape.org/apps/wikipathways" 
       title="Cytoscape is an open source software platform for visualizing complex-networks and integrating these with any type of attribute data." target="_blank">
-      Cytoscape (install)</a></li>
-      <li><a class="btn btn-sm btn-pill btn-outline-warning" href="https://biit.cs.ut.ee/gprofiler/gost" title="g:Profiler is a public web server for characterising and manipulating gene lists." target="_blank">
-      g:Profiler (online)</a></li>
-      <li><a class="btn btn-sm btn-pill btn-outline-warning" href="https://www.webgestalt.org/" title="WebGestalt is designed for functional genomic, proteomic and large-scale genetic studies from which large number of gene lists." target="_blank">
-      WebGestalt (online)</a></li>
-      <li><a class="btn btn-sm btn-pill btn-outline-warning" href="https://amp.pharm.mssm.edu/Enrichr/" title="Enrichr is a comprehensive gene set enrichment analysis web server. Includes WikiPathways as one of their data sources." target="_blank">
-      Enrichr (online)</a></li>
-      <li><a class="btn btn-sm btn-pill btn-outline-warning" href="https://bioconductor.org/packages/clusterProfiler/" title="The clusterProfiler R package supports GO and pathway analysis performed as overrepresentation or GSEA." target="_blank">
-      clusterProfiler (R)</a></li>
-      <li><a href="/tools.html" style="font-size:0.8em; text-decoration:none;">and many more...</a></li>
-      </ul>
+      <img src="/assets/img/logo-cytoscape.png" height="30px" /></a>
+      <a href="https://biit.cs.ut.ee/gprofiler/gost" title="g:Profiler is a public web server for characterising and manipulating gene lists." target="_blank">
+      <img src="/assets/img/logo-gprofiler.png" height="30px" /></a>
+      <a href="https://www.webgestalt.org/" title="WebGestalt is designed for functional genomic, proteomic and large-scale genetic studies from which large number of gene lists." target="_blank">
+      <img src="/assets/img/logo-webgestalt.png" height="30px" /></a>
+      <a href="https://amp.pharm.mssm.edu/Enrichr/" title="Enrichr is a comprehensive gene set enrichment analysis web server. Includes WikiPathways as one of their data sources." target="_blank">
+      <img src="/assets/img/logo-enrichr.png" height="30px" /></a>
+      <a href="https://bioconductor.org/packages/clusterProfiler/" title="The clusterProfiler R package supports GO and pathway analysis performed as overrepresentation or GSEA." target="_blank">
+      <img src="/assets/img/logo-clusterprofiler.png" height="30px" /></a>
+      <br/>
+      <a href="/tools.html" style="font-size:0.8em; text-decoration:none;">and many more...</a></p>
       </div>
     </div>
     <div class="col" style="display:flex; flex-direction:row;">
