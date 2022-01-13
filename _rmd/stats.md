@@ -1,7 +1,6 @@
 ---
 title: stats
 ---
-
 # WikiPathways Stats
 
 This R notebooks prepares figures to summarize WikiPathways activity.
@@ -68,6 +67,10 @@ Next, let’s plot a time series
 # RColorBrewer::display.brewer.all()
 bcols <- RColorBrewer::brewer.pal(3,"Set1")
 
+# date range for x-axis
+Ym.end <- wpid.all.df.cnts[nrow(wpid.all.df.cnts),1]
+Ym.start <- Ym.end - 400 # 4 years
+  
 # scaling for primary and secondary y-axes
 ylim.prim <- c(0, max(combo.df$edits, na.rm = T)) # range for edits
 ylim.sec <- c(min(combo.df$pathways, na.rm = T), max(combo.df$pathways, na.rm = T))    # range for pathways
@@ -81,7 +84,7 @@ p <- ggplot(combo.df) +
             color = bcols[1], size = 2) +
   scale_x_date(date_breaks = "1 year", date_labels = "%Y",
                name = "",
-               limits = c(as.Date(strptime("2018","%Y")),as.Date(strptime("202201","%Y%m")))) +
+               limits = c(as.Date(strptime(Ym.start,"%Y%m")),as.Date(strptime(Ym.end,"%Y%m")))) +
   scale_y_continuous(name="# Edits", 
                      limits = ylim.prim,
                      sec.axis=sec_axis(~ (. - a)/b, 
