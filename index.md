@@ -14,7 +14,7 @@ layout: home
               <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Wplogo_500.png"
               width="150px">
             </div>
-          </div>
+          </div> 
         </div>
       </div>
     </div>
@@ -29,10 +29,10 @@ layout: home
             <div class="col text-left align-self-center text-nowrap" style="margin-left: -5px;" >
             {% assign doid = site.annotations | where: "type", "Disease" %}
               <ul>
-                <li>{{ site.pathways.size }} pathways</li>
-                <li>{{ doid.size }} diseases</li>
-                <li>{{ site.organisms.size }} organisms</li>
-                <li>{{ site.communities.size }} communities</li>
+                <li><a href="/browse/filters.html">{{ site.pathways.size }} pathways</a></li>
+                <li><a href="/browse/annotations.html">{{ doid.size }} diseases</a></li>
+                <li><a href="/browse/organisms.html">{{ site.organisms.size }} organisms</a></li>
+                <li><a href="/browse/communities.html">{{ site.communities.size }} communities</a></li>
               </ul>
             </div>           
           </div>
