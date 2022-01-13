@@ -83,29 +83,11 @@ layout: home
       <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="https://data.wikipathways.org" target="_blank">Prior releases </a></li>
       </ul>
       <h2>Access</h2>
-      <ul style="list-style: none; margin-left:-3px; line-height:250%;">
-      <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="https://webservice.wikipathways.org" title="WikiPathways webservice API" target="_blank">Web services </a></li>
-      <li><a class="btn btn-sm btn-pill btn-outline-warning" href="https://sparql.wikipathways.org" title="SPARQL endpoint for WikiPathways RDF" target="_blank">SPARQL</a></li>
-      <li><a class="btn btn-sm btn-pill btn-outline-warning" href="https://bioconductor.org/packages/rWikiPathways/" title="R package for the WikiPathways webservice API" target="_blank">
-      rWikiPathways (R) </a></li>
-      <li><a class="btn btn-sm btn-pill btn-outline-warning" href="hhttps://github.com/kozo2/pywikipathways" title="Python client package for the WikiPathways webservice API" target="_blank">
-      pyWikiPathways (Python) </a></li>
-      </ul>
-      </div>
-    </div>
-    <div class="col" style="display:flex; flex-direction:row;">
-      <div class="bg-gradient p-3 w-100" style="background-color: #eeeeee;">
-      <h2>Latest</h2>
-        {% assign sorted_pathways = site.pathways | sort: "last-edited" %}
-        {% assign pw = sorted_pathways.last %}
-            <div class="card w-100" style="width: 10rem;">
-              <a class="card-link" href="{{ pw.url }}">
-              <img class="card-img-top" loading="lazy" src="/assets/img/{{pw.wpid}}/{{pw.wpid}}-thumb.png" alt="{{ pw.title }}">
-              <div class="card-body">
-                <p class="card-text">{{ pw.title }} <em>({{ pw.organisms.first }})</em></p>
-              </div>
-              </a>
-            </div>
+      <p> <a class="btn btn-sm btn-pill btn-outline-warning" href="https://webservice.wikipathways.org" title="WikiPathways webservice API" target="_blank">API</a>
+      <a class="btn btn-sm btn-pill btn-outline-warning" href="https://sparql.wikipathways.org" title="SPARQL endpoint for WikiPathways RDF" target="_blank">SPARQL</a>
+      <a class="btn btn-sm btn-pill btn-outline-warning" href="https://bioconductor.org/packages/rWikiPathways/" title="R package for the WikiPathways webservice API" target="_blank">R</a>
+      <a class="btn btn-sm btn-pill btn-outline-warning" href="hhttps://github.com/kozo2/pywikipathways" title="Python client package for the WikiPathways webservice API" target="_blank">Python</a>
+      </p>
       <h2>Analyze</h2>
       <p style="margin-left:-3px; line-height:250%;">
       <a href="https://pathvisio.org/" 
@@ -126,7 +108,7 @@ layout: home
       <a href="/tools.html" style="font-size:0.8em; text-decoration:none;">and many more...</a></p>
       </div>
     </div>
-    <div class="col" style="display:flex; flex-direction:row;">
+     <div class="col" style="display:flex; flex-direction:row;">
       <div class="bg-gradient p-3 w-100" style="background-color: #eeeeee;">
       <h2>Publish</h2>
       <ul style="list-style: none; margin-left:-3px; line-height:250%;">
@@ -142,6 +124,28 @@ layout: home
       <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="" target="_blank">How to Use</a></li>
       <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="" target="_blank">How to Develop</a></li>
       </ul>
+      </div>
+    </div>
+    <div class="col" style="display:flex; flex-direction:row;">
+      <div class="bg-gradient p-3 w-100" style="background-color: #eeeeee;">
+      <h2>Latest</h2>
+        {% assign sorted_pathways = site.pathways | sort: "last-edited" %}
+        {% assign pw = sorted_pathways.last %}
+            <div class="card w-100" style="width: 10rem;">
+              <a class="card-link" href="{{ pw.url }}">
+              <img class="card-img-top" loading="lazy" src="/assets/img/{{pw.wpid}}/{{pw.wpid}}-thumb.png" alt="{{ pw.title }}">
+              <div class="card-body">
+                <p class="card-text">{{ pw.title }} <em>({{ pw.organisms.first }})</em></p>
+              </div>
+              </a>
+            </div>
+          <ul style="list-style: none; margin-left:-3px; line-height:250%;">
+            <li><a class="btn btn-sm btn-pill btn-outline-warning" href="https://github.com/wikipathways/wikipathways-database/commits/main" 
+            title="Newest additions to WikiPathways." target="_blank">
+            New pathways</a></li>
+            <li><a class="btn btn-sm btn-pill btn-outline-warning" href="https://github.com/wikipathways/wikipathways-database/commits/main" title="Recent pathway edits at WikiPathways." target="_blank">
+            Recent changes</a></li>
+          </ul>
       </div>
     </div>
   </div>
