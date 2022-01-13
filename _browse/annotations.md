@@ -5,7 +5,7 @@ btn-class: "btn-annotation"
 ---
 
 <h1>Pathways by Annotation</h1> 
-<p>Exlpore ontologies below to identify pathways tagged with particular terms.</p>
+<p>Explore ontologies below to identify pathways tagged with particular terms.</p>
 {% assign type-group = site.annotations | group_by: "type" | reverse %}
 {% for type in type-group %}
 <section class="facet">
