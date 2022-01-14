@@ -38,7 +38,7 @@ layout: default
     <div class="row" style="margin-left: 10px;">
       <ul>
         {% for pw in sorted_pathways %}
-              <li><a href="{{ pw.url }}">{{ pw.title }} <em>({{ pw.organisms.first }})</em> --<b>last edited: {{ pw.last-edited }}</b></a></li>
+              <li><a href="{{ pw.url }}">{{pw.wpid}}: {{ pw.title }} <em>({{ pw.organisms.first }})</em> --<b>last edited: {{ pw.last-edited }}</b></a></li>
         {% endfor %}
       </ul>
     </div>  
@@ -46,5 +46,5 @@ layout: default
 </div>
 <br/><hr/>
 <h2>Authors of Recent Changes</h2>
-{% assign all_authors = sorted_pathways | map: "authors" | join: ','  | split: ',' | uniq  %}
+{% assign all_authors = sorted_pathways | map: "authors" | join: ','  | split: ',' | uniq  %} <!-- REPLACE authors with "recent author" -->
 <p>{{ all_authors | array_to_sentence_string }}.</p>

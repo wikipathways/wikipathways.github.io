@@ -22,12 +22,31 @@
   }
 }
 
+/* HEADER */
+.page-content {
+  padding: 30px 0px;
+}
+.site-header {
+  border-bottom: none;
+}
 .navbar-brand {
   font-size: 2em;
 }
 .navbar {
   padding: 0px;
 }
+
+/* MAIN */
+.home-page-content{
+  padding: 0px 0px 30px 0px;
+}
+.outer-container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* TAGS */
 
 h1 {
   font-size: 2em;

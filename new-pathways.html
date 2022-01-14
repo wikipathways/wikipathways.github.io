@@ -51,7 +51,7 @@ layout: default
             {% if j > 20 %}
               {% break %}
             {% endif %}
-            <li><a href="{{ pw.url }}">{{ pw.title }} <em>({{ pw.organisms.first }})</em> --<b>last edited: {{ pw.last-edited }}</b></a></li>
+            <li><a href="{{ pw.url }}">{{pw.wpid}}: {{ pw.title }} <em>({{ pw.organisms.first }})</em> --<b>last edited: {{ pw.last-edited }}</b></a></li>
           {% endif %}
         {% endfor %}
       </ul>
