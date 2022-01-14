@@ -1,7 +1,7 @@
 ---
 layout: home
 ---
-<div class="container">
+<div class="outer-container">
   <div class="row gy-6 py-3" style="display:flex; flex-wrap: wrap;">
     <div class="col" style="display:flex;">
       <div class="bg-gradient p-3" style="background-color: #eeeeee;">
