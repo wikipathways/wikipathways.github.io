@@ -141,9 +141,9 @@ layout: home
             </div>
           <ul style="list-style: none; margin-left:-3px; line-height:250%;">
             <li><a class="btn btn-sm btn-pill btn-outline-warning" href="/new-pathways.html" 
-            title="Newest additions to WikiPathways." target="_blank">
+            title="Newest additions to WikiPathways.">
             New pathways</a></li>
-            <li><a class="btn btn-sm btn-pill btn-outline-warning" href="/recent-pathways.html" title="Recent pathway edits at WikiPathways." target="_blank">
+            <li><a class="btn btn-sm btn-pill btn-outline-warning" href="/recent-pathways.html" title="Recent pathway edits at WikiPathways.">
             Recent changes</a></li>
           </ul>
       </div>
