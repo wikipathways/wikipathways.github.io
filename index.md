@@ -140,10 +140,10 @@ layout: home
               </a>
             </div>
           <ul style="list-style: none; margin-left:-3px; line-height:250%;">
-            <li><a class="btn btn-sm btn-pill btn-outline-warning" href="https://github.com/wikipathways/wikipathways-database/commits/main" 
+            <li><a class="btn btn-sm btn-pill btn-outline-warning" href="/new-pathways.html" 
             title="Newest additions to WikiPathways." target="_blank">
             New pathways</a></li>
-            <li><a class="btn btn-sm btn-pill btn-outline-warning" href="https://github.com/wikipathways/wikipathways-database/commits/main" title="Recent pathway edits at WikiPathways." target="_blank">
+            <li><a class="btn btn-sm btn-pill btn-outline-warning" href="/recent-pathways.html" title="Recent pathway edits at WikiPathways." target="_blank">
             Recent changes</a></li>
           </ul>
       </div>

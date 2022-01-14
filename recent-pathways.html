@@ -1,0 +1,50 @@
+---
+layout: default
+---
+    <h2 id="title">Recently Changed Pathways</h2>
+    <p>A sorted list of pathways that have been recently edited.</p> 
+
+    <h2>Pathways</h2>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#gallery">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#list">List</a>
+      </li>
+    </ul>
+    {% assign sorted_pathways = site.pathways | sort: "last-edited" | reverse | slice:0, 20 %}
+    <div class="tab-content" >
+      <div class="tab-pane fade show active" id="gallery" role="tabpanel">
+        <br/>
+    <div class="row">
+      {% for pw in sorted_pathways %}
+          <div class="col-sm-auto">
+            <div class="card" style="width: 10rem;">
+              <a class="card-link" href="{{ pw.url }}">
+              <img class="card-img-top" loading="lazy" src="/assets/img/{{pw.wpid}}/{{pw.wpid}}-thumb.png" alt="{{ pw.title }}">
+              <div class="card-body">
+                <p class="card-text">{{ pw.title }} <em>({{ pw.organisms.first }})</em>
+                <br /><b>last edited: {{ pw.last-edited }}</b></p>
+              </div>
+              </a>
+            </div>
+          </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="tab-pane fade" id="list" role="tabpanel">
+    <br/>
+    <div class="row" style="margin-left: 10px;">
+      <ul>
+        {% for pw in sorted_pathways %}
+              <li><a href="{{ pw.url }}">{{ pw.title }} <em>({{ pw.organisms.first }})</em> --<b>last edited: {{ pw.last-edited }}</b></a></li>
+        {% endfor %}
+      </ul>
+    </div>  
+  </div>
+</div>
+<br/><hr/>
+<h2>Recent Contributors</h2>
+{% assign all_authors = sorted_pathways | map: "authors" | join: ','  | split: ',' | uniq  %}
+<p>{{ all_authors | array_to_sentence_string }}.</p>
