@@ -2,7 +2,7 @@
 layout: default
 ---
     <h2 id="title">New Pathways</h2>
-    <p>A sorted list of pathways that have been recently added to the database.</p> 
+    <p>A sorted list of 20 pathways that have been recently added to the database.</p> 
 
     <h2>Pathways</h2>
     <ul class="nav nav-tabs">
@@ -18,7 +18,7 @@ layout: default
       <div class="tab-pane fade show active" id="gallery" role="tabpanel">
         <br/>
     <div class="row">
-      {% assign i = 1 %}
+      {% assign i = 0 %}
       {% for pw in sorted_pathways %}
         {% if pw.wpid.size == 6 %} <!-- Only display sorted 4-digit wpids -->
           {% assign i = i | plus: 1 %}
@@ -44,7 +44,7 @@ layout: default
     <br/>
     <div class="row" style="margin-left: 10px;">
       <ul>
-        {% assign j = 1 %}
+        {% assign j = 0 %}
         {% for pw in sorted_pathways %}
           {% if pw.wpid.size == 6 %}
           {% assign j = j | plus: 1 %}
@@ -62,7 +62,7 @@ layout: default
 <h2>Recent Contributors</h2>
 <p>
     {% assign all_authors = '' | split: '' %}
-    {% assign k = 1 %}
+    {% assign k = 0 %}
     {% for pw in sorted_pathways %}
       {% if pw.wpid.size == 6 %}
       {% assign k = k | plus: 1 %}
