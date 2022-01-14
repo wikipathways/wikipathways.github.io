@@ -45,6 +45,6 @@ layout: default
   </div>
 </div>
 <br/><hr/>
-<h2>Recent Contributors</h2>
+<h2>Authors of Recent Changes</h2>
 {% assign all_authors = sorted_pathways | map: "authors" | join: ','  | split: ',' | uniq  %}
 <p>{{ all_authors | array_to_sentence_string }}.</p>
