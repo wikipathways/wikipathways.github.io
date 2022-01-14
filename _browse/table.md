@@ -184,6 +184,11 @@ function sortTable(n) {
             shouldSwitch = true;
             break;
           }
+        } else if (n == 1) { // WPID (numeric part)
+          if (x.innerHTML.split("WP")[1] > y.innerHTML.split("WP")[1]) {
+            shouldSwitch = true;
+            break;
+          }
         } else if (n == 0) { // hyperlinked title
           if (x.innerHTML.toLowerCase().split(">")[1] > y.innerHTML.toLowerCase().split(">")[1]) {
             shouldSwitch = true;
