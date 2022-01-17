@@ -107,10 +107,8 @@ layout: default
     {% for type in annot-types %}
     <p><b>{{ type }}: </b>
       {% assign annot-values= page.annotations | where: "type", type | map: "value" %}
-      {% for annot in site.annotations %}
-      {% if annot-values contains annot.value and type == annot.type %}
-      <a class="btn btn-sm btn-pill btn-annotation" href="{{annot.url}}">{{annot.value}}</a>
-      {% endif %}
+      {% for annot in annot-values %}
+        <a class="btn btn-sm btn-pill btn-annotation" href="/browse/table.html?{{ type }}={{ annot }}">{{ annot }}</a>
       {% endfor %}
     </p>
     {% endfor %}

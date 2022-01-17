@@ -10,23 +10,13 @@ layout: default
       </a>
     </h2>
     <p>{{ page.definition }}</p>
-    {% if page.parents.size > 0 %}
-      <p>Parent terms: 
-      {% for parent in page.parents %}
-        <a href="/annotations/{{page.xref-dataSource }}:{{parent}}.html">
-          {{ page.xref-dataSource }}:{{parent}}
-        </a>
-      {% endfor %}
-      </p>
-    {% endif %}
-
     <ul class="nav nav-tabs">
       <li class="nav-item">
         <a class="nav-link active" data-toggle="tab" href="#gallery">Gallery</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" data-toggle="tab" href="#list">List</a>
-      </li>
+      </li> 
     </ul>
     {% assign sorted_pathways = site.pathways | sort: "title" %}
     <div class="tab-content" >
