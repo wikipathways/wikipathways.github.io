@@ -114,9 +114,9 @@ layout: default
     {% endfor %}
 
     <h2 id="participants">Participants</h2>
-    {% assign wpid-parts=page.wpid | append: "-participants" %}
+    {% assign wpid-parts=page.wpid | append: "-datanodes" %}
     {% assign parts=site.data[wpid-parts] %}
-    <table id="participants-table">
+    <table id="participants-table"> 
       <thead>
         {% for column in parts[0] %}
         <th>{{ column[0] }}</th>
