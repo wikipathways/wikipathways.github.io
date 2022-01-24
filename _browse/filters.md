@@ -327,11 +327,11 @@ var orgList, comList, pwoList, dioList, ctoList;
 var url_string = window.location.href;
 var url = new URL(url_string);
 if (url.searchParams.toString().length > 0){
-  orgList = url.searchParams.get("org");
-  comList = url.searchParams.get("com");
-  pwoList = url.searchParams.get("pwo");
-  dioList = url.searchParams.get("dio");
-  ctoList = url.searchParams.get("cto");
+  orgList = url.searchParams.get("Organism");
+  comList = url.searchParams.get("Community");
+  pwoList = url.searchParams.get("Pathway Ontology");
+  dioList = url.searchParams.get("Disease");
+  ctoList = url.searchParams.get("Cell Type");
 } else {
   // Check org:human by default if no other parameters
   orgList = "Homo sapiens";

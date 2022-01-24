@@ -79,13 +79,39 @@ function showhideSort(spans, state){
   }
 }
 
-
 // Assume filter input ids are incrementing numbers as Strings
 var numCols = table.rows[0].cells.length;
 var fils = {}
 for (var c=0; c < numCols; c++){
   fils[c.toString()] = c;
 }
+
+// URL PARAMETERS
+var orgList, comList, pwoList, dioList, ctoList;
+var url_string = window.location.href;
+var url = new URL(url_string);
+if (url.searchParams.toString().length > 0){
+  orgList = url.searchParams.get("Organism");
+  comList = url.searchParams.get("Community");
+  pwoList = url.searchParams.get("Pathway Ontology");
+  dioList = url.searchParams.get("Disease");
+  ctoList = url.searchParams.get("Cell Type");
+} else {
+  // Any defaults if no parameters provided
+  orgList = null;
+  comList = null;
+  pwoList = null;
+  dioList = null;
+  ctoList = null;
+
+}  
+// console.log(dioList);
+document.getElementById(2).value = orgList;
+document.getElementById(4).value = comList;
+document.getElementById(5).value = pwoList;
+document.getElementById(6).value = dioList;
+document.getElementById(7).value = ctoList;
+filterTable();
 
 function filterTable() {
   // Declare variables
