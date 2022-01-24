@@ -136,14 +136,11 @@ layout: default
     <input type="button" class="badge badge-secondary" id="tableLess" value="fewer rows" style="float: left; margin-top: -8px;">
     <br />
     <h2 id="references">References</h2>
-    {% assign wpid-refs=page.wpid | append: "-references" %}
+    {% assign wpid-refs=page.wpid | append: "-bibliography" %}
     {% assign refs=site.data[wpid-refs] %}
     <ol>
       {% for ref in refs %}
-      <li><span class="citation-js" data-input="pmid:{{ ref.pmid }}"  data-output-format="bibliography" data-output-template="apa">{{ ref.citation }}</span> (<a href="http://www.ncbi.nlm.nih.gov/pubmed/{{ref.pmid}}">PubMed</a>,
-        <a href="https://europepmc.org/abstract/MED/{{ref.pmid}}">EuropePMC</a>,
-        <a href="https://scholia.toolforge.org/pubmed/{{ref.pmid}}">Scholia</a>) 
-      </li>
+      <li>{{ ref.Citation }}</li>
       {% endfor %}
     </ol>
   </div>
