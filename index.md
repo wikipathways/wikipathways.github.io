@@ -126,7 +126,7 @@ layout: home
       </ul>
       <h2>Contribute</h2>
       <ul style="list-style: none; margin-left:-3px; line-height:250%;">
-      <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="/contribute.html" target="_blank">How to Contribute </a></li>
+      <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="/contribute.html">How to Contribute </a></li>
       <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="https://new.wikipathways.org/academy/path.html" target="_blank">How to Curate </a></li>
       <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="https://github.com/wikipathways/wikipathways-development" target="_blank">How to Develop</a></li>
       </ul>
