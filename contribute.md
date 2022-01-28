@@ -13,6 +13,6 @@ title: How to Contribute
         <br />Find pathways of interest to convert to pathway models.</li>
     <li style="margin-bottom: 5px;"><input type="checkbox"><a href="http://new.wikipathways.org/academy/stages/draw-geneproduct/"><b> Curate: Create or Edit a Pathway Model</b></a>
         <br />Use PathVisio to create your pathway model, and submit it to WikiPathways.</li>
-    <li style="margin-bottom: 5px;"><input type="checkbox"><a href="https://groups.google.com/g/wikipathways-discuss"><b> Optional: Join the WikiPathways Community</b></a>
-        <br />Join our mailing list to discuss pathway curation and other WikiPathways-related topics.</li>
+    <li style="margin-bottom: 5px;"><input type="checkbox"><a href="https://github.com/wikipathways/wikipathways.github.io/discussions"><b> Optional: Join the WikiPathways Community</b></a>
+        <br />Join the public discussion on pathway curation and other WikiPathways-related topics.</li>
 </ul>
