@@ -27,8 +27,10 @@ layout: home
               <img src="/assets/img/main_stats.png" style="height:193px; min-width:333px;" /></a>
             </div>
             <div class="col text-left align-self-center text-nowrap" style="margin-left: -5px;" >
+            {% assign doid = site.annotations | where: "type", "Disease" %}
               <ul>
                 <li><a href="/browse/filters.html">{{ site.pathways.size }} pathways</a></li>
+                <li><a href="/browse/annotations.html">{{ doid.size }} diseases</a></li>
                 <li><a href="/browse/organisms.html">{{ site.organisms.size }} organisms</a></li>
                 <li><a href="/browse/communities.html">{{ site.communities.size }} communities</a></li>
               </ul>
@@ -78,7 +80,9 @@ layout: home
       <h2>Download</h2>
       <ul style="list-style: none; margin-left:-3px; line-height:250%;">
       <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="https://data.wikipathways.org/current/" target="_blank">Latest monthly release </a></li>
-      <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="https://data.wikipathways.org" target="_blank">Prior releases </a></li>
+      <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="https://data.wikipathways.org" target="_blank">Prior releases</a></li>
+      <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="https://data.wikipathways.org/current/gmt" target="_blank">Download gene sets</a></li>
+      <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="https://data.wikipathways.org/current/svg" target="_blank">Download images</a></li>
       </ul>
       <h2>Access</h2>
       <p> <a class="btn btn-sm btn-pill btn-outline-warning" href="https://webservice.wikipathways.org" title="WikiPathways webservice API" target="_blank">API</a>
@@ -88,6 +92,9 @@ layout: home
       </p>
       <h2>Analyze</h2>
       <p style="margin-left:-3px; line-height:250%;">
+      <ul style="list-style: none; margin-left:-3px; line-height:250%;">
+      <li><a class="btn btn-sm btn-pill btn-outline-warning" href="analyze.html">
+      How to Analyze</a></li></ul>
       <a href="https://pathvisio.org/" 
       title="PathVisio is a free open-source pathway analysis and drawing software which allows drawing, editing, and analyzing biological pathways." target="_blank">
       <img src="/assets/img/logo-pathvisio.png" height="30px" /></a>
@@ -114,13 +121,14 @@ layout: home
       How to cite</a></li>
       <li><a class="btn btn-sm btn-pill btn-outline-warning" href="https://wikipathways.tumblr.com/" title="Blog of WikiPathways used or mentinoed in publications." target="_blank">
       Published examples</a></li>
+      <li><a class="btn btn-sm btn-pill btn-outline-warning" href="" title="How to Publish">
+      How to Publish</a></li>
       </ul>
-      <h2>Learn</h2>
+      <h2>Contribute</h2>
       <ul style="list-style: none; margin-left:-3px; line-height:250%;">
-      <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="" target="_blank">How to Contribute </a></li>
+      <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="/contribute.html" target="_blank">How to Contribute </a></li>
       <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="https://new.wikipathways.org/academy/path.html" target="_blank">How to Curate </a></li>
-      <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="" target="_blank">How to Use</a></li>
-      <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="" target="_blank">How to Develop</a></li>
+      <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="https://github.com/wikipathways/wikipathways-development" target="_blank">How to Develop</a></li>
       </ul>
       </div>
     </div>
