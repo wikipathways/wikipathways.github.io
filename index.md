@@ -27,10 +27,8 @@ layout: home
               <img src="/assets/img/main_stats.png" style="height:193px; min-width:333px;" /></a>
             </div>
             <div class="col text-left align-self-center text-nowrap" style="margin-left: -5px;" >
-            {% assign doid = site.annotations | where: "type", "Disease" %}
               <ul>
                 <li><a href="/browse/filters.html">{{ site.pathways.size }} pathways</a></li>
-                <li><a href="/browse/annotations.html">{{ doid.size }} diseases</a></li>
                 <li><a href="/browse/organisms.html">{{ site.organisms.size }} organisms</a></li>
                 <li><a href="/browse/communities.html">{{ site.communities.size }} communities</a></li>
               </ul>
