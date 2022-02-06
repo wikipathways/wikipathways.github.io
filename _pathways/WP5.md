@@ -69,6 +69,6 @@ schema-jsonld:
   license: CC0
   name: ''
 seo: CreativeWork
-title: 'EGFR1 signaling pathway'
+title: ''
 wpid: WP5
 ---
