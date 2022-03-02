@@ -160,3 +160,5 @@ p
 ggsave("../assets/img/main_stats.png", plot = last_plot(), 
        width = 1100, height = 550, units = "px", dpi = 250)
 ```
+
+Finally, knit this Rmd and move stats.md and stat_files dir to _rmd. Manually add frontmatter section with `title:Stats` to stats.md. 

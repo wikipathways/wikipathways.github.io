@@ -1,5 +1,5 @@
 ---
-title: stats
+title: Stats
 ---
 # WikiPathways Stats
 
@@ -110,3 +110,6 @@ ggsave("../assets/img/main_stats.png", plot = last_plot(),
 ```
 
     ## Warning: Removed 12 rows containing missing values (position_stack).
+
+Finally, knit this Rmd and move stats.md and stat_files dir to \_rmd.
+Manually add frontmatter section with `title:Stats` to stats.md.
