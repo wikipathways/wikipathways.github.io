@@ -78,6 +78,7 @@ Tertiary Palette (Hover/Disabled)<br/>
           <li> <a class="btn btn-sm btn-pill btn-organism" href="#">Organism button</a></li>
           <li> <a class="btn btn-sm btn-pill btn-community" href="#">Community button</a></li>
           <li> <a class="btn btn-sm btn-pill btn-annotation" href="#">Annotation button</a></li>
+           <li> <a class="btn btn-sm btn-pill btn-pathway" href="#">Pathway button</a></li>
         </ul>
       </div>
     </div>
@@ -89,20 +90,21 @@ Tertiary Palette (Hover/Disabled)<br/>
           <li> <code>&lt;a class="btn btn-sm btn-pill btn-organism" href="#"&gt;</code></li>
           <li> <code>&lt;a class="btn btn-sm btn-pill btn-community" href="#"&gt;</code></li>
           <li> <code>&lt;a class="btn btn-sm btn-pill btn-annotation" href="#"&gt;</code></li>
+          <li> <code>&lt;a class="btn btn-sm btn-pill btn-pathway" href="#"&gt;</code></li>
         </ul>
       </div>
     </div>
-  </div>
+  </div> 
 </div>
 <div id="socials">
   <br/><hr/>
-  <a href="#socials">Socials</a>
+  <a href="#socials">Socials</a> 
   <hr/>
     <code>&#123;% include_cached share.html %&#125;</code>
   <br/><br/>
   {% include_cached share.html %}
 </div>
-<div id="actions">
+<div id="actions"> 
   <br/><hr/>
   <a href="#actions">Actions</a>
   <hr/>

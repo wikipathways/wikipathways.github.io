@@ -1,43 +1,33 @@
 ---
 layout: default
 ---
-<div style="float:right; margin-top: -10px;">
-  <button class="copy-btn" to-copy="{{site.url}}/instance/{{ page.wpid }}"
-    style="border:none; background-color:#FFFFFF; padding:0px;">
-    <span title="Copy link to clipboard" style="color: #666;"><i class="fa fa-link"></i></span>
-  </button>
-  <button class="embed-btn" to-copy='<iframe src ="https://pathway-viewer.toolforge.org/?id={{ page.wpid }}`" width="600px" height="300px" style="overflow:hidden;"></iframe>'
-    style="border:none; background-color:#FFFFFF; padding:0px;">
-    <span title="Copy embed code" style="color: #666;"><i class="fa fa-code"></i></span>
-  </button>
-  <a href="https://www.sejda.com/html-to-pdf?save-link={{site.url}}/pathways/{{ page.wpid }}.html" target="_blank">
-    <span title="Save as PDF" style="color: #666;"><i class="fa fa-file-pdf-o"></i></span>
-  </a>
-  <a href="https://github.com/wikipathways/wikipathways.github.io/blob/main/_pathways/{{ page.wpid }}.md"
-    target="_blank">
-    <span title="Edit markdown" style="color: #666;"><i
-        class="fa fa-pencil"></i></span>
-  </a>
+<div style="float:right;">
   {% include_cached share.html %}
-
 </div>
   <a class="page-title" href="{{site.url}}/instance/{{page.wpid}}">
     <h1 id="title"> {{ page.title }} ({{ page.wpid }})</h1>
   </a>
 
-  <div id="description" style="max-height:75px; overflow-y:hidden;">
+  <div id="description" style="max-height:75px; overflow-y:hidden;margin-bottom: 20px;">
     {{ page.description }}
   </div>
-  <input type="button" class="badge badge-secondary" id="descMore" value="more text" style="float: right; margin-top: -8px;">
-  <input type="button" class="badge badge-secondary" id="descLess" value="less text" style="float: right; margin-top: -8px;">
-<br />
+  <input type="button" class="badge badge-secondary" id="descMore" value="more text" style="float: right; margin-top: -28px;">
+  <input type="button" class="badge badge-secondary" id="descLess" value="less text" style="float: right; margin-top: -28px;">
 
-  <div id="pathway-viewer" style="height:400px;">
+  <div id="pathway-viewer" style="height:400px;margin-bottom: 2px;">
     <iframe class="embed-responsive-item" src="https://pathway-viewer.toolforge.org/?id={{page.wpid}}"
       style="border-width: 1px; border-color: rgb(222,226,230); border-style: solid; height:100%; width:100%"
       referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
   </div>
   <div class="dropdown" style="float:right;">
+      <button class="copy-btn" to-copy="{{site.url}}/instance/{{ page.wpid }}"
+      style="border:none; background-color:#FFFFFF; padding:0px;">
+      <span title="Copy link to clipboard" style="color: #666;"><i class="fa fa-link"></i></span>
+      </button>
+      <button class="embed-btn" to-copy='<iframe src ="https://pathway-viewer.toolforge.org/?id={{ page.wpid }}`" width="600px" height="300px" style="overflow:hidden;"></iframe>'
+      style="border:none; background-color:#FFFFFF; padding:0px;">
+      <span title="Copy embed code" style="color: #666;"><i class="fa fa-code"></i></span>
+      </button>
     <button class="badge badge-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
       aria-haspopup="true" aria-expanded="false">
       options
@@ -46,12 +36,12 @@ layout: default
     <a class="dropdown-item" href="https://pathway-viewer.toolforge.org/?id={{page.wpid}}" target="_blank">Open in new
       tab</a>
     <a class="dropdown-item" href="https://www.ndexbio.org/viewer/networks/{{page.ndex}}" target="_blank">Open in NDEx</a>
+    <a class="dropdown-item" href="https://www.sejda.com/html-to-pdf?save-link={{site.url}}/pathways/{{ page.wpid }}.html" target="_blank">Save as PDF</a>
     <a class="dropdown-item" href="#">Download PNG</a>
     <a class="dropdown-item" href="#">Download SVG</a>
     <a class="dropdown-item" href="#">Download GPML</a>
     </div>
   </div>
-  <div>
   <!-- Evaluate last-edited date to set badge color -->
   {% assign edit = page.last-edited | date: '%s' %}
   {% assign now = 'now' | date: '%s' %}
@@ -77,6 +67,7 @@ layout: default
     file="https://new.wikipathways.org/wikipathways-collection/reports/{{page.wpid}}.json">
     <!-- fill-in with img tag if file exists -->
     </a>
+  <div>
     <h2 id="authors">Authors</h2>
     {{ page.authors | array_to_sentence_string }}
 
@@ -105,7 +96,7 @@ layout: default
     <h2 id="annotations">Annotations</h2>
     {% assign annot-types = page.annotations | map: "type" | uniq %}
     {% for type in annot-types %}
-    <p><b>{{ type }}: </b>
+    <p>{{ type }}: 
       {% assign annot-values= page.annotations | where: "type", type | map: "value" %}
       {% for annot in annot-values %}
         <a class="btn btn-sm btn-pill btn-annotation" href="/browse/table.html?{{ type }}={{ annot }}">{{ annot }}</a>
@@ -209,7 +200,7 @@ layout: default
         btnMoreDesc.show();
         btnLessDesc.hide();
       }
-    }
+    } 
   }
 
   btnMore.click(function (e) {

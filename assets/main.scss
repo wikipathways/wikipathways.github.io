@@ -15,12 +15,23 @@
           box-sizing: content-box;
 }
 
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Linux Libertine";
+  src: url("../assets/fonts/LinLibertine_R.ttf");
+}
+
 @media (min-width: 1200px) {
   .wrapper {
     max-width: 1190px;
     width: 100%;
+    font-family: 'Poppins';
   }
 }
+
 
 /* HEADER */
 .page-content {
@@ -50,15 +61,18 @@
 
 h1 {
   font-size: 2em;
+  font-family: 'Linux Libertine';
 }
 h2 {
   font-size: 1.5em;
   margin-bottom:5px;
   margin-top:15px;
+  font-family: 'Linux Libertine';
 }
 
 h3 {
   font-size: 1em;
+  font-family: 'Linux Libertine';
 }
 
 table {
@@ -77,6 +91,12 @@ table.dataTable thead .sorting_desc:before,
 table.dataTable thead .sorting_desc_disabled:after,
 table.dataTable thead .sorting_desc_disabled:before {
 bottom: .5em;
+}
+
+a:link,
+a:visited,
+a:hover {
+  color: #1756a9; // #880BC8;
 }
 
 .bg-light {
@@ -131,41 +151,41 @@ a.btn:link {
 
 a.btn-organism:visited,
 a.btn-organism:link {
-  background-color: #496993;
-  border-color: #496993;
+  background-color: #3955E7;
+  border-color: #3955E7;
 }
 a.btn-organism:hover {
-  background-color: #394953;
+  background-color: #1E3199;
   border-color: white;
 }
 
 a.btn-community:visited,
 a.btn-community:link {
-  background-color: #499373;
-  border-color: #499373;
+  background-color: #00CC9E;
+  border-color: #00CC9E;
 }
 a.btn-community:hover {
-  background-color: #397333;
+  background-color: #028F6F;
   border-color: white;
 }
 
 a.btn-annotation:visited,
 a.btn-annotation:link {
-  background-color: #734993;
-  border-color: #734993;
+  background-color: #880BC8;
+  border-color: #880BC8;
 }
 a.btn-annotation:hover {
-  background-color: #632953;
+  background-color: #620492;
   border-color: white;
 }
 
-a.btn-warning:visited,
-a.btn-warning:link {
-  background-color: #937349;
-  border-color: #937349;
+a.btn-pathway:visited,
+a.btn-pathway:link {
+  background-color: #FF8120;
+  border-color: #FF8120;
 }
-a.btn-warning:hover {
-  background-color: #835309;
+a.btn-pathway:hover {
+  background-color: #D16919;
   border-color: white;
 }
 
@@ -178,7 +198,7 @@ a.btn-outline-warning:link {
 }
 a.btn-outline-warning:hover {
   //background-color: transparent;
-  border-color: #937349;
+  border-color: #94A6A8;
 }
 
 a.dropdown-item:visited{
