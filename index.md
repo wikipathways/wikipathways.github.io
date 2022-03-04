@@ -127,7 +127,9 @@ layout: home
       <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="/contribute.html">How to Contribute </a></li>
       <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="https://new.wikipathways.org/academy/path.html" target="_blank">How to Curate </a></li>
       <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="https://github.com/wikipathways/wikipathways-development" target="_blank">How to Develop</a></li>
+      <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="https://github.com/wikipathways/wikipathways-help/discussions" target="_blank">FAQ</a></li>
       </ul>
+      
       </div>
     </div>
     <div class="col" style="display:flex; flex-direction:row;">
