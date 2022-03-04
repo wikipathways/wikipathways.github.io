@@ -1,32 +1,56 @@
 ---
-# GPML DATA
-title: "IL-9 signaling pathway"
-description: "This is a temporary description for IL-9 signaling pathway"
-authors: [A.Pandey, MaintBot, Christine Chichester, Mkutmon, Eweitz]
-organisms: [Rattus norvegicus]
 annotations:
-  - id: PW:0000909
-    value: interleukin-9 signaling pathway
-    type: Pathway Ontology
-# ADDITIONAL DATA
+- type: Pathway Ontology
+  value: interleukin-9 signaling pathway
+authors:
+- A.Pandey
+- MaintBot
+- Christine Chichester
+- Mkutmon
+- Eweitz
+description: ''
 last-edited: 2021-05-16
-communities: []
-wpid: "WP8"
-# STRUCTURED METADATA FOR SEO
-seo:
-  type: CreativeWork
+organisms:
+- Rattus norvegicus
+redirect_from:
+- /index.php/Pathway:WP8
+- /instance/WP8
 schema-jsonld:
-  - "@context": https://schema.org/
-    "@id": https://wikipathways.github.io/pathways/WP554.html
-    "@type": Dataset
-    "name": "IL-9 signaling pathway"
-    "description": "This is a temporary description for the pathway entitled: IL-9 signaling pathway"
-    "url": "https://www.wikipathways.org/index.php/Pathway:WP8"
-    "license": CC0
-    "creator":
-    - "@type": Organization
-      "name": "WikiPathways"
-    "keywords": [
-      "interleukin-9 signaling pathway",
-      ]
+- '@context': https://schema.org/
+  '@id': https://wikipathways.github.io/pathways/WP8.html
+  '@type': Dataset
+  creator:
+    '@type': Organization
+    name: WikiPathways
+  description: ''
+  keywords:
+  - Map2k1
+  - Pik3r1
+  - Grb2
+  - Stat5b
+  - Il2rg
+  - Stat1
+  - Irs2
+  - Il9
+  - Shc1
+  - Jak3
+  - Ptpn11
+  - Socs3
+  - Jak1
+  - Akt1
+  - Mapk1
+  - Irs1
+  - Vcp
+  - Map2k2
+  - TYK2
+  - Stat3
+  - Mapk3
+  - Stat5a
+  - Il9r
+  - Kat5
+  license: CC0
+  name: IL-9 signaling pathway
+seo: CreativeWork
+title: IL-9 signaling pathway
+wpid: WP8
 ---
