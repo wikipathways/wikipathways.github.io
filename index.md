@@ -76,12 +76,12 @@ layout: home
     <div class="col" style="display:flex; flex-direction:row;">
       <div class="bg-gradient p-3 w-100" style="background-color: #eeeeee;">
       <h2>Download</h2>
-      <ul style="list-style: none; margin-left:-3px; line-height:250%;">
-      <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="https://data.wikipathways.org/current/" target="_blank">Latest monthly release </a></li>
-      <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="https://data.wikipathways.org" target="_blank">Prior releases</a></li>
-      <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="https://data.wikipathways.org/current/gmt" target="_blank">Download gene sets</a></li>
-      <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="https://data.wikipathways.org/current/svg" target="_blank">Download images</a></li>
-      </ul>
+      <p> 
+     <a class="btn btn-sm btn-pill btn-outline-warning" href="https://data.wikipathways.org/current/gmt" target="_blank">gmt</a>
+     <a class="btn btn-sm btn-pill btn-outline-warning" href="https://data.wikipathways.org/current/gpml" target="_blank">gpml</a>
+     <a class="btn btn-sm btn-pill btn-outline-warning" href="https://data.wikipathways.org/current/svg" target="_blank">svg</a>
+     <a class="btn btn-sm btn-pill btn-outline-warning" href="https://data.wikipathways.org" target="_blank">Prior releases</a>
+      </p>
       <h2>Access</h2>
       <p> <a class="btn btn-sm btn-pill btn-outline-warning" href="https://webservice.wikipathways.org" title="WikiPathways webservice API" target="_blank">API</a>
       <a class="btn btn-sm btn-pill btn-outline-warning" href="https://sparql.wikipathways.org" title="SPARQL endpoint for WikiPathways RDF" target="_blank">SPARQL</a>
@@ -129,7 +129,6 @@ layout: home
       <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="https://github.com/wikipathways/wikipathways-development" target="_blank">How to Develop</a></li>
       <li> <a class="btn btn-sm btn-pill btn-outline-warning" href="https://github.com/wikipathways/wikipathways-help/discussions" target="_blank">FAQ</a></li>
       </ul>
-      
       </div>
     </div>
     <div class="col" style="display:flex; flex-direction:row;">
