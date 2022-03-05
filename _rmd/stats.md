@@ -1,6 +1,7 @@
 ---
-title: Stats
+title: stats
 ---
+
 # WikiPathways Stats
 
 This R notebooks prepares figures to summarize WikiPathways activity.
@@ -54,7 +55,9 @@ factor by month
 
 ``` r
 combo.df <- edits.user.df %>%
-  full_join(wpid.all.df.cnts, by="date")
+  full_join(wpid.all.df.cnts, by="date") %>%
+  dplyr::filter(!is.na(edits)) %>%
+  arrange(date)
 
 combo.df$date <- strptime(paste0(combo.df$date,"01"), "%Y%m%d")
 combo.df$month <- factor(format(combo.df$date, "%B"),
@@ -68,7 +71,7 @@ Next, let’s plot a time series
 bcols <- RColorBrewer::brewer.pal(3,"Set1")
 
 # date range for x-axis
-Ym.end <- wpid.all.df.cnts[nrow(wpid.all.df.cnts),1]
+Ym.end <- wpid.all.df.cnts[nrow(wpid.all.df.cnts),1]+1 #inclusive of final month
 Ym.start <- Ym.end - 400 # 4 years
   
 # scaling for primary and secondary y-axes
@@ -84,7 +87,7 @@ p <- ggplot(combo.df) +
             color = bcols[1], size = 2) +
   scale_x_date(date_breaks = "1 year", date_labels = "%Y",
                name = "",
-               limits = c(as.Date(strptime(Ym.start,"%Y%m")),as.Date(strptime(Ym.end,"%Y%m")))) +
+               limits = c(as.Date(strptime(paste0(Ym.start,"01"),"%Y%m%d")),as.Date(strptime(paste0(Ym.end,"01"),"%Y%m%d")))) +
   scale_y_continuous(name="# Edits", 
                      limits = ylim.prim,
                      sec.axis=sec_axis(~ (. - a)/b, 
@@ -100,8 +103,6 @@ p <- ggplot(combo.df) +
 p
 ```
 
-    ## Warning: Removed 12 rows containing missing values (position_stack).
-
 ![](stats_files/figure-markdown_github/plot-1.png)
 
 ``` r
@@ -109,7 +110,61 @@ ggsave("../assets/img/main_stats.png", plot = last_plot(),
        width = 1100, height = 550, units = "px", dpi = 250)
 ```
 
-    ## Warning: Removed 12 rows containing missing values (position_stack).
+Now, let’s make pngs per month for animation!
+
+``` r
+# plot per month
+for(i in seq(nrow(combo.df),1)){
+  combo.df.anim<-combo.df[1:i,]
+  
+  p <- ggplot(combo.df.anim) +
+    geom_bar(aes(x = as.Date(date),y=edits),stat="identity", fill=bcols[2]) +
+    geom_line(data=na.omit(combo.df.anim), 
+              aes(x = as.Date(date),y=a + pathways * b), 
+              color = bcols[1], size = 2) +
+    scale_x_date(date_breaks = "1 year", date_labels = "%Y",
+                 name = "",
+                 limits = c(as.Date(strptime(paste0(Ym.start,"01"),"%Y%m%d")),as.Date(strptime(paste0(Ym.end,"01"),"%Y%m%d")))) +
+    scale_y_continuous(name="# Edits", 
+                       limits = ylim.prim,
+                       sec.axis=sec_axis(~ (. - a)/b, 
+                                         name="# Pathways")) +
+    ggtitle("Active community and growing database") +
+    xlab("") +
+    theme(axis.text.y.left=element_text(colour=bcols[2]),
+          axis.text.y.right=element_text(colour=bcols[1]),
+          axis.ticks.y.left=element_line(colour=bcols[2]),
+          axis.ticks.y.right=element_line(colour=bcols[1]))
+  
+  
+  p
+  
+  ggsave(paste0("stats_files/main_stats_",str_pad(i, 3, pad = "0"),".png"), plot = last_plot(), 
+       width = 1100, height = 550, units = "px", dpi = 250)
+}
+```
+
+    ## geom_path: Each group consists of only one observation. Do you need to adjust
+    ## the group aesthetic?
+
+``` r
+#make animated gif
+anim.img.list <- list.files(path='stats_files', pattern = '*.png', full.names = TRUE) 
+anim.img.list %>% 
+  image_read() %>% # reads each path file
+  image_join() %>% # joins image
+  image_animate(delay=as.integer(3*100/nrow(combo.df)), #first number is total seconds for all frames to play
+                loop = 1) %>% # number of repeat plays
+  image_write("../assets/img/main_stats.gif") # write to current dir
+
+#clean up
+lapply(anim.img.list, function(fn){
+  if (file.exists(fn))
+    file.remove(fn)
+})
+```
+
+![](../assets/img/main_stats.gif)
 
 Finally, knit this Rmd and move stats.md and stat_files dir to \_rmd.
-Manually add frontmatter section with `title:Stats` to stats.md.
+Manually add frontmatter section with `title: stats` to stats.md.
