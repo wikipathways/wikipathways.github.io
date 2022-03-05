@@ -6,11 +6,14 @@ date: "1/2/2022"
 output:
   md_document:
     variant: markdown_github
+    includes:
+      before_body: stats_title.md
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
 # WikiPathways Stats
 This R notebooks prepares figures to summarize WikiPathways activity. The output files are displayed on the website and used in publications and grant applications. Please edit in coordination with the WikiPathways development team.
 
@@ -213,5 +216,3 @@ lapply(anim.img.list, function(fn){
 
 ```
 ![](../assets/img/main_stats.gif)
-
-Finally, knit this Rmd and move stats.md and stat_files dir to _rmd. Manually add frontmatter section with `title: stats` to stats.md. 

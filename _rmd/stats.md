@@ -165,6 +165,3 @@ lapply(anim.img.list, function(fn){
 ```
 
 ![](../assets/img/main_stats.gif)
-
-Finally, knit this Rmd and move stats.md and stat_files dir to \_rmd.
-Manually add frontmatter section with `title: stats` to stats.md.
