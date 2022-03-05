@@ -133,7 +133,7 @@ layout: home
     <div class="col" style="display:flex; flex-direction:row;">
       <div class="bg-gradient p-3 w-100" style="background-color: #eeeeee;">
       <h2>Latest</h2>
-        {% assign sorted_pathways = site.pathways | sort: "last-edited" %}
+        {% assign sorted_pathways = site.pathways | sort: "wpid" | reverse | sort: "last-edited" %}
         {% assign pw = sorted_pathways.last %}
             <div class="card w-100" style="width: 10rem;">
               <a class="card-link" href="{{ pw.url }}">
