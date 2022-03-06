@@ -22,9 +22,9 @@ layout: home
       <div class="bg-gradient p-3" style="background-color: #eeeeee;">
         <div class="container">
           <div class="row" style="margin-right: 13px; background-color: #ffffff;">
-            <div class="col-7 text-center" >
+            <div class="col-7 text-center" style="height:192px;min-width:333px;" >
               <a href="/rmd/stats">
-                <div class="stats-gif"></div> 
+                <img src="/assets/img/main_stats.png" width="333px" height="193px;"/> 
               </a>
             </div>
             <div class="col text-left align-self-center text-nowrap" style="margin-left: -5px;" >

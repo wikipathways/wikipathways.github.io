@@ -57,18 +57,32 @@
   margin-left: auto;
 }
 .stats-gif {
-  height: 193px; 
-  min-width: 333px;
+  height: 367px;
+  width: 733px;
   background: url("../assets/img/main_stats.png") left;
-  background-size: 333px 193px;
+  background-size: 733px 367px;
 }
 .stats-gif:hover {
   background: url("../assets/img/main_stats.gif") center;
-  background-size: 333px 193px;
+  background-size: 733px 367px;
 }
 .stats-gif:active {
   background: url("../assets/img/main_stats.gif") right;
-  background-size: 333px 193px;
+  background-size: 733px 367px;
+}
+.wp554-gif {
+  height: 320px; 
+  min-width: 440px;
+  background: url("../assets/img/main_wp554.gif") left;
+  background-size: 440px 320px;
+}
+.wp554-gif:hover {
+  background: url("../assets/img/main_wp554_inf.gif") center;
+  background-size: 440px 320px;
+}
+.wp554-gif:active {
+  background: url("../assets/img/main_wp554_inf.gif") right;
+  background-size: 440px 320px;
 }
 
 /* TAGS */
@@ -218,7 +232,6 @@ a.btn-outline-warning:hover {
 // LANDING PAGE BUTTON
 a.btn-front:visited,
 a.btn-front:link {
-  background-color: white;
   border-color: #3955E7;
   color: #3955E7;
 }
