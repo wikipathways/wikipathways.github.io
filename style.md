@@ -79,6 +79,7 @@ Tertiary Palette (Hover/Disabled)<br/>
           <li> <a class="btn btn-sm btn-pill btn-community" href="#">Community button</a></li>
           <li> <a class="btn btn-sm btn-pill btn-annotation" href="#">Annotation button</a></li>
            <li> <a class="btn btn-sm btn-pill btn-pathway" href="#">Pathway button</a></li>
+           <li> <a class="btn btn-sm btn-front" href="#">Front button</a></li>
         </ul>
       </div>
     </div>
@@ -91,6 +92,7 @@ Tertiary Palette (Hover/Disabled)<br/>
           <li> <code>&lt;a class="btn btn-sm btn-pill btn-community" href="#"&gt;</code></li>
           <li> <code>&lt;a class="btn btn-sm btn-pill btn-annotation" href="#"&gt;</code></li>
           <li> <code>&lt;a class="btn btn-sm btn-pill btn-pathway" href="#"&gt;</code></li>
+          <li> <code>&lt;a class="btn btn-sm btn-front" href="#"&gt;</code></li>
         </ul>
       </div>
     </div>

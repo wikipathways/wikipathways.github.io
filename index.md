@@ -24,7 +24,8 @@ layout: home
           <div class="row" style="margin-right: 13px; background-color: #ffffff;">
             <div class="col-7 text-center" >
               <a href="/rmd/stats">
-              <img src="/assets/img/main_stats.gif" style="height:193px; min-width:333px;" /></a>
+                <div class="stats-gif"></div> 
+              </a>
             </div>
             <div class="col text-left align-self-center text-nowrap" style="margin-left: -5px;" >
               <ul>

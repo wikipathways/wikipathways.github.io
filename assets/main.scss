@@ -56,6 +56,20 @@
   margin-right: auto;
   margin-left: auto;
 }
+.stats-gif {
+  height: 193px; 
+  min-width: 333px;
+  background: url("../assets/img/main_stats.png") left;
+  background-size: 333px 193px;
+}
+.stats-gif:hover {
+  background: url("../assets/img/main_stats.gif") center;
+  background-size: 333px 193px;
+}
+.stats-gif:active {
+  background: url("../assets/img/main_stats.gif") right;
+  background-size: 333px 193px;
+}
 
 /* TAGS */
 
@@ -199,6 +213,19 @@ a.btn-outline-warning:link {
 a.btn-outline-warning:hover {
   //background-color: transparent;
   border-color: #94A6A8;
+}
+
+// LANDING PAGE BUTTON
+a.btn-front:visited,
+a.btn-front:link {
+  background-color: white;
+  border-color: #3955E7;
+  color: #3955E7;
+}
+a.btn-front:hover {
+  background-color: #3955E7;
+  border-color: #3955E7;
+  color: white;
 }
 
 a.dropdown-item:visited{

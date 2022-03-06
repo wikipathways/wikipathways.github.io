@@ -127,6 +127,9 @@ Next, let's plot a time series
 
 # RColorBrewer::display.brewer.all()
 bcols <- RColorBrewer::brewer.pal(3,"Set1")
+acols <- bcols
+bcols <- c("#FF8120","#3955E7")
+acols <- c("#D16919","#1E3199")
 
 # date range for x-axis
 Ym.end <- wpid.all.df.cnts[nrow(wpid.all.df.cnts),1]+1 #inclusive of final month
@@ -152,10 +155,10 @@ p <- ggplot(combo.df) +
                                        name="# Pathways")) +
   ggtitle("Active community and growing database") +
   xlab("") +
-  theme(axis.text.y.left=element_text(colour=bcols[2]),
-        axis.text.y.right=element_text(colour=bcols[1]),
-        axis.ticks.y.left=element_line(colour=bcols[2]),
-        axis.ticks.y.right=element_line(colour=bcols[1]))
+  theme(axis.text.y.left=element_text(colour=acols[2]),
+        axis.text.y.right=element_text(colour=acols[1]),
+        axis.ticks.y.left=element_line(colour=acols[2]),
+        axis.ticks.y.right=element_line(colour=acols[1]))
 
 
 p
@@ -207,6 +210,13 @@ anim.img.list %>%
   image_animate(delay=as.integer(3*100/nrow(combo.df)), #first number is total seconds for all frames to play
                 loop = 1) %>% # number of repeat plays
   image_write("../assets/img/main_stats.gif") # write to current dir
+
+anim.img.list %>% 
+  image_read() %>% # reads each path file
+  image_join() %>% # joins image
+  image_animate(delay=as.integer(3*100/nrow(combo.df)), #first number is total seconds for all frames to play
+                loop = 0) %>% # number of repeat plays
+  image_write("../assets/img/main_stats_inf.gif") # write to current dir
 
 #clean up
 lapply(anim.img.list, function(fn){
