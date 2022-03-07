@@ -1,6 +1,8 @@
 ---
 annotations:
-- type: Pathway Ontology
+- id: PW:0001078
+  parent: classic metabolic pathway
+  type: Pathway Ontology
   value: cysteine and methionine metabolic pathway
 authors:
 - J.Heckman
@@ -18,6 +20,7 @@ organisms:
 redirect_from:
 - /index.php/Pathway:WP7
 - /instance/WP7
+revision: null
 schema-jsonld:
 - '@context': https://schema.org/
   '@id': https://wikipathways.github.io/pathways/WP7.html
@@ -27,36 +30,36 @@ schema-jsonld:
     name: WikiPathways
   description: ''
   keywords:
-  - L-cysteine
-  - STR2
-  - L-methionine
+  - 3 NADPH
+  - ADP
+  - ATP
+  - CYS3
+  - CYS4
   - Coenzyme A
   - ECM17
-  - MET2
-  - CYS3
-  - acetyl-CoA
+  - L-cysteine
+  - L-methionine
   - L-serine
-  - phosphate
-  - homoserine
-  - MET17
-  - adenosine-3',5'-bisphosphate
-  - STR3
-  - MET14
-  - 3 NADPH
-  - cystathionine
   - MET10
-  - homocysteine
-  - MET3
-  - pyrophosphate
-  - ATP
-  - acetate
-  - ADP
-  - SAM1
-  - MET6
-  - CYS4
+  - MET14
   - MET16
-  - SAM2
+  - MET17
+  - MET2
+  - MET3
+  - MET6
   - NADPH
+  - SAM1
+  - SAM2
+  - STR2
+  - STR3
+  - acetate
+  - acetyl-CoA
+  - adenosine-3',5'-bisphosphate
+  - cystathionine
+  - homocysteine
+  - homoserine
+  - phosphate
+  - pyrophosphate
   license: CC0
   name: Sulfur amino acid biosynthesis
 seo: CreativeWork

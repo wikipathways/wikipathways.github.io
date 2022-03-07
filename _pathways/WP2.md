@@ -1,6 +1,8 @@
 ---
 annotations:
-- type: Pathway Ontology
+- id: PW:0001285
+  parent: classic metabolic pathway
+  type: Pathway Ontology
   value: valine biosynthetic pathway
 authors:
 - M.Braymer
@@ -39,6 +41,7 @@ organisms:
 redirect_from:
 - /index.php/Pathway:WP2
 - /instance/WP2
+revision: null
 schema-jsonld:
 - '@context': https://schema.org/
   '@id': https://wikipathways.github.io/pathways/WP2.html
@@ -73,22 +76,22 @@ schema-jsonld:
     (CITS:[1943992]).  SOURCE: SGD pathways, http://pathway.yeastgenome.org/server.html'
   keywords:
   - 2 pyruvate
-  - BAT1
-  - H2O
-  - NADP
-  - ILV6
-  - BAT2
+  - 2,3-dihydroxy-isovalerate
   - 2-aceto-lactate
   - 2-keto-isovalerate
-  - ILV3
-  - ILV2
-  - H+
-  - L-glutamate
-  - CO2
-  - L-valine
   - 2-oxoglutarate
+  - BAT1
+  - BAT2
+  - CO2
+  - H+
+  - H2O
+  - ILV2
+  - ILV3
+  - ILV6
+  - L-glutamate
+  - L-valine
+  - NADP
   - NADPH
-  - 2,3-dihydroxy-isovalerate
   license: CC0
   name: Valine biosynthesis
 seo: CreativeWork
