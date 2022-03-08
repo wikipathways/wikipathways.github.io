@@ -52,11 +52,12 @@ btn-class: "btn-outline-warning"
       {% assign pw-items = "" %}
       {% for pw-type in pw-type-group %}
         {% if pw-type.name == type.name %}
-          {% assign pw-items = pw-type.items | map: "value" | join: ", " %}
-          {% assign pw-items-pars = pw-type.items | map: "parent" | join: ", " %}
+          {% assign pw-items = pw-type.items | map: "value" | join: "|" %}
+          {% assign pw-items-pars = pw-type.items | map: "parent" | join: "|" %}
           {% if pw-items-pars.size > 0 %}
-            {% assign pw-items = pw-items | append: ", " | append: pw-items-pars | uniq %}
+            {% capture pw-items %}{{ pw-items | append: "|" | append: pw-items-pars }}{% endcapture %}
           {% endif %}
+          {% assign pw-items = pw-items | split: "|" | uniq | join: ", " %}
         {% endif %}
       {% endfor %}
       <td title="{{ pw-items }}">
