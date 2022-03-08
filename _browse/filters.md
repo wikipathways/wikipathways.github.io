@@ -42,7 +42,6 @@ btn-class: "btn-outline-warning"
           {% endfor %}
         </ul>
       </div>
-      <!-- Subset of parent terms per ontology? -->
       {% assign type-group = site.annotations | group_by: "type" | reverse %}
       {% for type in type-group %}
         <div class="facet-header">
@@ -124,6 +123,10 @@ btn-class: "btn-outline-warning"
                   {% for pw-type in pw-type-group %}
                     {% if pw-type.name == type.name %}
                       {% assign pw-items = pw-type.items | map: "value" | join: ", " %}
+                      {% assign pw-items-pars = pw-type.items | map: "parent" | join: ", " %}
+                      {% if pw-items-pars.size > 0 %}
+                        {% assign pw-items = pw-items | append: ", " | append: pw-items-pars %}
+                      {% endif %}
                     {% endif %}
                   {% endfor %}
                   <td style="display:none;" title="{{ pw-items }}">
@@ -136,7 +139,7 @@ btn-class: "btn-outline-warning"
                 <td style="display:none;" >{{ pw.title }}</td>
                 <td style="display:none;" >{{ pw.url }}</td>
                 <td style="display:none;" >{{ pw.organisms.first }}</td>
-                <td style="display:none;" >{{ pw.last-edited }}</td>
+                <td style="display:none;" >{{ pw.last-edited }}</td> 
               </tr>
             {% endfor %}
         </table>
@@ -222,11 +225,11 @@ function filterTable() {
     // Loop through active column filters
     activeFils.forEach(key => {
       input = document.getElementById(key);
-      filSplit = input.value.toUpperCase().split(",");
+      filSplit = input.value.toUpperCase().split(", ");
       td = tr[i].getElementsByTagName("td")[fils[key]];
       if (td) {
         txtValue = td.textContent || td.innerText;
-        tvSplit = txtValue.toUpperCase().trim().split(",");
+        tvSplit = txtValue.toUpperCase().trim().split(", ");
         // console.log(tvSplit);
         // console.log(filSplit);
         if (filSplit.filter(value => tvSplit.includes(value)).length > 0  //filter.indexOf(txtValue.toUpperCase()) !== -1  
@@ -298,24 +301,24 @@ for (var index = 0; index < interests.length; index++) {
 }
 // Listen for Disease checkboxes
 var dioList = []
-var interests = document.querySelectorAll("[name=disease"); 
+var interests = document.querySelectorAll("[name=disease_ontology"); 
 for (var index = 0; index < interests.length; index++) { 
     interests[index].addEventListener("change", function(evt){ 
         var checkbox = evt.target; 
         //console.log(checkbox.value + " changed to " + checkbox.checked); 
-        dioList = $("input:checkbox[name=disease]:checked").map(function(){return $(this).val()}).get();
+        dioList = $("input:checkbox[name=disease_ontology]:checked").map(function(){return $(this).val()}).get();
         document.getElementById('dio').value = dioList;
         filterTable();
     }); 
 }
 // Listen for Pathway Ontology checkboxes
 var ctoList = []
-var interests = document.querySelectorAll("[name=cell_type"); 
+var interests = document.querySelectorAll("[name=cell_type_ontology"); 
 for (var index = 0; index < interests.length; index++) { 
     interests[index].addEventListener("change", function(evt){ 
         var checkbox = evt.target; 
         //console.log(checkbox.value + " changed to " + checkbox.checked); 
-        ctoList = $("input:checkbox[name=cell_type]:checked").map(function(){return $(this).val()}).get();
+        ctoList = $("input:checkbox[name=cell_type_ontology]:checked").map(function(){return $(this).val()}).get();
         document.getElementById('cto').value = ctoList;
         filterTable();
     }); 
@@ -330,8 +333,8 @@ if (url.searchParams.toString().length > 0){
   orgList = url.searchParams.get("Organism");
   comList = url.searchParams.get("Community");
   pwoList = url.searchParams.get("Pathway Ontology");
-  dioList = url.searchParams.get("Disease");
-  ctoList = url.searchParams.get("Cell Type");
+  dioList = url.searchParams.get("Disease Ontology");
+  ctoList = url.searchParams.get("Cell Type Ontology");
 } else {
   // Check org:human by default if no other parameters
   orgList = "Homo sapiens";
@@ -384,31 +387,31 @@ pwoList.split(",").forEach(key => {
   document.getElementById("pathway_ontology").classList.remove('show');
 }
 if(null != dioList){
-  document.getElementById("disease").classList.add('show');
-  document.getElementById("disease").classList.remove('hide'); 
+  document.getElementById("disease_ontology").classList.add('show');
+  document.getElementById("disease_ontology").classList.remove('hide'); 
 dioList.split(",").forEach(key => {
-  var checkbox = document.querySelectorAll(`input[type='checkbox'][name='disease'][value=${CSS.escape(key)}]`)[0];
+  var checkbox = document.querySelectorAll(`input[type='checkbox'][name='disease_ontology'][value=${CSS.escape(key)}]`)[0];
   checkbox.checked = true;
   checkbox.dispatchEvent(event);
 });
 } else {
-  document.getElementById("disease").classList.add('hide');
-  document.getElementById("disease").classList.remove('show');
+  document.getElementById("disease_ontology").classList.add('hide');
+  document.getElementById("disease_ontology").classList.remove('show');
 }
 if(null != ctoList){
-  document.getElementById("cell_type").classList.add('show');
-  document.getElementById("cell_type").classList.remove('hide'); 
+  document.getElementById("cell_type_ontology").classList.add('show');
+  document.getElementById("cell_type_ontology").classList.remove('hide'); 
 ctoList.split(",").forEach(key => {
-  var checkbox = document.querySelectorAll(`input[type='checkbox'][name='cell_type'][value=${CSS.escape(key)}]`)[0];
+  var checkbox = document.querySelectorAll(`input[type='checkbox'][name='cell_type_ontology'][value=${CSS.escape(key)}]`)[0];
   checkbox.checked = true;
   checkbox.dispatchEvent(event);
 });
 } else {
-  document.getElementById("cell_type").classList.add('hide');
-  document.getElementById("cell_type").classList.remove('show');
+  document.getElementById("cell_type_ontology").classList.add('hide');
+  document.getElementById("cell_type_ontology").classList.remove('show');
 }
 
-// function to add cards
+// function to add card
 function addCard(c){
   cardDiv.innerHTML += '<div class="col-sm-auto">' +
     '<div class="card" style="width: 10rem;">' +
@@ -418,7 +421,7 @@ function addCard(c){
           '<p class="card-text">'+c["title"]+' <em>('+c["org"]+')</em></p>' +
   '</div></a></div></div>';
 }
-// function to item to list
+// function to add item to list
 function addList(c){
   listDiv.innerHTML += '<li><a href="'+c["url"]+'">'+c["title"]+' <em>('+c["org"]+')</em></a></li>';
 }
