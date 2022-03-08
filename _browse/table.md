@@ -94,8 +94,8 @@ if (url.searchParams.toString().length > 0){
   orgList = url.searchParams.get("Organism");
   comList = url.searchParams.get("Community");
   pwoList = url.searchParams.get("Pathway Ontology");
-  dioList = url.searchParams.get("Disease");
-  ctoList = url.searchParams.get("Cell Type");
+  dioList = url.searchParams.get("Disease Ontology");
+  ctoList = url.searchParams.get("Cell Type Ontology");
 } else {
   // Any defaults if no parameters provided
   orgList = null;
