@@ -25,7 +25,7 @@ title: Tools
     </td></tr>
     <tr>
     <th><a href="https://bioconductor.org/packages/clusterProfiler/" target="_blank" class="external " title="https://bioconductor.org/packages/clusterProfiler/" rel="nofollow">clusterProfiler</a>
-    </th><td>The clusterProfiler R package supports GO and pathway analysis performed as overrepresentation or GSEA. The package includes identifier mapping functionality and handy plot functions customized for these analyses. The <a href="https://yulab-smu.github.io/clusterProfiler-book/chapter3.html#wikipathways-analysis" target="_blank" class="external " title="https://yulab-smu.github.io/clusterProfiler-book/chapter3.html#wikipathways-analysis" rel="nofollow">main vignette</a> describes how to use the latest WikiPathways GMT file in a pathway analysis.
+    </th><td>The clusterProfiler R package supports GO and pathway analysis performed as overrepresentation or GSEA. The package includes identifier mapping functionality and handy plot functions customized for these analyses. The <a href="https://yulab-smu.top/biomedical-knowledge-mining-book/wikipathways-analysis.html" target="_blank" class="external " title="https://yulab-smu.top/biomedical-knowledge-mining-book/wikipathways-analysis.html" rel="nofollow">main vignette</a> describes how to use the latest WikiPathways GMT file in a pathway analysis.
     </td></tr>
     <tr>
     <th><a href="https://compath.scai.fraunhofer.de/" target="_blank" class="external " title="https://compath.scai.fraunhofer.de/" rel="nofollow">ComPath</a>
@@ -187,6 +187,10 @@ title: Tools
     <th><a href="https://wikidata.org" target="_blank" class="external " title="http://wikidata.org" rel="nofollow">Wikidata</a>
     </th><td>Wikidata is a free and open knowledge base that can be read and edited by both humans and machines.  We have added interactive pathway pages for WikiPathways content via Scholia (<a href="https://tools.wmflabs.org/scholia/pathway/" target="_blank" class="external " title="https://tools.wmflabs.org/scholia/pathway/" rel="nofollow">examples</a>).
     </td></tr>
+    <tr>
+<th><a href="https://github.com/Thakar-Lab/wikinetworks" target="_blank" class="external " title="https://github.com/Thakar-Lab/wikinetworks" rel="nofollow">WikiNetworks</a>
+</th><td>WikiNetworks is a user-friendly Python package to process pathways from the WikiPathways database into machine-readable network representations. This enables the use of high-quality WikiPathways resources for network-based topological analysis of high-throughput data. WikiNetworks allows users to (a) download manually created gpml files from WikiPathways by specifying pathway id and (b) convert them to machine-interpretable networks suitable for use with pathway/network analysis tools and (c) for import into pathway visualization tools.
+</td></tr>
     <tr>
     <th><a href="https://wikipedia.org" target="_blank" class="external " title="http://wikipedia.org" rel="nofollow">Wikipedia</a>
     </th><td>The free encyclopedia that anyone can edit. In collaboration with MCB and GeneWiki, we have added interactive pathway maps using WikiPathways (<a href="http://en.wikipedia.org/wiki/DPYD" target="_blank" class="external " title="http://en.wikipedia.org/wiki/DPYD" rel="nofollow">example</a>).
