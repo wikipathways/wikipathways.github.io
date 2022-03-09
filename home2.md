@@ -33,13 +33,11 @@ layout: home2
 <section id="join"> 
     <div class="wrapper">   
       <div class="outer-container" >
-        <div class="row-main gy-6 py-5" style="display:flex; flex-wrap: wrap;">
-          <div class="col-1" style="display:flex;">
-          </div>
-          <div class="col-10 mx-auto" style="display:flex;">
+        <div class="row-main-single gy-6 py-5" style="display:flex; flex-wrap: wrap;">
+          <div class="col-11 mx-auto" style="display:flex;">
             <div class="bg-gradient p-3">
               <div class="container">
-                <h2 style="font-family:Poppins"><b>Better than static pathway figures. Dedicated to open science.</b><br/><span style="color: #6c757d;"> Join hundreds of other scientists by contributing your pathway knowledge.</span></h2>
+                <h2 style="font-family:Poppins; margin-left:100px;"><b>Better than static pathway figures. Dedicated to open science.</b><br/><span style="color: #6c757d;"> Join hundreds of other scientists by contributing your pathway knowledge.</span></h2>
               </div>
             </div>
           </div>
@@ -59,7 +57,7 @@ layout: home2
                 <a class="btn btn-sm btn-front" href="/about.html">Read more</a>
             </div>
           </div> 
-          <div class="col-2" style="display:flex;">
+          <div class="col-1" style="display:flex;">
           </div>
         </div>
       </div>

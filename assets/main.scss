@@ -38,8 +38,18 @@
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: -215px;
+    margin-left: -215px;
+    flex-direction:column;
+  }
+  .row-main-single {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -115px;
+    margin-left: -115px;
     flex-direction:column;
   }
 }
