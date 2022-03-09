@@ -149,16 +149,25 @@ p <- ggplot(combo.df) +
   scale_x_date(date_breaks = "1 year", date_labels = "%Y",
                name = "",
                limits = c(as.Date(strptime(paste0(Ym.start,"01"),"%Y%m%d")),as.Date(strptime(paste0(Ym.end,"01"),"%Y%m%d")))) +
-  scale_y_continuous(name="# Edits", 
+  scale_y_continuous(name="Edits", 
                      limits = ylim.prim,
                      sec.axis=sec_axis(~ (. - a)/b, 
-                                       name="# Pathways")) +
-  ggtitle("Active community and growing database") +
+                                       name="Pathways")) +
+  ggtitle("") +
   xlab("") +
   theme(axis.text.y.left=element_text(colour=acols[2]),
         axis.text.y.right=element_text(colour=acols[1]),
         axis.ticks.y.left=element_line(colour=acols[2]),
-        axis.ticks.y.right=element_line(colour=acols[1]))
+        axis.ticks.y.right=element_line(colour=acols[1]),
+        axis.title.y.left = element_text(colour=acols[2]),
+        axis.title.y.right = element_text(colour=acols[1]),
+        panel.grid.major = element_line(color="#eeeeee"), 
+        panel.background = element_rect(fill='transparent'), #transparent panel bg
+        plot.background = element_rect(fill='transparent', color=NA), #transparent plot bg
+        panel.grid.minor = element_blank(), #remove minor gridlines
+        legend.background = element_rect(fill='transparent'), #transparent legend bg
+        legend.box.background = element_rect(fill='transparent') #transparent legend panel
+)
 
 
 p
@@ -167,7 +176,7 @@ p
 ```{r save, warning=FALSE}
 
 ggsave("../assets/img/main_stats.png", plot = last_plot(), 
-       width = 1100, height = 550, units = "px", dpi = 250)
+       width = 1100, height = 550, units = "px", dpi = 250, bg='transparent')
 ```
 
 Now, let's make pngs per month for animation!
@@ -176,24 +185,33 @@ Now, let's make pngs per month for animation!
 for(i in seq(nrow(combo.df),1)){
   combo.df.anim<-combo.df[1:i,]
   
-  p <- ggplot(combo.df.anim) +
-    geom_bar(aes(x = as.Date(date),y=edits),stat="identity", fill=bcols[2]) +
-    geom_line(data=na.omit(combo.df.anim), 
-              aes(x = as.Date(date),y=a + pathways * b), 
-              color = bcols[1], size = 2) +
-    scale_x_date(date_breaks = "1 year", date_labels = "%Y",
-                 name = "",
-                 limits = c(as.Date(strptime(paste0(Ym.start,"01"),"%Y%m%d")),as.Date(strptime(paste0(Ym.end,"01"),"%Y%m%d")))) +
-    scale_y_continuous(name="# Edits", 
-                       limits = ylim.prim,
-                       sec.axis=sec_axis(~ (. - a)/b, 
-                                         name="# Pathways")) +
-    ggtitle("Active community and growing database") +
-    xlab("") +
-    theme(axis.text.y.left=element_text(colour=acols[2]),
-          axis.text.y.right=element_text(colour=acols[1]),
-          axis.ticks.y.left=element_line(colour=acols[2]),
-          axis.ticks.y.right=element_line(colour=acols[1]))
+p <- ggplot(combo.df.anim) +
+  geom_bar(aes(x = as.Date(date),y=edits),stat="identity", fill=bcols[2]) +
+  geom_line(data=na.omit(combo.df.anim), 
+            aes(x = as.Date(date),y=a + pathways * b), 
+            color = bcols[1], size = 2) +
+  scale_x_date(date_breaks = "1 year", date_labels = "%Y",
+               name = "",
+               limits = c(as.Date(strptime(paste0(Ym.start,"01"),"%Y%m%d")),as.Date(strptime(paste0(Ym.end,"01"),"%Y%m%d")))) +
+  scale_y_continuous(name="Edits", 
+                     limits = ylim.prim,
+                     sec.axis=sec_axis(~ (. - a)/b, 
+                                       name="Pathways")) +
+  ggtitle("") +
+  xlab("") +
+  theme(axis.text.y.left=element_text(colour=acols[2]),
+        axis.text.y.right=element_text(colour=acols[1]),
+        axis.ticks.y.left=element_line(colour=acols[2]),
+        axis.ticks.y.right=element_line(colour=acols[1]),
+        axis.title.y.left = element_text(colour=acols[2]),
+        axis.title.y.right = element_text(colour=acols[1]),
+        panel.grid.major = element_line(color="#eeeeee"), 
+        panel.background = element_rect(fill='transparent'), #transparent panel bg
+        plot.background = element_rect(fill='transparent', color=NA), #transparent plot bg
+        panel.grid.minor = element_blank(), #remove minor gridlines
+        legend.background = element_rect(fill='transparent'), #transparent legend bg
+        legend.box.background = element_rect(fill='transparent') #transparent legend panel
+)
   
   
   p

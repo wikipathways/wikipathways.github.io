@@ -31,6 +31,18 @@
     font-family: 'Poppins';
   }
 }
+@media only screen and (max-width: 800px) {
+  .row-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    flex-direction:column;
+  }
+}
 
 
 /* HEADER */
@@ -57,18 +69,18 @@
   margin-left: auto;
 }
 .stats-gif {
-  height: 367px;
-  width: 733px;
+  height: 330px; //367px;
+  width: 660px; //733px;
   background: url("../assets/img/main_stats.png") left;
-  background-size: 733px 367px;
+  background-size: 660px 330px;
 }
 .stats-gif:hover {
   background: url("../assets/img/main_stats.gif") center;
-  background-size: 733px 367px;
+  background-size: 660px 330px;
 }
 .stats-gif:active {
   background: url("../assets/img/main_stats.gif") right;
-  background-size: 733px 367px;
+  background-size: 660px 330px;
 }
 .wp554-gif {
   height: 320px; 
