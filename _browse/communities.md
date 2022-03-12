@@ -1,7 +1,7 @@
 ---
 order: 4
 display-title: "Community"
-btn-class: "btn-community"
+btn-class: "btn-community btn-pill"
 ---
 
 <h1>Pathways by Community</h1>

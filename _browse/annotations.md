@@ -1,7 +1,7 @@
 ---
 order: 5
 display-title: "Annotation"
-btn-class: "btn-annotation"
+btn-class: "btn-annotation btn-pill"
 ---
 
 <h1>Pathways by Annotation</h1> 

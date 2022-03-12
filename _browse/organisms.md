@@ -1,7 +1,7 @@
 ---
 order: 3
 display-title: "Organism"
-btn-class: "btn-organism"
+btn-class: "btn-organism btn-pill"
 ---
 
 <h1>Pathways by Organism</h1>
