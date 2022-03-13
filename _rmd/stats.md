@@ -69,6 +69,9 @@ Next, let’s plot a time series
 ``` r
 # RColorBrewer::display.brewer.all()
 bcols <- RColorBrewer::brewer.pal(3,"Set1")
+acols <- bcols
+bcols <- c("#FF8120","#3955E7")
+acols <- c("#D16919","#1E3199")
 
 # date range for x-axis
 Ym.end <- wpid.all.df.cnts[nrow(wpid.all.df.cnts),1]+1 #inclusive of final month
@@ -88,16 +91,25 @@ p <- ggplot(combo.df) +
   scale_x_date(date_breaks = "1 year", date_labels = "%Y",
                name = "",
                limits = c(as.Date(strptime(paste0(Ym.start,"01"),"%Y%m%d")),as.Date(strptime(paste0(Ym.end,"01"),"%Y%m%d")))) +
-  scale_y_continuous(name="# Edits", 
+  scale_y_continuous(name="Edits", 
                      limits = ylim.prim,
                      sec.axis=sec_axis(~ (. - a)/b, 
-                                       name="# Pathways")) +
-  ggtitle("Active community and growing database") +
+                                       name="Pathways")) +
+  ggtitle("") +
   xlab("") +
-  theme(axis.text.y.left=element_text(colour=bcols[2]),
-        axis.text.y.right=element_text(colour=bcols[1]),
-        axis.ticks.y.left=element_line(colour=bcols[2]),
-        axis.ticks.y.right=element_line(colour=bcols[1]))
+  theme(axis.text.y.left=element_text(colour=acols[2]),
+        axis.text.y.right=element_text(colour=acols[1]),
+        axis.ticks.y.left=element_line(colour=acols[2]),
+        axis.ticks.y.right=element_line(colour=acols[1]),
+        axis.title.y.left = element_text(colour=acols[2]),
+        axis.title.y.right = element_text(colour=acols[1]),
+        panel.grid.major = element_line(color="#eeeeee"), 
+        panel.background = element_rect(fill='transparent'), #transparent panel bg
+        plot.background = element_rect(fill='transparent', color=NA), #transparent plot bg
+        panel.grid.minor = element_blank(), #remove minor gridlines
+        legend.background = element_rect(fill='transparent'), #transparent legend bg
+        legend.box.background = element_rect(fill='transparent') #transparent legend panel
+)
 
 
 p
@@ -107,7 +119,7 @@ p
 
 ``` r
 ggsave("../assets/img/main_stats.png", plot = last_plot(), 
-       width = 1100, height = 550, units = "px", dpi = 250)
+       width = 1100, height = 550, units = "px", dpi = 250, bg='transparent')
 ```
 
 Now, let’s make pngs per month for animation!
@@ -117,24 +129,33 @@ Now, let’s make pngs per month for animation!
 for(i in seq(nrow(combo.df),1)){
   combo.df.anim<-combo.df[1:i,]
   
-  p <- ggplot(combo.df.anim) +
-    geom_bar(aes(x = as.Date(date),y=edits),stat="identity", fill=bcols[2]) +
-    geom_line(data=na.omit(combo.df.anim), 
-              aes(x = as.Date(date),y=a + pathways * b), 
-              color = bcols[1], size = 2) +
-    scale_x_date(date_breaks = "1 year", date_labels = "%Y",
-                 name = "",
-                 limits = c(as.Date(strptime(paste0(Ym.start,"01"),"%Y%m%d")),as.Date(strptime(paste0(Ym.end,"01"),"%Y%m%d")))) +
-    scale_y_continuous(name="# Edits", 
-                       limits = ylim.prim,
-                       sec.axis=sec_axis(~ (. - a)/b, 
-                                         name="# Pathways")) +
-    ggtitle("Active community and growing database") +
-    xlab("") +
-    theme(axis.text.y.left=element_text(colour=bcols[2]),
-          axis.text.y.right=element_text(colour=bcols[1]),
-          axis.ticks.y.left=element_line(colour=bcols[2]),
-          axis.ticks.y.right=element_line(colour=bcols[1]))
+p <- ggplot(combo.df.anim) +
+  geom_bar(aes(x = as.Date(date),y=edits),stat="identity", fill=bcols[2]) +
+  geom_line(data=na.omit(combo.df.anim), 
+            aes(x = as.Date(date),y=a + pathways * b), 
+            color = bcols[1], size = 2) +
+  scale_x_date(date_breaks = "1 year", date_labels = "%Y",
+               name = "",
+               limits = c(as.Date(strptime(paste0(Ym.start,"01"),"%Y%m%d")),as.Date(strptime(paste0(Ym.end,"01"),"%Y%m%d")))) +
+  scale_y_continuous(name="Edits", 
+                     limits = ylim.prim,
+                     sec.axis=sec_axis(~ (. - a)/b, 
+                                       name="Pathways")) +
+  ggtitle("") +
+  xlab("") +
+  theme(axis.text.y.left=element_text(colour=acols[2]),
+        axis.text.y.right=element_text(colour=acols[1]),
+        axis.ticks.y.left=element_line(colour=acols[2]),
+        axis.ticks.y.right=element_line(colour=acols[1]),
+        axis.title.y.left = element_text(colour=acols[2]),
+        axis.title.y.right = element_text(colour=acols[1]),
+        panel.grid.major = element_line(color="#eeeeee"), 
+        panel.background = element_rect(fill='transparent'), #transparent panel bg
+        plot.background = element_rect(fill='transparent', color=NA), #transparent plot bg
+        panel.grid.minor = element_blank(), #remove minor gridlines
+        legend.background = element_rect(fill='transparent'), #transparent legend bg
+        legend.box.background = element_rect(fill='transparent') #transparent legend panel
+)
   
   
   p
@@ -156,6 +177,13 @@ anim.img.list %>%
   image_animate(delay=as.integer(3*100/nrow(combo.df)), #first number is total seconds for all frames to play
                 loop = 1) %>% # number of repeat plays
   image_write("../assets/img/main_stats.gif") # write to current dir
+
+anim.img.list %>% 
+  image_read() %>% # reads each path file
+  image_join() %>% # joins image
+  image_animate(delay=as.integer(3*100/nrow(combo.df)), #first number is total seconds for all frames to play
+                loop = 0) %>% # number of repeat plays
+  image_write("../assets/img/main_stats_inf.gif") # write to current dir
 
 #clean up
 lapply(anim.img.list, function(fn){
