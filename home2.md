@@ -86,9 +86,9 @@ layout: home2
           </div>
           <div class="col-1 mx-auto" style="display:flex;">
             <div class="container">
-                <br/><br/><br/><a class="btn btn-sm btn-front" href="/help.html">Create</a>
-                <br/><br/><a class="btn btn-sm btn-front" href="/help.html">Curate</a>
-                <br/><br/><a class="btn btn-sm btn-front" href="https://github.com/wikipathways/wikipathways-development" target="_blank">Code</a>
+                <br/><br/><br/><a class="btn btn-sm btn-front w-100" href="/help.html">Create</a>
+                <br/><br/><a class="btn btn-sm btn-front w-100" href="/help.html">Curate</a>
+                <br/><br/><a class="btn btn-sm btn-front w-100" href="https://github.com/wikipathways/wikipathways-development" target="_blank">Code</a>
             </div>
           </div> 
           <div class="col-1" style="display:flex;">
@@ -110,10 +110,10 @@ layout: home2
                   </div>
                   <div class="col-7 mx-auto>">
                     <div class="container">
-                       <ul style="list-style: none; margin-left:-13px; line-height:250%; text-align:center">
+                       <ul style="list-style: none; line-height:250%; text-align:center; width:110px;">
       {% assign sorted_browse = site.browse | sort: "order" %} 
       {% for bp in sorted_browse %}
-        <li><a class="btn btn-sm {{bp.btn-class}}" style="font-size:large" href="{{bp.url}}"> {{ bp.display-title }}</a></li>
+        <li><a class="btn btn-sm {{bp.btn-class}} w-100" style="font-size:large" href="{{bp.url}}"> {{ bp.display-title }}</a></li>
       {% endfor %}
                       </ul>              
                     </div>
@@ -124,7 +124,7 @@ layout: home2
           </div>
           <div class="col-5 mx-auto" style="display:flex;">
             <div class="container">
-            <div id="carouselBrowse" class="carousel slide" data-ride="carousel">
+              <div id="carouselBrowse" class="carousel slide" data-ride="true" data-wrap="true">
   <ol class="carousel-indicators">
     <li data-target="#carouselBrowse" data-slide-to="0" class="active"></li>
     <li data-target="#carouselBrowse" data-slide-to="1"></li>
@@ -167,7 +167,7 @@ layout: home2
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div>
+              </div>
             </div>
           </div> 
         </div>
@@ -181,14 +181,72 @@ layout: home2
           <div class="col-5 mx-auto" style="display:flex;">
             <div class="bg-gradient p-3">
               <div class="container">
-                <img src="/assets/img/overview-figure-1.jpg"/> 
+              <div id="carouselDownload" class="carousel slide" data-ride="true" data-wrap="true">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselDownload" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselDownload" data-slide-to="1"></li>
+    <li data-target="#carouselDownload" data-slide-to="2"></li>
+    <li data-target="#carouselDownload" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="https://webservice.wikipathways.org/" target="_blank">
+      <img class="d-block w-100" src="/assets/img/slideshow/download-1.png" alt="Web service API">
+      </a>
+    </div>
+    <div class="carousel-item">
+          <a href="https://data.wikipathways.org/current/" target="_blank">
+      <img class="d-block w-100" src="/assets/img/slideshow/download-2.png" alt="Download archive">
+      </a>
+    </div>
+    <div class="carousel-item">
+          <a href="https://sparql.wikipathways.org/" target="_blank">
+      <img class="d-block w-100" src="/assets/img/slideshow/download-3.png" alt="SPARQL">
+      </a>
+    </div>
+    <div class="carousel-item">
+          <a href="https://bioconductor.org/packages/rWikiPathways/" target="_blank">
+      <img class="d-block w-100" src="/assets/img/slideshow/download-4.png" alt="R package">
+      </a>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselDownload" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselDownload" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+              </div>
               </div>
             </div>
           </div>
           <div class="col-5 mx-auto" style="display:flex;">
             <div class="container">
-                <h2 style="font-family:Poppins; text-align:right"><b>Download and access</b><br/><span style="color: #6c757d;">Get pathway information in the format you need, including GPML (XML), GMT, RDF, SVG and PNG.  Access our content  from your favorite language. </span></h2>
-                 <a class="btn btn-sm btn-front" href="/about.html">Read more</a>
+              <h2 style="font-family:Poppins; text-align:right"><b>Download and access</b><br/><span style="color: #6c757d;">Get pathway information in the format you need, including GPML (XML), GMT, RDF, SVG and PNG.  Access our content  from your favorite language. </span></h2>
+              <div class="row-main" style="display:flex; flex-wrap: wrap;">
+              <div class="col-2 mx-auto" style="display:flex;">
+              </div>
+              <div class="col-3 mx-auto" style="display:flex;">
+                <div class="container">
+                <br/><a class="btn btn-sm btn-front w-100 my-1" href="https://data.wikipathways.org/current/gpml" target="_blank">GPML</a>
+                <br/><a class="btn btn-sm btn-front w-100 my-1" href="https://data.wikipathways.org/current/gmt" target="_blank">GMT</a>
+                <br/><a class="btn btn-sm btn-front w-100 my-1" href="https://data.wikipathways.org/current/svg" target="_blank">SVG</a>
+                <br/><a class="btn btn-sm btn-front w-100 my-1" href="https://data.wikipathways.org" target="_blank">Archive</a>
+                </div>
+              </div>              
+              <div class="col-3 mx-auto" style="display:flex;">
+                <div class="container">
+                <br/><a class="btn btn-sm btn-front w-100 my-1" href="https://webservice.wikipathways.org/" target="_blank">API</a>
+                <br/><a class="btn btn-sm btn-front w-100 my-1" href="https://sparql.wikipathways.org/" target="_blank">SPARQL</a>
+                <br/><a class="btn btn-sm btn-front w-100 my-1" href="https://bioconductor.org/packages/rWikiPathways/" target="_blank">R</a>
+                <br/><a class="btn btn-sm btn-front w-100 my-1" href="https://github.com/kozo2/pywikipathways" target="_blank">Python</a>
+                </div>
+              </div>
+              <div class="col-2 mx-auto" style="display:flex;">
+              </div>
+              </div>
             </div>
           </div> 
         </div>
