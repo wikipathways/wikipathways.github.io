@@ -84,8 +84,8 @@ layout: home2
               </div>
             </div>
           </div>
-          <div class="col-1 mx-auto" style="display:flex;">
-            <div class="container">
+          <div class="col-2 mx-auto" style="display:flex;">
+            <div class="container" style="width:90px;">
                 <br/><br/><br/><a class="btn btn-sm btn-front w-100" href="/help.html">Create</a>
                 <br/><br/><a class="btn btn-sm btn-front w-100" href="/help.html">Curate</a>
                 <br/><br/><a class="btn btn-sm btn-front w-100" href="https://github.com/wikipathways/wikipathways-development" target="_blank">Code</a>
@@ -105,17 +105,15 @@ layout: home2
             <div class="bg-gradient p-3">
               <div class="container">
                 <h2 style="font-family:Poppins"><b>Browse the current collection</b><br/><span style="color: #6c757d;">Explore the full breadth and depth of pathway knowledge. Discover pathways of interest by organism, communities of domain experts, and ontology annotations.</span></h2>
-                <div class="row-main-single gy-3 py-3" style="display:flex; flex-wrap: wrap;">
+                <div class="row-main-single" style="display:flex; flex-wrap: wrap;">
                   <div class="col-1" style="display:flex;">
                   </div>
-                  <div class="col-7 mx-auto>">
-                    <div class="container">
-                       <ul style="list-style: none; line-height:250%; text-align:center; width:110px;">
+                  <div class="col-10 mx-auto>" style="display:flex;">
+                    <div class="container" style="text-align:center; width:110px;">
       {% assign sorted_browse = site.browse | sort: "order" %} 
       {% for bp in sorted_browse %}
-        <li><a class="btn btn-sm {{bp.btn-class}} w-100" style="font-size:large" href="{{bp.url}}"> {{ bp.display-title }}</a></li>
-      {% endfor %}
-                      </ul>              
+        <br/><a class="btn btn-sm {{bp.btn-class}} w-100 my-1" style="font-size:large" href="{{bp.url}}"> {{ bp.display-title }}</a>
+      {% endfor %}           
                     </div>
                   </div>
                 </div>
@@ -263,8 +261,8 @@ layout: home2
                 <h2 style="font-family:Poppins"><b>Analyze and Publish</b><br/><span style="color: #6c757d;">Choose from dozens of online and local software tools to perform pathway analysis. Visualize your data in the context of pathway diagrams. Publish results as images with links back to an active and dynamic database.</span></h2>
               <div class="row-main" style="display:flex; flex-wrap: wrap;">
               <div class="col-6 mx-auto" style="display:flex;">
-                <div class="container">
-                <br/><a class="btn btn-sm btn-front w-100 my-1" href="/help.html">Analyze</a>
+                <div class="container" style="text-align:center;">
+                <br/><a class="btn btn-sm btn-front w-100 my-1" style="max-width:180px;" href="/help.html">Analyze</a>
                 <br/>
       <a href="https://pathvisio.org/" 
       title="PathVisio is a free open-source pathway analysis and drawing software which allows drawing, editing, and analyzing biological pathways." target="_blank">
@@ -280,7 +278,6 @@ layout: home2
       <img src="/assets/img/logo-enrichr.png" height="55px" style="padding:2px 8px" /></a>
       <a href="https://bioconductor.org/packages/clusterProfiler/" title="The clusterProfiler R package supports GO and pathway analysis performed as overrepresentation or GSEA." target="_blank">
       <img src="/assets/img/logo-clusterprofiler.png" height="55px" style="padding:2px 8px" /></a>
-      <br/>
       <a href="/tools.html" style="font-size:1.0em; text-decoration:none;">and many more...</a>
                 </div>
               </div>              
