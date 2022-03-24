@@ -327,7 +327,7 @@ layout: home2
               <div class="col-3 mx-auto" style="display:flex;">
                 <div class="container">
                 <a class="btn btn-sm btn-front w-100 my-2" href="/cite.html">Cite</a>
-                <a class="btn btn-sm btn-front w-100 my-2" href="/help.html">Publish</a>
+                <a class="btn btn-sm btn-front w-100 my-2" href="/help.html#publish">Publish</a>
                 <a class="btn btn-sm btn-front w-100 my-2" href="https://wikipathways.tumblr.com/" target="_blank">Examples</a>
                 </div>
               </div>
