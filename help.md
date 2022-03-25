@@ -28,7 +28,7 @@ title: Help
 <li>Pathways have been tagged with appropriate ontology tags and have a useful description.</li>
 </ul>
 </p>
-<p>Anyone is welcome to join the WikiPathways Curator Community. Please <a href="https://github.com/wikipathways/wikipathways.github.io/discussions">contact us</a> if you are interested.</p>
+<p>Anyone is welcome to join the WikiPathways Curator Community. Please <a href="https://github.com/wikipathways/wikipathways.github.io/discussions" target="_blank">contact us</a> if you are interested.</p>
 </div>
 <hr>
 <div id="code">

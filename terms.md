@@ -7,7 +7,7 @@ title: Terms of use
     If you are like us, issues about licensing, copyrights and trademarks are boring at best and quickly become frustratingly opaque. At the same time, we recognize that
     they are important issues, especially when it comes to promoting and protecting data sharing in scientific domains. So, we have done our homework here at WikiPathways
     and have decided to adopt the Creative Commons CC0 waiver for our content. We are going to do our best to explain the strategy in clear terms below. Please feel free
-    to give us feedback on these issues and voice your opinions and questions on the <a href="http://groups.google.com/group/wikipathways-discuss">WikiPathways discussion mailing list</a>.
+    to give us feedback on these issues and voice your opinions and questions on the <a href="https://github.com/wikipathways/wikipathways.github.io/discussions" target="_blank">WikiPathways discussion board</a>.
 </p>
 <h3>Latest website or content:</h3>
 <ul>
@@ -19,7 +19,7 @@ title: Terms of use
 
 
 <h3>The License/Waiver</h3>
-<p>WikiPathways content is covered by the <a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons CC0 Waiver</a>, which states that you are free to share (copy, distribute and transmit) and remix (adapt) the work. Refer to the original announcement for additional history and context. Our terms of use covers the ethical and social norms for attribution that we expect from research communities. For any reuse or distribution, we would appreciate that you make clear to others the CC0 terms for the work. The best way to do this is with a link to this web page. Again, this license is fairly permissive, so you shouldn't feel paralyzed by legalese if you are interested in using or redistributing WikiPathways content. Just be sure to read the terms of use and if you have any questions about fair use, don't hesitate to contact us. A detailed FAQ on CC0 can be found here, which was written by the Wikimedia community.</p>
+<p>WikiPathways content is covered by the <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">Creative Commons CC0 Waiver</a>, which states that you are free to share (copy, distribute and transmit) and remix (adapt) the work. Refer to the original announcement for additional history and context. Our terms of use covers the ethical and social norms for attribution that we expect from research communities. For any reuse or distribution, we would appreciate that you make clear to others the CC0 terms for the work. The best way to do this is with a link to this web page. Again, this license is fairly permissive, so you shouldn't feel paralyzed by legalese if you are interested in using or redistributing WikiPathways content. Just be sure to read the terms of use and if you have any questions about fair use, don't hesitate to contact us. A detailed FAQ on CC0 can be found here, which was written by the Wikimedia community.</p>
 
 <h3>Terms of Use</h3>
 <p><b>Contributing</b></p>
