@@ -7,6 +7,8 @@ title: Help
 
 <h5>Searching</h5>
 <h5>Browsing</h5>
+<p>The WikiPathways collection can be explored by organism, communities of domain experts, and ontology annotations. The <a href="https://new.wikipathways.org/browse/filters.html">Browse</a> interface displays content in either gallery or list view, which can be filtered by a combination of parameters.</p>
+<p>A <a href="https://new.wikipathways.org/browse/table.html">table view</a> of the current collection can be interactively explored by typing keywords, WPIDs etc in the search fileds at the top of each column.</p>
 
 </div>
 <hr>
