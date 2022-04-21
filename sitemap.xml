@@ -14,7 +14,7 @@ sitemap:
     </url>
   {% endfor %}
   {% for page in site.pages %}
-    {% unless page.sitemap.exclude == "yes" or page.name == "feed.xml" or page.url contains "instance" %}
+    {% unless page.sitemap.exclude == "yes" or page.name == "feed.xml" or page.url contains "instance" or page.url contains "index.php" %}
     <url>
       <loc>{{ site.url }}{{ page.url | remove: "index.html" }}</loc>
       {% if page.date %}
