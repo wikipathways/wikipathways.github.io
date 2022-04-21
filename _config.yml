@@ -95,6 +95,7 @@ defaults:
       path: ""
     values:
       layout: "default"
+      sitemap: false
 
 # Custom collections
 collections:
