@@ -1,21 +1,25 @@
 ---
 layout: default
+order: 4
+display-title: "Updated"
+btn-class: "btn-front"
 ---
-    <h2 id="title">Recently Changed Pathways</h2>
-    <p>A sorted list of 20 pathways that have been recently edited.</p> 
+    
+<h2 id="title">Recently Updated Pathways</h2>
+<p>A sorted list of 20 pathways that have been recently edited.</p> 
 
-    <h2>Pathways</h2>
-    <ul class="nav nav-tabs">
-      <li class="nav-item">
+<h2>Pathways</h2>
+<ul class="nav nav-tabs">
+    <li class="nav-item">
         <a class="nav-link active" data-toggle="tab" href="#gallery">Gallery</a>
-      </li>
+    </li>
       <li class="nav-item">
         <a class="nav-link" data-toggle="tab" href="#list">List</a>
       </li>
-    </ul>
-    {% assign sorted_pathways = site.pathways | sort: "last-edited" | reverse | slice:0, 20 %}
-    <div class="tab-content" >
-      <div class="tab-pane fade show active" id="gallery" role="tabpanel">
+</ul>
+{% assign sorted_pathways = site.pathways | sort: "last-edited" | reverse | slice:0, 20 %}
+<div class="tab-content" >
+    <div class="tab-pane fade show active" id="gallery" role="tabpanel">
         <br/>
     <div class="row">
       {% for pw in sorted_pathways %}
@@ -44,7 +48,8 @@ layout: default
     </div>  
   </div>
 </div>
-<br/><hr/>
-<h2>Authors of Recent Changes</h2>
+<br/>
+<hr/>
+<h2>Authors of Recent Updates</h2>
 {% assign all_authors = sorted_pathways | map: "authors" | join: ','  | split: ',' | uniq  %} <!-- REPLACE authors with "recent author" -->
 <p>{{ all_authors | array_to_sentence_string }}.</p>
