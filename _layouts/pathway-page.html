@@ -116,6 +116,15 @@ layout: default
         {% endfor %}
       </tbody>
     </table>
+    <div class="dropdown" style="float:right; margin-top: -8px;">
+      <button class="badge badge-secondary dropdown-toggle" type="button" id="dropdownMenuButtonDatanodes" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        options
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButtonDatanodes">
+      <a class="dropdown-item" href="https://gitcdn.link/cdn/wikipathways/wikipathways-database/main/pathways/{{ page.wpid }}/{{ page.wpid }}-datanodes.tsv">Download TSV</a>
+      </div>
+    </div>
     <input type="button" class="badge badge-secondary" id="tableMore" value="more rows" style="float: left; margin-top: -8px;">
     <input type="button" class="badge badge-secondary" id="tableLess" value="fewer rows" style="float: left; margin-top: -8px;">
     <br />
@@ -127,6 +136,15 @@ layout: default
       <li>{{ ref.Citation }}</li>
       {% endfor %}
     </ol>
+    <div class="dropdown" style="float:right; margin-top: -8px;">
+      <button class="badge badge-secondary dropdown-toggle" type="button" id="dropdownMenuButtonBibliography" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        options
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButtonBibliography">
+      <a class="dropdown-item" href="https://gitcdn.link/cdn/wikipathways/wikipathways-database/main/pathways/{{ page.wpid }}/{{ page.wpid }}-bibliography.tsv">Download TSV</a>
+      </div>
+    </div>
   </div>
 
 <script>
