@@ -11,15 +11,15 @@ layout: default
   <div id="description" style="max-height:75px; overflow-y:hidden;margin-bottom: 20px;">
     {{ page.description }}
   </div>
-  <input type="button" class="badge badge-secondary" id="descMore" value="more text" style="float: right; margin-top: -28px;">
-  <input type="button" class="badge badge-secondary" id="descLess" value="less text" style="float: right; margin-top: -28px;">
+  <input type="button" class="badge badge-secondary" id="descMore" value="more text" style="float: right; margin-top: -26px;">
+  <input type="button" class="badge badge-secondary" id="descLess" value="less text" style="float: right; margin-top: -26px;">
 
   <div id="pathway-viewer" style="height:400px;margin-bottom: 2px;">
     <iframe class="embed-responsive-item" src="https://pathway-viewer.toolforge.org/?id={{page.wpid}}"
       style="border-width: 1px; border-color: rgb(222,226,230); border-style: solid; height:100%; width:100%"
       referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
   </div>
-  <div class="dropdown" style="float:right;">
+  <div class="dropdown" style="float:right; margin-top: -1px;">
     <button class="badge badge-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
       aria-haspopup="true" aria-expanded="false">
       options
@@ -116,7 +116,7 @@ layout: default
         {% endfor %}
       </tbody>
     </table>
-    <div class="dropdown" style="float:right; margin-top: -8px;">
+    <div class="dropdown" style="float:right; margin-top: -13px;">
       <button class="badge badge-secondary dropdown-toggle" type="button" id="dropdownMenuButtonDatanodes" data-toggle="dropdown"
         aria-haspopup="true" aria-expanded="false">
         options
@@ -136,7 +136,7 @@ layout: default
       <li>{{ ref.Citation }}</li>
       {% endfor %}
     </ol>
-    <div class="dropdown" style="float:right; margin-top: -8px;">
+    <div class="dropdown" style="float:right; margin-top: -18px;">
       <button class="badge badge-secondary dropdown-toggle" type="button" id="dropdownMenuButtonBibliography" data-toggle="dropdown"
         aria-haspopup="true" aria-expanded="false">
         options
@@ -147,7 +147,7 @@ layout: default
     </div>
   </div>
 
-<script>
+<script> 
   var trs = $("#participants-table tr");
   var btnMoreDesc = $("#descMore");
   var btnLessDesc = $("#descLess");
