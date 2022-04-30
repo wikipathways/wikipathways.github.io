@@ -28,7 +28,9 @@ layout: default
     <button class="dropdown-item copy-btn" type="button" to-copy="https://www.wikipathways.org/instance/{{ page.wpid }}">Copy permalink</button>
     <button class="dropdown-item embed-btn" type="button" to-copy='<iframe src ="https://pathway-viewer.toolforge.org/?id={{ page.wpid }}`" width="600px" height="300px" style="overflow:hidden;"></iframe>'>Copy embed code</button>
     <a class="dropdown-item" href="https://pathway-viewer.toolforge.org/?id={{page.wpid}}" target="_blank">View full size</a>
+    {% if page.ndex %}
     <a class="dropdown-item" href="https://www.ndexbio.org/viewer/networks/{{page.ndex}}" target="_blank">Open in NDEx</a>
+    {% endif %}
     <a class="dropdown-item" href="https://www.sejda.com/html-to-pdf?save-link={{site.url}}/pathways/{{ page.wpid }}.html" target="_blank">Download PDF</a>
     <a class="dropdown-item" href="#">Download PNG</a>
     <a class="dropdown-item" href="#">Download SVG</a>
