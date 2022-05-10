@@ -1,0 +1,57 @@
+name: When stats data file change, knit stats.Rmd
+## stat data files = _data/edit_counts.csv and _data/pathway_counts.csv
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - _data/edit_counts.csv
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
+jobs:      
+  stats-update:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+          fetch-depth: 0
+          ref: main
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@master
+
+      - name: Install packages
+        run: Rscript -e 'install.packages(c("knitr", "scales","plyr","tidyverse","magick","remotes"))'
+
+      - name: Install BiocManager
+        run: |
+          remotes::install_cran("BiocManager")
+        shell: Rscript {0}
+
+      - name: BiocManager installations
+        run: |
+          BiocManager::install("RColorBrewer", ask = FALSE) 
+          BiocManager::install("rWikiPathways", ask = FALSE)
+        shell: Rscript {0}
+
+      - name: Knit stats.Rmd
+        run: Rscript -e 'knit("_rmd/stats.Rmd")'
+
+      - name: Commit report
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add .
+          if git diff --exit-code --staged; then
+              echo "No changes"
+          else
+              git commit -m 'Update stats .md and files'
+              git push
+          fi
