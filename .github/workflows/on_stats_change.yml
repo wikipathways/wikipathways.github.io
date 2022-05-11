@@ -7,7 +7,7 @@ on:
     branches:
       - main
     paths:
-      - _data/edit_counts.csv
+      - _data/*_counts.csv
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
