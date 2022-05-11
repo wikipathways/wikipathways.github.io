@@ -1,40 +1,50 @@
 ---
-title: stats
+title: "stats"
+author: "Alex"
+date: "1/2/2022"
+# output: html_document
+output:
+  md_document:
+    variant: markdown_github
+    includes:
+      before_body: stats_title.md
 ---
 
+
+
 # WikiPathways Stats
+This R notebooks prepares figures to summarize WikiPathways activity. The output files are displayed on the website and used in publications and grant applications. Please edit in coordination with the WikiPathways development team.
 
-This R notebooks prepares figures to summarize WikiPathways activity.
-The output files are displayed on the website and used in publications
-and grant applications. Please edit in coordination with the
-WikiPathways development team.
+* Data points are collected in _*data/*
+* Plots are saved in *assets/img/*
+ 
 
--   Data points are collected in \_*data/*
--   Plots are saved in *assets/img/*
 
 ## Collect Data
 
 ### Initialize Pathway Count Table
+Collect history from old webservice, using getPathwayHistory on "Approved" 
+pathways and checking oldest revision on pathways after WP3959 against a 
+cutoff "oldest.date". 
 
-Collect history from old webservice, using getPathwayHistory on
-“Approved” pathways and checking oldest revision on pathways after
-WP3959 against a cutoff “oldest.date”.
-
-**This was used to populate the data table; only run once.** See GitHub
+**This was used to populate the data table; only run once.** See GitHub 
 Collections to update the table using data sourced from GitHub repos.
+
+
 
 ### Initialize Monthly Activity Table
+Collect monthly edit history from "User edits in month" from old server at 
+*wpi/statistics/editCounts.txt*, manually simplified to *editCounts.csv*.
 
-Collect monthly edit history from “User edits in month” from old server
-at *wpi/statistics/editCounts.txt*, manually simplified to
-*editCounts.csv*.
-
-**This was used to populate the data table; only run once.** See GitHub
+**This was used to populate the data table; only run once.** See GitHub 
 Collections to update the table using data sourced from GitHub repos.
+
+
 
 ### GitHub Collections
 
-``` r
+
+```r
 ## read saved data
 wpid.all.df.cnts <- read.csv("../_data/pathway_counts.csv", stringsAsFactors = F)
 edits.user.df <- read.csv("../_data/edit_counts.csv", stringsAsFactors = F)
@@ -47,13 +57,12 @@ edits.user.df <- read.csv("../_data/edit_counts.csv", stringsAsFactors = F)
 
 ## Plot data
 
-Composite plot for main page: pathway count and number of edits per
-month.
+Composite plot for main page: pathway count and number of edits per month.
 
-First, let’s combine our data frames and make a proper date column and
-factor by month
+First, let's combine our data frames and make a proper date column and factor by 
+month
 
-``` r
+```r
 combo.df <- edits.user.df %>%
   full_join(wpid.all.df.cnts, by="date") %>%
   dplyr::filter(!is.na(edits)) %>%
@@ -64,9 +73,9 @@ combo.df$month <- factor(format(combo.df$date, "%B"),
                                 levels = month.name)
 ```
 
-Next, let’s plot a time series
+Next, let's plot a time series
 
-``` r
+```r
 # RColorBrewer::display.brewer.all()
 bcols <- RColorBrewer::brewer.pal(3,"Set1")
 acols <- bcols
@@ -116,16 +125,17 @@ p <- ggplot(combo.df) +
 p
 ```
 
-![](stats_files/figure-markdown_github/plot-1.png)
+![plot of chunk plot](figure/plot-1.png)
 
-``` r
+
+```r
 ggsave("../assets/img/main_stats.png", plot = last_plot(), 
        width = 650, height = 450, units = "px", dpi = 250, bg='transparent')
 ```
 
-Now, let’s make pngs per month for animation!
+Now, let's make pngs per month for animation!
 
-``` r
+```r
 # plot per month
 for(i in seq(nrow(combo.df),1)){
   combo.df.anim<-combo.df[1:i,]
@@ -167,10 +177,11 @@ p <- ggplot(combo.df.anim) +
 }
 ```
 
-    ## geom_path: Each group consists of only one observation. Do you need to adjust
-    ## the group aesthetic?
+```
+## Error in str_pad(i, 3, pad = "0"): could not find function "str_pad"
+```
 
-``` r
+```r
 #make animated gif
 anim.img.list <- list.files(path='stats_files', pattern = '*.png', full.names = TRUE) 
 anim.img.list %>% 
@@ -193,5 +204,4 @@ lapply(anim.img.list, function(fn){
     file.remove(fn)
 })
 ```
-
 ![](../assets/img/main_stats.gif)
