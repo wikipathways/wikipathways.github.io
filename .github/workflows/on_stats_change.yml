@@ -30,7 +30,7 @@ jobs:
       - name: Install packages
         run: |
           sudo apt-get install libcurl4-openssl-dev libmagick++-dev
-          Rscript -e 'install.packages(c("knitr","scales","plyr","dplyr","magrittr","magick","remotes","ggplot2"))'
+          Rscript -e 'install.packages(c("knitr","scales","plyr","dplyr","magrittr","magick","remotes","stringr","ggplot2"))'
 
       - name: Install BiocManager
         run: |
