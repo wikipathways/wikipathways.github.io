@@ -82,7 +82,7 @@ layout: home2
           <div class="col-7 mx-auto" style="display:flex;">
             <div class="bg-gradient p-3">
               <div class="container">
-              <a href="/rmd/stats">
+              <a href="/stats">
                 <div class="stats-gif"></div>  
               </a>
               </div>
