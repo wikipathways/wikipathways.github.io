@@ -44,7 +44,7 @@ jobs:
         shell: Rscript {0}
 
       - name: Knit stats.Rmd
-        run: Rscript -e 'knitr::knit("_rmd/stats.Rmd", "_rmd/stats.md")'
+        run: Rscript -e 'knitr::knit("_rmd/stats.Rmd", "stats.md")'
 
       - name: Commit report
         run: |
