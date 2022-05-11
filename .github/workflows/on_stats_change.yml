@@ -28,7 +28,7 @@ jobs:
         uses: r-lib/actions/setup-r@master
 
       - name: Install packages
-        run: Rscript -e 'install.packages(c("knitr", "scales","plyr","tidyverse","magick","remotes"))'
+        run: Rscript -e 'install.packages(c("knitr","scales","plyr","dplyr","magrittr","magick","remotes"))'
 
       - name: Install BiocManager
         run: |
@@ -42,7 +42,7 @@ jobs:
         shell: Rscript {0}
 
       - name: Knit stats.Rmd
-        run: Rscript -e 'knit("_rmd/stats.Rmd")'
+        run: Rscript -e 'knitr::knit("_rmd/stats.Rmd")'
 
       - name: Commit report
         run: |

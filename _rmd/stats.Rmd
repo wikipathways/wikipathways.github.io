@@ -25,7 +25,8 @@ library(rWikiPathways)
 library(RColorBrewer)
 library(scales)
 library(plyr)
-library(tidyverse)
+library(dlpyr)
+library(magrittr)
 library(magick)
 ```
 
