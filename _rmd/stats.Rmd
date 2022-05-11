@@ -28,6 +28,7 @@ library(plyr)
 library(dplyr)
 library(magrittr)
 library(magick)
+library(ggplot2)
 ```
 
 ## Collect Data
