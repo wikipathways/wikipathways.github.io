@@ -129,8 +129,12 @@ p
 
 
 ```r
-ggsave("../assets/img/main_stats.png", plot = last_plot(), 
+ggsave("assets/img/main_stats.png", plot = last_plot(), 
        width = 650, height = 450, units = "px", dpi = 250, bg='transparent')
+```
+
+```
+## Error in grid.newpage(): could not open file 'assets/img/main_stats.png'
 ```
 
 Now, let's make pngs per month for animation!
@@ -178,7 +182,8 @@ p <- ggplot(combo.df.anim) +
 ```
 
 ```
-## Error in str_pad(i, 3, pad = "0"): could not find function "str_pad"
+## geom_path: Each group consists of only one observation. Do you need to adjust
+## the group aesthetic?
 ```
 
 ```r
@@ -189,15 +194,27 @@ anim.img.list %>%
   image_join() %>% # joins image
   image_animate(delay=as.integer(3*100/nrow(combo.df)), #first number is total seconds for all frames to play
                 loop = 1) %>% # number of repeat plays
-  image_write("../assets/img/main_stats.gif") # write to current dir
+  image_write("assets/img/main_stats.gif") # write to current dir
+```
 
+```
+## Error in file(con, "wb"): cannot open the connection
+```
+
+```r
 anim.img.list %>% 
   image_read() %>% # reads each path file
   image_join() %>% # joins image
   image_animate(delay=as.integer(3*100/nrow(combo.df)), #first number is total seconds for all frames to play
                 loop = 0) %>% # number of repeat plays
-  image_write("../assets/img/main_stats_inf.gif") # write to current dir
+  image_write("assets/img/main_stats_inf.gif") # write to current dir
+```
 
+```
+## Error in file(con, "wb"): cannot open the connection
+```
+
+```r
 #clean up
 lapply(anim.img.list, function(fn){
   if (file.exists(fn))
