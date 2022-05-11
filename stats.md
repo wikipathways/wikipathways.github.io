@@ -46,32 +46,9 @@ Collections to update the table using data sourced from GitHub repos.
 
 ```r
 ## read saved data
-wpid.all.df.cnts <- read.csv("_data/pathway_counts.csv", stringsAsFactors = F)
-```
+wpid.all.df.cnts <- read.csv("../_data/pathway_counts.csv", stringsAsFactors = F)
+edits.user.df <- read.csv("../_data/edit_counts.csv", stringsAsFactors = F)
 
-```
-## Warning in file(file, "rt"): cannot open file '_data/pathway_counts.csv': No
-## such file or directory
-```
-
-```
-## Error in file(file, "rt"): cannot open the connection
-```
-
-```r
-edits.user.df <- read.csv("_data/edit_counts.csv", stringsAsFactors = F)
-```
-
-```
-## Warning in file(file, "rt"): cannot open file '_data/edit_counts.csv': No such
-## file or directory
-```
-
-```
-## Error in file(file, "rt"): cannot open the connection
-```
-
-```r
 ## add new row of data
 # TODO: count WP folders in _pathways/
 # TODO: commits per time frame, see https://git-scm.com/docs/git-rev-list with
@@ -90,27 +67,10 @@ combo.df <- edits.user.df %>%
   full_join(wpid.all.df.cnts, by="date") %>%
   dplyr::filter(!is.na(edits)) %>%
   arrange(date)
-```
 
-```
-## Error in full_join(., wpid.all.df.cnts, by = "date"): object 'edits.user.df' not found
-```
-
-```r
 combo.df$date <- strptime(paste0(combo.df$date,"01"), "%Y%m%d")
-```
-
-```
-## Error in paste0(combo.df$date, "01"): object 'combo.df' not found
-```
-
-```r
 combo.df$month <- factor(format(combo.df$date, "%B"),
                                 levels = month.name)
-```
-
-```
-## Error in format(combo.df$date, "%B"): object 'combo.df' not found
 ```
 
 Next, let's plot a time series
@@ -124,54 +84,14 @@ acols <- c("#D16919","#1E3199")
 
 # date range for x-axis
 Ym.end <- wpid.all.df.cnts[nrow(wpid.all.df.cnts),1]+1 #inclusive of final month
-```
-
-```
-## Error in eval(expr, envir, enclos): object 'wpid.all.df.cnts' not found
-```
-
-```r
 Ym.start <- Ym.end - 400 # 4 years
-```
-
-```
-## Error in eval(expr, envir, enclos): object 'Ym.end' not found
-```
-
-```r
+  
 # scaling for primary and secondary y-axes
 ylim.prim <- c(0, max(combo.df$edits, na.rm = T)) # range for edits
-```
-
-```
-## Error in eval(expr, envir, enclos): object 'combo.df' not found
-```
-
-```r
 ylim.sec <- c(min(combo.df$pathways, na.rm = T), max(combo.df$pathways, na.rm = T))    # range for pathways
-```
-
-```
-## Error in eval(expr, envir, enclos): object 'combo.df' not found
-```
-
-```r
 b <- diff(ylim.prim)/diff(ylim.sec)
-```
-
-```
-## Error in diff(ylim.prim): object 'ylim.prim' not found
-```
-
-```r
 a <- b*(ylim.prim[1] - ylim.sec[1])
-```
 
-```
-## Error in eval(expr, envir, enclos): object 'b' not found
-```
-
-```r
 p <- ggplot(combo.df) +
   geom_bar(aes(x = as.Date(date),y=edits),stat="identity", fill=bcols[2]) +
   geom_line(data=na.omit(combo.df), 
@@ -200,23 +120,16 @@ p <- ggplot(combo.df) +
         legend.background = element_rect(fill='transparent'), #transparent legend bg
         legend.box.background = element_rect(fill='transparent') #transparent legend panel
 )
-```
 
-```
-## Error in ggplot(combo.df): object 'combo.df' not found
-```
 
-```r
 p
 ```
 
-```
-## Error in eval(expr, envir, enclos): object 'p' not found
-```
+![plot of chunk plot](figure/plot-1.png)
 
 
 ```r
-ggsave("assets/img/main_stats.png", plot = last_plot(), 
+ggsave("../assets/img/main_stats.png", plot = last_plot(), 
        width = 650, height = 450, units = "px", dpi = 250, bg='transparent')
 ```
 
@@ -259,13 +172,13 @@ p <- ggplot(combo.df.anim) +
   
   p
   
-  ggsave(paste0("_rmd/stats_files/main_stats_",str_pad(i, 3, pad = "0"),".png"), plot = last_plot(), 
+  ggsave(paste0("stats_files/main_stats_",str_pad(i, 3, pad = "0"),".png"), plot = last_plot(), 
        width = 650, height = 450, units = "px", dpi = 250)
 }
 ```
 
 ```
-## Error in nrow(combo.df): object 'combo.df' not found
+## Error in str_pad(i, 3, pad = "0"): could not find function "str_pad"
 ```
 
 ```r
@@ -276,27 +189,15 @@ anim.img.list %>%
   image_join() %>% # joins image
   image_animate(delay=as.integer(3*100/nrow(combo.df)), #first number is total seconds for all frames to play
                 loop = 1) %>% # number of repeat plays
-  image_write("assets/img/main_stats.gif") # write to current dir
-```
+  image_write("../assets/img/main_stats.gif") # write to current dir
 
-```
-## Error in nrow(combo.df): object 'combo.df' not found
-```
-
-```r
 anim.img.list %>% 
   image_read() %>% # reads each path file
   image_join() %>% # joins image
   image_animate(delay=as.integer(3*100/nrow(combo.df)), #first number is total seconds for all frames to play
                 loop = 0) %>% # number of repeat plays
-  image_write("assets/img/main_stats_inf.gif") # write to current dir
-```
+  image_write("../assets/img/main_stats_inf.gif") # write to current dir
 
-```
-## Error in nrow(combo.df): object 'combo.df' not found
-```
-
-```r
 #clean up
 lapply(anim.img.list, function(fn){
   if (file.exists(fn))
