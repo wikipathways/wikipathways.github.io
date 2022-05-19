@@ -42,18 +42,19 @@ layout: default
   {% assign now = 'now' | date: '%s' %}
   {% assign diffSeconds = now | minus: edit %}
   {% assign diffDays = diffSeconds | divided_by: 3600 | divided_by: 24 %}
-  {% if diffDays <= 1 %} {% assign badgeColor="red" %} {% elsif diffDays <=7 %} {% assign badgeColor="yellow" %} {% else
-    %} {% assign badgeColor="blue" %} {% endif %} <!-- This badge is updated by Jekyll via the value of "last-edited" in
-    each pathway .md-->
+  {% if diffDays <= 7 %} {% assign badgeColor="brightgreen" %} <!-- within 1 week, green-->
+  {% elsif diffDays >1095 %} {% assign badgeColor="999" %} <!-- over 3 years, gray-->
+  {% else %} {% assign badgeColor="blue" %} {% endif %} <!-- otherwise, blue -->
+    <!-- This badge is updated by Jekyll via the value of "last-edited" in each pathway .md-->
     <a href="https://github.com/wikipathways/wikipathways.github.io/commits/main/_pathways/{{page.wpid}}.md"
       target="_blank">
       <img alt="last edited"
         src="https://img.shields.io/static/v1?label=last edited&message={{page.last-edited | date_to_string}}&color={{badgeColor}}">
     </a>
-    <!--This badge is updated async to Jekyll by edits to the corresponding .json (Note: 5 minute cache by shields.io)-->
+    <!--This badge is updated async to Jekyll by edits to the corresponding status.json (Note: 5 minute cache by shields.io)-->
     <a id="badge-json" target="_blank"
     href="https://github.com/wikipathways/wikipathways.github.io/commits/main/_pathways/{{page.wpid}}.md"
-    file="https://raw.githubusercontent.com/wikipathways/repository/main/{{page.wpid}}/status.json">
+    file="https://raw.githubusercontent.com/wikipathways/wikipathways-database/main/{{page.wpid}}/{{page.wpid}}-status.json">
     <!-- fill-in with img tag if file exists -->
     </a>
     <!--This badge shows the curation status-->
