@@ -2,21 +2,23 @@
 title: Help
 ---
 <div id="navigate">
-<h2>Navigate</h2>
-<p>Learn how to use the WikiPathways website.</p>
+<h2>Navigating the WikiPathways website</h2>
 
-<h5>Searching</h5>
-<h5>Browsing</h5>
+<h3>Searching</h3>
+<h3>Browsing</h3>
 <p>The WikiPathways collection can be explored by organism, communities of domain experts, and ontology annotations. The <a href="https://new.wikipathways.org/browse/filters.html">Browse</a> interface displays content in either gallery or list view, which can be filtered by a combination of parameters.</p>
 <p>A <a href="https://new.wikipathways.org/browse/table.html">table view</a> of the current collection can be interactively explored by typing keywords, WPIDs etc in the search fileds at the top of each column.</p>
+
 
 </div>
 <hr>
 <div id="create">
 <h2>Create</h2>
 <ul>
+<li>Get started as a <a href="https://new.wikipathways.org/contribute.html">WikiPathways Contributor</a> today!</li>
 <li>Learn everything about creating and editing pathways, from the basics to advanced topics at the <a href="https://wikipathways.github.io/academy/" target="_blank">WikiPathways Academy</a>.</li>
-<li>For more detailed information on curating pathway models, see <a href="https://doi.org/10.1371/journal.pcbi.1009226" target="_blank">Ten simple rules for creating reusable pathway models for computational analysis and visualization</a>.</li> 
+<li>For more detailed information on curating pathway models, see <a href="https://doi.org/10.1371/journal.pcbi.1009226" target="_blank">Ten simple rules for creating reusable pathway models for computational analysis and visualization</a>.</li>
+<li>Check out the <a href="https://www.youtube.com/channel/UCTkyLj_4u6V4M5lUmyuOGDw">PathVisio YouTube Channel</a> for videos on how to use PathVisio for pathway curation.</li> 
 </ul>
 </div>
 <hr>
@@ -42,7 +44,7 @@ title: Help
 <h2>Analyze</h2>
 <p>WikiPathways models can be used for data visualization and analysis in multiple tools:</p>
 <ul>
-    <li>Learn how to use WikiPathways in <a href="/analyze.html">enrichment analysis, PathVisio and Cytoscape.</a></li>
+    <li>Learn how to use WikiPathways in <a href="/analyze.html">enrichment analysis, data visualization in PathVisio and Cytoscape, and querying the WikiPathways RDF.</a></li>
     <li>See a listing of all <a href="/tools.html">tools supporting WikiPathways</a></li>
 </ul>
 </div>
