@@ -65,7 +65,7 @@ btn-class: "btn-front"
       </section>
     </div> <!-- End checkboxes div -->
     <div class="col-sm" id="tabs">
-      <ul class="nav nav-tabs" style="float:left;">
+      <ul class="nav nav-tabs" style="float:left; margin-left: 0px;">
         <li class="nav-item">
           <a class="nav-link active" data-toggle="tab" href="#gallery">Gallery</a>
         </li>
@@ -81,7 +81,7 @@ btn-class: "btn-front"
       <div class="tab-content"  style="clear:both;">
         <div class="tab-pane fade show active" id="gallery" role="tabpanel">
           <br/>
-          <div class="row" id="pwcards">
+          <div class="row" id="pwcards" style="margin-right: 0px; margin-left: 0px;">
             <!-- Add cards here -->
           </div>
           <br/>
@@ -89,7 +89,7 @@ btn-class: "btn-front"
         </div>
         <div class="tab-pane fade" id="list" role="tabpanel">
           <br/>
-          <ul id="pwlist" style="margin-left: 20px;">
+          <ul id="pwlist" style="margin-left: 0px; list-style-type: none">
             <!-- Add list here -->
           </ul>
         </div>

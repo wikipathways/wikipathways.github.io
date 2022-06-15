@@ -8,7 +8,7 @@ btn-class: "btn-front"
 <h2 id="title">New Pathways</h2>
 <p>A sorted list of 20 pathways that have been recently added to the database.</p> 
 <h2>Pathways</h2>
-<ul class="nav nav-tabs">
+<ul class="nav nav-tabs" style="margin-left: 0px;">
     <li class="nav-item">
       <a class="nav-link active" data-toggle="tab" href="#gallery">Gallery</a>
     </li>
@@ -20,7 +20,7 @@ btn-class: "btn-front"
 <div class="tab-content" >
     <div class="tab-pane fade show active" id="gallery" role="tabpanel">
         <br/>
-    <div class="row">
+    <div class="row" style="margin-right: 0px; margin-left: 0px;">
         {% assign i = 0 %}
         {% for pw in sorted_pathways %}
             {% if pw.wpid.size == 6 %} <!-- Only display sorted 4-digit wpids -->
@@ -45,8 +45,8 @@ btn-class: "btn-front"
     </div>
 <div class="tab-pane fade" id="list" role="tabpanel">
     <br/>
-    <div class="row" style="margin-left: 10px;">
-      <ul>
+    <div class="row" style="margin-left: 0px;">
+      <ul style="list-style-type: none; margin-left: 0px;">
         {% assign j = 0 %}
         {% for pw in sorted_pathways %}
           {% if pw.wpid.size == 6 %}
