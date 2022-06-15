@@ -35,8 +35,8 @@ btn-class: "btn-front"
           {% for com in site.communities %}
             <li class="facet-group-item">
               <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" name="communities" value="{{ com.community-tag }}">
-              {{ com.community-tag }}
+              <input class="form-check-input" type="checkbox" name="communities" value="{{ com.display-name }}">
+              {{ com.display-name }}
               </label>
             </li>
           {% endfor %}
