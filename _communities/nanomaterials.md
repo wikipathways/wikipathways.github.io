@@ -17,7 +17,7 @@ support:
 
 contribute: 
 
-community-tag: Nanomaterials
+community-tag: "Nanomaterials"
 
 redirect_from:
   - /index.php/Portal:Nanomaterials
