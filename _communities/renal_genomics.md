@@ -5,7 +5,7 @@ title: "Welcome to the Renal Genomics Community at WikiPathways"
 
 description: "This page highlights WikiPathways content related to renal biology and disease. Most available pathways lack tissue/cell specificity and are of limited usefulness in highly differentiated organs such as the kidney. In order to produce quality renal genomics data, new and updated kidney-specific pathways are needed. This page offers an opportunity for renal physiologists to participate in creating, testing and curating new pathways, thereby contributing with modern methodology to integrate the renal knowledge-base."
 
-short-description: "The Renal Genomics page highlights WikiPathways content related to renal biology and disease"
+short-description: "The Renal Genomics Community highlights WikiPathways content related to renal biology and disease"
 
 logo: 
 

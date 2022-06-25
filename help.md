@@ -2,10 +2,10 @@
 title: Help
 ---
 <div id="navigate">
-<h2>Navigating the WikiPathways website</h2>
+<h1>Navigating the WikiPathways website</h1>
 
-<h3>Searching</h3>
-<h3>Browsing</h3>
+<h2>Searching</h2>
+<h2>Browsing</h2>
 <p>The WikiPathways collection can be explored by organism, communities of domain experts, and ontology annotations. The <a href="https://new.wikipathways.org/browse/filters.html">Browse</a> interface displays content in either gallery or list view, which can be filtered by a combination of parameters.</p>
 <p>A <a href="https://new.wikipathways.org/browse/table.html">table view</a> of the current collection can be interactively explored by typing keywords, WPIDs etc in the search fileds at the top of each column.</p>
 
@@ -13,7 +13,7 @@ title: Help
 </div>
 <hr>
 <div id="create">
-<h2>Create</h2>
+<h1>Create</h1>
 <ul>
 <li>Get started as a <a href="https://new.wikipathways.org/contribute.html">WikiPathways Contributor</a> today!</li>
 <li>Learn everything about creating and editing pathways, from the basics to advanced topics at the <a href="https://wikipathways.github.io/academy/" target="_blank">WikiPathways Academy</a>.</li>
@@ -23,7 +23,7 @@ title: Help
 </div>
 <hr>
 <div id="curate">
-<h2>Curate</h2>
+<h1>Curate</h1>
 <p>To maintain WikiPathways as a high-quality pathway resource, a team of internal curators work to ensure the quality of new content and edits to existing content. Our <a href="https://new.wikipathways.org/academy/qaprotocol.html" target="_blank">Quality Assurance Protocol</a> covers things like:
 <ul>
 <li>Pathway nodes are associated with valid database identifiers.</li>
@@ -36,12 +36,12 @@ title: Help
 </div>
 <hr>
 <div id="code">
-<h2>Code</h2>
+<h1>Code</h1>
 <p>To join the WikiPathways Development Community, see our <a href="https://github.com/wikipathways/wikipathways-development" target="_blank">GitHub repo</a> for more information.</p>
 </div>
 <hr>
 <div id="analyze">
-<h2>Analyze</h2>
+<h1>Analyze</h1>
 <p>WikiPathways models can be used for data visualization and analysis in multiple tools:</p>
 <ul>
     <li>Learn how to use WikiPathways in <a href="/analyze.html">enrichment analysis, data visualization in PathVisio and Cytoscape, and querying the WikiPathways RDF.</a></li>
@@ -50,11 +50,11 @@ title: Help
 </div>
 <hr>
 <div id="publish">
-<h2>Publish</h2>
+<h1>Publish</h1>
 </div>
 <hr>
 <div id="faq">
-<h2>FAQ</h2>
+<h1>FAQ</h1>
 <p>See answers to <a href="https://github.com/wikipathways/wikipathways-help/discussions" target="_blank">frequently asked questions</a>.</p>
 </div>
 <!-- <h2>Request Web service access</h2>

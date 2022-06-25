@@ -1,9 +1,9 @@
 ---
 display-name: "Diseases"
 title: "Disease Pathways at WikiPathways"
-description: "This page highlights WikiPathways content related to human disease, and is designed as a central organizing point for exploring, curating and expanding the collection of disease pathways."
+description: "The Disease Community highlights pathways related to human disease, and is designed as a central organizing point for exploring, curating and expanding the collection of disease pathways."
 
-short-description: "This page highlights WikiPathways content related to human disease, and is designed as a central organizing point for exploring, curating and expanding the collection of disease pathways."
+short-description: "The Disease Community highlights WikiPathways content related to human disease, and is designed as a central organizing point for exploring, curating and expanding the collection of disease pathways."
 
 logo: 
 logo-link: 

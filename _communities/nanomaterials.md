@@ -7,7 +7,7 @@ description: "In the interest of nano systems biology research and to facilitate
 
 For new users interested in adding new and editing existing pathways we recommend following the [HELP and USER guide](https://www.wikipathways.org/index.php/Help:Contents)."
 
-short-description: "The Nanomaterials community serves the interest of nano systems biology research by facilitating community-based annotation of biological pathways related to nanosafety."
+short-description: "The Nanomaterials Community serves the interest of nano systems biology research by facilitating community-based annotation of biological pathways related to nanosafety."
 
 logo: 
 

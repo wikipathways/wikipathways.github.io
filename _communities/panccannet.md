@@ -1,8 +1,8 @@
 ---
 display-name: "PancCanNet"
-title: "The PanCanNet Community Page at WikiPathways"
-description: "This page highlights pathway content relevant to the pancreatic cancer research community. This portal is under development."
-short-description: "This page highlights pathway content relevant to the pancreatic cancer research community."
+title: "The PanCanNet Community at WikiPathways"
+description: "This community highlights pathway content relevant to the pancreatic cancer research community. This portal is under development."
+short-description: "The PanCanNet Community highlights pathway content relevant to the pancreatic cancer research community."
 logo:
 logo-link: 
 support: "The PancCanNet project has received funding from The Netherlands Organization for Health Research and Development under the ZonMw Hotel project number 435005037."

@@ -14,7 +14,7 @@ logo-link: "https://covid.pages.uni.lu/"
 
 support:
 
-contribute: "We are helping to coordinate an international effort to build and curate pathway models relevant to the COVID-19 pandemic. If you find or add a pathway at WikiPathways that should be included in this collection, please let us know by contacting Martina Kutmon (martina.kutmon[AT]maastrichtuniversity.nl). Resources to get started:
+contribute: "We are helping to coordinate an international effort to build and curate pathway models relevant to the COVID-19 pandemic. If you find or add a pathway at WikiPathways that should be included in this collection, please let us know by contacting Martina Kutmon (mkutmon[AT]gmail.com). Resources to get started:
 
 * [Growing collection of COVID-19 pathways](https://www.wikipathways.org/index.php/Portal:Disease/COVIDPathways)
 

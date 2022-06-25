@@ -1,7 +1,7 @@
 ---
 display-name: "Daphnia"
 title: "Welcome to the Daphnia Community at WikiPathways"
-description: "This page is set up for collaboration on getting knowledge together about the biological processes in the [Daphnia magna](https://en.wikipedia.org/wiki/Daphnia_magna) species. Browse, draw, analyze, download, publish and share Daphnia pathways of your interest.
+description: "The Daphnia Community is set up for collaboration on getting knowledge together about the biological processes in the [Daphnia magna](https://en.wikipedia.org/wiki/Daphnia_magna) species. Browse, draw, analyze, download, publish and share Daphnia pathways of your interest.
 
 This page aims to get researchers using Daphnia as model system together and develop a biological pathway knowledge base to support understanding experimental data, particular (multi)omics data.
 
@@ -14,7 +14,7 @@ This page aims to get researchers using Daphnia as model system together and dev
 * 2021-04-12: First pathway drawn
 "
 
-short-description: "This page is set up for collaboration on getting knowledge together about the biological processes in the Daphnia magna species."
+short-description: "The Daphnia Community is set up for collaboration on getting knowledge together about the biological processes in the Daphnia magna species."
 
 logo: "../assets/img/200px-Daphnia_magna_asexual.jpeg"
 logo-link: 
