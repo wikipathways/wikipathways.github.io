@@ -38,7 +38,7 @@ title: Help Communities
 <li><b>logo-link</b>: URL for an external resource (optional)</li>
 <li><b>support</b>: Text describing any funding support for the Community (optional)</li>
 <li><b>contribute</b>: Text describing how to contribute to the community (optional)</li>
-<li><b>community-tag</b>: The relevant community tag. This should match the filename of the text file with the list of Community pathways.</li>
+<li><b>community-tag</b>: The relevant community tag. This should match the filename of the text file with the list of Community pathways. The pathway display on the Community page is automatically generated based on this tag.</li>
 <li><b>redirect_from</b>: Partial URL on the old WikiPathways site to redirect from.</li>
 </ul>
 <p>As an example, the below image shows the markdown for the <a href="https://new.wikipathways.org/communities/aop.html" target=_blank>Adverse Outcome Pathways</a> Community.<br /><br />
