@@ -35,6 +35,15 @@ title: Help
 <p>Anyone is welcome to join the WikiPathways Curator Community. Please <a href="https://github.com/wikipathways/wikipathways.github.io/discussions" target="_blank">contact us</a> if you are interested.</p>
 </div>
 <hr>
+<div id="communities">
+<h2>Communities</h2>
+<p>WikiPathways Communities represent pathway content specific to a research area or organism. Community pages are designed to make it easier to explore pathway content, learn more about the community and to organize relevant pathway curation.</p>
+<ul>
+<li>To contribute pathway content to a community, refer to each <a href="https://new.wikipathways.org/browse/communities.html">community page</a> for details on how to contribute.</li>
+<li>To learn how to create or edit a community page, see our <a href="https://new.wikipathways.org/help_communities.html">Communities Help</a>.</li>
+</ul>
+</div>
+<hr>
 <div id="code">
 <h1>Code</h1>
 <p>To join the WikiPathways Development Community, see our <a href="https://github.com/wikipathways/wikipathways-development" target="_blank">GitHub repo</a> for more information.</p>
