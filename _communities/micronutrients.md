@@ -11,6 +11,7 @@ support: "The Micronutrient Genomics Project has an exchange program for partici
 contribute: 
 
 community-tag: "Micronutrients"
+display: "default"
 
 redirect_from:
   - /index.php/Portal:Micronutrient

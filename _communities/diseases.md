@@ -32,6 +32,7 @@ Existing pathways in need of improvements:
 
 * [Physiological and Pathological Hypertrophy of the Heart](https://new.wikipathways.org/pathways/WP1528)"
 community-tag: "Diseases"
+display: "default"
 redirect_from:
   - /index.php/Portal:Disease 
 ---

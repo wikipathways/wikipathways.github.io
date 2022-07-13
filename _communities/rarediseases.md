@@ -10,6 +10,7 @@ logo-link:
 support: "This project has received funding from the European Union’s Horizon 2020 research and innovation programme (to the European Joint Programme on Rare Diseases and to ELIXIR) and the Netherlands Rett Expertise Centre."
 contribute: "If you know of a pathway that should be added, please contact the administrator (friederike.ehrhart[AT]gmail.com)."
 community-tag: "RareDiseases"
+display: "default"
 redirect_from:
   - /index.php/Portal:RareDisease 
 ---
