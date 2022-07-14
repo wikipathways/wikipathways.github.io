@@ -22,21 +22,6 @@ display: "default"
 
 category-title: "Hallmark categories"
 
-categories: "CPTAC_categories"
-
-cat-1: "CPTAC_1"
-cat-2: "CPTAC_2"
-cat-3: "CPTAC_3"
-cat-4: "CPTAC_4"
-cat-5: "CPTAC_5"
-cat-6: "CPTAC_6"
-cat-7: "CPTAC_7"
-cat-8: "CPTAC_8"
-cat-9: "CPTAC_9"
-cat-10: "CPTAC_10"
-cat-11: "CPTAC_11"
-
 redirect_from:
   - /index.php/Portal:CPTAC
 ---
-

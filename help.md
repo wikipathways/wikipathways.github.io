@@ -5,9 +5,22 @@ title: Help
 <h1>Navigating the WikiPathways website</h1>
 
 <h2>Searching</h2>
+<p>The WikiPathways collection can be searched by gene symbol, pathway name or other keywords, either directly in the Search field at the top of each page and on the front page, or using the <a href="https://new.wikipathways.org/browse/table.html">table view</a>. For example, search for your favorite pathway by a word from the title (i.e. "Statin"), or your favorite gene either by symbol (i.e. "BRCA1"). 
+
+<p>The <a href="https://new.wikipathways.org/browse/table.html">table view</a> of the current collection offers a nice way to interactively explore pathways by searching for various parameters. The table displays all pathways, and entering for example keywords, WPIDs or other parameters in the search fileds at the top of each column filters the table. For example:
+<ul>
+<li>To see all pathways related to adipogenesis in humans, type <b>adipogenesis</b> in the search field at the top of the <b>Pathway Title</b> column, and type <b>Homo sapiens</b> in the search field at the top of the <b>Organism</b> column.</li>
+<li>To see all mouse pathways edited in 2022, type <b>Mus musculus</b> in the search field at the top of the <b>Organism</b> column and type <b>2022</b> in the search field at the top of the <b>Last Edited</b> column.</li>
+</ul>
+</p>
+
+
 <h2>Browsing</h2>
-<p>The WikiPathways collection can be explored by organism, communities of domain experts, and ontology annotations. The <a href="https://new.wikipathways.org/browse/filters.html">Browse</a> interface displays content in either gallery or list view, which can be filtered by a combination of parameters.</p>
-<p>A <a href="https://new.wikipathways.org/browse/table.html">table view</a> of the current collection can be interactively explored by typing keywords, WPIDs etc in the search fileds at the top of each column.</p>
+<p>The WikiPathways collection can be explored by organism, communities of domain experts, and ontology annotations. The <a href="https://new.wikipathways.org/browse/filters.html">Browse</a> interface displays content in either gallery or list view, which can be filtered by a combination of parameters. For example:
+<ul>
+<li>To see all human pathways cancer pathways sorted by newest pathway, select <b>Homo sapiens</b> from <b>Organism</b>, <b>disease of cellular proliferation</b> from <b>Disease Ontology</b> and click the <b>Date</b> button at the top.</li>
+<li>To see all yeast classic metabolic pathways sorted by title, select <b>Saccharomyces cerevisiae</b> from <b>Organism</b>, <b>classic metabolic pathway</b> from <b>Pathway Ontology</b>, then click the <b>Title</b> button at the top.</li>
+</ul></p>
 
 
 </div>
@@ -24,12 +37,12 @@ title: Help
 <hr>
 <div id="curate">
 <h1>Curate</h1>
-<p>To maintain WikiPathways as a high-quality pathway resource, a team of internal curators work to ensure the quality of new content and edits to existing content. Our <a href="https://new.wikipathways.org/academy/qaprotocol.html" target="_blank">Quality Assurance Protocol</a> covers things like:
+<p>To maintain WikiPathways as a high-quality pathway resource, a team of internal curators work to ensure the quality of new content and edits to existing content. Our <a href="https://new.wikipathways.org/academy/qaprotocol.html" target="_blank">Quality Assurance Protocol</a> checks for the following things:
 <ul>
-<li>Pathway nodes are associated with valid database identifiers.</li>
-<li>Interactions are properly connected to nodes.</li>
-<li>Pathway titles conform to guidelines.</li>
-<li>Pathways have been tagged with appropriate ontology tags and have a useful description.</li>
+<li>Do pathway nodes have valid database identifiers?</li>
+<li>Are interactions properly connected to nodes?</li>
+<li>Do pathway titles conform to guidelines?</li>
+<li>Are all pathways tagged with appropriate ontology tags, and does each pathway have a useful description?</li>
 </ul>
 </p>
 <p>Anyone is welcome to join the WikiPathways Curator Community. Please <a href="https://github.com/wikipathways/wikipathways.github.io/discussions" target="_blank">contact us</a> if you are interested.</p>
@@ -37,7 +50,7 @@ title: Help
 <hr>
 <div id="communities">
 <h2>Communities</h2>
-<p>WikiPathways Communities represent pathway content specific to a research area or organism. Community pages are designed to make it easier to explore pathway content, learn more about the community and to organize relevant pathway curation.</p>
+<p>WikiPathways Communities represent pathway content specific to a research area or organism. Community pages are designed to make it easier to explore relevant pathway content, learn more about the community and to organize pathway curation.</p>
 <ul>
 <li>To contribute pathway content to a community, refer to each <a href="https://new.wikipathways.org/browse/communities.html">community page</a> for details on how to contribute.</li>
 <li>To learn how to create or edit a community page, see our <a href="https://new.wikipathways.org/help_communities.html">Communities Help</a>.</li>
@@ -46,12 +59,12 @@ title: Help
 <hr>
 <div id="code">
 <h1>Code</h1>
-<p>To join the WikiPathways Development Community, see our <a href="https://github.com/wikipathways/wikipathways-development" target="_blank">GitHub repo</a> for more information.</p>
+<p>Want to join the WikiPathways Development Community? Visit our <a href="https://github.com/wikipathways/wikipathways-development" target="_blank">GitHub repo</a> to learn more.</p>
 </div>
 <hr>
 <div id="analyze">
 <h1>Analyze</h1>
-<p>WikiPathways models can be used for data visualization and analysis in multiple tools:</p>
+<p>WikiPathways models can be used for data visualization and analysis in many tools:</p>
 <ul>
     <li>Learn how to use WikiPathways in <a href="/analyze.html">enrichment analysis, data visualization in PathVisio and Cytoscape, and querying the WikiPathways RDF.</a></li>
     <li>See a listing of all <a href="/tools.html">tools supporting WikiPathways</a></li>
@@ -64,7 +77,7 @@ title: Help
 <hr>
 <div id="faq">
 <h1>FAQ</h1>
-<p>See answers to <a href="https://github.com/wikipathways/wikipathways-help/discussions" target="_blank">frequently asked questions</a>.</p>
+<p>Have a question? See if the answer is in our collection of <a href="https://github.com/wikipathways/wikipathways-help/discussions" target="_blank">frequently asked questions</a>.</p>
 </div>
 <!-- <h2>Request Web service access</h2>
 <p>To request web service access for an existing WikiPathways account (for WikiPathways plugin in PathVisio), contact kristina.hanspers[AT]gladstone.ucsf.edu.</p> -->
