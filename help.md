@@ -7,13 +7,11 @@ title: Help
 <h2>Searching</h2>
 <p>The WikiPathways collection can be searched by gene symbol, pathway name or other keywords, either directly in the Search field at the top of each page and on the front page, or using the <a href="https://new.wikipathways.org/browse/table.html">table view</a>. For example, search for your favorite pathway by a word from the title (i.e. "Statin"), or your favorite gene either by symbol (i.e. "BRCA1").</p> 
 
-<p>The <a href="https://new.wikipathways.org/browse/table.html">table view</a> of the current collection offers a nice way to interactively explore pathways by searching for various parameters. The table displays all pathways, and entering for example keywords, WPIDs or other parameters in the search fileds at the top of each column filters the table. For example:</p>
+<p>The <a href="https://new.wikipathways.org/browse/table.html">table view</a> of the current collection offers a nice way to interactively explore pathways by searching for various parameters. The table displays all pathways, and entering for example keywords, WPIDs or other parameters in the search fields at the top of each column filters the table. For example:</p>
 <ul>
 <li>To see all pathways related to adipogenesis in humans, type <b>adipogenesis</b> in the search field at the top of the <b>Pathway Title</b> column, and type <b>Homo sapiens</b> in the search field at the top of the <b>Organism</b> column.</li>
 <li>To see all mouse pathways edited in 2022, type <b>Mus musculus</b> in the search field at the top of the <b>Organism</b> column and type <b>2022</b> in the search field at the top of the <b>Last Edited</b> column.</li>
 </ul>
-
-
 
 <h2>Browsing</h2>
 <p>The WikiPathways collection can be explored by organism, communities of domain experts, and ontology annotations. The <a href="https://new.wikipathways.org/browse/filters.html">Browse</a> interface displays content in either gallery or list view, which can be filtered by a combination of parameters. For example:</p>
@@ -72,6 +70,21 @@ title: Help
 <hr>
 <div id="publish">
 <h1>Publish</h1>
+<h2>Download Options</h2>
+<p>On each pathway page, a set of options for download and links is a available to the right under pathway image, the <b>Participants</b> table and the <b>References</b> list.</p>
+<img src="/assets/img/help/DownloadOptions.png" alt="Markdown Example" width="600">
+<p>Each of these options can also be accessed directly by using the following URL patterns:</p>
+<ul>
+<li><b>Permalink</b>: The permanent link to a specific pathway has the pattern <code>https://www.wikipathways.org/instance/{WPID}</code>.</li>
+<!-- <li><b>Enbed code</b>: The code to embed a pathway image into webpage has the pattern "<iframe src ="https://pathway-viewer.toolforge.org/?id={WPID}`" width="600px" height="300px" style="overflow:hidden;"></iframe>".</li> -->
+<li><b>Full size image:</b> The link to a full size pathway image has the URL pattern <code>https://pathway-viewer.toolforge.org/?id={WPID}</code>.</li>
+<li><b>PNG:</b> The link to the PNG version of a pathway image has the URL pattern <code>https://assets.wikipathways.org/pathways/{WPID}/{WPID}.png</code>.</li>
+<li><b>SVG:</b> The link to the SVG version of a pathway image has the URL pattern <code>https://assets.wikipathways.org/pathways/{WPID}/{WPID}.svg</code>.</li>
+<li><b>GPML:</b> Using the option <b>Dowbload GPML</b> will downloaded the GPML code for the pathway.</li>
+<li><b>ParticipantsL:</b> Using the option <b>Download TSV</b> option will downloaded a TSV-formatted table of the data nodes for the pathway. The table includes the node lable, type, ID and Database type.</li>
+<li><b>References:</b> Using the option <b>Download TSV</b> will downloaded a TSV-formatted table of the literature for the pathway. This table includes PMID and full citation with a URL.</li>
+</ul>
+
 </div>
 <hr>
 <div id="faq">
