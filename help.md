@@ -27,14 +27,14 @@ title: Help
 <ul>
 <li>Get started as a <a href="https://new.wikipathways.org/contribute.html">WikiPathways Contributor</a> today!</li>
 <li>Learn everything about creating and editing pathways, from the basics to advanced topics at the <a href="https://wikipathways.github.io/academy/" target="_blank">WikiPathways Academy</a>.</li>
-<li>For more detailed information on curating pathway models, see <a href="https://doi.org/10.1371/journal.pcbi.1009226" target="_blank">Ten simple rules for creating reusable pathway models for computational analysis and visualization</a>.</li>
-<li>Check out the <a href="https://www.youtube.com/channel/UCTkyLj_4u6V4M5lUmyuOGDw">PathVisio YouTube Channel</a> for videos on how to use PathVisio for pathway curation.</li> 
+<li>For more detailed information on making pathway models, see <a href="https://doi.org/10.1371/journal.pcbi.1009226" target="_blank">Ten simple rules for creating reusable pathway models for computational analysis and visualization</a>.</li>
+<li>Check out the <a href="https://www.youtube.com/channel/UCTkyLj_4u6V4M5lUmyuOGDw">PathVisio YouTube Channel</a> for videos on how to use PathVisio for pathway editing.</li> 
 </ul>
 </div>
 <hr>
 <div id="curate">
 <h1>Curate</h1>
-<p>To maintain WikiPathways as a high-quality pathway resource, a team of internal curators work to ensure the quality of new content and edits to existing content. Our <a href="https://new.wikipathways.org/academy/qaprotocol.html" target="_blank">Quality Assurance Protocol</a> checks for the following things:
+<p>To maintain WikiPathways as a high-quality pathway resource, a weekly rotation of community editors work to ensure the quality of new content and edits to existing content. Our <a href="https://new.wikipathways.org/academy/qaprotocol.html" target="_blank">Quality Assurance Protocol</a> checks for the following things:
 <ul>
 <li>Do pathway nodes have valid database identifiers?</li>
 <li>Are interactions properly connected to nodes?</li>
@@ -42,7 +42,7 @@ title: Help
 <li>Are all pathways tagged with appropriate ontology tags, and does each pathway have a useful description?</li>
 </ul>
 </p>
-<p>Anyone is welcome to join the WikiPathways Curator Community. Please <a href="https://github.com/wikipathways/wikipathways.github.io/discussions" target="_blank">contact us</a> if you are interested.</p>
+<p>Anyone is welcome to join as a Community Editor. Please <a href="https://github.com/wikipathways/wikipathways.github.io/discussions" target="_blank">contact us</a> if you are interested.</p>
 </div>
 <hr>
 <div id="communities">

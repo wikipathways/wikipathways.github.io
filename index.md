@@ -72,8 +72,8 @@ layout: home2
               <div class="container" style="margin-left:25px;">
                 <h1 style="font-family:Linux Libertine; ">Dedicated to open science</h1><h2 style="font-family:Poppins; color: #6c757d;line-height:1.4"> Join hundreds of other scientists by contributing your pathway knowledge.</h2>
             <div style="width:90px;">
-                <a class="btn btn-sm btn-front w-100 my-2" href="/contribute.html">Create</a>
-                <a class="btn btn-sm btn-front w-100 my-2" href="https://new.wikipathways.org/academy/path.html">Curate</a>
+                <a class="btn btn-sm btn-front w-100 my-2" href="/help.html#create">Create</a>
+                <a class="btn btn-sm btn-front w-100 my-2" href="/help.html#curate">Curate</a>
                 <a class="btn btn-sm btn-front w-100 my-2" href="https://github.com/wikipathways/wikipathways-development" target="_blank">Code</a>
             </div>
               </div>
