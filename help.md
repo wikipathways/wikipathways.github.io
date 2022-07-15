@@ -2,7 +2,7 @@
 title: Help
 ---
 <div id="navigate">
-<h1>Navigating the WikiPathways website</h1>
+<h1>Navigate</h1>
 
 <h2>Searching</h2>
 <p>The WikiPathways collection can be searched by gene symbol, pathway name or other keywords, either directly in the Search field at the top of each page and on the front page, or using the <a href="https://new.wikipathways.org/browse/table.html">table view</a>. For example, search for your favorite pathway by a word from the title (i.e. "Statin"), or your favorite gene either by symbol (i.e. "BRCA1").</p> 
