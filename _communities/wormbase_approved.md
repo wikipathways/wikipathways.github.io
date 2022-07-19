@@ -8,7 +8,6 @@ logo-link: "http://www.wormbase.org/"
 support:
 contribute: "If you have authored a pathway relevant to this community, please submit it for review and approval [here](http://tazendra.caltech.edu/~azurebrd/cgi-bin/forms/pathway.cgi)."
 community-tag: "WormBase_Approved"
-display: "default"
 redirect_from:
   - /index.php/Portal:WormBase
 ---

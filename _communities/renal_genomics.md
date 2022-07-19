@@ -24,7 +24,6 @@ Some useful resources related to kidney biology are
 * [Kidney System Biology Project (ESBL)](https://esbl.nhlbi.nih.gov/Databases/KSBP2/): renal epithelial transcriptome and proteome databases."
 
 community-tag: "Renal_Genomics"
-display: "default"
 
 redirect_from:
   - /index.php/Portal:RenalGenomics

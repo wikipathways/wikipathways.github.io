@@ -33,7 +33,6 @@ support:
 contribute: 
 
 community-tag: "Nanomaterials"
-display: "default"
 
 redirect_from:
   - /index.php/Portal:Nanomaterials

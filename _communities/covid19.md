@@ -32,8 +32,6 @@ contribute: "We are helping to coordinate an international effort to build and c
 
 community-tag: "COVID19"
 
-display: "default"
-
 redirect_from:
   - /index.php/Portal:COVID-19
 ---

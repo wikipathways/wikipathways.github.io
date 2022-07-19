@@ -17,11 +17,8 @@ contribute: "The list of pathways is not static and can be updated at any time. 
 
 community-tag: "AOP"
 
-display: "default"
-
 redirect_from:
   - /index.php/Portal:AOP
-
 ---       
         
         

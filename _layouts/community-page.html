@@ -7,9 +7,9 @@ layout: default
 {% endif %}
     <h2 id="title"> {{ page.title }}</h2>
     <p>{{ page.description | markdownify }}</p>  
-    {% if page.display == "category" %}
+    {% if page.category-title %}
     <h2> {{ page.category-title }}</h2>
-    {% elsif page.display == "default" %}
+    {% else %}
     <h2>Pathways
       <a href="https://github.com/wikipathways/wikipathways-database/tree/main/communities/{{ page.community-tag }}.txt"
       target="_blank"> 

@@ -22,7 +22,7 @@ support:
 contribute:
 
 community-tag: "Daphnia"
-display: "default"
+
 redirect_from:
   - /index.php/Portal:Daphnia 
 ---

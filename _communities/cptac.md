@@ -18,8 +18,6 @@ contribute: "The CPTAC set of pathways can be edited, updated and added to by an
 
 community-tag: "CPTAC"
 
-display: "default"
-
 category-title: "Hallmark categories"
 
 redirect_from:
