@@ -7,10 +7,30 @@ layout: default
 {% endif %}
     <h2 id="title"> {{ page.title }}</h2>
     <p>{{ page.description | markdownify }}</p>  
+    {% assign sorted_pathways = site.pathways | sort: "title" %}
     {% if page.category-title %}
-    <h2> {{ page.category-title }}</h2>
-    {% else %}
-    <h2>Pathways
+      <h2> {{ page.category-title }}</h2>
+      {% for cat in page.categories %}
+      <h3>{{ cat.name}} </h3>
+      <div class="row" style="margin-right: 0px; margin-left: 0px;">
+        {% for pw in sorted_pathways %}
+            {% if cat.wpids contains pw.wpid %}
+            <div class="col-sm-auto">
+              <div class="card" style="width: 10rem;">
+                <a class="card-link" href="{{ pw.url }}">
+                <img class="card-img-top" loading="lazy" src="/assets/img/{{pw.wpid}}/{{pw.wpid}}-thumb.png" alt="{{ pw.title }}">
+                <div class="card-body">
+                  <p class="card-text">{{ pw.title }} <em>({{ pw.organisms.first }})</em></p>
+                </div>
+                </a>
+              </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+      </div>
+      {% endfor %}
+    {% endif %}
+    <h2>Community Pathways
       <a href="https://github.com/wikipathways/wikipathways-database/tree/main/communities/{{ page.community-tag }}.txt"
       target="_blank"> 
         <span title="Edit community pathways" style="color: #666; font-size: 0.8em;">
@@ -20,15 +40,26 @@ layout: default
     </h2>
     <ul class="nav nav-tabs" style="margin-left: 0px;">
       <li class="nav-item">
+        {% if page.category-title %}
+        <a class="nav-link" data-toggle="tab" href="#gallery">Gallery</a>
+        {% else %}
         <a class="nav-link active" data-toggle="tab" href="#gallery">Gallery</a>
+        {% endif %}
       </li>
       <li class="nav-item">
+        {% if page.category-title %}
+        <a class="nav-link active" data-toggle="tab" href="#list">List</a>
+        {% else %}
         <a class="nav-link" data-toggle="tab" href="#list">List</a>
+        {% endif %}
       </li>
     </ul>
-    {% assign sorted_pathways = site.pathways | sort: "title" %}
     <div class="tab-content">
+      {% if page.category-title %}
+      <div class="tab-pane fade" id="gallery" role="tabpanel">
+      {% else %}
       <div class="tab-pane fade show active" id="gallery" role="tabpanel">
+      {% endif %}
         <br/>
     <div class="row" style="margin-right: 0px; margin-left: 0px;">
       {% for pw in sorted_pathways %}
@@ -47,7 +78,11 @@ layout: default
       {% endfor %}
     </div>
   </div>
+  {% if page.category-title %}
+  <div class="tab-pane fade show active" id="list" role="tabpanel">
+  {% else %}
   <div class="tab-pane fade" id="list" role="tabpanel">
+  {% endif %}
     <br/>
     <div class="row" style="margin-left: 0px;">
       <ul style="list-style-type: none; margin-left: 0px;">
@@ -60,7 +95,6 @@ layout: default
     </div>  
   </div>
 </div>
-{% endif %}
 
 <br/><hr/>
 

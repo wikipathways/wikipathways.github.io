@@ -18,7 +18,31 @@ contribute: "The CPTAC set of pathways can be edited, updated and added to by an
 
 community-tag: "CPTAC"
 
-category-title: "Hallmark categories"
+category-title: "Hallmark Categories"
+categories:
+- name: "Sustaining proliferative signaling"
+  wpids: ['WP3972','WP673','WP581','WP382','WP4223','WP4205','WP313','WP4553','WP4566','WP4541']
+- name: "Evading growth suppressors"
+  wpids: ['WP2446','WP179','WP45','WP560','WP366','WP4204','WP4284']
+- name: "Activating invasion and metastasis"
+  wpids: ['WP3301','WP3859','WP3969','WP185','WP3932','WP4239','WP185','WP4565']
+- name: "Enabling replicative immortality"
+  wpids: ['WP268','WP3658','WP3664','WP428','WP61','WP363','WP4258','WP4336','WP4337']
+- name: "Inducing angiogenesis"
+  wpids: ['WP1539','WP2526','WP4249','WP3888','WP4397']
+- name: "Resisting cell death"
+  wpids: ['WP254','WP3982','WP1742','WP3844','WP1471']
+- name: "Deregulating cellular energetics"
+  wpids: ['WP2868','WP1471','WP534','WP143','WP4206','WP4290']
+- name: "Genome instability and mutation"
+  wpids: ['WP707','WP3878','WP710','WP3875','WP438','WP531','WP704','WP4016','WP3959','WP2516']
+- name: "Tumor promoting inflammation"
+  wpids: ['WP530','WP3929','WP364','WP195']
+- name: "Avoiding immune destruction"
+  wpids: ['WP619','WP585','WP4480']
+- name: "Therapeutics"
+  wpids: ['WP3672','WP3640','WP3614','WP3617','WP3879','WP1601','WP3','WP4357','WP4301','WP3844']
+  
 
 redirect_from:
   - /index.php/Portal:CPTAC
