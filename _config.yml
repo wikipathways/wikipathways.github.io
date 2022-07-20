@@ -26,8 +26,6 @@ url: "https://new.wikipathways.org" # the base hostname & protocol for your site
 twitter_username: wikipathways
 github_username: wikipathways
 tumblr_username: wikipathways
-email_contact: wikipathways-discuss@googlegroups.com
-
 
 # Build settings
 incremental: true
