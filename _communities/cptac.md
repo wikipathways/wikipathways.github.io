@@ -18,8 +18,8 @@ contribute: "The CPTAC set of pathways can be edited, updated and added to by an
 
 community-tag: "CPTAC"
 
-category-title: "Hallmark Categories"
-categories:
+collections-title: "Cancer Hallmark Categories"
+collections:
 - name: "Sustaining proliferative signaling"
   wpids: ['WP3972','WP673','WP581','WP382','WP4223','WP4205','WP313','WP4553','WP4566','WP4541']
 - name: "Evading growth suppressors"

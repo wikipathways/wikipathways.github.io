@@ -8,13 +8,18 @@ layout: default
     <h2 id="title"> {{ page.title }}</h2>
     <p>{{ page.description | markdownify }}</p>  
     {% assign sorted_pathways = site.pathways | sort: "title" %}
-    {% if page.category-title %}
-      <h2> {{ page.category-title }}</h2>
-      {% for cat in page.categories %}
-      <h3>{{ cat.name}} </h3>
-      <div class="row" style="margin-right: 0px; margin-left: 0px;">
-        {% for pw in sorted_pathways %}
-            {% if cat.wpids contains pw.wpid %}
+    {% if page.collections-title %}
+      <h2> {{ page.collections-title }}</h2>
+      {% for c in page.collections %}
+      <div class="facet-header">
+        <button type="button" class="btn btn-link facet-toggle" data-toggle="collapse" href="#{{ c.name }}" aria-expanded="true" aria-controls="collapseExample">
+          <strong class="facet-title">{{ c.name }}</strong>
+        </button>
+      </div>
+      <div class="facet-body collapse" id="{{ c.name }}">
+        <div class="row" style="margin-right: 0px; margin-left: 0px;">
+          {% for pw in sorted_pathways %}
+            {% if c.wpids contains pw.wpid %}
             <div class="col-sm-auto">
               <div class="card" style="width: 10rem;">
                 <a class="card-link" href="{{ pw.url }}">
@@ -26,7 +31,8 @@ layout: default
               </div>
             </div>
             {% endif %}
-        {% endfor %}
+          {% endfor %}
+        </div>
       </div>
       {% endfor %}
     {% endif %}
@@ -40,14 +46,14 @@ layout: default
     </h2>
     <ul class="nav nav-tabs" style="margin-left: 0px;">
       <li class="nav-item">
-        {% if page.category-title %}
+        {% if page.collections-title %}
         <a class="nav-link" data-toggle="tab" href="#gallery">Gallery</a>
         {% else %}
         <a class="nav-link active" data-toggle="tab" href="#gallery">Gallery</a>
         {% endif %}
       </li>
       <li class="nav-item">
-        {% if page.category-title %}
+        {% if page.collections-title %}
         <a class="nav-link active" data-toggle="tab" href="#list">List</a>
         {% else %}
         <a class="nav-link" data-toggle="tab" href="#list">List</a>
@@ -55,7 +61,7 @@ layout: default
       </li>
     </ul>
     <div class="tab-content">
-      {% if page.category-title %}
+      {% if page.collections-title %}
       <div class="tab-pane fade" id="gallery" role="tabpanel">
       {% else %}
       <div class="tab-pane fade show active" id="gallery" role="tabpanel">
@@ -78,7 +84,7 @@ layout: default
       {% endfor %}
     </div>
   </div>
-  {% if page.category-title %}
+  {% if page.collections-title %}
   <div class="tab-pane fade show active" id="list" role="tabpanel">
   {% else %}
   <div class="tab-pane fade" id="list" role="tabpanel">
