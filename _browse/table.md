@@ -4,7 +4,7 @@ order: 2
 display-title: "Table"
 btn-class: "btn-front"
 ---
-
+<a class="btn btn-sm btn-front my-2" style="float:right;" href="/browse/filters.html">Categories</a>
 {% assign type-group = site.annotations | group_by: "type" | reverse %}
 <div class="table-responsive-sm">
 <table  class="table table-sm" id="myTable">

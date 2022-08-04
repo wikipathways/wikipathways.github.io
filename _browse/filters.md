@@ -5,6 +5,7 @@ display-title: "Browse"
 btn-class: "btn-front"
 ---
 <div class="container">
+<a class="btn btn-sm btn-front my-2" style="float:right;" href="/browse/table.html">Table</a>
   <div class="row">
     <div class="col-sm" id="checkboxes" style="max-width:300px;">
       <section class="facet">
@@ -17,9 +18,9 @@ btn-class: "btn-front"
         <ul class="facet-group">
           {% for org in site.organisms %}
             <li class="facet-group-item">
-              <label class="form-check-label">
+              <label class="form-check-label" title="{{org.latin}}">
               <input class="form-check-input" type="checkbox" name="organisms" value="{{ org.latin }}">
-              {{ org.latin }}
+              {{ org.common }}
               </label>
             </li>
           {% endfor %}
@@ -35,7 +36,7 @@ btn-class: "btn-front"
           {% for com in site.communities %}
             <li class="facet-group-item">
               <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" name="communities" value="{{ com.display-name }}">
+              <input class="form-check-input" type="checkbox" name="communities" value="{{ com.community-tag }}">
               {{ com.display-name }}
               </label>
             </li>
@@ -338,7 +339,7 @@ if (url.searchParams.toString().length > 0){
   ctoList = url.searchParams.get("Cell Type Ontology");
 } else {
   // Check org:human by default if no other parameters
-  orgList = "Homo sapiens";
+  orgList = "Homo sapiens"; 
   comList = null;
   pwoList = null;
   dioList = null;

@@ -32,6 +32,7 @@ layout: home2
 	 })();
 	 window.onload = function()
 	 { 
+     document.getElementById("navbarNavAltMarkup").className = "navbar-collapse show";
 	   var searchBox1 =  document.getElementById("gsc-i-id1");
 	   searchBox1.placeholder=" ";
 	   searchBox1.title="Search WikiPathways"; 
@@ -153,7 +154,7 @@ layout: home2
                   <div class="col-4 px-0" style="display:flex;"></div>
                   <div class="col-3 mx-auto" style="display:flex;">
                     <div class="container">
-      {% assign sorted_browse = site.browse | where_exp:"item","item.btn-class contains 'pill'" | sort: "order" %} 
+      {% assign sorted_browse = site.browse | where_exp:"item","item.btn-class contains 'pill'" | sort: "order" %}
       {% for bp in sorted_browse %}
         <a class="btn btn-sm {{bp.btn-class}} w-100 my-2" style="font-size:large" href="{{bp.url}}"> {{ bp.display-title }}</a>
       {% endfor %}           

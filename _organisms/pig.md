@@ -1,5 +1,5 @@
 ---
-common: "pig"
+common: "Pig"
 latin: "Sus scrofa"
 ncbi: " 9823"
 title: "Pig pathways"
