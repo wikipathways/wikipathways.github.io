@@ -83,6 +83,7 @@ title: Help
 <li><b>Participants:</b> Using the option <b>Download TSV</b> option will downloaded a TSV-formatted table of the data nodes for the pathway. The URL pattern to access this file is <code>https://gitcdn.link/cdn/wikipathways/wikipathways.github.io/main/_data/{WPID}-datanodes.tsv</code>.</li>
 <li><b>References:</b> Using the option <b>Download TSV</b> will downloaded a TSV-formatted table of the literature for the pathway. The URL pattern to access this file is <code>https://gitcdn.link/cdn/wikipathways/wikipathways.github.io/main/_data/{WPID}-bibliography.tsv</code>.</li>
 </ul>
+<a id="widget"/>
 <h2>Visualizing Data on Pathways</h2>
 <p>If you want to include data visualizations of pathway figures in your publication, refer to our <a href="https://cytoscape.org/cytoscape-tutorials/protocols/wikipathways-app/#/title" target="_blank">tutorial</a> describing data visualization on pathways in Cytoscape. From this workflow, you can get high-resolution images to include in manuscript, posters and other publications.</p>
 <p>You can also achieve a simpler visualization with just a few nodes highlighted, you can use our interactive pathway viewer. Nodes can matched by label("label") or external reference("xref") and colors("colors") can be specified by name or hexadecimal code. Some data mapping is possible when specifying nodes by xref.</p>
