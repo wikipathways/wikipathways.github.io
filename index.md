@@ -145,7 +145,7 @@ layout: home2
   </a>
               </div>
               </div>
-            </div> 
+            </div>
           </div>
           <div class="col-5 mx-auto" style="display:flex;">
             <div class="container">
