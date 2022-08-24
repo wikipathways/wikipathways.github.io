@@ -40,7 +40,7 @@ title: Download
 <hr>
 <div id="api">
 <h2>Programmatic Access</h2>
-<p>The archive of current and past collections of pathways in various formats</a> is accessible programmatically. Depending on your preferences, there are many ways to identify and acess the collection or pathways you need.</p>
+<p>The archive of current and past collections of pathways in various formats is accessible programmatically. Depending on your preferences, there are many ways to identify and acess the collection or pathways you need.</p>
 <ul>
 <li><a href="https://github.com/wikipathways/rwikipathways" target="_blank">rWikiPathways</a> is an R package that provides programmatic access to WikiPathways content in multiple data and image formats, including official monthly release files and convenient GMT read/write functions. For example, a helper function called downloadPathwayArchive will retrieve the latest file for you per species and format, e.g.:<br /> 
 <code>downloadPathwayArchive(organism="Mus musculus”, format=‘gmt’)</code></li>
