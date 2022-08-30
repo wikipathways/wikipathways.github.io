@@ -26,9 +26,11 @@ setwd("~/git/wikipathways/wikipathways-assets/pathways")
 dir.ls = list.dirs(full.names = F, recursive = F)
 
 sapply(dir.ls, function(p){
-  sprintf("working on %s",p)
   p.file = file.path(p,paste(p,"png", sep = "."))
-  x = EBImage::readImage(p.file, type="png")
-  y = EBImage::resize(x, w = 2400)
-  EBImage::writeImage(y,p.file)
+  if (file.exists(p.file)){
+    cat(sprintf("working on %s\n",p))
+    x = EBImage::readImage(p.file, type="png")
+    y = EBImage::resize(x, w = 2400)
+    EBImage::writeImage(y,p.file)
+  }
 })
