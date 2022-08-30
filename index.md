@@ -182,7 +182,7 @@ layout: home2
           <div class="col-5 mx-auto" style="display:flex;">
             <div class="bg-gradient p-3">
               <div class="container">
-              <h1 style="font-family:Linux Libertine; ">Download and access</h1><h2 style="font-family:Poppins; line-height:1.4; color: #6c757d;">Get pathway information in the format you need, including GPML (XML), GMT, RDF, SVG and PNG.  Access our content  from your favorite language.</h2>
+              <h1 style="font-family:Linux Libertine; ">Download and access</h1><h2 style="font-family:Poppins; line-height:1.4; color: #6c757d;">Get pathway information in the format you need, including GPML (XML), GMT, SVG ,<a href="download.html">and more</a>.  Access our content  from your favorite language.</h2>
               <div class="row mx-auto" style="display:flex; flex-wrap: wrap;">
                 <div class="col-3 px-0" style="display:flex;">
                   <div style="width:150px;">
