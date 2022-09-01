@@ -102,7 +102,6 @@ layout: default
     {% endfor %}
 
     <h2 id="participants">Participants</h2>
-    {% assign datasources=site.data.datasources %}
     {% assign wpid-parts=page.wpid | append: "-datanodes" %}
     {% assign parts=site.data[wpid-parts] %}
     <table id="participants-table"> 
@@ -117,11 +116,8 @@ layout: default
           <td>{{ row["Label"] }}</td>
           <td>{{ row["Type"] }}</td>
           {% if row["Database"] != null %}
-            {% assign id-split = row["Database"] | split:":" %}
-            {% assign ds = datasources | where:"code",id-split[0] %}
-            {% assign id-linkout = ds[0].linkout %}
-            {% assign id-url = id-linkout | replace:"$id",id-split[1] %}
-            <td><a href={{ id-url }} target="_blank">{{ id-split[1] }}</a></td>
+          {% assign xrefUrl = "https://bioregistry.io/" | append:row["Database"] %}
+            <td><a href={{ xrefUrl }} target="_blank">{{ row["Database"] }}</a></td>
           {% else %} 
             <td><span style="font-style:italic; color:#CCCCCC;">None</span></td>
           {% endif %} 
