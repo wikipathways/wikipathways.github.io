@@ -2,45 +2,45 @@
 title: Download
 ---
 <div id="download">
-<h2>Download and Access</h2>
+<h1>Download and Access</h1>
 <br>
-<h5>GPML: Graphical Pathway Markup Language</h5>
+<h2>GPML: Graphical Pathway Markup Language</h2>
 <ul>
 <li>Download an organism-specific <a href="https://data.wikipathways.org/current/gpml" target="_blank"> GPML archive</a> of pathways.</li>
 <li>Download individual pathways in GPML format from each pathway page by accessing the <b>options</b> drop-down under the pathway graphic.</li>
 <li>Access pathways via the <a href="https://pathvisio.org/plugins/wikipathways.html" target="_blank">WikiPathways plugin</a> in PathVisio to open a pathway in GPML format.</li>
 </ul>
-<h5>GMT: Gene Matrix Transposed</h5>
+<h2>GMT: Gene Matrix Transposed</h2>
 <ul>
 <li>Download the latest organism-specific <a href="https://data.wikipathways.org/current/gmt" target="_blank">GMT</a> file for Gene Set Enrichment Analysis.</li>
 </ul>
-<h5>RDF: Resource Description Framework</h5>
+<h2>RDF: Resource Description Framework</h2>
 <ul>
 <li>Query the WikiPathways content in <a href="https://sparql.wikipathways.org/" target="_blank">RDF format</a>.</li>
 <li>Download all pathways in <a href="http://data.wikipathways.org/current/rdf" target="_blank">Turtle syntax</a>.</li>
 </ul>
-<h5>SVG: Scalable Vector Graphics</h5>
+<h2>SVG: Scalable Vector Graphics</h2>
 <ul>
 <li>Download individual pathways in SVG format from each pathway page by accessing the <b>options</b> drop-down under the pathway graphic.</li>
 <li>Download all SVG files of the latest <a href="http://data.wikipathways.org/current/svg" target="_blank">monthly release</a>.</li>
 </ul>
-<h5>PNG: Portable Network Graphics</h5>
+<h2>PNG: Portable Network Graphics</h2>
 <ul>
 <li>Download individual pathways in PNG format from each pathway page by accessing the <b>options</b> drop-down under the pathway graphic.</li>
 </ul>
-<h5>PDF: Portable Document Format</h5>
+<h2>PDF: Portable Document Format</h2>
 <ul>
 <li>Download individual pathways in PDF format from each pathway page by accessing the <b>options</b> drop-down under the pathway graphic.</li>
 </ul>
-<h5>Archive</h5>
+<h2>Archive</h2>
 <ul>
 <li>Access all <a href="https://data.wikipathways.org/" target="_blank">monthly releases</a> of the WikiPathways content.</li>
 </ul>
 </div>
 <hr>
 <div id="api">
-<h2>Programmatic Access</h2>
-<p>The archive of current and past collections of pathways in various formats is accessible programmatically. Depending on your preferences, there are many ways to identify and acess the collection or pathways you need.</p>
+<h1>Programmatic Access</h1>
+<p>The archive of current and past collections of pathways in various formats is accessible programmatically. Depending on your preferences, there are many ways to identify and access a collection of pathways or individual pathways:</p>
 <ul>
 <li><a href="https://github.com/wikipathways/rwikipathways" target="_blank">rWikiPathways</a> is an R package that provides programmatic access to WikiPathways content in multiple data and image formats, including official monthly release files and convenient GMT read/write functions. For example, a helper function called downloadPathwayArchive will retrieve the latest file for you per species and format, e.g.:<br /> 
 <code>downloadPathwayArchive(organism="Mus musculus”, format=‘gmt’)</code></li>
