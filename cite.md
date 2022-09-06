@@ -11,11 +11,12 @@ title: Cite
 <div id="citepathway">
 <h2>Using, referencing or redistributing particular pathways</h2>
 <ul>
-<li>Cite the specific pathway, for example <a href="https://www.wikipathways.org/instance/WP254">www.wikipathways.org/instance/WP254</a></li>
+<li>Cite the specific pathway, for example <a href="https://www.wikipathways.org/instance/WP254">www.wikipathways.org/instance/WP254</a>.</li>
 <li>When citing the live version of a pathway, attribution to individual contributors is not necessary. WikiPathways will track and display contributions from individual authors and curators to each pathway on each pathway page. So as long as hyperlinks are provided to WikiPathways, the evolving list of contributors will be indirectly referenced.</li>
-<li>If you are referencing a specific version of a pathway (even including the current version), then it is important to include a URL of the form: <a href="https://www.wikipathways.org/instance/WP254_r93003">wikipathways.org/instance/WP254_r93003</a>. This approach is useful if you want to maintain a link to a snapshot of the pathway and not have future changes obscure your original points. Use the "r" argument in the URL to refer to particular revision ID numbers, which you can find in the History section of each pathway page.</li>
-<li>Also, when referencing a specific version, it is appropriate to list the individual contributors, since future contributors are not an issue. Thus, the reference might look like this:<br />
-Salomonis N, Pico A, Hanspers K: SIDS Susceptibility Pathways (Homo sapiens). <a href="https://www.wikipathways.org/instance/WP706_r92921">wikipathways.org/instance/WP706_r92921</a>.</li>
+<li>If you want to reference a specific version of a pathway, include a URL for the pathway (like <a href="https://www.wikipathways.org/instance/WP254">www.wikipathways.org/instance/WP254</a>) and specify the date you accessed the pathway model.</li>
+<!-- <li>If you are referencing a specific version of a pathway (even including the current version), then it is important to include a URL of the form: <a href="https://www.wikipathways.org/instance/WP254_r93003">wikipathways.org/instance/WP254_r93003</a>. This approach is useful if you want to maintain a link to a snapshot of the pathway and not have future changes obscure your original points. Use the "r" argument in the URL to refer to particular revision ID numbers, which you can find in the History section of each pathway page.</li> -->
+<!-- <li>Also, when referencing a specific version, it is appropriate to list the individual contributors, since future contributors are not an issue. Thus, the reference might look like this:<br />
+Salomonis N, Pico A, Hanspers K: SIDS Susceptibility Pathways (Homo sapiens). <a href="https://www.wikipathways.org/instance/WP706_r92921">wikipathways.org/instance/WP706_r92921</a>.</li> -->
 </ul>
 
 <div id="narpapers">
@@ -33,7 +34,7 @@ Salomonis N, Pico A, Hanspers K: SIDS Susceptibility Pathways (Homo sapiens). <a
 </ul>
 
 <div id="sparql">
-<h2>RDF, vocabularies, or nanopublication</h2>
+<h2>WikiPathways RDF, vocabularies and nanopublications</h2>
 <ul>
 <li>Waagmeester, A., Kutmon, M., Riutta, A., Miller, R., Willighagen, E. L., Evelo, C. T., Pico, A. R., Jun. 2016. Using the semantic web for rapid integration of WikiPathways with other biological online data resources, <a href="https://doi.org/10.1371/journal.pcbi.1004989">PLoS Comput Biol 12(6): e1004989</a>.</li>
 </ul>

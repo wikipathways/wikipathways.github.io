@@ -3,7 +3,6 @@ title: Download
 ---
 <div id="download">
 <h1>Download and Access</h1>
-<br>
 <h2>GPML: Graphical Pathway Markup Language</h2>
 <ul>
 <li>Download an organism-specific <a href="https://data.wikipathways.org/current/gpml" target="_blank"> GPML archive</a> of pathways.</li>
