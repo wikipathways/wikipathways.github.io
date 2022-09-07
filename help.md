@@ -42,7 +42,7 @@ title: Help
 <li>Are all pathways tagged with appropriate ontology tags, and does each pathway have a useful description?</li>
 </ul>
 </p>
-<p>Anyone is welcome to join as a Community Editor. Please <a href="https://github.com/wikipathways/wikipathways.github.io/discussions" target="_blank">contact us</a> if you are interested.</p>
+<p>Anyone is welcome to join as a Community Editor. Please <a href="https://github.com/wikipathways/wikipathways-help/discussions" target="_blank">contact us</a> if you are interested.</p>
 </div>
 <hr>
 <div id="communities">
@@ -107,7 +107,7 @@ This code will produce the following iframe:</p>
 <hr>
 <div id="faq">
 <h1>FAQ</h1>
-<p>Have a question? See if the answer is in our collection of <a href="https://github.com/wikipathways/wikipathways-help/discussions" target="_blank">frequently asked questions</a>.</p>
+<p>Have a question? See if the answer is in our collection of <a href="https://github.com/wikipathways/wikipathways-faq/discussions" target="_blank">frequently asked questions</a>.</p>
 </div>
 <!-- <h2>Request Web service access</h2>
 <p>To request web service access for an existing WikiPathways account (for WikiPathways plugin in PathVisio), contact kristina.hanspers[AT]gladstone.ucsf.edu.</p> -->

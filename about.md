@@ -13,7 +13,7 @@ title: About
 
 <h2>Who is Involved</h2>
 <p>Find information about the <a href="/team.html">WikiPathways Team</a></p>
-<p>For questions, comments or suggestions, please post a message to the <a href="https://github.com/wikipathways/wikipathways.github.io/discussions" target="_blank">discussion board</a>.</p>
+<p>For questions, comments or suggestions, please post a message to the <a href="https://github.com/wikipathways/wikipathways-help/discussions" target="_blank">discussion board</a>.</p>
 <p>Additional contact:</p>
 <ul>
 <li>Alex Pico: <a href="mailto:alex.pico@gladstone.ucsf.edu">alex.pico@gladstone.ucsf.edu</a></li>
