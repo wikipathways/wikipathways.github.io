@@ -7,7 +7,7 @@ description: "In the interest of nano systems biology research and to facilitate
 
 For new users interested in adding new and editing existing pathways we recommend following the [HELP and USER guide](https://www.wikipathways.org/index.php/Help:Contents).
 
-* 2021-04-12 - Daphnia is a model system used to explore effects of nanomaterials. A [daphnia portal](daphnia) was started.
+* 2021-04-12 - Daphnia is a model system used to explore effects of nanomaterials. A [daphnia community page](daphnia) was started.
 
 * 2017-03-24 - The [eNanoMapper](https://enanomapper.net/) deliverable D4.4 describing the portal is now archived at [Zenodo](https://zenodo.org/record/375613).
 
