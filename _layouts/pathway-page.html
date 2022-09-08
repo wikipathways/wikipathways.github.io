@@ -68,6 +68,52 @@ layout: default
     <h2 id="authors">Authors</h2>
     {{ page.authors | array_to_sentence_string }}
 
+    {% assign wpid-citedin=page.wpid | append: "-citedin" %}
+    {% assign edit-citedin=wpid-citedin | append: ".yml" %}
+    {% assign citedin=site.data[wpid-citedin] %}
+    <h2 id="citedin">Cited In
+      <a href="https://github.com/wikipathways/wikipathways.github.io/blob/main/_data/{{ edit-citedin }}"
+      target="_blank">
+        <span title="Edit cited in" style="color: #666; font-size: 0.8em;">
+          <i class="fa fa-pencil"></i>
+        </span>
+      </a>
+    </h2>
+    {% assign citedin-size=citedin | size %}
+    {% if citedin-size > 0 %}
+      <ul>
+        {% for citation in citedin %}
+          <!-- Check link -->
+          {% assign cit-link = "" %}
+          {% assign cit-slash = citation.link | split: "/" | first %}
+          {% assign cit-slash-dot = cit-slash | split: "." | first %}
+          {% if cit-slash == "https:" %} <!-- fully formed url -->
+            {% assign cit-link = citation.link %}
+          {% elsif cit-slash-dot == "10" %} <!-- DOI in need of prefix -->
+            {% assign cit-link = "https://doi.org/" | append: citation.link %}
+          {% else %} <!-- presumed PubMed ID in need of prefix -->
+            {% assign cit-link = "https://pubmed.ncbi.nlm.nih.gov/" | append: citation.link %}
+          {% endif %}
+          <!-- Check archived -->
+          {% assign cit-archived = "" %}
+          {% assign cit-dot = citation.archived | split: "." | first %}
+          {% if cit-dot == "https://doi" %} <!-- fully formed DOI url -->
+            {% capture cit-archived %}
+            Cites <a href="{{ citation.archived }}" target="_blank">this version</a>
+            {% endcapture %}
+          {% elsif cit-dot == "10" %} <!-- DOI in need of prefix -->
+            {% capture cit-archived %}
+            Cites <a href="https://doi.org/{{ citation.archived }}" target="_blank">this version</a>
+            {% endcapture %}
+          {% else %} <!-- not a DOI; don't display it -->
+          {% endif %}
+          <li><a href="{{ cit-link }}" target="_blank">{{ citation.label | strip_html | truncate: 100, "..."}}</a>{{ cit-archived }}</li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p style="font-size:small; color:#999999; font-style:italic;">Are you planning to include this pathway in your next publication? See <a href="/cite.html">How to Cite</a> and add a link here to your paper once it's online.</p>
+    {% endif %}
+
     <h2 id="organism">Organism</h2>
     {% for org in site.organisms %}
     {% if page.organisms contains org.latin %}
