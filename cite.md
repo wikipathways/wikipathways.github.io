@@ -13,11 +13,11 @@ title: Cite
     </li>
     <li>Potentially-relevant topics are highlighted in our other articles:
         <ul>
-            <li><a href="https://doi.org/10.1093/NAR/gkx1064" target="_blank">Slenter DN, et al. <b>(2018)</b> WikiPathways: a multifaceted pathway database bridging metabolomics to other omics research. <i>NAR</i></a>. <span style="font-size:small;">[keywords: Metabolomics, QA, WikiPathways Academy]</span></li>
-            <li><a href="https://dx.doi.org/10.1093/NAR/gkv1024" target="_blank">Kutmon M, et al. <b>(2016)</b> WikiPathways: capturing the full diversity of pathway knowledge. <i>NAR</i></a>. <span style="font-size:small;">[keywords: Growth, Reactome, Pathway Widget] </span></li>
-            <li><a href="https://doi.org/10.1371/journal.pcbi.1004989" target="_blank">Waagmeester A, et al. <b>(2016)</b> Using the semantic web for rapid integration of WikiPathways with other biological online data resources. <i>PLoS Comput Biol</i></a>. <span style="font-size:small;">[keywords: RDF, vocabularies, nanopublications]</span></li>
-            <li><a href="https://doi.org/10.1093/nar/gkr1074" target="_blank">Kelder T, et al. <b>(2012)</b> WikiPathways: building research communities on biological pathways. <i>NAR</i></a>. <span style="font-size:small;">[keywords: Communities, Ontologies, Linkouts]</span></li>
-            <li><a href="https://doi.org/10.1371%2Fjournal.pone.0006447" target="_blank">Kelder T, et al. <b>(2009)</b> Mining Biological Pathways Using WikiPathways Web Services. <i>PLoS One</i></a>. <span style="font-size:small;">[keywords: Web service]</span></li>
+            <li><a href="https://doi.org/10.1093/NAR/gkx1064" target="_blank">Slenter DN, et al. <b>(2018)</b> WikiPathways: a multifaceted pathway database bridging metabolomics to other omics research. <i>NAR</i></a>. <span style="font-size:small;">[topics: Metabolomics, QA, WikiPathways Academy]</span></li>
+            <li><a href="https://dx.doi.org/10.1093/NAR/gkv1024" target="_blank">Kutmon M, et al. <b>(2016)</b> WikiPathways: capturing the full diversity of pathway knowledge. <i>NAR</i></a>. <span style="font-size:small;">[topics: Growth, Reactome, Pathway Widget] </span></li>
+            <li><a href="https://doi.org/10.1371/journal.pcbi.1004989" target="_blank">Waagmeester A, et al. <b>(2016)</b> Using the semantic web for rapid integration of WikiPathways with other biological online data resources. <i>PLoS Comput Biol</i></a>. <span style="font-size:small;">[topics: RDF, vocabularies, nanopublications]</span></li>
+            <li><a href="https://doi.org/10.1093/nar/gkr1074" target="_blank">Kelder T, et al. <b>(2012)</b> WikiPathways: building research communities on biological pathways. <i>NAR</i></a>. <span style="font-size:small;">[topics: Communities, Ontologies, Linkouts]</span></li>
+            <li><a href="https://doi.org/10.1371%2Fjournal.pone.0006447" target="_blank">Kelder T, et al. <b>(2009)</b> Mining Biological Pathways Using WikiPathways Web Services. <i>PLoS One</i></a>. <span style="font-size:small;">[topics: Web service]</span></li>
         </ul>
     </li>
 </ul>
