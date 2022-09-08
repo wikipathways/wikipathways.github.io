@@ -1,7 +1,7 @@
 ---
 display-name: "PancCanNet"
 title: "The PanCanNet Community at WikiPathways"
-description: "This community highlights pathway content relevant to the pancreatic cancer research community. This portal is under development."
+description: "This community highlights pathway content relevant to the pancreatic cancer research community. This page is under development."
 short-description: "The PanCanNet Community highlights pathway content relevant to the pancreatic cancer research community."
 logo:
 logo-link: 
