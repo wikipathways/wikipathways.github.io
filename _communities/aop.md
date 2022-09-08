@@ -7,6 +7,8 @@ description: "This Adverse Outcome Pathway (AOP) Community is created to highlig
 
 short-description: "The Adverse Outcome Pathway Community is created to highlight the molecular basis of, or events in, Adverse Outcome Pathways."
 
+reference: "Martens M, Verbruggen T, Nymark P, Grafström R, Burgoon LD, Aladjov H, Torres Andón T, Evelo CT, Willighagen EL. Introducing WikiPathways as a data-source to support Adverse Outcome Pathways for regulatory risk assessment of chemicals and nanomaterials. [FFront. Genet., 21 December 2018](https://doi:10.3389/fgene.2018.00661)."
+
 logo: "../assets/img/eutoxrisk.jpg"
 
 logo-link: "http://aopkb.org/"
