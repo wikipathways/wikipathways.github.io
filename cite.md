@@ -11,7 +11,7 @@ title: Cite
         <li><a href="https://doi.org/10.1371/journal.pbio.0060184" target="_blank">Pico AR, et al. <b>(2008)</b> WikiPathways: Pathway Editing for the People. <i>PLoS Biol</i></a>. </li>
     </ul>
     </li>
-    <li>Potentially-relevant topics are highlighted in our other articles:
+    <li>Potentially-relevant topics are highlighted in our other project articles:
         <ul>
             <li><a href="https://doi.org/10.1093/NAR/gkx1064" target="_blank">Slenter DN, et al. <b>(2018)</b> WikiPathways: a multifaceted pathway database bridging metabolomics to other omics research. <i>NAR</i></a>. <span style="font-size:small;">[topics: Metabolomics, QA, WikiPathways Academy]</span></li>
             <li><a href="https://dx.doi.org/10.1093/NAR/gkv1024" target="_blank">Kutmon M, et al. <b>(2016)</b> WikiPathways: capturing the full diversity of pathway knowledge. <i>NAR</i></a>. <span style="font-size:small;">[topics: Growth, Reactome, Pathway Widget] </span></li>
