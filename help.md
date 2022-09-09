@@ -4,6 +4,7 @@ title: Help
 <div id="navigate">
 <h1>Navigate</h1>
 
+<div id="searching">
 <h2>Searching</h2>
 <p>The WikiPathways collection can be searched by gene symbol, pathway name or other keywords, either directly in the Search field at the top of each page and on the front page, or using the <a href="/browse/table.html">table view</a>. For example, search for your favorite pathway by a word from the title (i.e. "Statin"), or your favorite gene either by symbol (i.e. "BRCA1").</p> 
 
@@ -13,6 +14,7 @@ title: Help
 <li>To see all mouse pathways edited in 2022, type <b>Mus musculus</b> in the search field at the top of the <b>Organism</b> column and type <b>2022</b> in the search field at the top of the <b>Last Edited</b> column.</li>
 </ul>
 
+<div id="browsing">
 <h2>Browsing</h2>
 <p>The WikiPathways collection can be explored by organism, communities of domain experts, and ontology annotations. The <a href="/browse/filters.html">Browse</a> interface displays content in either gallery or list view, which can be filtered by a combination of parameters. For example:</p>
 <ul>
@@ -64,7 +66,7 @@ title: Help
 <p>WikiPathways models can be used for data visualization and analysis in many tools:</p>
 <ul>
     <li>Learn how to use WikiPathways in <a href="/analyze.html">enrichment analysis, data visualization in PathVisio and Cytoscape, and querying the WikiPathways RDF.</a></li>
-    <li>See a listing of all <a href="/tools.html">tools supporting WikiPathways</a></li>
+    <li>See a listing of all <a href="/tools.html">tools supporting WikiPathways</a>.</li>
 </ul>
 </div>
 <hr>
@@ -78,12 +80,12 @@ title: Help
 <ul>
 <li><b>Permalink</b>: The permanent link to a specific pathway has the pattern <code>https://www.wikipathways.org/instance/{WPID}</code>.</li>
 <li><b>Embed code</b>: The code to embed a pathway image into webpage has the pattern <code>&lt;iframe src ="https://pathway-viewer.toolforge.org/?id={WPID}`" width="600px" height="300px" style="overflow:hidden;"&gt;&lt;/iframe&gt;</code>.</li>
-<li><b>Full size image:</b> The link to a full size pathway image has the URL pattern <code>https://pathway-viewer.toolforge.org/?id={WPID}</code>.</li>
+<li><b>Full size image:</b> The link to a full size pathway image has the URL pattern <code>https://pathway-viewer.toolforge.org/?id={WPID}</code></li>
 <li><b>PNG:</b> The link to the PNG version of a pathway image has the URL pattern <code>https://assets.wikipathways.org/pathways/{WPID}/{WPID}.png</code>.</li>
-<li><b>SVG:</b> The link to the SVG version of a pathway image has the URL pattern <code>https://assets.wikipathways.org/pathways/{WPID}/{WPID}.svg</code>.</li>
-<li><b>GPML:</b> Using the option <b>Dowbload GPML</b> will downloaded the GPML code for the pathway. The URL pattern to access this file is <code>https://gitcdn.link/cdn/wikipathways/wikipathways-database/main/pathways/{WPID}/{WPID}.gpml</code>.</li>
-<li><b>Participants:</b> Using the option <b>Download TSV</b> option will downloaded a TSV-formatted table of the data nodes for the pathway. The URL pattern to access this file is <code>https://gitcdn.link/cdn/wikipathways/wikipathways.github.io/main/_data/{WPID}-datanodes.tsv</code>.</li>
-<li><b>References:</b> Using the option <b>Download TSV</b> will downloaded a TSV-formatted table of the literature for the pathway. The URL pattern to access this file is <code>https://gitcdn.link/cdn/wikipathways/wikipathways.github.io/main/_data/{WPID}-bibliography.tsv</code>.</li>
+<li><b>SVG:</b> The link to the SVG version of a pathway image has the URL pattern <code>https://assets.wikipathways.org/pathways/{WPID}/{WPID}.svg</code></li>
+<li><b>GPML:</b> Using the option <b>Dowbload GPML</b> will downloaded the GPML code for the pathway. The URL pattern to access this file is <code>https://gitcdn.link/cdn/wikipathways/wikipathways-database/main/pathways/{WPID}/{WPID}.gpml</code></li>
+<li><b>Participants:</b> Using the option <b>Download TSV</b> option will downloaded a TSV-formatted table of the data nodes for the pathway. The URL pattern to access this file is <code>https://gitcdn.link/cdn/wikipathways/wikipathways.github.io/main/_data/{WPID}-datanodes.tsv</code></li>
+<li><b>References:</b> Using the option <b>Download TSV</b> will downloaded a TSV-formatted table of the literature for the pathway. The URL pattern to access this file is <code>https://gitcdn.link/cdn/wikipathways/wikipathways.github.io/main/_data/{WPID}-bibliography.tsv</code></li>
 </ul>
 <a id="widget"/>
 <h2>Visualizing Data on Pathways</h2>
