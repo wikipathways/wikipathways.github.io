@@ -7,7 +7,7 @@ title: Terms of use
     If you are like us, issues about licensing, copyrights and trademarks are boring at best and quickly become frustratingly opaque. At the same time, we recognize that
     they are important issues, especially when it comes to promoting and protecting data sharing in scientific domains. So, we have done our homework here at WikiPathways
     and have decided to adopt the Creative Commons CC0 waiver for our content. We are going to do our best to explain the strategy in clear terms below. Please feel free
-    to give us feedback on these issues and voice your opinions and questions on the <a href="https://github.com/wikipathways/wikipathways.github.io/discussions" target="_blank">WikiPathways discussion board</a>.
+    to give us feedback on these issues and voice your opinions and questions on the <a href="https://github.com/wikipathways/wikipathways-help/discussions" target="_blank">WikiPathways discussion board</a>.
 </p>
 <h3>Latest website or content:</h3>
 <ul>
