@@ -9,7 +9,7 @@ This page aims to get researchers using Daphnia as model system together and dev
 
 * 2022-04-28: First release of BridgeDb identifier mappings database (see [https://zenodo.org/record/6500401](https://zenodo.org/record/6500401))
 
-* 2021-04-21: Outline of Community pahe launched
+* 2021-04-21: Outline of Community page launched
 
 * 2021-04-12: First pathway drawn
 "
