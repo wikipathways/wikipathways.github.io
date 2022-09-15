@@ -16,6 +16,14 @@ collections-title: "LIPID MAPS Categories"
 collections:
 - name: "Fatty Acids [FA01]"
   wpids: ['WP4350', 'WP4351']
+- name: "Eicosanoids [FA03]"
+  wpids: ['WP167', 'WP4347', 'WP4348', 'WP4349', 'WP4719', 'WP4721', 'WP4720']
+- name: "Glycerolipids [GL]"
+  wpids: ['WP4345', 'WP4722']
+- name: "Glycerophospholipids [GP]"
+  wpids: ['WP4345', 'WP4722', 'WP2533']
+- name: "Glycerophosphoinositols [GP06]"
+  wpids: ['WP4971']
 
 redirect_from:
   - /index.php/Portal:Lipids
