@@ -282,7 +282,7 @@ layout: home2
           <a href="https://bioconductor.org/packages/clusterProfiler/" target="_blank">
       <img class="d-block w-100" src="/assets/img/slideshow/analyze-3.png" alt="clusterProfiler R package">
       </a>
-    </div>
+    </div> 
     <div class="carousel-item">
           <a href="/cite.html">
       <img class="d-block w-100" src="/assets/img/slideshow/analyze-4.png" alt="How to cite">
