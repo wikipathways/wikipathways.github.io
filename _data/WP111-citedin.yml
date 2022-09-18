@@ -1,0 +1,18 @@
+
+# Add or edit publications that cite this pathway.
+
+# Each citation entry is comprised of a:
+#  * "link" attribute, which can be a URL, DOI or PubMed ID
+#  * "label" attribute, which can be any text and will form the clickable hypertext link
+#  * (optional) "archived" attribute, which must be a DOI (link or ID) and should point to an archived version of the pathway, e.g., via Zenodo (see How to Cite).
+
+# Example entry:
+#
+# - link: 29136241
+#   label: Slenter et al., Nucleic Acids Research. 10 November 2017.
+#   archived: 10.5281/zenodo.7058732
+
+  - link: https://doi.org/10.1016/j.exphem.2018.09.004
+    label: Hay SB, et al. Exp Hematol. 2018 Dec
+  - link: https://doi.org/10.1186/s13075-017-1319-8
+    label: Derambure C, et al. Arthritis Res Ther. 2017.
