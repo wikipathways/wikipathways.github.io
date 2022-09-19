@@ -4,15 +4,25 @@ order: 5
 display-title: "Cited In"
 btn-class: "btn-front"
 ---
-    
+
+{% assign sorted_pathways = site.pathways | sort: "title" %}
+{% assign pathway_count = 0 %}
+{% assign pub_count = 0 %}   
+{% for pw in sorted_pathways %}
+    {% assign citedin-size = pw.citedin | size %}
+    {% if citedin-size > 0 %}
+      {% assign pathway_count = pathway_count | plus: 1 %}
+      {% assign pub_count = pub_count | plus: citedin-size %}
+    {% endif %}
+{% endfor %}
 <h2 id="title">Pathways Cited in the Literature</h2>
-<p>A list of pathways that have been cited in the literature, for example as figures, data visualizations and top enrichment results.</p> 
+<p>A list of pathways that have been cited in the literature as figures, data visualizations and top enrichment results.</p> 
+<b>To date, {{ pathway_count }} pathways have been cited a total of {{ pub_count }} times</b>
 <hr/><br />
 <ul>
-{% assign sorted_pathways = site.pathways | sort: "title" %}
 {% for pw in sorted_pathways %}
-  {% assign citedin-size = pw.citedin | size %}
-  {% if citedin-size > 0 %}
+    {% assign citedin-size = pw.citedin | size %}
+    {% if citedin-size > 0 %}
     <li><a href="{{ pw.url }}" title="{{pw.wpid}}">{{ pw.title }} - {{ pw.wpid }} <em>({{ pw.organisms.first }})</em></a>
       <ul>
         {% for citation in pw.citedin %}
@@ -55,7 +65,7 @@ btn-class: "btn-front"
         {% endfor %}
       </ul>
     </li> 
-  {% endif %}
+    {% endif %}
 {% endfor %}
 </ul>
 <br/>
