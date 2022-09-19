@@ -5,7 +5,7 @@ display-title: "Cited In"
 btn-class: "btn-front"
 ---
 
-{% assign sorted_pathways = site.pathways | sort: "title" %}
+{% assign sorted_pathways = site.pathways | sort_natural: "title" %}
 {% assign pathway_count = 0 %}
 {% assign pub_count = 0 %}   
 {% for pw in sorted_pathways %}
