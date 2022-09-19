@@ -68,31 +68,33 @@ layout: default
     <h2 id="authors">Authors</h2>
     {{ page.authors | array_to_sentence_string }}
 
-    {% assign wpid-citedin=page.wpid | append: "-citedin" %}
-    {% assign edit-citedin=wpid-citedin | append: ".yml" %}
-    {% assign citedin=site.data[wpid-citedin] %}
     <h2 id="citedin">Cited In
-      <a href="https://github.com/wikipathways/wikipathways.github.io/blob/main/_data/{{ edit-citedin }}"
+      <a href="https://github.com/wikipathways/wikipathways-database/blob/main/downstream/citedin_lookup.yml"
       target="_blank">
         <span title="Edit cited in" style="color: #666; font-size: 0.8em;">
           <i class="fa fa-pencil"></i>
         </span>
       </a>
     </h2> 
-    {% assign citedin-size=citedin | size %}
+    {% assign citedin-size=page.citedin | size %}
     {% if citedin-size > 0 %}
-      <ul>
-        {% for citation in citedin %}
-          <!-- Check link -->
-          {% assign cit-link = "" %}
+      <ul class="three-column"> 
+        {% for citation in page.citedin %}
+          <!-- Check type -->
           {% assign cit-slash = citation.link | split: "/" | first %}
           {% assign cit-slash-dot = cit-slash | split: "." | first %}
           {% if cit-slash == "https:" %} <!-- fully formed url -->
             {% assign cit-link = citation.link %}
+            {% assign cit-label = 'URL' %}
+            {% assign cit-msg = citation.link | truncate: 21 %}
           {% elsif cit-slash-dot == "10" %} <!-- DOI in need of prefix -->
             {% assign cit-link = "https://doi.org/" | append: citation.link %}
-          {% else %} <!-- presumed PubMed ID in need of prefix -->
+            {% assign cit-label = 'DOI' %}
+            {% assign cit-msg = citation.link | truncate: 21 %}
+          {% else %} <!-- presumed PubMed or PMC ID in need of prefix -->
             {% assign cit-link = "https://pubmed.ncbi.nlm.nih.gov/" | append: citation.link %}
+            {% assign cit-label = 'PMC' %}
+            {% assign cit-msg = citation.link | truncate: 21 %}
           {% endif %}
           <!-- Check archived -->
           {% assign cit-archived = "" %}
@@ -105,9 +107,15 @@ layout: default
             {% capture cit-archived %}
             Cites <a href="https://doi.org/{{ citation.archived }}" target="_blank">this version</a>
             {% endcapture %}
-          {% else %} <!-- not a DOI; don't display it -->
+          {% else %} <!-- empty or not a DOI; therefore don't display it -->
           {% endif %}
-          <li><a href="{{ cit-link }}" target="_blank">{{ citation.label | strip_html | truncate: 100, "..."}}</a>{{ cit-archived }}</li>
+          <!-- <li><a href="{{ cit-link }}" target="_blank">{{ citation.label | strip_html | truncate: 100, "..."}}</a>{{ cit-archived }}</li> -->
+          <li>
+            <a href="{{ cit-link }}" title="{{ cit-link }}" target="_blank">
+              <img alt="{{ cit-label }}" src="https://img.shields.io/static/v1?label={{ cit-label }}&message={{ cit-msg }}&color=blue">
+            </a>
+            {{ cit-archived }}
+          </li>
         {% endfor %}
       </ul>
     {% else %}

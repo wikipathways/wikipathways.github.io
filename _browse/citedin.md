@@ -11,23 +11,26 @@ btn-class: "btn-front"
 <ul>
 {% assign sorted_pathways = site.pathways | sort: "title" %}
 {% for pw in sorted_pathways %}
-  {% assign wpid-citedin=pw.wpid | append: "-citedin" %}
-  {% assign citedin=site.data[wpid-citedin] %}
-  {% assign citedin-size=citedin | size %}
+  {% assign citedin-size = pw.citedin | size %}
   {% if citedin-size > 0 %}
-    <li><a href="{{ pw.url }}" title="{{pw.wpid}}"><b>{{ pw.title }} <em>({{ pw.organisms.first }})</em></b></a>
+    <li><a href="{{ pw.url }}" title="{{pw.wpid}}">{{ pw.title }} - {{ pw.wpid }} <em>({{ pw.organisms.first }})</em></a>
       <ul>
-        {% for citation in citedin %}
-          <!-- Check link -->
-          {% assign cit-link = "" %}
+        {% for citation in pw.citedin %}
+          <!-- Check type -->
           {% assign cit-slash = citation.link | split: "/" | first %}
           {% assign cit-slash-dot = cit-slash | split: "." | first %}
           {% if cit-slash == "https:" %} <!-- fully formed url -->
             {% assign cit-link = citation.link %}
+            {% assign cit-label = 'URL' %}
+            {% assign cit-msg = citation.link | truncate: 21 %}
           {% elsif cit-slash-dot == "10" %} <!-- DOI in need of prefix -->
             {% assign cit-link = "https://doi.org/" | append: citation.link %}
-          {% else %} <!-- presumed PubMed ID in need of prefix -->
+            {% assign cit-label = 'DOI' %}
+            {% assign cit-msg = citation.link | truncate: 21 %}
+          {% else %} <!-- presumed PubMed or PMC ID in need of prefix -->
             {% assign cit-link = "https://pubmed.ncbi.nlm.nih.gov/" | append: citation.link %}
+            {% assign cit-label = 'PMC' %}
+            {% assign cit-msg = citation.link | truncate: 21 %}
           {% endif %}
           <!-- Check archived -->
           {% assign cit-archived = "" %}
@@ -40,9 +43,15 @@ btn-class: "btn-front"
             {% capture cit-archived %}
             Cites <a href="https://doi.org/{{ citation.archived }}" target="_blank">this version</a>
             {% endcapture %}
-          {% else %} <!-- not a DOI; don't display it -->
+          {% else %} <!-- empty or not a DOI; therefore don't display it -->
           {% endif %}
-          <li><a href="{{ cit-link }}" target="_blank">{{ citation.label | strip_html | truncate: 100, "..."}}</a>{{ cit-archived }}</li>
+          <!-- <li><a href="{{ cit-link }}" target="_blank">{{ citation.label | strip_html | truncate: 100, "..."}}</a>{{ cit-archived }}</li> -->
+          <li>
+            <a href="{{ cit-link }}" title="{{ cit-link }}" target="_blank">
+              <img alt="{{ cit-label }}" src="https://img.shields.io/static/v1?label={{ cit-label }}&message={{ cit-msg }}&color=blue">
+            </a>
+            {{ cit-archived }}
+          </li>
         {% endfor %}
       </ul>
     </li> 

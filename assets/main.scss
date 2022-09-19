@@ -186,6 +186,13 @@ ul.facet-group {
   list-style-type: none;
 }
 
+ul.three-column {
+  list-style-type: none;
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+}
+
 a.card-link {
   text-decoration: none;
   color: #000000;
