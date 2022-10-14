@@ -32,6 +32,9 @@ redirect_from:
 - /instance/WP1
 - /instance/WP1_rr117947
 revision: r117947
+seo:
+  type: MedicalScholarlyArticle
+image: 'https://assets.wikipathways.org/pathways/WP1/WP1.png'
 schema-jsonld:
 - '@context': https://schema.org/
   '@id': https://wikipathways.github.io/pathways/WP1.html
@@ -46,6 +49,7 @@ schema-jsonld:
     involved in mediating the effects of statins on plasma lipoprotein metabolism.   Sources:
     [https://www.pharmgkb.org/pathway/PA2031 PharmGKB] and [http://en.wikipedia.org/wiki/Statin
     Wikipedia]'
+  image: 'https://assets.wikipathways.org/pathways/WP1/WP1.png'
   keywords:
   - Abca1
   - Acetyl-CoA
@@ -77,7 +81,6 @@ schema-jsonld:
   - Triglycerides
   license: CC0
   name: Statin pathway
-seo: CreativeWork
 title: Statin pathway
 wpid: WP1
 ---
