@@ -26,6 +26,20 @@ collections:
   wpids: ['WP4345', 'WP4722', 'WP2533']
 - name: "Glycerophosphoinositols [GP06]"
   wpids: ['WP4971']
+- name: "Sphingolipids [SP]"
+  wpids: ['WP4344', 'WP4725', 'WP4690', 'WP4726', 'WP4142', 'WP1423', 'WP4153', 'WP3933', 'WP5179']
+- name: "(Chole)sterols [ST01]"
+  wpids: ['WP430', 'WP4190', 'WP4189', 'WP4346', 'WP4718', 'WP4545']
+- name: "Steroids [ST02]"
+  wpids: ['WP4523', 'WP4524']
+- name: "Secosteroids [ST03]"
+  wpids: ['WP1531']
+- name: "Bile acids and derivatives [ST04]"
+  wpids: ['WP4545']
+- name: "Isoprenoids [PR01]"
+  wpids: ['WP5188']
+- name: "Quinones and hydroquinones [PR02]"
+  wpids: ['WP5037', 'WP5186']
 
 redirect_from:
   - /index.php/Portal:Lipids
