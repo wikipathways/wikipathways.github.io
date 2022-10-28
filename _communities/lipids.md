@@ -42,6 +42,10 @@ collections:
   wpids: ['WP5188']
 - name: "Quinones and hydroquinones [PR02]"
   wpids: ['WP5037', 'WP5186']
+- name: "Polyketides [PK]"
+  wpids: ['4238']
+- name: "Signalling Pathways related to Lipids"
+  wpids: ['WP3965', 'WP3601', 'WP4522', 'WP5272', 'WP5191', 'WP5192', 'WP5182', 'WP5181', 'WP5199']
 
 redirect_from:
   - /index.php/Portal:Lipids
