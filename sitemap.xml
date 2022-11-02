@@ -8,8 +8,7 @@ sitemap:
   {% for pw in site.pathways %}
     <url>
       <loc>{{ site.url }}{{ pw.url }}</loc>
-        <lastmod>{{ pw.last-edited | date: "%Y-%m-%d" }}</lastmod>
-        <changefreq>monthly</changefreq>
+        <lastmod>{{  site.time | date_to_xmlschema }}</lastmod>
         <priority>0.5</priority>
     </url>
   {% endfor %}
