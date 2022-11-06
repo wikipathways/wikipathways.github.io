@@ -1,5 +1,6 @@
 ---
 layout: home2
+title: Home
 ---
 <div style="background: linear-gradient(0deg, #fefefe, #eae6ff 100%);">
   {%- include_cached header.html %}
