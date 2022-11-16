@@ -24,9 +24,9 @@ description: WikiPathways is a community curated pathway database with biologica
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://new.wikipathways.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: wikipathways
-github_username: wikipathways
+mastodon_username: wikipathways
+github_username: wikipathwayss
 discussion_forum: github.com/wikipathways/wikipathways-help/discussions
-
 
 # Build settings
 incremental: true
