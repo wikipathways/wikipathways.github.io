@@ -73,6 +73,17 @@ combo.df$month <- factor(format(combo.df$date, "%B"),
                                 levels = month.name)
 ```
 
+Next, let's display the latest data points
+
+```r
+tail(combo.df[,2:4],1)
+```
+
+```
+##    edits pathways    month
+## 58   201     1817 November
+```
+
 Next, let's plot a time series
 
 ```r
@@ -178,8 +189,8 @@ p <- ggplot(combo.df.anim) +
 ```
 
 ```
-## geom_path: Each group consists of only one observation. Do you need to adjust
-## the group aesthetic?
+## `geom_line()`: Each group consists of only one observation.
+## ℹ Do you need to adjust the group aesthetic?
 ```
 
 ```r
