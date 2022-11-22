@@ -125,6 +125,11 @@ combo.df$month <- factor(format(combo.df$date, "%B"),
                                 levels = month.name)
 ```
 
+Next, let's display the latest data points
+```{r display}
+tail(combo.df[,2:4],1)
+```
+
 Next, let's plot a time series
 ```{r plot, warning=FALSE}
 
