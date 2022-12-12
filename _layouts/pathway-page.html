@@ -169,9 +169,9 @@ layout: default
         <tr>
           <td>{{ row["Label"] }}</td>
           <td>{{ row["Type"] }}</td>
-          {% if row["Database"] != null %}
-          {% assign xrefUrl = "https://bioregistry.io/" | append:row["Database"] %}
-            <td><a href={{ xrefUrl }} target="_blank">{{ row["Database"] }}</a></td>
+          {% if row["Identifier"] != null %}
+          {% assign xrefUrl = "https://bioregistry.io/" | append:row["Identifier"] %}
+            <td><a href={{ xrefUrl }} target="_blank">{{ row["Identifier"] }}</a></td>
           {% else %} 
             <td><span style="font-style:italic; color:#CCCCCC;">None</span></td>
           {% endif %} 
