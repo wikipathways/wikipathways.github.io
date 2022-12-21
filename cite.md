@@ -40,7 +40,7 @@ title: Cite
             <li>Find the corresponding pathway on WikiPathways, for example <a href="https://new.wikipathways.org/pathways/WP4629.html">WP4629</a>.</li>
             <li>In the <b>Cited In</b> section, click the pencil icon to edit the list. This will open a new browser tab with the "citedin_lookup.yaml" file open in edit mode.</li>
             <li>Click anywhere in the editable area and use <b>Ctrl+F</b> to search for the WPID, for example "WP4629".</li>
-            <li>If the PMCID has not already been added, add an entry under the relevant WPID in the following format: <code>- link: PMC9603647</code>.</li>
+            <li>If the PMCID or DOI for the publication has not already been added, add an entry under the relevant WPID in the following format: <code>- link: PMC9603647</code>.</li>
             <li>Enter a commit message ("added citation for WP4629") and click "Commit changes".</li>
         </ol>
 </ul> 
