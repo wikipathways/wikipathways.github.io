@@ -3,11 +3,11 @@ display-name: "Lipids and LIPID MAPS"
 title: "Welcome to the Lipids Pathway Community at WikiPathways."
 description: "This community is designed to coordinate the development of lipid pathways and gather the community interested in interactive lipid pathways. Lipids serve several important biological purposes, such as providing membrane structure, and signalling.
 
-* 2022-09-21: Fully curated version of the Ether lipid synthesis pathway [WP5275](../pathways/WP5275.md) has been released! (data supplied by Robert Murphy)
+* 2022-09-21: Fully curated version of the Ether lipid synthesis pathway [WP5275](../pathways/WP5275) has been released! (data supplied by Robert Murphy)
 
 * 2022-07-16: Seven new lipid signaling pathways, and three new metabolic lipid pathways have been added to this portal!
 
-* 2021-06-23: A new pathway on 7-oxo-C and 7-beta-HC pathways ([WP5064](../pathways/WP5064.md)) with data from Fig.4 and 5 from [Griffiths et al (2020)](https://dx.doi.org/10.1016%2Fj.prostaglandins.2019.106381) has been created.
+* 2021-06-23: A new pathway on 7-oxo-C and 7-beta-HC pathways ([WP5064](../pathways/WP5064)) with data from Fig.4 and 5 from [Griffiths et al (2020)](https://dx.doi.org/10.1016%2Fj.prostaglandins.2019.106381) has been created.
 "
 short-description: "This community is set up to coordinate the development of lipid pathways and gather the community interested in interactive lipid pathways. Lipids serve several important biological purposes, such as providing membrane structure, and signalling."
 logo: "../assets/img/lipidmaps.png"
