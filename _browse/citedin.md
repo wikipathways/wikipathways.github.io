@@ -31,14 +31,17 @@ btn-class: "btn-front"
           {% assign cit-slash-dot = cit-slash | split: "." | first %}
           {% if cit-slash == "https:" %} <!-- fully formed url -->
             {% assign cit-link = citation.link %}
+            {% assign cit-title = citation.title %}
             {% assign cit-label = 'URL' %}
             {% assign cit-msg = citation.link | truncate: 21 %}
           {% elsif cit-slash-dot == "10" %} <!-- DOI in need of prefix -->
             {% assign cit-link = "https://doi.org/" | append: citation.link %}
+            {% assign cit-title = citation.title %}
             {% assign cit-label = 'DOI' %}
             {% assign cit-msg = citation.link | truncate: 21 %}
           {% else %} <!-- presumed PubMed or PMC ID in need of prefix -->
             {% assign cit-link = "https://pubmed.ncbi.nlm.nih.gov/" | append: citation.link %}
+            {% assign cit-title = citation.title %}
             {% assign cit-label = 'PMC' %}
             {% assign cit-msg = citation.link | truncate: 21 %}
           {% endif %}
@@ -57,7 +60,7 @@ btn-class: "btn-front"
           {% endif %}
           <!-- <li><a href="{{ cit-link }}" target="_blank">{{ citation.label | strip_html | truncate: 100, "..."}}</a>{{ cit-archived }}</li> -->
           <li>
-            <a href="{{ cit-link }}" title="{{ cit-link }}" target="_blank">
+            <a href="{{ cit-link }}" title="{{ cit-title }}" target="_blank">
               <img alt="{{ cit-label }}" src="https://img.shields.io/static/v1?label={{ cit-label }}&message={{ cit-msg }}&color=blue">
             </a>
             {{ cit-archived }}
