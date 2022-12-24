@@ -66,8 +66,15 @@ layout: default
     </a>
   <div>
     <h2 id="authors">Authors</h2>
-    {{ page.authors | array_to_sentence_string }}
-
+    {% assign authList = "" | split: ',' %}
+    {% for auth in page.authors %}
+      {% capture thisAuth %}
+        <a href="{{site.url}}/authors/{{auth}}.html" title="View author profile">{{auth}}</a>
+      {% endcapture %}
+      {% assign authList = authList | push: thisAuth %}
+    {% endfor %}
+    {{ authList | array_to_sentence_string }}
+    
     <h2 id="citedin">Cited In
       <a href="https://github.com/wikipathways/wikipathways-database/edit/main/downstream/citedin_lookup.yml"
       target="_blank">

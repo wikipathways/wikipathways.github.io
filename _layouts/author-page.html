@@ -3,15 +3,15 @@ layout: default
 ---
 <a style="float: right;" href="/browse/authors.html">Authors</a>
 <h1 id="title"> {{ page.username }}</h1>
-    <p><b>{{ page.realname }}</b> - {{page.affiliation}}
+    <p><b>{{ page.realname }}</b> {% if page.affiliation %}- {{page.affiliation}}{% endif %}
         <a href="https://github.com/wikipathways/wikipathways.github.io/edit/main/_authors/{{ page.slug }}.md"
         target="_blank"> 
           <span title="Edit author profile" style="color: #666; font-size: 1.0em;">
             <i class="fa fa-pencil"></i>
           </span>
         </a>
-        <br />{{page.bio}}
-        <br /><a href="{{page.website}}" target="_blank">{{page.website}}</a>
+        {% if page.bio %}<br />{{page.bio}}{% endif %}
+        {% if page.website %}<br /><a href="{{page.website}}" target="_blank">{{page.website}}</a>{% endif %}
     </p>
 
     <ul>
