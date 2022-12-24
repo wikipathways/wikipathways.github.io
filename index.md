@@ -152,7 +152,6 @@ title: Home
             <div class="container">
                   <h1 style="font-family:Linux Libertine; text-align:right;">Browse the current collection</h1><h2 style="font-family:Poppins; text-align:right;color: #6c757d;line-height:1.4">Explore the full breadth and depth of pathway knowledge. Discover pathways of interest by organism, communities of domain experts, and ontology annotations.</h2>
                 <div class="row mx-auto" style="display:flex; flex-wrap: wrap;">            
-                  <div class="col-4 px-0" style="display:flex;"></div>
                   <div class="col-3 mx-auto" style="display:flex;">
                     <div class="container">
       {% assign sorted_browse = site.browse | where_exp:"item","item.btn-class contains 'pill'" | sort: "order" %}
@@ -164,7 +163,15 @@ title: Home
                   <div class="col-3 mx-auto>" style="display:flex;">
                     <div class="container">
       {% assign sorted_browse = site.browse | where:"btn-class","btn-front" | sort: "order" %} 
-      {% for bp in sorted_browse %}
+      {% for bp in sorted_browse limit: 3 %}
+        <a class="btn btn-sm {{bp.btn-class}} w-100 my-2" style="font-size:large" href="{{bp.url}}"> {{ bp.display-title }}</a>
+      {% endfor %}           
+                    </div>
+                  </div>
+                  <div class="col-3 mx-auto>" style="display:flex;">
+                    <div class="container">
+      {% assign sorted_browse = site.browse | where:"btn-class","btn-front" | sort: "order" %} 
+      {% for bp in sorted_browse offset: 3 %}
         <a class="btn btn-sm {{bp.btn-class}} w-100 my-2" style="font-size:large" href="{{bp.url}}"> {{ bp.display-title }}</a>
       {% endfor %}           
                     </div>

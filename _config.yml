@@ -77,6 +77,11 @@ defaults:
       layout: "annotation-page"
   - scope:
       path: ""
+      type: "authors"
+    values:
+      layout: "author-page"
+  - scope:
+      path: ""
       type: "communities"
     values:
       layout: "community-page"
@@ -99,6 +104,8 @@ defaults:
 # Custom collections
 collections:
   annotations:
+    output: true
+  authors:
     output: true
   communities:
     output: true

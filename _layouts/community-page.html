@@ -5,9 +5,16 @@ layout: default
 {% if page.logo %}
 <p><a class="logo-link" href="{{ page.logo-link }}"><img src="{{ page.logo }}"></a></p>
 {% endif %}
-    <h2 id="title"> {{ page.title }}</h2>
+    <h2 id="title"> {{ page.title }}
+      <a href="https://github.com/wikipathways/wikipathways.github.io/edit/main/_communities/{{ page.slug }}.md"
+      target="_blank"> 
+        <span title="Edit community profile" style="color: #666; font-size: 0.8em;">
+          <i class="fa fa-pencil"></i>
+        </span>
+      </a>
+    </h2>
     <p>{{ page.description | markdownify }}</p>
-    {% assign sorted_pathways = site.pathways | sort: "title" %}
+    {% assign sorted_pathways = site.pathways | where: "communities", page.community-tag | sort: "title" %}
     {% if page.collections-title %}
       <h2> {{ page.collections-title }}</h2>
       {% for c in page.collections %}
@@ -60,6 +67,7 @@ layout: default
         {% endif %}
       </li>
     </ul>
+    <b>This community helps to curate {{sorted_pathways.size}} pathways:</b>
     <div class="tab-content">
       {% if page.collections-title %}
       <div class="tab-pane fade" id="gallery" role="tabpanel">
@@ -69,7 +77,6 @@ layout: default
         <br/>
     <div class="row" style="margin-right: 0px; margin-left: 0px;">
       {% for pw in sorted_pathways %}
-          {% if pw.communities contains page.community-tag %}
           <div class="col-sm-auto">
             <div class="card" style="width: 10rem;">
               <a class="card-link" href="{{ pw.url }}">
@@ -80,7 +87,6 @@ layout: default
               </a>
             </div>
           </div>
-          {% endif %}
       {% endfor %}
     </div>
   </div>
@@ -93,9 +99,7 @@ layout: default
     <div class="row" style="margin-left: 0px;">
       <ul style="list-style-type: none; margin-left: 0px;">
         {% for pw in sorted_pathways %}
-          {% if pw.communities contains page.community-tag %}
               <li><a href="{{ pw.url }}">{{ pw.title }} <em>({{ pw.organisms.first }})</em></a></li>
-          {% endif %}
         {% endfor %}
       </ul>
     </div>  
@@ -120,5 +124,5 @@ layout: default
 {% endif %}
 
 <h2>Authors of Community Pathways</h2>
-{% assign all_authors = site.pathways | where:'communities',page.community-tag | map: "authors" | join: ','  | split: ',' | uniq  %}
+{% assign all_authors = sorted_pathways | map: "authors" | join: ','  | split: ',' | uniq  %}
 <p>{{ all_authors | array_to_sentence_string }}.</p>

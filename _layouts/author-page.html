@@ -1,0 +1,88 @@
+---
+layout: default
+---
+<a style="float: right;" href="/browse/authors.html">Authors</a>
+<h1 id="title"> {{ page.username }}</h1>
+    <p><b>{{ page.realname }}</b> - {{page.affiliation}}
+        <a href="https://github.com/wikipathways/wikipathways.github.io/edit/main/_authors/{{ page.slug }}.md"
+        target="_blank"> 
+          <span title="Edit author profile" style="color: #666; font-size: 1.0em;">
+            <i class="fa fa-pencil"></i>
+          </span>
+        </a>
+        <br />{{page.bio}}
+        <br /><a href="{{page.website}}" target="_blank">{{page.website}}</a>
+    </p>
+
+    <ul>
+        {% if page.github %}
+          <li><b>GitHub</b>: <a href="https://github.com/{{page.github}}" target="_blank">{{page.github}}</a></li>
+        {% endif %}
+        {% if page.orcid %}
+          <li><b>ORCiD</b>: <a href="https://orcid.org/{{page.orcid}}" target="_blank">{{page.orcid}}</a></li>
+        {% endif %}
+        {% if page.linkedin %}
+          <li><b>Linked In</b>: <a href="https://www.linkedin.com/in/{{page.linkedin}}" target="_blank">{{page.linkedin}}</a></li>
+        {% endif %}
+        {% if page.googlescholar %}
+          <li><b>Google Scholar</b>: <a href="https://scholar.google.com/citations?hl=en&user={{page.googlescholar}}" target="_blank">{{page.googlescholar}}</a></li>
+        {% endif %}
+        {% if page.wikidata %}
+          <li><b>Wikidata</b>: <a href="https://scholia.toolforge.org/author/{{page.wikidata}}" target="_blank">{{page.wikidata}}</a></li>
+        {% endif %}
+        {% if page.twitter %}
+          <li><b>Twitter</b>: <a href="https://twitter.com/{{page.twitter}}" target="_blank">{{page.twitter}}</a></li>
+        {% endif %}
+        {% if page.mastodon-url %}
+          {% assign url-slash = page.mastodon-url | split: "/" | first %}
+          {% if url-slash == "https:" %} <!-- proper url -->
+            <li><b>Mastodon</b>: <a href="{{page.mastodon-url}}" target="_blank">{{page.mastodon-url}}</a></li>
+          {% endif %}
+        {% endif %}
+        {% if page.meta %}
+          <li><b>Meta</b>: <a href="http://www.meta.com/{{page.meta}}" target="_blank">{{page.meta}}</a></li>
+        {% endif %}
+        {% if page.instagram %}
+          <li><b>Instagram</b>: <a href="https://instagram.com/{{page.instagram}}" target="_blank">{{page.instagram}}</a></li>
+        {% endif %}
+    </ul>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#gallery">Gallery</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#list">List</a>
+      </li>
+    </ul>
+    {% assign sorted_pathways = site.pathways | where: "authors", page.username | sort: "last-edited" | reverse %}
+    <b>This author contributed to {{sorted_pathways.size}} pathways:</b>
+    <div class="tab-content" >
+      <div class="tab-pane fade show active" id="gallery" role="tabpanel">
+        <br/>
+    <div class="row">
+      {% for pw in sorted_pathways %}
+          <div class="col-sm-auto">
+            <div class="card" style="width: 10rem;">
+              <a class="card-link" href="{{ pw.url }}">
+              <img class="card-img-top" loading="lazy" src="/assets/img/{{pw.wpid}}/{{pw.wpid}}-thumb.png" alt="{{ pw.title }}">
+              <div class="card-body">
+                <p class="card-text">{{ pw.title }}</p>
+              </div>
+              </a>
+            </div>
+          </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="tab-pane fade" id="list" role="tabpanel">
+    <br/>
+    <div class="row" style="margin-left: 10px;">
+      <ul>
+        {% for pw in sorted_pathways %}
+              <li><a href="{{ pw.url }}">{{ pw.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>  
+  </div>
+</div>
+<br/><hr/>
