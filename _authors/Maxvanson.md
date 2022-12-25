@@ -1,0 +1,16 @@
+---
+username: Maxvanson
+realname: Max Van Son
+website: 
+affiliation: 
+bio: 
+github: 
+orcid: 
+linkedin: 
+googlescholar: 
+wikidata: 
+twitter: 
+mastodon-url: 
+meta:
+instagram:
+---
