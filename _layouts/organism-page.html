@@ -2,8 +2,22 @@
 layout: default
 ---
 <a class="btn btn-sm btn-pill btn-organism" style="float: right;" href="/browse/organisms.html">Organisms</a>
-<h1 id="title"> {{ page.title }}</h1>
-    <p>This is an organism page.</p>
+<h1 id="title"> {{ page.title }}
+  <a href="https://github.com/wikipathways/wikipathways.github.io/edit/main/_organisms/{{ page.slug }}.md"
+  target="_blank"> 
+    <span title="Edit organism profile" style="color: #666; font-size: 0.6em;">
+      <i class="fa fa-pencil"></i>
+    </span>
+  </a>
+</h1>
+<p>This is an organism page.</p>
+{% if page.homology %}
+  <p><em>Access hundreds of additional pathways in GPML format for this species 
+    inferred from {{ page.homology }} by homology mapping: 
+    <a href="https://github.com/wikipathways/wikipathways-homology/tree/main/pathways/{{ page.bridgedb-code }}" target="_blank">browse</a>
+     or <a href="https://github.com/wikipathways/wikipathways-homology/archive/refs/heads/main.zip" target="_blank">download</a> 
+     repository.</em></p>
+{% endif %}
     <ul class="nav nav-tabs">
       <li class="nav-item">
         <a class="nav-link active" data-toggle="tab" href="#gallery">Gallery</a>
@@ -13,7 +27,7 @@ layout: default
       </li>
     </ul>
     {% assign sorted_pathways = site.pathways | where: "organisms", page.latin | sort: "title" %}
-    <b>This organism has {{sorted_pathways.size}} pathways:</b>
+    <b>This organism has {{sorted_pathways.size}} curated pathways:</b>
     <div class="tab-content" >
       <div class="tab-pane fade show active" id="gallery" role="tabpanel">
         <br/>
