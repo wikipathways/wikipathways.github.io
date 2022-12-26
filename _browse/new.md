@@ -73,7 +73,12 @@ btn-class: "btn-front"
         {% if k > 20 %}
           {% break %}
         {% endif %}
-          {% assign all_authors = all_authors | push: pw.authors %}
+          {% for auth in pw.authors %}
+            {% capture thisAuth %}
+              <a href="{{site.url}}/authors/{{auth}}.html" title="View author profile">{{auth}}</a>
+            {% endcapture %}
+            {% assign all_authors = all_authors | push: thisAuth %}
+          {% endfor %}
       {% endif %}
     {% endfor %}
     {{ all_authors | uniq | array_to_sentence_string }}

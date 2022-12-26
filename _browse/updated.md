@@ -51,5 +51,12 @@ btn-class: "btn-front"
 <br/>
 <hr/>
 <h2>Authors of Recent Updates</h2>
-{% assign all_authors = sorted_pathways | map: "authors" | join: ','  | split: ',' | uniq  %} <!-- REPLACE authors with "recent author" -->
+{% assign sorted_pw_authors = sorted_pathways | map: "authors" | join: ','  | split: ',' | uniq  %} <!-- REPLACE authors with "recent author" -->
+{% assign all_authors = '' | split: '' %}
+{% for auth in sorted_pw_authors %}
+  {% capture thisAuth %}
+    <a href="{{site.url}}/authors/{{auth}}.html" title="View author profile">{{auth}}</a>
+  {% endcapture %}
+  {% assign all_authors = all_authors | push: thisAuth %}
+{% endfor %}
 <p>{{ all_authors | array_to_sentence_string }}.</p>

@@ -124,5 +124,12 @@ layout: default
 {% endif %}
 
 <h2>Authors of Community Pathways</h2>
-{% assign all_authors = sorted_pathways | map: "authors" | join: ','  | split: ',' | uniq  %}
+{% assign sorted_pw_authors = sorted_pathways | map: "authors" | join: ','  | split: ',' | uniq  %}
+{% assign all_authors = '' | split: '' %}
+{% for auth in sorted_pw_authors %}
+  {% capture thisAuth %}
+    <a href="{{site.url}}/authors/{{auth}}.html" title="View author profile">{{auth}}</a>
+  {% endcapture %}
+  {% assign all_authors = all_authors | push: thisAuth %}
+{% endfor %}
 <p>{{ all_authors | array_to_sentence_string }}.</p>
