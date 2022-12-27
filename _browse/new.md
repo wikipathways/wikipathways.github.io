@@ -74,8 +74,9 @@ btn-class: "btn-front"
           {% break %}
         {% endif %}
           {% for auth in pw.authors %}
+          {% assign realname = site.authors | where: "username", auth | map: "realname" | first  %}
             {% capture thisAuth %}
-              <a href="{{site.url}}/authors/{{auth}}.html" title="View author profile">{{auth}}</a>
+              <a href="{{site.url}}/authors/{{auth}}.html" title="View author profile">{{realname}}</a>
             {% endcapture %}
             {% assign all_authors = all_authors | push: thisAuth %}
           {% endfor %}

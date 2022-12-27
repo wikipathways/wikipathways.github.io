@@ -54,8 +54,9 @@ btn-class: "btn-front"
 {% assign sorted_pw_authors = sorted_pathways | map: "authors" | join: ','  | split: ',' | uniq  %} <!-- REPLACE authors with "recent author" -->
 {% assign all_authors = '' | split: '' %}
 {% for auth in sorted_pw_authors %}
+  {% assign realname = site.authors | where: "username", auth | map: "realname" | first  %}
   {% capture thisAuth %}
-    <a href="{{site.url}}/authors/{{auth}}.html" title="View author profile">{{auth}}</a>
+    <a href="{{site.url}}/authors/{{auth}}.html" title="View author profile">{{realname}}</a>
   {% endcapture %}
   {% assign all_authors = all_authors | push: thisAuth %}
 {% endfor %}
