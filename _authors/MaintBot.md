@@ -2,8 +2,8 @@
 username: MaintBot
 realname: Maintenance bot
 website: 
-affiliation: 
-bio: 
+affiliation: WikiPathways Team
+bio: This is a bot account maintained by the WikiPathways team to perform routine updates and corrections to pathway content.
 github: 
 orcid: 
 linkedin: 
