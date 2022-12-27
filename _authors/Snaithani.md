@@ -1,6 +1,6 @@
 ---
 username: Snaithani
-realname: SUSHMA NAITHANI
+realname: Sushma Naithani
 website: 
 affiliation: 
 bio: 
