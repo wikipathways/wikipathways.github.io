@@ -1,6 +1,6 @@
 ---
 username: Prakamya1986
-realname: PRAKAMYA GUPTA
+realname: Prakamya Gupta
 website: 
 affiliation: 
 bio: 
