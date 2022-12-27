@@ -1,6 +1,6 @@
 ---
 username: P.vanLier
-realname: Pip
+realname: Pip van Lier
 website: 
 affiliation: 
 bio: 
