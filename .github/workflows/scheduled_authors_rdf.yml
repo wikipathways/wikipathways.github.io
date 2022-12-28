@@ -33,16 +33,16 @@ jobs:
       #    Rscript -e "source('_rmd/authors-rdf.R')"
 
       - name: Add SSH key
-              env:
-                  SSH_AUTH_SOCK: /tmp/ssh_agent.sock
-              run: |
-                  mkdir -p /home/runner/.ssh
-                  ssh-keyscan data.wikipathways.eqiad1.wikimedia.cloud >> /home/runner/.ssh/known_hosts
-                  ssh-keyscan bastion.wmcloud.org >> /home/runner/.ssh/known_hosts
-                  echo "${{ secrets.WMCLOUD_SSH_KEY }}" > /home/runner/.ssh/github_actions
-                  chmod 600 /home/runner/.ssh/github_actions
-                  ssh-agent -a $SSH_AUTH_SOCK > /dev/null   
-                  ssh-add /home/runner/.ssh/github_actions
+        env:
+          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+        run: |
+          mkdir -p /home/runner/.ssh
+          ssh-keyscan data.wikipathways.eqiad1.wikimedia.cloud >> /home/runner/.ssh/known_hosts
+          ssh-keyscan bastion.wmcloud.org >> /home/runner/.ssh/known_hosts
+          echo "${{ secrets.WMCLOUD_SSH_KEY }}" > /home/runner/.ssh/github_actions
+          chmod 600 /home/runner/.ssh/github_actions
+          ssh-agent -a $SSH_AUTH_SOCK > /dev/null   
+          ssh-add /home/runner/.ssh/github_actions
 
       - name: Upload to data.wikipathway.org
         run: |
