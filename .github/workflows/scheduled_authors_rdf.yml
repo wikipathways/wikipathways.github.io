@@ -33,29 +33,27 @@ jobs:
       #    Rscript -e "source('_rmd/authors-rdf.R')"
 
       - name: Set SSH config
+        env:
+          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
-          touch $HOME/.ssh/config
-          echo "Host *.wmflabs *.wikimedia.cloud" >> $HOME/.ssh/config
-          echo "User apico" >> $HOME/.ssh/config
-          echo "ProxyJump bastion.wmcloud.org:22" >> $HOME/.ssh/config
-          touch $HOME/.ssh/known_hosts
-          echo "bastion.wmcloud.org ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAII/Nm3DMfPBR14MWKs0cnuJMKic1v7cYUGUp1SrjStvm" >> $HOME/.ssh/known_hosts
+          echo "Host *.wmflabs *.wikimedia.cloud" > ~/.ssh/config
+          echo "User apico" >> ~/.ssh/config
+          echo "ProxyJump bastion.wmcloud.org:22" >> ~/.ssh/config
+          echo "bastion.wmcloud.org ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAII/Nm3DMfPBR14MWKs0cnuJMKic1v7cYUGUp1SrjStvm" > ~/.ssh/known_hosts
+          echo "${{ secrets.WMCLOUD_SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-agent -a $SSH_AUTH_SOCK > /dev/null   
+          ssh-add ~/.ssh/id_rsa
 
-      - name: Add SSH key
-        uses: appleboy/scp-action@master
-        with:
-          host: "data.wikipathways.eqiad1.wikimedia.cloud"
-          key: ${{ secrets.WMCLOUD_SSH_KEY }}
-          source: "wikipathways-*-rdf-authors.zip"
-          target: "/var/www/data.wikipathways.org/current/rdf/"
+      #- name: Add SSH key
         #uses: webfactory/ssh-agent@v0.7.0
         #with:
         #  ssh-private-key: ${{ secrets.WMCLOUD_SSH_KEY }}
         #  log-public-key: false # true for debug
 
-      #- name: Upload to data.wikipathway.org
-      #  run: |
-      #    for z in wikipathways-*-rdf-authors.zip; do
-      #      echo "uploading $z"
-      #      scp -vvvv $z data.wikipathways.eqiad1.wikimedia.cloud:/var/www/data.wikipathways.org/current/rdf/
-      #    done
+      - name: Upload to data.wikipathway.org
+        run: |
+          for z in wikipathways-*-rdf-authors.zip; do
+            echo "uploading $z"
+            scp -vvvv $z data.wikipathways.eqiad1.wikimedia.cloud:/var/www/data.wikipathways.org/current/rdf/
+          done
