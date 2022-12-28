@@ -20,17 +20,17 @@ jobs:
           fetch-depth: 0
           ref: main
 
-      #- name: Setup R
-      #  uses: r-lib/actions/setup-r@v2
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
 
-      #- name: Install packages
-      #  run: |
-      #    sudo apt-get install libcurl4-openssl-dev
-      #    Rscript -e 'install.packages(c("tidyr","dplyr","magrittr","yaml","WikidataQueryServiceR"))'
+      - name: Install packages
+        run: |
+          sudo apt-get install libcurl4-openssl-dev
+          Rscript -e 'install.packages(c("tidyr","dplyr","magrittr","yaml","WikidataQueryServiceR"))'
 
-      #- name: Run citedin_lookup.R
-      #  run: |
-      #    Rscript -e "source('_rmd/authors-rdf.R')"
+      - name: Run citedin_lookup.R
+        run: |
+          Rscript -e "source('_rmd/authors-rdf.R')"
 
       - name: Set SSH config
         env:
@@ -43,11 +43,7 @@ jobs:
           echo "ProxyJump apico@bastion.wmcloud.org:22" >> ~/.ssh/config
           touch ~/.ssh/known_hosts
           echo "bastion.wmcloud.org ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAII/Nm3DMfPBR14MWKs0cnuJMKic1v7cYUGUp1SrjStvm" > ~/.ssh/known_hosts
-          echo "bastion.wmcloud.org ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDW4KXvFme2cFv8aMlUQmxCKdwzA3Ns8sTfqXAgS74o43flinbGUiXjSdepr55fA0ys37m9nfjO3wCBGNplLyPaa07FDeWm9tG3VBnqhxS6XESvws+4+hGF/VM8Nw80iTpae6/9pf/P7dma6geTgOuLseHryEd5QqNgLr7b7Ad3PZiKY/X73l3WGU4HFf3/4T1bSlcjPja3DtMEnjglODfPdWeAsBRw0WJ72p2xwptee3h5rr04eOnUIRWv45Gl8oZ06kWgqKY1ggq204Nwn/k3ve/RO/S0h6sHnBSS2P1OQ7Atm3+LsZqxYmuby6ruXASazoBuC/lN+i9VEFIozrD1g/+KnIg9CyumwnzKFXnDZgVUnSLvVGJZnDxa/H/62YPNrhb8BL/tcMYgYyI/tw+O3ORPIVTzzfN4ZDyjjoZfpM3oh0Oiqqk1Me19eYpKQNNorjpmNnDwULUQRixdBDl51z+rw1CqNk91etkE2o52/9zc6eOINeLZK/f6Zj2xqdk=" >> ~/.ssh/known_hosts
-          echo "bastion.wmcloud.org ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBvsw16kBNwAk/tyRRMXoTymAwCgWdsKksrRPKrXLAHVF0k5txR86ohpAeHsep9iIJXq5llRndW5rBICsdbheKM=" >> ~/.ssh/known_hosts
           echo "data.wikipathways.eqiad1.wikimedia.cloud ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOspnIRzrBB/yAPLI9IXV70Ojh5xuvAOj5nwz8cGptfK" >> ~/.ssh/known_hosts
-          echo "data.wikipathways.eqiad1.wikimedia.cloud ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC/xapSI4ZwMfBnH+N1Sw1ghHSqD0wMunsndV1QssyXbEFUi9BbNwhktGD5GJi3MkjPKj6RdV/9iH8JaSJM0l/zEHMTJUpgqZRYqlpHKYs5Hap8fCJqyWWCtS4lMINHHQIzVTHNrfoQ7XBbZ0T3Fs/gQ6BcSi+720pnMGYWWunEGReygqR6TzIXhJ46/nPyV3McPI2vqNiRZXkZCookV/AFuVJMmhhN8ejf0VTB75s0hZzmMPI3kmeJw595MIj45mfUGzEMpdr4FIqnWZRU4YWS+NwJrHIYEh4F2LBvvWxRIR88r9MdblKrNks/+9yBZgHZndl+/hlL6gbC9FEWmRh7S8B3+qRQQpnMH3a/o5zd/zB8E1TjsVsTdHiwWM9Qz1C0bunHliCrA8PCj5dhYwo5RGTdXq1vlvQaxRB1YFm3qJcYmULTkvDi6LuOUIC2FVAmZ/wUqE9wiFjJ0Kv2zd8AQvpV/hh2pahLG01dHQEJRD4VYfcDyIDkJ3fXkxzenl0=" >> ~/.ssh/known_hosts
-          echo "data.wikipathways.eqiad1.wikimedia.cloud ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEQ93/DzVAjRCPPU2FO9J89IZshwzsJU/5RQ34VmaX7fYUagVh0DaHrgxBRpkIZ/aCugiHDO7t83xlxO1Jxwnsg=" >> ~/.ssh/known_hosts
           ssh-agent -a $SSH_AUTH_SOCK > /dev/null   
           ssh-add - <<< "${{ secrets.WMCLOUD_SSH_KEY }}"
 
@@ -55,7 +51,5 @@ jobs:
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
-          for z in wikipathways-*-rdf-authors.zip; do
-            echo "uploading $z"
-            scp -vvvv $z apico@data.wikipathways.eqiad1.wikimedia.cloud:/var/www/data.wikipathways.org/current/rdf/
-          done
+          echo "uploading wikipathways-*-rdf-authors.zip"
+          scp wikipathways-*-rdf-authors.zip apico@data.wikipathways.eqiad1.wikimedia.cloud:/var/www/data.wikipathways.org/current/rdf/
