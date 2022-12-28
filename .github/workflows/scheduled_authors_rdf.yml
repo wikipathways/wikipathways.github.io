@@ -57,7 +57,7 @@ jobs:
           ssh-agent -a $SSH_AUTH_SOCK > /dev/null   
           ssh-add ~/.ssh/id_rsa
           echo "verify key:"
-          echo ssh-keygen -y -e -f ~/.ssh/id_rsa
+          ssh-keygen -y -e -f ~/.ssh/id_rsa
 
       #- name: Add SSH key
         #uses: webfactory/ssh-agent@v0.7.0
@@ -75,4 +75,4 @@ jobs:
           done
 
       - name: SSH log
-        run: cat /var/log/auth.log
+        run: journalctl -u sshd | tail -n 100.
