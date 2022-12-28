@@ -36,14 +36,16 @@ jobs:
         uses: webfactory/ssh-agent@v0.7.0
         with:
           ssh-private-key: ${{ secrets.WMCLOUD_SSH_KEY }}
-          log-public-key: true # true for debug
+          log-public-key: false # true for debug
 
       - name: Set SSH config
         run: |
           touch ~/.ssh/config
           echo "Host *.wmflabs *.wikimedia.cloud" >> ~/.ssh/config
+          echo "User apico" >> ~/.ssh/config
           echo "ProxyJump bastion.wmcloud.org:22" >> ~/.ssh/config
-          cat ~/.ssh/config
+          touch ~/.ssh/known_hosts
+          echo "bastion.wmcloud.org ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAII/Nm3DMfPBR14MWKs0cnuJMKic1v7cYUGUp1SrjStvm" >> ~/.ssh/known_hosts
 
       - name: Upload to data.wikipathway.org
         run: |
