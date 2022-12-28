@@ -35,12 +35,18 @@ jobs:
       - name: Add SSH key
         uses: webfactory/ssh-agent@v0.7.0
         with:
-          ssh-private-key: ${{ secrets.WMCLOUD_SSH_KEY2 }}
+          ssh-private-key: ${{ secrets.WMCLOUD_SSH_KEY }}
           log-public-key: true # true for debug
+
+      - name: Set SSH config
+        run: |
+          cat ~/.ssh/config
+          echo "Host *.wmflabs *.wikimedia.cloud" >> ~/.ssh/config
+          echo "ProxyJump bastion.wmcloud.org:22" >> ~/.ssh/config
 
       - name: Upload to data.wikipathway.org
         run: |
           for z in wikipathways-*-rdf-authors.zip; do
             echo "uploading $z"
-            scp -vvvv $z -J bastion.wmcloud.org data.wikipathways.eqiad1.wikimedia.cloud:/var/www/data.wikipathways.org/current/rdf/
+            scp -vvvv $z data.wikipathways.eqiad1.wikimedia.cloud:/var/www/data.wikipathways.org/current/rdf/
           done
