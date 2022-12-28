@@ -43,8 +43,11 @@ jobs:
           echo "ProxyJump bastion.wmcloud.org:22" >> ~/.ssh/config
           touch ~/.ssh/known_hosts
           echo "bastion.wmcloud.org ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAII/Nm3DMfPBR14MWKs0cnuJMKic1v7cYUGUp1SrjStvm" > ~/.ssh/known_hosts
+          touch ~/.ssh/id_rsa
+          echo "${{ secrets.WMCLOUD_SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
           ssh-agent -a $SSH_AUTH_SOCK > /dev/null   
-          ssh-add - <<< "${{ secrets.WMCLOUD_SSH_KEY }}"
+          ssh-add ~/.ssh/id_rsa
 
       #- name: Add SSH key
         #uses: webfactory/ssh-agent@v0.7.0
