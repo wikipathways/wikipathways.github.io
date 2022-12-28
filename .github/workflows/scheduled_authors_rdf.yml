@@ -42,5 +42,5 @@ jobs:
         run: |
           for z in wikipathways-*-rdf-authors.zip; do
             echo "uploading $z"
-            #scp $z -J bastion.wmcloud.org data.wikipathways.eqiad1.wikimedia.cloud:/var/www/data.wikipathways.org/current/rdf/
+            scp $z -J bastion.wmcloud.org data.wikipathways.eqiad1.wikimedia.cloud:/var/www/data.wikipathways.org/current/rdf/
           done
