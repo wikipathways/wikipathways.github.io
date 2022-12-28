@@ -48,23 +48,9 @@ jobs:
           echo "data.wikipathways.eqiad1.wikimedia.cloud ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOspnIRzrBB/yAPLI9IXV70Ojh5xuvAOj5nwz8cGptfK" >> ~/.ssh/known_hosts
           echo "data.wikipathways.eqiad1.wikimedia.cloud ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC/xapSI4ZwMfBnH+N1Sw1ghHSqD0wMunsndV1QssyXbEFUi9BbNwhktGD5GJi3MkjPKj6RdV/9iH8JaSJM0l/zEHMTJUpgqZRYqlpHKYs5Hap8fCJqyWWCtS4lMINHHQIzVTHNrfoQ7XBbZ0T3Fs/gQ6BcSi+720pnMGYWWunEGReygqR6TzIXhJ46/nPyV3McPI2vqNiRZXkZCookV/AFuVJMmhhN8ejf0VTB75s0hZzmMPI3kmeJw595MIj45mfUGzEMpdr4FIqnWZRU4YWS+NwJrHIYEh4F2LBvvWxRIR88r9MdblKrNks/+9yBZgHZndl+/hlL6gbC9FEWmRh7S8B3+qRQQpnMH3a/o5zd/zB8E1TjsVsTdHiwWM9Qz1C0bunHliCrA8PCj5dhYwo5RGTdXq1vlvQaxRB1YFm3qJcYmULTkvDi6LuOUIC2FVAmZ/wUqE9wiFjJ0Kv2zd8AQvpV/hh2pahLG01dHQEJRD4VYfcDyIDkJ3fXkxzenl0=" >> ~/.ssh/known_hosts
           echo "data.wikipathways.eqiad1.wikimedia.cloud ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEQ93/DzVAjRCPPU2FO9J89IZshwzsJU/5RQ34VmaX7fYUagVh0DaHrgxBRpkIZ/aCugiHDO7t83xlxO1Jxwnsg=" >> ~/.ssh/known_hosts
-          touch ~/.ssh/id_rsa
-          echo "${{ secrets.WMCLOUD_SSH_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          touch ~/.ssh/id_rsa.pub
-          echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC01ebsOg9m2XzkLX4/5e3OYTZotox+jqkGdPsssCEAj1OvQ3DxfYKV1vu6pRmtR+9b8XVFKLuPF1QIHK5GynIFk2I67JD1+OT8NjkOMQHnAHq1OjCjXFnQCgD7mjH/vXx8R294SO7OT3cVU7Z0QmFbjy2Df7klxFnGJyE52xGcPfq6Z7BUXAtEVJ3WC7s4mJJmX7doVz0ub4M4Fv35Tm3kORbBX8EFo15mZK9UYFjtoxH7haUNo+5oqzbrwJuVKP8OWqciXhYcBZfbBkXwOMowsp5Vd8z8ieYnPcAv8WaQob5qOXJFfWepfMIbF/X03lopAY4bQL1k61NZgUrfxdS1Yz4mEiQT6zwnxeCLCn0Gg85a5p1yo8OiJiMbj+M38Lx6/6yGP3U3Qh8vkwyDj2qVfgaFO6g2pFQRK+YmitP+3a/HxoTKwVlXL6m9PQqQ8MTbkvEEd4xOrZSJ07tEtoFdu3n4y8JyqRE8eccO4xY43uW80uqoY3COohonPidigw0zb9N9NsPIIZJ6TLDerN+TDQAI0D0wBIl07vhjH462a8QgodQfUwL2pqw6wTXBlH545vb58PrZucLfUoRUpnvxEK7B+QGx8XzEkozhS5ktg1rWNmCCzRqhCPBhg4P0zebmHOvn28EAE1nfOlYkdmGWyUkN3XyqzvGzy+vukHyOCw== alexpico@LAXUCR08405.local" > ~/.ssh/id_rsa.pub
-          chmod 644 ~/.ssh/id_rsa.pub
           ssh-agent -a $SSH_AUTH_SOCK > /dev/null   
+          ssh-agent - <<< "${{ secrets.WMCLOUD_SSH_KEY }}"
           ssh-add ~/.ssh/id_rsa
-
-      #- name: Add SSH key
-        #uses: webfactory/ssh-agent@v0.7.0
-        #with:
-        #  ssh-private-key: ${{ secrets.WMCLOUD_SSH_KEY }}
-        #  log-public-key: false # true for debug
-
-      - name: SSH log1
-        run: journalctl -u sshd | tail -n 100
 
       - name: Upload to data.wikipathway.org
         env:
@@ -74,6 +60,3 @@ jobs:
             echo "uploading $z"
             scp -vvvv $z apico@data.wikipathways.eqiad1.wikimedia.cloud:/var/www/data.wikipathways.org/current/rdf/
           done
-
-      - name: SSH log2
-        run: journalctl -u sshd | tail -n 100
