@@ -32,10 +32,12 @@ jobs:
       #  run: |
       #    Rscript -e "source('_rmd/authors-rdf.R')"
 
-      - name: Upload to data.wikipathway.org
+      - name: Add SSH key
         uses: webfactory/ssh-agent@v0.7.0
         with:
           ssh-private-key: ${{ secrets.WMCLOUD_SSH_KEY }}
+
+      - name: Upload to data.wikipathway.org
         run: |
           for z in wikipathways-*-rdf-authors.zip; do
             echo "uploading $z"
