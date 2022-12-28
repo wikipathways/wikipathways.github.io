@@ -1,0 +1,52 @@
+name: Generate authors RDF for monthly release
+
+on:
+  workflow_dispatch:
+  schedule:
+  - cron: "0 0 10 * *"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
+jobs:      
+  fetch-pmc:
+    runs-on: ubuntu-20.04
+    steps:
+      #- name: Checkout
+      #  uses: actions/checkout@v2
+      #  with:
+      #    submodules: true
+      #    fetch-depth: 0
+      #    ref: main
+
+      #- name: Setup R
+      #  uses: r-lib/actions/setup-r@v2
+
+      #- name: Install packages
+      #  run: |
+      #    sudo apt-get install libcurl4-openssl-dev
+      #    Rscript -e 'install.packages(c("tidyr","dplyr","magrittr","yaml","WikidataQueryServiceR"))'
+
+      #- name: Run citedin_lookup.R
+      #  run: |
+      #    Rscript -e "source('_rmd/authors-rdf.R')"
+
+      - name: Add SSH key
+              env:
+                  SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+              run: |
+                  mkdir -p /home/runner/.ssh
+                  ssh-keyscan data.wikipathways.eqiad1.wikimedia.cloud >> /home/runner/.ssh/known_hosts
+                  ssh-keyscan bastion.wmcloud.org >> /home/runner/.ssh/known_hosts
+                  echo "${{ secrets.WMCLOUD_SSH_KEY }}" > /home/runner/.ssh/github_actions
+                  chmod 600 /home/runner/.ssh/github_actions
+                  ssh-agent -a $SSH_AUTH_SOCK > /dev/null   
+                  ssh-add /home/runner/.ssh/github_actions
+
+      - name: Upload to data.wikipathway.org
+        run: |
+          for z in wikipathways-*-rdf-authors.zip; do
+            echo "uploading $z"
+            scp $z -J bastion.wmcloud.org data.wikipathways.eqiad1.wikimedia.cloud:/var/www/data.wikipathways.org/current/rdf/
+          done
