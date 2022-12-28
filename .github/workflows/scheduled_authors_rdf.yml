@@ -49,7 +49,7 @@ jobs:
           echo "data.wikipathways.eqiad1.wikimedia.cloud ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC/xapSI4ZwMfBnH+N1Sw1ghHSqD0wMunsndV1QssyXbEFUi9BbNwhktGD5GJi3MkjPKj6RdV/9iH8JaSJM0l/zEHMTJUpgqZRYqlpHKYs5Hap8fCJqyWWCtS4lMINHHQIzVTHNrfoQ7XBbZ0T3Fs/gQ6BcSi+720pnMGYWWunEGReygqR6TzIXhJ46/nPyV3McPI2vqNiRZXkZCookV/AFuVJMmhhN8ejf0VTB75s0hZzmMPI3kmeJw595MIj45mfUGzEMpdr4FIqnWZRU4YWS+NwJrHIYEh4F2LBvvWxRIR88r9MdblKrNks/+9yBZgHZndl+/hlL6gbC9FEWmRh7S8B3+qRQQpnMH3a/o5zd/zB8E1TjsVsTdHiwWM9Qz1C0bunHliCrA8PCj5dhYwo5RGTdXq1vlvQaxRB1YFm3qJcYmULTkvDi6LuOUIC2FVAmZ/wUqE9wiFjJ0Kv2zd8AQvpV/hh2pahLG01dHQEJRD4VYfcDyIDkJ3fXkxzenl0=" >> ~/.ssh/known_hosts
           echo "data.wikipathways.eqiad1.wikimedia.cloud ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEQ93/DzVAjRCPPU2FO9J89IZshwzsJU/5RQ34VmaX7fYUagVh0DaHrgxBRpkIZ/aCugiHDO7t83xlxO1Jxwnsg=" >> ~/.ssh/known_hosts
           ssh-agent -a $SSH_AUTH_SOCK > /dev/null   
-          ssh-agent - <<< "${{ secrets.WMCLOUD_SSH_KEY }}"
+          ssh-add - <<< "${{ secrets.WMCLOUD_SSH_KEY }}"
 
       - name: Upload to data.wikipathway.org
         env:
