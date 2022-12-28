@@ -34,12 +34,12 @@ jobs:
 
       - name: Set SSH config
         run: |
-          touch ~/.ssh/config
-          echo "Host *.wmflabs *.wikimedia.cloud" >> ~/.ssh/config
-          echo "User apico" >> ~/.ssh/config
-          echo "ProxyJump bastion.wmcloud.org:22" >> ~/.ssh/config
-          touch ~/.ssh/known_hosts
-          echo "bastion.wmcloud.org ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAII/Nm3DMfPBR14MWKs0cnuJMKic1v7cYUGUp1SrjStvm" >> ~/.ssh/known_hosts
+          touch $HOME/.ssh/config
+          echo "Host *.wmflabs *.wikimedia.cloud" >> $HOME/.ssh/config
+          echo "User apico" >> $HOME/.ssh/config
+          echo "ProxyJump bastion.wmcloud.org:22" >> $HOME/.ssh/config
+          touch $HOME/.ssh/known_hosts
+          echo "bastion.wmcloud.org ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAII/Nm3DMfPBR14MWKs0cnuJMKic1v7cYUGUp1SrjStvm" >> $HOME/.ssh/known_hosts
 
       - name: Add SSH key
         uses: appleboy/scp-action@master
