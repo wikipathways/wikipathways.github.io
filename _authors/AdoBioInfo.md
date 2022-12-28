@@ -5,7 +5,7 @@ website:
 affiliation: 
 bio: 
 github: 
-orcid: 0000-0002-6434-7527
+orcid: 
 linkedin: 
 googlescholar: 
 wikidata: 

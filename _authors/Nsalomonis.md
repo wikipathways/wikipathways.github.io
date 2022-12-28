@@ -8,7 +8,7 @@ github:
 orcid: 0000-0001-9689-2469
 linkedin: 
 googlescholar: 
-wikidata: 
+wikidata: Q89864869
 twitter: 
 mastodon-url: 
 meta:
