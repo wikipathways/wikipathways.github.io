@@ -40,9 +40,10 @@ jobs:
 
       - name: Set SSH config
         run: |
-          cat ~/.ssh/config
+          touch ~/.ssh/config
           echo "Host *.wmflabs *.wikimedia.cloud" >> ~/.ssh/config
           echo "ProxyJump bastion.wmcloud.org:22" >> ~/.ssh/config
+          cat ~/.ssh/config
 
       - name: Upload to data.wikipathway.org
         run: |
