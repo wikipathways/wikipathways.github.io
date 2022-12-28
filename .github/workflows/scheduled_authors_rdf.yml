@@ -28,7 +28,7 @@ jobs:
           sudo apt-get install libcurl4-openssl-dev
           Rscript -e 'install.packages(c("tidyr","dplyr","magrittr","yaml","WikidataQueryServiceR"))'
 
-      - name: Run citedin_lookup.R
+      - name: Run authors-rdf.R
         run: |
           Rscript -e "source('_rmd/authors-rdf.R')"
 

@@ -26,29 +26,35 @@ authors.df <- do.call(rbind, df)
 
 # Only orcid authors
 orcid.df <- dplyr::filter(authors.df, !is.na(orcid))
-nowd.df <- orcid.df %>%
+nowd.df <- orcid.df[2:8,] %>%
   dplyr::filter(is.na(wikidata)) %>%
   dplyr::select(-wikidata)
-## use SPARQL to get Wikidata ID
-query <- 'SELECT DISTINCT ?person ?personLabel WHERE {\n  ?person wdt:P496 "XXX" .\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" .\n  }\n}'
-res.ls<-apply(nowd.df, 1, function(x){
-  wdq <- gsub("XXX",x['orcid'],query)
-  res <- WikidataQueryServiceR::query_wikidata(wdq)
-  if(nrow(res)==1){
-    c(gsub("http://www.wikidata.org/entity/","",res$person),  res$personLabel)
-  } else {
-    c(NA, NA)
-  }
-})
-res.df <- data.frame(matrix(unlist(res.ls), nrow = length(res.ls)/2, byrow = T ),stringsAsFactors = F)
-colnames(res.df)<-c("wikidata","fullName")
-orcid_wd.df <- nowd.df %>%
-  dplyr::bind_cols(res.df) %>%
-  dplyr::select(-fullName) %>%
-  rbind(orcid.df) %>%
+orcid_wd.df <- orcid.df %>%
   tidyr::drop_na() %>%
   #dplyr::mutate(username=gsub(" ","_",username)) %>%
   distinct(username, orcid, wikidata) 
+if(nrow(nowd.df) > 0){
+  ## use SPARQL to get missing Wikidata IDs
+  query <- 'SELECT DISTINCT ?person ?personLabel WHERE {\n  ?person wdt:P496 "XXX" .\n  SERVICE wikibase:label {\n    bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" .\n  }\n}'
+  res.ls<-apply(nowd.df, 1, function(x){
+    wdq <- gsub("XXX",x['orcid'],query)
+    res <- WikidataQueryServiceR::query_wikidata(wdq)
+    if(nrow(res)==1){
+      c(gsub("http://www.wikidata.org/entity/","",res$person),  res$personLabel)
+    } else {
+      c(NA, NA)
+    }
+  })
+  res.df <- data.frame(matrix(unlist(res.ls), nrow = length(res.ls)/2, byrow = T ),stringsAsFactors = F)
+  colnames(res.df)<-c("wikidata","fullName")
+  orcid_wd.df <- nowd.df %>%
+    dplyr::bind_cols(res.df) %>%
+    dplyr::select(-fullName) %>%
+    rbind(orcid.df) %>%
+    tidyr::drop_na() %>%
+    #dplyr::mutate(username=gsub(" ","_",username)) %>%
+    distinct(username, orcid, wikidata) 
+}
 
 # Authors per pathway
 pathway.mds <- list.files("_pathways",".md")
