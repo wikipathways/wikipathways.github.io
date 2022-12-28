@@ -40,7 +40,7 @@ jobs:
           touch ~/.ssh/config
           echo "Host *.wmflabs *.wikimedia.cloud" > ~/.ssh/config
           echo "User apico" >> ~/.ssh/config
-          echo "ProxyJump bastion.wmcloud.org:22" >> ~/.ssh/config
+          echo "ProxyJump apico@bastion.wmcloud.org:22" >> ~/.ssh/config
           touch ~/.ssh/known_hosts
           echo "bastion.wmcloud.org ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAII/Nm3DMfPBR14MWKs0cnuJMKic1v7cYUGUp1SrjStvm" > ~/.ssh/known_hosts
           echo "bastion.wmcloud.org ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDW4KXvFme2cFv8aMlUQmxCKdwzA3Ns8sTfqXAgS74o43flinbGUiXjSdepr55fA0ys37m9nfjO3wCBGNplLyPaa07FDeWm9tG3VBnqhxS6XESvws+4+hGF/VM8Nw80iTpae6/9pf/P7dma6geTgOuLseHryEd5QqNgLr7b7Ad3PZiKY/X73l3WGU4HFf3/4T1bSlcjPja3DtMEnjglODfPdWeAsBRw0WJ72p2xwptee3h5rr04eOnUIRWv45Gl8oZ06kWgqKY1ggq204Nwn/k3ve/RO/S0h6sHnBSS2P1OQ7Atm3+LsZqxYmuby6ruXASazoBuC/lN+i9VEFIozrD1g/+KnIg9CyumwnzKFXnDZgVUnSLvVGJZnDxa/H/62YPNrhb8BL/tcMYgYyI/tw+O3ORPIVTzzfN4ZDyjjoZfpM3oh0Oiqqk1Me19eYpKQNNorjpmNnDwULUQRixdBDl51z+rw1CqNk91etkE2o52/9zc6eOINeLZK/f6Zj2xqdk=" >> ~/.ssh/known_hosts
@@ -56,8 +56,6 @@ jobs:
           chmod 644 ~/.ssh/id_rsa.pub
           ssh-agent -a $SSH_AUTH_SOCK > /dev/null   
           ssh-add ~/.ssh/id_rsa
-          echo "verify key:"
-          ssh-keygen -y -e -f ~/.ssh/id_rsa
 
       #- name: Add SSH key
         #uses: webfactory/ssh-agent@v0.7.0
@@ -65,14 +63,17 @@ jobs:
         #  ssh-private-key: ${{ secrets.WMCLOUD_SSH_KEY }}
         #  log-public-key: false # true for debug
 
+      - name: SSH log1
+        run: journalctl -u sshd | tail -n 100
+
       - name: Upload to data.wikipathway.org
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
           for z in wikipathways-*-rdf-authors.zip; do
             echo "uploading $z"
-            scp -vvvv $z data.wikipathways.eqiad1.wikimedia.cloud:/var/www/data.wikipathways.org/current/rdf/
+            scp -vvvv $z apico@data.wikipathways.eqiad1.wikimedia.cloud:/var/www/data.wikipathways.org/current/rdf/
           done
 
-      - name: SSH log
-        run: journalctl -u sshd | tail -n 100.
+      - name: SSH log2
+        run: journalctl -u sshd | tail -n 100
