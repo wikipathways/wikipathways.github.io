@@ -32,12 +32,6 @@ jobs:
       #  run: |
       #    Rscript -e "source('_rmd/authors-rdf.R')"
 
-      - name: Add SSH key
-        uses: webfactory/ssh-agent@v0.7.0
-        with:
-          ssh-private-key: ${{ secrets.WMCLOUD_SSH_KEY }}
-          log-public-key: false # true for debug
-
       - name: Set SSH config
         run: |
           touch ~/.ssh/config
@@ -47,9 +41,21 @@ jobs:
           touch ~/.ssh/known_hosts
           echo "bastion.wmcloud.org ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAII/Nm3DMfPBR14MWKs0cnuJMKic1v7cYUGUp1SrjStvm" >> ~/.ssh/known_hosts
 
-      - name: Upload to data.wikipathway.org
-        run: |
-          for z in wikipathways-*-rdf-authors.zip; do
-            echo "uploading $z"
-            scp -vvvv $z data.wikipathways.eqiad1.wikimedia.cloud:/var/www/data.wikipathways.org/current/rdf/
-          done
+      - name: Add SSH key
+        uses: appleboy/scp-action@master
+        with:
+          host: "data.wikipathways.eqiad1.wikimedia.cloud"
+          key: ${{ secrets.WMCLOUD_SSH_KEY }}
+          source: "wikipathways-*-rdf-authors.zip"
+          target: "/var/www/data.wikipathways.org/current/rdf/"
+        #uses: webfactory/ssh-agent@v0.7.0
+        #with:
+        #  ssh-private-key: ${{ secrets.WMCLOUD_SSH_KEY }}
+        #  log-public-key: false # true for debug
+
+      #- name: Upload to data.wikipathway.org
+      #  run: |
+      #    for z in wikipathways-*-rdf-authors.zip; do
+      #      echo "uploading $z"
+      #      scp -vvvv $z data.wikipathways.eqiad1.wikimedia.cloud:/var/www/data.wikipathways.org/current/rdf/
+      #    done
