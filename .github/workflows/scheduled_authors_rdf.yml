@@ -36,6 +36,7 @@ jobs:
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
+          mkdir -p ~/.ssh
           touch ~/.ssh/config
           echo "Host *.wmflabs *.wikimedia.cloud" > ~/.ssh/config
           echo "User apico" >> ~/.ssh/config
