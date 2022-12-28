@@ -50,7 +50,6 @@ jobs:
           echo "data.wikipathways.eqiad1.wikimedia.cloud ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEQ93/DzVAjRCPPU2FO9J89IZshwzsJU/5RQ34VmaX7fYUagVh0DaHrgxBRpkIZ/aCugiHDO7t83xlxO1Jxwnsg=" >> ~/.ssh/known_hosts
           ssh-agent -a $SSH_AUTH_SOCK > /dev/null   
           ssh-agent - <<< "${{ secrets.WMCLOUD_SSH_KEY }}"
-          ssh-add ~/.ssh/id_rsa
 
       - name: Upload to data.wikipathway.org
         env:
