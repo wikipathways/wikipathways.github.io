@@ -4,13 +4,13 @@ realname: Lars Willighagen
 website: 
 affiliation: 
 bio: 
-github: 
+github: larsgw
 orcid: 0000-0002-4751-4637
 linkedin: 
-googlescholar: 
+googlescholar: r9lmG00AAAAJ
 wikidata: Q45907528
-twitter: 
-mastodon-url: 
+twitter: larswillighagen
+mastodon-url: https://mastodon.social/@larsgw
 meta:
 instagram:
 ---
