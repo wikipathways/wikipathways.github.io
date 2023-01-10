@@ -3,7 +3,7 @@ name: Generate authors RDF for monthly release
 on:
   workflow_dispatch:
   schedule:
-  - cron: "0 0 10 * *"
+  - cron: "30 08 10 * *"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
