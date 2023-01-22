@@ -36,7 +36,7 @@ Help review pathway edits, monitor automated reports, or join the <b><i>Curator 
 <div class="row">
 {% for a in page.curators %}
     {% assign auth = site.authors | where: "username", a | first  %}
-<div class="col-sm-3"><div class="card mb-3" style="max-width: 300px; padding:5px; background-color:#EEEEFF;">
+<div class="col-sm-3"><div class="card mb-3" style="max-width: 300px; padding:5px; background-color:#eae6ff;">
   <div class="row no-gutters">
     <div class="col-md-4">
       <img src="https://github.com/{{auth.github}}.png" style="object-fit: cover; border-radius: 50%; width: 75px; margin: 5px;" class="card-img" alt="No photo">

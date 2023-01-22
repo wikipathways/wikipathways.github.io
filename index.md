@@ -1,6 +1,19 @@
 ---
 layout: home2
 title: Home
+curator_of_the_week:
+- Madeomuga
+- Elisson nl
+- AlexanderPico
+- Ddigles
+- Fehrhart
+- NhungP
+- Mkutmon
+- Susan
+- Andra
+- DeSl
+- Khanspers
+- L Dupuis
 ---
 <div style="background: linear-gradient(0deg, #fefefe, #eae6ff 100%);">
   {%- include_cached header.html %}
@@ -73,11 +86,26 @@ title: Home
             <div class="bg-gradient p-3">
               <div class="container" style="margin-left:25px;">
                 <h1 style="font-family:Linux Libertine; ">Dedicated to open science</h1><h2 style="font-family:Poppins; color: #6c757d;line-height:1.4"> Join hundreds of other scientists by contributing your pathway knowledge.</h2>
-            <div style="width:90px;">
-                <a class="btn btn-sm btn-front w-100 my-2" href="/help.html#create">Create</a>
-                <a class="btn btn-sm btn-front w-100 my-2" href="/help.html#curate">Curate</a>
-                <a class="btn btn-sm btn-front w-100 my-2" href="https://github.com/wikipathways/wikipathways-development" target="_blank">Code</a>
-            </div>
+                    <a class="btn btn-sm btn-front my-2" href="/help.html#create">Create</a>
+                    <a class="btn btn-sm btn-front my-2" href="/help.html#curate">Curate</a>
+                    <a class="btn btn-sm btn-front my-2" href="https://github.com/wikipathways/wikipathways-development" target="_blank">Code</a>
+                <br /><br /><h2>Curator of the Week</h2>
+                {% assign pick =  "now" | date:"%W" | minus: 1 | modulo: page.curator_of_the_week.size %}
+                {% assign cauth = site.authors | where: "username", page.curator_of_the_week[pick] | first  %}
+                <div class="card mb-3" style="max-width: 300px; padding:5px; background-color:#eae6ff;">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <img src="https://github.com/{{cauth.github}}.png" style="object-fit: cover; border-radius: 50%; width: 75px; margin: 5px;" class="card-img" alt="No photo">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">{{cauth.realname}}</h5>
+                        <p class="card-text"></p>
+                        <a href="{{cauth.url}}" class="btn btn-sm btn-info">View profile</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
