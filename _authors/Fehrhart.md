@@ -4,7 +4,7 @@ realname: Friederike Ehrhart
 website: 
 affiliation: 
 bio: 
-github: 
+github: fehrhart
 orcid: 0000-0002-7770-620X
 linkedin: 
 googlescholar: 

@@ -4,7 +4,7 @@ realname: Andra Waagmeester
 website: 
 affiliation: 
 bio: 
-github: 
+github: andrawaag
 orcid: 0000-0001-9773-4008
 linkedin: 
 googlescholar: 

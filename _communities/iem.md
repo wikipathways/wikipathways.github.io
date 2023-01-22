@@ -8,7 +8,11 @@ logo:
 logo-link: 
 support: 
 contribute: "If you know of a pathway that should be added, please contact Denise Slenter (denise.slenter[AT]maastrichtuniversity.nl)."
+
 community-tag: "IEM"
+
+editors: 
+- DeSl
 
 redirect_from:
   - /index.php/Portal:IEM

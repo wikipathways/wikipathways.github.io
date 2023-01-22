@@ -9,6 +9,9 @@ support: "The PancCanNet project has received funding from The Netherlands Organ
 contribute: "The pancreatic cancer collection of pathways can be edited, fixed, and added to using the pathway drawing and annotation tools here at WikiPathways. Contact Martina Kutmon (mkutmon[AT]gmail.com) if interested in curating, adding, or using pancreatic cancer pathways."
 community-tag: "PancCanNet"
 
+editors:
+- Mkutmon
+
 redirect_from:
   - /index.php/Portal:PancCanNet
 ---

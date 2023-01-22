@@ -4,7 +4,7 @@ realname: Susan Coort
 website: 
 affiliation: 
 bio: 
-github: 
+github: susancoort
 orcid: 0000-0003-1224-9690
 linkedin: 
 googlescholar: 

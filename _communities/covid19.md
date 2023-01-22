@@ -30,6 +30,11 @@ contribute: "We are helping to coordinate an international effort to build and c
 
 community-tag: "COVID19"
 
+editors:
+- DeSl
+- Egonw
+- AlexanderPico
+
 redirect_from:
   - /index.php/Portal:COVID-19
 ---

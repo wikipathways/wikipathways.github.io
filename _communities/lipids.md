@@ -18,6 +18,9 @@ support: "Thanks to the [LIPID MAPS team](https://lipidmaps.org/) for sharing th
 contribute: "If you know of a pathway that should be added, please contact the administrator (denise.slenter[AT]maastrichtuniversity.nl)."
 community-tag: "Lipids"
 
+editors: 
+- DeSl
+
 collections-title: "LIPID MAPS Categories"
 collections:
 - name: "Fatty Acids [FA01]"

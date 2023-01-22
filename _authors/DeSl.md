@@ -4,7 +4,7 @@ realname: Denise Slenter
 website: 
 affiliation: 
 bio: 
-github: 
+github: DeniseSl22
 orcid: 0000-0001-8449-1318
 linkedin: 
 googlescholar: 

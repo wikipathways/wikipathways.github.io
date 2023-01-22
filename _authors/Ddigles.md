@@ -4,7 +4,7 @@ realname: Daniela Digles
 website: 
 affiliation: 
 bio: 
-github: 
+github: danidi
 orcid: 0000-0001-5934-3559
 linkedin: 
 googlescholar: 

@@ -1,10 +1,10 @@
 ---
 username: L Dupuis
-realname: L Dupuis
+realname: Lauren J. Dupuis
 website: 
 affiliation: 
 bio: 
-github: 
+github: LaurenDupuis
 orcid: 
 linkedin: 
 googlescholar: 

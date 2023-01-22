@@ -54,7 +54,7 @@ title: Style
 <div style="clear:both;">
 Secondary Palette<br/>
   <div style="width:100px;height:200px;margin:0px 10px;border:0px;text-align:center;background:#3955E7;color:white;float:left">Organism Blue<br/>#3955E7</div>
-  <div style="width:100px;height:200px;margin:0px 10px;border:0px;text-align:center;background:#00CC9E;color:white;float:left;">Community Green<br/>#00CC9E</div>
+  <div style="width:100px;height:200px;margin:0px 10px;border:0px;text-align:center;background:#00BB7D;color:white;float:left;">Community Green<br/>#00BB7D</div>
   <div style="width:100px;height:200px;margin:0px 10px;border:1px solid #000;text-align:center;background:#880BC8;color:white;float:left;">Annotation Purple<br/>#880BC8</div>
   <div style="width:100px;height:200px;margin:0px 10px;border:0px;text-align:center;background:#FF8120;color:white;float:left;">Pathway Orange<br/>#FF8120</div>
 <div style="clear:both;">
