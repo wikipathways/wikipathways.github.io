@@ -58,6 +58,7 @@ markdown: kramdown
 #
 exclude:
 #   - .sass-cache/
+  - vendor
   - .jekyll-cache/
 #   - gemfiles/
 #   - Gemfile
@@ -67,7 +68,6 @@ exclude:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-  - [vendor]
 
 # Defaults
 defaults:
