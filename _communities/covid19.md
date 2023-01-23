@@ -32,6 +32,7 @@ community-tag: "COVID19"
 
 editors:
 - Mkutmon
+- NhungP
 - DeSl
 - Egonw
 - AlexanderPico
