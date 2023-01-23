@@ -51,7 +51,7 @@ layout: default
     <div class="row" style="margin-left: 10px;">
       <ul>
         {% for pw in sorted_pathways %}
-              <li><a href="{{ pw.url }}">{{ pw.title }}</a></li>
+              <li><a href="{{ pw.url }}">{{ pw.title }} - {{pw.wpid}}</a></li>
         {% endfor %}
       </ul>
     </div>  

@@ -99,7 +99,7 @@ layout: default
     <div class="row" style="margin-left: 0px;">
       <ul style="list-style-type: none; margin-left: 0px;">
         {% for pw in sorted_pathways %}
-              <li><a href="{{ pw.url }}">{{ pw.title }} <em>({{ pw.organisms.first }})</em></a></li>
+              <li><a href="{{ pw.url }}">{{ pw.title }} - {{pw.wpid}} <em>({{ pw.organisms.first }})</em></a></li>
         {% endfor %}
       </ul>
     </div>  

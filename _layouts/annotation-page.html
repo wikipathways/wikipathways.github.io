@@ -47,7 +47,7 @@ layout: default
         {% for pw in sorted_pathways %}
           {% assign annot-values= pw.annotations | where: "type", page.type | map: "parent" %}
           {% if annot-values contains page.value %}
-              <li><a href="{{ pw.url }}">{{ pw.title }} <em>({{ pw.organisms.first }})</em></a></li>
+              <li><a href="{{ pw.url }}">{{ pw.title }} - {{pw.wpid}} <em>({{ pw.organisms.first }})</em></a></li>
           {% endif %}
         {% endfor %}
       </ul>

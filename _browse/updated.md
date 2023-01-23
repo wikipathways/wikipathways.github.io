@@ -42,7 +42,7 @@ btn-class: "btn-front"
     <div class="row" style="margin-left: 10px;">
       <ul>
         {% for pw in sorted_pathways %}
-              <li><a href="{{ pw.url }}">{{pw.wpid}}: {{ pw.title }} <em>({{ pw.organisms.first }})</em> --<b>last edited: {{ pw.last-edited }}</b></a></li>
+              <li><a href="{{ pw.url }}">{{ pw.title }} - {{pw.wpid}} <em>({{ pw.organisms.first }})</em> --<b>last edited: {{ pw.last-edited }}</b></a></li>
         {% endfor %}
       </ul>
     </div>  

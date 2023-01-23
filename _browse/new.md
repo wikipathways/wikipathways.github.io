@@ -16,7 +16,7 @@ btn-class: "btn-front"
       <a class="nav-link" data-toggle="tab" href="#list">List</a>
     </li>
 </ul>
-{% assign sorted_pathways = site.pathways | sort: "wpid" | reverse %}
+{% assign sorted_pathways = site.pathways | sort: "last-edited" | reverse %}
 <div class="tab-content" >
     <div class="tab-pane fade show active" id="gallery" role="tabpanel">
         <br/>
@@ -54,7 +54,7 @@ btn-class: "btn-front"
             {% if j > 20 %}
               {% break %}
             {% endif %}
-            <li><a href="{{ pw.url }}">{{pw.wpid}}: {{ pw.title }} <em>({{ pw.organisms.first }})</em> --<b>last edited: {{ pw.last-edited }}</b></a></li>
+            <li><a href="{{ pw.url }}">{{ pw.title }} - {{pw.wpid}} <em>({{ pw.organisms.first }})</em> --<b>last edited: {{ pw.last-edited }}</b></a></li>
           {% endif %}
         {% endfor %}
       </ul>
