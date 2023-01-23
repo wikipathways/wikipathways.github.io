@@ -6,7 +6,7 @@ btn-class: "btn-front"
 ---
     
 <h2 id="title">Recently Updated Pathways</h2>
-<p>A sorted list of 20 pathways that have been recently edited.</p> 
+<p>A date-sorted list of 20 pathways that have been recently edited.  <em>Note: This does not include pathways pending review.</em></p> 
 
 <h2>Pathways</h2>
 <ul class="nav nav-tabs">
