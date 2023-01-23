@@ -31,6 +31,7 @@ contribute: "We are helping to coordinate an international effort to build and c
 community-tag: "COVID19"
 
 editors:
+- Mkutmon
 - DeSl
 - Egonw
 - AlexanderPico
