@@ -19,6 +19,10 @@ architects:
 - Mkutmon
 - AlexanderPico
 
+coordination:
+- Khanspers
+- Susan
+
 founders:
 - Thomas
 - AlexanderPico
@@ -29,6 +33,23 @@ founders:
 ---
 <h1>Who is behind WikiPathways?</h1>
 WikiPathways is run by people like you! Join our teams of <a href="#curators">curators</a>, <a href="#community_editors">community editors</a> and <a href="#developers">developers</a> to maintain this public resource of pathway information.
+
+<a name="architects"/>
+<h2>Coordination</h2>
+<b>Architects:</b> Responsible for roadmap planning, onboarding new developers, and setting best practices.
+<ul>
+{% for a in page.architects %}
+    {% assign auth = site.authors | where: "username", a | first  %}
+    <li><a href="{{site.url}}/authors/{{a}}.html" title="View profile">{{ auth.realname }}</a></li>
+{% endfor %}
+</ul>
+<b>Community Coordinators:</b> Responsible for curation coordination, organization of community meetings, educational material.
+<ul>
+{% for a in page.coordination %}
+    {% assign auth = site.authors | where: "username", a | first  %}
+    <li><a href="{{site.url}}/authors/{{a}}.html" title="View profile">{{ auth.realname }}</a></li>
+{% endfor %}
+</ul>
 
 <a name="curators"/>
 <h2>Curators</h2>
@@ -74,16 +95,6 @@ Interested in a focused subset of pathways, for example relating to a disease or
 The WikiPathways project is 100% open source. Dive under the hood to review and contribute to the code base.
 <ul>
     <li><a href="https://github.com/orgs/wikipathways/people" title="View code contributors" target="_blank">See all WikiPathways code contributors</a></li>
-</ul>
-
-<a name="architects"/>
-<h2>Architects</h2>
-Responsible for roadmap planning, onboarding new developers, and setting best practices.
-<ul>
-{% for a in page.architects %}
-    {% assign auth = site.authors | where: "username", a | first  %}
-    <li><a href="{{site.url}}/authors/{{a}}.html" title="View profile">{{ auth.realname }}</a></li>
-{% endfor %}
 </ul>
 
 <a name="founders"/>
