@@ -9,9 +9,7 @@ curators:
 - Fehrhart
 - Ddigles
 - Susan
-- L Dupuis
 - Andra
-- NhungP
 - Elisson nl
 - Madeomuga
 
