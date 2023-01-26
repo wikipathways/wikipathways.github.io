@@ -21,7 +21,7 @@ community-tag: "Lipids"
 editors: 
 - DeSl
 
-collections-title: "LIPID MAPS Categories"
+collections-title: "LIPID MAPS Pathways"
 collections:
 - name: "Fatty Acids [FA01]"
   wpids: ['WP4350', 'WP4351']
