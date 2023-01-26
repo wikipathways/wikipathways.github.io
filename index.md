@@ -7,13 +7,11 @@ curator_of_the_week:
 - AlexanderPico
 - Ddigles
 - Fehrhart
-- NhungP
 - Mkutmon
 - Susan
 - Andra
 - DeSl
 - Khanspers
-- L Dupuis
 ---
 <div style="background: linear-gradient(0deg, #fefefe, #eae6ff 100%);">
   {%- include_cached header.html %}
