@@ -363,7 +363,7 @@ curator_of_the_week:
       <a href="https://amp.pharm.mssm.edu/Enrichr/" title="Enrichr is a comprehensive gene set enrichment analysis web server. Includes WikiPathways as one of their data sources." target="_blank">
       <img src="/assets/img/logo-enrichr.png" alt="Enrichr logo" height="55px" style="padding:2px 8px" /></a>
       <a href="https://bioconductor.org/packages/clusterProfiler/" title="The clusterProfiler R package supports GO and pathway analysis performed as overrepresentation or GSEA." target="_blank">
-      <img src="/assets/img/logo-clusterprofiler.png" alt="ClusterProfiler logo" height="55px" style="padding:2px 8px" /></a>
+      <img src="/assets/img/logo-clusterprofiler.png" alt="clusterProfiler logo" height="55px" style="padding:2px 8px" /></a>
       <a href="/tools.html" style="font-size:1.0em; text-decoration:none;">and many more...</a>
                 </div>
               </div>              
