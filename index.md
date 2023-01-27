@@ -352,18 +352,18 @@ curator_of_the_week:
                 <br/>
       <a href="https://pathvisio.org/" 
       title="PathVisio is a free open-source pathway analysis and drawing software which allows drawing, editing, and analyzing biological pathways." target="_blank">
-      <img src="/assets/img/logo-pathvisio.png" height="55px" style="padding:2px 1px"/></a>
+      <img src="/assets/img/logo-pathvisio.png" alt="PathVisio logo" height="55px" style="padding:2px 1px"/></a>
       <a href="http://apps.cytoscape.org/apps/wikipathways" 
       title="Cytoscape is an open source software platform for visualizing complex-networks and integrating these with any type of attribute data." target="_blank">
-      <img src="/assets/img/logo-cytoscape.png" height="55px" style="padding:2px 2px" /></a>
+      <img src="/assets/img/logo-cytoscape.png" alt="Cytoscape logo" height="55px" style="padding:2px 2px" /></a>
       <a href="https://biit.cs.ut.ee/gprofiler/gost" title="g:Profiler is a public web server for characterising and manipulating gene lists." target="_blank">
-      <img src="/assets/img/logo-gprofiler.png" height="55px" style="padding:2px 1px" /></a>
+      <img src="/assets/img/logo-gprofiler.png" alt="gprofiler logo" height="55px" style="padding:2px 1px" /></a>
       <a href="https://www.webgestalt.org/" title="WebGestalt is designed for functional genomic, proteomic and large-scale genetic studies from which large number of gene lists." target="_blank">
-      <img src="/assets/img/logo-webgestalt.png" height="55px" style="padding:2px 4px" /></a>
+      <img src="/assets/img/logo-webgestalt.png" alt="webgestalt logo" height="55px" style="padding:2px 4px" /></a>
       <a href="https://amp.pharm.mssm.edu/Enrichr/" title="Enrichr is a comprehensive gene set enrichment analysis web server. Includes WikiPathways as one of their data sources." target="_blank">
-      <img src="/assets/img/logo-enrichr.png" height="55px" style="padding:2px 8px" /></a>
+      <img src="/assets/img/logo-enrichr.png" alt="Enrichr logo" height="55px" style="padding:2px 8px" /></a>
       <a href="https://bioconductor.org/packages/clusterProfiler/" title="The clusterProfiler R package supports GO and pathway analysis performed as overrepresentation or GSEA." target="_blank">
-      <img src="/assets/img/logo-clusterprofiler.png" height="55px" style="padding:2px 8px" /></a>
+      <img src="/assets/img/logo-clusterprofiler.png" alt="clusterProfiler logo" height="55px" style="padding:2px 8px" /></a>
       <a href="/tools.html" style="font-size:1.0em; text-decoration:none;">and many more...</a>
                 </div>
               </div>              
