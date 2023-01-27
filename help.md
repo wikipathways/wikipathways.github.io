@@ -215,6 +215,18 @@ This code will produce the following iframe:</p>
 </div></div>
 
 <hr>
+<h1>Move from classic WikiPathways</h1>
+<p>We are still in the process of moving from the classi WikiPathways site, and during this time some aspects of the site will work differently:</p>
+<ul>
+    <li>Uploading pathway content and making edits to pathways will <b>require a WikiPathways account</b> content, since content is wtill deposited to the classic site (https://www.wikipathways.org/). Once the move is complete, a GitHub account will be sufficient to upload/edit pathways at WikiPathways.</li>
+    <li>This website <b>contains only approved pathways</b> that have undergone review. Consequently, newly uploaded pathways will be immediately available on the classic site (https://www.wikipathways.org/), but will not be visible on this site until they are completed and approved. Once a pathway is uploaded to WikiPathways classic, the process of including them on the new site is as follows:
+        <ul>
+            <li><b>Pathways under construction</b>: If your pathway is still under construction, keep the "Under Construction" tag. You can keep working on the pathway and it will stay on the classic site.</li>
+            <li><b>Completed pathways</b>: If your pathway is complete, remove the "Under Construction" tag. The pathway will be reviewed by our Curators. Once it is approved, it will be made available on the new site. This process typically takes 5-7 days right now.</li>
+        </ul>
+</ul>
+
+<hr>
 <div id="faq">
 <h1>FAQ</h1>
 <p>Have a question? See if the answer is in our collection of <a href="https://github.com/wikipathways/wikipathways-faq/discussions" target="_blank">frequently asked questions</a>.</p>
