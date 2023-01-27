@@ -1,16 +1,19 @@
 ---
 username: Fehrhart
 realname: Friederike Ehrhart
-website: 
-affiliation: 
-bio: 
+website: ~
+affiliation: ~
+bio: ~
 github: fehrhart
 orcid: 0000-0002-7770-620X
-linkedin: 
-googlescholar: 
+linkedin: ~
+googlescholar: ~
 wikidata: Q28025534
-twitter: 
-mastodon-url: 
-meta:
-instagram:
+twitter: ~
+mastodon-url: ~
+meta: ~
+instagram: ~
+redirect_from:
+- /index.php/User:Fehrhart
+- /index.php/Special:Contributions/Fehrhart
 ---

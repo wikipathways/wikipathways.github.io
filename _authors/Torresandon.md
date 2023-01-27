@@ -1,16 +1,19 @@
 ---
 username: Torresandon
 realname: Fernando Torres Andn
-website: 
-affiliation: 
-bio: 
-github: 
+website: ~
+affiliation: ~
+bio: ~
+github: ~
 orcid: 0000-0001-9235-1278
-linkedin: 
-googlescholar: 
+linkedin: ~
+googlescholar: ~
 wikidata: Q57069130
-twitter: 
-mastodon-url: 
-meta:
-instagram:
+twitter: ~
+mastodon-url: ~
+meta: ~
+instagram: ~
+redirect_from:
+- /index.php/User:Torresandon
+- /index.php/Special:Contributions/Torresandon
 ---
