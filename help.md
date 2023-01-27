@@ -3,20 +3,22 @@ title: Help
 ---
 
 <div style="background:#eee; padding:20px 0px 0px 50px">
-<h1>Contents</h1>
+<h1>Help Topics</h1>
 <div class="row">
     <div class="col text-nowrap">
-        <a href="#explore">Explore</a>
+        <a href="#investigate">Investigate</a>
             <ul>
                 <li><a href="#viewer">Interactive viewer</a></li>
                 <li><a href="#attributes">Attributes</a></li>
                 <li><a href="#participants">Participants</a></li>
                 <li><a href="#references">References</a></li>
+                <li><a href="#editing">Editing</a></li>
             </ul>
     </div>
     <div class="col text-nowrap">
         <a href="#navigate">Navigate</a>
             <ul>
+                <li><a href="#site">Site</a></li>
                 <li><a href="#search">Search</a></li>
                 <li><a href="#browse">Browse</a></li>
                 <li><a href="#communities">Communities</a></li>
@@ -35,7 +37,7 @@ title: Help
     </div>
 </div></div>
 
-<div id="explore">
+<div id="investigate">
 <div id="viewer">
 <h1>Interactive Pathway Viewer</h1>
 <p>Each pathway has a dedicated page that includes an interactive view. Zoom in and out by scrollwheel, pan by click-n-drag, and click on genes, proteins and metabolites to open external pages in Scholia dedicated to each molecule. Here's an example:
@@ -85,10 +87,25 @@ title: Help
 <h1>Literature References</h1>
 <p>As authors construct a pathway or make new additions, they add literature references to the bibliography of a given pathway. The reference list also includes links to PubMed, Europe PMC and Scholia. The references can also be downloaded as a table (see the "options" button).
 </p>
+</div><div id="editing">
+<h1>How to Edit</h1>
+<p>To edit the pathway diagram and properties such as title, description, and participants, you should use our PathVisio drawing tool. See the <a href="#create">Create</a> section below.  In addition to the pathway model, you can also edit the "Cited In" and "Communities" sections directly on the site. Click on the pencil icons <span title="Edit cited in" style="color: #666; font-size: 1.0em;"><i class="fa fa-pencil"></i></span> near the section headers on each pathway page.
+</p>
 </div></div>
 
 <hr>
 <div id="navigate">
+</div><div id="site">
+<h1>Navigating the Website</h1>
+<p>At the top of every page is a clickable logo that will take you to the home page, a search bar (see below), and a menu icon <span style="width: 26px; height: 22px; display:inline-block;border: gray;border-width: 1px;border-style: solid; background-image: url(&quot;data:image/svg+xml;charset=utf8,%3Csvg viewBox='-5 -2 36 34' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E&quot;)"></span>. The menu provides quick links to common pages. At the bottom of every page is a footer with packed with information and links, including:
+</p>
+<ul>
+<li>the status of the overall site and when it was last updated</li>
+<li>a declaration of our CC0 waiver on all pathway content</li>
+<li>a column of external links for our code repository, social media, and public forum</li>
+<li>a few columns of common resource links related to using WikiPathways</li>
+</ul>
+</div>
 <div id="search">
 <h1>Search for Pathways</h1>
 <p>The WikiPathways collection can be searched by gene symbol, pathway name or other keywords, either directly in the Search field at the top of each page and on the front page, or using the <a href="/browse/table.html">table view</a>. For example, search for your favorite pathway by a word from the title (i.e. "Statin"), or your favorite gene either by symbol (i.e. "BRCA1").</p> 
@@ -124,7 +141,9 @@ title: Help
 </div>
 <div id="authors">
 <h1>Get Recognition</h1>
-<p>Each of the <a href="/browse/authors.html">authors</a> who has contributed to WikiPathways has their own profile page. In addtion to a standard biographicial field and professional linkouts, these pages provide a gallery listing of all the pathways edited by a given author. See the sections below to learn more about how to contribute to WikiPathways while enabling your own research.</p>
+<p>Each of the <a href="/browse/authors.html">authors</a> who has contributed to WikiPathways has their own profile page. In addtion to a standard biographicial field and professional linkouts, these pages provide a gallery listing of all the pathways edited by a given author. Click on the pencil icons <span title="Edit cited in" style="color: #666; font-size: 1.0em;"><i class="fa fa-pencil"></i></span> next to your name to edit your user profile. See the sections below to learn more about how to contribute to WikiPathways while enabling your own research.</p>
+<p><b><i>Pro-tip:</i></b> Your profile picture comes directly from your associated GitHub account. Update your avatar on <a href="https://github.com/settings/profile">your GitHub settings page</a> to update the picture shown in your WikiPathways author profile.
+</p>
 </div></div>
 
 <hr>
