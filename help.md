@@ -111,7 +111,7 @@ title: Help
     <a class="btn btn-sm {{bp.btn-class}}" href="{{bp.url}}"> {{ bp.display-title }}</a>
 {% endfor %}. As well as by <a class="btn btn-sm btn-front" style="font-size:small" href="browse/authors.html"> Authors</a> or by whether they are 
  <a class="btn btn-sm btn-front" style="font-size:small" href="browse/new.html"> New</a> or recently
-  <a class="btn btn-sm btn-front" style="font-size:small" href="browse/updates.html"> Updated</a>.
+  <a class="btn btn-sm btn-front" style="font-size:small" href="browse/updated.html"> Updated</a>.
 </p>
 </div>
 <div id="communities">
