@@ -41,7 +41,23 @@ title: Help
 <p>Each pathway has a dedicated page that includes an interactive view. Zoom in and out by scrollwheel, pan by click-n-drag, and click on genes, proteins and metabolites to open external pages in Scholia dedicated to each molecule. Here's an example:
 </p>
 <iframe src ="https://pathway-viewer.toolforge.org/?id=WP554" width="500px" height="350px" style="overflow:hidden;margin-left:200px;"></iframe>
-<p><b><i>Pro-tip:</i></b> Click on the "option" button in the lower-right to download the pathway in one of a variety of formats, or to view the pathway in its own window to help you explore the details. This is also where you'll find a permalink for the page that you can cite and embed code so you can include this interactive viewer in your own web site.
+<div class="dropdown" style="margin:-8px 0px 10px 635px;">
+    <button class="badge badge-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+      aria-haspopup="true" aria-expanded="false">
+      options
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="../cite.html">How to Cite</a>
+      <button class="dropdown-item copy-btn" type="button" to-copy="https://www.wikipathways.org/instance/WP554">Copy permalink</button>
+      <button class="dropdown-item embed-btn" type="button" to-copy='<iframe src ="https://pathway-viewer.toolforge.org/?id=WP554`" width="600px" height="300px" style="overflow:hidden;"></iframe>'>Copy embed code</button>
+    <a class="dropdown-item" href="https://pathway-viewer.toolforge.org/?id=WP554" target="_blank">View full size</a>
+    <a class="dropdown-item" href="https://www.ndexbio.org/viewer/networks/427c38c3-da09-11eb-b666-0ac135e8bacf" target="_blank">Open in NDEx</a>
+    <a class="dropdown-item" href="https://assets.wikipathways.org/pathways/WP554/WP554.png" target="_blank">Download PNG</a>
+    <a class="dropdown-item" href="https://assets.wikipathways.org/pathways/WP554/WP554.svg" target="_blank">Download SVG</a>
+    <a class="dropdown-item" href="https://raw.githubusercontent.com/wikipathways/wikipathways-database/main/pathways/WP554/WP554.gpml" target="_blank">Download GPML</a>
+    </div>
+  </div>
+<p><b><i>Pro-tip:</i></b> Click on the "options" button in the lower-right to download the pathway in one of a variety of formats, or to view the pathway in its own window to help you explore the details. This is also where you'll find a permalink for the page that you can cite and embed code so you can include this interactive viewer in your own web site.
 </p>
 </div>
 <div id="attributes">
@@ -62,12 +78,12 @@ title: Help
 <h1>Participants in a Pathway</h1>
 <p>A table of participants lists the names, types, and sources for every identified gene, protein and small molecule in a given pathway. 
 </p>
-<p><b><i>Pro-tip:</i></b> Click on the "option" button in the lower-right to download the complete table which includes mappings to many common identifiers. This button also includes functionality to query external services, like <a href="https://drugst.one/">Drugst.One</a>, using the list of participants as the query input.
+<p><b><i>Pro-tip:</i></b> Click on the "options" button in the lower-right to download the complete table which includes mappings to many common identifiers. This button also includes functionality to query external services, like <a href="https://drugst.one/">Drugst.One</a>, using the list of participants as the query input.
 </p>
 </div>
 <div id="references">
 <h1>Literature References</h1>
-<p>As authors construct a pathway or make new additions, they add literature references to the bibliography of a given pathway. The reference list also includes links to PubMed, Europe PMC and Scholia. The references can also be downloaded as a table (see the "option" button).
+<p>As authors construct a pathway or make new additions, they add literature references to the bibliography of a given pathway. The reference list also includes links to PubMed, Europe PMC and Scholia. The references can also be downloaded as a table (see the "options" button).
 </p>
 </div></div>
 
@@ -186,3 +202,32 @@ This code will produce the following iframe:</p>
 </div>
 <!-- <h2>Request Web service access</h2>
 <p>To request web service access for an existing WikiPathways account (for WikiPathways plugin in PathVisio), contact kristina.hanspers[AT]gladstone.ucsf.edu.</p> -->
+
+<script>
+
+  const copyBtn = document.querySelector('.copy-btn');
+  const toCopy = document.querySelector('.copy-btn').getAttribute('to-copy');
+
+  copyBtn.addEventListener('click', () => {
+    navigator.clipboard.writeText(toCopy)
+      .then(() => {
+        toCopy.value = '';
+      })
+      .catch(err => {
+        console.log('Something went wrong', err);
+      })
+  });
+
+  const embedBtn = document.querySelector('.embed-btn');
+  const toEmbed = document.querySelector('.embed-btn').getAttribute('to-copy');
+
+  embedBtn.addEventListener('click', () => {
+    navigator.clipboard.writeText(toEmbed)
+      .then(() => {
+        toEmbed.value = '';
+      })
+      .catch(err => {
+        console.log('Something went wrong', err);
+      })
+  });
+</script>
