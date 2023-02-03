@@ -1,10 +1,10 @@
 ---
 username: IsabelWassink
-realname: Isabe Wassink
+realname: Isabel Wassink
 website: ~
 affiliation: ~
 bio: ~
-github: ~
+github: IsabelWassink
 orcid: ~
 linkedin: ~
 googlescholar: ~
