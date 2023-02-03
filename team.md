@@ -12,6 +12,11 @@ curators:
 - Andra
 - Elisson nl
 - Madeomuga
+- IsabelWassink
+- Jmillanacosta
+- tabbassidaloii
+- Ash_iyer
+- ElenaDR1
 
 architects:
 - Mkutmon
