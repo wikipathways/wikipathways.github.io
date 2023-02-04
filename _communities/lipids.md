@@ -24,6 +24,10 @@ editors:
 collections-title: "LIPID MAPS Pathways"
 collections:
 - name: "Fatty Acids [FA01]"
+
+collections-title: "LIPID Community Pathways"
+collections:
+- name: "Fatty Acids [FA01]"
   wpids: ['WP4350', 'WP4351']
 - name: "Eicosanoids [FA03]"
   wpids: ['WP167', 'WP4347', 'WP4348', 'WP4349', 'WP4719', 'WP4721', 'WP4720']
