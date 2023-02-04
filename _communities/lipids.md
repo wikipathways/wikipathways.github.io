@@ -22,6 +22,7 @@ editors:
 - DeSl
 
 collections-title: "LIPID MAPS Pathways"
+collections:
 - name: "Fatty Acids [FA01]"
   wpids: ['WP4350', 'WP4351']
 - name: "Eicosanoids [FA03]"
