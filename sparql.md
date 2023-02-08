@@ -1,5 +1,6 @@
 ---
 title: WikiPathways SPARQL queries
+redirect_from: /index.php/Help:WikiPathways_SPARQL_queries
 ---
 
 On [sparql.wikipathways.org](http://sparql.wikipathways.org/) WikiPathways content is replicated
