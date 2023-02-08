@@ -46,4 +46,4 @@ select distinct ?dataset (str(?titleLit) as ?title) ?date ?license where {
     pav:createdOn ?date .
 }
 ```
-[Execute](https://bit.ly/3mYFmT5)
+[Open](https://bit.ly/3mYFmT5)
