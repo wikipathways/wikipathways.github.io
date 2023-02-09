@@ -88,6 +88,87 @@ You can download the WikiPathways RDF from [here](http://data.wikipathways.org/c
 
 The WikiPathways RDF is split in two parts, the GPMLRDF part which contains a direct translation of the content in the GPML files, and a WPRDF part which contains harmonized biological information present in the GPML.
 
+<h2>Code examples</h2>
+
+<h3>Perl</h3>
+
+There is an [RDF api](http://www.perlrdf.org/) available. Below is an example that
+extracts the data by converting the query into a url and extracts the data as CSV.
+
+```perl
+#!/usr/bin/perl
+ 
+use LWP::Simple;
+use URI::Escape;
+my $sparql = "SELECT DISTINCT ?wpIdentifier ?elementneedsattention ?elementLabel
+WHERE {
+    ?pathway dc:title ?title .
+    ?elementneedsattention a gpml:requiresCurationAttention .
+    ?elementneedsattention dcterms:isPartOf ?pathway .
+    ?elementneedsattention rdfs:label ?elementLabel . 
+    ?pathway wp:organism ?organism .
+    ?pathway foaf:page ?page .
+    ?pathway dc:identifier ?wpIdentifier .
+    ?organism rdfs:label \"Mus musculus\"^^<http://www.w3.org/2001/XMLSchema#string> .
+ }
+ORDER BY ?wpIdentifier";
+ 
+my $url = 'https://sparql.wikipathways.org/sparql?default-graph-uri=&query='.uri_escape($sparql).'&format=text%2Fcsv&timeout=0&debug=on';
+ 
+my $content = get $url;
+die "Couldn't get $url" unless defined $content;
+ 
+print $content;
+```
+
+<h3>Java</h3>
+
+For Java there are several options, but we user here the Jena Framework:
+
+```java
+import com.hp.hpl.jena.query.Query;
+import com.hp.hpl.jena.query.QueryExecution;
+import com.hp.hpl.jena.query.QueryExecutionFactory;
+import com.hp.hpl.jena.query.QueryFactory;
+import com.hp.hpl.jena.query.QuerySolution;
+import com.hp.hpl.jena.query.ResultSet;
+
+public class javaCodeExample {
+
+	public static void main(String[] args) {
+		String sparqlQueryString = "SELECT * WHERE {?s ?p ?o} LIMIT 10";
+		Query query = QueryFactory.create(sparqlQueryString);
+		QueryExecution queryExecution = QueryExecutionFactory.sparqlService("https://sparql.wikipathways.org/sparql", query);
+		ResultSet resultSet = queryExecution.execSelect();
+		while (resultSet.hasNext()) {
+			QuerySolution solution = resultSet.next();
+			System.out.print(solution.get("s"));
+			System.out.print("\t"+solution.get("p"));
+			System.out.println("\t"+solution.get("o"));
+		}
+	}
+}
+```
+
+<h3>Bioclipse</h3>
+
+The below code works in both the JavaScript and the Groovy console:
+
+```javascript
+ rdf.sparqlRemote(
+     "https://sparql.wikipathways.org/sparql",
+     "SELECT DISTINCT ?p WHERE { ?s ?p ?o }"
+   )
+```
+
+<h3>Command line</h3>
+
+For quick and easy querying, we recommend to use curl (Linux and OS X)
+
+```shell
+curl -F "query=SELECT * WHERE {?s ?p ?o} LIMIT 10" https://sparql.wikipathways.org/sparql
+```
+
 <h2>Support</h2>
 
 The research leading to these results has received support from the Innovative Medicines Initiative Joint Undertaking under grant agreement no. 115191, resources of which are composed of financial contribution from the European Union's Seventh Framework Programme (FP7/2007-2013) and EFPIA companies’ in-kind contribution.
