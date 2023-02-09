@@ -10,6 +10,17 @@ in a SPARQL endpoint. Queries can be performed in three ways:
 2. Copy and paste an example query listed below in the endpoint.
 3. Adapt a code examples to programmatically make a SPARQL query
 
+This project is written up in the "[Using the Semantic Web for Rapid Integration of WikiPathways with Other Biological Online Data Resources](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004989)" paper.
+
+<h2>Notification</h2>
+
+Due to an Apache update, we are now creating RDF data according to SPARQL 1.1. 
+However, our SPARQL-endpoint running on Virtuoso is still using SPARQL 1.0. 
+This influences the way to query strings, and might affect federated queries.
+Please remove the `^^xsd:string suffix`, as shown in the example below.
+
+![](/assets/img/SPARQL11.png)
+
 <h2>Example queries</h2>
 
 <h3>Prefixes</h3>
@@ -47,3 +58,60 @@ select distinct ?dataset (str(?titleLit) as ?title) ?date ?license where {
 }
 ```
 [Open](https://bit.ly/3mYFmT5)
+
+<h3>Pathway-oriented queries</h3>
+
+<h4>Get the species currently in WikiPathways with their respective URI's</h4>
+
+```sparql
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wp: <http://vocabularies.wikipathways.org/wp#>
+
+SELECT DISTINCT ?organism (str(?label) as ?name)
+WHERE {
+    ?concept wp:organism ?organism ;
+      wp:organismName ?label .
+}
+```
+
+<h4>List pathways and their species</h4>
+
+```sparql
+PREFIX dc:      <http://purl.org/dc/elements/1.1/> 
+PREFIX wp:     <http://vocabularies.wikipathways.org/wp#>
+
+SELECT DISTINCT (str(?title) as ?pathway) (str(?label) as ?organism)
+WHERE {
+    ?pw dc:title ?title ;
+      wp:organism ?organism ;
+      wp:organismName ?label .
+}
+```
+
+<h3>LIPID MAPS-related queries</h3>
+
+
+
+<h3>Data statistics-oriented queries</h3>
+
+
+
+
+<h3>Interaction-oriented queries</h3>
+
+
+
+<h3>Datasource-oriented queries</h3>
+
+
+
+<h3>Curators-oriented queries</h3>
+
+
+
+<h3>Literature queries</h3>
+
+
+
+
+
