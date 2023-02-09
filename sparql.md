@@ -3,6 +3,8 @@ title: WikiPathways SPARQL queries
 redirect_from: /index.php/Help:WikiPathways_SPARQL_queries
 ---
 
+<h1>WikiPathways SPARQL queries</h1>
+
 On [sparql.wikipathways.org](http://sparql.wikipathways.org/) WikiPathways content is replicated
 in a SPARQL endpoint. Queries can be performed in three ways:
 
@@ -90,14 +92,74 @@ WHERE {
 
 <h3>LIPID MAPS-related queries</h3>
 
+<h4>Count the number of lipids per pathways in WikiPathways with LIPID MAPS identifier</h4>
 
+Converts all Metabolite identifiers to LipidMaps (provided by BridgeDb), and create
+an ordered list of pathways including lipid compounds.
+
+```sparql
+prefix lipidmaps:      <https://identifiers.org/lipidmaps/>
+
+select distinct ?pathwayRes (str(?wpid) as ?pathway)
+       (str(?title) as ?pathwayTitle)
+       (count(distinct ?lipidID) AS ?LipidsInPWs)
+where {
+  ?metabolite a wp:Metabolite ;
+    dcterms:identifier ?id ;
+    dcterms:isPartOf ?pathwayRes ;
+    wp:bdbLipidMaps ?lipidID .
+  ?pathwayRes a wp:Pathway ;
+              wp:organismName "Homo sapiens" ; 
+    dcterms:identifier ?wpid ;
+    dc:title ?title .
+}
+ORDER BY DESC(?LipidsInPWs)
+```
 
 <h3>Data statistics-oriented queries</h3>
 
+<h4>Count the number of metabolites per species</h4>
 
+Though strictly speaking, it guesstimates it, because it counts the number of unique metabolite identifiers. Normalization in the RDF generation code ensures we do not double count metabolites with identifiers from different databases, but it still differentially counts metabolites with different charge states.
+
+```sparql
+PREFIX gpml:    <http://vocabularies.wikipathways.org/gpml#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dc:      <http://purl.org/dc/elements/1.1/>
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+select (count(distinct ?metabolite) as ?count) (str(?label) as ?species) where {
+  ?metabolite a wp:Metabolite ;
+    dcterms:isPartOf ?pw .
+  ?pw dc:title ?title ;
+    wp:organism ?organism ;
+    wp:organismName ?label .
+} GROUP BY ?label ORDER BY DESC(?count)
+````
 
 
 <h3>Interaction-oriented queries</h3>
+
+<h4>Get all interactions for a particular datanode</h4>
+
+Find all interactions that are connected to a particular datanode. (wp:Interaction).
+
+```sparql
+PREFIX gpml:    <http://vocabularies.wikipathways.org/gpml#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dc:      <http://purl.org/dc/elements/1.1/>
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+#Find all interactions that are connected to a particular datanode.
+
+SELECT DISTINCT ?interaction ?pathway  WHERE {
+
+   ?pathway a wp:Pathway .
+   ?interaction dcterms:isPartOf ?pathway . 
+   ?interaction a wp:Interaction . 
+   ?interaction wp:participants <https://identifiers.org/ensembl/ENSG00000125845> .   
+}
+```
 
 
 
