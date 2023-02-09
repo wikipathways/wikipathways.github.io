@@ -5,7 +5,8 @@ title: The WikiPathways Semantic Web Portal
 <h1>The WikiPathways Semantic Web Portal</h1>
 
 This portal describes the Semantic Web features of the WikiPathways databases, such as the
-Resource Description Framework (RDF) translation, the ontology, and the new nanopublications.
+[Resource Description Framework](https://www.w3.org/RDF/) (RDF) translation, the ontology,
+and the new nanopublications.
 
 The WikiPathways RDF is provided as part of the monthly releases and contains the _Curated_ and
 _Reactome_ pathways. The RDF is split in two parts, the GPMLRDF part which contains a direct
@@ -27,7 +28,7 @@ Waagmeester, A., Kutmon, M., Riutta, A., Miller, R., Willighagen, E. L., Evelo, 
 Jun. 2016. Using the semantic web for rapid integration of WikiPathways with other biological
 online data resources. PLoS Comput Biol 12 (6), e1004989+. doi:10.1371/journal.pcbi.1004989 .
 ```
-For the pathway content, please follow these How to cite WikiPathways instructions.
+For the pathway content, please follow these [How to cite](cite.md) WikiPathways instructions.
 
 <h2>Snorql Interface</h2>
 
@@ -40,3 +41,53 @@ The image below explains which steps you can take:
 4: You can select your own list of example queries from github, by adding the link.
 
 ![Snorql UI with the 4 steps indicated by red arrows](/assets/img/NewSnorqlInterface.png "NEW Snorql Interface for SPARQL Endpoint")
+
+<h2>Notification</h2>
+
+Due to an Apache update, we are now creating RDF data according to SPARQL 1.1. 
+However, our SPARQL-endpoint running on Virtuoso is still using SPARQL 1.0. 
+This influences the way to query strings, and might affect federated queries.
+Please remove the `^^xsd:string suffix`, as shown in the example below.
+
+![](/assets/img/SPARQL11.png)
+
+<h2>SPARQL Examples</h2>
+
+We provide [a SPARQL endpoint](http://sparql.wikipathways.org/sparql) where data queries can be done.
+
+<h3>WikiPathways Example SPARQL Queries</h3>
+
+We have a large collection of [general example queries](sparql.md) and metabolite related example queries.
+
+For example, to list all pathways per instance of a particular gene or protein (wp:GeneProduct), you can use the following SPARQL:
+
+```sparql
+PREFIX wp:      <http://vocabularies.wikipathways.org/wp#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+SELECT DISTINCT
+   ?pathway 
+   (str(?label) as ?geneProduct)
+WHERE {
+    ?geneProduct a wp:GeneProduct . 
+    ?geneProduct rdfs:label ?label .
+    ?geneProduct dcterms:isPartOf ?pathway .
+    ?pathway a wp:Pathway .
+    
+    FILTER regex(str(?label), "CYP"). 
+}
+```
+
+<h2>Downloads</h2>
+
+The Semantic Web WikiPathways comes in two flavors: as RDF (beta) and as nanopublications (very experimental).
+
+<h3>The RDF</h3>
+You can download the WikiPathways RDF from [here](http://data.wikipathways.org/current/rdf/).
+
+The WikiPathways RDF is split in two parts, the GPMLRDF part which contains a direct translation of the content in the GPML files, and a WPRDF part which contains harmonized biological information present in the GPML.
+
+<h2>Support</h2>
+
+The research leading to these results has received support from the Innovative Medicines Initiative Joint Undertaking under grant agreement no. 115191, resources of which are composed of financial contribution from the European Union's Seventh Framework Programme (FP7/2007-2013) and EFPIA companies’ in-kind contribution.
