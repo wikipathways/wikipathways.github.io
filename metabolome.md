@@ -123,3 +123,57 @@ where {
 ```
 
 [Open](https://bit.ly/3XfUxFP)
+
+<h2>Metabolic Pathways</h2>
+
+Of general interest is the number of pathways per species:
+
+```sparql
+select distinct str(?orgName) as ?organism count(?pw) as ?pathways  where {
+  ?pw wp:organism ?organismCode .
+  ?organismCode rdfs:label ?orgName
+} order by desc(?pathways)
+
+<h3>Metabolomes</h3>
+
+<h4>Human Metabolome</h4>
+
+```sparql
+select distinct ?mb where {
+  ?mb a wp:Metabolite ;
+    dcterms:isPartOf ?pw .
+  ?pw wp:organism ncbi:9606 .
+} order by ?mb
+```
+
+<h4>Arabodopsis thaliana Metabolome</h4>
+
+```sparql
+select distinct ?mb where {
+  ?mb a wp:Metabolite ;
+    dcterms:isPartOf ?pw .
+  ?pw wp:organism ncbi:3702 .
+} order by ?mb
+```
+
+<h3>Pathways with the most metabolites</h3>
+
+```sparql
+select ?pathway count(distinct ?mb) as ?mbCount
+where {
+  ?mb a wp:Metabolite ;
+    dcterms:isPartOf ?pathway .
+} order by desc(?mbCount)
+```
+
+<h3>Metabolites in the most Pathways</h3>
+
+With the remark that BridgeDB is not involved yet: the results are based on metabolite datanodes, not unique metabolites.
+
+```sparql
+select ?mb count(distinct ?pathway) as ?pwCount
+where {
+  ?mb a wp:Metabolite ;
+    dcterms:isPartOf ?pathway .
+} order by desc(?pwCount)
+```
