@@ -80,6 +80,8 @@ WHERE {
 }
 ```
 
+[Open](https://bit.ly/3YiJrBx)
+
 <h2>Downloads</h2>
 
 The Semantic Web WikiPathways comes in two flavors: as RDF (beta) and as nanopublications (very experimental).
