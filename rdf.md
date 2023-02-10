@@ -126,7 +126,7 @@ print $content;
 
 <h3>Java</h3>
 
-For Java there are several options, but we user here the Jena Framework:
+For Java there are several options, but we user here the [Jena Framework](https://jena.apache.org/documentation/query/index.html):
 
 ```java
 import com.hp.hpl.jena.query.Query;
@@ -151,6 +151,67 @@ public class javaCodeExample {
 		}
 	}
 }
+```
+
+<h3>PHP</h3>
+
+For PHP we recommend the [arc2: Easy RDF and SPARQL for LAMP systems](https://github.com/semsol/arc2/wiki).
+
+<h3>R</h3>
+
+<h4>rrdf</h4>
+
+The R package rrdf can be found and installed from [GitHub](https://github.com/egonw/rrdf).
+
+```R
+   library(rrdf)
+   sparql.remote(
+     "https://sparql.wikipathways.org/sparql",
+     "SELECT DISTINCT ?p WHERE { ?s ?p ?o }"
+   )
+```
+
+<h4>SPARQL package</h4>
+
+Another option is to use the [SPARQL package](https://cran.r-project.org/web/packages/SPARQL/) (tested
+on Ubuntu 18.04.5 LTS, R-studio version 1.4.1717, R version 4.1.0 (2021-05-18)).
+
+ * Note the backslashes in front of the quotation marks in the VALUES claim; this is specifically needed in R to read these characters correctly.
+ * Note this query is an example of how to perform a UNION query in WikiPathways.
+
+```R
+if(!"SPARQL" %in% installed.packages()){
+  install.packages("SPARQL")
+}
+
+library(SPARQL)
+
+##Connect to Endpoint WikiPathways
+endpointwp <- "https://sparql.wikipathways.org/sparql"
+
+queryDatanodeContent <-
+"
+select distinct (str(?wpid) as ?pathway) (str(?title) as ?pathwayTitle) (count(distinct ?hgncIdProtein) AS ?ProteinsInPWs) (count(distinct ?chebiMetabolite) AS ?MetabolitesInPWs)
+where {
+VALUES ?wpid {\'WP4224\' \'WP4225\' \'WP4571\' }
+  ?datanode dcterms:identifier ?id ;
+    dcterms:isPartOf ?pathwayRes .
+  ?pathwayRes a wp:Pathway ;
+    dcterms:identifier ?wpid ;
+    dc:title ?title .
+  
+  {?datanode a wp:Protein ;          
+            wp:bdbHgncSymbol ?hgncIdProtein .}
+  UNION
+  {?datanode a wp:Metabolite ;          
+            wp:bdbChEBI ?chebiMetabolite .}
+  
+} ORDER BY ASC(?wpid)
+
+"
+
+resultsDatanodeContent <- SPARQL(endpointwp,queryDatanodeContent,curl_args=list(useragent=R.version.string))
+showresultsDatanodeContent <- resultsDatanodeContent$results
 ```
 
 <h3>Bioclipse</h3>
