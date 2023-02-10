@@ -135,11 +135,15 @@ select distinct str(?orgName) as ?organism count(?pw) as ?pathways  where {
 } order by desc(?pathways)
 ```
 
+[Open](https://bit.ly/3YF23v3)
+
 <h3>Metabolomes</h3>
 
 <h4>Human Metabolome</h4>
 
 ```sparql
+prefix ncbi:    <http://purl.obolibrary.org/obo/NCBITaxon_>
+
 select distinct ?mb where {
   ?mb a wp:Metabolite ;
     dcterms:isPartOf ?pw .
@@ -147,15 +151,21 @@ select distinct ?mb where {
 } order by ?mb
 ```
 
+[Open](https://bit.ly/3xcNcMI)
+
 <h4>Arabodopsis thaliana Metabolome</h4>
 
 ```sparql
+prefix ncbi:    <http://purl.obolibrary.org/obo/NCBITaxon_>
+
 select distinct ?mb where {
   ?mb a wp:Metabolite ;
     dcterms:isPartOf ?pw .
   ?pw wp:organism ncbi:3702 .
 } order by ?mb
 ```
+
+[Open](https://bit.ly/3xaal2o)
 
 <h3>Pathways with the most metabolites</h3>
 
@@ -166,6 +176,8 @@ where {
     dcterms:isPartOf ?pathway .
 } order by desc(?mbCount)
 ```
+
+[Open](https://bit.ly/3loEKY7)
 
 <h3>Metabolites in the most Pathways</h3>
 
@@ -178,3 +190,5 @@ where {
     dcterms:isPartOf ?pathway .
 } order by desc(?pwCount)
 ```
+
+[Open](https://bit.ly/3YjqbDD)
