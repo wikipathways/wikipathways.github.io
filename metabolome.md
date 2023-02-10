@@ -133,6 +133,7 @@ select distinct str(?orgName) as ?organism count(?pw) as ?pathways  where {
   ?pw wp:organism ?organismCode .
   ?organismCode rdfs:label ?orgName
 } order by desc(?pathways)
+```
 
 <h3>Metabolomes</h3>
 
