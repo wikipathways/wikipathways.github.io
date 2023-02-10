@@ -2,7 +2,11 @@
 layout: home2
 title: Home
 curator_of_the_week:
-
+- Elisson nl
+- AlexanderPico
+- tabbassidaloii
+- Ddigles
+- Fehrhart
 - Mkutmon
 - Susan
 - Andra
@@ -13,11 +17,6 @@ curator_of_the_week:
 - Khanspers
 - Madeomuga
 - Ash_iyer
-- Elisson nl
-- AlexanderPico
-- tabbassidaloii
-- Ddigles
-- Fehrhart
 
 redirect_from: /index.php/WikiPathways
 ---
