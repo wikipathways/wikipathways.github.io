@@ -2,16 +2,22 @@
 layout: home2
 title: Home
 curator_of_the_week:
-- Madeomuga
-- Elisson nl
-- AlexanderPico
-- Ddigles
-- Fehrhart
+
 - Mkutmon
 - Susan
 - Andra
 - DeSl
+- IsabelWassink
+- Jmillanacosta
+- ElenaDR1
 - Khanspers
+- Madeomuga
+- Ash_iyer
+- Elisson nl
+- AlexanderPico
+- tabbassidaloii
+- Ddigles
+- Fehrhart
 
 redirect_from: /index.php/WikiPathways
 ---
