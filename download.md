@@ -1,5 +1,6 @@
 ---
 title: Download
+redirect_from: /index.php/Download_Pathways
 ---
 <div id="download">
 <h1>Download and Access</h1>
