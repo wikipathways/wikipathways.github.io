@@ -1,5 +1,6 @@
 ---
 title: "stats"
+redirect_from: /index.php/WikiPathways:Statistics
 author: "Alex"
 date: "1/2/2022"
 # output: html_document

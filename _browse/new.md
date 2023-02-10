@@ -1,5 +1,8 @@
 ---
 layout: default
+redirect_from: 
+ - /index.php/Special:NewPathwaysPage
+ - index.php/WikiPathways:NewPathwayReleases
 order: 3
 display-title: "New"
 btn-class: "btn-front"

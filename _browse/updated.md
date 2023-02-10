@@ -1,5 +1,6 @@
 ---
 layout: default
+redirect_from: /index.php/Special:RecentPathwayChanges
 order: 4
 display-title: "Updated"
 btn-class: "btn-front"

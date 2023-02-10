@@ -1,5 +1,6 @@
 ﻿---
 title: Cite
+redirect_from: /index.php/How_to_cite_WikiPathways
 ---
 <h1>How to Cite</h1>
 <p>Depending on how you use WikiPathways, please consider citing one or more of the following articles:</p>

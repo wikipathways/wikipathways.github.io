@@ -1,5 +1,6 @@
 ---
 title: Tools
+redirect_from: /index.php/Help:Tools_using_WikiPathways
 ---
 <h2>Tools using WikiPathways</h2>
 <p>These are some of the resources and software tools out there that make use of WikiPathways 

@@ -33,6 +33,8 @@ founders:
 - Khanspers
 - BruceConklin
 - Evelo
+
+redirect_from: /index.php/WikiPathways:Team
 ---
 <h1>Who is behind WikiPathways?</h1>
 WikiPathways is run by people like you! Join our teams of <a href="#curators">curators</a>, <a href="#community_editors">community editors</a> and <a href="#developers">developers</a> to maintain this public resource of pathway information.

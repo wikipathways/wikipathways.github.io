@@ -1,8 +1,9 @@
 ---
 title: How to Contribute
+redirect_from: /index.php/Help:Authors
 ---
 <h2>Become a WikiPathways Contributor Today!</h2>
-<p>Want to join the 700+ researchers and pathway enthusiasts who have shared their time and knowledge here at WikiPathways? Follow the check list to get started on becoming a curator.
+<p>Want to join the community of researchers and pathway enthusiasts who have shared their time and knowledge here at WikiPathways? Follow the check list to get started on becoming a curator.
 
 <ul style="list-style: none;">
     <li style="margin-bottom: 5px;"><input type="checkbox"><a href="https://www.github.com" target="_blank"><b> Signup: Create a GitHub Account</b></a>

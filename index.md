@@ -12,6 +12,8 @@ curator_of_the_week:
 - Andra
 - DeSl
 - Khanspers
+
+redirect_from: /index.php/WikiPathways
 ---
 <div style="background: linear-gradient(0deg, #fefefe, #eae6ff 100%);">
   {%- include_cached header.html %}

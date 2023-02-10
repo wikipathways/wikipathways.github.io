@@ -1,5 +1,6 @@
 ---
 title: Help
+redirect_from: /index.php/Help:Contents
 ---
 
 <div style="background:#eee; padding:20px 0px 0px 50px">
