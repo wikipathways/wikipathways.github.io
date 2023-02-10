@@ -90,6 +90,97 @@ WHERE {
 }
 ```
 
+<h4>List the species captured in WikiPathways and the number of pathways per species</h4>
+
+```sparql 
+SELECT DISTINCT ?organism (str(?label) as ?name) (count(?pw) as ?pathwayCount)
+WHERE {
+    ?pw dc:title ?title ;
+      wp:organism ?organism ;
+      wp:organismName ?label .
+}
+ORDER BY DESC(?pathwayCount)
+```
+
+<h4>List all pathways for species "Mus musculus"</h4>
+
+The following query list all mouse pathways. `?wpIdentifier` is the link through identifiers.org,
+`?pathway` points to the RDF version of WikiPathways and ?page is the revision which is loaded
+in the SPARQL endpoint.
+
+```sparql
+SELECT DISTINCT ?wpIdentifier ?pathway ?page
+WHERE {
+    ?pathway dc:title ?title .
+    ?pathway foaf:page ?page .
+    ?pathway dc:identifier ?wpIdentifier .
+    ?pathway wp:organismName "Mus musculus" .
+ }
+ORDER BY ?wpIdentifier
+```
+
+<h4>Get all pathways with a particular gene</h4>
+
+List all pathways per instance of a particular gene or protein (`wp:GeneProduct`)
+
+```sparql
+SELECT DISTINCT ?pathway (str(?label) as ?geneProduct)
+WHERE {
+    ?geneProduct a wp:GeneProduct . 
+    ?geneProduct rdfs:label ?label .
+    ?geneProduct dcterms:isPartOf ?pathway .
+    ?pathway a wp:Pathway .
+    
+    FILTER regex(str(?label), "CYP"). 
+}
+```
+
+<h4>Get all groups and complexes containing a particular gene</h4>
+
+List all groups and complexes per instance of a particular gene or protein (`wp:GeneProduct`)
+
+```sparql
+SELECT DISTINCT ?pathway (str(?label) as ?geneProduct)
+WHERE {
+    ?geneProduct a wp:GeneProduct . 
+    ?geneProduct rdfs:label ?label .
+    ?geneProduct dcterms:isPartOf ?pathway .
+
+    FILTER NOT EXISTS { ?pathway a wp:Interaction } .
+    FILTER NOT EXISTS { ?pathway a wp:Pathway } .
+    FILTER regex(str(?label), "CYP"). 
+}
+```
+
+<h4>Get all the genes on a particular pathway</h4>
+
+List all the genes and proteins (`wp:GeneProduct`) associated with a particular pathway WPID.
+
+  ```sparql
+select distinct ?pathway (str(?label) as ?geneProduct) where {
+    ?geneProduct a wp:GeneProduct . 
+    ?geneProduct rdfs:label ?label .
+    ?geneProduct dcterms:isPartOf ?pathway .
+    ?pathway a wp:Pathway .
+    ?pathway dcterms:identifier "WP1560" . 
+}
+```
+
+<h4>Count the number of pathways per ontology term</h4>
+
+In WikiPathways, pathways can be tagged with ontology terms from Pathway, Cell Line and Disease
+ontology. The following query returns a pathway count for each term from any of the available
+ontologies. These terms are collectively modeled as `wp:pathwayOntology`; but this includes
+all ontologies, not just the "Pathway" ontology.
+
+```sparql
+SELECT DISTINCT ?pwOntologyTerm count(?pwOntologyTerm) as ?pathwayCount
+ WHERE {
+	?pathwayRDF wp:ontologyTag ?pwOntologyTerm .
+ }
+ ORDER BY DESC(?pathwayCount)
+```
+
 <h3>LIPID MAPS-related queries</h3>
 
 <h4>Count the number of lipids per pathways in WikiPathways with LIPID MAPS identifier</h4>
