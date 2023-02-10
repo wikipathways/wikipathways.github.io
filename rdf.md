@@ -1,5 +1,6 @@
 ---
 title: The WikiPathways Semantic Web Portal
+redirect_from: /index.php/Portal:Semantic_Web
 ---
 
 <h1>The WikiPathways Semantic Web Portal</h1>
@@ -57,7 +58,7 @@ We provide [a SPARQL endpoint](http://sparql.wikipathways.org/sparql) where data
 
 <h3>WikiPathways Example SPARQL Queries</h3>
 
-We have a large collection of [general example queries](sparql.md) and metabolite related example queries.
+We have a large collection of [general example queries](sparql.md) and [metabolite-related example queries](metabolome.md).
 
 For example, to list all pathways per instance of a particular gene or protein (wp:GeneProduct), you can use the following SPARQL:
 
