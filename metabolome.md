@@ -59,6 +59,8 @@ select distinct ?mb ?label where {
 }
 ```
 
+[Open](https://bit.ly/3Yj0G5r)
+
 Or metabolites for just zebrafish pathways:
 
 ```sparql
@@ -70,6 +72,54 @@ select distinct ?metabolite (str(?titleLit) as ?title) where {
 }
 ```
 
+[Open](https://bit.ly/3Yj4F1P)
 
+<h2>Metabolic Data Sources</h2>
 
+<h3>Sorted by use</h3>
 
+ChEBI, HMDB, and LIPID MAPS are the main data sources for identifiers:
+
+```sparql
+select str(?datasource) as ?source count(distinct ?identifier) as ?count
+where {
+  ?mb a wp:Metabolite ;
+    dc:source ?datasource ;
+    dc:identifier ?identifier .
+} order by desc(?count)
+```
+
+[Open](https://bit.ly/3IniZRL)
+
+<h3>All metabolites from one source</h3>
+
+<h4>All KEGG identifiers</h4>
+
+This SPARQL query lists all metabolite datanodes annotated with a KEGG
+compound identifier:
+
+```sparql
+select distinct ?identifier
+where {
+  ?mb a wp:Metabolite ;
+    dc:source "KEGG Compound" ;
+    dc:identifier ?identifier .
+} order by ?identifier
+```
+
+[Open](https://bit.ly/3loRJJk)
+
+<h4>All HMDB identifiers</h4>
+
+Return all HMDB identfiers with:
+
+```sparql
+select distinct ?identifier
+where {
+  ?mb a wp:Metabolite ;
+    dc:source "HMDB" ;
+    dc:identifier ?identifier .
+} order by ?identifier
+```
+
+[Open](https://bit.ly/3XfUxFP)
