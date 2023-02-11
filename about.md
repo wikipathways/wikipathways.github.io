@@ -1,5 +1,6 @@
 ---
 title: About
+redirect_from: /index.php/WikiPathways:About
 ---
 <img src="/assets/img/overview-figure-1.jpg"/>
 <h2>What is WikiPathways</h2>

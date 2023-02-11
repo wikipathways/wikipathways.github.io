@@ -1,12 +1,13 @@
 ---
 layout: default
+redirect_from: /index.php/Special:RecentPathwayChanges
 order: 4
 display-title: "Updated"
 btn-class: "btn-front"
 ---
     
 <h2 id="title">Recently Updated Pathways</h2>
-<p>A sorted list of 20 pathways that have been recently edited.</p> 
+<p>A date-sorted list of 20 pathways that have been recently edited.  <b><em>Note: This does not include pathways pending review.</em></b></p> 
 
 <h2>Pathways</h2>
 <ul class="nav nav-tabs">
@@ -42,7 +43,7 @@ btn-class: "btn-front"
     <div class="row" style="margin-left: 10px;">
       <ul>
         {% for pw in sorted_pathways %}
-              <li><a href="{{ pw.url }}">{{pw.wpid}}: {{ pw.title }} <em>({{ pw.organisms.first }})</em> --<b>last edited: {{ pw.last-edited }}</b></a></li>
+              <li><a href="{{ pw.url }}">{{ pw.title }} - {{pw.wpid}} <em>({{ pw.organisms.first }})</em> --<b>last edited: {{ pw.last-edited }}</b></a></li>
         {% endfor %}
       </ul>
     </div>  

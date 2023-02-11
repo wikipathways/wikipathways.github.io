@@ -34,6 +34,9 @@ contribute:
 
 community-tag: "Nanomaterials"
 
+editors:
+- Egonw
+
 redirect_from:
   - /index.php/Portal:Nanomaterials
 

@@ -18,6 +18,10 @@ contribute: "The CPTAC set of pathways can be edited, updated and added to by an
 
 community-tag: "CPTAC"
 
+editors:
+- Khanspers
+- AlexanderPico
+
 collections-title: "Cancer Hallmark Categories"
 collections:
 - name: "Sustaining proliferative signaling"

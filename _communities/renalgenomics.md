@@ -25,6 +25,9 @@ Some useful resources related to kidney biology are
 
 community-tag: "Renal_Genomics"
 
+editors:
+- AgustinGV
+
 redirect_from:
   - /index.php/Portal:RenalGenomics
 

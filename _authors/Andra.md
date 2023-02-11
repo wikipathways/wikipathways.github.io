@@ -1,16 +1,19 @@
 ---
 username: Andra
 realname: Andra Waagmeester
-website: 
-affiliation: 
-bio: 
-github: 
+website: ~
+affiliation: ~
+bio: ~
+github: andrawaag
 orcid: 0000-0001-9773-4008
-linkedin: 
-googlescholar: 
+linkedin: ~
+googlescholar: ~
 wikidata: Q19845625
-twitter: 
-mastodon-url: 
-meta:
-instagram:
+twitter: ~
+mastodon-url: ~
+meta: ~
+instagram: ~
+redirect_from:
+- /index.php/User:Andra
+- /index.php/Special:Contributions/Andra
 ---

@@ -1,12 +1,15 @@
 ---
 layout: default
+redirect_from: 
+ - /index.php/Special:NewPathwaysPage
+ - index.php/WikiPathways:NewPathwayReleases
 order: 3
 display-title: "New"
 btn-class: "btn-front"
 ---
 
 <h2 id="title">New Pathways</h2>
-<p>A sorted list of 20 pathways that have been recently added to the database.</p> 
+<p>A date-sorted list of 20 pathways that have been recently added to the database. <b><em>Note: This does not include pathways pending review.</em></b></p> 
 <h2>Pathways</h2>
 <ul class="nav nav-tabs" style="margin-left: 0px;">
     <li class="nav-item">
@@ -16,7 +19,7 @@ btn-class: "btn-front"
       <a class="nav-link" data-toggle="tab" href="#list">List</a>
     </li>
 </ul>
-{% assign sorted_pathways = site.pathways | sort: "wpid" | reverse %}
+{% assign sorted_pathways = site.pathways | sort: "last-edited" | reverse %}
 <div class="tab-content" >
     <div class="tab-pane fade show active" id="gallery" role="tabpanel">
         <br/>
@@ -54,7 +57,7 @@ btn-class: "btn-front"
             {% if j > 20 %}
               {% break %}
             {% endif %}
-            <li><a href="{{ pw.url }}">{{pw.wpid}}: {{ pw.title }} <em>({{ pw.organisms.first }})</em> --<b>last edited: {{ pw.last-edited }}</b></a></li>
+            <li><a href="{{ pw.url }}">{{ pw.title }} - {{pw.wpid}} <em>({{ pw.organisms.first }})</em> --<b>last edited: {{ pw.last-edited }}</b></a></li>
           {% endif %}
         {% endfor %}
       </ul>

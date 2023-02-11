@@ -121,6 +121,12 @@ h3 {
   font-family: 'Linux Libertine';
 }
 
+h4 {
+  font-size: 1em;
+  font-weight: bold;
+  font-family: 'Linux Libertine';
+}
+
 table {
   margin-bottom:10px;
   table-layout:fixed;
@@ -222,11 +228,11 @@ a.btn-organism:hover {
 
 a.btn-community:visited,
 a.btn-community:link {
-  background-color: #00CC9E;
-  border-color: #00CC9E;
+  background-color: #008558;
+  border-color: #008558;
 }
 a.btn-community:hover {
-  background-color: #028F6F;
+  background-color: #026E55;
   border-color: white;
 }
 

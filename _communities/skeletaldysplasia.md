@@ -11,6 +11,9 @@ logo-link: "https://www.sydney.edu.au/medicine-health/about/our-people/academic-
 support:
 contribute: "You are invited to test and curate existing pathways as well as to create new ones. All suggestions and contributions are welcome. Contact Prof. Andreas Zankl (andreas.zankl[AT]sydney.edu.au) if you interested in adding pathways to the Skeletal Dysplasia Portal."
 community-tag: "SkeletalDysplasia"
+editors:
+- Azankl
+- Rlee
 redirect_from:
   - /index.php/Portal:SkeletalDysplasia
 ---

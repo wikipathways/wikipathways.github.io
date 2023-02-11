@@ -1,187 +1,113 @@
 ---
 title: Team
+curators:
+- Egonw
+- Khanspers
+- Mkutmon
+- AlexanderPico
+- DeSl
+- Fehrhart
+- Ddigles
+- Susan
+- Andra
+- Elisson nl
+- Madeomuga
+- IsabelWassink
+- Jmillanacosta
+- tabbassidaloii
+- Ash_iyer
+- ElenaDR1
+
+architects:
+- Mkutmon
+- AlexanderPico
+
+coordination:
+- Khanspers
+- Susan
+
+founders:
+- Thomas
+- AlexanderPico
+- MartijnVanIersel
+- Khanspers
+- BruceConklin
+- Evelo
+
+redirect_from: /index.php/WikiPathways:Team
 ---
-<h1> Organizational structure</h1>
-<h2>Founders</h2>
+<h1>Who is behind WikiPathways?</h1>
+WikiPathways is run by people like you! Join our teams of <a href="#curators">curators</a>, <a href="#community_editors">community editors</a> and <a href="#developers">developers</a> to maintain this public resource of pathway information.
 
-Thomas Kelder, Alexander Pico, Martijn van Iersel, Kristina Hanspers, Bruce Conklin, Chris Evelo
+<a name="architects"/>
+<h2>Coordination</h2>
+<b>Architects:</b> Responsible for roadmap planning, onboarding new developers, and setting best practices.
+<ul>
+{% for a in page.architects %}
+    {% assign auth = site.authors | where: "username", a | first  %}
+    <li><a href="{{site.url}}/authors/{{a}}.html" title="View profile">{{ auth.realname }}</a></li>
+{% endfor %}
+</ul>
+<b>Community Coordinators:</b> Responsible for curation coordination, organization of community meetings, educational material.
+<ul>
+{% for a in page.coordination %}
+    {% assign auth = site.authors | where: "username", a | first  %}
+    <li><a href="{{site.url}}/authors/{{a}}.html" title="View profile">{{ auth.realname }}</a></li>
+{% endfor %}
+</ul>
 
-<h2>Board of Directors</h2>
-
-Alexander Pico, Chris Evelo
-
-<h2>Architects</h2>
-
-Alexander Pico, Martina Kutmon
-
-<h2>Active Developers</h2>
-
-Alexander Pico, Anders Riutta, Kristina Hanspers, Martina Kutmon, Ryan Miller
-
-<h2>Data Scientists</h2>
-
-Anders Riutta, Egon Willighagen
-
-<h2>Curation Coordinators</h2>
-
-Kristina Hanspers, Denise Slenter
-
+<a name="curators"/>
 <h2>Curators</h2>
+Help review pathway edits, monitor automated reports, or join the <b><i>Curator of the Week</i></b> roster.
+<div class="row">
+{% for a in page.curators %}
+    {% assign auth = site.authors | where: "username", a | first  %}
+<div class="col-sm-3"><div class="card mb-3" style="max-width: 300px; padding:5px; background-color:#eae6ff;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="https://github.com/{{auth.github}}.png" style="object-fit: cover; border-radius: 50%; width: 75px; margin: 5px;" class="card-img" alt="No photo">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{auth.realname}}</h5>
+        <p class="card-text"></p>
+        <a href="{{auth.url}}" class="btn btn-sm btn-info">View profile</a>
+      </div>
+    </div>
+  </div>
+</div></div>
+{% endfor %}
+</div>
 
-List of the top pathway curators can be found here: Curators
+<a name="community_editors"/>
+<h2>Community Editors</h2>
+Interested in a focused subset of pathways, for example relating to a disease or model organism? Join or create a WikiPathways Community and organize your own community practices and events. Here is a list of communities and lead editors and points of contact:
+{% for c in site.communities %}
+<p style="margin-bottom:0px;">
+<a class="btn btn-sm btn-pill btn-community" href="{{ c.url }}">{{ c.display-name }}</a>
+<span style="color:gray;">{{c.short-description}}</span>
+</p>
+<ul>
+    {% for a in c.editors %}
+        {% assign auth = site.authors | where: "username", a | first  %}
+        <li><a href="{{site.url}}/authors/{{a}}.html" title="View profile">{{ auth.realname }}</a></li>
+    {% endfor %}
+</ul>
+{% endfor %}
 
+<a name="developers"/>
+<h2>Developers</h2>
+The WikiPathways project is 100% open source. Dive under the hood to review and contribute to the code base.
+<ul>
+    <li><a href="https://github.com/orgs/wikipathways/people" title="View code contributors" target="_blank">See all WikiPathways code contributors</a></li>
+</ul>
 
-Admin curation team that has a weekly schedule to go through the curation protocol:
-
-Alexander Pico, Anders Riutta, Kristina Hanspers, Martina Kutmon, Lauren Dupuis, Lauren Dupuis, Elisson Lopes, Egon Willighagen, Marvin Martens, Anders Riutta, Daniela Digles, Friederike Ehrhart, Susan Coort, Laurent Winckers, Andra Waagmeester, Denise Slenter
-
-<h2>Former developers</h2>
-
-Anwesha Bohler, Andra Waagmeester, Martijn van Iersel, Thomas Kelder, Jonathan Melius, Mark Hershberger, Nuno Nunes
-
-<h2>Contributors</h2>
-
-Chetan Bansal, Leontius Pradhana, Sravanthi Sinah, Truhin Alexandr, Dara Akdag, Jacob Windsor, Sravanthi Sinha, Manas Awasthi.
-<h2>Team Members</h2>
-Alexander Pico
-
-    Co-founder of WikiPathways
-    Architect
-    Developer
-    Admin curator
-    Associate Director of Bioinformatics at Gladstone Institutes 
-
-Anders Riutta
-
-    Developer
-    Data scientist
-    Admin curator
-    Software developer at Gladstone Institute 
-
-Andra Waagmeester
-
-    Developer
-    Data scientist
-    Founder of Micelio 
-
-Anwesha Bohler
-
-    Developer
-    Admin curator
-    Data Scientist at Medtronic 
-
-Bruce Conklin
-
-    Co-founder of WikiPathways
-    Senior investigator at the Gladstone Institutes 
-
-Chris Evelo
-
-    Co-founder of WikiPathways
-    Head of the Department of Bioinformatics – BiGCaT at Maastricht University 
-
-Egon Willighagen
-
-    Data scientist
-    Admin curator
-    Researcher at Maastricht University 
-
-Elisa Cirillo
-
-    Admin curator
-    PhD student at Maastricht University 
-
-Jonathan Melius
-
-    Developer
-    Admin curator
-    Scientific programmer at Maastricht University 
-
-Kristina Hanspers
-
-    Co-founder of WikiPathways
-    Developer
-    Curation coordinator
-    Admin curator
-    Research Associate at the Gladstone Institute 
-
-Mark Hershberger
-
-    MediaWiki/PHP Consultant 
-
-Martijn van Iersel
-
-    Co-founder of WikiPathways
-    Developer
-    Bioinformatics Consultant at General Bioinformatics 
-
-Martina Kutmon
-
-    Architect
-    Developer
-    Admin curator
-    Postdoctoral researcher at Maastricht University 
-
-Nuno Nunes
-
-    Developer
-    Admin curator
-    System manager at Maastricht University 
-
-Ryan Miller
-
-    Developer
-    Admin curator
-    PhD student at Maastricht University 
-
-Denise Slenter
-
-    Curation coordination
-    Admin curator
-    PhD student at Maastricht University 
-
-Susan Steinbusch-Coort
-
-    Admin curator
-    Assistant professor at Maastricht University 
-
-Laurent Winckers
-
-    Admin curator
-    PhD student at Maastricht University 
-
-Lauren Dupuis
-
-    Admin curator
-    Postdoctoral researcher at Maastricht University 
-
-Amadeo Munoz Garcia
-
-    Admin curator
-    Postdoctoral researcher at Maastricht University 
-
-Elisson Lopes
-
-    Admin curator
-    Data scientist at BIODADOS-ICB-UFMG- Brazil 
-
-Marvin Martens
-
-    Admin curator
-    PhD student at Maastricht University 
-
-Daniela Digles
-
-    Admin curator
-    Postdoctoral researcher and lecturer at University of Vienna] 
-
-Friederike Ehrhart
-
-    Admin curator
-    Assistant professor at Maastricht University] 
-
-Thomas Kelder
-
-    Co-founder of WikiPathways
-    Developer
-    Co-founder and CSO of EdgeLeap 
+<a name="founders"/>
+<h2>Founders</h2>
+Back in 2007, members of the Conklin (Gladstone Institutes, CA, USA) and Evelo (Univ. Maastrict, NL) labs decided to collaborate on a new type of pathway database. Read all about it in <a href="https://doi.org/10.1371%2Fjournal.pbio.0060184">Pico AR, <i>et al.</i> PLoS Biol. 2008</a>.
+<ul>
+{% for a in page.founders %}
+    {% assign auth = site.authors | where: "username", a| first  %}
+    <li><a href="{{site.url}}/authors/{{a}}.html" title="View profile">{{ auth.realname }}</a></li>
+{% endfor %}
+</ul>

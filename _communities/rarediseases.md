@@ -11,6 +11,9 @@ support: "This project has received funding from the European Union’s Horizon 
 contribute: "If you know of a pathway that should be added, please contact the administrator (friederike.ehrhart[AT]gmail.com)."
 community-tag: "RareDiseases"
 
+editors: 
+- Fehrhart
+
 redirect_from:
   - /index.php/Portal:RareDisease 
 ---

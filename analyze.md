@@ -1,5 +1,8 @@
 ---
 title: How to Use
+redirect_from: 
+ - /index.php/Help:Researchers
+ - /index.php/Help:Tutorial
 ---
 
 <div class="card-deck">

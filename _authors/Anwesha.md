@@ -1,16 +1,19 @@
 ---
 username: Anwesha
 realname: Anwesha Bohler
-website: 
-affiliation: 
-bio: 
-github: 
+website: ~
+affiliation: ~
+bio: ~
+github: ~
 orcid: 0000-0001-7073-5852
-linkedin: 
-googlescholar: 
+linkedin: ~
+googlescholar: ~
 wikidata: Q28792013
-twitter: 
-mastodon-url: 
-meta:
-instagram:
+twitter: ~
+mastodon-url: ~
+meta: ~
+instagram: ~
+redirect_from:
+- /index.php/User:Anwesha
+- /index.php/Special:Contributions/Anwesha
 ---

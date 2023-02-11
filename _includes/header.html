@@ -11,16 +11,23 @@
         <div style="width:300px; float:left; margin:4px 20px 0px 0px;">
           <div class="gcse-search" data-personalizedAds="false">...</div> 
         </div>
-        <!-- MENU -->         
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- MENU -->  
+        {% assign showMenuOnPages = "404,Help" | split: ',' %}
+        {% assign navbarAria="false" %} 
+        {% assign navbarClass="" %} 
+        {% if showMenuOnPages contains page.title %}  
+          {% assign navbarAria="true" %}
+          {% assign navbarClass="show" %} 
+        {% endif %}
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded={{navbarAria}} aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         </div>
-        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse  {{navbarClass}}" id="navbarNavAltMarkup">
+          <div style="float:left;"><a class="btn btn-sm btn-front my-1" href="https://wikipathways.org" target="_blank">Go to Classic Site</a></div>
           <div class="nav justify-content-center" >
-            <p style="font-weight: bold; background-color: #fff; padding: 010px;">Welcome to the <span style="color: #FF8120; font-style: italic;font-weight: bold;">new</span> WikiPathways site!&nbsp;
-            Please help <a href="https://github.com/wikipathways/wikipathways-help/issues" target="_blank">report any issues</a> you find.<br />
-            And <a href="https://wikipathways.org" target="_blank">revisit the old site</a> if you are missing something.</p>
+            <p style="font-weight: bold; background-color: #fff; padding: 010px; margin-left:-150px; margin-bottom:1px;">Welcome to the <span style="color: #B521FF; font-style: italic;font-weight: bold;">NEW</span> WikiPathways site!&nbsp;
+            Please help <a href="https://github.com/wikipathways/wikipathways-help/issues" target="_blank">report any issues</a> you find.</p>
           </div>
           <div class="nav justify-content-center">
             <a class="nav-item nav-link" href="/about.html">About</a>

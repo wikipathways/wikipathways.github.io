@@ -1,16 +1,19 @@
 ---
 username: Mkutmon
-realname: Martina Kutmon
-website: 
-affiliation: 
-bio: 
-github: 
+realname: Martina Summer-Kutmon
+website: ~
+affiliation: Maastricht Centre for Systems Biology (MaCSBio), Maastricht University
+bio: ~
+github: mkutmon
 orcid: 0000-0002-7699-8191
-linkedin: 
-googlescholar: 
+linkedin: ~
+googlescholar: ~
 wikidata: Q27987764
-twitter: 
-mastodon-url: 
-meta:
-instagram:
+twitter: mkutmon
+mastodon-url: ~
+meta: ~
+instagram: ~
+redirect_from:
+- /index.php/User:Mkutmon
+- /index.php/Special:Contributions/Mkutmon
 ---

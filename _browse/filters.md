@@ -1,5 +1,6 @@
 ---
 layout: table-page
+redirect_from: /index.php/Special:BrowsePathways
 order: 1
 display-title: "Browse"
 btn-class: "btn-front"
@@ -425,7 +426,7 @@ function addCard(c){
 }
 // function to add item to list
 function addList(c){
-  listDiv.innerHTML += '<li><a href="'+c["url"]+'">'+c["title"]+' <em>('+c["org"]+')</em></a></li>';
+  listDiv.innerHTML += '<li><a href="'+c["url"]+'">'+c["title"]+' - '+c["wpid"]+'<em>('+c["org"]+')</em></a></li>';
 }
 
   btnMore.click(function (e) {

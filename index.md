@@ -1,6 +1,24 @@
 ---
 layout: home2
 title: Home
+curator_of_the_week:
+- Elisson nl
+- AlexanderPico
+- tabbassidaloii
+- Ddigles
+- Fehrhart
+- Mkutmon
+- Susan
+- Andra
+- DeSl
+- IsabelWassink
+- Jmillanacosta
+- ElenaDR1
+- Khanspers
+- Madeomuga
+- Ash_iyer
+
+redirect_from: /index.php/WikiPathways
 ---
 <div style="background: linear-gradient(0deg, #fefefe, #eae6ff 100%);">
   {%- include_cached header.html %}
@@ -73,11 +91,26 @@ title: Home
             <div class="bg-gradient p-3">
               <div class="container" style="margin-left:25px;">
                 <h1 style="font-family:Linux Libertine; ">Dedicated to open science</h1><h2 style="font-family:Poppins; color: #6c757d;line-height:1.4"> Join hundreds of other scientists by contributing your pathway knowledge.</h2>
-            <div style="width:90px;">
-                <a class="btn btn-sm btn-front w-100 my-2" href="/help.html#create">Create</a>
-                <a class="btn btn-sm btn-front w-100 my-2" href="/help.html#curate">Curate</a>
-                <a class="btn btn-sm btn-front w-100 my-2" href="https://github.com/wikipathways/wikipathways-development" target="_blank">Code</a>
-            </div>
+                    <a class="btn btn-sm btn-front my-2" href="/help.html#create">Create</a>
+                    <a class="btn btn-sm btn-front my-2" href="/help.html#curate">Curate</a>
+                    <a class="btn btn-sm btn-front my-2" href="https://github.com/wikipathways/wikipathways-development" target="_blank">Code</a>
+                <br /><br /><h2>Curator of the Week</h2>
+                {% assign pick =  "now" | date:"%W" | minus: 1 | modulo: page.curator_of_the_week.size %}
+                {% assign cauth = site.authors | where: "username", page.curator_of_the_week[pick] | first  %}
+                <div class="card mb-3" style="max-width: 300px; padding:5px; background-color:#eae6ff;">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <img src="https://github.com/{{cauth.github}}.png" style="object-fit: cover; border-radius: 50%; width: 75px; margin: 5px;" class="card-img" alt="No photo">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">{{cauth.realname}}</h5>
+                        <p class="card-text"></p>
+                        <a href="{{cauth.url}}" class="btn btn-sm btn-info">View profile</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -326,18 +359,18 @@ title: Home
                 <br/>
       <a href="https://pathvisio.org/" 
       title="PathVisio is a free open-source pathway analysis and drawing software which allows drawing, editing, and analyzing biological pathways." target="_blank">
-      <img src="/assets/img/logo-pathvisio.png" height="55px" style="padding:2px 1px"/></a>
+      <img src="/assets/img/logo-pathvisio.png" alt="PathVisio logo" height="55px" style="padding:2px 1px"/></a>
       <a href="http://apps.cytoscape.org/apps/wikipathways" 
       title="Cytoscape is an open source software platform for visualizing complex-networks and integrating these with any type of attribute data." target="_blank">
-      <img src="/assets/img/logo-cytoscape.png" height="55px" style="padding:2px 2px" /></a>
+      <img src="/assets/img/logo-cytoscape.png" alt="Cytoscape logo" height="55px" style="padding:2px 2px" /></a>
       <a href="https://biit.cs.ut.ee/gprofiler/gost" title="g:Profiler is a public web server for characterising and manipulating gene lists." target="_blank">
-      <img src="/assets/img/logo-gprofiler.png" height="55px" style="padding:2px 1px" /></a>
+      <img src="/assets/img/logo-gprofiler.png" alt="gprofiler logo" height="55px" style="padding:2px 1px" /></a>
       <a href="https://www.webgestalt.org/" title="WebGestalt is designed for functional genomic, proteomic and large-scale genetic studies from which large number of gene lists." target="_blank">
-      <img src="/assets/img/logo-webgestalt.png" height="55px" style="padding:2px 4px" /></a>
+      <img src="/assets/img/logo-webgestalt.png" alt="webgestalt logo" height="55px" style="padding:2px 4px" /></a>
       <a href="https://amp.pharm.mssm.edu/Enrichr/" title="Enrichr is a comprehensive gene set enrichment analysis web server. Includes WikiPathways as one of their data sources." target="_blank">
-      <img src="/assets/img/logo-enrichr.png" height="55px" style="padding:2px 8px" /></a>
+      <img src="/assets/img/logo-enrichr.png" alt="Enrichr logo" height="55px" style="padding:2px 8px" /></a>
       <a href="https://bioconductor.org/packages/clusterProfiler/" title="The clusterProfiler R package supports GO and pathway analysis performed as overrepresentation or GSEA." target="_blank">
-      <img src="/assets/img/logo-clusterprofiler.png" height="55px" style="padding:2px 8px" /></a>
+      <img src="/assets/img/logo-clusterprofiler.png" alt="clusterProfiler logo" height="55px" style="padding:2px 8px" /></a>
       <a href="/tools.html" style="font-size:1.0em; text-decoration:none;">and many more...</a>
                 </div>
               </div>              

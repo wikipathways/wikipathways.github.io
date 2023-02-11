@@ -1,5 +1,6 @@
 ---
 title: Help Communities
+redirect_from: /index.php/Help:WikiPathways_Portals
 ---
 <div id="create community">
 <h1>Creating and Editing the Community Page</h1>

@@ -1,16 +1,19 @@
 ---
 username: Susan
 realname: Susan Coort
-website: 
-affiliation: 
-bio: 
-github: 
+website: ~
+affiliation: ~
+bio: ~
+github: susancoort
 orcid: 0000-0003-1224-9690
-linkedin: 
-googlescholar: 
+linkedin: ~
+googlescholar: ~
 wikidata: Q19851164
-twitter: 
-mastodon-url: 
-meta:
-instagram:
+twitter: ~
+mastodon-url: ~
+meta: ~
+instagram: ~
+redirect_from:
+- /index.php/User:Susan
+- /index.php/Special:Contributions/Susan
 ---

@@ -14,6 +14,9 @@ contribute:
 
 community-tag: "Micronutrients"
 
+editors:
+- Susan
+
 redirect_from:
   - /index.php/Portal:Micronutrient
 ---

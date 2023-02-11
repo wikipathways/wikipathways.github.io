@@ -1,16 +1,19 @@
 ---
 username: DeSl
 realname: Denise Slenter
-website: 
-affiliation: 
-bio: 
-github: 
+website: ~
+affiliation: ~
+bio: ~
+github: DeniseSl22
 orcid: 0000-0001-8449-1318
-linkedin: 
-googlescholar: 
+linkedin: ~
+googlescholar: ~
 wikidata: Q43744369
-twitter: 
-mastodon-url: 
-meta:
-instagram:
+twitter: ~
+mastodon-url: ~
+meta: ~
+instagram: ~
+redirect_from:
+- /index.php/User:DeSl
+- /index.php/Special:Contributions/DeSl
 ---

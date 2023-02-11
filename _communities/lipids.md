@@ -18,7 +18,10 @@ support: "Thanks to the [LIPID MAPS team](https://lipidmaps.org/) for sharing th
 contribute: "If you know of a pathway that should be added, please contact the administrator (denise.slenter[AT]maastrichtuniversity.nl)."
 community-tag: "Lipids"
 
-collections-title: "LIPID MAPS Categories"
+editors: 
+- DeSl
+
+collections-title: "LIPID MAPS Pathways"
 collections:
 - name: "Fatty Acids [FA01]"
   wpids: ['WP4350', 'WP4351']

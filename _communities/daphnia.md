@@ -23,6 +23,9 @@ contribute:
 
 community-tag: "Daphnia"
 
+editors:
+- Egonw
+
 redirect_from:
   - /index.php/Portal:Daphnia 
 ---

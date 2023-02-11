@@ -1,5 +1,6 @@
 ---
 title: Tools
+redirect_from: /index.php/Help:Tools_using_WikiPathways
 ---
 <h2>Tools using WikiPathways</h2>
 <p>These are some of the resources and software tools out there that make use of WikiPathways 
@@ -78,6 +79,10 @@ title: Tools
     <tr>
     <th><a href="https://biit.cs.ut.ee/gprofiler/gost" target="_blank" class="external " title="https://biit.cs.ut.ee/gprofiler/gost" rel="nofollow">g:Profiler</a>
     </th><td>g:Profiler is a public web server for characterising and manipulating gene lists.
+    </td></tr>
+    <tr>
+    <th><a href="https://maayanlab.cloud/Harmonizome/dataset/Wikipathways+Pathways" target="_blank" class="external " title="https://maayanlab.cloud/Harmonizome/dataset/Wikipathways+Pathways" rel="nofollow">Harmonizome</a>
+    </th><td>To facilitate access to and learning from biomedical data, Harmonizome was created as a collection of information about genes and proteins from 112 datasets provided by 65 online resources. It maintains a set of pages and bioinformatics resources related to the use of WikiPathways in enrichment analysis, including GMT files, Gene-Attribute Matrix, plots characterizing the overlap of gene sets, API access, example Python code, etc.
     </td></tr>
     <tr>
     <th><a href="https://homer.ucsd.edu/homer/" target="_blank" class="external " title="http://homer.ucsd.edu/homer/" rel="nofollow">HOMER</a>

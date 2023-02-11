@@ -19,6 +19,11 @@ contribute: "The list of pathways is not static and can be updated at any time. 
 
 community-tag: "AOP"
 
+editors:
+- Marvin M2
+- Fehrhart
+- Penny
+
 redirect_from:
   - /index.php/Portal:AOP
 ---       
