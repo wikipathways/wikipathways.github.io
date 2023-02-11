@@ -66,9 +66,6 @@ select distinct ?dataset (str(?titleLit) as ?title) ?date ?license where {
 <h4>Get the species currently in WikiPathways with their respective URI's</h4>
 
 ```sparql
-PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX wp: <http://vocabularies.wikipathways.org/wp#>
-
 SELECT DISTINCT ?organism (str(?label) as ?name)
 WHERE {
     ?concept wp:organism ?organism ;
@@ -76,12 +73,11 @@ WHERE {
 }
 ```
 
+[Open](https://bit.ly/3xhyaFq)
+
 <h4>List pathways and their species</h4>
 
 ```sparql
-PREFIX dc:      <http://purl.org/dc/elements/1.1/> 
-PREFIX wp:     <http://vocabularies.wikipathways.org/wp#>
-
 SELECT DISTINCT (str(?title) as ?pathway) (str(?label) as ?organism)
 WHERE {
     ?pw dc:title ?title ;
@@ -89,6 +85,8 @@ WHERE {
       wp:organismName ?label .
 }
 ```
+
+[Open](https://bit.ly/3RUHVTO)
 
 <h4>List the species captured in WikiPathways and the number of pathways per species</h4>
 
@@ -101,6 +99,8 @@ WHERE {
 }
 ORDER BY DESC(?pathwayCount)
 ```
+
+[Open](https://bit.ly/3HQcK7n)
 
 <h4>List all pathways for species "Mus musculus"</h4>
 
@@ -119,6 +119,8 @@ WHERE {
 ORDER BY ?wpIdentifier
 ```
 
+[Open](https://bit.ly/3Ym7b7R)
+
 <h4>Get all pathways with a particular gene</h4>
 
 List all pathways per instance of a particular gene or protein (`wp:GeneProduct`)
@@ -134,6 +136,8 @@ WHERE {
     FILTER regex(str(?label), "CYP"). 
 }
 ```
+
+[Open](https://bit.ly/3YfLwxX)
 
 <h4>Get all groups and complexes containing a particular gene</h4>
 
@@ -152,6 +156,8 @@ WHERE {
 }
 ```
 
+[Open](https://bit.ly/3K0O0fq)
+
 <h4>Get all the genes on a particular pathway</h4>
 
 List all the genes and proteins (`wp:GeneProduct`) associated with a particular pathway WPID.
@@ -165,6 +171,8 @@ select distinct ?pathway (str(?label) as ?geneProduct) where {
     ?pathway dcterms:identifier "WP1560" . 
 }
 ```
+
+[Open](https://bit.ly/3YKILVo)
 
 <h4>Count the number of pathways per ontology term</h4>
 
@@ -180,6 +188,69 @@ SELECT DISTINCT ?pwOntologyTerm count(?pwOntologyTerm) as ?pathwayCount
  }
  ORDER BY DESC(?pathwayCount)
 ```
+
+<h4>Count the number of pathways per curation tag</h4>
+
+We can also count the number of pathways by curation and community tag:
+
+```sparql
+SELECT ?curationTag (count(DISTINCT ?pathway) as ?pathwayCount)
+WHERE {
+  ?pathway wp:ontologyTag ?curationTag .
+  FILTER contains(STR(?curationTag), "Curation:")
+}
+ORDER BY DESC(?pathwayCount)
+```
+
+[Open](https://bit.ly/3XpFWrJ)
+
+<h4>Get all pathways with a particular ontology term</h4>
+
+In WikiPathways, pathways can be tagged with ontology terms from Pathway, Cell Line and Disease ontology. The following query returns a list of pathways tagged with [PW_0000296](http://bioportal.bioontology.org/ontologies/PW/?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPW_0000296).
+
+```sparql
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT ?pathway (str(?titleLit) AS ?title)
+WHERE {
+  ?pathwayRDF wp:ontologyTag obo:PW_0000296 ;
+              foaf:page ?pathway ;
+              dc:title ?titleLit .
+}
+```
+
+[Open](https://bit.ly/3AUyBYs)
+
+<h4>Get all ontology terms for a particular pathway</h4>
+
+List all the ontology terms tagged on a particular pathway.
+
+```sparql
+SELECT (?o as ?pwOntologyTerm) (str(?titleLit) as ?title) ?pathway 
+WHERE {
+  ?pathwayRDF wp:ontologyTag ?o ;
+    foaf:page ?pathway ;
+    dc:title ?titleLit ;
+    dcterms:identifier "WP1560" . 
+  FILTER (! regex(str(?pathway), "group"))
+}
+```
+
+[Open](https://bit.ly/3jTAlft)
+
+<h4>Get all Reactome pathways</h4>
+
+List all the ontology terms tagged on a particular pathway.
+
+```sparql
+SELECT DISTINCT ?pathway (str(?titleLit) as ?title)
+WHERE {
+  ?pathway wp:ontologyTag cur:Reactome_Approved ;
+           dc:title ?titleLit .
+}
+```
+
+[Open](https://bit.ly/3YHGD0t)
 
 <h3>LIPID MAPS-related queries</h3>
 
