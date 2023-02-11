@@ -130,8 +130,7 @@ Of general interest is the number of pathways per species:
 
 ```sparql
 select distinct str(?orgName) as ?organism count(?pw) as ?pathways  where {
-  ?pw wp:organism ?organismCode .
-  ?organismCode rdfs:label ?orgName
+  ?pw wp:organismName ?orgName .
 } order by desc(?pathways)
 ```
 
