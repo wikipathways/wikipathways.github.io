@@ -278,6 +278,49 @@ where {
 ORDER BY DESC(?LipidsInPWs)
 ```
 
+[Open](https://bit.ly/3E1CvR4)
+
+<h4>Count amount of lipids per LIPID MAPS ontology class</h4>
+
+Counts unique LIPID MAPS identifier (provided by BridgeDb) for the fatty acid (FA) class, other examples are provided as a comment.
+
+```sparql
+select count(distinct ?lipidID) as ?IndividualLipidsPerClass_FA
+where {     ?metabolite a wp:Metabolite ;
+    dcterms:identifier ?id ;
+    dcterms:isPartOf ?pathwayRes ;
+    wp:bdbLipidMaps ?lipidID .
+  ?pathwayRes a wp:Pathway ;
+              wp:organismName "Homo sapiens" ; 
+    dcterms:identifier ?wpid ;
+    dc:title ?title .
+  FILTER regex(str(?lipidID), "FA" ). # Other classes: GL, GP, SP, ST, PR, SL, PK
+}
+```
+
+[Open](https://bit.ly/33iCc56)
+
+<h4>Find pathways per LIPID MAPS ontology class, sorted on amount of unique lipids</h4>
+
+Filter all unique LIPID MAPS identifier (provided by BridgeDb) for the fatty acid (FA) class, and find all pathways with individual lipids in there.
+
+```sparql
+select distinct ?pathwayRes (str(?wpid) as ?pathway) (str(?title) as ?pathwayTitle) (count(distinct ?lipidID) AS ?FA_LipidsInPWs)
+where {     ?metabolite a wp:Metabolite ;
+    dcterms:identifier ?id ;
+    dcterms:isPartOf ?pathwayRes ;
+    wp:bdbLipidMaps ?lipidID .
+  ?pathwayRes a wp:Pathway ;
+              wp:organismName "Homo sapiens" ; 
+    dcterms:identifier ?wpid ;
+    dc:title ?title .
+  FILTER regex(str(?lipidID), "FA" ). # Fatty acids, Other classes: GL, GP, SP, ST, PR, SL, PK
+}
+ORDER BY DESC(?FA_LipidsInPWs
+```
+
+[Open](https://bit.ly/3YfOeDD)
+
 <h3>Data statistics-oriented queries</h3>
 
 <h4>Count the number of metabolites per species</h4>
@@ -327,15 +370,80 @@ SELECT DISTINCT ?interaction ?pathway  WHERE {
 
 <h3>Datasource-oriented queries</h3>
 
+<h4>Get all datasources currently captured in WikiPathways<h4>
 
+```sparql
+SELECT DISTINCT (str(?datasourceLit) as ?datasource)
+WHERE {
+  ?concept dc:source ?datasourceLit
+}
+```
 
-<h3>Curators-oriented queries</h3>
+[Open](https://bit.ly/3K0vmEh)
 
+<h4>Get the number of entries per datasource in WikiPathways</h4>
 
+```sparql
+SELECT (str(?datasourceLit) as ?datasource)
+       (count(DISTINCT ?dataNode) as ?numberEntries)
+WHERE {
+  ?concept dc:source ?datasourceLit ;
+    wp:isAbout ?dataNode .
+} 
+ORDER BY DESC(?numberEntries)
+```
+
+[Open](https://bit.ly/3Ki1iV5)
+
+<h4>Return all compounds annotated with the "ChEMBL compound" as data source and the pathways they are in</h4>
+
+```sparql
+SELECT DISTINCT ?identifier ?pathway
+WHERE {
+  ?concept dcterms:isPartOf ?pathway . ?pathway a wp:Pathway .
+  ?concept dc:source "ChEMBL compound" .
+  ?concept dc:identifier ?identifier .        
+}
+```
 
 <h3>Literature queries</h3>
 
+<h4>Articles cited by Reactome but not by WikiPathways</h4>
 
+```sparql
+SELECT (COUNT(DISTINCT ?pubmed) AS ?count)
+WHERE {
+  ?pubmed a       wp:PublicationReference .
+  MINUS { ?pubmed dcterms:isPartOf/wp:ontologyTag cur:AnalysisCollection }
+  { ?pubmed dcterms:isPartOf/wp:ontologyTag cur:Reactome_Approved }
+}
+```
 
+[Open](https://bit.ly/3xcbFSu)
 
+<h4>Articles cited by WikiPathways but not by Reactome</h4>
+
+```sparql
+SELECT (COUNT(DISTINCT ?pubmed) AS ?count)
+WHERE {
+  ?pubmed a       wp:PublicationReference .
+  { ?pubmed dcterms:isPartOf/wp:ontologyTag cur:AnalysisCollection }
+  MINUS { ?pubmed dcterms:isPartOf/wp:ontologyTag cur:Reactome_Approved }
+}
+```
+
+[Open](https://bit.ly/3Yqcpzp)
+
+<h4>Articles cited by both Reactome and WikiPathways</h4>
+
+```sparql
+SELECT (COUNT(DISTINCT ?pubmed) AS ?count)
+WHERE {
+  ?pubmed a       wp:PublicationReference .
+  { ?pubmed dcterms:isPartOf/wp:ontologyTag cur:AnalysisCollection }
+  { ?pubmed dcterms:isPartOf/wp:ontologyTag cur:Reactome_Approved }
+}
+```
+
+[Open](https://bit.ly/3YnCsHv)	
 
