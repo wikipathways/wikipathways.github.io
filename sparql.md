@@ -366,11 +366,9 @@ SELECT DISTINCT ?interaction ?pathway  WHERE {
 }
 ```
 
-
-
 <h3>Datasource-oriented queries</h3>
 
-<h4>Get all datasources currently captured in WikiPathways<h4>
+<h4>Get all datasources currently captured in WikiPathways</h4>
 
 ```sparql
 SELECT DISTINCT (str(?datasourceLit) as ?datasource)
