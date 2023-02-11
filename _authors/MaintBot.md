@@ -1,6 +1,6 @@
 ---
 username: MaintBot
-realname: Maintenance bot
+realname: WikiPathways Maintenance bot
 website: ~
 affiliation: WikiPathways Team
 bio: This is a bot account maintained by the WikiPathways team to perform routine
