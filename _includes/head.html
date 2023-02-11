@@ -28,6 +28,21 @@
       gtag('config', 'G-4MWT32YBQR');
     </script> 
     {% if page.wpid %}
+      <!-- Metadata -->
+      <meta name="citation_title" content="{{ page.title }}">
+      <meta name="citation_abstract" content="{{ page.description }}">
+      <meta name="citation_publication_date" content="{{ page.last-edited }}">
+      <meta name="citation_fulltext_html_url" content="https://www.wikipathways.org/instance/{{ page.wpid }}">
+      {% for username in page.authors %}
+        {% assign author = site.authors | where: "username", username | first %}
+        <meta name="citation_author" content="{{ author.realname | username }}">
+        {% if author.affiliation %}
+          <meta name="citation_author_institution" content="{{ author.affiliation }}">
+        {% endif %}
+        {% if author.orcid %}
+          <meta name="citation_author_orcid" content="{{ author.orcid }}">
+        {% endif %}
+      {% endfor %}
       <script type="module" src="/assets/js/clipboardtext.js" defer="defer"></script>
       <script type="application/ld+json">
         {{ page.schema-jsonld | jsonify }}
