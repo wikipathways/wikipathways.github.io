@@ -2,9 +2,21 @@
 title: WikiPathways Federated SPARQL queries
 ---
 
+<div style="background:#eee; padding:20px 0px 0px 50px">
+<h1></h1>
+<div class="row">
+    <div class="col text-nowrap">
+            <ul>
+                <li><a href="#chembl">ChEMBL</a></li>
+                <li><a href="#wikidata">Wikidata</a></li>
+                <li><a href="#molmedb">MolMeDB</a></li>
+            </ul>
+    </div>
+</div></div>
+
 <h1>WikiPathways Federated SPARQL queries</h1>
 
-<h2>ChEMBL</h2>
+<h2 id="chembl">ChEMBL</h2>
 
 <h3>all ChEMBL assays for pathways</h3>
 
@@ -27,6 +39,8 @@ SELECT ?pathway ?ensembl ?assay WHERE {
   }
 } limit 100
 ```
+
+[Open](https://bit.ly/40OKdI1)
 
 <h3>all molecules targeting pathways</h3>
 
@@ -69,7 +83,7 @@ SELECT ?pathway ?ensembl ?molecule ?smiles WHERE {
 }
 ```
 
-<h2>Wikidata</h2>
+<h2 id="wikidata">Wikidata</h2>
 
 <h3>Metabolites in Wikipedia with InChIKeys from Wikidata</h3>
 
@@ -93,7 +107,7 @@ SELECT ?metabolite ?wikidata ?inchikey WHERE {
 
 [Open](https://bit.ly/3j2Dw0T)
 
-<h2>MolMeDB</h2>
+<h2 id="molmedb">MolMeDB</h2>
 
 <h3>Find all pathways, which link out to one compound in MolMeDB database</h3>
 
