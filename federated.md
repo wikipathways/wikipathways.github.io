@@ -2,8 +2,9 @@
 title: WikiPathways Federated SPARQL queries
 ---
 
+<h1>WikiPathways Federated SPARQL queries</h1>
+
 <div style="background:#eee; padding:20px 0px 0px 50px">
-<h1></h1>
 <div class="row">
     <div class="col text-nowrap">
             <ul>
@@ -13,8 +14,6 @@ title: WikiPathways Federated SPARQL queries
             </ul>
     </div>
 </div></div>
-
-<h1>WikiPathways Federated SPARQL queries</h1>
 
 <h2 id="chembl">ChEMBL</h2>
 
