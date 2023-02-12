@@ -3,7 +3,13 @@ title: WikiPathways SPARQL queries
 redirect_from: /index.php/Help:WikiPathways_SPARQL_queries
 ---
 
-<h1>WikiPathways SPARQL queries</h1>
+<h1>WikiPathways SPARQL queries
+      <a href="https://github.com/wikipathways/wikipathways.github.io/edit/main/sparql.md" target="_blank">
+        <span title="Edit WikiPathways SPARQL queries" style="color: #666; font-size: 0.8em;">
+          <i class="fa fa-pencil"></i>
+        </span>
+      </a>
+    </h1>
 
 On [sparql.wikipathways.org](http://sparql.wikipathways.org/) WikiPathways content is replicated
 in a SPARQL endpoint. Queries can be performed in three ways:
