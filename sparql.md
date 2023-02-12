@@ -183,11 +183,13 @@ all ontologies, not just the "Pathway" ontology.
 
 ```sparql
 SELECT DISTINCT ?pwOntologyTerm count(?pwOntologyTerm) as ?pathwayCount
- WHERE {
-	?pathwayRDF wp:ontologyTag ?pwOntologyTerm .
- }
- ORDER BY DESC(?pathwayCount)
+WHERE {
+  ?pathwayRDF wp:ontologyTag ?pwOntologyTerm .
+}
+ORDER BY DESC(?pathwayCount)
 ```
+
+[Open](https://bit.ly/3XmM7fX)
 
 <h4>Count the number of pathways per curation tag</h4>
 
@@ -328,11 +330,6 @@ ORDER BY DESC(?FA_LipidsInPWs
 Though strictly speaking, it guesstimates it, because it counts the number of unique metabolite identifiers. Normalization in the RDF generation code ensures we do not double count metabolites with identifiers from different databases, but it still differentially counts metabolites with different charge states.
 
 ```sparql
-PREFIX gpml:    <http://vocabularies.wikipathways.org/gpml#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX dc:      <http://purl.org/dc/elements/1.1/>
-PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
-
 select (count(distinct ?metabolite) as ?count) (str(?label) as ?species) where {
   ?metabolite a wp:Metabolite ;
     dcterms:isPartOf ?pw .
@@ -342,6 +339,7 @@ select (count(distinct ?metabolite) as ?count) (str(?label) as ?species) where {
 } GROUP BY ?label ORDER BY DESC(?count)
 ````
 
+[Open](https://bit.ly/40RkHly)
 
 <h3>Interaction-oriented queries</h3>
 
@@ -350,11 +348,6 @@ select (count(distinct ?metabolite) as ?count) (str(?label) as ?species) where {
 Find all interactions that are connected to a particular datanode. (wp:Interaction).
 
 ```sparql
-PREFIX gpml:    <http://vocabularies.wikipathways.org/gpml#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX dc:      <http://purl.org/dc/elements/1.1/>
-PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
-
 #Find all interactions that are connected to a particular datanode.
 
 SELECT DISTINCT ?interaction ?pathway  WHERE {
@@ -365,6 +358,8 @@ SELECT DISTINCT ?interaction ?pathway  WHERE {
    ?interaction wp:participants <https://identifiers.org/ensembl/ENSG00000125845> .   
 }
 ```
+
+[Open](https://bit.ly/3RUMpJN)
 
 <h3>Datasource-oriented queries</h3>
 
@@ -403,6 +398,8 @@ WHERE {
   ?concept dc:identifier ?identifier .        
 }
 ```
+
+[Open](https://bit.ly/3xfpmAb)
 
 <h3>Literature queries</h3>
 
