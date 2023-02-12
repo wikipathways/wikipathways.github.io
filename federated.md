@@ -2,7 +2,13 @@
 title: WikiPathways Federated SPARQL queries
 ---
 
-<h1>WikiPathways Federated SPARQL queries</h1>
+<h1>WikiPathways Federated SPARQL queries
+      <a href="https://github.com/wikipathways/wikipathways.github.io/edit/main/federated.md" target="_blank">
+        <span title="Edit WikiPathways Federated SPARQL queries" style="color: #666; font-size: 0.8em;">
+          <i class="fa fa-pencil"></i>
+        </span>
+      </a>
+    </h1>
 
 <div style="background:#eee; padding:20px 0px 0px 50px">
 <div class="row">
