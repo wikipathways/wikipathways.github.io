@@ -16,7 +16,10 @@ title: WikiPathways Federated SPARQL queries
     <div class="col text-nowrap">
             <ul>
                 <li><a href="#lipidmaps">LIPID MAPS</a></li>
+                <li><a href="#metanetx">MetaNetX</a></li>
             </ul>
+    </div>
+    <div class="col text-nowrap">
     </div>
 </div></div>
 
@@ -186,3 +189,47 @@ WHERE {
 ```
 
 [Open](https://bit.ly/40SG5GQ)
+
+<h2 id="metanetx">MetaNetX</h2>
+
+<h3>Find WikiPathways reactions with a Rhea ID in MetaNetX</h3>
+
+```sparql
+# Prefixes for the MetaNetX RDF:
+PREFIX mnx: <https://rdf.metanetx.org/schema/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rhea: <http://rdf.rhea-db.org/>
+
+#Variable selection
+SELECT DISTINCT (str(?title) as ?pathwayName) ?PWID ?interactionID ?reac
+WHERE {
+  # Pathway Model IDs of interest
+  VALUES ?PWID {"WP5275"}
+  
+  ?pathway a wp:Pathway . #Define what a pathway is
+  ?pathway dcterms:identifier ?PWID. #Obtain the ID
+  ?pathway dc:title ?title . #Obtain the title
+  
+  ?interaction wp:bdbRhea ?interactionID . #Find interactions with a Rhea ID
+  ?interaction dcterms:isPartOf ?pathway . #Only those part of PW
+  
+  ## The IRI for Rhea-IDs from WikiPathways starts with https://identifiers.org/rhea/, where the one
+  ## from MetaNetX starts with "http://rdf.rhea-db.org/ , so we need to rewrite the IRI
+    BIND(                      # Bind the created IRI into a new variable (called ?newIRI)
+        IRI(                   # Convert the string back to an IRI
+          CONCAT(              # Concatenate item 1 and 2 together as one string
+               "http://rdf.rhea-db.org/",        # First item to concat (more items can be added with a comma
+              #Second item to concat:
+               SUBSTR(         # Obtain a substring
+                 STR(?interactionID), # Convert the Rhea IRI from WikiPathways to a string,
+                 30)            # removing the first 29 charachters
+        )) AS ?newIRI          # Name for the new variable 
+    )
+   SERVICE <https://rdf.metanetx.org/sparql/>  {
+     SELECT DISTINCT ?reac
+                           WHERE{
+    ?reac mnx:reacXref rhea:17658 .}
+     }
+  
+} ORDER BY ASC(?pathway)
+```
