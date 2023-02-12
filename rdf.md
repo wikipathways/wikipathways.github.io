@@ -3,7 +3,13 @@ title: The WikiPathways Semantic Web Portal
 redirect_from: /index.php/Portal:Semantic_Web
 ---
 
-<h1>The WikiPathways Semantic Web Portal</h1>
+<h1>The WikiPathways Semantic Web Portal
+      <a href="https://github.com/wikipathways/wikipathways.github.io/edit/main/rdf.md" target="_blank">
+        <span title="Edit the WikiPathways Semantic Web Portal" style="color: #666; font-size: 0.8em;">
+          <i class="fa fa-pencil"></i>
+        </span>
+      </a>
+    </h1>
 
 This portal describes the Semantic Web features of the WikiPathways databases, such as the
 [Resource Description Framework](https://www.w3.org/RDF/) (RDF) translation, the ontology,
