@@ -71,7 +71,7 @@ SELECT ?pathway ?ensembl ?molecule ?smiles WHERE {
 
 <h2>Wikidata</h2>
 
-<h3>Metabolites in Wikipedia with InChIKeys from Wikidata</h2>
+<h3>Metabolites in Wikipedia with InChIKeys from Wikidata</h3>
 
 The corresponding query on Wikidata is [here](https://www.wikidata.org/wiki/User:Pathwaybot/query_examples#Lists_metabolites_in_WikiPathways_and_InChIKeys_from_Wikidata).
 
