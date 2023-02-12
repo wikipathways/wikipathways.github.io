@@ -13,6 +13,11 @@ title: WikiPathways Federated SPARQL queries
                 <li><a href="#molmedb">MolMeDB</a></li>
             </ul>
     </div>
+    <div class="col text-nowrap">
+            <ul>
+                <li><a href="#lipidmaps">LIPID MAPS</a></li>
+            </ul>
+    </div>
 </div></div>
 
 <h2 id="chembl">ChEMBL</h2>
@@ -157,4 +162,27 @@ SELECT DISTINCT ?pathwayRes (str(?wpid) as ?pathway) (str(?title) as ?pathwayTit
 }
 ```
 
+<h2 id="lipidmaps">LIPID MAPS</h2>
 
+<h3>Pathways describing the biology of oxygenated hydrocarbons (LMFA12)</h3>
+
+```sparql
+PREFIX chebi: <http://purl.obolibrary.org/obo/chebi/>
+
+SELECT ?lipid ?name ?formula ?lmid (GROUP_CONCAT(?wpid_;separator=", ") AS ?pathway)
+WHERE {
+  SERVICE <https://lipidmaps.org/sparql> {
+    VALUES ?category { <https://www.lipidmaps.org/rdf/category/112> <https://www.lipidmaps.org/rdf/category/11200> } 
+    ?lipidmaps rdfs:label ?name ;
+      rdfs:subClassOf* ?category ;
+      chebi:formula ?formula .
+  }
+  BIND (IRI(CONCAT("https://identifiers.org/lipidmaps/",
+               SUBSTR(STR(?lipidmaps), 31))) AS ?lmid)
+  ?lipid wp:bdbLipidMaps ?lmid ;
+         dcterms:isPartOf ?pathway .
+  ?pathway a wp:Pathway ; dcterms:identifier ?wpid_ .
+}
+```
+
+[Open](https://bit.ly/40SG5GQ)
