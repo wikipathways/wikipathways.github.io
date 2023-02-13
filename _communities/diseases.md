@@ -12,25 +12,25 @@ contribute: "If you know of a pathway that should be added, please contact the a
 
 Existing pathways in need of improvements:
 
-*  [Integrated Cancer Pathway](https://new.wikipathways.org/pathways/WP1971)
+*  [Integrated Cancer Pathway](https://wikipathways.org/pathways/WP1971)
 
-* [Nifedipine Activity](https://new.wikipathways.org/pathways/WP259)
+* [Nifedipine Activity](https://wikipathways.org/pathways/WP259)
 
-* [Pilocytic astrocytoma](https://new.wikipathways.org/pathways/WP2253)
+* [Pilocytic astrocytoma](https://wikipathways.org/pathways/WP2253)
 
-* [Prostate Cancer](https://new.wikipathways.org/pathways/WP2263)
+* [Prostate Cancer](https://wikipathways.org/pathways/WP2263)
 
-* [Influenza A virus infection](https://new.wikipathways.org/pathways/WP1438) 
+* [Influenza A virus infection](https://wikipathways.org/pathways/WP1438) 
 
-* [Pathogenic Escherichia coli infection](https://new.wikipathways.org/pathways/WP2272)
+* [Pathogenic Escherichia coli infection](https://wikipathways.org/pathways/WP2272)
 
-* [Ovarian Infertility Genes](https://new.wikipathways.org/pathways/WP34)
+* [Ovarian Infertility Genes](https://wikipathways.org/pathways/WP34)
 
-* [Polycystic kidney disease](https://new.wikipathways.org/pathways/WP2571)
+* [Polycystic kidney disease](https://wikipathways.org/pathways/WP2571)
 
-* [Type II diabetes mellitus](https://new.wikipathways.org/pathways/WP1584)
+* [Type II diabetes mellitus](https://wikipathways.org/pathways/WP1584)
 
-* [Physiological and Pathological Hypertrophy of the Heart](https://new.wikipathways.org/pathways/WP1528)"
+* [Physiological and Pathological Hypertrophy of the Heart](https://wikipathways.org/pathways/WP1528)"
 community-tag: "Diseases"
 
 editors:
