@@ -90,7 +90,7 @@ wpa.ttl <- wpa.df %>% dplyr::ungroup() %>%
   dplyr::mutate(p2b = "foaf:name") %>%
   dplyr::mutate(o2b = paste0('"',realname,'"')) %>%
   dplyr::mutate(p2c = "foaf:homepage") %>%
-  dplyr::mutate(o2c = paste0('<https://new.wikipathways.org/authors/',username,'>')) %>%
+  dplyr::mutate(o2c = paste0('<https://wikipathways.org/authors/',username,'>')) %>%
   dplyr::mutate(p2d = "pq:series_ordinal") %>%
   dplyr::mutate(o2d = paste0('"',ordinalRank,'"')) %>%
   dplyr::select(s1,p1,o1,p2a,o2a,p2b,o2b,p2c,o2c,p2d,o2d)
