@@ -1,7 +1,7 @@
 ---
 username: Egonw
 realname: Egon Willighagen
-website: ~
+website: https://egonw.github.io/
 affiliation: Maastricht University
 bio: ~
 github: egonw
