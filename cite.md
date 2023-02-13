@@ -39,7 +39,7 @@ redirect_from: /index.php/How_to_cite_WikiPathways
     <li><b>Once your paper is published, <i>Add a citation</i> to the corresponding pathway page(s)</b>:</li>
         <ol>
             <li>To complete these steps, first make sure you are logged in to your <a href="https://github.com/" target="_blank">GitHub account</a>.</li>
-            <li>Find the corresponding pathway on WikiPathways, for example <a href="https://new.wikipathways.org/pathways/WP4629.html">WP4629</a>.</li>
+            <li>Find the corresponding pathway on WikiPathways, for example <a href="https://wikipathways.org/pathways/WP4629.html">WP4629</a>.</li>
             <li>In the <b>Cited In</b> section, click the pencil icon to edit the list. This will open a new browser tab with the "citedin_lookup.yaml" file open in edit mode.</li>
             <li>Click anywhere in the editable area and use <b>Ctrl+F</b> to search for the WPID, for example "WP4629".</li>
             <li>If the PMCID or DOI for the publication has not already been added, add an entry under the relevant WPID in the following format: <code>- link: PMC9603647</code>.</li>
