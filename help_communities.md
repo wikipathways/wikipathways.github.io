@@ -31,10 +31,10 @@ redirect_from: /index.php/Help:WikiPathways_Portals
 <h2>Create or Edit a Community Page</h2>
 <p>All Commuity pages are designed using the same template layout, and the content of each Community is defined in a markdown file in the <a href="https://github.com/wikipathways/wikipathways.github.io/tree/main/_communities" target=_blank>communities directory</a>. In order to be processed correctly by Jekyll, the markdown file must have a YAML <b>front matter</b> block at the beginning of the file, defining a set of custom variables. The front matter must be contained within a set of triple-dashed lines (---). After the front matter code, the file can contain additional html for custom content. The variables defined for WikiPathways Communities are:</p>
 <ul>
-<li>display-name: The name of the Community displayed on the <a href="https://new.wikipathways.org/browse/communities.html" target=_blank>Communities</a> page</li>
+<li>display-name: The name of the Community displayed on the <a href="https://wikipathways.org/browse/communities.html" target=_blank>Communities</a> page</li>
 <li><b>title</b></li>
 <li><b>description</b>: Text describing the Community</li>
-<li><b>short-description</b>: One or two sentences describing the Community, displayed on the <a href="https://new.wikipathways.org/browse/communities.html" target=_blank>Communities</a> page</li>
+<li><b>short-description</b>: One or two sentences describing the Community, displayed on the <a href="https://wikipathways.org/browse/communities.html" target=_blank>Communities</a> page</li>
 <li><b>logo</b>: a link to a png image (optional)</li>
 <li><b>logo-link</b>: URL for an external resource (optional)</li>
 <li><b>support</b>: Text describing any funding support for the Community (optional)</li>
@@ -42,7 +42,7 @@ redirect_from: /index.php/Help:WikiPathways_Portals
 <li><b>community-tag</b>: The relevant community tag. This should match the filename of the text file with the list of Community pathways The pathway display on the Community page is automatically generated based on this tag</li>
 <li><b>redirect_from</b>: Partial URL on the old WikiPathways site to redirect from</li>
 </ul>
-<p>As an example, the below image shows the markdown for the <a href="https://new.wikipathways.org/communities/aop.html" target=_blank>Adverse Outcome Pathways</a> Community.<br /><br />
+<p>As an example, the below image shows the markdown for the <a href="https://wikipathways.org/communities/aop.html" target=_blank>Adverse Outcome Pathways</a> Community.<br /><br />
 <img src="/assets/img/help/MarkdownExample.png" alt="Markdown Example" width="700">
 </p>
 <h3>Create a new Community page:</h3>
