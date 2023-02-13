@@ -6,7 +6,7 @@ redirect_from: /index.php/Help:WikiPathways_Metabolomics
 <h1>WikiPathways Metabolomics</h1>
 
 On this page we collect SPARQL queries to see the state of the Metabolome in WikiPathways. Triggered by
-[Andra](https://new.wikipathways.org/authors/Andra)'s RDF / SPARQL work, curation started with metabolites
+[Andra](https://wikipathways.org/authors/Andra)'s RDF / SPARQL work, curation started with metabolites
 without database identifiers. But this soon led to the observation that metabolites are often not even
 annotated as being a metabolite (using `<Label>` rather than `<DataNode>`).
 
