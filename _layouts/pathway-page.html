@@ -174,6 +174,7 @@ layout: default
         <th>Label</th>
         <th>Type</th>
         <th>Compact Identifier</th>
+        <th>Comment</th>
       </thead>
       <tbody>
         {% for row in parts %}
@@ -186,6 +187,7 @@ layout: default
           {% else %} 
             <td><span style="font-style:italic; color:#CCCCCC;">None</span></td>
           {% endif %} 
+          <td>{{ row["Comment"] }}</td>
         </tr>
         {% endfor %}
       </tbody>
