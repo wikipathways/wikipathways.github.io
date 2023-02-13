@@ -1,7 +1,7 @@
 # Demo site
 Jekyll powered GitHub pages for GPML-Repo content
 
-Visit site at: https://wikipathways.github.io/
+Visit site at: https://www.wikipathways.org/
 
 ## Content
 Pathway content can be added as .md files to the [\_pathways](https://github.com/wikipathways/wikipathways.github.io/tree/main/_pathways) directory. The top portion of the .md file is the Jekyll Front Matter, which defines metadata used to generate the site, organize content and generate search metadata optimized for search engines.
