@@ -252,11 +252,12 @@ layout: default
   function UrlExists(url) {
     var http = new XMLHttpRequest();
     http.open('HEAD', url, false);
-    http.send();
-    if (http.status != 404)
-      return true;
-    else
+    try {
+      http.send();
+      return http.status != 404;
+    } catch (error) {
       return false;
+    }
   }
 
   trs.hide();
