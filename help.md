@@ -1,6 +1,8 @@
 ---
 title: Help
-redirect_from: /index.php/Help:Contents
+redirect_from: 
+ - /index.php/Help:Contents
+ - /index.php/PathwayWidget
 ---
 
 <div style="background:#eee; padding:20px 0px 0px 50px">
