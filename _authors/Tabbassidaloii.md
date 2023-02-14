@@ -1,11 +1,11 @@
 ---
 username: Tabbassidaloii
-realname: Tabbassidaloii
+realname: Tooba Abbassi-Daloii
 website: 
-affiliation: 
+affiliation: Maastricht University
 bio: 
-github: 
-orcid: 
+github: https://github.com/tabbassidaloii
+orcid: https://orcid.org/0000-0002-4904-3269
 linkedin: 
 googlescholar: 
 wikidata: 
