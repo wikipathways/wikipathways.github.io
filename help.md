@@ -222,7 +222,7 @@ This code will produce the following iframe:</p>
 
 <hr>
 <h1>Move from classic WikiPathways</h1>
-<p>We are still in the process of moving from the classi WikiPathways site, and during this time some aspects of the site will work differently:</p>
+<p>We are still in the process of moving from the classic WikiPathways site, and during this time some aspects of the site will work differently:</p>
 <ul>
     <li>Uploading pathway content and making edits to pathways will <b>require a WikiPathways account</b> content, since content is wtill deposited to the classic site (<a href="https://www.wikipathways.org/" target="_blank">https://www.wikipathways.org/</a>). Once the move is complete, a GitHub account will be sufficient to upload/edit pathways at WikiPathways.</li>
     <li>This website <b>contains only approved pathways</b> that have undergone review. Consequently, newly uploaded pathways will be immediately available on the classic site (<a href="https://www.wikipathways.org/" target="_blank">https://www.wikipathways.org/</a>), but will not be visible on this site until they are completed and approved. Once a pathway is uploaded to WikiPathways classic, the process of including them on the new site is as follows:</li>
