@@ -3,6 +3,7 @@ title: Help
 redirect_from: 
  - /index.php/Help:Contents
  - /index.php/PathwayWidget
+ - /index.php/Help:Guidelines
 ---
 
 <div style="background:#eee; padding:20px 0px 0px 50px">
