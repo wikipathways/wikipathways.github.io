@@ -4,8 +4,8 @@ realname: Tooba Abbassi-Daloii
 website: 
 affiliation: Maastricht University
 bio: 
-github: https://github.com/tabbassidaloii
-orcid: https://orcid.org/0000-0002-4904-3269
+github: tabbassidaloii
+orcid: 0000-0002-4904-3269
 linkedin: 
 googlescholar: 
 wikidata: 
