@@ -1,0 +1,33 @@
+Label	Type	Identifier	Comment	Ensembl	NCBI gene	HGNC	UniProt	Wikidata	ChEBI	InChI
+Isoprogesterone	Metabolite	lipidmaps:LMST02030299								
+Pregnenetriol	Metabolite	lipidmaps:LMST02030263								
+20R,22R-dihydroxycholesterol	Metabolite	lipidmaps:LMST01010200						wikidata:Q27105438	chebi:1294;chebi:1294	inchikey:ISBSSBGEYIBVTO-TYKWNDPBSA-N
+Pregnenediol	Metabolite	lipidmaps:LMST02030205						wikidata:Q27258244	chebi:166781;chebi:166781	inchikey:QAAQQTDJEXMIMF-YZXCLFAISA-N
+5beta-pregnane-3,20-dione	Metabolite	lipidmaps:LMST02030146						wikidata:Q21099648	chebi:30154;chebi:30154	inchikey:XMRPGKVKISIQBV-XWOJZHJZSA-N
+3alpha-hydroxy-5beta-pregnan-20-one	Metabolite	lipidmaps:LMST02030175						wikidata:Q18344323	chebi:1712;chebi:1712	inchikey:AURFZBICLPNKBZ-YZRLXODZSA-N
+17alpha-hydroxyprogesterone	Metabolite	lipidmaps:LMST02030161						wikidata:Q175901	chebi:17252;chebi:17252	inchikey:DBPWSSGDRRHUNT-CEGNMAFCSA-N
+17alpha-hydroxypregnenolone	Metabolite	lipidmaps:LMST02030089						wikidata:Q35666789	chebi:28750;chebi:28750	inchikey:JERGUCIJOXJXHF-TVWVXWENSA-N
+Pregnanediol	Metabolite	lipidmaps:LMST02030264								
+22R-Hydroxycholesterol	Metabolite	lipidmaps:LMST01010086						wikidata:Q4631298	chebi:67237;chebi:67237	inchikey:RZPAXNJLEKLXNO-GFKLAVDKSA-N
+11-deoxycorticosterone	Metabolite	lipidmaps:LMST02030087						wikidata:Q948846	chebi:16973;chebi:16973	inchikey:ZESRJSPZRDMNHY-YFWFAHHUSA-N
+Allopregnanolone	Metabolite	lipidmaps:LMST02030130						wikidata:Q2482223	chebi:50169;chebi:50169	inchikey:AURFZBICLPNKBZ-SYBPFIFISA-N
+Cholesterol	Metabolite	lipidmaps:LMST01010001						wikidata:Q43656	chebi:16113;chebi:16113	inchikey:HVYWMOMLDIMFJA-DPAQBDIFSA-N
+11-deoxycortisol	Metabolite	lipidmaps:LMST02030086						wikidata:Q2064915	chebi:28324;chebi:28324	inchikey:WHBHBVVOGNECLV-OBQKJFGGSA-N
+20alpha-Hydroxyprogesterone	Metabolite	lipidmaps:LMST02030169						wikidata:Q28529678	chebi:28453;chebi:28453	inchikey:RWBRUCCWZPSBFC-RXRZZTMXSA-N
+Pregnanediol-3-glucuronide	Metabolite	lipidmaps:LMST05010073								
+Progesterone	Metabolite	lipidmaps:LMST02030159						wikidata:Q26963	chebi:17026;chebi:17026	inchikey:RJKFOVLPORLFTN-LEKSSAKUSA-N
+Pregnenolone	Metabolite	lipidmaps:LMST02030088						wikidata:Q412158	chebi:16581;chebi:16581	inchikey:ORNBQBCIOKFOEO-QGVNFLHTSA-N
+5alpha-pregnane-3,20-dione	Metabolite	lipidmaps:LMST02030170						wikidata:Q4641508	chebi:28952;chebi:28952	inchikey:XMRPGKVKISIQBV-BJMCWZGWSA-N
+AKR1D1	GeneProduct	uniprot:P51857								
+CYP11A1	GeneProduct	uniprot:P05108								
+SRD5A1	GeneProduct	uniprot:P18405								
+AKR1C1 	GeneProduct	uniprot:Q04828								
+SRD5A2	GeneProduct	uniprot:P31213								
+CYP21A2	GeneProduct	uniprot:P08686								
+CYP11A1	GeneProduct	uniprot:P05108								
+CYP11A1	GeneProduct	uniprot:P05108								
+CYP17A1	GeneProduct	uniprot:P05093								
+HSD3B2	GeneProduct	uniprot:P26439								
+HSD3B1	GeneProduct	uniprot:P14060								
+CYP17A1	GeneProduct	uniprot:P05093								
+AKR1C1 	GeneProduct	uniprot:Q04828								
