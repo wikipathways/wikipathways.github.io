@@ -14,7 +14,7 @@ curators:
 - Madeomuga
 - IsabelWassink
 - Jmillanacosta
-- tabbassidaloii
+- Tabbassidaloii
 - Ash_iyer
 - ElenaDR1
 
