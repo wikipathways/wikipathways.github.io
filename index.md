@@ -37,7 +37,8 @@ redirect_from: /index.php/WikiPathways
                 <div class="row-main gy-5 py-5" style="display:flex; flex-wrap: wrap;margin-right: -95px;margin-left: 25px;">
                   <div class="col-7 mx-3"> 
                     <div class="container">
-                      <h3 style="font-family:Poppins; text-align: left; font-size:larger; padding-left:14px;"><b>Search the current collection</b>
+                      <h3 style="font-family:Poppins; text-align: left; font-size:larger; padding-left:14px">
+                      <b>Search for pathways</b>
                       </h3>
                       <div id="blue-searchbox"> 
    <script> 
@@ -53,7 +54,7 @@ redirect_from: /index.php/WikiPathways
 	 { 
      document.getElementById("navbarNavAltMarkup").className = "navbar-collapse show";
 	   var searchBox1 =  document.getElementById("gsc-i-id1");
-	   searchBox1.placeholder=" ";
+	   searchBox1.placeholder=" e.g., ACE or cancer";
 	   searchBox1.title="Search WikiPathways"; 
 	   var searchBox2 =  document.getElementById("gsc-i-id2");
 	   searchBox2.placeholder=" e.g., ACE or cancer";
@@ -62,7 +63,7 @@ redirect_from: /index.php/WikiPathways
    </script>
     <gcse:search></gcse:search>
                       </div>
-                      <p style="color: #6c757d;text-align: left; padding-left:14px; ">Search by gene symbols, pathway names or other keywords</p>
+                      <p style="color: #6c757d;text-align: left; padding-left:14px; ">Search by gene symbols, pathway names, WPIDs or any keywords</p>
                     </div>
                   </div>
                 </div>
@@ -388,6 +389,7 @@ redirect_from: /index.php/WikiPathways
       </div>
     </div>
 </section>
+<div style="margin-bottom:8px;"></div> 
 {%- include_cached footer.html -%}
 <div class="wrapper">
   <div class="thanks-wrapper">

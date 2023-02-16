@@ -9,8 +9,16 @@
         <!-- SEARCH  -->
         <script async src="https://cse.google.com/cse.js?cx=c1b9a23fc5f2875e3"></script>
         <div style="width:300px; float:left; margin:4px 20px 0px 0px;">
-          <div class="gcse-search" data-personalizedAds="false">...</div> 
+          <div class="gcse-search" data-personalizedAds="false" data-placeholder=" e.g., ACE or cancer">...</div> 
         </div>
+        <script>
+          window.onload = function()
+	 { 
+	   var searchBox1 =  document.getElementById("gsc-i-id1");
+	   searchBox1.placeholder=" e.g., ACE or cancer";
+	   searchBox1.title="Search WikiPathways"; 
+	 }
+        </script>
         <!-- MENU -->  
         {% assign showMenuOnPages = "404,Help" | split: ',' %}
         {% assign navbarAria="false" %} 
