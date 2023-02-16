@@ -7,7 +7,7 @@ layout: default
   <a class="page-title" href="{{site.url}}/instance/{{page.wpid}}">
     <h1 id="title"> {{ page.title }} ({{ page.wpid }})</h1>
   </a>
-
+  <h3><i>{{page.organisms | array_to_sentence_string }}</i></h3>
   <div id="description" style="max-height:75px; overflow-y:hidden;margin-bottom: 20px;">
     {{ page.description }}
   </div>
@@ -19,24 +19,36 @@ layout: default
       style="border-width: 1px; border-color: rgb(222,226,230); border-style: solid; height:100%; width:100%"
       referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
   </div>
-  <div class="dropdown" style="float:right; margin-top: -1px;">
-    <button class="badge badge-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+
+  <div class="dropdown" style="float:right;">
+    <button class="badge badge-secondary dropdown-toggle" style="padding: 4px;" type="button" id="dropdownMenuButton" data-toggle="dropdown"
       aria-haspopup="true" aria-expanded="false">
       options
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
       <a class="dropdown-item" href="../cite.html">How to Cite</a>
       <button class="dropdown-item copy-btn" type="button" to-copy="https://www.wikipathways.org/instance/{{ page.wpid }}">Copy permalink</button>
-      <button class="dropdown-item embed-btn" type="button" to-copy='<iframe src ="https://pathway-viewer.toolforge.org/?id={{ page.wpid }}`" width="600px" height="300px" style="overflow:hidden;"></iframe>'>Copy embed code</button>
-    <a class="dropdown-item" href="https://pathway-viewer.toolforge.org/?id={{page.wpid}}" target="_blank">View full size</a>
+      <button class="dropdown-item embed-btn" type="button" to-copy='<iframe src ="https://pathway-viewer.toolforge.org/?id={{ page.wpid }}" width="600px" height="300px" style="overflow:hidden;"></iframe>'>Copy embed code</button>
     {% if page.ndex %}
     <a class="dropdown-item" href="https://www.ndexbio.org/viewer/networks/{{page.ndex}}" target="_blank">Open in NDEx</a>
     {% endif %}
+    </div>
+  </div>
+  <div class="dropdown" style="float:right; margin-right: 4px;">
+    <button class="badge badge-secondary dropdown-toggle" style="padding: 4px;" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+      aria-haspopup="true" aria-expanded="false">
+      download
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <a class="dropdown-item" href="https://www.sejda.com/html-to-pdf?save-link={{site.url}}/pathways/{{ page.wpid }}.html" target="_blank">Download PDF</a>
     <a class="dropdown-item" href="https://assets.wikipathways.org/pathways/{{ page.wpid }}/{{ page.wpid }}.png" target="_blank">Download PNG</a>
     <a class="dropdown-item" href="https://assets.wikipathways.org/pathways/{{ page.wpid }}/{{ page.wpid }}.svg" target="_blank">Download SVG</a>
     <a class="dropdown-item" href="https://raw.githubusercontent.com/wikipathways/wikipathways-database/main/pathways/{{ page.wpid }}/{{ page.wpid }}.gpml" target="_blank">Download GPML</a>
     </div>
+  </div>
+  <div style="float:right; margin-right: 4px;">
+    <input type="button" class="badge badge-secondary" value="view in new tab" style="display: inline; padding: 4px;"
+    onclick="window.open(&#39;https://pathway-viewer.toolforge.org/?id={{ page.wpid }}&#39;, '_blank');"/>
   </div>
   <!-- Evaluate last-edited date to set badge color -->
   {% assign edit = page.last-edited | date: '%s' %}
@@ -194,19 +206,28 @@ layout: default
     </table>
     <!-- TODO: change from "Label" to "Identifer" once curies are supported by Drugst.One -->
     {% assign partsIdList = parts | where: "Type", "GeneProduct" | map: "Label" | uniq | slice: 0,99 | join: "," %}
-    <div class="dropdown" style="float:right; margin-top: -13px;">
-      <button class="badge badge-secondary dropdown-toggle" type="button" id="dropdownMenuButtonDatanodes" data-toggle="dropdown"
+    <div class="dropdown" style="float:right; margin-top: -12px;">
+      <button class="badge badge-secondary dropdown-toggle" style="padding: 4px;" type="button" id="dropdownMenuButtonDatanodes" data-toggle="dropdown"
         aria-haspopup="true" aria-expanded="false">
         options
       </button>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButtonDatanodes">
-        <a class="dropdown-item" href="https://raw.githubusercontent.com/wikipathways/wikipathways.github.io/main/_data/{{ page.wpid }}-datanodes.tsv">Download TSV</a>
         <a class="dropdown-item" style="background-image: url(https://cdn.drugst.one/libs/drugstone-buttons/0.0.1/android-chrome-192x192.png);background-repeat: no-repeat;background-position: left;background-position-x: left;background-size: 20px 20px;background-position-x: 6px;background-origin: padding-box;padding-left: 32px !important; margin: 10px;"
         href="https://drugst.one/standalone?nodes={{partsIdList}}&autofillEdges=true&activateNetworkMenuButtonAdjacentDrugs=true&interactionDrugProtein=NeDRex&licensedDatasets=true" 
         target="_blank" 
-        title="Query Drugst.One with the GeneProducts of this pathway">Drugst.One</a>
+        title="Query Drugst.One with the GeneProducts of this pathway. Learn more at the link destination.">Drugst.One</a>
       </div>
     </div>
+    <div class="dropdown" style="float:right; margin-top: -12px; margin-right: 4px;">
+      <button class="badge badge-secondary dropdown-toggle" style="padding: 4px;" type="button" id="dropdownMenuButtonDatanodes" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        download
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButtonDatanodes">
+        <a class="dropdown-item" href="https://raw.githubusercontent.com/wikipathways/wikipathways.github.io/main/_data/{{ page.wpid }}-datanodes.tsv">Download TSV</a>
+      </div>
+    </div>
+
     <input type="button" class="badge badge-secondary" id="tableMore" value="more rows" style="float: left; margin-top: -8px;">
     <input type="button" class="badge badge-secondary" id="tableLess" value="fewer rows" style="float: left; margin-top: -8px;">
     <br />
@@ -218,10 +239,10 @@ layout: default
       <li>{{ ref.Citation }}</li>
       {% endfor %}
     </ol>
-    <div class="dropdown" style="float:right; margin-top: -18px;">
-      <button class="badge badge-secondary dropdown-toggle" type="button" id="dropdownMenuButtonBibliography" data-toggle="dropdown"
+    <div class="dropdown" style="float:right; margin-top: -17px;">
+      <button class="badge badge-secondary dropdown-toggle" style="padding: 4px;" type="button" id="dropdownMenuButtonBibliography" data-toggle="dropdown"
         aria-haspopup="true" aria-expanded="false">
-        options
+        download
       </button>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButtonBibliography">
       <a class="dropdown-item" href="https://raw.githubusercontent.com/wikipathways/wikipathways.github.io/main/_data/{{ page.wpid }}-bibliography.tsv">Download TSV</a>
