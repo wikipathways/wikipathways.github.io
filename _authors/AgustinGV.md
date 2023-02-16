@@ -1,15 +1,15 @@
 ---
 username: AgustinGV
 realname: Agustin Gonzalez-Vicente
-website: ~
-affiliation: ~
+website: [~](https://physiology.case.edu/people/faculty/agustin-gonzalez-vicente/)
+affiliation: Case Western Reserve University School of Medicine
 bio: ~
-github: ~
+github: AgustinGonvi
 orcid: 0000-0002-3682-0815
-linkedin: ~
+linkedin: [~](https://www.linkedin.com/in/agustin-gonzalez-vicente/)
 googlescholar: ~
 wikidata: Q57099562
-twitter: ~
+twitter: @AgustinGonVi
 mastodon-url: ~
 meta: ~
 instagram: ~
