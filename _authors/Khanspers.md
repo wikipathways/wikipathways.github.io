@@ -1,7 +1,7 @@
 ---
 username: Khanspers
 realname: Kristina Hanspers
-website: ~
+website: https://www.wikipathways.org/
 affiliation: Gladstone Institutes
 bio: ~
 github: khanspers
