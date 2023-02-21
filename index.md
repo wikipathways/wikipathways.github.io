@@ -18,7 +18,14 @@ curator_of_the_week:
 - Madeomuga
 - Ash_iyer
 
-redirect_from: /index.php/WikiPathways
+redirect_from: 
+- /index.php/WikiPathways
+- /index.php/Special:SearchPathways
+- /index.php/Pathway
+- /index.php/
+- /index.ph
+- /pathway-finder
+
 ---
 <div style="background: linear-gradient(0deg, #fefefe, #eae6ff 100%);">
   {%- include_cached header.html %}

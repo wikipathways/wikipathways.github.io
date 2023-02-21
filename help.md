@@ -4,6 +4,8 @@ redirect_from:
  - /index.php/Help:Contents
  - /index.php/PathwayWidget
  - /index.php/Help:Guidelines
+ - /index.php/Help:Guidelines_EditorPalette
+ - /index.php/Help:DataVisualizationInCytoscape
 ---
 
 <div style="background:#eee; padding:20px 0px 0px 50px">
