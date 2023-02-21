@@ -60,7 +60,7 @@ organisms:
 redirect_from:
 - /index.php/Pathway:WP3
 - /instance/WP3
-- /instance/WP3_rr120028
+- /instance/WP3_r120028
 revision: r120028
 schema-jsonld:
 - '@context': https://schema.org/
