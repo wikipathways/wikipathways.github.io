@@ -49,23 +49,39 @@ redirect_from:
 <p>Each pathway has a dedicated page that includes an interactive view. Zoom in and out by scrollwheel, pan by click-n-drag, and click on genes, proteins and metabolites to open external pages in Scholia dedicated to each molecule. Here's an example:
 </p>
 <iframe src ="https://pathway-viewer.toolforge.org/?id=WP554" width="500px" height="350px" style="overflow:hidden;margin-left:200px;"></iframe>
-<div class="dropdown" style="margin:-8px 0px 10px 635px;">
-    <button class="badge badge-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+  <div style="margin:-8px 0px 18px 445px; float:left">
+    <input type="button" class="badge badge-secondary" value="view in new tab" style="display: inline; padding: 4px;"
+    onclick="window.open(&#39;https://pathway-viewer.toolforge.org/?id=WP554&#39;, '_blank');"/>
+  </div>
+  <div class="dropdown" style="margin:-8px 0px 14px 4px; float:left">
+    <button class="badge badge-secondary dropdown-toggle" style="padding: 4px;" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+      aria-haspopup="true" aria-expanded="false">
+      download
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="/wikipathways-assets/pathways/WP554/WP554.png" download>Download PNG</a>
+      <a class="dropdown-item" href="/wikipathways-assets/pathways/WP554/WP554.svg" download>Download SVG</a>
+      <a class="dropdown-item" href="/wikipathways-assets/pathways/WP554/WP554.json" download>Download JSON</a>
+     <a class="dropdown-item" href="https://raw.githubusercontent.com/wikipathways/wikipathways-database/main/pathways/WP554/WP554.gpml" target="_blank">Download GPML</a>
+    <!-- <a class="dropdown-item" href="https://www.sejda.com/html-to-pdf?save-link={{site.url}}/pathways/WP554.html" target="_blank">Generate PDF of page</a> -->
+    </div>
+  </div>
+  <div class="dropdown" style="margin:-8px 0px 10px 635px;">
+    <button class="badge badge-secondary dropdown-toggle" style="padding: 4px;" type="button" id="dropdownMenuButton" data-toggle="dropdown"
       aria-haspopup="true" aria-expanded="false">
       options
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
       <a class="dropdown-item" href="../cite.html">How to Cite</a>
       <button class="dropdown-item copy-btn" type="button" to-copy="https://www.wikipathways.org/instance/WP554">Copy permalink</button>
-      <button class="dropdown-item embed-btn" type="button" to-copy='<iframe src ="https://pathway-viewer.toolforge.org/?id=WP554`" width="600px" height="300px" style="overflow:hidden;"></iframe>'>Copy embed code</button>
-    <a class="dropdown-item" href="https://pathway-viewer.toolforge.org/?id=WP554" target="_blank">View full size</a>
+      <button class="dropdown-item embed-btn" type="button" to-copy='<iframe src ="https://pathway-viewer.toolforge.org/?id=WP554" width="600px" height="300px" style="overflow:hidden;"></iframe>'>Copy embed code</button>
+    {% if page.ndex %}
     <a class="dropdown-item" href="https://www.ndexbio.org/viewer/networks/427c38c3-da09-11eb-b666-0ac135e8bacf" target="_blank">Open in NDEx</a>
-    <a class="dropdown-item" href="https://assets.wikipathways.org/pathways/WP554/WP554.png" target="_blank">Download PNG</a>
-    <a class="dropdown-item" href="https://assets.wikipathways.org/pathways/WP554/WP554.svg" target="_blank">Download SVG</a>
-    <a class="dropdown-item" href="https://raw.githubusercontent.com/wikipathways/wikipathways-database/main/pathways/WP554/WP554.gpml" target="_blank">Download GPML</a>
+    {% endif %}
     </div>
   </div>
-<p><b><i>Pro-tip:</i></b> Click on the "options" button in the lower-right to download the pathway in one of a variety of formats, or to view the pathway in its own window to help you explore the details. This is also where you'll find a permalink for the page that you can cite and embed code so you can include this interactive viewer in your own web site.
+  <br/>
+<p><b><i>Pro-tip:</i></b> Use the buttons in the lower-right to download the pathway in one of a variety of formats, or to view the pathway in its own window to help you explore the details. Under "options" you'll find a permalink for the page that you can cite and embed code so you can include this interactive viewer in your own web site.
 </p>
 </div>
 <div id="attributes">
