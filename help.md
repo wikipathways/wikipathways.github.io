@@ -62,7 +62,7 @@ redirect_from:
       <a class="dropdown-item" href="/wikipathways-assets/pathways/WP554/WP554.png" download>Download PNG</a>
       <a class="dropdown-item" href="/wikipathways-assets/pathways/WP554/WP554.svg" download>Download SVG</a>
       <a class="dropdown-item" href="/wikipathways-assets/pathways/WP554/WP554.json" download>Download JSON</a>
-     <a class="dropdown-item" href="https://raw.githubusercontent.com/wikipathways/wikipathways-database/main/pathways/WP554/WP554.gpml" target="_blank">Download GPML</a>
+      <a class="dropdown-item" href="/wikipathways-assets/pathways/WP554/WP554.gpml" download>Download GPML</a>
     <!-- <a class="dropdown-item" href="https://www.sejda.com/html-to-pdf?save-link={{site.url}}/pathways/WP554.html" target="_blank">Generate PDF of page</a> -->
     </div>
   </div>
