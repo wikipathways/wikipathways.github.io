@@ -1,11 +1,11 @@
 ---
 username: LinaSchiffer
-realname: LinaSchiffer
+realname: Lina Schiffer
 website: 
 affiliation: 
 bio: 
 github: 
-orcid: 
+orcid: 0000-0001-8540-4861
 linkedin: 
 googlescholar: 
 wikidata: 
