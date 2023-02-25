@@ -97,8 +97,6 @@ layout: default
         </span>
       </a>
     </h2> 
-    {% assign citedin-size=page.citedin | size %}
-    {% if citedin-size > 0 %}
       <ul class="three-column"> 
         {% for citation in page.citedin %}
           <!-- Check type -->
@@ -142,9 +140,7 @@ layout: default
           </li>
         {% endfor %}
       </ul>
-    {% else %}
       <p style="font-size:small; color:#999999; font-style:italic;">Are you planning to include this pathway in your next publication? See <a href="/cite.html">How to Cite</a> and add a link here to your paper once it's online.</p>
-    {% endif %}
 
     <h2 id="organism">Organism</h2>
     {% for org in site.organisms %}
