@@ -40,11 +40,11 @@ layout: default
       download
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="https://www.sejda.com/html-to-pdf?save-link={{site.url}}/pathways/{{ page.wpid }}.html" target="_blank">Download PDF</a>
-    <a class="dropdown-item" href="https://assets.wikipathways.org/pathways/{{ page.wpid }}/{{ page.wpid }}.png" target="_blank">Download PNG</a>
-    <a class="dropdown-item" href="https://assets.wikipathways.org/pathways/{{ page.wpid }}/{{ page.wpid }}.svg" target="_blank">Download SVG</a>
+      <a class="dropdown-item" href="#" download="/wikipathways-assets/pathways/{{ page.wpid }}/{{ page.wpid }}.png">Download PNG</a>
+      <a class="dropdown-item" href="https://www.wikipathways.org/wikipathways-assets/pathways/{{ page.wpid }}/{{ page.wpid }}.svg" target="_blank">Download SVG</a>
     <a class="dropdown-item" href="https://raw.githubusercontent.com/wikipathways/wikipathways-database/main/pathways/{{ page.wpid }}/{{ page.wpid }}.gpml" target="_blank">Download GPML</a>
-    </div>
+    <!-- <a class="dropdown-item" href="https://www.sejda.com/html-to-pdf?save-link={{site.url}}/pathways/{{ page.wpid }}.html" target="_blank">Generate PDF of page</a> -->
+  </div>
   </div>
   <div style="float:right; margin-right: 4px;">
     <input type="button" class="badge badge-secondary" value="view in new tab" style="display: inline; padding: 4px;"
