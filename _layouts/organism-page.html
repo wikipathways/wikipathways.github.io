@@ -10,7 +10,12 @@ layout: default
     </span>
   </a>
 </h1>
-<p>This is an organism page.</p>
+<p>This page lists all pathways relevant to {{ page.common }}.</p>
+<p>Download pathways by species in any of the following formats: 
+  <a href="https://data.wikipathways.org/current/gpml/" target="_blank">GPML</a>, 
+  <a href="https://data.wikipathways.org/current/gmt/" target="_blank">GMT</a> or
+  <a href="https://data.wikipathways.org/current/svg/" target="_blank">SVG</a>. 
+</p>
 {% if page.homology %}
   <p><em>Access hundreds of additional pathways in GPML format for this species 
     inferred from {{ page.homology }} by homology mapping: 
