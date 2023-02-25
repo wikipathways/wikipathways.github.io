@@ -213,9 +213,10 @@ redirect_from:
 <li><b>Permalink</b>: The permanent link to a specific pathway has the pattern <code>https://www.wikipathways.org/instance/{WPID}</code>.</li>
 <li><b>Embed code</b>: The code to embed a pathway image into webpage has the pattern <code>&lt;iframe src ="https://pathway-viewer.toolforge.org/?id={WPID}`" width="600px" height="300px" style="overflow:hidden;"&gt;&lt;/iframe&gt;</code>.</li>
 <li><b>Full size image:</b> The link to a full size pathway image has the URL pattern <code>https://pathway-viewer.toolforge.org/?id={WPID}</code></li>
-<li><b>PNG:</b> The link to the PNG version of a pathway image has the URL pattern <code>https://assets.wikipathways.org/pathways/{WPID}/{WPID}.png</code>.</li>
-<li><b>SVG:</b> The link to the SVG version of a pathway image has the URL pattern <code>https://assets.wikipathways.org/pathways/{WPID}/{WPID}.svg</code></li>
-<li><b>GPML:</b> Using the option <b>Dowbload GPML</b> will downloaded the GPML code for the pathway. The URL pattern to access this file is <code>https://gitcdn.link/cdn/wikipathways/wikipathways-database/main/pathways/{WPID}/{WPID}.gpml</code></li>
+<li><b>PNG:</b> The link to the PNG version of a pathway image has the URL pattern <code>https://www.wikipathways.org/wikipathways-assets/pathways/{WPID}/{WPID}.png</code>.</li>
+<li><b>SVG:</b> The link to the SVG version of a pathway image has the URL pattern <code>https://www.wikipathways.org/wikipathways-assets/pathways/{WPID}/{WPID}.svg</code></li>
+<li><b>JSON:</b> The link to the JSON version of a pathway has the URL pattern <code>https://www.wikipathways.org/wikipathways-assets/pathways/{WPID}/{WPID}.json</code></li>
+<li><b>GPML:</b> Using the option <b>Dowbload GPML</b> will downloaded the GPML code for the pathway. The URL pattern to access this file is <code>https://www.wikipathways.org/wikipathways-assets/pathways/{WPID}/{WPID}.gpml</code></li>
 <li><b>Participants:</b> Using the option <b>Download TSV</b> option will downloaded a TSV-formatted table of the data nodes for the pathway. The URL pattern to access this file is <code>https://gitcdn.link/cdn/wikipathways/wikipathways.github.io/main/_data/{WPID}-datanodes.tsv</code></li>
 <li><b>References:</b> Using the option <b>Download TSV</b> will downloaded a TSV-formatted table of the literature for the pathway. The URL pattern to access this file is <code>https://gitcdn.link/cdn/wikipathways/wikipathways.github.io/main/_data/{WPID}-bibliography.tsv</code></li>
 </ul>
