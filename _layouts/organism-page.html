@@ -12,9 +12,20 @@ layout: default
 </h1>
 <p>This page lists all pathways relevant to {{ page.common }}.</p>
 <p>Download pathways by species in any of the following formats: 
-  <a href="https://data.wikipathways.org/current/gpml/" target="_blank">GPML</a>, 
-  <a href="https://data.wikipathways.org/current/gmt/" target="_blank">GMT</a> or
-  <a href="https://data.wikipathways.org/current/svg/" target="_blank">SVG</a>. 
+  {% assign today = "now" | date:"%Y%m%d" %}
+  {% assign rel_date = "now" | date:"%Y%m10" %}
+  {% if today < rel_date %}
+    {% assign current_month = "now" | date:"%m" %}
+    {% if current_month == "01" %}
+      {% assign rel_date = rel_date | minus: 8900 %}
+    {% else %}
+      {% assign rel_date = rel_date | minus: 100 %}
+    {% endif %}
+  {% endif %}
+  {% assign latin_underscore = page.latin | replace: " ","_" %}
+  <a href="https://data.wikipathways.org/current/gpml/wikipathways-{{ rel_date }}-gpml-{{ latin_underscore }}.zip" download>GPML</a>, 
+  <a href="https://data.wikipathways.org/current/gmt/wikipathways-{{ rel_date }}-gmt-{{ latin_underscore }}.gmt" download>GMT</a> or
+  <a href="https://data.wikipathways.org/current/svg/wikipathways-{{ rel_date }}-svg-{{ latin_underscore }}.zip" download>SVG</a>. 
 </p>
 {% if page.homology %}
   <p><em>Access hundreds of additional pathways in GPML format for this species 
