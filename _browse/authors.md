@@ -10,7 +10,7 @@ btn-class: "btn-front"
 <i>(sorted alphabetically)</i>
 <ul class="three-column">
 {% assign sorted_authors = site.authors | sort: "realname" %}
-{% assign blocked_authors = "Wpblocked,Unknown,TestUser" | split:"," %}
+{% assign blocked_authors = "Wpblocked,Unknown,TestUser,MaintBot" | split:"," %}
 {% for x in sorted_authors %}
   {% unless blocked_authors contains x.username %}
     {% unless blocked_authors contains x.realname %}

@@ -79,13 +79,16 @@ layout: default
     </a>
   <div>
     <h2 id="authors">Authors</h2>
+    {% assign blocked_authors = "Wpblocked,Unknown,TestUser,MaintBot" | split:"," %}
     {% assign authList = "" | split: ',' %}
     {% for auth in page.authors %}
-      {% assign realname = site.authors | where: "username", auth | map: "realname" | first  %}
-      {% capture thisAuth %}
-        <a href="{{site.url}}/authors/{{auth}}.html" title="View author profile">{{ realname }}</a>
-      {% endcapture %}
-      {% assign authList = authList | push: thisAuth %}
+      {% unless blocked_authors contains auth %}
+          {% assign realname = site.authors | where: "username", auth | map: "realname" | first  %}
+          {% capture thisAuth %}
+            <a href="{{site.url}}/authors/{{auth}}.html" title="View author profile">{{ realname }}</a>
+          {% endcapture %}
+          {% assign authList = authList | push: thisAuth %}
+      {% endunless %}
     {% endfor %}
     {{ authList | array_to_sentence_string }}
     
