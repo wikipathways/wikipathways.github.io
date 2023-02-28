@@ -2,7 +2,7 @@
 layout: table-page
 redirect_from: /index.php/Special:BrowsePathways
 order: 1
-display-title: "Browse"
+display-title: "Filters"
 btn-class: "btn-front"
 ---
 <div class="container">

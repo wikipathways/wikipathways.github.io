@@ -153,12 +153,12 @@ redirect_from:
   <div class="carousel-inner">
     <div class="carousel-item active">
       <a href="/browse/filters.html">
-      <img class="d-block w-100" src="/assets/img/slideshow/browse-1.png" alt="Category filter">
+      <img class="d-block w-100" src="/assets/img/slideshow/browse-1.png" alt="Filters">
       </a>
     </div>
     <div class="carousel-item">
           <a href="/browse/table.html">
-      <img class="d-block w-100" src="/assets/img/slideshow/browse-2.png" alt="Table filter">
+      <img class="d-block w-100" src="/assets/img/slideshow/browse-2.png" alt="Table">
       </a>
     </div>
     <div class="carousel-item">
