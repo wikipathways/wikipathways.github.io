@@ -178,7 +178,15 @@ layout: default
     </p>
     {% endfor %}
 
-    <h2 id="participants">Participants</h2>
+    <h2 id="participants">Participants    
+      <a href="https://raw.githubusercontent.com/wikipathways/wikipathways.github.io/main/_data/{{ page.wpid }}-datanodes.tsv"
+      target="_blank">
+        <span title="Download TSV" style="color: #666; font-size: 0.8em;">
+          <i class="fa fa-download"></i>
+        </span>
+      </a>
+    </h2>
+    <input type="button" class="badge badge-secondary" id="tableLess1" value="fewer rows" style="float: left; margin-bottom: 2px;">
     {% assign wpid-parts=page.wpid | append: "-datanodes" %}
     {% assign parts=site.data[wpid-parts] %}
     <table id="participants-table"> 
@@ -215,23 +223,25 @@ layout: default
         <a class="dropdown-item" style="background-image: url(https://cdn.drugst.one/libs/drugstone-buttons/0.0.1/android-chrome-192x192.png);background-repeat: no-repeat;background-position: left;background-position-x: left;background-size: 20px 20px;background-position-x: 6px;background-origin: padding-box;padding-left: 32px !important; margin: 10px;"
         href="https://drugst.one/standalone?nodes={{partsIdList}}&autofillEdges=true&activateNetworkMenuButtonAdjacentDrugs=true&interactionDrugProtein=NeDRex&licensedDatasets=true" 
         target="_blank" 
-        title="Query Drugst.One with the GeneProducts of this pathway. Learn more at the link destination.">Drugst.One</a>
+        title="Query drug interactions with the GeneProducts of this pathway. Learn more at the link destination.">Query Drugst.One</a>
       </div>
     </div>
-    <div class="dropdown" style="float:right; margin-top: -12px; margin-right: 4px;">
-      <button class="badge badge-secondary dropdown-toggle" style="padding: 4px;" type="button" id="dropdownMenuButtonDatanodes" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        download
+    <a href="https://raw.githubusercontent.com/wikipathways/wikipathways.github.io/main/_data/{{ page.wpid }}-datanodes.tsv" target="_blank">
+      <button class="badge badge-secondary" style="padding: 4px;float:right; margin: -9px 4px 0px 0px;" type="button">
+      download
       </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButtonDatanodes">
-        <a class="dropdown-item" href="https://raw.githubusercontent.com/wikipathways/wikipathways.github.io/main/_data/{{ page.wpid }}-datanodes.tsv">Download TSV</a>
-      </div>
-    </div>
-
-    <input type="button" class="badge badge-secondary" id="tableMore" value="more rows" style="float: left; margin-top: -8px;">
+    </a>
+    <input type="button" class="badge badge-secondary" id="tableMore" value="more rows" style="float: left; margin: -8px 4px 0px 0px;">
     <input type="button" class="badge badge-secondary" id="tableLess" value="fewer rows" style="float: left; margin-top: -8px;">
     <br />
-    <h2 id="references">References</h2>
+    <h2 id="references">References    
+      <a href="https://raw.githubusercontent.com/wikipathways/wikipathways.github.io/main/_data/{{ page.wpid }}-bibliography.tsv"
+      target="_blank">
+        <span title="Download TSV" style="color: #666; font-size: 0.8em;">
+          <i class="fa fa-download"></i>
+        </span>
+      </a>
+    </h2>
     {% assign wpid-refs=page.wpid | append: "-bibliography" %}
     {% assign refs=site.data[wpid-refs] %}
     <ol>
@@ -239,15 +249,11 @@ layout: default
       <li>{{ ref.Citation }}</li>
       {% endfor %}
     </ol>
-    <div class="dropdown" style="float:right; margin-top: -17px;">
-      <button class="badge badge-secondary dropdown-toggle" style="padding: 4px;" type="button" id="dropdownMenuButtonBibliography" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        download
+    <a href="https://raw.githubusercontent.com/wikipathways/wikipathways.github.io/main/_data/{{ page.wpid }}-bibliography.tsv" target="_blank">
+      <button class="badge badge-secondary" style="padding: 4px;float:right; margin: -9px 4px 0px 0px;" type="button">
+      download
       </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButtonBibliography">
-      <a class="dropdown-item" href="https://raw.githubusercontent.com/wikipathways/wikipathways.github.io/main/_data/{{ page.wpid }}-bibliography.tsv">Download TSV</a>
-      </div>
-    </div>
+    </a>
   </div>
 
 <script> 
@@ -256,6 +262,7 @@ layout: default
   var btnLessDesc = $("#descLess");
   var btnMore = $("#tableMore");
   var btnLess = $("#tableLess");
+  var btnLess1 = $("#tableLess1");
   var trsLength = trs.length;
   var startIndex = 5;
   var currentIndex = startIndex;
@@ -331,6 +338,12 @@ layout: default
     currentIndex -= addIndex;
     checkButton();
   });
+  btnLess1.click(function (e) {
+    e.preventDefault();
+    $("#participants-table tr").slice(currentIndex - addIndex, currentIndex).hide();
+    currentIndex -= addIndex;
+    checkButton();
+  });
 
   function checkButton() {
     var currentLength = $("#participants-table tr:visible").length;
@@ -343,8 +356,10 @@ layout: default
 
     if (trsLength > startIndex && currentLength > startIndex) {
       btnLess.show();
+      btnLess1.show();
     } else {
       btnLess.hide();
+      btnLess1.hide();
     }
 
   }
