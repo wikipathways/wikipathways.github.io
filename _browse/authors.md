@@ -2,6 +2,7 @@
 layout: default
 order: 6
 display-title: "Authors"
+tooltip: "List of authors of accepted pathway edits" 
 btn-class: "btn-front"
 ---
 

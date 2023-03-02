@@ -1,6 +1,7 @@
 ---
 order: 4
 display-title: "Community"
+tooltip: "Groups of individuals interested in particular subsets of pathways" 
 btn-class: "btn-community btn-pill"
 ---
 

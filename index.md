@@ -153,7 +153,7 @@ redirect_from:
                     <div class="container">
       {% assign sorted_browse = site.browse | where_exp:"item","item.btn-class contains 'pill'" | sort: "order" %}
       {% for bp in sorted_browse %}
-        <a class="btn btn-sm {{bp.btn-class}} w-100 my-2" style="font-size:large" href="{{bp.url}}"> {{ bp.display-title }}</a>
+        <a class="btn btn-sm {{bp.btn-class}} w-100 my-2" style="font-size:large" href="{{bp.url}}" title="{{bp.tooltip}}"> {{ bp.display-title }}</a>
       {% endfor %}           
                     </div>
                   </div>
@@ -161,7 +161,7 @@ redirect_from:
                     <div class="container">
       {% assign sorted_browse = site.browse | where:"btn-class","btn-front" | sort: "order" %} 
       {% for bp in sorted_browse limit: 3 %}
-        <a class="btn btn-sm {{bp.btn-class}} w-100 my-2" style="font-size:large" href="{{bp.url}}"> {{ bp.display-title }}</a>
+        <a class="btn btn-sm {{bp.btn-class}} w-100 my-2" style="font-size:large" href="{{bp.url}}" title="{{bp.tooltip}}"> {{ bp.display-title }}</a>
       {% endfor %}           
                     </div>
                   </div>
@@ -169,7 +169,7 @@ redirect_from:
                     <div class="container">
       {% assign sorted_browse = site.browse | where:"btn-class","btn-front" | sort: "order" %} 
       {% for bp in sorted_browse offset: 3 %}
-        <a class="btn btn-sm {{bp.btn-class}} w-100 my-2" style="font-size:large" href="{{bp.url}}"> {{ bp.display-title }}</a>
+        <a class="btn btn-sm {{bp.btn-class}} w-100 my-2" style="font-size:large" href="{{bp.url}}" title="{{bp.tooltip}}"> {{ bp.display-title }}</a>
       {% endfor %}           
                     </div>
                   </div>

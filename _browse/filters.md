@@ -3,6 +3,7 @@ layout: table-page
 redirect_from: /index.php/Special:BrowsePathways
 order: 1
 display-title: "Filters"
+tooltip: "Faceted search to filter pathways by multiple categories" 
 btn-class: "btn-front"
 ---
 <div class="container">

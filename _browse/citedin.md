@@ -2,6 +2,7 @@
 layout: default
 order: 5
 display-title: "Cited In"
+tooltip: "List of articles that have cited particular pathways" 
 btn-class: "btn-front"
 ---
 

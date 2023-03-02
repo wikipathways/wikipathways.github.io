@@ -5,6 +5,7 @@ redirect_from:
  - index.php/WikiPathways:NewPathwayReleases
 order: 3
 display-title: "New"
+tooltip: "New pathways recently added to the database" 
 btn-class: "btn-front"
 ---
 
