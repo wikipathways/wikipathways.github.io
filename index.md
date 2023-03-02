@@ -63,6 +63,7 @@ redirect_from:
 	   searchBox1.placeholder=" e.g., ACE or cancer";
 	   searchBox1.title="Search WikiPathways"; 
 	   var searchBox2 =  document.getElementById("gsc-i-id2");
+	   searchBox2.class="gcse-searchresults-only";
 	   searchBox2.placeholder=" e.g., ACE or cancer";
 	   searchBox2.title="Search WikiPathways"; 
 	 }
