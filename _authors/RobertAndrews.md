@@ -4,7 +4,7 @@ realname: Robert Andrews
 website: ~
 affiliation: Cardiff University
 bio: ~
-github: ~
+github: robertmand
 orcid: 0000-0002-3491-2361
 linkedin: ~
 googlescholar: ~
