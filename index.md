@@ -188,8 +188,8 @@ redirect_from:
             <div class="bg-gradient p-3">
               <div class="container" style="margin-left:25px;">
                 <h1 style="font-family:Linux Libertine; ">Dedicated to open science</h1><h2 style="font-family:Poppins; color: #6c757d;line-height:1.4"> Join hundreds of other scientists by contributing your pathway knowledge.</h2>
-                    <a class="btn btn-sm btn-front my-2" href="/help.html#create">Create</a>
-                    <a class="btn btn-sm btn-front my-2" href="/help.html#curate">Curate</a>
+                    <a class="btn btn-sm btn-front my-2" href="/help.html#create">Contribute</a>
+                    <a class="btn btn-sm btn-front my-2" href="http://academy.wikipathways.org/" target="_blank">Learn</a>
                     <a class="btn btn-sm btn-front my-2" href="https://github.com/wikipathways/wikipathways-development" target="_blank">Code</a>
                 <br /><br /><h2>Curator of the Week</h2>
                 {% assign pick =  "now" | date:"%W" | minus: 1 | modulo: page.curator_of_the_week.size %}
