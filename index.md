@@ -140,17 +140,17 @@ redirect_from:
       <div class="outer-container" style="background: linear-gradient(270deg, #fefefe, #eae6ff 100%);">
         <div class="row-main gy-5 py-5" style="display:flex; flex-wrap: wrap;">
           <div class="col-5 mx-auto" style="display:flex;">
-            <div class="bg-gradient p-3">
+            <div class="bg-gradient">
               <div class="container">
               <div id="carouselBrowse" class="carousel slide" data-ride="true" data-wrap="true">
-  <ol class="carousel-indicators">
+  <ol class="carousel-indicators" style="margin-bottom:-25px;">
     <li data-target="#carouselBrowse" data-slide-to="0" class="active"></li>
     <li data-target="#carouselBrowse" data-slide-to="1"></li>
     <li data-target="#carouselBrowse" data-slide-to="2"></li>
     <li data-target="#carouselBrowse" data-slide-to="3"></li>
     <li data-target="#carouselBrowse" data-slide-to="4"></li>
   </ol>
-  <div class="carousel-inner">
+  <div class="carousel-inner" style="width:76%; margin-left: 12%;">
     <div class="carousel-item active">
       <a href="/browse/filters.html">
       <img class="d-block w-100" src="/assets/img/slideshow/browse-1.png" alt="Filters">
@@ -258,13 +258,13 @@ redirect_from:
           <div class="col-5 mx-auto" style="display:flex;">
             <div class="container">
               <div id="carouselDownload" class="carousel slide" data-ride="true" data-wrap="true">
-  <ol class="carousel-indicators">
+  <ol class="carousel-indicators" style="margin-bottom:-25px;">
     <li data-target="#carouselDownload" data-slide-to="0" class="active"></li>
     <li data-target="#carouselDownload" data-slide-to="1"></li>
     <li data-target="#carouselDownload" data-slide-to="2"></li>
     <li data-target="#carouselDownload" data-slide-to="3"></li>
   </ol>
-  <div class="carousel-inner">
+  <div class="carousel-inner" style="width:76%; margin-left: 12%;">
     <div class="carousel-item active">
       <a href="https://webservice.wikipathways.org/" target="_blank">
       <img class="d-block w-100" src="/assets/img/slideshow/download-1.png" alt="Web service API">
@@ -309,14 +309,14 @@ redirect_from:
             <div class="bg-gradient p-3">
               <div class="container">
              <div id="carouselAnalyze" class="carousel slide" data-ride="true" data-wrap="true">
-  <ol class="carousel-indicators">
+  <ol class="carousel-indicators" style="margin-bottom:-25px;">
     <li data-target="#carouselAnalyze" data-slide-to="0" class="active"></li>
     <li data-target="#carouselAnalyze" data-slide-to="1"></li>
     <li data-target="#carouselAnalyze" data-slide-to="2"></li>
     <li data-target="#carouselAnalyze" data-slide-to="3"></li>
     <li data-target="#carouselAnalyze" data-slide-to="4"></li>
   </ol>
-  <div class="carousel-inner">
+  <div class="carousel-inner" style="width:76%; margin-left: 12%;">
     <div class="carousel-item active">
       <a href="https://pathvisio.org/" target="_blank">
       <img class="d-block w-100" src="/assets/img/slideshow/analyze-1.png" alt="PathVisio">
