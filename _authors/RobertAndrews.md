@@ -2,10 +2,10 @@
 username: RobertAndrews
 realname: Robert Andrews
 website: ~
-affiliation: ~
+affiliation: Cardiff University
 bio: ~
 github: ~
-orcid: ~
+orcid: 0000-0002-3491-2361
 linkedin: ~
 googlescholar: ~
 wikidata: ~
