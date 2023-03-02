@@ -27,7 +27,7 @@ redirect_from:
 - /pathway-finder
 
 ---
-<div style="background: linear-gradient(0deg, #fefefe, #eae6ff 100%);">
+<div> <!-- style="background: linear-gradient(0deg, #fefefe, #eae6ff 100%);"> -->
   {%- include_cached header.html %}
 <section id="intro"> 
   <main class="home-page-content" aria-label="Content">
@@ -91,50 +91,6 @@ redirect_from:
   </main>
 </section>
 </div>
-<section id="join">
-    <div class="wrapper">   
-      <div class="outer-container" style="background: linear-gradient(90deg, #fefefe, #eae6ff 100%);">
-        <div class="row-main gy-5 py-5" style="display:flex; flex-wrap: wrap;">
-          <div class="col-4 mx-auto" style="display:flex;">
-            <div class="bg-gradient p-3">
-              <div class="container" style="margin-left:25px;">
-                <h1 style="font-family:Linux Libertine; ">Dedicated to open science</h1><h2 style="font-family:Poppins; color: #6c757d;line-height:1.4"> Join hundreds of other scientists by contributing your pathway knowledge.</h2>
-                    <a class="btn btn-sm btn-front my-2" href="/help.html#create">Create</a>
-                    <a class="btn btn-sm btn-front my-2" href="/help.html#curate">Curate</a>
-                    <a class="btn btn-sm btn-front my-2" href="https://github.com/wikipathways/wikipathways-development" target="_blank">Code</a>
-                <br /><br /><h2>Curator of the Week</h2>
-                {% assign pick =  "now" | date:"%W" | minus: 1 | modulo: page.curator_of_the_week.size %}
-                {% assign cauth = site.authors | where: "username", page.curator_of_the_week[pick] | first  %}
-                <div class="card mb-3" style="max-width: 300px; padding:5px; background-color:#eae6ff;">
-                  <div class="row no-gutters">
-                    <div class="col-md-4">
-                      <img src="https://github.com/{{cauth.github}}.png" style="object-fit: cover; border-radius: 50%; width: 75px; margin: 5px;" class="card-img" alt="No photo">
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title">{{cauth.realname}}</h5>
-                        <p class="card-text"></p>
-                        <a href="{{cauth.url}}" class="btn btn-sm btn-info">View profile</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-7 mx-auto" style="display:flex;">
-            <div class="bg-gradient p-3">
-              <div class="container">
-              <a href="/stats">
-                <div class="stats-gif"></div>  
-              </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-</section>
 <section id="browse">
     <div class="wrapper">   
       <div class="outer-container" style="background: linear-gradient(270deg, #fefefe, #eae6ff 100%);">
@@ -185,7 +141,7 @@ redirect_from:
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-              </div>
+              </div> 
               </div>
             </div>
           </div>
@@ -224,82 +180,49 @@ redirect_from:
       </div>
     </div>
 </section>
-<section id="download"> 
+<section id="join">
     <div class="wrapper">   
       <div class="outer-container" style="background: linear-gradient(90deg, #fefefe, #eae6ff 100%);">
         <div class="row-main gy-5 py-5" style="display:flex; flex-wrap: wrap;">
-          <div class="col-5 mx-auto" style="display:flex;">
+          <div class="col-4 mx-auto" style="display:flex;">
+            <div class="bg-gradient p-3">
+              <div class="container" style="margin-left:25px;">
+                <h1 style="font-family:Linux Libertine; ">Dedicated to open science</h1><h2 style="font-family:Poppins; color: #6c757d;line-height:1.4"> Join hundreds of other scientists by contributing your pathway knowledge.</h2>
+                    <a class="btn btn-sm btn-front my-2" href="/help.html#create">Create</a>
+                    <a class="btn btn-sm btn-front my-2" href="/help.html#curate">Curate</a>
+                    <a class="btn btn-sm btn-front my-2" href="https://github.com/wikipathways/wikipathways-development" target="_blank">Code</a>
+                <br /><br /><h2>Curator of the Week</h2>
+                {% assign pick =  "now" | date:"%W" | minus: 1 | modulo: page.curator_of_the_week.size %}
+                {% assign cauth = site.authors | where: "username", page.curator_of_the_week[pick] | first  %}
+                <div class="card mb-3" style="max-width: 300px; padding:5px; background-color:#eae6ff;">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <img src="https://github.com/{{cauth.github}}.png" style="object-fit: cover; border-radius: 50%; width: 75px; margin: 5px;" class="card-img" alt="No photo">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">{{cauth.realname}}</h5>
+                        <p class="card-text"></p>
+                        <a href="{{cauth.url}}" class="btn btn-sm btn-info">View profile</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-7 mx-auto" style="display:flex;">
             <div class="bg-gradient p-3">
               <div class="container">
-              <h1 style="font-family:Linux Libertine; ">Download and access</h1><h2 style="font-family:Poppins; line-height:1.4; color: #6c757d;">Get pathway information in the format you need, including GPML (XML), GMT, SVG, <a href="download.html">and more</a>.  Access our content  from your favorite language.</h2>
-              <div class="row mx-auto" style="display:flex; flex-wrap: wrap;">
-                <div class="col-3 px-0" style="display:flex;">
-                  <div style="width:150px;">
-                  <a class="btn btn-sm btn-front w-100 my-2" href="https://data.wikipathways.org/current/gpml" target="_blank">GPML</a>
-                  <a class="btn btn-sm btn-front w-100 my-2" href="https://data.wikipathways.org/current/gmt" target="_blank">GMT</a>
-                  <a class="btn btn-sm btn-front w-100 my-2" href="https://data.wikipathways.org/current/svg" target="_blank">SVG</a>
-                  <a class="btn btn-sm btn-front w-100 my-2" href="https://data.wikipathways.org" target="_blank">Archive</a>
-                  </div>
-                </div>              
-                <div class="col-3 mx-auto" style="display:flex;">
-                  <div style="width:150px;">
-                  <a class="btn btn-sm btn-front w-100 my-2" href="https://webservice.wikipathways.org/" target="_blank">API</a>
-                  <a class="btn btn-sm btn-front w-100 my-2" href="https://sparql.wikipathways.org/" target="_blank">SPARQL</a>
-                  <a class="btn btn-sm btn-front w-100 my-2" href="https://bioconductor.org/packages/rWikiPathways/" target="_blank">R</a>
-                  <a class="btn btn-sm btn-front w-100 my-2" href="https://github.com/kozo2/pywikipathways" target="_blank">Python</a>
-                  </div>
-                </div>
-                <div class="col-3 mx-auto" style="display:flex;">
-                </div>
+              <a href="/stats">
+                <div class="stats-gif"></div>  
+              </a>
               </div>
-              </div>
-            </div> 
-          </div>
-          <div class="col-5 mx-auto" style="display:flex;">
-            <div class="container">
-              <div id="carouselDownload" class="carousel slide" data-ride="true" data-wrap="true">
-  <ol class="carousel-indicators" style="margin-bottom:-25px;">
-    <li data-target="#carouselDownload" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselDownload" data-slide-to="1"></li>
-    <li data-target="#carouselDownload" data-slide-to="2"></li>
-    <li data-target="#carouselDownload" data-slide-to="3"></li>
-  </ol>
-  <div class="carousel-inner" style="width:76%; margin-left: 12%;">
-    <div class="carousel-item active">
-      <a href="https://webservice.wikipathways.org/" target="_blank">
-      <img class="d-block w-100" src="/assets/img/slideshow/download-1.png" alt="Web service API">
-      </a>
-    </div>
-    <div class="carousel-item">
-          <a href="https://data.wikipathways.org/current/" target="_blank">
-      <img class="d-block w-100" src="/assets/img/slideshow/download-2.png" alt="Download archive">
-      </a>
-    </div>
-    <div class="carousel-item">
-          <a href="https://sparql.wikipathways.org/" target="_blank">
-      <img class="d-block w-100" src="/assets/img/slideshow/download-3.png" alt="SPARQL">
-      </a>
-    </div>
-    <div class="carousel-item">
-          <a href="https://bioconductor.org/packages/rWikiPathways/" target="_blank">
-      <img class="d-block w-100" src="/assets/img/slideshow/download-4.png" alt="R package">
-      </a>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselDownload" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselDownload" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 </section>
 <section id="analyze"> 
     <div class="wrapper">   
@@ -395,6 +318,83 @@ redirect_from:
         </div>
       </div>
     </div>
+</section>
+<section id="download"> 
+    <div class="wrapper">   
+      <div class="outer-container" style="background: linear-gradient(90deg, #fefefe, #eae6ff 100%);">
+        <div class="row-main gy-5 py-5" style="display:flex; flex-wrap: wrap;">
+          <div class="col-5 mx-auto" style="display:flex;">
+            <div class="bg-gradient p-3">
+              <div class="container">
+              <h1 style="font-family:Linux Libertine; ">Download and access</h1><h2 style="font-family:Poppins; line-height:1.4; color: #6c757d;">Get pathway information in the format you need, including GPML (XML), GMT, SVG, <a href="download.html">and more</a>.  Access our content  from your favorite language.</h2>
+              <div class="row mx-auto" style="display:flex; flex-wrap: wrap;">
+                <div class="col-3 px-0" style="display:flex;">
+                  <div style="width:150px;">
+                  <a class="btn btn-sm btn-front w-100 my-2" href="https://data.wikipathways.org/current/gpml" target="_blank">GPML</a>
+                  <a class="btn btn-sm btn-front w-100 my-2" href="https://data.wikipathways.org/current/gmt" target="_blank">GMT</a>
+                  <a class="btn btn-sm btn-front w-100 my-2" href="https://data.wikipathways.org/current/svg" target="_blank">SVG</a>
+                  <a class="btn btn-sm btn-front w-100 my-2" href="https://data.wikipathways.org" target="_blank">Archive</a>
+                  </div>
+                </div>              
+                <div class="col-3 mx-auto" style="display:flex;">
+                  <div style="width:150px;">
+                  <a class="btn btn-sm btn-front w-100 my-2" href="https://webservice.wikipathways.org/" target="_blank">API</a>
+                  <a class="btn btn-sm btn-front w-100 my-2" href="https://sparql.wikipathways.org/" target="_blank">SPARQL</a>
+                  <a class="btn btn-sm btn-front w-100 my-2" href="https://bioconductor.org/packages/rWikiPathways/" target="_blank">R</a>
+                  <a class="btn btn-sm btn-front w-100 my-2" href="https://github.com/kozo2/pywikipathways" target="_blank">Python</a>
+                  </div>
+                </div>
+                <div class="col-3 mx-auto" style="display:flex;">
+                </div>
+              </div>
+              </div>
+            </div> 
+          </div>
+          <div class="col-5 mx-auto" style="display:flex;">
+            <div class="container">
+              <div id="carouselDownload" class="carousel slide" data-ride="true" data-wrap="true">
+  <ol class="carousel-indicators" style="margin-bottom:-25px;">
+    <li data-target="#carouselDownload" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselDownload" data-slide-to="1"></li>
+    <li data-target="#carouselDownload" data-slide-to="2"></li>
+    <li data-target="#carouselDownload" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner" style="width:76%; margin-left: 12%;">
+    <div class="carousel-item active">
+      <a href="https://webservice.wikipathways.org/" target="_blank">
+      <img class="d-block w-100" src="/assets/img/slideshow/download-1.png" alt="Web service API">
+      </a>
+    </div>
+    <div class="carousel-item">
+          <a href="https://data.wikipathways.org/current/" target="_blank">
+      <img class="d-block w-100" src="/assets/img/slideshow/download-2.png" alt="Download archive">
+      </a>
+    </div>
+    <div class="carousel-item">
+          <a href="https://sparql.wikipathways.org/" target="_blank">
+      <img class="d-block w-100" src="/assets/img/slideshow/download-3.png" alt="SPARQL">
+      </a>
+    </div>
+    <div class="carousel-item">
+          <a href="https://bioconductor.org/packages/rWikiPathways/" target="_blank">
+      <img class="d-block w-100" src="/assets/img/slideshow/download-4.png" alt="R package">
+      </a>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselDownload" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselDownload" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </section>
 <div style="margin-bottom:8px;"></div> 
 {%- include_cached footer.html -%}
