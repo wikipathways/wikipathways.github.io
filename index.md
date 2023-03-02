@@ -20,7 +20,6 @@ curator_of_the_week:
 
 redirect_from: 
 - /index.php/WikiPathways
-- /index.php/Special:SearchPathways
 - /index.php/Pathway
 - /index.php/
 - /index.ph
@@ -141,7 +140,7 @@ redirect_from:
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-              </div> 
+              </div>
               </div>
             </div>
           </div>
