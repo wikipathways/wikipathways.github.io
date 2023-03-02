@@ -149,7 +149,7 @@ redirect_from:
             <div class="container">
                   <h1 style="font-family:Linux Libertine; text-align:right;">Browse the current collection</h1><h2 style="font-family:Poppins; text-align:right;color: #6c757d;line-height:1.4">Explore the full breadth and depth of pathway knowledge. Discover pathways of interest by organism, communities of domain experts, and ontology annotations.</h2>
                 <div class="row mx-auto" style="display:flex; flex-wrap: wrap;">            
-                  <div class="col-3 mx-auto" style="display:flex;">
+                  <div class="col-3" style="display:flex; margin-left:0px;">
                     <div class="container">
       {% assign sorted_browse = site.browse | where_exp:"item","item.btn-class contains 'pill'" | sort: "order" %}
       {% for bp in sorted_browse %}
@@ -157,7 +157,7 @@ redirect_from:
       {% endfor %}           
                     </div>
                   </div>
-                  <div class="col-3 mx-auto>" style="display:flex;">
+                  <div class="col-3 mx-auto>" style="display:flex; margin-left:auto">
                     <div class="container">
       {% assign sorted_browse = site.browse | where:"btn-class","btn-front" | sort: "order" %} 
       {% for bp in sorted_browse limit: 3 %}
@@ -336,7 +336,7 @@ redirect_from:
                   <a class="btn btn-sm btn-front w-100 my-2" href="https://data.wikipathways.org" target="_blank">Archive</a>
                   </div>
                 </div>              
-                <div class="col-3 mx-auto" style="display:flex;">
+                <div class="col-3" style="display:flex; margin-left:40px;">
                   <div style="width:150px;">
                   <a class="btn btn-sm btn-front w-100 my-2" href="https://webservice.wikipathways.org/" target="_blank">API</a>
                   <a class="btn btn-sm btn-front w-100 my-2" href="https://sparql.wikipathways.org/" target="_blank">SPARQL</a>
