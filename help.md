@@ -130,9 +130,9 @@ redirect_from:
 </div>
 <div id="search">
 <h1>Search for Pathways</h1>
-<p>The WikiPathways collection can be searched by gene symbol, pathway name or other keywords, either directly in the Search field at the top of each page and on the front page, or using the <a href="/browse/table.html">Table</a> view. For example, search for your favorite pathway by a word from the title (i.e. "Statin"), or your favorite gene either by symbol (i.e. "BRCA1").</p> 
+<p>The WikiPathways collection can be searched by gene symbol, pathway name or other keywords, either directly in the Search field at the top of each page and on the front page. For example, search for your favorite pathway by a word from the title (i.e. "Statin"), or your favorite gene either by symbol (i.e. "BRCA1").</p> 
 
-<p>The <a href="/browse/table.html">Table</a> view of the current collection offers a nice way to interactively explore pathways by searching for various parameters. The table displays all pathways, and offers search fields at the top of each column filters the table. Additional sort options become available when the filtered set is fewer than 200 pathways. Example usage:</p>
+<p>The <a href="/browse/table.html">Table</a> view of the current collection offers a nice way to interactively explore pathways by searching for various parameters. The table displays all pathways, and offers search fields at the top of each column to filter the table. Additional sort options become available when the filtered set is fewer than 200 pathways. Example usage:</p>
 <ul>
 <li>To see all pathways related to adipogenesis in humans, type <b>adipogenesis</b> in the search field at the top of the <b>Pathway Title</b> column, and type <b>Homo sapiens</b> in the search field at the top of the <b>Organism</b> column.</li>
 <li>To see all mouse pathways edited in 2022, type <b>Mus musculus</b> in the search field at the top of the <b>Organism</b> column and type <b>2022</b> in the search field at the top of the <b>Last Edited</b> column.</li>
@@ -148,7 +148,7 @@ redirect_from:
 {% assign sorted_browse = site.browse | where_exp:"item","item.btn-class contains 'pill'" | sort: "order" %}
 {% for bp in sorted_browse %}
     <a class="btn btn-sm {{bp.btn-class}}" href="{{bp.url}}"> {{ bp.display-title }}</a>
-{% endfor %}. As well as by <a class="btn btn-sm btn-front" style="font-size:small" href="browse/authors.html"> Authors</a> or by whether they are 
+{% endfor %}, as well as by <a class="btn btn-sm btn-front" style="font-size:small" href="browse/authors.html"> Authors</a> or by whether they are 
  <a class="btn btn-sm btn-front" style="font-size:small" href="browse/new.html"> New</a> or recently
   <a class="btn btn-sm btn-front" style="font-size:small" href="browse/updated.html"> Updated</a>.
 </p>
