@@ -26,79 +26,43 @@ redirect_from:
 - /pathway-finder
 
 ---
-<div> <!-- style="background: linear-gradient(0deg, #fefefe, #eae6ff 100%);"> -->
-  {%- include_cached header.html %}
+{%- include_cached header.html %}
 <section id="intro"> 
-  <main class="home-page-content" aria-label="Content">
     <div class="wrapper">   
       <div class="outer-container">
-        <div class="row-main gy-5 py-5" style="display:flex; flex-wrap: wrap;">
-          <div class="col-5 px-0 mx-0" style="display:flex;">
-            <div class="bg-gradient py-1 main-top-left">
-              <div class="container px-0">
+        <div class="row-main py-4" style="display:flex; flex-wrap: wrap;">
+          <div class="col-5 mx-auto" style="display:flex;">
+            <div class="bg-gradient p-3">
+              <div class="container" style="margin-left:25px;">
                 <h2 style="font-family:Poppins; line-height:1.4"><b>WikiPathways</b> is an open, collaborative platform dedicated to the collection and reuse of biological pathways contributed and updated by the research community.
                 </h2>
                 <a class="btn btn-sm btn-front my-1" href="/about.html">Read more</a>
-                <br /><br />
-                <div class="row-main gy-5 py-5" style="display:flex; flex-wrap: wrap;margin-right: -95px;margin-left: 25px;">
-                  <div class="col-7 mx-3"> 
-                    <div class="container">
-                      <h3 style="font-family:Poppins; text-align: left; font-size:larger; padding-left:14px">
-                      <b>Search for pathways</b>
-                      </h3>
-                      <div id="blue-searchbox"> 
-   <script> 
-	 (function() {
-	   var gcse = document.createElement("script");
-	   gcse.type = "text/javascript";
-	   gcse.async = true;
-	   gcse.src = "https://cse.google.com/cse.js?cx=c1b9a23fc5f2875e3";
-	   var s = document.getElementsByTagName("script")[0];
-	   s.parentNode.insertBefore(gcse, s);
-	 })();
-	 window.onload = function()
-	 { 
-     document.getElementById("navbarNavAltMarkup").className = "navbar-collapse show";
-	   var searchBox1 =  document.getElementById("gsc-i-id1");
-	   searchBox1.placeholder=" e.g., ACE or cancer";
-	   searchBox1.title="Search WikiPathways"; 
-	   var searchBox2 =  document.getElementById("gsc-i-id2");
-	   searchBox2.class="gcse-searchresults-only";
-	   searchBox2.placeholder=" e.g., ACE or cancer";
-	   searchBox2.title="Search WikiPathways"; 
-	 }
-   </script>
-    <gcse:search></gcse:search>
-                      </div>
-                      <p style="color: #6c757d;text-align: left; padding-left:14px; ">Search by gene symbols, pathway names, WPIDs or any keywords</p>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
-          <div class="col-7 mx-auto gy-4 py-4 px-0" style="display:flex;">
-            <div style="margin-left:39px">
-              <a href="/pathways/WP554.html">
-                <div class="wp554-gif"></div> 
-              </a>
-              <p style="color: #6c757d;text-align: left">Interact with diagrams with annotated genes, metabolites, drugs, interactions and pathways.</p>
+          <div class="col-5 mx-auto" style="display:flex;">
+            <div class="bg-gradient p-3">
+              <div class="container">
+                <a href="/pathways/WP554.html">
+                  <div class="wp554-gif"></div> 
+                </a>
+                <p style="color: #6c757d;text-align: left">Interact with diagrams with annotated genes, metabolites, drugs, interactions and pathways.</p>
+              </div>
             </div>
-          </div> 
+          </div>
+          <div class="col-1 mx-auto" style="display:flex;"></div>
         </div>
       </div>
     </div>
-  </main>
 </section>
-</div>
 <section id="browse">
     <div class="wrapper">   
-      <div class="outer-container" style="background: linear-gradient(270deg, #fefefe, #eae6ff 100%);">
+      <div class="outer-container" style="background: linear-gradient(0deg, #fefefe, #eaeaff 100%);">
         <div class="row-main gy-5 py-5" style="display:flex; flex-wrap: wrap;">
           <div class="col-5 mx-auto" style="display:flex;">
             <div class="bg-gradient">
               <div class="container">
-              <div id="carouselBrowse" class="carousel slide" data-ride="true" data-wrap="true">
+              <div id="carouselBrowse" class="carousel slide" data-ride="true" data-wrap="true" style="margin-bottom: 25px;">
   <ol class="carousel-indicators" style="margin-bottom:-25px;">
     <li data-target="#carouselBrowse" data-slide-to="0" class="active"></li>
     <li data-target="#carouselBrowse" data-slide-to="1"></li>
@@ -182,7 +146,7 @@ redirect_from:
 </section>
 <section id="join">
     <div class="wrapper">   
-      <div class="outer-container" style="background: linear-gradient(90deg, #fefefe, #eae6ff 100%);">
+      <div class="outer-container" style="background: linear-gradient(0deg, #fefefe, #eaeaff 100%);">
         <div class="row-main gy-5 py-5" style="display:flex; flex-wrap: wrap;">
           <div class="col-4 mx-auto" style="display:flex;">
             <div class="bg-gradient p-3">
@@ -194,7 +158,7 @@ redirect_from:
                 <br /><br /><h2>Curator of the Week</h2>
                 {% assign pick =  "now" | date:"%W" | minus: 1 | modulo: page.curator_of_the_week.size %}
                 {% assign cauth = site.authors | where: "username", page.curator_of_the_week[pick] | first  %}
-                <div class="card mb-3" style="max-width: 300px; padding:5px; background-color:#eae6ff;">
+                <div class="card mb-3" style="max-width: 300px; padding:5px;">
                   <div class="row no-gutters">
                     <div class="col-md-4">
                       <img src="https://github.com/{{cauth.github}}.png" style="object-fit: cover; border-radius: 50%; width: 75px; margin: 5px;" class="card-img" alt="No photo">
@@ -226,7 +190,7 @@ redirect_from:
 </section>
 <section id="analyze"> 
     <div class="wrapper">   
-      <div class="outer-container" style="background: linear-gradient(270deg, #fefefe, #eae6ff 100%);">
+      <div class="outer-container" style="background: linear-gradient(0deg, #fefefe, #eaeaff 100%);">
         <div class="row-main gy-5 py-5" style="display:flex; flex-wrap: wrap;">
           <div class="col-5 mx-auto" style="display:flex;">
             <div class="bg-gradient p-3">
@@ -321,7 +285,7 @@ redirect_from:
 </section>
 <section id="download"> 
     <div class="wrapper">   
-      <div class="outer-container" style="background: linear-gradient(90deg, #fefefe, #eae6ff 100%);">
+      <div class="outer-container" style="background: linear-gradient(0deg, #fefefe, #eaeaff 100%);">
         <div class="row-main gy-5 py-5" style="display:flex; flex-wrap: wrap;">
           <div class="col-5 mx-auto" style="display:flex;">
             <div class="bg-gradient p-3">
@@ -404,3 +368,12 @@ redirect_from:
   </div>
 </div>
 
+<script> 
+	 window.onload = function()
+	 { 
+     document.getElementById("navbarNavAltMarkup").className = "navbar-collapse show";
+	   var searchBox1 =  document.getElementById("gsc-i-id1");
+	   searchBox1.placeholder=" e.g., ACE or cancer";
+	   searchBox1.title="Search WikiPathways"; 
+	 }
+</script>

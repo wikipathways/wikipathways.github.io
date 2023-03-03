@@ -24,7 +24,7 @@
   src: url("../assets/fonts/LinLibertine_R.ttf");
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 800px) {
   .wrapper {
     max-width: 1190px;
     width: 100%;
@@ -89,18 +89,18 @@
   background-size: 650px 450px;
 }
 .wp554-gif {
-  height: 476px; 
-  min-width: 655px;
+  height: 360px; 
+  width: 500px;
   background: url("../assets/img/main_wp554.gif") left;
-  background-size: 655px 476px;
+  background-size: 500px 360px;
 }
 .wp554-gif:hover {
   background: url("../assets/img/main_wp554_inf.gif") center;
-  background-size: 655px 476px;
+  background-size: 500px 360px;
 }
 .wp554-gif:active {
   background: url("../assets/img/main_wp554_inf.gif") right;
-  background-size: 655px 476px;
+  background-size: 500px 360px;
 }
 
 /* TAGS */
@@ -271,6 +271,7 @@ a.btn-outline-warning:hover {
 // LANDING PAGE BUTTON
 a.btn-front:visited,
 a.btn-front:link {
+  background-color: white;
   border-color: #3955E7;
   color: #3955E7;
   font-size: large;
