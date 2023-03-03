@@ -46,7 +46,7 @@ redirect_from:
                 <a href="/pathways/WP554.html">
                   <div class="wp554-gif"></div> 
                 </a>
-                <p style="color: #6c757d;text-align: left">Interact with diagrams with annotated genes, metabolites, drugs, interactions and pathways.</p>
+                <p style="color: #6c757d;text-align: left">Interact with diagrams with clickable genes, drugs, and pathways.</p>
               </div>
             </div>
           </div>
