@@ -39,12 +39,12 @@ redirect_from:
                 <a class="btn btn-sm btn-front my-1" href="/about.html">Read more</a>
                 <div style="display:flex; align-items:center; font-size:14px; margin-top:10px;">
                   <span>Powered by:</span>
-                  <a href="https://pathvisio.github.io/" target="_blank">
-                    <img src="/assets/img/logo-pathvisio-name.png" title="Visit PathVisio" alt="PathVisio" style="height: 35px; margin: 0px 0px 8px 5px">
+                  <a href="https://pathvisio.org" target="_blank">
+                    <img src="/assets/img/logo-pathvisio-name.png" title="PathVisio is our pathway modeling tool" alt="PathVisio" style="height: 35px; margin: 0px 0px 8px 5px">
                   </a>
                   <span>&nbsp; & &nbsp;</span>
-                  <a href="https://www.bridgedb.org/" target="_blank">
-                    <img src="/assets/img/logo-bridgedb.png" title="Visit BridgeDb" alt="BridgeDB" style="height: 30px; margin-left: 5px;">
+                  <a href="https://www.bridgedb.org" target="_blank">
+                    <img src="/assets/img/logo-bridgedb.png" title="BridgeDb supports all our identifiers and organisms" alt="BridgeDB" style="height: 30px; margin-left: 5px;">
                   </a>
                 </div>
               </div>
