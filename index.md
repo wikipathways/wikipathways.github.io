@@ -37,6 +37,16 @@ redirect_from:
                 <h2 style="font-family:Poppins; line-height:1.4"><b>WikiPathways</b> is an open, collaborative platform dedicated to the collection and reuse of biological pathways contributed and updated by the research community.
                 </h2>
                 <a class="btn btn-sm btn-front my-1" href="/about.html">Read more</a>
+                <div style="display:flex; align-items:center; font-size:14px; margin-top:10px;">
+                  <span>Powered by:</span>
+                  <a href="https://pathvisio.github.io/" target="_blank">
+                    <img src="/assets/img/logo-pathvisio-name.png" title="Visit PathVisio" alt="PathVisio" style="height: 35px; margin: 0px 0px 8px 5px">
+                  </a>
+                  <span>&nbsp; & &nbsp;</span>
+                  <a href="https://www.bridgedb.org/" target="_blank">
+                    <img src="/assets/img/logo-bridgedb.png" title="Visit BridgeDb" alt="BridgeDB" style="height: 30px; margin-left: 5px;">
+                  </a>
+                </div>
               </div>
             </div>
           </div>
