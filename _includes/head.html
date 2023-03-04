@@ -50,6 +50,10 @@
       </script>
     {% endif %}
     <title>
-      {{ page.title }} ({{ page.wpid }}) - {{ page.organisms | first }} | {{ site.title }}
+      {% if page.wpid %}
+        {{ page.title }} ({{ page.wpid }}) - {{ page.organisms | first }} | {{ site.title }}
+      {% else %}
+        {{ page.title }} | {{ site.title }}
+      {% endif %}
     </title>
   </head>  
