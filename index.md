@@ -32,9 +32,9 @@ redirect_from:
       <div class="outer-container">
         <div class="row-main py-4" style="display:flex; flex-wrap: wrap;">
           <div class="col-5 mx-auto" style="display:flex;">
-            <div class="bg-gradient p-3">
+            <div class="bg-gradient p-3 px-4">
               <div class="container" style="margin-left:25px;">
-                <h2 style="font-family:Poppins; line-height:1.4"><b>WikiPathways</b> is an open, collaborative platform dedicated to the collection and reuse of biological pathways contributed and updated by the research community.
+                <h2 style="font-family:Poppins; line-height:1.4"><b>WikiPathways</b> is an open science platform for biological pathways contributed, updated, and used by the research community.
                 </h2>
                 <a class="btn btn-sm btn-front my-1" href="/about.html">Read more</a>
                 <div style="display:flex; align-items:center; font-size:14px; margin-top:10px;">
@@ -121,7 +121,7 @@ redirect_from:
           </div>
           <div class="col-5 mx-auto" style="display:flex;">
             <div class="container">
-                  <h1 style="font-family:Linux Libertine; text-align:right;">Browse the current collection</h1><h2 style="font-family:Poppins; text-align:right;color: #6c757d;line-height:1.4">Explore the full breadth and depth of pathway knowledge. Discover pathways of interest by organism, communities of domain experts, and ontology annotations.</h2>
+                  <h1 style="font-family:Linux Libertine; text-align:right;">Browse for Pathways</h1><h2 style="font-family:Poppins; text-align:right;color: #6c757d;line-height:1.4">Explore the full breadth and depth of pathway knowledge. Discover pathways of interest by organism, communities of domain experts, and ontology annotations.</h2>
                 <div class="row mx-auto" style="display:flex; flex-wrap: wrap;">            
                   <div class="col-3" style="display:flex; margin-left:0px;">
                     <div class="container">
@@ -161,7 +161,7 @@ redirect_from:
           <div class="col-4 mx-auto" style="display:flex;">
             <div class="bg-gradient p-3">
               <div class="container" style="margin-left:25px;">
-                <h1 style="font-family:Linux Libertine; ">Dedicated to open science</h1><h2 style="font-family:Poppins; color: #6c757d;line-height:1.4"> Join hundreds of other scientists by contributing your pathway knowledge.</h2>
+                <h1 style="font-family:Linux Libertine; ">Share Your Knowledge</h1><h2 style="font-family:Poppins; color: #6c757d;line-height:1.4"> Join hundreds of other scientists by contributing your pathway knowledge.</h2>
                     <a class="btn btn-sm btn-front my-2" href="/help.html#create">Contribute</a>
                     <a class="btn btn-sm btn-front my-2" href="http://academy.wikipathways.org/" target="_blank">Learn</a>
                     <a class="btn btn-sm btn-front my-2" href="https://github.com/wikipathways/wikipathways-development" target="_blank">Code</a>
@@ -254,7 +254,7 @@ redirect_from:
           </div>
           <div class="col-5 mx-auto" style="display:flex;">
             <div class="container">
-                            <h1 style="font-family:Linux Libertine; text-align:right;">Analyze and Publish</h1><h2 style="font-family:Poppins; text-align:right; line-height:1.4; color: #6c757d;">Choose from dozens of online and software tools to perform pathway analysis. Visualize your data in the context of pathway diagrams. Publish results as images with links back to an active and dynamic database.</h2>
+                            <h1 style="font-family:Linux Libertine; text-align:right;">Analyze and Publish</h1><h2 style="font-family:Poppins; text-align:right; line-height:1.4; color: #6c757d;">Choose from dozens of tools to perform pathway analysis. Visualize your data in the context of pathway diagrams. Publish results as images linked to an active database.</h2>
               <div class="row mx-auto" style="display:flex; flex-wrap: wrap;">
               <div class="col-0 mx-auto" style="display:flex;">
               </div>
@@ -300,7 +300,7 @@ redirect_from:
           <div class="col-5 mx-auto" style="display:flex;">
             <div class="bg-gradient p-3">
               <div class="container">
-              <h1 style="font-family:Linux Libertine; ">Download and access</h1><h2 style="font-family:Poppins; line-height:1.4; color: #6c757d;">Get pathway information in the format you need, including GPML (XML), GMT, SVG, <a href="download.html">and more</a>.  Access our content  from your favorite language.</h2>
+              <h1 style="font-family:Linux Libertine; ">Download and Access</h1><h2 style="font-family:Poppins; line-height:1.4; color: #6c757d;">Get pathway information in the format you need, including GPML (XML), GMT, SVG, <a href="download.html">and more</a>.  Programmatically access our content in multiple ways.</h2>
               <div class="row mx-auto" style="display:flex; flex-wrap: wrap;">
                 <div class="col-3 px-0" style="display:flex;">
                   <div style="width:150px;">

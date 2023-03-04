@@ -20,7 +20,7 @@
 
 title: WikiPathways
 tagline: A community curated pathway database
-description: WikiPathways is a community curated pathway database with biological models in the GPML format.
+description: WikiPathways is a community curated pathway database dedicated to open science.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://wikipathways.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: wikipathways
