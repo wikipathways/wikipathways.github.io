@@ -8,8 +8,40 @@ sitemap:
   {% for pw in site.pathways %}
     <url>
       <loc>{{ site.url }}{{ pw.url }}</loc>
-        <lastmod>{{  site.time | date_to_xmlschema }}</lastmod>
-        <priority>0.5</priority>
+      {% if pw.last-edited %}
+        <lastmod>{{ pw.last-edited | date_to_xmlschema }}</lastmod>
+      {% else %}
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+      {% endif %}
+      <priority>0.5</priority>
+      <PageMap xmlns="http://www.google.com/schemas/sitemap-pagemap/1.0">
+        <DataObject type="document">
+            <Attribute name="title">{{ pw.title }} ({{ pw.wpid }})</Attribute>
+            <Attribute name="author">{{ pw.authors | array_to_sentence_string }}</Attribute>
+            <Attribute name="description">{{ pw.description | truncate: 200 | xml_escape | textilize }}</Attribute>
+            <Attribute name="organisms">{{ pw.organisms | array_to_sentence_string }}</Attribute>
+            <Attribute name="last_update">{{ pw.last-edited }}</Attribute>
+        </DataObject>
+        <DataObject type="thumbnail">
+            <Attribute name="src" value="/assets/img/{{ pw.wpid }}/{{ pw.wpid }}-thumb.png" />
+            <Attribute name="width" value="160" />
+        </DataObject>
+        <DataObject type="action">
+          <Attribute name="label" value="Download GPML"/>
+          <Attribute name="url" value="/wikipathways-assets/pathways/{{ pw.wpid }}/{{ pw.wpid }}.gpml"/>
+          <Attribute name="class" value="download"/>
+        </DataObject>
+        <DataObject type="action">
+          <Attribute name="label" value="Download SVG"/>
+          <Attribute name="url" value="/wikipathways-assets/pathways/{{ pw.wpid }}/{{ pw.wpid }}.svg"/>
+          <Attribute name="class" value="download"/>
+        </DataObject>
+        <DataObject type="action">
+          <Attribute name="label" value="Fullscreen View"/>
+          <Attribute name="url" value="https://pathway-viewer.toolforge.org/?id={{ pw.wpid }}"/>
+          <Attribute name="class" value="fullscreen"/>
+        </DataObject>
+      </PageMap>
     </url>
   {% endfor %}
   {% for page in site.pages %}
