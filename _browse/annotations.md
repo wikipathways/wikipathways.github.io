@@ -1,6 +1,6 @@
 ---
 order: 5
-display-title: "Annotation"
+display-title: "Annotations"
 tooltip: "Standard ontology terms used to categorize pathways" 
 btn-class: "btn-annotation btn-pill"
 ---
