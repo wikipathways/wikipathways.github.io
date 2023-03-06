@@ -1,5 +1,6 @@
 ---
 title: Search Results
+search: hide
 redirect_from: 
 - /index.php/Special:SearchPathways
 ---
@@ -7,7 +8,9 @@ redirect_from:
 <script async src="https://cse.google.com/cse.js?cx=c1b9a23fc5f2875e3">
 </script>
 
-<div id="myResults" class="gcse-searchresults-only"></div>
+<span style="font-size: 0.7rem;padding-left: 13px;margin: 32px 0px 0px 13px;position: absolute;float:left;">
+            <a href="/browse/table.html">Advanced search</a></span>
+<div id="myResults" class="gcse-searchresults-only"></div> 
 
 <script>
 const myInitCallback = function() {

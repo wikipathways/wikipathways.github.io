@@ -7,12 +7,14 @@
         </a>     
         <div>
         <!-- SEARCH  -->
+        {% if page.search == "hide" %}
         <script async src="https://cse.google.com/cse.js?cx=c1b9a23fc5f2875e3"></script>
         <div style="width:300px; float:left; margin:4px 20px 0px 0px;">
           <div class="gcse-searchbox-only" data-placeholder=" e.g., ACE or cancer">...</div> 
           <span style="font-size: 0.7rem;padding-left: 13px;margin: -11px 0px 0px 13px;position: absolute;">
             <a href="/browse/table.html">Advanced search</a></span>
         </div>
+        {% endif %}
         <script>
           window.onload = function()
 	 { 
@@ -35,12 +37,13 @@
         </div>
         <div class="collapse navbar-collapse  {{navbarClass}}" id="navbarNavAltMarkup">
           <div class="nav justify-content-center" >
-            <a class="btn btn-sm btn-front my-1" href="https://classic.wikipathways.org" target="_blank">Go to Classic Site</a>
-            <p style="font-weight: bold; padding: 10px; margin-bottom:1px;">Welcome to the new WikiPathways site!&nbsp;
+            <a class="btn btn-sm btn-front my-1" style="margin-left:-75px" href="https://classic.wikipathways.org" target="_blank">Go to Classic Site</a>
+            <p style="font-weight: bold; padding: 10px; margin:0px 0px 1px 45px;">Welcome to the new WikiPathways site!&nbsp;
             Please help <a href="https://github.com/wikipathways/wikipathways-help/issues" target="_blank">report any issues</a> you find.</p>
           </div>
           <div class="nav justify-content-center" style="margin-left: 150px;">
             <a class="nav-item nav-link" href="/about.html">About</a>
+            <a class="nav-item nav-link" href="/search.html">Search</a>
             <a class="nav-item nav-link" href="/#browse">Browse</a>
             <a class="nav-item nav-link" href="/browse/communities.html">Communities</a>
             <a class="nav-item nav-link" href="/#download">Download</a>
