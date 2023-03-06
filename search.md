@@ -70,8 +70,12 @@ const makeTwoPartCallback = () => {
       const wpid = saveForRenderCallback[i]['myWpid'];
       const orgs = saveForRenderCallback[i]['myOrganisms'];
       desc = saveForRenderCallback[i]['myDescription'];
-      if (desc.length > 455) {
-         desc = desc.slice(0, 450) + '...';
+      if (typeof desc !== 'undefined') {
+        if (desc.length > 455) {
+            desc = desc.slice(0, 450) + '...';
+        }
+      } else {
+        desc = "No description";
       }
       const url = saveForRenderCallback[i]['myUrl'];
       const gurl = saveForRenderCallback[i]['myGoogleUrl'];
