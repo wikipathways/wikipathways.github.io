@@ -1,6 +1,6 @@
 ---
 title: Search Results
-search: hide
+hide_search: true
 redirect_from: 
 - /index.php/Special:SearchPathways
 ---
@@ -10,7 +10,7 @@ redirect_from:
 
 <span style="font-size: 0.7rem;padding-left: 13px;margin: 32px 0px 0px 13px;position: absolute;float:left;">
             <a href="/browse/table.html">Advanced search</a></span>
-<div id="myResults" class="gcse-searchresults-only"></div> 
+<div id="myResults" class="gcse-searchresults-only"></div>
 
 <script>
 const myInitCallback = function() {
@@ -35,6 +35,7 @@ const myInitCallback = function() {
         }
     }, true);
   }
+  document.getElementById('advsearch').innerHTML = "";
 };
 
 const makeTwoPartCallback = () => {
