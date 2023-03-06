@@ -71,6 +71,9 @@ const makeTwoPartCallback = () => {
       myContent = "";
       const div = results[i];
       const title = saveForRenderCallback[i]['myTitle'];
+      if (typeof title == 'undefined') {
+        continue;
+      }
       const wpid = saveForRenderCallback[i]['myWpid'];
       const orgs = saveForRenderCallback[i]['myOrganisms'];
       desc = saveForRenderCallback[i]['myDescription'];
