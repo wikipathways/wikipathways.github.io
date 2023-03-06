@@ -29,7 +29,9 @@
     </script> 
     {% if page.wpid %}
       <!-- Metadata -->
+      <meta name="id" content="{{ page.wpid }}" />
       <meta name="thumbnail" content="/assets/img/{{ page.wpid }}/{{ page.wpid }}-thumb.png" />
+      <meta name="organisms" content="{{ page.organisms | array_to_sentence_string }}" />
       <meta name="citation_title" content="{{ page.title }}">
       <meta name="citation_abstract" content="{{ page.description }}">
       <meta name="citation_publication_date" content="{{ page.last-edited }}">
