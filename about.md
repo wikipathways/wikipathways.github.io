@@ -2,6 +2,11 @@
 title: About
 redirect_from: /index.php/WikiPathways:About
 ---
+<script>
+  var div = document.getElementById("navbarNavAltMarkup");
+  div.classList.add("show");
+</script>
+
 <img src="/assets/img/overview-figure-1.jpg"/>
 <h2>What is WikiPathways</h2>
 <p>WikiPathways was established to facilitate the contribution and maintenance of pathway information by the biology community. WikiPathways is an open, collaborative platform dedicated to the curation of biological pathways. WikiPathways thus presents a new model for pathway databases that enhances and complements ongoing efforts, such as KEGG, Reactome and Pathway Commons. The familiar web-based format of WikiPathways greatly reduces the barrier to participate in pathway curation. More importantly, the open, public approach of WikiPathways allows for broader participation by the entire community, ranging from students to senior experts in each field. This approach also shifts the bulk of peer review, editorial curation, and maintenance to the community.</p>

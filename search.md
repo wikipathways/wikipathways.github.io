@@ -4,6 +4,10 @@ hide_search: true
 redirect_from: 
 - /index.php/Special:SearchPathways
 ---
+<script>
+  var div = document.getElementById("navbarNavAltMarkup");
+  div.classList.add("show");
+</script>
 
 <script async src="https://cse.google.com/cse.js?cx=c1b9a23fc5f2875e3">
 </script>

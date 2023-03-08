@@ -7,6 +7,10 @@ redirect_from:
  - /index.php/Help:Guidelines_EditorPalette
  - /index.php/Help:DataVisualizationInCytoscape
 ---
+<script>
+  var div = document.getElementById("navbarNavAltMarkup");
+  div.classList.add("show");
+</script>
 
 <div style="background:#eee; padding:20px 0px 0px 50px">
 <h1>Help Topics</h1>
