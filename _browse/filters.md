@@ -7,13 +7,19 @@ tooltip: "Faceted search to filter pathways by multiple categories"
 btn-class: "btn-front"
 ---
 <div class="container">
+<div class="alert alert-primary" role="alert">
+  <span title="pro-tip" >
+    <i class="fa fa-circle-info"></i>
+  </span>
+  <i>Pro-tip:</i> Use the checkboxes on the left to filter the gallery (or list) of pathways on the right. Expand additional filter categories below, e.g., Communities and Ontologies. Once the filtered set is under 200 pathways, additional sort options per column become available.
+</div> 
 <a class="btn btn-sm btn-front my-2" style="float:right;" href="/browse/table.html">Table</a>
   <div class="row">
     <div class="col-sm" id="checkboxes" style="max-width:300px;">
       <section class="facet">
       <div class="facet-header">
         <button type="button" class="btn btn-link facet-toggle" data-toggle="collapse" href="#organisms" aria-expanded="true" aria-controls="collapseExample">
-        <strong class="facet-title">Organism</strong>
+        <strong class="facet-title">Organisms</strong>
         </button>
       </div>
       <div class="facet-body collapse show" id="organisms">
@@ -30,7 +36,7 @@ btn-class: "btn-front"
       </div>
       <div class="facet-header">
         <button type="button" class="btn btn-link facet-toggle" data-toggle="collapse" href="#communities" aria-expanded="true" aria-controls="collapseExample">
-        <strong class="facet-title">Community</strong>
+        <strong class="facet-title">Communities</strong>
         </button>
       </div>
       <div class="facet-body collapse" id="communities">

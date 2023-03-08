@@ -9,6 +9,13 @@ redirect_from:
   div.classList.add("show");
 </script>
 
+<div class="alert alert-primary" role="alert">
+  <span title="Moving day">
+    <i class="fa fa-dolly"></i>
+  </span>
+  <i>Move in progress:</i> Search results may be incomplete while our new site is being indexed by Google. This will take somewhere between 2 weeks and 3 months. If you don't find what you are looking for, try our <a href="/browse/table.html">table view</a> with search fields per column or <a href="/browse/filters.html">faceted search</a>.
+</div> 
+
 <script async src="https://cse.google.com/cse.js?cx=c1b9a23fc5f2875e3">
 </script>
 

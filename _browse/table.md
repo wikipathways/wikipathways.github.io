@@ -5,6 +5,13 @@ display-title: "Table"
 tooltip: "Searchable table with filtering and sort options" 
 btn-class: "btn-front"
 ---
+<div class="alert alert-primary" role="alert">
+  <span title="pro-tip" >
+    <i class="fa fa-circle-info"></i>
+  </span>
+  <i>Pro-tip:</i> This table includes every pathway in the database. You can use the <b>Find</b> tool in your browser, as well as the filter fields above each of the columns. <i>Please be patient; there may be some lag.</i> Once the filtered set is under 200 rows, additional sort options per column become available.
+</div> 
+
 <a class="btn btn-sm btn-front my-2" style="float:right;" href="/browse/filters.html">Filters</a>
 {% assign type-group = site.annotations | group_by: "type" | reverse %}
 <div class="table-responsive-sm">
