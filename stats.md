@@ -1,6 +1,5 @@
 ---
 title: "stats"
-redirect_from: /index.php/WikiPathways:Statistics
 author: "Alex"
 date: "1/2/2022"
 # output: html_document
@@ -81,8 +80,8 @@ tail(combo.df[,2:4],1)
 ```
 
 ```
-##    edits pathways    month
-## 61   283     1824 February
+##    edits pathways month
+## 62   293     1842 March
 ```
 
 Next, let's plot a time series
