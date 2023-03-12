@@ -38,6 +38,7 @@ redirect_from:
 <h2>Archive</h2>
 <ul>
 <li>Access all <a href="https://data.wikipathways.org/" target="_blank">monthly releases</a> of the WikiPathways content.</li>
+<li>Access citeable DOIs for any <a href="https://zenodo.org/communities/wikipathways/search?file_type=gmt" target="_blank">GMT</a> or <a href="https://zenodo.org/communities/wikipathways/search?q=GPML&file_type=zip" target="_blank">GPML</a> release of WikiPathways content via Zenodo.</li>
 </ul>
 </div>
 <hr>
