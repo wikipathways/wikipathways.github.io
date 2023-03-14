@@ -12,6 +12,8 @@ logo: "../assets/img/COVID19-dmap-project.svg"
 
 logo-link: "https://covid.pages.uni.lu/"
 
+logo-height: 90px
+
 support:
 
 contribute: "We are helping to coordinate an international effort to build and curate pathway models relevant to the COVID-19 pandemic. If you find or add a pathway at WikiPathways that should be included in this collection, please let us know by contacting Martina Kutmon (mkutmon[AT]gmail.com). Resources to get started:

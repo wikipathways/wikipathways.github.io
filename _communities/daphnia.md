@@ -18,6 +18,7 @@ short-description: "The Daphnia Community is set up for collaboration on getting
 
 logo: "../assets/img/200px-Daphnia_magna_asexual.jpeg"
 logo-link: 
+logo-height: 80px
 support: 
 contribute:
 
