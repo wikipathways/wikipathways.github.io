@@ -16,11 +16,12 @@ redirect_from:
   <i>Move in progress:</i> Search results may be incomplete while our new site is being indexed by Google. This will take somewhere between 2 weeks and 3 months. If you don't find what you are looking for, try our <a href="/browse/table.html">table view</a> with search fields per column or <a href="/browse/filters.html">faceted search</a>.
 </div> 
 
+<a class="btn btn-sm btn-front my-2" style="float:right;" href="/browse/filters.html">Filters</a>
+<a class="btn btn-sm btn-front my-2" style="float:right; margin-right:4px;" href="/browse/table.html">Table</a>
+
 <script async src="https://cse.google.com/cse.js?cx=c1b9a23fc5f2875e3">
 </script>
 
-<span style="font-size: 0.7rem;padding-left: 13px;margin: 32px 0px 0px 13px;position: absolute;float:left;">
-            <a href="/browse/table.html">Advanced search</a></span>
 <div id="myResults" class="gcse-searchresults-only"></div>
 
 <script>
