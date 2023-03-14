@@ -37,6 +37,7 @@ redirect_from: /index.php/Help:WikiPathways_Portals
 <li><b>short-description</b>: One or two sentences describing the Community, displayed on the <a href="https://wikipathways.org/browse/communities.html" target=_blank>Communities</a> page</li>
 <li><b>logo</b>: a link to a png image (optional)</li>
 <li><b>logo-link</b>: URL for an external resource (optional)</li>
+<li><b>logo-height</b>: Override default height of 40px (optional)</li>
 <li><b>support</b>: Text describing any funding support for the Community (optional)</li>
 <li><b>contribute</b>: Text describing how to contribute to the community (optional)</li>
 <li><b>community-tag</b>: The relevant community tag. This should match the filename of the text file with the list of Community pathways The pathway display on the Community page is automatically generated based on this tag</li>
