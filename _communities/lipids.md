@@ -3,6 +3,8 @@ display-name: "Lipids and LIPID MAPS"
 title: "Welcome to the Lipids Pathway Community at WikiPathways."
 description: "This community is designed to coordinate the development of lipid pathways and gather the community interested in interactive lipid pathways. Lipids serve several important biological purposes, such as providing membrane structure, and signalling.
 
+*2023-03-16: Fully curated version of the Bacterial ceramide synthesis pathway [WP5271](../pathways/WP5271) has been released!
+
 * 2022-12-22: Find the curation reports [here](https://egonw.github.io/lipidmaps-wp-curation/), and help update our lipid pathways!
 
 * 2022-09-21: Fully curated version of the Ether lipid synthesis pathway [WP5275](../pathways/WP5275) has been released! (data supplied by Robert Murphy)
