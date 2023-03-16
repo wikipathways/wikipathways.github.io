@@ -20,11 +20,12 @@ curator_of_the_week:
 
 redirect_from: 
 - /index.php/WikiPathways
+- /index.php/wikipathways
 - /index.php/Pathway
+- /index.php/Special:UserLogin
 - /index.php/
 - /index.ph
 - /pathway-finder
-
 ---
 {%- include_cached header.html %}
 <section id="intro"> 

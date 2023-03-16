@@ -41,5 +41,6 @@ editors:
 - AlexanderPico
 
 redirect_from:
-  - /index.php/Portal:COVID-19
+- /index.php/Portal:COVID-19
+- /index.php/Portal:Disease/COVIDPathways
 ---

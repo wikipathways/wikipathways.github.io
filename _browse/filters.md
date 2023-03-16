@@ -1,6 +1,8 @@
 ---
 layout: table-page
-redirect_from: /index.php/Special:BrowsePathways
+redirect_from: 
+- /index.php/Special:BrowsePathways
+- /index.php/Special:BrowsePathwaysPage
 order: 1
 display-title: "Filters"
 tooltip: "Faceted search to filter pathways by multiple categories" 
