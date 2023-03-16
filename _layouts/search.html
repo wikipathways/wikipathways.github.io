@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {%- include head.html %} 
+  <body>
+    {%- include_cached header.html %}
+    <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+            {{ content }}
+        </div>
+    </main>
+
+    {%- include_cached footer.html -%}
+
+    <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  json: '/search.json',
+  searchResultTemplate: '<a style="text-decoration:none;" href="{url}"><table style="border-style:none; padding:0px; margin:0px;"><tr><td style="width:160px;border-style:none;"><img alt="Pathway thumbnail" ' +
+         'src="/assets/img/{wpid}/{wpid}-thumb.png"/></td>' +
+         '<td style="border-style:none;"><a style="font-size:16px;text-decoration:none;color:#1A0DAB;" href="{url}">{title}</a>' +
+         '<br/><span style="color:#777777;">{wpid} - {organisms}</span>' +
+        '<br/><span style="font-size:13px;">{description}</span>' +
+        '<br/><span style="color:#777777;"><i>Last edited: {last-edited}</i></span>' +
+        '</td></tr></table></a>',
+  noResultsText: 'No results found',
+  limit: 20,
+  fuzzy: false,
+  exclude: ['Welcome']
+})
+</script>
+  </body>
+
+</html>
