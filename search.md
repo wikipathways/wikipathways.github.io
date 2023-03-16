@@ -1,6 +1,5 @@
 ---
 title: Search Results
-hide_search: true
 redirect_from: 
 - /index.php/Special:SearchPathways
 ---
