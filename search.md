@@ -17,7 +17,7 @@ title: Search Results
   <span title="pro-tip" >
     <i class="fa fa-circle-info"></i>
   </span>
-  <i>Pro-tip:</i> Start typing any keywords for pathway titles, descriptions, genes or metabolites and the first 40 results will appear. You can include organisms, ontology annotations, WPIDs, and even last-edited dates in your query.
+  <i>Pro-tip:</i> Start typing any keywords for pathway titles, descriptions, genes or metabolites and the first 40 results will appear. You can include organisms, ontology annotations, WPIDs, and even last-edited dates in your query. Multi-term queries are processed as AND queries.
 </div> 
 
 <div class="search">
