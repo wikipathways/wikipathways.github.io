@@ -29,8 +29,22 @@ title: Search Results
   <a href="search.html?query=drosophila">drosophila</a> |  
   <a href="search.html?query=cancer 2023">cancer 2023</a> |  
   <a href="search.html?query=wp554">WP554</a></span>
-  <ul id="results-container" style="list-style:none;"></ul>
+  <ul id="results-container" style="list-style:none;float:left;width:75%;"></ul>
 </div>
+
+<div class="alert" role="alert" style="float:right;width:150px;background-color:#ffeaca;color:#857444;">
+  <h3>Additional ways to find pathways:</h3> 
+  <ul style="list-style:none;margin-left:-5px;text-align:center;">
+    {% assign sorted_browse = site.browse | where:"btn-class","btn-front" | sort: "order" %} 
+    {% for bp in sorted_browse %}
+      <li><a class="btn btn-sm {{bp.btn-class}} my-1" style="font-size:medium;width:105px;" href="{{bp.url}}" title="{{bp.tooltip}}"> {{ bp.display-title }}</a></li>
+    {% endfor %}
+    {% assign sorted_browse = site.browse | where_exp:"item","item.btn-class contains 'pill'" | sort: "order" %}
+    {% for bp in sorted_browse %}
+      <li><a class="btn btn-sm {{bp.btn-class}} my-1" style="font-size:medium;width:105px;" href="{{bp.url}}" title="{{bp.tooltip}}"> {{ bp.display-title }}</a></li>
+    {% endfor %}   
+  </ul>
+</div> 
 
 <script>
 SimpleJekyllSearch({
