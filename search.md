@@ -1,152 +1,90 @@
 ---
 title: Search Results
-redirect_from: 
-- /index.php/Special:SearchPathways
 ---
+<script>
+  let hasInputListener = false;
+</script>
+<script src="/assets/js/simple-jekyll-search-ap.js"></script> 
+
 <script>
   var div = document.getElementById("navbarNavAltMarkup");
   div.classList.add("show");
+  //hide search widget
+  document.getElementById("search-widget").style.display = "none";
 </script>
 
 <div class="alert alert-primary" role="alert">
-  <span title="Moving day">
-    <i class="fa fa-dolly"></i>
+  <span title="pro-tip" >
+    <i class="fa fa-circle-info"></i>
   </span>
-  <i>Move in progress:</i> Search results may be incomplete while our new site is being indexed by Google. This will take somewhere between 2 weeks and 3 months. If you don't find what you are looking for, try our <a href="/browse/table.html">table view</a> with search fields per column or <a href="/browse/filters.html">faceted search</a>.
+  <i>Pro-tip:</i> Start typing any keywords for pathway titles, descriptions, genes or metabolites and the first 40 results will appear. You can include organisms, ontology annotations, WPIDs, and even last-edited dates in your query.
 </div> 
 
-<a class="btn btn-sm btn-front my-2" style="float:right;" href="/browse/filters.html">Filters</a>
-<a class="btn btn-sm btn-front my-2" style="float:right; margin-right:4px;" href="/browse/table.html">Table</a>
-
-<script async src="https://cse.google.com/cse.js?cx=c1b9a23fc5f2875e3">
-</script>
-
-<div id="myResults" class="gcse-searchresults-only"></div>
+<div class="search">
+  <i class="fa fa-search" aria-hidden="true"></i>
+  <input type="text" id="search-input" placeholder="&nbsp;Start typing your query terms here...">
+  <span style="font-size: small;">Examples: 
+  <a href="search.html?query=ace2 aldosterone human">ACE2 aldosterone human</a> |  
+  <a href="search.html?query=stem cell">stem cell</a> |  
+  <a href="search.html?query=drosophila">drosophila</a> |  
+  <a href="search.html?query=cancer 2023">cancer 2023</a> |  
+  <a href="search.html?query=wp554">WP554</a></span>
+  <ul id="results-container" style="list-style:none;"></ul>
+</div>
 
 <script>
-const myInitCallback = function() {
-  if (document.readyState == 'complete') {
-    // Document is ready when Search Element is initialized.
-    // Render an element with both search box and search results in div with id 'myResults'.
-    google.search.cse.element.render(
-        {
-          div: "myResults",
-          tag: 'search'
-         });
-  } else {
-    // Document is not ready yet, when Search Element is initialized.
-    google.setOnLoadCallback(function() {
-        if (!document.getElementById('___gcse_0')) { // HACK to prevent duplicate result divs
-       // Render an element with both search box and search results in div with id 'myResults'.
-        google.search.cse.element.render(
-            {
-              div: "myResults",
-              tag: 'search'
-            });
-        }
-    }, true);
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  json: '/search.json',
+  searchResultTemplate: '<table style="border-style:none; padding:0px; margin:0px;"><tr> ' +
+        '<td style="width:160px;border-style:none;"><a style="text-decoration:none;" href="{url}" ' + 
+        'target="_blank"><img alt="Pathway thumbnail" ' +
+         'src="/assets/img/{wpid}/{wpid}-thumb.png"/></a></td>' +
+         '<td style="border-style:none;"><a style="font-size:16px;text-decoration:none;color:#1A0DAB;" href="{url}" ' +
+         'target="_blank">{title}</a>' +
+         '<br/><span style="color:#777777;">{wpid} - {organisms}</span>' +
+        '<br/><span style="font-size:13px;">{description}</span>' +
+        '<br/><span style="color:#777777;"><i>Last edited: {last-edited}</i></span>' +
+        '</td></tr></table>',
+  noResultsText: 'No results found',
+  limit: 40,
+  fuzzy: false,
+  exclude: ['url'],
+  sortMiddleware: function(a, b) {
+    const aNum = parseInt(a.wpid.match(/\d+/)[0]);
+    const bNum = parseInt(b.wpid.match(/\d+/)[0]);
+    return bNum - aNum;
   }
-  document.getElementById('advsearch').innerHTML = "";
-};
-
-const makeTwoPartCallback = () => {
-  let saveForRenderCallback;
-  const readyCallback = (name, q, promos, results, resultsDiv) =>
-  {
-    saveForRenderCallback = [];
-    for (const result of results) {
-        // console.log(result);
-        if(result['richSnippet']){
-          saveForRenderCallback.push(
-            {myTitle: result['richSnippet']['metatags']['citationTitle'],
-            myWpid: result['id'],
-            myOrganisms: result['organisms'],
-            myDescription: result['richSnippet']['metatags']['citationAbstract'],
-            myFirstAuthor: result['richSnippet']['metatags']['citationAuthor'],
-            myFirstAuthorOrcid: result['richSnippet']['metatags']['citationAuthorOrcid'],
-            myUrl: result['richSnippet']['metatags']['citationFulltextHtmlUrl'],
-            myEdited: result['richSnippet']['metatags']['citationPublicationDate'],
-            myGoogleUrl: result['url']}
-          );
-          if(result['richSnippet']['thumbnail']){
-            saveForRenderCallback[saveForRenderCallback.length-1].myThumb =  result['richSnippet']['thumbnail']['src']
-          }
-          continue;
+})
+</script>
+<script>
+function triggerInputEvent() {
+  //AP: Support multiple searchboxes and query params
+  const searchInput = document.getElementById('search-input')
+  const searchParams = new URLSearchParams(window.location.search);
+  const query = searchParams.get('query');
+  const registerInputPromise = new Promise((resolve) => {
+    if (hasInputListener) {
+      resolve();
+    } else {
+      const intervalId = setInterval(() => {
+        if (hasInputListener) {
+          //console.log("now!")
+          clearInterval(intervalId);
+          resolve();
+        } else {
+          //console.log("not yet...")
         }
-      saveForRenderCallback.push({});
+      }, 100);
     }
-  };
-  const renderedCallback = (name, q, promos, results) => {
-    for (let i = 0; i < results.length; ++i) {
-    //   console.log(saveForRenderCallback[i]);
-      myContent = "";
-      const div = results[i];
-      const title = saveForRenderCallback[i]['myTitle'];
-      if (typeof title == 'undefined') {
-        continue;
-      }
-      const wpid = saveForRenderCallback[i]['myWpid'];
-      const orgs = saveForRenderCallback[i]['myOrganisms'];
-      desc = saveForRenderCallback[i]['myDescription'];
-      if (typeof desc !== 'undefined') {
-        if (desc.length > 455) {
-            desc = desc.slice(0, 450) + '...';
-        }
-      } else {
-        desc = "No description";
-      }
-      const url = saveForRenderCallback[i]['myUrl'];
-      const gurl = saveForRenderCallback[i]['myGoogleUrl'];
-      const fauthor = saveForRenderCallback[i]['myFirstAuthor'];
-      const faorcid = saveForRenderCallback[i]['myFirstAuthorOrcid'];
-      const edited = saveForRenderCallback[i]['myEdited'];
-      thumb = saveForRenderCallback[i]['myThumb'];
-      if (typeof thumb !== 'undefined') {
-        // console.log("myThumb: " + thumb);
-        const badwpid = "/{ page.wpid }}-";
-        if (thumb.includes(badwpid)) {
-            const startIndex = thumb.indexOf('/WP') + 1;
-            const endIndex = thumb.indexOf('/', startIndex);
-            const goodwpid = '/'+ thumb.substring(startIndex, endIndex) + '-';
-            thumb = thumb.split(badwpid).join(goodwpid);
-        }
-      } else {
-        thumb = "/assets/img/missing-image.png";
-      }
-       myContent = 
-         '<a style="text-decoration:none;" href="'+gurl+'"><table style="border-style:none; padding:0px; margin:0px;"><tr><td style="width:160px;border-style:none;"><img alt="Pathway thumbnail" ' +
-         'src="'+ thumb +'"/></td>'; 
-        myContent += 
-         '<td style="border-style:none;"><a style="font-size:16px;text-decoration:none;color:#1A0DAB;" href="'+gurl+'">' + title + '</a>' +
-         '<br/><span style="color:#777777;">' + url;
-        if (typeof orgs !== 'undefined') {
-            myContent += ' - ' + orgs;
-        }
-        myContent += 
-        '</span>' +
-        '<br/><span style="font-size:13px;">' + desc + '</span>' +
-        '<br/><span style="color:#777777;"><i>Last edited: ' + edited + '</i></span>' +
-        '</td></tr></table></a>';
-
-      div.innerHTML = myContent;
-    }
-  };
-  return {readyCallback, renderedCallback};
-};
-
-const {
-  readyCallback: webResultsReadyCallback,
-  renderedCallback: webResultsRenderedCallback,
-} = makeTwoPartCallback();
-window.__gcse || (window.__gcse = {});
-window.__gcse = {
-    parsetags: 'explicit',
-    initializationCallback: myInitCallback,
-    searchCallbacks: {
-        web: {
-            ready: webResultsReadyCallback,
-            rendered: webResultsRenderedCallback,
-        },
-    },
-};
+  });
+  registerInputPromise.then(() => {
+    //console.log(query);
+    searchInput.value = query; 
+    const inputEvent = new InputEvent('input', { inputType: 'insertText' });
+    searchInput.dispatchEvent(inputEvent);
+  });
+}
+triggerInputEvent();
 </script>

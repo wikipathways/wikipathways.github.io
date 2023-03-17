@@ -7,19 +7,20 @@
         </a>     
         <div>
         <!-- SEARCH  -->
-        <script async src="https://cse.google.com/cse.js?cx=c1b9a23fc5f2875e3"></script>
-        <div id="search-widget" style="width:300px; float:left; margin:4px 20px 0px 0px;">
-          <div class="gcse-searchbox-only" data-placeholder=" e.g., ACE or cancer"></div> 
-          <div id="advsearch" style="font-size: 0.7rem;padding-left: 13px;margin: -11px 0px 0px 13px;position: absolute;">
-            <a href="/browse/table.html">Advanced search</a></div>
+        <div id="search-widget" style="float:left; margin:4px 20px 0px 0px;">
+          <form id="searchForm" action="/search.html">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="text" name="searchQuery" placeholder="&nbsp;e.g., ace2 aldosterone human">
+          </form>          
         </div>
         <script>
-          window.onload = function()
-	 { 
-	   var searchBox1 =  document.getElementById("gsc-i-id1");
-	   searchBox1.placeholder=" e.g., ACE or cancer";
-	   searchBox1.title="Search WikiPathways"; 
-	 }
+          const searchForm = document.getElementById('searchForm');
+          searchForm.addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent the default form submission behavior
+          const searchQuery = encodeURIComponent(searchForm.elements.searchQuery.value); // Get the search query and encode it
+          const searchUrl = `/search.html?query=${searchQuery}`; // Construct the search results page URL with the search query as a parameter
+          window.location.href = searchUrl; // Navigate to the search results page
+          });
         </script>
         <!-- MENU -->  
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded=false aria-label="Toggle navigation">

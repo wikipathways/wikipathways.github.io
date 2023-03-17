@@ -2,7 +2,8 @@
 layout: none
 ---
 [
-  {% for pw in site.pathways %}
+  {% assign sorted_pathways = site.pathways | sort: "last-edited" | reverse %}
+  {% for pw in sorted_pathways %}
    {% for org in site.organisms %}
     {% if pw.organisms contains org.latin %}
       {% assign common-org = org.common %}

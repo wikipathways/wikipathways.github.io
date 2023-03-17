@@ -396,16 +396,17 @@
       function appendToResultsContainer (text) {
         options.resultsContainer.innerHTML += text
       }
-    
+
       function registerInput () {
         options.searchInput.addEventListener('input', function (e) {
           if (isWhitelistedKey(e.which)) {
             emptyResultsContainer()
             debounce(function () { search(e.target.value) }, options.debounceTime)
           }
-        })
+        });
+        hasInputListener = true;
       }
-    
+   
       function search (query) {
         if (isValidQuery(query)) {
           emptyResultsContainer()
@@ -422,6 +423,13 @@
           results[i].query = query
           appendToResultsContainer(_$Templater_7.compile(results[i]))
         }
+        if (len === options.limit) {
+            return appendToResultsContainer('<div class="alert alert-warning" role="alert">' +
+            '<span title="pro-tip" >' +
+              '<i class="fa fa-circle-info"></i>' +
+            '</span><i>&nbsp;Note:</i> Additional results not shown. Consider adding keywords to refine your search. For example, organism, gene names, or year of last edit.' +
+          '</div> ')
+          }
       }
     
       function isValidQuery (query) {
