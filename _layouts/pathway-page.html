@@ -179,7 +179,7 @@ layout: default
     {% endfor %}
 
     <h2 id="participants">Participants    
-      <a href="https://raw.githubusercontent.com/wikipathways/wikipathways.github.io/main/_data/{{ page.wpid }}-datanodes.tsv"
+      <a href="/wikipathways-assets/pathways/{{ page.wpid }}/{{ page.wpid }}-datanodes.tsv"
       target="_blank">
         <span title="Download as TSV in new tab" style="color: #666; font-size: 0.8em;">
           <i class="fa fa-download"></i>
@@ -220,6 +220,7 @@ layout: default
         options
       </button>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButtonDatanodes">
+        <a class="dropdown-item" href="/wikipathways-assets/pathways/{{ page.wpid }}/{{ page.wpid }}-datanodes.tsv" download>Download TSV</a>
         <a class="dropdown-item" style="background-image: url(https://cdn.drugst.one/libs/drugstone-buttons/0.0.1/android-chrome-192x192.png);background-repeat: no-repeat;background-position: left;background-position-x: left;background-size: 20px 20px;background-position-x: 6px;background-origin: padding-box;padding-left: 32px !important; margin: 10px;"
         href="https://drugst.one/standalone?nodes={{partsIdList}}&autofillEdges=true&activateNetworkMenuButtonAdjacentDrugs=true&interactionDrugProtein=NeDRex&licensedDatasets=true" 
         target="_blank" 
@@ -230,7 +231,7 @@ layout: default
     <input type="button" class="badge badge-secondary" id="tableLess" value="fewer rows" style="float: left; margin-top: -8px;">
     <br />
     <h2 id="references">References    
-      <a href="https://raw.githubusercontent.com/wikipathways/wikipathways.github.io/main/_data/{{ page.wpid }}-bibliography.tsv"
+      <a href="/wikipathways-assets/pathways/{{ page.wpid }}/{{ page.wpid }}-bibliography.tsv"
       target="_blank">
         <span title="Download as TSV in new tab" style="color: #666; font-size: 0.8em;">
           <i class="fa fa-download"></i>
