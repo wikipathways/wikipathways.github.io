@@ -22,13 +22,23 @@ Visualization tools like [Cytoscape](http://www.cytoscape.org/) can also be used
 <table>
   <tr>
     <td rowspan="2" style="width: 60%">
-      Foo
-    </td>
+      <center>
+        <img src="/assets/img/PDGFR-beta_pathway.png" width="95%"/>
+      </cemter>
+      </td>
     <td>
-      Bar
+      <center>
+        <img src="/assets/img/WP3972_108157.png" width="95%"/> <br />
+        WikiPathways model
+      </cemter>
     </td>
+  </tr>
+  <tr>
     <td>
-      By
+      <cemter>
+        <img src="/assets/img/PDGFR-beta_original.png" width="95%"/>  <br />
+        Original figure
+      </cemter>
     </td>  
   </tr>
 </table>
