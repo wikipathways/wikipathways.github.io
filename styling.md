@@ -25,7 +25,7 @@ Visualization tools like [Cytoscape](http://www.cytoscape.org/) can also be used
       <center>
         <img src="/assets/img/PDGFR-beta_pathway.png" width="95%"/>
       </center>
-      </td>
+    </td>
     <td>
       <center>
         <img src="/assets/img/WP3972_108157.png" width="95%"/> <br />
@@ -35,7 +35,7 @@ Visualization tools like [Cytoscape](http://www.cytoscape.org/) can also be used
   </tr>
   <tr>
     <td>
-      <cemter>
+      <center>
         <img src="/assets/img/PDGFR-beta_original.png" width="95%"/>  <br />
         Original figure
       </center>
