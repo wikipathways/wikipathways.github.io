@@ -145,6 +145,16 @@ table.dataTable thead .sorting_desc_disabled:before {
 bottom: .5em;
 }
 
+.table-gradient-overlay {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  margin-top: -59px;
+  background: linear-gradient(to top, rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 0.3));
+  pointer-events: none;
+}
+
 a:link,
 a:visited,
 a:hover {
