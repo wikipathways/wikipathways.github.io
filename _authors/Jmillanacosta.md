@@ -5,11 +5,11 @@ website: ~
 affiliation: ~
 bio: ~
 github: jmillanacosta
-orcid: ~
-linkedin: ~
+orcid: 0000-0002-4166-7093
+linkedin: javier-millanacosta
 googlescholar: ~
-wikidata: ~
-twitter: ~
+wikidata: Q116446553
+twitter: jmillanacosta
 mastodon-url: ~
 meta: ~
 instagram: ~
