@@ -1,6 +1,6 @@
 ---
 username: Jmelius
-realname: Jonathan Mlius
+realname: Jonathan Mélius
 website: ~
 affiliation: ~
 bio: ~
