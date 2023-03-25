@@ -17,6 +17,8 @@ editors:
 - DeSl
 
 redirect_from:
+  - /communities/iem
+  - /communities/iem.html
   - /index.php/Portal:IEM
   - /index.php/Portal:IMD
   - /index.php/Portal:Blau
