@@ -15,16 +15,16 @@ redirect_from: /index.php/Help:WikiPathways_Portals
 <hr>
 <div>
 <h2>Define or Update the Pathway Set</h2> 
-<p>The pathway set defined for each Community is simply a flat file list of all WikiPathways Identifiers (WPIDs) relevant for that Community. The list of pathway IDs for each Community is stored in the wikipathways-database repository, in the <a href="https://github.com/wikipathways/wikipathways-database/tree/main/communities" target=_blank >communities directory</a>.</p>
+<p>The pathway set defined for each Community is simply a flat file list of all WikiPathways Identifiers (WPIDs) relevant for that Community. The list of pathway IDs for each Community is stored in the wikipathways-database repository, in the <a href="https://github.com/wikipathways/wikipathways-database/tree/main/communities" target="_blank">communities directory</a>.</p>
 <h3>Add a pathway list for a new Community page:</h3>
 <ol>
 <li>Create a simple .txt file with the relevant WPIDs listed as <b>one column, no header</b>.</li>
 <li>Give the the .txt file a name that can also be used as the <b>community-tag</b>. These two must be identical. In the below example of the AOP Community, the name of the pathway list file and the community-tag is "AOP".</li>
-<li>Push your changes to GitHub (if you have permissions) or create a pull request.</li>
+<li>Create a pull request for the <a href="https://github.com/wikipathways/wikipathways-database/tree/main/communities" target="_blank">wikipathways-database</a> repo.</li>
 </ol>
 <h3>Update the list of pathways for an existing Community page:</h3>
 <ol> 
-<li><b>Option 1</b>: Edit the appropriate file in your local clone of the repo, followed by a push to GitHub (if you have write permissions) or a pull request.</li>
+<li><b>Option 1</b>: Edit the relevant .md file in your local clone of wikipathways-database, followed by a push to GitHub (if you have write permissions) or a pull request.</li>
 <li><b>Option 2</b>: Click the <b>Edit community pathways</b> button (pencil icon) on the Community page, and make the edit directly in the GitHub web interface.</li>
 </ol>
 <hr>
@@ -54,6 +54,6 @@ redirect_from: /index.php/Help:WikiPathways_Portals
 </ol>
 <h3>Edit an existing Community page:</h3>
 <ol>
-<li><b>Option 1</b>: Edit the appropriate .md file in your local clone of the repo, followed by a push to GitHub (if you have write permissions) or a pull request.</li>
+<li><b>Option 1</b>: Edit the relevant .md file in your local clone of wikipathways.github.io, followed by a push to GitHub (if you have write permissions) or a pull request.</li>
 <li><b>Option 2</b>: Edit the .md file directly in the GitHub web interface.</li>
 </ol>

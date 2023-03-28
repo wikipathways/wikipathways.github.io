@@ -85,7 +85,7 @@ redirect_from:
     </div>
   </div>
   <br/>
-<p><b><i>Pro-tip:</i></b> Use the buttons in the lower-right to download the pathway in one of a variety of formats, or to view the pathway in its own window to help you explore the details. Under "options" you'll find a permalink for the page that you can cite and embed code so you can include this interactive viewer in your own web site.
+<p><b><i>Pro-tip:</i></b> Use the buttons in the lower-right to download the pathway in one of a variety of formats, or to view the pathway in its own window to help you explore the details. Under <b>options</b> you'll find a permalink for the page that you can cite and embed code so you can include this interactive viewer in your own web site.
 </p>
 </div>
 <div id="attributes">
@@ -106,16 +106,16 @@ redirect_from:
 <h1>Participants in a Pathway</h1>
 <p>A table of participants lists the names, types, and sources for every identified gene, protein and small molecule in a given pathway. 
 </p>
-<p><b><i>Pro-tip:</i></b> Click on the "options" button in the lower-right to download the complete table which includes mappings to many common identifiers. This button also includes functionality to query external services, like <a href="https://drugst.one/">Drugst.One</a>, using the list of participants as the query input.
+<p><b><i>Pro-tip:</i></b> Click on the <b>options</b> button in the lower-right to download the complete table which includes mappings to many common identifiers. This button also includes functionality to query external services, like <a href="https://drugst.one/">Drugst.One</a>, using the list of participants as the query input.
 </p>
 </div>
 <div id="references">
 <h1>Literature References</h1>
-<p>As authors construct a pathway or make new additions, they add literature references to the bibliography of a given pathway. The reference list also includes links to PubMed, Europe PMC and Scholia. The references can also be downloaded as a table (see the "options" button).
+<p>As authors construct a pathway or make new additions, they add literature references to the bibliography of a given pathway. The reference list also includes links to PubMed, Europe PMC and Scholia. The references can also be downloaded as a table (see the <b>options</b> button).
 </p>
 </div><div id="editing">
 <h1>How to Edit</h1>
-<p>To edit the pathway diagram and properties such as title, description, and participants, you should use our PathVisio drawing tool. See the <a href="#create">Create</a> section below.  In addition to the pathway model, you can also edit the "Cited In" and "Communities" sections directly on the site. Click on the pencil icons <span title="Edit cited in" style="color: #666; font-size: 1.0em;"><i class="fa fa-pencil"></i></span> near the section headers on each pathway page.
+<p>To edit the pathway diagram and properties such as title, description, and participants, you should use our PathVisio drawing tool. See the <a href="#create">Create</a> section below.  In addition to the pathway model, you can also edit the <b>Cited In</b> and <b>Communities</b> sections directly on the site. Click on the pencil icons <span title="Edit cited in" style="color: #666; font-size: 1.0em;"><i class="fa fa-pencil"></i></span> near the section headers on each pathway page.
 </p>
 </div></div>
 
@@ -123,7 +123,7 @@ redirect_from:
 <div id="navigate">
 </div><div id="site">
 <h1>Navigating the Website</h1>
-<p>At the top of every page is a clickable logo that will take you to the home page, a search bar (see below), and a menu icon <span style="width: 26px; height: 22px; display:inline-block;border: gray;border-width: 1px;border-style: solid; background-image: url(&quot;data:image/svg+xml;charset=utf8,%3Csvg viewBox='-5 -2 36 34' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E&quot;)"></span>. The menu provides quick links to common pages. At the bottom of every page is a footer with packed with information and links, including:
+<p>At the top of every page is a clickable logo that will take you to the home page, a search bar (see below), and a menu icon <span style="width: 26px; height: 22px; display:inline-block;border: gray;border-width: 1px;border-style: solid; background-image: url(&quot;data:image/svg+xml;charset=utf8,%3Csvg viewBox='-5 -2 36 34' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E&quot;)"></span>. The menu provides quick links to common pages. At the bottom of every page is a footer with information and links, including:
 </p>
 <ul>
 <li>the status of the overall site and when it was last updated</li>
@@ -134,12 +134,18 @@ redirect_from:
 </div>
 <div id="search">
 <h1>Search for Pathways</h1>
-<p>The WikiPathways collection can be searched by gene symbol, pathway name or other keywords, either directly in the Search field at the top of each page and on the front page. For example, search for your favorite pathway by a word from the title (i.e. "Statin"), or your favorite gene either by symbol (i.e. "BRCA1").</p> 
+<p>The WikiPathways collection can be searched by gene symbol, pathway name or other keywords, in the Search field at the top of each page. By default, the first 40 results will appear on the search results page. You can also include organism, ontology annotations, WPIDs, and even last-edited dates in your query. Multi-term queries are processed as AND queries. Here are some example queries:</p>
+<ul>
+<li>Search for your favorite pathway by a word from the title, i.e. "Statin".</li>
+<li>Search your favorite gene by symbol, i.e. "BRCA1".</li>
+<li>Search for all human pathways that include ACE2 and aldosterone with the query "ace2 aldosterone human".</li>
+<li>Search for all cancer pathways updated in 2023 with the query "cancer 2023".</li>
+</ul> 
 
 <p>The <a href="/browse/table.html">Table</a> view of the current collection offers a nice way to interactively explore pathways by searching for various parameters. The table displays all pathways, and offers search fields at the top of each column to filter the table. Additional sort options become available when the filtered set is fewer than 200 pathways. Example usage:</p>
 <ul>
-<li>To see all pathways related to adipogenesis in humans, type <b>adipogenesis</b> in the search field at the top of the <b>Pathway Title</b> column, and type <b>Homo sapiens</b> in the search field at the top of the <b>Organism</b> column.</li>
-<li>To see all mouse pathways edited in 2022, type <b>Mus musculus</b> in the search field at the top of the <b>Organism</b> column and type <b>2022</b> in the search field at the top of the <b>Last Edited</b> column.</li>
+<li>To see all pathways related to adipogenesis in humans, type "adipogenesis" in the search field at the top of the <b>Pathway Title</b> column, and type "Homo sapiens" in the search field at the top of the <b>Organism</b> column.</li>
+<li>To see all mouse pathways edited in 2022, type "Mus musculus" in the search field at the top of the <b>Organism</b> column and type "2022" in the search field at the top of the <b>Last Edited</b> column.</li>
 </ul>
 <div id="browse">
 <h1>Browse Pathways</h1>
@@ -176,6 +182,7 @@ redirect_from:
 <div id="participate">
 <div id="create">
 <h1>Create Content</h1>
+<p>You can contribute to WikiPathways by creating new pathway models or by improving existing models:</p>
 <ul>
 <li>Get started as a <a href="/contribute.html">WikiPathways Contributor</a> today!</li>
 <li>Learn everything about creating and editing pathways, from the basics to advanced topics at the <a href="https://wikipathways.github.io/academy/" target="_blank">WikiPathways Academy</a>.</li>
