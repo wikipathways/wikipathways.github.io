@@ -3,10 +3,9 @@ display-name: "COVID-19"
 
 title: "Welcome to the COVID-19 Pathway community page!"
 
-description: "This special subset of disease pathways is being highlighted during the current COVID-19 pandemic. A paper about this project was published in Scientific Data: [Ostaszewski, et al., Scientific data 7.1 (2020): 1-4](http://dx.doi.org/10.1038/s41597-020-0477-8).
-A more recent, longer paper from the whole community is available on bioRxiv: [Ostaszewski, et al., bioRxiv 2020.10.26.356014](https://www.biorxiv.org/content/10.1101/2020.10.26.356014v1)."
+description: "This community fouses on curating the molecular mechanisms of COVID-19. It is part of a larger community effort called the ["COVID-19 Disease Map"](https://covid.pages.uni.lu/). After an initial comment in 2020 in Scientific Data [Ostaszewski, et al., Scientific data 7.1 (2020): 1-4](http://dx.doi.org/10.1038/s41597-020-0477-8), a longer paper from the whole community was published in 2021 in Molecular Systems Biology: [Ostaszewski, et al., 10.15252/msb.202110387](https://doi.org/10.15252/msb.202110387). More recently, the community is working on a paper focused on different analysis and modelling approaches using the COVID-19 Disease Map, currently avialable on bioXriv [Niarakis, et al. 10.1101/2022.12.17.520865](https://doi.org/10.1101/2022.12.17.520865).
 
-short-description: "This subset of disease pathways is being highlighted during the current COVID-19 pandemic."
+short-description: "Molecular mechanisms of COVID-19"
 
 logo: "../assets/img/COVID19-dmap-project.svg"
 
