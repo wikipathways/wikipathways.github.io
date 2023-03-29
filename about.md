@@ -1,6 +1,8 @@
 ---
 title: About
-redirect_from: /index.php/WikiPathways:About
+redirect_from: 
+- /index.php/WikiPathways:About
+- /index.php/WikiPathways:License_Terms
 ---
 <script>
   var div = document.getElementById("navbarNavAltMarkup");

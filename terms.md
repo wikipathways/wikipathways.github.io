@@ -1,9 +1,7 @@
 ﻿---
 title: Terms of use
-
-redirect_from: 
-- /index.php/WikiPathways:License_Terms
 ---
+
 <h2>Terms of Use</h2>
 <h3>Overview</h3>
 <p>
