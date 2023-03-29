@@ -245,10 +245,8 @@ redirect_from:
 
 <h2>Embedding Pathway Visualizations in Web Pages</h2>
 <p>You can easily embed a simple pathway diagram in any web page using the embed code that is available in the <b>options</b> drop-down under the pathway image. This code has the following pattern:</p>
-<br />
 <code>&lt;iframe src ="https://pathway-viewer.toolforge.org/?id={WPID}`" width="600px" height="300px" style="overflow:hidden;"&gt;&lt;/iframe&gt;</code>.
 <p>An example of embedding of a WikiPathways pathway diagram in a website can be found on the <a href="https://www.lipidmaps.org/resources/pathways/wikipathways/WP4345" target="_blank">LIPIDMAPS</a> website.</p>
-<br />
 <p>It is also possible to embed a pathway with node visualization (described above) in a similar way, simply by adding the iframe tag and parameters like so: <br />
 <code>&lt;iframe src ="https://pathway-viewer.toolforge.org/embed/WP554?red=ACE&lightgreen=AGT" width="600px" height="300px" style="overflow:hidden;"&gt;&lt;/iframe&gt;</code> <br />
 This code will produce the following iframe:</p>
