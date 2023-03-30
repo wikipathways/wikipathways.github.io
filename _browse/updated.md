@@ -1,7 +1,7 @@
 ---
 layout: default
 redirect_from: /index.php/Special:RecentPathwayChanges
-order: 4
+order: 5
 display-title: "Updated"
 tooltip: "The most recently updated pathways" 
 btn-class: "btn-front"

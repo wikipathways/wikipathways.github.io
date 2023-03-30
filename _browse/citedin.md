@@ -1,6 +1,6 @@
 ---
 layout: default
-order: 5
+order: 3
 display-title: "Cited In"
 tooltip: "List of articles that have cited particular pathways" 
 btn-class: "btn-front"
