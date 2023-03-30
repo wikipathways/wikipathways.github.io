@@ -135,16 +135,22 @@ redirect_from:
                   <div class="col-3 mx-auto>" style="display:flex; margin-left:auto">
                     <div class="container">
       {% assign sorted_browse = site.browse | where:"btn-class","btn-front" | sort: "order" %} 
-      {% for bp in sorted_browse limit: 3 %}
+      {% for bp in sorted_browse %}
+        {% assign order_check = bp.order | modulo: 2 %}
+        {% if order_check != 0 %}
         <a class="btn btn-sm {{bp.btn-class}} w-100 my-2" style="font-size:large" href="{{bp.url}}" title="{{bp.tooltip}}"> {{ bp.display-title }}</a>
+        {% endif %}
       {% endfor %}           
                     </div>
                   </div>
                   <div class="col-3 mx-auto>" style="display:flex;">
                     <div class="container">
       {% assign sorted_browse = site.browse | where:"btn-class","btn-front" | sort: "order" %} 
-      {% for bp in sorted_browse offset: 3 %}
+      {% for bp in sorted_browse %}
+        {% assign order_check = bp.order | modulo: 2 %}
+        {% if order_check == 0 %}
         <a class="btn btn-sm {{bp.btn-class}} w-100 my-2" style="font-size:large" href="{{bp.url}}" title="{{bp.tooltip}}"> {{ bp.display-title }}</a>
+        {% endif %}
       {% endfor %}           
                     </div>
                   </div>

@@ -1,6 +1,6 @@
 ---
 layout: table-page
-order: 4
+order: 2
 display-title: "Table"
 tooltip: "Searchable table with filtering and sort options" 
 btn-class: "btn-front"

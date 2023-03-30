@@ -3,7 +3,7 @@ layout: default
 redirect_from: 
  - /index.php/Special:NewPathwaysPage
  - index.php/WikiPathways:NewPathwayReleases
-order: 2
+order: 3
 display-title: "New"
 tooltip: "New pathways recently added to the database" 
 btn-class: "btn-front"
