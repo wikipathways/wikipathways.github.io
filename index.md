@@ -2,6 +2,7 @@
 layout: home2
 title: Home
 curator_of_the_week:
+- Ash_iyer
 - Elisson nl
 - AlexanderPico
 - tabbassidaloii
@@ -13,10 +14,8 @@ curator_of_the_week:
 - DeSl
 - IsabelWassink
 - Jmillanacosta
-- ElenaDR1
 - Khanspers
 - Madeomuga
-- Ash_iyer
 
 redirect_from: 
 - /index.php/WikiPathways
