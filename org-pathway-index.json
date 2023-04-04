@@ -13,7 +13,7 @@ layout: none
         {% assign pathways = site.pathways | where_exp:"item", "item.organisms contains org.latin" | sort: 'title' %}
         {% for pw in pathways %}
             {
-            "title"    : "{{ pw.title | replace: " ", "_" | escape }}",
+            "title"    : "{{ pw.title | replace: " ", "_" | replace: "/", "-" | replace: ",", "_" | escape }}",
             "wpid"    : "{{ pw.wpid }}",
             "last-edited"     : "{{ pw.last-edited | date: "%Y%m%d" }}"
             } {% unless forloop.last %},{% endunless %}
