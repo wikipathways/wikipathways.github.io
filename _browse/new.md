@@ -20,7 +20,7 @@ btn-class: "btn-front"
       <a class="nav-link" data-toggle="tab" href="#list">List</a>
     </li>
 </ul>
-{% assign sorted_pathways = site.pathways | sort: "last-edited" | reverse %}
+{% assign sorted_pathways = site.pathways | sort: "wpid" | reverse %}
 <div class="tab-content" >
     <div class="tab-pane fade show active" id="gallery" role="tabpanel">
         <br/>
