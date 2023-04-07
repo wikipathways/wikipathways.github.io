@@ -41,7 +41,7 @@ btn-class: "btn-front"
         <strong class="facet-title">Communities</strong>
         </button>
       </div>
-      <div class="facet-body collapse" id="communities">
+      <div class="facet-body collapse show" id="communities">
         <ul class="facet-group">
           {% for com in site.communities %}
             <li class="facet-group-item">
@@ -60,7 +60,7 @@ btn-class: "btn-front"
           <strong class="facet-title">{{ type.name }}</strong>
           </button>
         </div>
-        <div class="facet-body collapse" id="{{ type.name |downcase | replace:" ","_"}}">
+        <div class="facet-body collapse show" id="{{ type.name |downcase | replace:" ","_"}}">
           <ul class="facet-group">
             {% for annot in type.items %}
               <li class="facet-group-item">
@@ -371,8 +371,8 @@ orgList.split(",").forEach(key => {
   checkbox.dispatchEvent(event);
 });
 } else {
-  document.getElementById("organisms").classList.add('hide');
-  document.getElementById("organisms").classList.remove('show');
+  //document.getElementById("organisms").classList.add('hide');
+  //document.getElementById("organisms").classList.remove('show');
 }
 if(null != comList){
   document.getElementById("communities").classList.add('show');
@@ -383,8 +383,8 @@ comList.split(",").forEach(key => {
   checkbox.dispatchEvent(event);
 });
 } else {
-  document.getElementById("communities").classList.add('hide');
-  document.getElementById("communities").classList.remove('show');
+  //document.getElementById("communities").classList.add('hide');
+  //document.getElementById("communities").classList.remove('show');
 }
 if(null != pwoList){
   document.getElementById("pathway_ontology").classList.add('show');
@@ -395,8 +395,8 @@ pwoList.split(",").forEach(key => {
   checkbox.dispatchEvent(event);
 });
 } else {
-  document.getElementById("pathway_ontology").classList.add('hide');
-  document.getElementById("pathway_ontology").classList.remove('show');
+  //document.getElementById("pathway_ontology").classList.add('hide');
+  //document.getElementById("pathway_ontology").classList.remove('show');
 }
 if(null != dioList){
   document.getElementById("disease_ontology").classList.add('show');
@@ -407,8 +407,8 @@ dioList.split(",").forEach(key => {
   checkbox.dispatchEvent(event);
 });
 } else {
-  document.getElementById("disease_ontology").classList.add('hide');
-  document.getElementById("disease_ontology").classList.remove('show');
+  //document.getElementById("disease_ontology").classList.add('hide');
+  //document.getElementById("disease_ontology").classList.remove('show');
 }
 if(null != ctoList){
   document.getElementById("cell_type_ontology").classList.add('show');
@@ -419,8 +419,8 @@ ctoList.split(",").forEach(key => {
   checkbox.dispatchEvent(event);
 });
 } else {
-  document.getElementById("cell_type_ontology").classList.add('hide');
-  document.getElementById("cell_type_ontology").classList.remove('show');
+  //document.getElementById("cell_type_ontology").classList.add('hide');
+  //document.getElementById("cell_type_ontology").classList.remove('show');
 }
 
 // function to add card
