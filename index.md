@@ -184,7 +184,7 @@ redirect_from:
                         <h5 class="card-title">{{cauth.realname}}</h5>
                         <p class="card-text"></p>
                         <a href="{{cauth.url}}" class="btn btn-sm btn-info">View profile</a>
-                      </div>
+                      </div> 
                     </div>
                   </div>
                 </div>
@@ -378,18 +378,10 @@ redirect_from:
 </section>
 <div style="margin-bottom:8px;"></div> 
 {%- include_cached footer.html -%}
-<div class="wrapper">
-  <div class="thanks-wrapper">
-    {%- include_cached thanks.html -%}
+<div style="background-color:#EEEEEE"> 
+  <div class="wrapper">
+    <div class="thanks-wrapper">
+      {%- include_cached thanks.html -%}
+    </div>
   </div>
 </div>
-
-<script> 
-	 window.onload = function()
-	 { 
-     document.getElementById("navbarNavAltMarkup").className = "navbar-collapse show";
-	   var searchBox1 =  document.getElementById("gsc-i-id1");
-	   searchBox1.placeholder=" e.g., ACE or cancer";
-	   searchBox1.title="Search WikiPathways"; 
-	 }
-</script>

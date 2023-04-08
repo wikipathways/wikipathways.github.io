@@ -7,11 +7,6 @@ redirect_from:
  - /index.php/Help:Guidelines_EditorPalette
  - /index.php/Help:DataVisualizationInCytoscape
 ---
-<script>
-  var div = document.getElementById("navbarNavAltMarkup");
-  div.classList.add("show");
-</script>
-
 <div style="background:#eee; padding:20px 0px 0px 50px">
 <h1>Help Topics</h1>
 <div class="row">
@@ -50,42 +45,11 @@ redirect_from:
 <div id="investigate">
 <div id="viewer">
 <h1>Interactive Pathway Viewer</h1>
-<p>Each pathway has a dedicated page that includes an interactive view. Zoom in and out by scrollwheel, pan by click-n-drag, and click on genes, proteins and metabolites to open external pages in Scholia dedicated to each molecule. Here's an example:
+<p>Each pathway offers a dedicated page for interactive viewing. Click on the open icon <span title="Open in new tab" style="color: #FF8120; background-color: #FFFFFF; font-size: 1.0em;"><i class="fa fa-arrow-up-right-from-square"></i></span> or anywhere on the image to open the interactive in a new tab. Zoom in and out by scrollwheel, pan by click-n-drag, and click on genes, proteins and metabolites to open external pages in Scholia dedicated to each molecule. Here's a mini example:
 </p>
 <iframe src ="https://pathway-viewer.toolforge.org/?id=WP554" width="500px" height="350px" style="overflow:hidden;margin-left:200px;"></iframe>
-  <div style="margin:-8px 0px 18px 445px; float:left">
-    <input type="button" class="badge badge-secondary" value="view in new tab" style="display: inline; padding: 4px;"
-    onclick="window.open(&#39;https://pathway-viewer.toolforge.org/?id=WP554&#39;, '_blank');"/>
-  </div>
-  <div class="dropdown" style="margin:-8px 0px 14px 4px; float:left">
-    <button class="badge badge-secondary dropdown-toggle" style="padding: 4px;" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-      aria-haspopup="true" aria-expanded="false">
-      download
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="/wikipathways-assets/pathways/WP554/WP554.png" download>Download PNG</a>
-      <a class="dropdown-item" href="/wikipathways-assets/pathways/WP554/WP554.svg" download>Download SVG</a>
-      <a class="dropdown-item" href="/wikipathways-assets/pathways/WP554/WP554.json" download>Download JSON</a>
-      <a class="dropdown-item" href="/wikipathways-assets/pathways/WP554/WP554.gpml" download>Download GPML</a>
-    <!-- <a class="dropdown-item" href="https://www.sejda.com/html-to-pdf?save-link={{site.url}}/pathways/WP554.html" target="_blank">Generate PDF of page</a> -->
-    </div>
-  </div>
-  <div class="dropdown" style="margin:-8px 0px 10px 635px;">
-    <button class="badge badge-secondary dropdown-toggle" style="padding: 4px;" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-      aria-haspopup="true" aria-expanded="false">
-      options
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="../cite.html">How to Cite</a>
-      <button class="dropdown-item copy-btn" type="button" to-copy="https://www.wikipathways.org/instance/WP554">Copy permalink</button>
-      <button class="dropdown-item embed-btn" type="button" to-copy='<iframe src ="https://pathway-viewer.toolforge.org/?id=WP554" width="600px" height="300px" style="overflow:hidden;"></iframe>'>Copy embed code</button>
-    {% if page.ndex %}
-    <a class="dropdown-item" href="https://www.ndexbio.org/viewer/networks/427c38c3-da09-11eb-b666-0ac135e8bacf" target="_blank">Open in NDEx</a>
-    {% endif %}
-    </div>
-  </div>
   <br/>
-<p><b><i>Pro-tip:</i></b> Use the buttons in the lower-right to download the pathway in one of a variety of formats, or to view the pathway in its own window to help you explore the details. Under <b>options</b> you'll find a permalink for the page that you can cite and embed code so you can include this interactive viewer in your own web site.
+<p><b><i>Pro-tip:</i></b> Use the orange icons on a pathway page to download <span title="Download pathway as..." style="color: #FF8120; background-color: #FFFFFF; font-size: 1.0em;"><i class="fa fa-download"></i></span> the pathway in one of a variety of formats, or to share <span title="Share pathway" style="color: #FF8120; background-color: #FFFFFF; font-size: 1.0em;"><i class="fa fa-share"></i></span> the pathway as a citation, permalink, or via social media. You can also get embed code so you can include this interactive viewer in your own web site.
 </p>
 </div>
 <div id="attributes">
@@ -93,12 +57,12 @@ redirect_from:
 <p>In addition to the title and description at the top of each pathway page, you'll also find (in order):
 <ul>
 <li>the status of the pathway, including last-edited date, whether new edits are under review and if it passes all curation checks</li>
-<li>all the authors that have contributed to that pathway over the years</li>
-<li>links to any publications citing this pathway</li>
+<li>all the authors that have contributed to the pathway over the years</li>
+<li>links to any publications citing the pathway</li>
+<li>links open issues and discussions about the pathway</li>
 <li><a class="btn btn-sm btn-organism btn-pill" style="font-size:small" href="browse/organisms.html"> Organism</a> represented by the pathway</li>
 <li><a class="btn btn-sm btn-community btn-pill" style="font-size:small" href="browse/communities.html"> Communities</a> that are interested in the pathway</li>
 <li><a class="btn btn-sm btn-annotation btn-pill" style="font-size:small" href="browse/annotations.html"> Annotation</a> from Pathway, Disease and Cell Type ontologies </li>
-<li>links to any publications citing this pathway</li>
 </ul>
 </p>
 </div>

@@ -57,12 +57,13 @@
 }
 .site-header {
   border-bottom: none;
+  background-color: #EEEEEE;
 }
 .navbar-brand {
   font-size: 2em;
 }
 .navbar {
-  padding: 0px;
+  padding: 0px 0px 10px 0px;
 }
 
 /* MAIN */
@@ -111,13 +112,16 @@ h1 {
 }
 h2 {
   font-size: 1.5em;
+  font-weight: bold;
   margin-bottom:5px;
-  margin-top:15px;
+  margin-top:25px;
   font-family: 'Linux Libertine';
 }
 
 h3 {
   font-size: 1.25em;
+  margin-bottom:5px;
+  margin-top:15px;
   font-family: 'Linux Libertine';
 }
 
@@ -192,10 +196,6 @@ a:hover {
 .col-sm-auto {
   padding-left: 3px;
   padding-right: 3px;
-}
-
-.dropdown-item {
-  width: auto;
 }
 
 ul.facet-group {
@@ -312,9 +312,14 @@ height: 6px;
   background-color: #880BC8;
 }
 // a stuff
+.dropdown-item {
+  width: auto;
+  color: #3955E7;
+}
+
 a.dropdown-item:visited{
   text-decoration: none;
-  color: #000000;
+  color: #3955E7;
 }
 
 a.logo-link {
@@ -424,13 +429,13 @@ button.gsc-search-button
 
 .site-footer {
   padding: 5px 0;
+  background-color: #EEEEEE;
 }
 
 /* THANKS */
 
 .thanks-wrapper {
   @include relative-font-size(0.9375);
-  color: $grey-color;
   margin-left: -$spacing-unit / 2;
   @extend %clearfix;
 }

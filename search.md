@@ -7,8 +7,6 @@ title: Search Results
 <script src="/assets/js/simple-jekyll-search-ap.js"></script> 
 
 <script>
-  var div = document.getElementById("navbarNavAltMarkup");
-  div.classList.add("show");
   //hide search widget
   document.getElementById("search-widget").style.display = "none";
 </script>

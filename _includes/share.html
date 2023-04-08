@@ -1,15 +1,15 @@
-<div class="share-box">
-<a class="f" style="color:#FF8120;" title="Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.wikipathways.org/instance/{{ page.wpid }}" onclick="window.open(this.href, 'mywin',
+<div class="share-box" style="margin-left: 5px;">
+<a style="color:#FF8120; font-size: 1.5em;" title="Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.wikipathways.org/instance/{{ page.wpid }}" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" ><i class="fa fa-facebook-f fa"></i><span> </span></a>
 
-<a class="t" style="color:#FF8120;" title="Twitter" href="https://twitter.com/intent/tweet?text=&url=https://www.wikipathways.org/instance/{{ page.wpid }}" onclick="window.open(this.href, 'mywin',
+<a style="color:#FF8120; font-size: 1.5em;" title="Twitter" href="https://twitter.com/intent/tweet?text=Check out this pathway from @WikiPathways: {{ page.title | escape }}&url=https://www.wikipathways.org/instance/{{ page.wpid }}" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter fa"></i><span> </span></a>
 
-<a class="l" style="color:#FF8120;" title="WhatsApp" href="whatsapp://send?text=&url=https://www.wikipathways.org/instance/{{ page.wpid }}" target="_blank" rel="nofollow noopener" onclick="window.open(this.href, 'mywin',
+<a style="color:#FF8120; font-size: 1.5em;" title="WhatsApp" href="https://wa.me/?text=Check out this pathway at WikiPathways: {{ page.title | escape }} https://www.wikipathways.org/instance/{{ page.wpid }}" target="_blank" rel="nofollow noopener" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" ><i class="fa fa-whatsapp fa"></i><span> </span></a>
 
-<a class="l" style="color:#FF8120;" title="LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.wikipathways.org/instance/{{ page.wpid }}&title=&summary=&source=WikiPathways" onclick="window.open(this.href, 'mywin',
+<a style="color:#FF8120; font-size: 1.5em;" title="LinkedIn" href="https://www.linkedin.com/sharing/share-offsite/?mini=true&url=https://www.wikipathways.org/instance/{{ page.wpid }}&title={{ page.title | escape }}&summary=&source=WikiPathways" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" ><i class="fa fa-linkedin fa"></i><span> </span></a>
 
-<a class="e" style="color:#FF8120;" title="Email" href="mailto:?subject=&amp;body=Check out this pathway: https://www.wikipathways.org/instance/{{ page.wpid }}"><i class="fa fa-envelope fa"></i><span> </span></a>                          
+<a style="color:#FF8120; font-size: 1.5em;" title="Email" href="mailto:?subject=Check out this pathway at WikiPathways&amp;body={{ page.title | escape }}: https://www.wikipathways.org/instance/{{ page.wpid }}"><i class="fa fa-envelope fa"></i><span> </span></a>                          
 </div>
