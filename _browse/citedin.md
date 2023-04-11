@@ -62,7 +62,7 @@ btn-class: "btn-front"
           <!-- <li><a href="{{ cit-link }}" target="_blank">{{ citation.label | strip_html | truncate: 100, "..."}}</a>{{ cit-archived }}</li> -->
           <li>
             <a href="{{ cit-link }}" title="{{ cit-title }}" target="_blank">
-              <img alt="{{ cit-label }}" src="https://img.shields.io/static/v1?label={{ cit-label }}&message={{ cit-msg }}&color=blue">
+              <img alt="{{ cit-label }}" src="https://img.shields.io/static/v1?style=flat-square&label={{ cit-label }}&message={{ cit-msg }}&color=blue">
             </a>
             {{ cit-archived }}
           </li>

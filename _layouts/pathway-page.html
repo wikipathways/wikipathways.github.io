@@ -165,7 +165,7 @@ layout: default
     <a href="https://github.com/wikipathways/wikipathways.github.io/commits/main/_pathways/{{page.wpid}}.md"
       target="_blank">
       <img alt="last edited"
-        src="https://img.shields.io/static/v1?label=last edited&message={{page.last-edited | date_to_string}}&color={{badgeColor}}">
+        src="https://img.shields.io/static/v1?style=flat-square&label=last edited&message={{page.last-edited | date_to_string}}&color={{badgeColor}}">
     </a>
     <!--This badge is updated async to Jekyll by edits to the corresponding status.json (Note: 5 minute cache by shields.io)-->
     <a id="badge-json" target="_blank"
@@ -368,12 +368,12 @@ layout: default
   var badgeJson = $("#badge-json")[0];
   var badgeJsonFileUrl = badgeJson.getAttribute("file");
   if (UrlExists(badgeJsonFileUrl)){
-    badgeJson.innerHTML = '<img alt="pathway status" src="https://img.shields.io/endpoint?url='+badgeJsonFileUrl+'">';
+    badgeJson.innerHTML = '<img alt="pathway status" src="https://img.shields.io/endpoint?style=flat-square&url='+badgeJsonFileUrl+'">';
   }
   var badgeCuration = $("#badge-curation")[0];
   var badgeCurationFileUrl = badgeCuration.getAttribute("file");
   if (UrlExists(badgeCurationFileUrl)){
-    badgeCuration.innerHTML = '<img alt="pathway curation" src="https://img.shields.io/endpoint?url='+badgeCurationFileUrl+'">';
+    badgeCuration.innerHTML = '<img alt="pathway curation" src="https://img.shields.io/endpoint?style=flat-square&url='+badgeCurationFileUrl+'">';
   }
   
   function UrlExists(url) {
