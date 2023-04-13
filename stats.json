@@ -6,7 +6,8 @@ layout: none
         {
             "organisms" : "{{ site.organisms | size }}",
             "pathways" : "{{ site.pathways | size }}",
-            "authors" : "{{ site.authors | size }}"
+            "authors" : "{{ site.authors | size }}",
+            "commmunities" : "{{ site.communities | size }}"
         }
     },
     {"lists" : 
@@ -24,7 +25,13 @@ layout: none
                 {
                     "username" : "{{ site.authors | map: "username" | join: ', ' }}",
                     "realname" : "{{ site.authors | map: "realname" | join: ', ' }}"
+                },
+            "communities" : 
+                {
+                    "community-tag" : "{{ site.communities | map: "community-tag" | join: ', ' }}",
+                    "display-name" : "{{ site.communities | map: "display-name" | join: ', ' }}"
                 }
+
         }
     }
 ]
