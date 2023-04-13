@@ -34,4 +34,4 @@ redirect_from: /index.php/WikiPathways:Funding_and_Support
 
 * [eNanoMapper](http://enanomapper.net/) (EC FP7 grant [604134](http://cordis.europa.eu/project/rcn/110961_en.html))
 * [MicroGennet](http://www.micronutrientgenomics.org/) (EU Marie Curie action program IRSES grant [269210](http://cordis.europa.eu/project/rcn/101845_en.html))
-* [EU network of Excellence NuGO](http://www.nugo.org/everyone) (EC FP6 grant [506360(http://cordis.europa.eu/project/rcn/74154_en.html)])
+* [EU network of Excellence NuGO](http://www.nugo.org/everyone) (EC FP6 grant [506360](http://cordis.europa.eu/project/rcn/74154_en.html))
