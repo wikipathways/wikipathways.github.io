@@ -1,0 +1,30 @@
+---
+layout: none
+---    
+[
+    {"counts" : 
+        {
+            "organisms" : "{{ site.organisms | size }}",
+            "pathways" : "{{ site.pathways | size }}",
+            "authors" : "{{ site.authors | size }}"
+        }
+    },
+    {"lists" : 
+        {
+            "organisms" : 
+                {
+                    "latin" : "{{ site.organisms | map: "latin" | join: ', ' }}",
+                    "common" : "{{ site.organisms | map: "common" | join: ', ' }}"
+                },
+            "pathways" : 
+                {
+                    "wpid" : "{{ site.pathways | map: "wpid" | join: ', ' }}"
+                },
+            "authors" : 
+                {
+                    "username" : "{{ site.authors | map: "username" | join: ', ' }}",
+                    "realname" : "{{ site.authors | map: "realname" | join: ', ' }}"
+                }
+        }
+    }
+]
