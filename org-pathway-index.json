@@ -1,8 +1,8 @@
 ---
 layout: none
 ---
-[
-    {"organisms" : [
+{
+    "organisms" : [
     {% assign organisms = site.organisms | sort: 'latin' %}
     {% for org in organisms %}
         {
@@ -20,5 +20,5 @@ layout: none
         {% endfor %}
         ]} {% unless forloop.last %},{% endunless %}
     {% endfor %}
-    ]}
-]
+    ]
+}
