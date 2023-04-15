@@ -1,0 +1,22 @@
+---
+layout: none
+---    
+{
+    "pathways" : [
+    {% assign pathways = site.pathways | sort: 'wpid' %}
+    {% for pw in pathways %}
+        {
+        "id" : "{{ pw.wpid }}",
+        "terms" : [
+         {% for ont in pw.annotations %}
+            {
+                "ontology": "{{ ont.type }}",
+                "id": "{{ ont.id }}",
+                "name": "{{ ont.value }}",
+                "parent": "{{ ont.parent }}" 
+            }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+        ]}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+    ]
+}

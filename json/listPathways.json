@@ -1,6 +1,6 @@
 ---
 layout: none
----
+---    
 {
     "organisms" : [
     {% assign organisms = site.organisms | sort: 'latin' %}
@@ -13,10 +13,12 @@ layout: none
         {% assign pathways = site.pathways | where_exp:"item", "item.organisms contains org.latin" | sort: 'title' %}
         {% for pw in pathways %}
             {
-            "title"    : "{{ pw.title | replace: " ", "_" | replace: "/", "-" | replace: ",", "_" | escape }}",
-            "wpid"    : "{{ pw.wpid }}",
-            "last-edited"     : "{{ pw.last-edited | date: "%Y%m%d" }}"
-            } {% unless forloop.last %},{% endunless %}
+                "id": "{{ pw.wpid }}",
+                "url": "https://www.wikipathways.org/instance/{{ pw.wpid }}",
+                "name": "{{ pw.title }}",
+                "species": "{{ pw.organisms | join: ', ' }}",
+                "revision": "{{ pw.last-edited }}"  
+            }{% unless forloop.last %},{% endunless %}
         {% endfor %}
         ]}{% unless forloop.last %},{% endunless %}
     {% endfor %}

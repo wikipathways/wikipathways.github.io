@@ -1,0 +1,20 @@
+---
+layout: none
+---    
+{
+    "pathwayInfo": [
+        {% assign pathways = site.pathways | sort: 'wpid' %}
+        {% for pw in pathways %}
+        {
+        "id": "{{ pw.wpid }}",
+        "url": "https://www.wikipathways.org/instance/{{ pw.wpid }}",
+        "name": "{{ pw.title }}",
+        "species": "{{ pw.organisms | join: ', ' }}",
+        "revision": "{{ pw.last-edited }}",
+        "authors": "{{ pw.authors | join: ', ' }}",
+        "description": "{{ pw.description | truncate: 200 | escape  }}",
+        "citedIn": "{{ pw.cited-in | map: "link" | join: ', ' }}"
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ]
+  }
