@@ -277,6 +277,8 @@ layout: default
     {% endfor %}
 
 <!-- TABLES --> 
+{% assign wpid-parts=page.wpid | append: "-datanodes" %}
+{% assign parts=site.data[wpid-parts] %}
 <div style="display: flex; align-items: center;">   
   <h2 id="participants">Participants    
       <a href="/wikipathways-assets/pathways/{{ page.wpid }}/{{ page.wpid }}-datanodes.tsv"
@@ -286,6 +288,10 @@ layout: default
         </span>
       </a>
       <!-- QUERY MENU -->
+      {% if page.organisms contains "Homo sapiens" %}
+        {% assign partsIdList = parts | map: "NCBI gene" | uniq | compact | slice: 0,99  %}
+        {% if partsIdList and partsIdList.size != 0 %}
+          {% assign partsIdList = partsIdList | join: "," %}
       <div class="dropdown" style="float: right;margin-left: 8px;">
         <button class="dropdown-toggle" style="padding: 4px;margin-left: 10px;background-color: transparent;color: transparent;border: none;cursor: pointer;font-size: small" 
           type="button" id="dropdownMenuButton" data-toggle="dropdown"
@@ -295,19 +301,17 @@ layout: default
           </span>
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButtonDatanodes">
-          <!-- TODO: change from "Label" to "Identifer" once curies are supported by Drugst.One -->
-          {% assign partsIdList = parts | where: "Type", "GeneProduct" | map: "Label" | uniq | slice: 0,99 | join: "," %}
           <a class="dropdown-item"  style="color: #000000; background-image: url(https://cdn.drugst.one/libs/drugstone-buttons/0.0.1/android-chrome-192x192.png);background-repeat: no-repeat;background-position: left;background-position-x: left;background-size: 20px 20px;background-position-x: 6px;background-origin: padding-box;padding-left: 32px !important; margin: 10px;"
           href="https://drugst.one/standalone?nodes={{partsIdList}}&autofillEdges=true&activateNetworkMenuButtonAdjacentDrugs=true&interactionDrugProtein=NeDRex&licensedDatasets=true" 
           target="_blank" 
           title="Query drug interactions with the GeneProducts of this pathway. Learn more at the link destination.">Query Drugst.One</a>
         </div>
       </div>
+        {% endif %}
+      {% endif %}
   </h2>
 </div>
 <input type="button" class="badge badge-secondary" id="tableLess1" value="fewer rows" style="float: left; margin-bottom: 2px;">
-{% assign wpid-parts=page.wpid | append: "-datanodes" %}
-{% assign parts=site.data[wpid-parts] %}
 <div class="table-container">
   <table id="participants-table"> 
     <thead>
