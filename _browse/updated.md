@@ -52,7 +52,7 @@ btn-class: "btn-front"
 </div>
 <br/>
 <hr/>
-<h2>Authors of Recent Updates</h2>
+<h2>Authors of Recently Updated Pathways</h2>
 {% assign sorted_pw_authors = sorted_pathways | map: "authors" | join: ','  | split: ',' | uniq  %} <!-- REPLACE authors with "recent author" -->
 {% assign all_authors = '' | split: '' %}
 {% for auth in sorted_pw_authors %}
