@@ -14,3 +14,8 @@ In order to rebuild the site locally, e.g. for testing, you'll need to:
 3. run `bundle install`
 4. run `bundle exec jekyll serve`  <-- run this each time you want to restart the local server
 5. goto http://127.0.0.1:4000
+
+### Update Protocol
+We rely on GiHut Pages to build and deploy the Jekyll site. This means that the [versions of Jekyll and related dependencies are automatically updated by GitHub](https://pages.github.com/versions/). Developers just need to keep their local setups up-to-date with whatever GitHub is running so that our local testing accurately reflects the live site.
+
+ * Update local Jekyll dependencies: `bundle update github-pages`
