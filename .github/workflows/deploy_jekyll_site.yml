@@ -6,7 +6,10 @@ on:
   schedule:
   - cron: "0 1 * * 1"
   push:
-    branches: ["main"]
+    branches: 
+      - main
+    paths-ignore:
+      - '.github/**'
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
