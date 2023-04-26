@@ -1,4 +1,4 @@
-name: When stats data file change, knit stats.Rmd
+name: When stats change, knit stats.Rmd
 ## stat data files = _data/edit_counts.csv and _data/pathway_counts.csv
 
 on:
@@ -14,7 +14,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:      
-  stats-update:
+  update-stats:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
