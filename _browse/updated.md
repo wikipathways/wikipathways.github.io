@@ -9,6 +9,7 @@ btn-class: "btn-front"
     
 <h2 id="title">Recently Updated Pathways</h2>
 <p>A date-sorted list of 20 pathways that have been recently edited.  <b><em>Note: This does not include pathways pending review.</em></b></p> 
+<a class="btn btn-sm btn-front my-2" style="float:right;margin-right:20px;" title="Browse newly added pathways" href="/browse/new.html">New</a>
 
 <h2>Pathways</h2>
 <ul class="nav nav-tabs">
