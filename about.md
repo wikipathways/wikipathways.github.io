@@ -2,7 +2,6 @@
 title: About
 redirect_from: 
 - /index.php/WikiPathways:About
-- /index.php/WikiPathways:License_Terms
 ---
 <div style="text-align:center;">
   <img src="/assets/img/overview-figure-1.jpg"/>
