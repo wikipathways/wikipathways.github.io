@@ -1,6 +1,7 @@
 ---
 title: About
-redirect_from: 
+redirect_from:
+- /index.php/WikiPathways:License_Terms
 - /index.php/WikiPathways:About
 ---
 <div style="text-align:center;">

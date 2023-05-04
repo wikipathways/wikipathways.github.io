@@ -1,6 +1,5 @@
 ﻿---
 title: Terms of use
-- /index.php/WikiPathways:License_Terms
 ---
 
 <h2>Terms of Use</h2>
