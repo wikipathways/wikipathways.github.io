@@ -7,7 +7,7 @@ redirect_from:
 
 <div class="card-deck">
             <div class="card text-center" style="width: 12rem;">
-              <a class="card-link" href="https://github.com/gladstone-institutes/Bioinformatics-Workshops/blob/master/intro-pathway-analysis-visualization/Hands-on_PathwayAnalysis.pdf">
+              <a class="card-link" href="https://github.com/gladstone-institutes/Bioinformatics-Workshops/blob/master/intro-pathway-analysis-visualization/Hands-on_PathwayAnalysis.pdf" target="_blank">
               <img class="card-img-top" src="/assets/img/help/WP-Enrichment.png" alt="Enrichment Analysis">
               <div class="card-body">
                 <p class="card-text"><b>Enrichment Analysis</b></p>
