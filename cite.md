@@ -27,7 +27,7 @@ redirect_from: /index.php/How_to_cite_WikiPathways
 <div id="citepathway">
 <h2>Citing individual pathways</h2>
 <ul>
-    <li><b>To cite a specific pathway</b>, use its permalink, for example: <a href="https://www.wikipathways.org/instance/WP254">https://www.wikipathways.org/instance/WP254</a>. The permalink for each pathway is available in the "options" menu. When citing the live version of a pathway, attribution of individual contributors is not necessary since it is continuously tracked and displayed on each pathway page.</li>
+    <li><b>To cite a specific pathway</b>, use its permalink, for example: <a href="https://www.wikipathways.org/instance/WP254">https://www.wikipathways.org/instance/WP254</a>. The permalink for each pathway is available from the "Share pathway" icon to the left under the pathway. When citing the live version of a pathway, attribution of individual contributors is not necessary since it is continuously tracked and displayed on each pathway page.</li>
     <li><b>To cite a <i>specific version</i> of a pathway</b>, we recommend downloading the pathway as PDF (see "options" menu) and uploading it to Zenodo to generate a DOI that you can then reference in your paper. Alternatively, your can upload and image file or figure that you have made using WikPathways content. An example Zenodo record can be found <a href="https://zenodo.org/record/7058753#.YxowGOzMI7R" target="_blank">here</a>. Follow these steps:
         <ol>
             <li>Log in to <a href="https://zenodo.org/" target="_blank">Zenodo</a>. Accounts are free.</li>
