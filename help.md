@@ -87,7 +87,7 @@ redirect_from:
 <div id="navigate">
 </div><div id="site">
 <h1>Navigating the Website</h1>
-<p>At the top of every page is a clickable logo that will take you to the home page, a search bar (see below), and a menu icon <span style="width: 26px; height: 22px; display:inline-block;border: gray;border-width: 1px;border-style: solid; background-image: url(&quot;data:image/svg+xml;charset=utf8,%3Csvg viewBox='-5 -2 36 34' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E&quot;)"></span>. The menu provides quick links to common pages. At the bottom of every page is a footer with information and links, including:
+<p>At the top of every page is a clickable logo that will take you to the home page, a search bar (see below), and a set of quick links to common pages. At the bottom of every page is a footer with information and links, including:
 </p>
 <ul>
 <li>the status of the overall site and when it was last updated</li>
