@@ -1,0 +1,9 @@
+---
+layout: none
+---    
+{
+    "organisms" : "{{site.organisms.size}}",
+    "pathways" : "{{site.pathways.size }}",
+    "authors" : "{{site.authors.size}}",
+    "communities" : "{{site.communities.size}}"
+}
