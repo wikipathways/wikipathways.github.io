@@ -1,0 +1,29 @@
+---
+layout: none
+---    
+{
+    "communities" : [
+    {% for com in site.communities %}
+        {
+        "display-name" : "{{ com.display-name }}",
+        "title"     : "{{ com.title }}",
+        "short-description"     : "{{ com.short-description }}",
+        "community-tag"     : "{{ com.community-tag }}",
+        {% if com.editors.size > 0 %}
+            "editors"     : "{{ com.editors | array_to_sentence_string }}",
+        {% endif %}
+        "pathways" : [
+        {% assign pathways = site.pathways | where_exp:"item", "item.communities contains com.community-tag" | sort: 'title' %}
+        {% for pw in pathways %}
+            {
+                "id": "{{ pw.wpid }}",
+                "url": "https://www.wikipathways.org/instance/{{ pw.wpid }}",
+                "name": "{{ pw.title }}",
+                "species": "{{ pw.organisms | join: ', ' }}",
+                "revision": "{{ pw.last-edited }}"  
+            }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+        ]}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+    ]
+}
