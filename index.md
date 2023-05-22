@@ -6,7 +6,7 @@ curator_of_the_week:
 - Elisson nl
 - AlexanderPico
 - tabbassidaloii
-- Ddigles
+- Khanspers
 - Fehrhart
 - Mkutmon
 - Susan
@@ -14,7 +14,7 @@ curator_of_the_week:
 - DeSl
 - IsabelWassink
 - Jmillanacosta
-- Khanspers
+- Ddigles
 - Madeomuga
 
 redirect_from: 
