@@ -1,6 +1,6 @@
 ---
 username: AllanKuchinsky
-realname: Alla Kuchinsky
+realname: Allan Kuchinsky
 website: ~
 affiliation: ~
 bio: ~
