@@ -13,6 +13,10 @@ redirect_from: /index.php/Help:Tools_using_WikiPathways
     </th><td>Agilent Technologies produces commercial sequencing technology and analysis suites (GeneSpring and EnViz) that uses WikiPathways content via web services.
     </td></tr>
     <tr>
+    <th><a href="http://bioconductor.org/packages/release/data/annotation/html/AHWikipathwaysDbs.html" target="_blank" class="external " title="http://bioconductor.org/packages/release/data/annotation/html/AHWikipathwaysDbs.html" rel="nofollow">AHWikipathwaysDbs</a>
+    </th><td>The package provides a comprehensive mapping table of metabolites linked to Wikipathways pathways. The tables include HMDB, KEGG, ChEBI, Drugbank, PubChem compound, ChemSpider, KNApSAcK, and Wikidata IDs plus CAS and InChIKey. The tables are provided for each of the 25 species.
+    </td></tr>
+    <tr>
     <th><a href="https://www.altanalyze.org/" target="_blank" class="external " title="https://www.altanalyze.org/" rel="nofollow">AltAnalyze</a>
     </th><td>AltAnalyze is an easy-to-use application for the end-to-end analysis of microarry, single-cell (ICGS) and bulk RNA-Seq data. AltAnalyze uses WikiPathways as its official pathway source.
     </td></tr>
