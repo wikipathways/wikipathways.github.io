@@ -1,11 +1,11 @@
 ---
 username: Bonohu
-realname: Bonohu
-website: 
+realname: Hidemasa Bono
+website: https://bonohu.hiroshima-u.ac.jp/
 affiliation: 
 bio: 
-github: 
-orcid: 
+github: bonohu
+orcid: 0000-0003-4413-0651
 linkedin: 
 googlescholar: 
 wikidata: 
