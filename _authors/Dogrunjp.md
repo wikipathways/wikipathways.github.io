@@ -1,10 +1,10 @@
 ---
 username: Dogrunjp
-realname: Dogrunjp
-website: 
+realname: Naoya Oishi
+website: https://dogrun.jp
 affiliation: 
 bio: 
-github: 
+github: dogrunjp
 orcid: 
 linkedin: 
 googlescholar: 
