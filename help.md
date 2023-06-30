@@ -156,14 +156,14 @@ redirect_from:
 </div>
 <div id="curate">
 <h1>Curate Changes</h1>
-<p>To maintain WikiPathways as a high-quality pathway resource, a weekly rotation of community editors work to ensure the quality of new content and edits to existing content. Our <a href="https://wikipathways.org/academy/qaprotocol.html" target="_blank">Quality Assurance Protocol</a> checks for the following things:</p>
+<p>To maintain WikiPathways as a high-quality pathway resource, a weekly rotation of community curators work to ensure the quality of new content and edits to existing content. Our <a href="https://wikipathways.org/academy/qaprotocol.html" target="_blank">Quality Assurance Protocol</a> checks for the following things:</p>
 <ul>
 <li>Do pathway nodes have valid database identifiers?</li>
 <li>Are interactions properly connected to nodes?</li>
 <li>Do pathway titles conform to guidelines?</li>
 <li>Are all pathways tagged with appropriate ontology tags, and does each pathway have a useful description?</li>
 </ul>
-<p>Anyone is welcome to join as a Community Editor. Please <a href="https://github.com/wikipathways/wikipathways-help/discussions" target="_blank">contact us</a> if you are interested.</p>
+<p>Anyone is welcome to join the Curator-of-the-week roster. Please <a href="https://github.com/wikipathways/wikipathways-help/discussions" target="_blank">contact us</a> if you are interested.</p>
 </div>
 <div id="code">
 <h1>Code New Features</h1>
