@@ -1,11 +1,11 @@
 ---
 username: Sikeda
 realname: Sikeda
-website: 
+website: https://dbcls.rois.ac.jp/members-en.html#IKEDA,%20Shuya
 affiliation: 
 bio: 
-github: 
-orcid: 
+github: sh-ikeda
+orcid: 0000-0002-1357-5159
 linkedin: 
 googlescholar: 
 wikidata: 
