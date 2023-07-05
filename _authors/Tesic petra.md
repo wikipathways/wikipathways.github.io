@@ -1,6 +1,6 @@
 ---
-username: Leyla
-realname: Leyla
+username: Tesic petra
+realname: Petra Tesic
 website: 
 affiliation: 
 bio: 
@@ -14,6 +14,6 @@ mastodon-url:
 meta:
 instagram:
 redirect_from:
-- /index.php/User:Leyla
-- /index.php/Special:Contributions/Leyla
+- /index.php/User:Tesic petra
+- /index.php/Special:Contributions/Tesic petra
 ---

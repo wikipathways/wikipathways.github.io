@@ -1,6 +1,6 @@
 ---
-username: Fitzinger
-realname: Fitzinger
+username: Pat hofer
+realname: Pat Hofer
 website: 
 affiliation: 
 bio: 
@@ -14,6 +14,6 @@ mastodon-url:
 meta:
 instagram:
 redirect_from:
-- /index.php/User:Fitzinger
-- /index.php/Special:Contributions/Fitzinger
+- /index.php/User:Pat hofer
+- /index.php/Special:Contributions/Pat hofer
 ---

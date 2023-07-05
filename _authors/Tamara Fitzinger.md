@@ -1,6 +1,6 @@
 ---
-username: Tamara
-realname: Tamara
+username: Tamara Fitzinger
+realname: Tamara Fitzinger
 website: 
 affiliation: 
 bio: 
@@ -14,6 +14,6 @@ mastodon-url:
 meta:
 instagram:
 redirect_from:
-- /index.php/User:Tamara
-- /index.php/Special:Contributions/Tamara
+- /index.php/User:Tamara Fitzinger
+- /index.php/Special:Contributions/Tamara Fitzinger
 ---
