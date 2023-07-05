@@ -14,6 +14,6 @@ mastodon-url:
 meta:
 instagram:
 redirect_from:
-- /index.php/User:Leyla Önder
-- /index.php/Special:Contributions/Leyla Önder
+- /index.php/User:Leyla_Önder
+- /index.php/Special:Contributions/Leyla_Önder
 ---

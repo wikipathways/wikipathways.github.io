@@ -14,6 +14,6 @@ mastodon-url:
 meta:
 instagram:
 redirect_from:
-- /index.php/User:Tamara Fitzinger
-- /index.php/Special:Contributions/Tamara Fitzinger
+- /index.php/User:Tamara_Fitzinger
+- /index.php/Special:Contributions/Tamara_Fitzinger
 ---

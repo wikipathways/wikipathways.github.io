@@ -1,5 +1,5 @@
 ---
-username: Uday_as
+username: Uday as
 realname: Uday Abu Shehab
 website: ~
 affiliation: ~

@@ -1,5 +1,5 @@
 ---
-username: Phil_Hit
+username: Phil Hit
 realname: Philip Hittmeyer
 website: ~
 affiliation: ~

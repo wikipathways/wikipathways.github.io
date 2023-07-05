@@ -1,5 +1,5 @@
 ---
-username: Thanos_Oikonomou
+username: Thanos Oikonomou
 realname: Athanasios Oikonomou
 website: ~
 affiliation: ~
