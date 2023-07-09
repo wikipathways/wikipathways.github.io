@@ -1,6 +1,6 @@
 ---
 username: Sikeda
-realname: Sikeda
+realname: Shuya Ikeda
 website: https://dbcls.rois.ac.jp/members-en.html#IKEDA,%20Shuya
 affiliation: 
 bio: 
