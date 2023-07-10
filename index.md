@@ -289,7 +289,7 @@ redirect_from:
                 <div class="container">
                 <a class="btn btn-sm btn-front w-100 my-2" href="/cite.html">Cite</a>
                 <a class="btn btn-sm btn-front w-100 my-2" href="/help.html#publish">Publish</a>
-                <a class="btn btn-sm btn-front w-100 my-2" href="https://www.ncbi.nlm.nih.gov/pmc/?term=(wikipathways)&report=imagesdocsum&dispmax=100" target="_blank">Examples</a>
+                <a class="btn btn-sm btn-front w-100 my-2" href="https://www.ncbi.nlm.nih.gov/pmc/?term=wikipathways&report=imagesdocsum&dispmax=100" target="_blank">Examples</a>
                 </div>
               </div>
               </div>
