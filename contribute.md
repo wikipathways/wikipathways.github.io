@@ -10,7 +10,7 @@ redirect_from: /index.php/Help:Authors
         <br />A free GitHub account is required to edit or create pathways at WikiPathways.</li>
     <li style="margin-bottom: 10px;"><a href="https://classic.wikipathways.org/index.php?title=Special:UserLogin&type=signup" target="_blank"><b>Create a WikiPathways account</b></a>
         <br />A free WikiPathways account is required to edit or create pathways at WikiPathways. We are still in the process of <a href="/help.html#move_from_classic">moving from the classic WikiPathways site</a>, and during this time a WikiPathways account is still required.</li>
-    <li style="margin-bottom: 10px;"><a href="http://academy.wikipathways.org/stages/walk-install-pv/" target="_blank"><b> Setup: Install Tools and Resources</b></a>
+    <li style="margin-bottom: 10px;"><a href="http://academy.wikipathways.org/stages/walk-install-pv/" target="_blank"><b>Install Tools and Resources</b></a>
         <br />To work with WikiPathways, the pathway editor PathVisio and the WikiPathways plugin are required.</li>
     <li style="margin-bottom: 10px;"><b>Curate: Create or Edit a Pathway Model</b>
         <br />
