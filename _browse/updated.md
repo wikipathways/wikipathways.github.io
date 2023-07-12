@@ -54,13 +54,17 @@ btn-class: "btn-front"
 <br/>
 <hr/>
 <h2>Authors of Recently Updated Pathways</h2>
+<!-- AUTHOR PROCESSING -->
+{% assign blocked_authors = "Wpblocked,Unknown,TestUser,MaintBot" | split:"," %}
 {% assign sorted_pw_authors = sorted_pathways | map: "authors" | join: ','  | split: ',' | uniq  %} <!-- REPLACE authors with "recent author" -->
 {% assign all_authors = '' | split: '' %}
 {% for auth in sorted_pw_authors %}
-  {% assign realname = site.authors | where: "username", auth | map: "realname" | first  %}
-  {% capture thisAuth %}
-    <a href="{{site.url}}/authors/{{auth}}.html" title="View author profile">{{realname}}</a>
-  {% endcapture %}
-  {% assign all_authors = all_authors | push: thisAuth %}
+  {% unless blocked_authors contains auth %}
+    {% assign realname = site.authors | where: "username", auth | map: "realname" | first  %}
+    {% capture thisAuth %}
+      <a href="{{site.url}}/authors/{{auth}}.html" title="View author profile">{{realname}}</a>
+    {% endcapture %}
+    {% assign all_authors = all_authors | push: thisAuth %}
+  {% endunless %}
 {% endfor %}
 <p>{{ all_authors | array_to_sentence_string }}.</p>

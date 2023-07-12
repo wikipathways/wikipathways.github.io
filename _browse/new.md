@@ -71,6 +71,7 @@ btn-class: "btn-front"
 <hr/>
 <h2>Authors of New Pathways</h2>
 <p>
+    {% assign blocked_authors = "Wpblocked,Unknown,TestUser,MaintBot" | split:"," %}
     {% assign all_authors = '' | split: '' %}
     {% assign k = 0 %}
     {% for pw in sorted_pathways %}
@@ -80,11 +81,13 @@ btn-class: "btn-front"
           {% break %}
         {% endif %}
           {% for auth in pw.authors %}
-          {% assign realname = site.authors | where: "username", auth | map: "realname" | first  %}
-            {% capture thisAuth %}
-              <a href="{{site.url}}/authors/{{auth}}.html" title="View author profile">{{realname}}</a>
-            {% endcapture %}
-            {% assign all_authors = all_authors | push: thisAuth %}
+          {% unless blocked_authors contains auth %}
+            {% assign realname = site.authors | where: "username", auth | map: "realname" | first  %}
+             {% capture thisAuth %}
+               <a href="{{site.url}}/authors/{{auth}}.html" title="View author profile">{{realname}}</a>
+             {% endcapture %}
+             {% assign all_authors = all_authors | push: thisAuth %}
+            {% endunless %}
           {% endfor %}
       {% endif %}
     {% endfor %}
