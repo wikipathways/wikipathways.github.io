@@ -1,0 +1,24 @@
+---
+layout: none
+---
+[
+  {% assign sorted_pathways = site.pathways | sort: "last-edited" | reverse %}
+  {% for pw in sorted_pathways %}
+   {% for org in site.organisms %}
+    {% if pw.organisms contains org.latin %}
+      {% assign common-org = org.common %}
+    {% endif %}
+   {% endfor %}
+   {
+        "title"    : "{{ pw.title | escape }}",
+        "wpid"    : "{{ pw.wpid }}",
+        "description" : "{{ pw.description | truncate: 200 | escape  }}",
+        "organisms"     : "{{ pw.organisms | join: ', ' }}",
+        "common"     : "{{ common-org }}",
+        "keywords"     : "{{ pw.schema-jsonld | map: "keywords" | uniq | join: ', ' }}",
+        "annotations"     : "{{ pw.annotations | map: "value" | uniq | join: ', ' }}",
+        "url"      : "{{ site.baseurl }}{{ pw.url }}",
+        "last-edited"     : "{{ pw.last-edited }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
