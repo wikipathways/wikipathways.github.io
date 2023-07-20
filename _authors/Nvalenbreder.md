@@ -1,6 +1,6 @@
 ---
 username: Nvalenbreder
-realname: Nvalenbreder
+realname: Nina Valenbreder
 website: 
 affiliation: 
 bio: 
