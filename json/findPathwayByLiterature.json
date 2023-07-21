@@ -1,0 +1,30 @@
+---
+layout: none
+---
+{
+  "pathwayInfo": [
+      {% assign pathways = site.pathways | sort: 'wpid' %}
+      {% for pw in pathways %}
+      {% assign wpid-refs=pw.wpid | append: "-bibliography" %}
+      {% assign refs=site.data[wpid-refs] %}
+      {% if refs and refs.size != 0 %}
+        {% assign lit_ids = refs | map: "ID" | uniq | compact  %}
+        {% if lit_ids and lit_ids.size != 0 %}
+          {% assign lit_ids = lit_ids | join: ", " %}
+        {% else %}
+          {% assign lit_ids = "" %}
+        {% endif %}
+        {
+      "id": "{{ pw.wpid }}",
+      "url": "https://www.wikipathways.org/instance/{{ pw.wpid }}",
+      "name": "{{ pw.title }}",
+      "species": "{{ pw.organisms | join: ', ' }}",
+      "revision": "{{ pw.last-edited }}",
+      "authors": "{{ pw.authors | join: ', ' }}",
+      "description": "{{ pw.description | truncate: 200 | escape  }}",
+      "refs": "{{ lit_ids }}"
+        }{% unless forloop.last %},{% endunless %}
+        {% endif %}
+      {% endfor %}
+  ]
+}
