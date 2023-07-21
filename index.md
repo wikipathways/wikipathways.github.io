@@ -2,7 +2,7 @@
 layout: home2
 title: Home
 curator_of_the_week:
-- Ash_iyer
+- Ash iyer
 - Elisson nl
 - AlexanderPico
 - tabbassidaloii
