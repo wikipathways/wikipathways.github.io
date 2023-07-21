@@ -1,0 +1,70 @@
+---
+layout: none
+---
+{
+  "pathwayInfo": [
+      {% assign pathways = site.pathways | sort: 'wpid' %}
+      {% for pw in pathways %}
+      {% assign wpid-parts=pw.wpid | append: "-datanodes" %}
+      {% assign parts=site.data[wpid-parts] %}
+      {% assign ncbigene = parts | map: "NCBI gene" | uniq | compact  %}
+      {% if ncbigene and ncbigene.size != 0 %}
+        {% assign ncbigene = ncbigene | join: ", " %}
+      {% else %}
+        {% assign ncbigene = "" %}
+      {% endif %}
+      {% assign hgnc = parts | map: "HGNC" | uniq | compact  %}
+      {% if hgnc and hgnc.size != 0 %}
+        {% assign hgnc = hgnc | join: ", " %}
+      {% else %}
+        {% assign hgnc = "" %}
+      {% endif %}
+      {% assign ensembl = parts | map: "Ensembl" | uniq | compact  %}
+      {% if ensembl and ensembl.size != 0 %}
+        {% assign ensembl = ensembl | join: ", " %}
+      {% else %}
+        {% assign ensembl = "" %}
+      {% endif %}
+      {% assign uniprot = parts | map: "UniProt" | uniq | compact  %}
+      {% if uniprot and uniprot.size != 0 %}
+        {% assign uniprot = uniprot | join: ", " %}
+      {% else %}
+        {% assign uniprot = "" %}
+      {% endif %}
+      {% assign wikidata = parts | map: "Wikidata" | uniq | compact  %}
+      {% if wikidata and wikidata.size != 0 %}
+        {% assign wikidata = wikidata | join: ", " %}
+      {% else %}
+        {% assign wikidata = "" %}
+      {% endif %}
+      {% assign chebi = parts | map: "ChEBI" | uniq | compact  %}
+      {% if chebi and chebi.size != 0 %}
+        {% assign chebi = chebi | join: ", " %}
+      {% else %}
+        {% assign chebi = "" %}
+      {% endif %}
+      {% assign inchi = parts | map: "InChI" | uniq | compact  %}
+      {% if inchi and inchi.size != 0 %}
+        {% assign inchi = inchi | join: ", " %}
+      {% else %}
+        {% assign inchi = "" %}
+      {% endif %}
+      {
+      "id": "{{ pw.wpid }}",
+      "url": "https://www.wikipathways.org/instance/{{ pw.wpid }}",
+      "name": "{{ pw.title }}",
+      "species": "{{ pw.organisms | join: ', ' }}",
+      "revision": "{{ pw.last-edited }}",
+      "authors": "{{ pw.authors | join: ', ' }}",
+      "description": "{{ pw.description | truncate: 200 | escape  }}",
+      "ncbigene": "{{ ncbigene }}",
+      "ensembl": "{{ ensembl }}",
+      "hgnc": "{{ hgnc }}",
+      "uniprot": "{{ uniprot }}",
+      "wikidata": "{{ wikidata }}",
+      "chebi": "{{ chebi }}",
+      "inchi": "{{ inchi }}"
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+  ]
+}

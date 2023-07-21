@@ -10,6 +10,7 @@ layout: none
         "id" : "{{ annot_id }}",
         "name" : "{{ annot.value }}",
         "ontology" : "{{ annot.type }}",
+        "parent": "{{ annot.parent }}" ,
         "pathways" : [
             {% assign pathways = ""| split: "," %}
             {% for sp in site.pathways %}
