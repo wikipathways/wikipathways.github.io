@@ -15,7 +15,7 @@ curators:
 - IsabelWassink
 - Jmillanacosta
 - Tabbassidaloii
-- Ash_iyer
+- aish181095
 - ElenaDR1
 
 architects:
