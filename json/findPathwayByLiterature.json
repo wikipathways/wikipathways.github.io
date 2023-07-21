@@ -14,6 +14,12 @@ layout: none
         {% else %}
           {% assign lit_ids = "" %}
         {% endif %}
+        {% assign lit_cits = refs | map: "Citation" | strip_html | compact  %}
+        {% if lit_cits and lit_cits.size != 0 %}
+          {% assign lit_cits = lit_cits | join: ", " %}
+        {% else %}
+          {% assign lit_cits = "" %}
+        {% endif %}
         {
       "id": "{{ pw.wpid }}",
       "url": "https://www.wikipathways.org/instance/{{ pw.wpid }}",
@@ -22,7 +28,8 @@ layout: none
       "revision": "{{ pw.last-edited }}",
       "authors": "{{ pw.authors | join: ', ' }}",
       "description": "{{ pw.description | truncate: 200 | escape  }}",
-      "refs": "{{ lit_ids }}"
+      "refs": "{{ lit_ids }}",
+      "citations": "{{ lit_cits | escape | remove: "PubMed Europe PMC Scholia" }}"
         }{% unless forloop.last %},{% endunless %}
         {% endif %}
       {% endfor %}
