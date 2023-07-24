@@ -18,7 +18,7 @@ redirect_from: /index.php/Help:Authors
     <div class="card" style="width: 12rem; padding: 3px;">
     <div class="card-body" style="padding-right: 5px; padding-bottom:5px;">
     <p class="card-title"><b>Find a Pathway from Literature to Curate</b></p>
-    <p class="card-text" style="font-size: 1em;">Browse our suggested pathway curation tasks to find a published pathway that is of interest to you. Then create a pathway model and publish it at WikiPathways! The suggested pathways are selected based on novelty in terms of genes or disease focus.</p>
+    <p class="card-text" style="font-size: 1em;">Browse our suggested pathway curation tasks to find a published pathway of interest to you. Then create a pathway model and publish it at WikiPathways! The suggested pathways are selected based on novelty in terms of genes or disease focus.</p>
     </div>
     <ul class="list-group list-group-flush">
     <li class="list-group-item"><a href="https://github.com/wikipathways/pathway-curation-tasks/issues?q=is%3Aopen+is%3Aissue+label%3APFOCR" target="_blank">Pathway modeling tasks</a></li>

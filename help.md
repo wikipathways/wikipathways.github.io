@@ -54,17 +54,17 @@ redirect_from:
 </div>
 <div id="attributes">
 <h1>Pathway Attributes</h1>
-<p>In addition to the title and description at the top of each pathway page, you'll also find (in order):
+<p>In addition to the title and organism at the top of each pathway page, you'll also find (in order):</p>
 <ul>
-<li>the status of the pathway, including last-edited date, whether new edits are under review and if it passes all curation checks</li>
+<li>pathway description</li>
 <li>all the authors that have contributed to the pathway over the years</li>
-<li>links to any publications citing the pathway</li>
+<li>the status of the pathway, including last-edited date, whether new edits are under review and if it passes all curation checks</li>
 <li>links open issues and discussions about the pathway</li>
+<li>links to any publications citing the pathway</li>
 <li><a class="btn btn-sm btn-organism btn-pill" style="font-size:small" href="browse/organisms.html"> Organism</a> represented by the pathway</li>
 <li><a class="btn btn-sm btn-community btn-pill" style="font-size:small" href="browse/communities.html"> Communities</a> that are interested in the pathway</li>
 <li><a class="btn btn-sm btn-annotation btn-pill" style="font-size:small" href="browse/annotations.html"> Annotation</a> from Pathway, Disease and Cell Type ontologies </li>
 </ul>
-</p>
 </div>
 <div id="participants">
 <h1>Participants in a Pathway</h1>
@@ -79,7 +79,7 @@ redirect_from:
 </p>
 </div><div id="editing">
 <h1>How to Edit</h1>
-<p>To edit the pathway diagram and properties such as title, description, and participants, you should use our PathVisio drawing tool. See the <a href="#create">Create</a> section below.  In addition to the pathway model, you can also edit the <b>Cited In</b> and <b>Communities</b> sections directly on the site. Click on the pencil icons <span title="Edit cited in" style="color: #666; font-size: 1.0em;"><i class="fa fa-pencil"></i></span> near the section headers on each pathway page.
+<p>To edit the pathway diagram and properties such as title, description, and participants, use our <a href="https://pathvisio.org/" target="_blank">PathVisio</a> drawing tool. See the <a href="#create">Create</a> section below.  In addition to the pathway model, you can also edit the <b>Cited In</b> and <b>Communities</b> sections directly on the site. Click on the pencil icons <span title="Edit cited in" style="color: #666; font-size: 1.0em;"><i class="fa fa-pencil"></i></span> near the section headers on each pathway page.
 </p>
 </div></div>
 
@@ -151,7 +151,7 @@ redirect_from:
 <li>Get started as a <a href="/contribute.html">WikiPathways Contributor</a> today!</li>
 <li>Learn everything about creating and editing pathways, from the basics to advanced topics at the <a href="https://wikipathways.github.io/academy/" target="_blank">WikiPathways Academy</a>.</li>
 <li>For more detailed information on making pathway models, see <a href="https://doi.org/10.1371/journal.pcbi.1009226" target="_blank">Ten simple rules for creating reusable pathway models for computational analysis and visualization</a>.</li>
-<li>Check out the <a href="https://www.youtube.com/channel/UCTkyLj_4u6V4M5lUmyuOGDw">PathVisio YouTube Channel</a> for videos on how to use PathVisio for pathway editing.</li> 
+<li>Check out the <a href="https://www.youtube.com/channel/UCTkyLj_4u6V4M5lUmyuOGDw" target="_blank">PathVisio YouTube Channel</a> for videos on how to use PathVisio for pathway editing.</li> 
 </ul>
 </div>
 <div id="curate">
