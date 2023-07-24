@@ -63,7 +63,7 @@ layout: none
       "uniprot": "{{ uniprot }}",
       "wikidata": "{{ wikidata }}",
       "chebi": "{{ chebi }}",
-      "inchi": "{{ inchi }}"
+      "inchikey": "{{ inchi }}"
       }{% unless forloop.last %},{% endunless %}
       {% endfor %}
   ]
