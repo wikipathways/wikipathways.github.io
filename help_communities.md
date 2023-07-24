@@ -5,7 +5,7 @@ redirect_from: /index.php/Help:WikiPathways_Portals
 <h1>Community Page Help</h1>
 <p><a href="/browse/communities.html">Community pages</a> are defined by two separate files; a <b>Community page</b> describing the community, and a <b>Pathway list</b> defining the pathway set for the community. Creating a new community is as easy as creating these two files and adding them to the appropriate repositories, and making updates to an existing community similarly involves editing the two files for an existing community. The two files have specific requirements on format and content described below. Making edits requires:</p>
 <ul>
-    <li>A free <a href="https://www.github.com/" target="_blank">GitHub account</a>.
+    <li>A free <a href="https://www.github.com/" target="_blank">GitHub account</a>.</li>
     <li>If you have write access to to the relevant WikiPathways repos (<a href="https://github.com/wikipathways/wikipathways-database" target=_blank>wikipathways-database</a> and <a href="https://github.com/wikipathways/wikipathways.github.io" target=_blank>wikipathways.github.io</a>), you can simply commit your changes. If you <b>don't have write access</b>, you will need to clone the two repos locally:</li>
     <ol>
     <li>Clone <a href="https://github.com/wikipathways/wikipathways-database" target=_blank>wikipathways-database</a>.</li>
@@ -13,6 +13,7 @@ redirect_from: /index.php/Help:WikiPathways_Portals
     <li>For wikipathways.github.io, refer to the <a href="https://github.com/wikipathways/wikipathways.github.io#readme">README</a> for instructions on how to build the site locally for testing purposes.</li>
     <li>You can edit the files (markdown and text) in any text editor, but a code editor is recommended, for example <a href="https://code.visualstudio.com/" target=_blank>Visual Studio Code</a>.</li>
     </ol>
+
 </ul>
 <hr>
 <div id="create community">
