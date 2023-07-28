@@ -1,0 +1,29 @@
+---
+layout: none
+---
+{
+  "pathwayInfo": [
+      {% assign pathways = site.pathways | sort: 'wpid' %}
+      {% for pw in pathways %}
+        {% assign auth_orcids = "" | split: ',' %}
+        {% for auth in pw.authors %}
+          {% assign orcid = site.authors | where: "username", auth | map: "orcid" | first  %}
+          {% if orcid != nil %}
+            {% assign auth_orcids = auth_orcids | push: orcid %}
+          {% endif %}
+        {% endfor %}
+        {% if auth_orcids and auth_orcids.size != 0 %}
+        {
+      "id": "{{ pw.wpid }}",
+      "url": "https://www.wikipathways.org/instance/{{ pw.wpid }}",
+      "name": "{{ pw.title }}",
+      "species": "{{ pw.organisms | join: ', ' }}",
+      "revision": "{{ pw.last-edited }}",
+      "authors": "{{ pw.authors | join: ', ' }}",
+      "description": "{{ pw.description | truncate: 200 | escape  }}",
+      "orcids": "{{ auth_orcids | join: ', ' }}"
+        }{% unless forloop.last %},{% endunless %}
+        {% endif %}
+      {% endfor %}
+  ]
+}
