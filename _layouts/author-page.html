@@ -53,21 +53,42 @@ layout: default
           <li><b>Instagram</b>: <a href="https://instagram.com/{{page.instagram}}" target="_blank">{{page.instagram}}</a></li>
         {% endif %}
     </ul>
+    <br/>
+    {% assign wpid_fisrt_string = "" %}
+    {% for pathway in site.pathways %}
+      {% assign first_author = pathway.authors | first %}
+      {% if first_author == page.username %}
+        {% assign wpid_fisrt_string = wpid_fisrt_string | append: pathway.wpid | append: "_|_" %}
+      {% endif %}
+    {% endfor %}
+    {% assign wpid_first_array = wpid_fisrt_string | split: "_|_" %}
+    {% assign sorted_pathways = site.pathways | where: "authors", page.username | sort: "last-edited" | reverse %}
     <ul class="nav nav-tabs">
+      {% assign gallery_class = "active" %}
+      {% if wpid_first_array.size > 0 %}
+      {% assign gallery_class = "" %}
       <li class="nav-item">
-        <a class="nav-link active" data-toggle="tab" href="#gallery">Gallery</a>
+        <a class="nav-link active" data-toggle="tab" href="#first">First-authored</a>
+      </li> 
+      {% endif %}
+      <li class="nav-item">
+        <a class="nav-link {{ gallery_class }}" data-toggle="tab" href="#gallery">Co-authored</a>
       </li> 
       <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#list">List</a>
+        <a class="nav-link" data-toggle="tab" href="#list">List format</a>
       </li>
     </ul>
-    {% assign sorted_pathways = site.pathways | where: "authors", page.username | sort: "last-edited" | reverse %}
-    <b>This author contributed to {{sorted_pathways.size}} pathways:</b>
     <div class="tab-content" >
-      <div class="tab-pane fade show active" id="gallery" role="tabpanel">
+      {% assign gallery_tab_class = "show active" %}
+      {% if wpid_first_array.size > 0 %}
+      {% assign gallery_tab_class = "" %}
+      <div class="tab-pane fade show active" id="first" role="tabpanel">
         <br/>
-    <div class="row">
-      {% for pw in sorted_pathways %}
+        <b>This author initiated {{wpid_first_array.size}} original pathways:</b>
+        <br/><br/>
+        <div class="row">
+          {% for pw in sorted_pathways %}
+          {% if wpid_first_array contains pw.wpid %}
           <div class="col-sm-auto">
             <div class="card" style="width: 10rem;">
               <a class="card-link" href="{{ pw.url }}">
@@ -78,18 +99,41 @@ layout: default
               </a>
             </div>
           </div>
-      {% endfor %}
-    </div>
-  </div>
-  <div class="tab-pane fade" id="list" role="tabpanel">
-    <br/>
-    <div class="row" style="margin-left: 10px;">
-      <ul>
-        {% for pw in sorted_pathways %}
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+      <div class="tab-pane fade {{ gallery_tab_class }}" id="gallery" role="tabpanel">
+        <br/>
+        <b>This author contributed to {{sorted_pathways.size}} pathways:</b>
+        <br/><br/>
+        <div class="row">
+          {% for pw in sorted_pathways %}
+          <div class="col-sm-auto">
+            <div class="card" style="width: 10rem;">
+              <a class="card-link" href="{{ pw.url }}">
+              <img class="card-img-top" loading="lazy" src="/assets/img/{{pw.wpid}}/{{pw.wpid}}-thumb.png" alt="{{ pw.title }}">
+              <div class="card-body">
+                <p class="card-text">{{ pw.title }}</p>
+              </div>
+              </a>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="tab-pane fade" id="list" role="tabpanel">
+        <br/>
+        <b>This author contributed to {{sorted_pathways.size}} pathways:</b>
+        <br/>
+        <div class="row" style="margin-left: 10px;">
+          <ul>
+            {% for pw in sorted_pathways %}
               <li><a href="{{ pw.url }}">{{ pw.title }} - {{pw.wpid}} <em>({{ pw.organisms.first }})</em></a></li>
-        {% endfor %}
-      </ul>
-    </div>  
-  </div>
-</div>
+            {% endfor %}
+          </ul>
+        </div>  
+      </div>
+    </div>
 <br/><hr/>
