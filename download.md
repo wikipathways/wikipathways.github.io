@@ -9,7 +9,7 @@ redirect_from:
 <h2>GPML: Graphical Pathway Markup Language</h2>
 <ul>
 <li>Download an organism-specific <a href="https://data.wikipathways.org/current/gpml" target="_blank"> GPML archive</a> of pathways.</li>
-<li>Download individual pathways in GPML format from each pathway page by accessing the <b>options</b> drop-down under the pathway graphic.</li>
+<li>Download individual pathways in GPML format from each pathway page by accessing the <b>Download pathway as...</b> icon under the pathway graphic.</li>
 <li>Access pathways via the <a href="https://pathvisio.org/plugins/wikipathways.html" target="_blank">WikiPathways plugin</a> in PathVisio to open a pathway in GPML format.</li>
 </ul>
 <h2>GMT: Gene Matrix Transposed</h2>
@@ -24,12 +24,12 @@ redirect_from:
 </ul>
 <h2>SVG: Scalable Vector Graphics</h2>
 <ul>
-<li>Download individual pathways in SVG format from each pathway page by accessing the <b>options</b> drop-down under the pathway graphic.</li>
+<li>Download individual pathways in SVG format from each pathway page by accessing the <b>Download pathway as...</b> icon under the pathway graphic.</li>
 <li>Download all SVG files of the latest <a href="http://data.wikipathways.org/current/svg" target="_blank">monthly release</a>.</li>
 </ul>
 <h2>PNG: Portable Network Graphics</h2>
 <ul>
-<li>Download individual pathways in PNG format from each pathway page by accessing the <b>options</b> drop-down under the pathway graphic.</li>
+<li>Download individual pathways in PNG format from each pathway page by accessing the <b>Download pathway as...</b> icon under the pathway graphic.</li>
 </ul>
 <h2>Archive</h2>
 <ul>
