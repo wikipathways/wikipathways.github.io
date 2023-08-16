@@ -31,10 +31,6 @@ redirect_from:
 <ul>
 <li>Download individual pathways in PNG format from each pathway page by accessing the <b>options</b> drop-down under the pathway graphic.</li>
 </ul>
-<h2>PDF: Portable Document Format</h2>
-<ul>
-<li>Download individual pathways in PDF format from each pathway page by accessing the <b>options</b> drop-down under the pathway graphic.</li>
-</ul>
 <h2>Archive</h2>
 <ul>
 <li>Access all <a href="https://data.wikipathways.org/" target="_blank">monthly releases</a> of the WikiPathways content.</li>
