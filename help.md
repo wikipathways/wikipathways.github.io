@@ -70,12 +70,12 @@ redirect_from:
 <h1>Participants in a Pathway</h1>
 <p>A table of participants lists the names, types, and sources for every identified gene, protein and small molecule in a given pathway. 
 </p>
-<p><b><i>Pro-tip:</i></b> Click on the <b>options</b> button in the lower-right to download the complete table which includes mappings to many common identifiers. This button also includes functionality to query external services, like <a href="https://drugst.one/">Drugst.One</a>, using the list of participants as the query input.
+<p><b><i>Pro-tip:</i></b> Click on the <b>Download as TSV</b> icon at the top of the table to download the complete table which includes mappings to many common identifiers. The <b>Query options</b> icon allows for querying external services, like <a href="https://drugst.one/">Drugst.One</a>, using the list of participants as the query input.
 </p>
 </div>
 <div id="references">
 <h1>Literature References</h1>
-<p>As authors construct a pathway or make new additions, they add literature references to the bibliography of a given pathway. The reference list also includes links to PubMed, Europe PMC and Scholia. The references can also be downloaded as a table (see the <b>options</b> button).
+<p>As authors construct a pathway or make new additions, they add literature references to the bibliography of a given pathway. The reference list also includes links to PubMed, Europe PMC and Scholia. The references can be downloaded as a table via the <b>Download as TSV</b> icon.
 </p>
 </div><div id="editing">
 <h1>How to Edit</h1>
