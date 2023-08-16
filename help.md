@@ -79,7 +79,7 @@ redirect_from:
 </p>
 </div><div id="editing">
 <h1>How to Edit</h1>
-<p>To edit the pathway diagram and properties such as title, description, and participants, use our <a href="https://pathvisio.org/" target="_blank">PathVisio</a> drawing tool. See the <a href="#create">Create</a> section below.  In addition to the pathway model, you can also edit the <b>Cited In</b> and <b>Communities</b> sections directly on the site. Click on the pencil icons <span title="Edit cited in" style="color: #666; font-size: 1.0em;"><i class="fa fa-pencil"></i></span> near the section headers on each pathway page.
+<p>To edit the pathway diagram and properties such as title, description, and participants, use our <a href="https://pathvisio.org/" target="_blank">PathVisio</a> drawing tool. See the <a href="#create">Create</a> section below.  In addition to the pathway model, you can also edit the <b>Cited By</b> and <b>Communities</b> sections directly on the site. Click on the pencil icons <span title="Edit cited in" style="color: #666; font-size: 1.0em;"><i class="fa fa-pencil"></i></span> near the section headers on each pathway page.
 </p>
 </div></div>
 
@@ -182,7 +182,7 @@ redirect_from:
 <h2>Citing WikiPathways</h2>
 <p>If you include WikiPathways in your publications, please review our <a href="/cite.html">How to Cite</a> page for details on referencing the WikiPathways project.</p>
 <h2>Downloading and Accessing Individual Pathways</h2>
-<p>On each pathway page, a set of options for download and links is a available in the <b>options</b> drop-down under pathway image, the <b>Participants</b> table and the <b>References</b> list. Each of these options can also be accessed directly by using the below URL patterns:</p>
+<p>On each pathway page, a set of options for download and links is a available via the icons under the pathway image, the <b>Participants</b> table and the <b>References</b> list. Each of these options can also be accessed directly by using the below URL patterns:</p>
 <!-- <img src="/assets/img/help/DownloadOptions.png" alt="Markdown Example" width="600"> -->
 <ul>
 <li><b>Permalink</b>: The permanent link to a specific pathway has the pattern <code>https://www.wikipathways.org/instance/{WPID}</code>.</li>
@@ -198,7 +198,7 @@ redirect_from:
 <a id="widget"/>
 <h2>Visualizing Data on Pathways</h2>
 <p>You can achieve quick and easy pathway visualizations highlighting multiple nodes with mulitple colors in a single pathway using our interactive pathway viewer.</p>
-<p><b><i>Pro-tip:</i></b> Click the <b>View full size</b> button in the lower-right corner of the pathway viewer. This will open a new tab where you can immediately add node names and colors to the url as paramaters (e.g., "?red=ACE").
+<p><b><i>Pro-tip:</i></b> Click the <b>View full size</b> button in the upper-right corner of the pathway viewer. This will open a new tab where you can immediately add node names and colors to the url as paramaters (e.g., "?red=ACE").
 </p>
 <ul>
 <li><b>Highlight nodes by label and color:</b> Nodes specified by node label; <code>https://pathway-viewer.toolforge.org/embed/WP554?red=ACE</code>.</li>
@@ -208,7 +208,7 @@ redirect_from:
 <p>If you want even more control over your pathway visualizations, like editing and adding objects, then refer to our <a href="https://cytoscape.org/cytoscape-tutorials/protocols/wikipathways-app/#/title" target="_blank">tutorial</a> describing data visualization on pathways in Cytoscape. From this workflow, you can get high-resolution images to include in manuscript, posters and other publications.</p>
 
 <h2>Embedding Pathway Visualizations in Web Pages</h2>
-<p>You can easily embed a simple pathway diagram in any web page using the embed code that is available in the <b>options</b> drop-down under the pathway image. This code has the following pattern:</p>
+<p>You can easily embed a simple pathway diagram in any web page using the embed code that is available in via the <b>Share</b> icon under the pathway image. This code has the following pattern:</p>
 <code>&lt;iframe src ="https://pathway-viewer.toolforge.org/?id={WPID}`" width="600px" height="300px" style="overflow:hidden;"&gt;&lt;/iframe&gt;</code>.
 <p>An example of embedding of a WikiPathways pathway diagram in a website can be found on the <a href="https://www.lipidmaps.org/resources/pathways/wikipathways/WP4345" target="_blank">LIPIDMAPS</a> website.</p>
 <p>It is also possible to embed a pathway with node visualization (described above) in a similar way, simply by adding the iframe tag and parameters like so: <br />
