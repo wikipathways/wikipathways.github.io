@@ -32,7 +32,7 @@ redirect_from: /index.php/Help:Authors
     </div>
     <ul class="list-group list-group-flush">
     <li class="list-group-item"><a href="https://github.com/wikipathways/pathway-curation-tasks/issues?q=is%3Aopen+is%3Aissue+label%3A%22needs+work%22" target="_blank">High-priority curation tasks</a></li>
-    <li class="list-group-item"><a href="https://classic.wikipathways.org/index.php?title=Special:CurationTags&showPathwaysFor=Curation:NeedsWork" target="_blank">All curation tasks</a></li>
+    <li class="list-group-item"><a href="https://github.com/wikipathways/pathway-curation-tasks/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22" target="_blank">Beginner curation tasks</a></li>
   </ul>
   </div>
 </div>
