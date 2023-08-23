@@ -60,7 +60,7 @@ Please remove the `^^xsd:string suffix`, as shown in the example below.
 
 <h2>SPARQL Examples</h2>
 
-We provide [a SPARQL endpoint](http://sparql.wikipathways.org/sparql) where data queries can be done.
+We provide [a SPARQL endpoint](http://sparql.wikipathways.org/sparql/) where data queries can be done.
 
 <h3>WikiPathways Example SPARQL Queries</h3>
 
@@ -194,7 +194,7 @@ if(!"SPARQL" %in% installed.packages()){
 library(SPARQL)
 
 ##Connect to Endpoint WikiPathways
-endpointwp <- "https://sparql.wikipathways.org/sparql"
+endpointwp <- "https://sparql.wikipathways.org/sparql/"
 
 queryDatanodeContent <-
 "
