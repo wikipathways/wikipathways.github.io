@@ -11,19 +11,19 @@ redirect_from: /index.php/Help:WikiPathways_SPARQL_queries
       </a>
     </h1>
 
-On [sparql.wikipathways.org](http://sparql.wikipathways.org/) WikiPathways content is replicated
+On [sparql.wikipathways.org](https://sparql.wikipathways.org/) WikiPathways content is replicated
 in a SPARQL endpoint. Queries can be performed in three ways:
 
 1. Either go to the endpoint directly and create your own SPARQL query.
 2. Copy and paste an example query listed below in the endpoint.
-3. Adapt a code examples to programmatically make a SPARQL query
+3. Adapt a code example to programmatically make a SPARQL query
 
 This project is written up in the "[Using the Semantic Web for Rapid Integration of WikiPathways with Other Biological Online Data Resources](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004989)" paper.
 
 <h2>Notification</h2>
 
 Due to an Apache update, we are now creating RDF data according to SPARQL 1.1. 
-However, our SPARQL-endpoint running on Virtuoso is still using SPARQL 1.0. 
+However, our SPARQL endpoint running on Virtuoso is still using SPARQL 1.0. 
 This influences the way to query strings, and might affect federated queries.
 Please remove the `^^xsd:string suffix`, as shown in the example below.
 
