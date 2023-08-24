@@ -9,6 +9,7 @@ title: JSON API
 This set of JSON files contain all the information needed to replace the prior, deprecated web services. This new approach supports bulk actions with better performance, providing results for all pathways with a single query. The client libraries, such as rWikiPathways, now use these files instead of the deprecated web services while maintaining (and even adding to) the same functionality. These JSON files are generated from the WikiPathways database and are updated in real time with every change. 
 
 <h2>List</h2>
+Comprehensive lists of key data types in WikiPathwys with minimal information for each. 
 <dl>
     <dt><a href="./listOrganisms.json">listOrganisms.json</a></dt>
     <dd>A list of all organisms in WikiPathways as an array of latin genus species values all under the `organisms` key.</dd>
@@ -19,6 +20,7 @@ This set of JSON files contain all the information needed to replace the prior, 
 </dl>
 
 <h2>Get</h2>
+While <b>getCounts.json</b> provides summary statistics for WikiPathways, <b>getPathwayInfo.json</b> provides key metadata for every pathway, and <b>getPathwaysByOntologyTerm.json</b> and <b>getOntologyTermsByPathway.json</b> provide lists of pathways and ontology terms associated with each other, respectively.
 <dl>
     <dt><a href="./getCounts.json">getCounts.json</a></dt>
     <dd>Summary statistics for the WikiPathways database, including the number of `organisms`, `pathways`, `authors`, and `communities` as key-value pairs.</dd>
@@ -31,7 +33,7 @@ This set of JSON files contain all the information needed to replace the prior, 
 </dl>
 
 <h2>Find</h2>
-Note: these files have the same basic struture as the `getPathwayInfo.json` file, but with additional key-value pairs <b>(in bold)</b>.
+These files are particularly useful to consume into your own application or script when wanting to implement custom search functionality. Client libraries are available in specific languages that implement search based on these files. Note: these files have the same basic struture as the <b>getPathwayInfo.json</b> file, but with additional key-value pairs <b>(in bold)</b>.
 <dl>
     <dt><a href="./findPathwaysByText.json">findPathwaysByText.json</a></dt>
     <dd>Relevant text metadata for every pathway in WikiPathways. The `pathwayInfo` key contains an array of arrays containing each pathway's `id`, `url`, `name`, `species`, `revision`, `authors`, `description`, `citedin`, <b>`datanodes`</b>, and <b>`annotations`</b> key-value pairs.</dd>
