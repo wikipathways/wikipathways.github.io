@@ -2,8 +2,8 @@
 title: How to Contribute
 redirect_from: /index.php/Help:Authors
 ---
-<h2>Become a WikiPathways Contributor Today!</h2>
-<p>Want to join the community of researchers and pathway enthusiasts who have shared their time and knowledge here at WikiPathways? Follow the check list to get started on becoming a curator.
+<h2>Become a WikiPathways Author Today!</h2>
+<p>Want to join the community of researchers and pathway enthusiasts who have shared their time and knowledge here at WikiPathways? Follow the check list to get started on becoming an author.
 
 <ol>
     <li style="margin-bottom: 10px;"><a href="https://www.github.com" target="_blank"><b>Create a GitHub Account</b></a>
@@ -11,7 +11,7 @@ redirect_from: /index.php/Help:Authors
     <li style="margin-bottom: 10px;"><a href="https://classic.wikipathways.org/index.php?title=Special:UserLogin&type=signup" target="_blank"><b>Create a WikiPathways account</b></a>
         <br />A free WikiPathways account is required to edit or create pathways at WikiPathways. We are still in the process of <a href="/help.html#move_from_classic">moving from the classic WikiPathways site</a>, and during this time a WikiPathways account is still required.</li>
     <li style="margin-bottom: 10px;"><a href="http://academy.wikipathways.org/stages/walk-install-pv/" target="_blank"><b>Install Tools and Resources</b></a>
-        <br />To work with WikiPathways, the pathway editor PathVisio and the WikiPathways plugin are required.</li>
+        <br />To work with WikiPathways, you will need the pathway editor PathVisio with the WikiPathways plugin installed.</li>
     <li style="margin-bottom: 10px;"><b>Curate: Create or Edit a Pathway Model</b>
         <br />
 <div class="card-deck">
