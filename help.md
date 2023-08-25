@@ -148,7 +148,7 @@ redirect_from:
 <h1>Create Content</h1>
 <p>You can contribute to WikiPathways by creating new pathway models or by improving existing models:</p>
 <ul>
-<li>Get started as a <a href="/contribute.html">WikiPathways Contributor</a> today!</li>
+<li>Get started as a <a href="/contribute.html">WikiPathways Author</a> today!</li>
 <li>Learn everything about creating and editing pathways, from the basics to advanced topics at the <a href="https://wikipathways.github.io/academy/" target="_blank">WikiPathways Academy</a>.</li>
 <li>For more detailed information on making pathway models, see <a href="https://doi.org/10.1371/journal.pcbi.1009226" target="_blank">Ten simple rules for creating reusable pathway models for computational analysis and visualization</a>.</li>
 <li>Check out the <a href="https://www.youtube.com/channel/UCTkyLj_4u6V4M5lUmyuOGDw" target="_blank">PathVisio YouTube Channel</a> for videos on how to use PathVisio for pathway editing.</li> 
