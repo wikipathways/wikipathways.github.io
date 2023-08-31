@@ -14,7 +14,7 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 communities:
-- Kyook
+- WormBase_Approved
 redirect_from:
 - /index.php/User:Kyook
 - /index.php/Special:Contributions/Kyook

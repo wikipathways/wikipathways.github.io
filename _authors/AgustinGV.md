@@ -14,7 +14,7 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 communities:
-- AgustinGV
+- Renal_Genomics
 redirect_from:
 - /index.php/User:AgustinGV
 - /index.php/Special:Contributions/AgustinGV
