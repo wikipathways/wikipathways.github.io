@@ -17,6 +17,9 @@ twitter: xanderpico
 mastodon-url: https://qoto.org/@xanderpico
 meta: ~
 instagram: ~
+communities:
+- CPTAC
+- COVID19
 redirect_from:
 - /index.php/User:AlexanderPico
 - /index.php/Special:Contributions/AlexanderPico

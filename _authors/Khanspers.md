@@ -13,6 +13,9 @@ twitter: ~
 mastodon-url: ~
 meta: ~
 instagram: ~
+communities:
+- CPTAC
+- Diseases
 redirect_from:
 - /index.php/User:Khanspers
 - /index.php/Special:Contributions/Khanspers

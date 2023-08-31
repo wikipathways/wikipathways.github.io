@@ -13,6 +13,10 @@ twitter: ~
 mastodon-url: ~
 meta: ~
 instagram: ~
+communities: 
+- COVID19
+- IEM
+- Lipids
 redirect_from:
 - /index.php/User:DeSl
 - /index.php/Special:Contributions/DeSl

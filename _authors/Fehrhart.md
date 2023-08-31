@@ -13,6 +13,10 @@ twitter: ~
 mastodon-url: ~
 meta: ~
 instagram: ~
+communities: 
+- AOP
+- COVID19
+- RareDiseases
 redirect_from:
 - /index.php/User:Fehrhart
 - /index.php/Special:Contributions/Fehrhart

@@ -13,6 +13,8 @@ twitter: ~
 mastodon-url: ~
 meta: ~
 instagram: ~
+communities:
+- Micronutrients
 redirect_from:
 - /index.php/User:Susan
 - /index.php/Special:Contributions/Susan

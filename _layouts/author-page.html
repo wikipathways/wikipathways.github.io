@@ -53,7 +53,14 @@ layout: default
           <li><b>Instagram</b>: <a href="https://instagram.com/{{page.instagram}}" target="_blank">{{page.instagram}}</a></li>
         {% endif %}
     </ul>
+    <h2 id="communities">Communities</h2>
+    {% for com in site.communities %}
+    {% if page.communities contains com.community-tag %}
+    <a class="btn btn-sm btn-pill btn-community" href="{{com.url}}">{{com.display-name}}</a>
+    {% endif %}
+    {% endfor %}
     <br/>
+    <h2 id="pathways">Pathways</h2>
     {% assign wpid_fisrt_string = "" %}
     {% for pathway in site.pathways %}
       {% assign first_author = pathway.authors | first %}

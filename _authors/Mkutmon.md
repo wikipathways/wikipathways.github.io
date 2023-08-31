@@ -13,6 +13,9 @@ twitter: mkutmon
 mastodon-url: ~
 meta: ~
 instagram: ~
+communities: 
+- COVID19
+- PancCanNet
 redirect_from:
 - /index.php/User:Mkutmon
 - /index.php/Special:Contributions/Mkutmon

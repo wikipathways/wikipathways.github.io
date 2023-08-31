@@ -13,6 +13,8 @@ twitter: ~
 mastodon-url: ~
 meta: ~
 instagram: ~
+communities: 
+- COVID19
 redirect_from:
 - /index.php/User:NhungP
 - /index.php/Special:Contributions/NhungP

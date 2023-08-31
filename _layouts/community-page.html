@@ -125,11 +125,23 @@ layout: default
 <h2>Support</h2>
 <p>{{ page.support | markdownify }}</p>
 {% endif %}
-
-<h2>Authors of Community Pathways</h2>
+<!-- author preprocessing used in both sections below -->
 {% assign sorted_pw_authors = sorted_pathways | map: "authors" | join: ','  | split: ',' | uniq  %}
 {% assign blocked_authors = "Wpblocked,Unknown,TestUser,MaintBot" | split:"," %}
 {% assign all_authors = '' | split: '' %}
+<h2>Community Members</h2>
+{% for auth in site.authors %}
+  {% if auth.communities contains page.community-tag %}
+    {% unless blocked_authors contains auth.username %}
+    {% capture thisAuth %}
+      <a href="{{site.url}}/authors/{{auth.username}}.html" title="View author profile">{{auth.realname}}</a>
+    {% endcapture %}
+    {% assign all_authors = all_authors | push: thisAuth %}
+    {% endunless %}
+  {% endif %} 
+{% endfor %}
+<p>{{ all_authors | array_to_sentence_string }}.</p>
+<h2>Authors of Community Pathways</h2>
 {% for auth in sorted_pw_authors %}
   {% unless blocked_authors contains auth %}
     {% assign realname = site.authors | where: "username", auth | map: "realname" | first  %}

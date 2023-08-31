@@ -13,6 +13,8 @@ twitter: ~
 mastodon-url: ~
 meta: ~
 instagram: ~
+communities:
+- Kyook
 redirect_from:
 - /index.php/User:Kyook
 - /index.php/Special:Contributions/Kyook

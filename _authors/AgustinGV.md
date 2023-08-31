@@ -13,6 +13,8 @@ twitter: AgustinGonVi
 mastodon-url: ~
 meta: ~
 instagram: ~
+communities:
+- AgustinGV
 redirect_from:
 - /index.php/User:AgustinGV
 - /index.php/Special:Contributions/AgustinGV

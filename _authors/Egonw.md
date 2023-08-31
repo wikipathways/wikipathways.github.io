@@ -13,6 +13,10 @@ twitter: ~
 mastodon-url: https://scholar.social/@egonw
 meta: ~
 instagram: ~
+communities: 
+- COVID19
+- Daphnia
+- Nanomaterials
 redirect_from:
 - /index.php/User:Egonw
 - /index.php/Special:Contributions/Egonw
