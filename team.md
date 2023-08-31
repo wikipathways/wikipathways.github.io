@@ -1,6 +1,6 @@
 ---
 title: Team
-curators:
+reviewers:
 - Egonw
 - Khanspers
 - Mkutmon
@@ -40,7 +40,7 @@ redirect_from:
 
 ---
 <h1>Who is behind WikiPathways?</h1>
-WikiPathways is run by people like you! Join our teams of <a href="#curators">curators</a>, <a href="#community_editors">community editors</a> and <a href="#developers">developers</a> to maintain this public resource of pathway information.
+WikiPathways is run by people like you! Join our teams of <a href="#reviewers">reviewers</a>, <a href="#community_editors">community editors</a> and <a href="#developers">developers</a> to maintain this public resource of pathway information.
 
 <a name="architects"/>
 <h2>Coordination</h2>
@@ -51,7 +51,7 @@ WikiPathways is run by people like you! Join our teams of <a href="#curators">cu
     <li><a href="{{site.url}}/authors/{{a}}.html" title="View profile">{{ auth.realname }}</a></li>
 {% endfor %}
 </ul>
-<b>Community Coordinators:</b> Responsible for curation coordination, organization of community meetings, educational material.
+<b>Community Coordinators:</b> Responsible for reviewer coordination, organization of community meetings, educational material.
 <ul>
 {% for a in page.coordination %}
     {% assign auth = site.authors | where: "username", a | first  %}
@@ -59,11 +59,11 @@ WikiPathways is run by people like you! Join our teams of <a href="#curators">cu
 {% endfor %}
 </ul>
 
-<a name="curators"/>
-<h2>Curators</h2>
-Help review pathway edits, monitor automated reports, or join the <b><i>Curator of the Week</i></b> roster.
+<a name="reviewers"/>
+<h2>Reviewers</h2>
+Help review pathway edits, monitor automated reports, or join the <b><i>Reviewer Roster</i></b>.
 <div class="row">
-{% for a in page.curators %}
+{% for a in page.reviewers %}
     {% assign auth = site.authors | where: "username", a | first  %}
 <div class="col-sm-3"><div class="card mb-3" style="max-width: 300px; padding:5px; background-color:#eae6ff;">
   <div class="row no-gutters">

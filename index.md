@@ -1,7 +1,7 @@
 ---
 layout: home2
 title: Home
-curator_of_the_week:
+reviewer_roster:
 - Ash iyer
 - Elisson nl
 - AlexanderPico
@@ -171,9 +171,9 @@ redirect_from:
                     <a class="btn btn-sm btn-front my-2" href="/help.html#create">Contribute</a>
                     <a class="btn btn-sm btn-front my-2" href="http://academy.wikipathways.org/" target="_blank">Learn</a>
                     <a class="btn btn-sm btn-front my-2" href="https://github.com/wikipathways/wikipathways-development" target="_blank">Code</a>
-                <br /><br /><h2 style="font-weight: normal;">Curator of the Week</h2>
-                {% assign pick =  "now" | date:"%W" | minus: 1 | modulo: page.curator_of_the_week.size %}
-                {% assign cauth = site.authors | where: "username", page.curator_of_the_week[pick] | first  %}
+                <br /><br /><h2 style="font-weight: normal;">This week's assigned reviewer</h2>
+                {% assign pick =  "now" | date:"%W" | minus: 1 | modulo: page.reviewer_roster.size %}
+                {% assign cauth = site.authors | where: "username", page.reviewer_roster[pick] | first  %}
                 <div class="card mb-3" style="max-width: 300px; padding:5px;">
                   <div class="row no-gutters">
                     <div class="col-md-4">

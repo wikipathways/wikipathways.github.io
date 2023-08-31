@@ -34,7 +34,7 @@ redirect_from:
         <a href="#participate">Participate</a>
             <ul>
                 <li><a href="#create">Create</a></li>
-                <li><a href="#curate">Curate</a></li>
+                <li><a href="#review">Review</a></li>
                 <li><a href="#code">Code</a></li>
                 <li><a href="#analyze">Analyze</a></li>
                 <li><a href="#publish">Publish</a></li>
@@ -154,16 +154,16 @@ redirect_from:
 <li>Check out the <a href="https://www.youtube.com/channel/UCTkyLj_4u6V4M5lUmyuOGDw" target="_blank">PathVisio YouTube Channel</a> for videos on how to use PathVisio for pathway editing.</li> 
 </ul>
 </div>
-<div id="curate">
-<h1>Curate Changes</h1>
-<p>To maintain WikiPathways as a high-quality pathway resource, a weekly rotation of community curators work to ensure the quality of new content and edits to existing content. Our <a href="https://wikipathways.org/academy/qaprotocol.html" target="_blank">Quality Assurance Protocol</a> checks for the following things:</p>
+<div id="review">
+<h1>Review Changes</h1>
+<p>To maintain WikiPathways as a high-quality pathway resource, a weekly rotation of reviwers from the community help to ensure the quality of new content and edits to existing content. Our <a href="https://wikipathways.org/academy/qaprotocol.html" target="_blank">Quality Assurance Protocol</a> checks for the following things:</p>
 <ul>
 <li>Do pathway nodes have valid database identifiers?</li>
 <li>Are interactions properly connected to nodes?</li>
 <li>Do pathway titles conform to guidelines?</li>
 <li>Are all pathways tagged with appropriate ontology tags, and does each pathway have a useful description?</li>
 </ul>
-<p>Anyone is welcome to join the Curator-of-the-week roster. Please <a href="https://github.com/wikipathways/wikipathways-help/discussions" target="_blank">contact us</a> if you are interested.</p>
+<p>Anyone is welcome to join the Reviewer Roster. Please <a href="https://github.com/wikipathways/wikipathways-help/discussions" target="_blank">contact us</a> if you are interested.</p>
 </div>
 <div id="code">
 <h1>Code New Features</h1>
@@ -229,7 +229,7 @@ This code will produce the following iframe:</p>
     <li>This website <b>contains only approved pathways</b> that have undergone review. Consequently, newly uploaded pathways will be immediately available on the classic site (<a href="https://classic.wikipathways.org/" target="_blank">https://classic.wikipathways.org/</a>), but will not be visible on this site until they are completed and approved. Once a pathway is uploaded to WikiPathways classic, the process of including them on the new site is as follows:</li>
         <ul>
             <li><b>Pathways under construction</b>: If your pathway is still under construction, keep the "Under Construction" tag. You can keep working on the pathway and it will stay on the classic site.</li>
-            <li><b>Completed pathways</b>: If your pathway is complete, remove the "Under Construction" tag. The pathway will be reviewed by our Curators. Once it is approved, it will be made available on the new site. This process typically takes 5-7 days right now.</li>
+            <li><b>Completed pathways</b>: If your pathway is complete, remove the "Under Construction" tag. The pathway will be reviewed by our Reviewers. Once it is approved, it will be made available on the new site. This process typically takes 5-7 days right now.</li>
         </ul>
 </ul>
 
