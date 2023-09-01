@@ -1,6 +1,6 @@
 ---
 username: Torresandon
-realname: Fernando Torres Andn
+realname: Fernando Torres Andón
 website: ~
 affiliation: ~
 bio: ~
