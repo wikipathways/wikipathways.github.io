@@ -30,7 +30,18 @@ title: Search Results
   <ul id="results-container" style="list-style:none;float:left;width:75%;"></ul>
 </div>
 
-<div class="alert" role="alert" style="float:right;width:150px;background-color:#ffeaca;color:#857444;">
+<div style="float:right;">
+<div class="alert" role="alert" style="width:150px;background-color:#cfcfff;color:#474777;">
+  <h3>Alternative search options:</h3> 
+  <ul style="list-style:none;margin-left:-5px;text-align:center;">
+      <li><a id="pfocr-search" class="btn btn-sm btn-front my-1" style="font-size:medium;width:115px" title="Send query to the Pathway Figure OCR database"
+      href=""> Search PFOCR</a></li>
+      <li><a class="btn btn-sm btn-front my-1" style="font-size:medium;width:115px" title="Query lists of genes using iQuery"
+      href="https://www.ndexbio.org/iquery/" target="_blank"> NDEx iQuery</a></li>
+  </ul>
+</div> 
+
+<div class="alert" role="alert" style="width:150px;background-color:#ffeaca;color:#857444;">
   <h3>Additional ways to find pathways:</h3> 
   <ul style="list-style:none;margin-left:-5px;text-align:center;">
     {% assign sorted_browse = site.browse | where:"btn-class","btn-front" | sort: "order" %} 
@@ -43,6 +54,7 @@ title: Search Results
     {% endfor %}   
   </ul>
 </div> 
+</div>
 
 <script>
 SimpleJekyllSearch({
@@ -99,4 +111,10 @@ function triggerInputEvent() {
   });
 }
 triggerInputEvent();
+
+document.getElementById("pfocr-search").addEventListener("click", function() {
+    const formElement = document.getElementById("search-input");
+    const url = "https://pfocr.wikipathways.org/search.html?query=" + encodeURIComponent(formElement.value);
+    window.open(url, '_blank');
+});
 </script>
