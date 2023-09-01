@@ -41,13 +41,13 @@ collections:
 - name: "Deregulating cellular energetics"
   wpids: ['WP2868','WP1471','WP534','WP143','WP4206','WP4290']
 - name: "Genome instability and mutation"
-  wpids: ['WP707','WP3878','WP710','WP3875','WP438','WP531','WP704','WP4016','WP3959','WP2516']
+  wpids: ['WP707','WP3878','WP710','WP3875','WP438','WP531','WP704','WP4016','WP3959','WP2516','WP241','WP4216','WP4240','WP4931','WP4752','WP4753']
 - name: "Tumor promoting inflammation"
   wpids: ['WP530','WP3929','WP364','WP195']
 - name: "Avoiding immune destruction"
   wpids: ['WP619','WP585','WP4480']
 - name: "Therapeutics"
-  wpids: ['WP3672','WP3640','WP3614','WP3617','WP3879','WP1601','WP3','WP4357','WP4301','WP3844']
+  wpids: ['WP3672','WP3640','WP3614','WP3617','WP3879','WP1601','WP3','WP4357','WP4301','WP3844','WP3593','WP4585','WP4582','WP4559','WP229']
   
 
 redirect_from:
