@@ -39,7 +39,7 @@ collections:
 - name: "Resisting cell death"
   wpids: ['WP254','WP3982','WP1742','WP3844','WP1471']
 - name: "Deregulating cellular energetics"
-  wpids: ['WP2868','WP1471','WP534','WP143','WP4206','WP4290']
+  wpids: ['WP2868','WP1471','WP534','WP143','WP4206','WP4290','WP5216','WP5213']
 - name: "Genome instability and mutation"
   wpids: ['WP707','WP3878','WP710','WP3875','WP438','WP531','WP704','WP4016','WP3959','WP2516','WP241','WP4216','WP4240','WP4931','WP4752','WP4753']
 - name: "Tumor promoting inflammation"
