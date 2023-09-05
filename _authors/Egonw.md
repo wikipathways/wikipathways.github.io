@@ -17,6 +17,7 @@ communities:
 - COVID19
 - Daphnia
 - Nanomaterials
+- Lipids
 redirect_from:
 - /index.php/User:Egonw
 - /index.php/Special:Contributions/Egonw
