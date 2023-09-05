@@ -23,6 +23,7 @@ community-tag: "Lipids"
 
 editors: 
 - DeSl
+- Egonw
 
 collections-title: "LIPID MAPS Pathways"
 collections:
