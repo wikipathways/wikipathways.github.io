@@ -67,4 +67,4 @@ btn-class: "btn-front"
     {% assign all_authors = all_authors | push: thisAuth %}
   {% endunless %}
 {% endfor %}
-<p>{{ all_authors | array_to_sentence_string }}.</p>
+<p>{{ all_authors | uniq | array_to_sentence_string }}.</p>
