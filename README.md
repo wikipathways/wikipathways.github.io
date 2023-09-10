@@ -1,7 +1,10 @@
 # WikiPathways Website
-Jekyll powered GitHub pages for GPML-Repo content
+Jekyll-powered GitHub Pages for wikipathways-database repo contents
 
 Visit site at: https://www.wikipathways.org/
+
+## Issues
+The issue tracker here should only be used by the dev team for website-specific bugs and features. All user issues should go to [wikipathways-help](https://github.com/wikipathways/wikipathways-help#readme) for triage.
 
 ## Content
 Pathway content can be added as .md files to the [\_pathways](https://github.com/wikipathways/wikipathways.github.io/tree/main/_pathways) directory. The top portion of the .md file is the Jekyll Front Matter, which defines metadata used to generate the site, organize content and generate search metadata optimized for search engines.
