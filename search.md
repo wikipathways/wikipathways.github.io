@@ -27,6 +27,8 @@ title: Search Results
   <a href="search.html?query=drosophila">drosophila</a> |  
   <a href="search.html?query=cancer 2023">cancer 2023</a> |  
   <a href="search.html?query=wp554">WP554</a></span>
+  <br>
+  <img id="loading-gif" src="/assets/img/loading.gif" alt="Loading..." style="display: none;width: 50px;float: left;margin: 25px;">
   <ul id="results-container" style="list-style:none;float:left;width:75%;"></ul>
 </div>
 
@@ -86,8 +88,13 @@ SimpleJekyllSearch({
 function triggerInputEvent() {
   //AP: Support multiple searchboxes and query params
   const searchInput = document.getElementById('search-input')
+  const loadingGif = document.getElementById('loading-gif'); // Get the loading gif element
   const searchParams = new URLSearchParams(window.location.search);
   const query = searchParams.get('query');
+
+  loadingGif.style.display = 'block'; // Show the loading gif
+  searchInput.value = "performing search..."; 
+
   const registerInputPromise = new Promise((resolve) => {
     if (hasInputListener) {
       resolve();
@@ -105,6 +112,7 @@ function triggerInputEvent() {
   });
   registerInputPromise.then(() => {
     //console.log(query);
+    loadingGif.style.display = 'none'; // Hide the loading gif
     searchInput.value = query; 
     const inputEvent = new InputEvent('input', { inputType: 'insertText' });
     searchInput.dispatchEvent(inputEvent);
