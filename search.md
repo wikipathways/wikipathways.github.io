@@ -93,7 +93,7 @@ function triggerInputEvent() {
   const query = searchParams.get('query');
 
   loadingGif.style.display = 'block'; // Show the loading gif
-  searchInput.value = "performing search..."; 
+  searchInput.value = query; 
 
   const registerInputPromise = new Promise((resolve) => {
     if (hasInputListener) {
