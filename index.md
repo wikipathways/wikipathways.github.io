@@ -125,9 +125,10 @@ redirect_from:
                 <div class="row mx-auto" style="display:flex; flex-wrap: wrap;">            
                   <div class="col-3" style="display:flex; margin-left:0px;">
                     <div class="container">
+                    <span style="font-family:Linux Libertine; font-weight: bold;margin-left: 17px;font-size: larger;">Collections:</span>
       {% assign sorted_browse = site.browse | where_exp:"item","item.btn-class contains 'pill'" | sort: "order" %}
       {% for bp in sorted_browse %}
-        <a class="btn btn-sm {{bp.btn-class}} w-100 my-2" style="font-size:large" href="{{bp.url}}" title="{{bp.tooltip}}"> {{ bp.display-title }}</a>
+        <a class="btn btn-sm {{bp.btn-class}} w-100" style="font-size:large" href="{{bp.url}}" title="{{bp.tooltip}}"> {{ bp.display-title }}</a>
       {% endfor %}           
                     </div>
                   </div>
