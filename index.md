@@ -37,6 +37,7 @@ redirect_from:
                 <h2 style="font-family:Poppins; line-height:1.4; font-weight: normal"><b>WikiPathways</b> is an open science platform for biological pathways contributed, updated, and used by the research community.
                 </h2>
                 <a class="btn btn-sm btn-front my-1" href="/about.html">Read more</a>
+                <a class="btn btn-sm btn-front my-1" href="https://youtu.be/oSyoDU2r4Q0" target="_blank">Video tour</a>
                 <div style="display:flex; align-items:center; font-size:14px; margin-top:10px;">
                   <span>Powered by:</span>
                   <a href="https://pathvisio.org" target="_blank">
