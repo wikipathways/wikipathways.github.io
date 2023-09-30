@@ -13,6 +13,7 @@ redirect_from:
     <div class="col text-nowrap">
         <a href="#investigate">Investigate</a>
             <ul>
+                <li><a href="#video">Video tour</a></li>
                 <li><a href="#viewer">Interactive viewer</a></li>
                 <li><a href="#attributes">Attributes</a></li>
                 <li><a href="#participants">Participants</a></li>
@@ -43,6 +44,11 @@ redirect_from:
 </div></div>
 
 <div id="investigate">
+<div id="video">
+<h1>Video Tour</h1>
+<p>Take a video tour of the new WikiPathways website!</p>
+<p><iframe width="420" height="236.25" src="https://www.youtube.com/embed/oSyoDU2r4Q0?si=KdSDg0DMbYa2FU_x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+<p>TogoTV. Sep 21 2023, YouTube: <a href="https://youtu.be/oSyoDU2r4Q0" target="_blank">https://youtu.be/oSyoDU2r4Q0</a>, DOI: <a href="https://doi.org/10.7875/togotv.2023.063" target="_blank">https://doi.org/10.7875/togotv.2023</a>.</p>
 <div id="viewer">
 <h1>Interactive Pathway Viewer</h1>
 <p>Each pathway offers a dedicated page for interactive viewing. Click on the open icon <span title="Open in new tab" style="color: #FF8120; background-color: #FFFFFF; font-size: 1.0em;"><i class="fa fa-arrow-up-right-from-square"></i></span> or anywhere on the image to open the interactive in a new tab. Zoom in and out by scrollwheel, pan by click-n-drag, and click on genes, proteins and metabolites to open external pages in Scholia dedicated to each molecule. Here's a mini example:
