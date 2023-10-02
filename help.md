@@ -47,7 +47,7 @@ redirect_from:
 <div id="video">
 <h1>Video Tour</h1>
 <p>Take a video tour of the new WikiPathways website!</p>
-<p><iframe width="420" height="236.25" src="https://www.youtube.com/embed/oSyoDU2r4Q0?si=KdSDg0DMbYa2FU_x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+<p><iframe width="546" height="307.125" src="https://www.youtube.com/embed/oSyoDU2r4Q0?si=KdSDg0DMbYa2FU_x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
 <p>TogoTV. Sep 21 2023, YouTube: <a href="https://youtu.be/oSyoDU2r4Q0" target="_blank">https://youtu.be/oSyoDU2r4Q0</a>, DOI: <a href="https://doi.org/10.7875/togotv.2023.063" target="_blank">https://doi.org/10.7875/togotv.2023</a>.</p>
 <div id="viewer">
 <h1>Interactive Pathway Viewer</h1>
