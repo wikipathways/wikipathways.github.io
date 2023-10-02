@@ -1,11 +1,11 @@
 ---
 username: Pennings
-realname: Pennings
+realname: Jeroen Pennings
 website: 
 affiliation: 
 bio: 
-github: 
-orcid: 
+github: jlapennings
+orcid: 0000-0002-9188-6358
 linkedin: 
 googlescholar: 
 wikidata: 
