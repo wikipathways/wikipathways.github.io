@@ -80,8 +80,8 @@ tail(combo.df[,2:4],1)
 ```
 
 ```
-##    edits pathways     month
-## 68    85     1917 September
+##    edits pathways   month
+## 69   157     1919 October
 ```
 
 Next, let's plot a time series
