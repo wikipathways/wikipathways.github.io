@@ -28,7 +28,7 @@ Visualization tools like [Cytoscape](http://www.cytoscape.org/) can also be used
     </td>
     <td>
       <center>
-        <img src="/assets/img/WP5358.png.png" width="95%"/> <br />
+        <img src="/assets/img/WP5358.png" width="95%"/> <br />
         WikiPathways model
       </center>
     </td>
