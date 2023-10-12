@@ -15,20 +15,20 @@ A showcase of WikiPathways models styled to produce images comparable to origina
 model and then style any biological process, starting from a published figure or your own research results.
 Visualization tools like [Cytoscape](http://www.cytoscape.org/) can also be used to perform data-driven styling.
 
-# PDGFR-beta and ovarian cancer survival
+# Regulation of β-cells by JAK-STAT signaling in tandem with multiple cytokines and hormones
 
-(Zhang, Cell 2016) [PubMed](http://www.ncbi.nlm.nih.gov/pubmed/27372738)
+(Jiang et al) [PubMed](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6143874/)
 
 <table>
   <tr>
     <td rowspan="2" style="width: 60%">
       <center>
-        <img src="/assets/img/PDGFR-beta_pathway.png" width="95%"/>
+        <img src="/assets/img/WP5358_styled.png" width="95%"/>
       </center>
     </td>
     <td>
       <center>
-        <img src="/assets/img/WP3972_108157.png" width="95%"/> <br />
+        <img src="/assets/img/WP5358.png.png" width="95%"/> <br />
         WikiPathways model
       </center>
     </td>
@@ -36,7 +36,7 @@ Visualization tools like [Cytoscape](http://www.cytoscape.org/) can also be used
   <tr>
     <td>
       <center>
-        <img src="/assets/img/PDGFR-beta_original.png" width="95%"/>  <br />
+        <img src="/assets/img/PMC6143874__etm-16-04-3275-g02.jpg" width="95%"/>  <br />
         Original figure
       </center>
     </td>  
