@@ -2,7 +2,7 @@
 title: How to Contribute
 redirect_from: /index.php/Help:Authors
 ---
-<h1>Information for WikiPathways Author</h1>
+<h1>Information for WikiPathways Authors</h1>
 <p>We invite all interested researchers and authors to participate in the WikiPathways project! This page includes information about the process of getting started as an author, requirements for pathway models, and our review process.</p>
 
 <h2>Requirements for Pathway Content</h2>
