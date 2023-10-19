@@ -154,7 +154,7 @@ redirect_from:
 <h1>Create Content</h1>
 <p>You can contribute to WikiPathways by creating new pathway models or by improving existing models:</p>
 <ul>
-<li>Get started as a <a href="/contribute.html">WikiPathways Author</a> today!</li>
+<li>Learn everything you need to know about <a href="/contribute.html">getting started as a WikiPathways author</a> today!</li>
 <li>Learn everything about creating and editing pathways, from the basics to advanced topics at the <a href="https://wikipathways.github.io/academy/" target="_blank">WikiPathways Academy</a>.</li>
 <li>For more detailed information on making pathway models, see <a href="https://doi.org/10.1371/journal.pcbi.1009226" target="_blank">Ten simple rules for creating reusable pathway models for computational analysis and visualization</a>.</li>
 <li>Check out the <a href="https://www.youtube.com/channel/UCTkyLj_4u6V4M5lUmyuOGDw" target="_blank">PathVisio YouTube Channel</a> for videos on how to use PathVisio for pathway editing.</li> 
@@ -167,7 +167,7 @@ redirect_from:
 <li>Do pathway nodes have valid database identifiers?</li>
 <li>Are interactions properly connected to nodes?</li>
 <li>Do pathway titles conform to guidelines?</li>
-<li>Are all pathways tagged with appropriate ontology tags, and does each pathway have a useful description?</li>
+<li>Do pathways have appropriate ontology tags, and does each pathway have a useful description?</li>
 </ul>
 <p>Anyone is welcome to join the Reviewer Roster. Please <a href="https://github.com/wikipathways/wikipathways-help/discussions" target="_blank">contact us</a> if you are interested.</p>
 </div>
