@@ -20,6 +20,8 @@ contribute:
 community-tag: "ExRNA"
 
 editors: 
+- vpetrosyan
+- dc12-bcm
 
 redirect_from:
 - /index.php/Portal:ExRNA
