@@ -356,8 +356,18 @@ layout: default
 {% assign refs=site.data[wpid-refs] %}
 <ol>
   {% for ref in refs %}
-  <li style="padding-bottom: 10px;">{{ ref.Citation }}</li>
-      {% endfor %}
+    <li style="padding-bottom: 10px;">
+      {{ ref.Citation }}
+      {% unless ref.Citation %}
+        {{ ref.Database }}:
+        {% if ref.Database == "URL" %}
+          <a href="{{ ref.ID }}" target="_blank" class="external" rel="nofollow">{{ ref.ID }}</a>
+        {% else %}
+          {{ ref.ID }}
+        {% endif %}
+      {% endunless %}
+    </li>
+  {% endfor %}
 </ol>
 
 <!-- JAVASCRIPT -->
