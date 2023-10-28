@@ -357,15 +357,16 @@ layout: default
 <ol>
   {% for ref in refs %}
     <li style="padding-bottom: 10px;">
-      {{ ref.Citation }}
-      {% unless ref.Citation %}
+      {% if ref.Citation %}
+        {{ ref.Citation }}
+      {% else %}
         {{ ref.Database }}:
         {% if ref.Database == "URL" %}
           <a href="{{ ref.ID }}" target="_blank" class="external" rel="nofollow">{{ ref.ID }}</a>
         {% else %}
           {{ ref.ID }}
         {% endif %}
-      {% endunless %}
+      {% endif %}
     </li>
   {% endfor %}
 </ol>
