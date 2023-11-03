@@ -52,6 +52,9 @@ layout: default
         {% if page.instagram %}
           <li><b>Instagram</b>: <a href="https://instagram.com/{{page.instagram}}" target="_blank">{{page.instagram}}</a></li>
         {% endif %}
+        {% if page.email %}
+        <li><b>Email</b>: <a href="mailto:{{page.email}}" target="_blank">{{page.email}}</a></li>
+      {% endif %}
     </ul>
     <h2 id="communities">Communities</h2>
     {% for com in site.communities %}
