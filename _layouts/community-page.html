@@ -14,6 +14,21 @@ layout: default
       </a>
     </h2>
     <p>{{ page.description | markdownify }}</p>
+    <h2 id-contacts>Contact</h2>
+  {% assign all_contacts = '' | split: '' %}
+  {% if page.editors %}
+  {% assign contacts = page.editors %}
+  {% for auth in site.authors %}
+   {% if contacts contains auth.username %}
+      {% capture thisContact %}
+        <a href="{{site.url}}/authors/{{auth.username}}.html" title="View author profile">{{auth.realname}}</a>
+      {% endcapture %}
+      {% assign all_contacts = all_contacts | push: thisContact %}
+    {% endif %} 
+   {% endfor %}
+  <p>{{ all_contacts | array_to_sentence_string}}.</p>
+  {% endif %} 
+
     {% assign sorted_pathways = site.pathways | where: "communities", page.community-tag | sort: "title" %}
     {% if page.collections-title %}
       <h2> {{ page.collections-title }}</h2>
