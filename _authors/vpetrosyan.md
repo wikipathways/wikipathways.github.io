@@ -13,6 +13,8 @@ twitter: ~
 mastodon-url: ~
 meta: ~
 instagram: ~
+communities:
+- ExRNA
 redirect_from:
 - /index.php/User:vpetrosyan
 - /index.php/Special:Contributions/vpetrosyan
