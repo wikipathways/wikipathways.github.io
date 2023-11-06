@@ -8,7 +8,7 @@ redirect_from: /index.php/How_to_cite_WikiPathways
 <ul>
     <li>In general, we recommend citing either our latest <i>NAR</i> database article or the original 2008 <i>PLoS Biology</i> article:
     <ul>
-        <li><a href="https://doi.org/10.1093/NAR/gkaa1024" target="_blank">Martens M, et al. <b>(2021)</b> WikiPathways: connecting communities. <i>NAR</i></a>.</li>
+        <li><a href="https://doi.org/10.1093/nar/gkad960" target="_blank">Agrawal a, et al. <b>(2023)</b> WikiPathways 2024: next generation pathway database. <i>NAR</i></a>.</li>
         <li><a href="https://doi.org/10.1371/journal.pbio.0060184" target="_blank">Pico AR, et al. <b>(2008)</b> WikiPathways: Pathway Editing for the People. <i>PLoS Biol</i></a>. </li>
     </ul>
     </li>
@@ -18,7 +18,7 @@ redirect_from: /index.php/How_to_cite_WikiPathways
             <li><b>Metabolomics, QA, WikiPathways Academy</b>: <a href="https://doi.org/10.1093/NAR/gkx1064" target="_blank">Slenter DN, et al. <b>(2018)</b> WikiPathways: a multifaceted pathway database bridging metabolomics to other omics research. <i>NAR</i></a>.</li>
             <li><b>Growth, Reactome, Pathway Widget</b>: <a href="https://dx.doi.org/10.1093/NAR/gkv1024" target="_blank">Kutmon M, et al. <b>(2016)</b> WikiPathways: capturing the full diversity of pathway knowledge. <i>NAR</i></a>.</li>
             <li><b>RDF, SPARQL, vocabularies, nanopublications</b>: <a href="https://doi.org/10.1371/journal.pcbi.1004989" target="_blank">Waagmeester A, et al. <b>(2016)</b> Using the semantic web for rapid integration of WikiPathways with other biological online data resources. <i>PLoS Comput Biol</i></a>.</li>
-            <li><b>Communities, Ontologies, Linkouts</b>: <a href="https://doi.org/10.1093/nar/gkr1074" target="_blank">Kelder T, et al. <b>(2012)</b> WikiPathways: building research communities on biological pathways. <i>NAR</i></a>.</li>
+            <li><b>Communities, Ontologies, Linkouts</b>: <a href="https://doi.org/10.1093/nar/gkr1074" target="_blank">Kelder T, et al. <b>(2012)</b> WikiPathways: building research communities on biological pathways. <i>NAR</i></a> or <a href="https://doi.org/10.1093/NAR/gkaa1024" target="_blank">Martens M, et al. <b>(2021)</b> WikiPathways: connecting communities. <i>NAR</i></a>.</li>
             <li><b>Web service</b>: <a href="https://doi.org/10.1371%2Fjournal.pone.0006447" target="_blank">Kelder T, et al. <b>(2009)</b> Mining Biological Pathways Using WikiPathways Web Services. <i>PLoS One</i></a>.</li>
         </ul>
     </li>
