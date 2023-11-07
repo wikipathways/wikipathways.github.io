@@ -363,6 +363,14 @@ layout: default
         {{ ref.Database }}:
         {% if ref.Database == "URL" %}
           <a href="{{ ref.ID }}" target="_blank" class="external" rel="nofollow">{{ ref.ID }}</a>
+        {% elsif ref.Database == "KEGG Pathway" %}
+          <a href="http://www.genome.jp/dbget-bin/www_bget?pathway+{{ ref.ID }}" target="_blank" class="external" rel="nofollow">{{ ref.ID }}</a>
+        {% elsif ref.Database == "Entrez Gene" %}
+          <a href="http://www.ncbi.nlm.nih.gov/gene/{{ ref.ID }}" target="_blank" class="external" rel="nofollow">{{ ref.ID }}</a>
+        {% elsif ref.Database == "WikiPathways" %}
+          <a href="https://www.wikipathways.org/instance/{{ ref.ID }}" target="_blank" class="external" rel="nofollow">{{ ref.ID }}</a>
+        {% elsif ref.Database == "Uniprot-TrEMBL" %}
+          <a href="http://www.uniprot.org/uniprot/{{ ref.ID }}" target="_blank" class="external" rel="nofollow">{{ ref.ID }}</a>
         {% else %}
           {{ ref.ID }}
         {% endif %}
