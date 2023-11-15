@@ -15,6 +15,7 @@ meta: ~
 instagram: ~
 communities:
 - ExRNA
+email: dc12@bcm.edu
 redirect_from:
 - /index.php/User:dc12-bcm
 - /index.php/Special:Contributions/dc12-bcm
