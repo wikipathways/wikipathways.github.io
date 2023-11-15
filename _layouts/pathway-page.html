@@ -9,9 +9,11 @@ layout: default
 {% for auth in page.authors %}
   {% unless blocked_authors contains auth %}
       {% assign realname = site.authors | where: "username", auth | map: "realname" | first  %}
-      {% capture thisAuth %}
-        <a href="{{site.url}}/authors/{{auth}}.html" title="View author profile">{{ realname }}</a>
-      {% endcapture %}
+      {% unless blocked_authors contains realname %}
+        {% capture thisAuth %}
+          <a href="{{site.url}}/authors/{{auth}}.html" title="View author profile">{{ realname }}</a>
+        {% endcapture %}
+      {% endunless %}
       {% assign authList = authList | push: thisAuth %}
       {% assign authListCite = authListCite | push: realname %}
   {% endunless %}
