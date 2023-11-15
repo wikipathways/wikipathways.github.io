@@ -61,10 +61,12 @@ btn-class: "btn-front"
 {% for auth in sorted_pw_authors %}
   {% unless blocked_authors contains auth %}
     {% assign realname = site.authors | where: "username", auth | map: "realname" | first  %}
-    {% capture thisAuth %}
-      <a href="{{site.url}}/authors/{{auth}}.html" title="View author profile">{{realname}}</a>
-    {% endcapture %}
-    {% assign all_authors = all_authors | push: thisAuth %}
+    {% unless blocked_authors contains realname %}
+      {% capture thisAuth %}
+        <a href="{{site.url}}/authors/{{auth}}.html" title="View author profile">{{realname}}</a>
+      {% endcapture %}
+      {% assign all_authors = all_authors | push: thisAuth %}
+    {% endunless %}
   {% endunless %}
 {% endfor %}
 <p>{{ all_authors | uniq | array_to_sentence_string }}.</p>

@@ -148,10 +148,12 @@ layout: default
 {% for auth in site.authors %}
   {% if auth.communities contains page.community-tag %}
     {% unless blocked_authors contains auth.username %}
-    {% capture thisAuth %}
-      <a href="{{site.url}}/authors/{{auth.username}}.html" title="View author profile">{{auth.realname}}</a>
-    {% endcapture %}
-    {% assign all_authors = all_authors | push: thisAuth %}
+      {% unless blocked_authors contains auth.realname %}
+        {% capture thisAuth %}
+        <a href="{{site.url}}/authors/{{auth.username}}.html" title="View author profile">{{auth.realname}}</a>
+      {% endcapture %}
+      {% assign all_authors = all_authors | push: thisAuth %}
+      {% endunless %}
     {% endunless %}
   {% endif %} 
 {% endfor %}
@@ -160,10 +162,12 @@ layout: default
 {% for auth in sorted_pw_authors %}
   {% unless blocked_authors contains auth %}
     {% assign realname = site.authors | where: "username", auth | map: "realname" | first  %}
-    {% capture thisAuth %}
-      <a href="{{site.url}}/authors/{{auth}}.html" title="View author profile">{{realname}}</a>
-    {% endcapture %}
-    {% assign all_authors = all_authors | push: thisAuth %}
+    {% unless blocked_authors contains realname %}
+      {% capture thisAuth %}
+        <a href="{{site.url}}/authors/{{auth}}.html" title="View author profile">{{realname}}</a>
+      {% endcapture %}
+      {% assign all_authors = all_authors | push: thisAuth %}
+    {% endunless %}
   {% endunless %}
 {% endfor %}
 <p>{{ all_authors | uniq | array_to_sentence_string }}.</p>
