@@ -13,9 +13,9 @@ layout: default
         {% capture thisAuth %}
           <a href="{{site.url}}/authors/{{auth}}.html" title="View author profile">{{ realname }}</a>
         {% endcapture %}
+        {% assign authList = authList | push: thisAuth %}
+        {% assign authListCite = authListCite | push: realname %}
       {% endunless %}
-      {% assign authList = authList | push: thisAuth %}
-      {% assign authListCite = authListCite | push: realname %}
   {% endunless %}
 {% endfor %}
 
