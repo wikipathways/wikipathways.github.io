@@ -16,7 +16,7 @@ logo-height: 80px
 
 support: "This work is supported by [The National Cancer Institute](https://www.cancer.gov/)."
 
-contribute: "The CPTAC set of pathways can be edited, updated and added to by anyone using PathVisio. Contact Kristina Hanspers (kristina.hanspers[AT]gladstone.ucsf.edu) if you're interested in curating, adding or using CPTAC pathways."
+contribute: "The CPTAC set of pathways can be edited, updated and added to by anyone using PathVisio."
 
 community-tag: "CPTAC"
 
