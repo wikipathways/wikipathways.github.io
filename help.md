@@ -207,9 +207,9 @@ redirect_from:
 <p><b><i>Pro-tip:</i></b> Click the <b>View full size</b> button in the upper-right corner of the pathway viewer. This will open a new tab where you can immediately add node names and colors to the url as paramaters (e.g., "?red=ACE").
 </p>
 <ul>
-<li><b>Highlight nodes by label and color:</b> Nodes specified by node label; <code>https://pathway-viewer.toolforge.org/embed/WP554?red=ACE</code>.</li>
-<li><b>Highlight multiple nodes by label and color:</b> Multilpe nodes specified; <code>https://pathway-viewer.toolforge.org/embed/WP554?red=ACE&lightgreen=AGT</code>.</li>
-<li><b>Highlight node by xref and color:</b> Nodes specified by the external reference identifier assigned to them; <code>https://pathway-viewer.toolforge.org/embed/WP554?red=Ensembl_ENSG00000159640</code>.</li>
+<li><b>Highlight nodes by label and color:</b> <code>https://pathway-viewer.toolforge.org/embed/WP554?red=ACE</code>.</li>
+<li><b>Highlight multiple nodes by label and color:</b> <code>https://pathway-viewer.toolforge.org/embed/WP554?red=ACE&lightgreen=AGT</code>.</li>
+<li><b>Highlight node by xref and color:</b> <code>https://pathway-viewer.toolforge.org/embed/WP554?red=Ensembl_ENSG00000159640</code>.</li>
 </ul>
 <p>If you want even more control over your pathway visualizations, like editing and adding objects, then refer to our <a href="https://cytoscape.org/cytoscape-tutorials/protocols/wikipathways-app/#/title" target="_blank">tutorial</a> describing data visualization on pathways in Cytoscape. From this workflow, you can get high-resolution images to include in manuscript, posters and other publications.</p>
 
