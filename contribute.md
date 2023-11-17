@@ -3,39 +3,39 @@ title: How to Contribute
 redirect_from: /index.php/Help:Authors
 ---
 <h1>Information for WikiPathways Authors</h1>
-<p>We invite all interested researchers and authors to participate in the WikiPathways project! This page includes information about the process of getting started as an author, requirements for pathway models, and our review process.</p>
+<p><b>We invite all interested researchers and authors to participate in the WikiPathways project!</b> Here you'll find information about getting started as an author, requirements for pathway models, and our review process.</p>
 
 <h2>Requirements for Pathway Content</h2>
-<p>Pathway models published at WikiPathways must meet specific criteira for quality and completeness, to ensure that the content is useful, both for direct human consumption, and for computational analysis.</p>
+<p>Pathway models published at WikiPathways must meet specific criteira for quality and completeness, to ensure that the content is useful, both for direct human consumption, and for computational analysis:</p>
 <ul>
 <li>All interactions between genes, proteins and other pathway objects must be connected</li>
-<li>>90% of datanodes (genes, proteins, metabolites etc) must be annotated with database references</li>
-<li>The pathway must have a complete description, meaning a minimum of 2-3 sentences summarizing the process that the pathway describes</li>
-<li>The pathway must have at least one literature reference</li>
-<li>The pathway must have a minimum of one pathway ontology term</li>
-<li>The pathway title must adhere to our <a href="https://github.com/wikipathways/wikipathways-faq/discussions/24" target="_blank">pathway title guidelines</a></li>
+<li>>90% of datanodes (genes, proteins, metabolites etc.) must be annotated with external database references</li>
+<li>Each pathway must have a complete description, meaning a minimum of 2-3 sentences summarizing the process that the pathway describes</li>
+<li>Each pathway must have at least one literature reference</li>
+<li>Each pathway must have a minimum of one pathway ontology term</li>
+<li>Pathway titles must adhere to our <a href="https://github.com/wikipathways/wikipathways-faq/discussions/24" target="_blank">pathway title guidelines</a></li>
 </ul>
 
 <h2>Getting Started</h2>
 <ol>
     <li style="margin-bottom: 10px;"><a href="https://www.github.com" target="_blank"><b>Create a GitHub Account</b></a>
-        <br />A free GitHub account is required to edit or create pathways at WikiPathways.</li>
+        <br />A free GitHub account is required to create or edit pathways at WikiPathways.</li>
     <li style="margin-bottom: 10px;"><a href="https://classic.wikipathways.org/index.php?title=Special:UserLogin&type=signup" target="_blank"><b>Create a WikiPathways account</b></a>
-        <br />A free WikiPathways account is required to edit or create pathways at WikiPathways as of right now. We are in the process of <a href="/help.html#move_from_classic">moving from the classic WikiPathways site</a>, and during this time a WikiPathways account is still required.</li>
+        <br />A free WikiPathways account is required to create or edit pathways at WikiPathways during our <a href="/help.html#move_from_classic">move from the classic WikiPathways site</a>.</li>
     <li style="margin-bottom: 10px;"><a href="http://academy.wikipathways.org/stages/walk-install-pv/" target="_blank"><b>Install Tools and Resources</b></a>
-        <br />To work with WikiPathways, you will need the pathway editor PathVisio with the WikiPathways plugin installed.</li>
+        <br />To create and edit WikiPathways pathway models, you will need the pathway editor PathVisio with the WikiPathways plugin installed.</li>
 
     <li style="margin-bottom: 10px;"><b>Learn!</b><ul>
     <li>Learn everything about creating and editing pathways, from the basics to advanced topics at the <a href="https://academy.wikipathways.org/" target="_blank">WikiPathways Academy</a>.</li>
-    <li>For in-depth information on pathway curation, see <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009226" target="_blank">Ten simple rules for creating reusable pathway models for computational analysis and visualization</a>.</li>
     <li>Check out the <a href="https://youtu.be/OrnOu7RGXKQ" target="_blank">PathVisio tutorial video</a> by TogoTV (DOI: <a href="https://doi.org/10.7875/togotv.2023.078" target="_blank">https://doi.org/10.7875/togotv.2023.078</a>) and the <a href="https://www.youtube.com/channel/UCTkyLj_4u6V4M5lUmyuOGDw" target="_blank">PathVisio YouTube Channel</a> to learn how to use PathVisio.</li>
+    <li>For in-depth information on pathway curation, see <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009226" target="_blank">Ten simple rules for creating reusable pathway models for computational analysis and visualization</a>.</li>
     </ul></li>
     <li style="margin-bottom: 10px;"><b>Author: Create or Edit a Pathway Model</b>
         <br />
 <div class="card-deck">
     <div class="card" style="width: 12rem; padding: 3px;">
     <div class="card-body" style="padding-right: 5px; padding-bottom:5px;">
-    <p class="card-title"><b>Find a Pathway from Literature to Model</b></p>
+    <p class="card-title"><b>Create a Pathway from Published Literature</b></p>
     <p class="card-text" style="font-size: 1em;">Browse our suggested pathway modeling tasks to find a published pathway of interest to you. Then create a pathway model and publish it at WikiPathways! The suggested pathways are selected based on novelty in terms of genes or disease focus.</p>
     </div>
     <ul class="list-group list-group-flush">
