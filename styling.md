@@ -11,13 +11,11 @@ redirect_from: /index.php/Portal:PathwayStyling
       </a>
     </h1>
 
-A showcase of WikiPathways models styled to produce images comparable to original static figures. You can
-model and then style any biological process, starting from a published figure or your own research results.
-Visualization tools like [Cytoscape](http://www.cytoscape.org/) can also be used to perform data-driven styling.
+This page describes how WikiPathways models can be styled in [Cytoscape](http://www.cytoscape.org/) to produce images comparable to published pathway figures. Starting with a pathway model at WikiPathways, you can achieve a custom look suitable for a publication-quality figure.
 
 # Regulation of β-cells by JAK-STAT signaling in tandem with multiple cytokines and hormones
 
-(Jiang et al) [PubMed](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6143874/)
+Jiang et al., [PubMed](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6143874/). Step-by-step tutorial video is available at <a href="https://youtu.be/AO_7r_VEGNk" target="_blank">YouTube</a>.
 
 <table>
   <tr>
