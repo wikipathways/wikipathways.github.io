@@ -5,7 +5,7 @@ reviewer_roster:
 - Ash iyer
 - Elisson nl
 - AlexanderPico
-- tabbassidaloii
+- Tabbassidaloii
 - Khanspers
 - Fehrhart
 - Mkutmon
