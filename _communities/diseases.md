@@ -8,7 +8,7 @@ short-description: "The Disease Community highlights WikiPathways content relate
 logo: 
 logo-link: 
 support: 
-contribute: "If you know of a pathway that should be added, please contact the administrator (denise.slenter[AT]maastrichtuniversity.nl). Suggested topics for additional pathways include endocrine and metabolic disease, infectious disease, addiction, immune system disease and neurodevelopmental disorders. 
+contribute: "If you know of a pathway that should be added, please contact the administrator. Suggested topics for additional pathways include endocrine and metabolic disease, infectious disease, addiction, immune system disease and neurodevelopmental disorders. 
 
 Existing pathways in need of improvements:
 
