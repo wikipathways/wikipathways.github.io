@@ -28,7 +28,7 @@ redirect_from: /index.php/Help:Authors
     <li style="margin-bottom: 10px;"><b>Learn!</b><ul>
     <li>Learn everything about creating and editing pathways, from the basics to advanced topics at the <a href="https://academy.wikipathways.org/" target="_blank">WikiPathways Academy</a>.</li>
     <li>For in-depth information on pathway curation, see <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009226" target="_blank">Ten simple rules for creating reusable pathway models for computational analysis and visualization</a>.</li>
-    <li>Check out the <a href="https://www.youtube.com/channel/UCTkyLj_4u6V4M5lUmyuOGDw" target="_blank">PathVisio YouTube Channel</a> for videos on how to use PathVisio for pathway editing.</li>
+    <li>Check out the <a href="https://youtu.be/OrnOu7RGXKQ" target="_blank">PathVisio tutorial video</a> by TogoTV (DOI: <a href="https://doi.org/10.7875/togotv.2023.078" target="_blank">https://doi.org/10.7875/togotv.2023.078</a>) and the <a href="https://www.youtube.com/channel/UCTkyLj_4u6V4M5lUmyuOGDw" target="_blank">PathVisio YouTube Channel</a> to learn how to use PathVisio.</li>
     </ul></li>
     <li style="margin-bottom: 10px;"><b>Author: Create or Edit a Pathway Model</b>
         <br />
