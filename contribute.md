@@ -15,7 +15,7 @@ redirect_from: /index.php/Help:Authors
 <li>Each pathway must have a minimum of one pathway ontology term</li>
 <li>Pathway titles must adhere to our <a href="https://github.com/wikipathways/wikipathways-faq/discussions/24" target="_blank">pathway title guidelines</a></li>
 </ul>
-
+<hr>
 <h2>Getting Started</h2>
 <ol>
     <li style="margin-bottom: 10px;"><a href="https://www.github.com" target="_blank"><b>Create a GitHub Account</b></a>
@@ -55,9 +55,11 @@ redirect_from: /index.php/Help:Authors
   </div>
 </div>
 </li>
-    <li style="margin-bottom: 5px;"><a href="https://github.com/wikipathways/wikipathways-help/discussions" target="_blank"><b> Engage: Join the WikiPathways Community</b></a>
+    <li style="margin-bottom: 5px;"><a href="https://github.com/wikipathways/wikipathways-help/discussions" target="_blank">
+<b> Engage: Join the WikiPathways Community</b></a>
         <br />Join the public discussion on pathway authoring and other WikiPathways-related topics.</li>
 </ol>
+<hr>
 <h2>Review Process</h2>
 <p>All new pathways and edits to existing pathways are subject to review by a combination of automated tests and human review. 
 All new pathways will be reviewed by a reviewer from our "Reviewer of the week" group. If edits are needed, authors will be conatcted by the reviewer. Once an edit or new pathway is approved, it will be available on the new site. This process typically takes 5-7 days right now.</p>
