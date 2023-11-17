@@ -152,13 +152,7 @@ redirect_from:
 <div id="participate">
 <div id="create">
 <h1>Create Content</h1>
-<p>You can contribute to WikiPathways by creating new pathway models or by improving existing models:</p>
-<ul>
-<li>Learn everything you need to know about <a href="/contribute.html">getting started as a WikiPathways author</a> today!</li>
-<li>Learn everything about creating and editing pathways, from the basics to advanced topics at the <a href="https://wikipathways.github.io/academy/" target="_blank">WikiPathways Academy</a>.</li>
-<li>For more detailed information on making pathway models, see <a href="https://doi.org/10.1371/journal.pcbi.1009226" target="_blank">Ten simple rules for creating reusable pathway models for computational analysis and visualization</a>.</li>
-<li>Check out the <a href="https://www.youtube.com/channel/UCTkyLj_4u6V4M5lUmyuOGDw" target="_blank">PathVisio YouTube Channel</a> for videos on how to use PathVisio for pathway editing.</li> 
-</ul>
+<p>You can contribute to WikiPathways by creating new pathway models or by improving existing models. Learn everything you need to know about <a href="/contribute.html">getting started as a WikiPathways author</a> today!</p>
 </div>
 <div id="review">
 <h1>Review Changes</h1>
