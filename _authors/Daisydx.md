@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Daisydx
 - /index.php/Special:Contributions/Daisydx
+email: ~
+
 ---

@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Elgavish
 - /index.php/Special:Contributions/Elgavish
+email: ~
+
 ---

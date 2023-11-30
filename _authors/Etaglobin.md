@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Etaglobin
 - /index.php/Special:Contributions/Etaglobin
+email: ~
+
 ---

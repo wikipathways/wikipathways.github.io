@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:DanielKuppers
 - /index.php/Special:Contributions/DanielKuppers
+email: ~
+
 ---

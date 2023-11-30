@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Ddigles
 - /index.php/Special:Contributions/Ddigles
+email: ~
+
 ---

@@ -2,18 +2,20 @@
 username: Dogrunjp
 realname: Naoya Oishi
 website: https://dogrun.jp
-affiliation: 
-bio: 
+affiliation: ~
+bio: ~
 github: dogrunjp
-orcid: 
-linkedin: 
-googlescholar: 
-wikidata: 
-twitter: 
-mastodon-url: 
-meta:
-instagram:
+orcid: ~
+linkedin: ~
+googlescholar: ~
+wikidata: ~
+twitter: ~
+mastodon-url: ~
+meta: ~
+instagram: ~
 redirect_from:
 - /index.php/User:Dogrunjp
 - /index.php/Special:Contributions/Dogrunjp
+email: ~
+
 ---

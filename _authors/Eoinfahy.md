@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Eoinfahy
 - /index.php/Special:Contributions/Eoinfahy
+email: ~
+
 ---

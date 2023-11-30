@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Emmaverver
 - /index.php/Special:Contributions/Emmaverver
+email: ~
+
 ---

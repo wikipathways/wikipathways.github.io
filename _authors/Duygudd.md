@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Duygudd
 - /index.php/Special:Contributions/Duygudd
+email: ~
+
 ---

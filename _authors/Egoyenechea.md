@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Egoyenechea
 - /index.php/Special:Contributions/Egoyenechea
+email: ~
+
 ---

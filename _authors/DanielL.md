@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:DanielL
 - /index.php/Special:Contributions/DanielL
+email: ~
+
 ---

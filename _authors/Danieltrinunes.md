@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Danieltrinunes
 - /index.php/Special:Contributions/Danieltrinunes
+email: ~
+
 ---

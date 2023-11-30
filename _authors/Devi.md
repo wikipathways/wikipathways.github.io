@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Devi
 - /index.php/Special:Contributions/Devi
+email: ~
+
 ---

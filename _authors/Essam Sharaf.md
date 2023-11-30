@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Essam Sharaf
 - /index.php/Special:Contributions/Essam Sharaf
+email: ~
+
 ---

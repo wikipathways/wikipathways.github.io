@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:DebFrench
 - /index.php/Special:Contributions/DebFrench
+email: ~
+
 ---

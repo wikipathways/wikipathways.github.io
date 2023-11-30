@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Ejaehnig
 - /index.php/Special:Contributions/Ejaehnig
+email: ~
+
 ---

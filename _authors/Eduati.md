@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Eduati
 - /index.php/Special:Contributions/Eduati
+email: ~
+
 ---

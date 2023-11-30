@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Danio368
 - /index.php/Special:Contributions/Danio368
+email: ~
+
 ---

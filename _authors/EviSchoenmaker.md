@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:EviSchoenmaker
 - /index.php/Special:Contributions/EviSchoenmaker
+email: ~
+
 ---

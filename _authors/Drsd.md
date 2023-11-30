@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Drsd
 - /index.php/Special:Contributions/Drsd
+email: ~
+
 ---
