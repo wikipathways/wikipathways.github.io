@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Zari
 - /index.php/Special:Contributions/Zari
+email: ~
+
 ---

@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Youssefwalid
 - /index.php/Special:Contributions/Youssefwalid
+email: ~
+
 ---

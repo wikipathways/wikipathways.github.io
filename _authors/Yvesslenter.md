@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Yvesslenter
 - /index.php/Special:Contributions/Yvesslenter
+email: ~
+
 ---

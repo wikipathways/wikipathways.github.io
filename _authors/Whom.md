@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Whom
 - /index.php/Special:Contributions/Whom
+email: ~
+
 ---

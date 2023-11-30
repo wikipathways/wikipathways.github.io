@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Vjlynch
 - /index.php/Special:Contributions/Vjlynch
+email: ~
+
 ---

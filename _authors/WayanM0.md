@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:WayanM0
 - /index.php/Special:Contributions/WayanM0
+email: ~
+
 ---

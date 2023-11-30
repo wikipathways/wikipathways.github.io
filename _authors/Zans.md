@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Zans
 - /index.php/Special:Contributions/Zans
+email: ~
+
 ---

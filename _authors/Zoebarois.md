@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Zoebarois
 - /index.php/Special:Contributions/Zoebarois
+email: ~
+
 ---

@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Yasminomar
 - /index.php/Special:Contributions/Yasminomar
+email: ~
+
 ---

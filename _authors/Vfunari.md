@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Vfunari
 - /index.php/Special:Contributions/Vfunari
+email: ~
+
 ---
