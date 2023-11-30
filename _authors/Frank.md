@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Frank
 - /index.php/Special:Contributions/Frank
+email: ~
+
 ---

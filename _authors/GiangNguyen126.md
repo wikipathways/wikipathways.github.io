@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:GiangNguyen126
 - /index.php/Special:Contributions/GiangNguyen126
+email: ~
+
 ---

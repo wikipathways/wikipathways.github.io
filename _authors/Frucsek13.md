@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Frucsek13
 - /index.php/Special:Contributions/Frucsek13
+email: ~
+
 ---

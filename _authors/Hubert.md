@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Hubert
 - /index.php/Special:Contributions/Hubert
+email: ~
+
 ---

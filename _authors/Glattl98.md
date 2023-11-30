@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Glattl98
 - /index.php/Special:Contributions/Glattl98
+email: ~
+
 ---

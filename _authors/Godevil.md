@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Godevil
 - /index.php/Special:Contributions/Godevil
+email: ~
+
 ---

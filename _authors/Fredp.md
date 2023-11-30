@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Fredp
 - /index.php/Special:Contributions/Fredp
+email: ~
+
 ---

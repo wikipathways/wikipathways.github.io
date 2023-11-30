@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Finterly
 - /index.php/Special:Contributions/Finterly
+email: ~
+
 ---

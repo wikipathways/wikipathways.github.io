@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:GabrielCouillaud
 - /index.php/Special:Contributions/GabrielCouillaud
+email: ~
+
 ---

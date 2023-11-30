@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Gustav
 - /index.php/Special:Contributions/Gustav
+email: ~
+
 ---

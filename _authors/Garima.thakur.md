@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Garima.thakur
 - /index.php/Special:Contributions/Garima.thakur
+email: ~
+
 ---

@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Glenda
 - /index.php/Special:Contributions/Glenda
+email: ~
+
 ---
