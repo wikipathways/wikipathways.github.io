@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Bart Smeets
 - /index.php/Special:Contributions/Bart Smeets
+email: ~
+
 ---

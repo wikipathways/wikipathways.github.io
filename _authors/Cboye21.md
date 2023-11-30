@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Cboye21
 - /index.php/Special:Contributions/Cboye21
+email: ~
+
 ---

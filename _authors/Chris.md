@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Chris
 - /index.php/Special:Contributions/Chris
+email: ~
+
 ---

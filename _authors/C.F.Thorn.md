@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:C.F.Thorn
 - /index.php/Special:Contributions/C.F.Thorn
+email: ~
+
 ---

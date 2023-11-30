@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:CedricPluis
 - /index.php/Special:Contributions/CedricPluis
+email: ~
+
 ---

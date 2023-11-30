@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Clclass
 - /index.php/Special:Contributions/Clclass
+email: ~
+
 ---

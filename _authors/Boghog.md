@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Boghog
 - /index.php/Special:Contributions/Boghog
+email: ~
+
 ---

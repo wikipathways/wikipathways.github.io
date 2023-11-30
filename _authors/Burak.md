@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Burak
 - /index.php/Special:Contributions/Burak
+email: ~
+
 ---

@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Christine Chichester
 - /index.php/Special:Contributions/Christine Chichester
+email: ~
+
 ---

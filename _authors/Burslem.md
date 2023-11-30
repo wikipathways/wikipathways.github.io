@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Burslem
 - /index.php/Special:Contributions/Burslem
+email: ~
+
 ---

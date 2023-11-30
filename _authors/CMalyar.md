@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:CMalyar
 - /index.php/Special:Contributions/CMalyar
+email: ~
+
 ---
