@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Kodlips
 - /index.php/Special:Contributions/Kodlips
+email: ~
+
 ---

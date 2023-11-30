@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Kozo2
 - /index.php/Special:Contributions/Kozo2
+email: ~
+
 ---

@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:KieranReidy
 - /index.php/Special:Contributions/KieranReidy
+email: ~
+
 ---

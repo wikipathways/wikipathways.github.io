@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Jinwook
 - /index.php/Special:Contributions/Jinwook
+email: ~
+
 ---

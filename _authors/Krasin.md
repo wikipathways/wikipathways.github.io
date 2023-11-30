@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Krasin
 - /index.php/Special:Contributions/Krasin
+email: ~
+
 ---

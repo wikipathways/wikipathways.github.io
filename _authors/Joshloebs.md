@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Joshloebs
 - /index.php/Special:Contributions/Joshloebs
+email: ~
+
 ---

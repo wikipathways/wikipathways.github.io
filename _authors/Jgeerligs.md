@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Jgeerligs
 - /index.php/Special:Contributions/Jgeerligs
+email: ~
+
 ---

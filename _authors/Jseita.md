@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Jseita
 - /index.php/Special:Contributions/Jseita
+email: ~
+
 ---

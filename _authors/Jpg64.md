@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Jpg64
 - /index.php/Special:Contributions/Jpg64
+email: ~
+
 ---

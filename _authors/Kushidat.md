@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Kushidat
 - /index.php/Special:Contributions/Kushidat
+email: ~
+
 ---

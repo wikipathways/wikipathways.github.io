@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Juliajohnsson
 - /index.php/Special:Contributions/Juliajohnsson
+email: ~
+
 ---

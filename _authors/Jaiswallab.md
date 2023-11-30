@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Jaiswallab
 - /index.php/Special:Contributions/Jaiswallab
+email: ~
+
 ---

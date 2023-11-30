@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Ingrid.felicidade
 - /index.php/Special:Contributions/Ingrid.felicidade
+email: ~
+
 ---

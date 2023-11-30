@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Ishida-kazuya
 - /index.php/Special:Contributions/Ishida-kazuya
+email: ~
+
 ---

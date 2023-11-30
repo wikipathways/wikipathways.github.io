@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Jwdietrich
 - /index.php/Special:Contributions/Jwdietrich
+email: ~
+
 ---

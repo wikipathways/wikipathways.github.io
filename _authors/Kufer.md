@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Kufer
 - /index.php/Special:Contributions/Kufer
+email: ~
+
 ---

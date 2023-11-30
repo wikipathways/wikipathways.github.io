@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Jesper
 - /index.php/Special:Contributions/Jesper
+email: ~
+
 ---

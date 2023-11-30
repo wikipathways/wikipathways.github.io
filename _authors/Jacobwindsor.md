@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Jacobwindsor
 - /index.php/Special:Contributions/Jacobwindsor
+email: ~
+
 ---

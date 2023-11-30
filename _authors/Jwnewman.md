@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Jwnewman
 - /index.php/Special:Contributions/Jwnewman
+email: ~
+
 ---

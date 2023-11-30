@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Krizzukas
 - /index.php/Special:Contributions/Krizzukas
+email: ~
+
 ---

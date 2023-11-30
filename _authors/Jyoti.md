@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Jyoti
 - /index.php/Special:Contributions/Jyoti
+email: ~
+
 ---

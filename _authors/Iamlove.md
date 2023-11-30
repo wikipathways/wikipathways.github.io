@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Iamlove
 - /index.php/Special:Contributions/Iamlove
+email: ~
+
 ---

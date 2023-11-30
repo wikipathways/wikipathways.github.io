@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:I.BenShlomo
 - /index.php/Special:Contributions/I.BenShlomo
+email: ~
+
 ---

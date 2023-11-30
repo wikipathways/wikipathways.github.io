@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Kim de Nooijer
 - /index.php/Special:Contributions/Kim de Nooijer
+email: ~
+
 ---

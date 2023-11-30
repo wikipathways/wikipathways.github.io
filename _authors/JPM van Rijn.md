@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:JPM van Rijn
 - /index.php/Special:Contributions/JPM van Rijn
+email: ~
+
 ---

@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Juliablad
 - /index.php/Special:Contributions/Juliablad
+email: ~
+
 ---

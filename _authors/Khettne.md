@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Khettne
 - /index.php/Special:Contributions/Khettne
+email: ~
+
 ---

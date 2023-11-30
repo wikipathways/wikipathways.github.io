@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:JosipMadunic
 - /index.php/Special:Contributions/JosipMadunic
+email: ~
+
 ---

@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Kay.Veurink
 - /index.php/Special:Contributions/Kay.Veurink
+email: ~
+
 ---

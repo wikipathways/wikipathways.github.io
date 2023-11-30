@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Jeangon
 - /index.php/Special:Contributions/Jeangon
+email: ~
+
 ---

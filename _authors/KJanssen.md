@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:KJanssen
 - /index.php/Special:Contributions/KJanssen
+email: ~
+
 ---

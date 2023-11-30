@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:JPippi
 - /index.php/Special:Contributions/JPippi
+email: ~
+
 ---
