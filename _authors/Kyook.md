@@ -13,7 +13,8 @@ twitter: ~
 mastodon-url: ~
 meta: ~
 instagram: ~
-communities: WormBase_Approved
+communities:
+- WormBase_Approved
 redirect_from:
 - /index.php/User:Kyook
 - /index.php/Special:Contributions/Kyook
