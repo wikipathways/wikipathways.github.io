@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Nadiapan1
 - /index.php/Special:Contributions/Nadiapan1
+email: ~
+
 ---

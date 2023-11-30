@@ -13,9 +13,10 @@ twitter: mmarvinm2
 mastodon-url: ~
 meta: ~
 instagram: ~
-communities: 
-- AOP
+communities: AOP
 redirect_from:
 - /index.php/User:Marvin M2
 - /index.php/Special:Contributions/Marvin M2
+email: ~
+
 ---

@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Mamatha
 - /index.php/Special:Contributions/Mamatha
+email: ~
+
 ---

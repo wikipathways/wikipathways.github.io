@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Mkass
 - /index.php/Special:Contributions/Mkass
+email: ~
+
 ---

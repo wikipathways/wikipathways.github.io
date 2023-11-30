@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Mills42
 - /index.php/Special:Contributions/Mills42
+email: ~
+
 ---

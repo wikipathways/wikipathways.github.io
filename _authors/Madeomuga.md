@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Madeomuga
 - /index.php/Special:Contributions/Madeomuga
+email: ~
+
 ---

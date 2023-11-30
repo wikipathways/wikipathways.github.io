@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:N.Mantei
 - /index.php/Special:Contributions/N.Mantei
+email: ~
+
 ---

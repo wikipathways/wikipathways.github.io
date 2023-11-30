@@ -19,4 +19,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:NetPath
 - /index.php/Special:Contributions/NetPath
+email: ~
+
 ---

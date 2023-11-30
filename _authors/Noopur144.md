@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Noopur144
 - /index.php/Special:Contributions/Noopur144
+email: ~
+
 ---

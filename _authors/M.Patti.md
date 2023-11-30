@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:M.Patti
 - /index.php/Special:Contributions/M.Patti
+email: ~
+
 ---

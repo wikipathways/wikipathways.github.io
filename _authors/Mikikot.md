@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Mikikot
 - /index.php/Special:Contributions/Mikikot
+email: ~
+
 ---

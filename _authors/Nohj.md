@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Nohj
 - /index.php/Special:Contributions/Nohj
+email: ~
+
 ---

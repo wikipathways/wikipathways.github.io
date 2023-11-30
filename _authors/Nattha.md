@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Nattha
 - /index.php/Special:Contributions/Nattha
+email: ~
+
 ---

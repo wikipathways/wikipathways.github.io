@@ -17,4 +17,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:MaintBot
 - /index.php/Special:Contributions/MaintBot
+email: ~
+
 ---

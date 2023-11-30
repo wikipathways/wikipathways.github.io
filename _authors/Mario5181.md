@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Mario5181
 - /index.php/Special:Contributions/Mario5181
+email: ~
+
 ---

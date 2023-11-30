@@ -13,10 +13,12 @@ twitter: mkutmon
 mastodon-url: ~
 meta: ~
 instagram: ~
-communities: 
+communities:
 - COVID19
 - PancCanNet
 redirect_from:
 - /index.php/User:Mkutmon
 - /index.php/Special:Contributions/Mkutmon
+email: ~
+
 ---

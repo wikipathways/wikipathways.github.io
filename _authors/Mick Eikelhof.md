@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Mick Eikelhof
 - /index.php/Special:Contributions/Mick Eikelhof
+email: ~
+
 ---

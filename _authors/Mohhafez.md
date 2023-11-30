@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Mohhafez
 - /index.php/Special:Contributions/Mohhafez
+email: ~
+
 ---

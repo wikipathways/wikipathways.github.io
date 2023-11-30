@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Mostaszewski
 - /index.php/Special:Contributions/Mostaszewski
+email: ~
+
 ---

@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Mbluemel
 - /index.php/Special:Contributions/Mbluemel
+email: ~
+
 ---
