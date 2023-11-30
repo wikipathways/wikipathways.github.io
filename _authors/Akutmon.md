@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Akutmon
 - /index.php/Special:Contributions/Akutmon
+email: ~
+
 ---

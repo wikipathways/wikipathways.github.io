@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Anam
 - /index.php/Special:Contributions/Anam
+email: ~
+
 ---

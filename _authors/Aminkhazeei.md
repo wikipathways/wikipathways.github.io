@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Aminkhazeei
 - /index.php/Special:Contributions/Aminkhazeei
+email: ~
+
 ---

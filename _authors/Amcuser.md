@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Amcuser
 - /index.php/Special:Contributions/Amcuser
+email: ~
+
 ---

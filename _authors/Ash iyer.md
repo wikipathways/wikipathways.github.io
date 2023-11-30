@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Ash_iyer
 - /index.php/Special:Contributions/Ash_iyer
+email: ~
+
 ---

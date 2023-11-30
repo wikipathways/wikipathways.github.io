@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Akassoglou
 - /index.php/Special:Contributions/Akassoglou
+email: ~
+
 ---

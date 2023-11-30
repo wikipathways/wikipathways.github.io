@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Anatolymikutin
 - /index.php/Special:Contributions/Anatolymikutin
+email: ~
+
 ---

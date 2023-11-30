@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Azkalaty
 - /index.php/Special:Contributions/Azkalaty
+email: ~
+
 ---

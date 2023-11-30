@@ -13,9 +13,10 @@ twitter: AgustinGonVi
 mastodon-url: ~
 meta: ~
 instagram: ~
-communities:
-- Renal_Genomics
+communities: Renal_Genomics
 redirect_from:
 - /index.php/User:AgustinGV
 - /index.php/Special:Contributions/AgustinGV
+email: ~
+
 ---

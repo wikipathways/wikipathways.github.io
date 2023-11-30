@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Alvin kho
 - /index.php/Special:Contributions/Alvin kho
+email: ~
+
 ---

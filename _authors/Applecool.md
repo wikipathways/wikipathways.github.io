@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Applecool
 - /index.php/Special:Contributions/Applecool
+email: ~
+
 ---

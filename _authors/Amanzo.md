@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Amanzo
 - /index.php/Special:Contributions/Amanzo
+email: ~
+
 ---

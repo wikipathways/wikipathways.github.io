@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:AlinRus
 - /index.php/Special:Contributions/AlinRus
+email: ~
+
 ---

@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Ambar21
 - /index.php/Special:Contributions/Ambar21
+email: ~
+
 ---

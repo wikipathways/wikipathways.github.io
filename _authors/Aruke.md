@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Aruke
 - /index.php/Special:Contributions/Aruke
+email: ~
+
 ---

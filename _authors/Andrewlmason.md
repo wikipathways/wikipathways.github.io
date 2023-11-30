@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Andrewlmason
 - /index.php/Special:Contributions/Andrewlmason
+email: ~
+
 ---

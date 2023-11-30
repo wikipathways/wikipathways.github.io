@@ -13,9 +13,10 @@ twitter: ~
 mastodon-url: ~
 meta: ~
 instagram: ~
-communities:
-- SkeletalDysplasia
+communities: SkeletalDysplasia
 redirect_from:
 - /index.php/User:Azankl
 - /index.php/Special:Contributions/Azankl
+email: ~
+
 ---

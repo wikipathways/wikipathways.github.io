@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Annemichielsen
 - /index.php/Special:Contributions/Annemichielsen
+email: ~
+
 ---

@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:AdrienDefay
 - /index.php/Special:Contributions/AdrienDefay
+email: ~
+
 ---

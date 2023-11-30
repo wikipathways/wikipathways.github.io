@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Afukushima
 - /index.php/Special:Contributions/Afukushima
+email: ~
+
 ---

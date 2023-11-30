@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Aysegul Celik
 - /index.php/Special:Contributions/Aysegul Celik
+email: ~
+
 ---

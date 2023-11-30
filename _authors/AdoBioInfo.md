@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:AdoBioInfo
 - /index.php/Special:Contributions/AdoBioInfo
+email: ~
+
 ---

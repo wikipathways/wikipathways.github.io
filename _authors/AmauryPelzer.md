@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:AmauryPelzer
 - /index.php/Special:Contributions/AmauryPelzer
+email: ~
+
 ---
