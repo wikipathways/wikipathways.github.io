@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Lauravanzon
 - /index.php/Special:Contributions/Lauravanzon
+email: ~
+
 ---

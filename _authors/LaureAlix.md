@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:LaureAlix
 - /index.php/Special:Contributions/LaureAlix
+email: ~
+
 ---

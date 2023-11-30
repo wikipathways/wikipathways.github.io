@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Lovnish.thakur
 - /index.php/Special:Contributions/Lovnish.thakur
+email: ~
+
 ---

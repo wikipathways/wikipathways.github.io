@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:LucHooglugt
 - /index.php/Special:Contributions/LucHooglugt
+email: ~
+
 ---

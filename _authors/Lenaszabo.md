@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Lenaszabo
 - /index.php/Special:Contributions/Lenaszabo
+email: ~
+
 ---

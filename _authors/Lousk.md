@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Lousk
 - /index.php/Special:Contributions/Lousk
+email: ~
+
 ---

@@ -1,6 +1,6 @@
 ---
-username: Leadoerner
-realname: Lea Doerner
+username: Leyla Önder
+realname: Leyla Önder
 website: ~
 affiliation: ~
 bio: ~
@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:Leadoerner
-- /index.php/Special:Contributions/Leadoerner
+- /index.php/User:Leyla_Önder
+- /index.php/Special:Contributions/Leyla_Önder
 email: ~
 
 ---

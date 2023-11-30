@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Lore
 - /index.php/Special:Contributions/Lore
+email: ~
+
 ---

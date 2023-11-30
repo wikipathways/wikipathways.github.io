@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Lindarieswijk
 - /index.php/Special:Contributions/Lindarieswijk
+email: ~
+
 ---

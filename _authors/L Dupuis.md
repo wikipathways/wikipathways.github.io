@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:L Dupuis
 - /index.php/Special:Contributions/L Dupuis
+email: ~
+
 ---

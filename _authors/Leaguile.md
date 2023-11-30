@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Leaguile
 - /index.php/Special:Contributions/Leaguile
+email: ~
+
 ---

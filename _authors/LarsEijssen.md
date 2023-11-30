@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:LarsEijssen
 - /index.php/Special:Contributions/LarsEijssen
+email: ~
+
 ---

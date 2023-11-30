@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Leo-kal
 - /index.php/Special:Contributions/Leo-kal
+email: ~
+
 ---

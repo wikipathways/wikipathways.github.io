@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Lisaaheld
 - /index.php/Special:Contributions/Lisaaheld
+email: ~
+
 ---
