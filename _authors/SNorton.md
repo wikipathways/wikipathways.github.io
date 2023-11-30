@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:SNorton
 - /index.php/Special:Contributions/SNorton
+email: ~
+
 ---

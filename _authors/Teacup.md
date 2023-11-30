@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Teacup
 - /index.php/Special:Contributions/Teacup
+email: ~
+
 ---

@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Sham.uk
 - /index.php/Special:Contributions/Sham.uk
+email: ~
+
 ---

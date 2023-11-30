@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Sravanthisinha
 - /index.php/Special:Contributions/Sravanthisinha
+email: ~
+
 ---

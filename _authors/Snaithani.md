@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Snaithani
 - /index.php/Special:Contributions/Snaithani
+email: ~
+
 ---

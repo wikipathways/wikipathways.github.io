@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Sbohler
 - /index.php/Special:Contributions/Sbohler
+email: ~
+
 ---

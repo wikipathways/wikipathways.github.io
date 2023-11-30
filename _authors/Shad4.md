@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Shad4
 - /index.php/Special:Contributions/Shad4
+email: ~
+
 ---

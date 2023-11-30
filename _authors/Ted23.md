@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Ted23
 - /index.php/Special:Contributions/Ted23
+email: ~
+
 ---

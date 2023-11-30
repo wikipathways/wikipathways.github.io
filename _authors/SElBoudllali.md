@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:SElBoudllali
 - /index.php/Special:Contributions/SElBoudllali
+email: ~
+
 ---

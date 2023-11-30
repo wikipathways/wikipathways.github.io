@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:S. Arnouts
 - /index.php/Special:Contributions/S. Arnouts
+email: ~
+
 ---

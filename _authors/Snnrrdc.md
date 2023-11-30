@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Snnrrdc
 - /index.php/Special:Contributions/Snnrrdc
+email: ~
+
 ---

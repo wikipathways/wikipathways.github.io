@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:TadeIdowu
 - /index.php/Special:Contributions/TadeIdowu
+email: ~
+
 ---

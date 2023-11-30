@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Soniaa.balan
 - /index.php/Special:Contributions/Soniaa.balan
+email: ~
+
 ---

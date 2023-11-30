@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Thanos_Oikonomou
 - /index.php/Special:Contributions/Thanos_Oikonomou
+email: ~
+
 ---

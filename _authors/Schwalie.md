@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Schwalie
 - /index.php/Special:Contributions/Schwalie
+email: ~
+
 ---

@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Thomas
 - /index.php/Special:Contributions/Thomas
+email: ~
+
 ---

@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Shigeta
 - /index.php/Special:Contributions/Shigeta
+email: ~
+
 ---

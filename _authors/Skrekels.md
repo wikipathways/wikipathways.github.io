@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Skrekels
 - /index.php/Special:Contributions/Skrekels
+email: ~
+
 ---

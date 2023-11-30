@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:The Herald
 - /index.php/Special:Contributions/The Herald
+email: ~
+
 ---

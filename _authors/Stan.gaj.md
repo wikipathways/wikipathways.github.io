@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Stan.gaj
 - /index.php/Special:Contributions/Stan.gaj
+email: ~
+
 ---

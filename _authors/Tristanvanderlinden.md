@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Tristanvanderlinden
 - /index.php/Special:Contributions/Tristanvanderlinden
+email: ~
+
 ---

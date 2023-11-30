@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Schmidtdav
 - /index.php/Special:Contributions/Schmidtdav
+email: ~
+
 ---

@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Simon schmidt
 - /index.php/Special:Contributions/Simon schmidt
+email: ~
+
 ---

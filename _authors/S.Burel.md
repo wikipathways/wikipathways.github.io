@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:S.Burel
 - /index.php/Special:Contributions/S.Burel
+email: ~
+
 ---

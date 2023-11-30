@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Samuel Sklar
 - /index.php/Special:Contributions/Samuel Sklar
+email: ~
+
 ---

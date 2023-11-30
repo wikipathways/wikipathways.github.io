@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Tokimatsu
 - /index.php/Special:Contributions/Tokimatsu
+email: ~
+
 ---

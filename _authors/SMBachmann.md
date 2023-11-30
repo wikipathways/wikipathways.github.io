@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:SMBachmann
 - /index.php/Special:Contributions/SMBachmann
+email: ~
+
 ---

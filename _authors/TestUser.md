@@ -17,4 +17,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:TestUser
 - /index.php/Special:Contributions/TestUser
+email: ~
+
 ---
