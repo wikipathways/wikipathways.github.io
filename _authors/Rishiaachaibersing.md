@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Rishiaachaibersing
 - /index.php/Special:Contributions/Rishiaachaibersing
+email: ~
+
 ---

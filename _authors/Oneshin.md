@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Oneshin
 - /index.php/Special:Contributions/Oneshin
+email: ~
+
 ---

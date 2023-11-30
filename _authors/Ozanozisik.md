@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Ozanozisik
 - /index.php/Special:Contributions/Ozanozisik
+email: ~
+
 ---

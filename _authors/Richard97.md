@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Richard97
 - /index.php/Special:Contributions/Richard97
+email: ~
+
 ---

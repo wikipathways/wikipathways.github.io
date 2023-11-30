@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Rikki
 - /index.php/Special:Contributions/Rikki
+email: ~
+
 ---

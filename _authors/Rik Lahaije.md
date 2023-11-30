@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Rik Lahaije
 - /index.php/Special:Contributions/Rik Lahaije
+email: ~
+
 ---

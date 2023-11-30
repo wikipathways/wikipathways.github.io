@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:PeterSwanenberg
 - /index.php/Special:Contributions/PeterSwanenberg
+email: ~
+
 ---

@@ -16,4 +16,6 @@ instagram: ~
 redirect_from:
 - /index.php/User:Papax
 - /index.php/Special:Contributions/Papax
+email: ~
+
 ---
