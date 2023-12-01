@@ -198,13 +198,19 @@ redirect_from:
 <a id="widget"/>
 <h2>Visualizing Data on Pathways</h2>
 <p>You can achieve quick and easy pathway visualizations highlighting multiple nodes with mulitple colors in a single pathway using our interactive pathway viewer.</p>
-<p><b><i>Pro-tip:</i></b> Click the <b>View full size</b> button in the upper-right corner of the pathway viewer. This will open a new tab where you can immediately add node names and colors to the url as paramaters (e.g., "?red=ACE").
+<p><b><i>Pro-tip:</i></b> Click the <b>View full size</b> button in the upper-left corner of the pathway viewer on the pathway page. This will open a new browser tab where you can immediately add node names and colors to the url as paramaters according to the following patterns:
 </p>
 <ul>
 <li><b>Highlight nodes by label and color:</b> <code>https://pathway-viewer.toolforge.org/embed/WP554?red=ACE</code>.</li>
 <li><b>Highlight multiple nodes by label and color:</b> <code>https://pathway-viewer.toolforge.org/embed/WP554?red=ACE&lightgreen=AGT</code>.</li>
 <li><b>Highlight node by xref and color:</b> <code>https://pathway-viewer.toolforge.org/embed/WP554?red=Ensembl_ENSG00000159640</code>.</li>
+<li><b>Highlight nodes by label using multiple colors per node:</b> <code>https://pathway-viewer.toolforge.org/embed/WP554?yellow=ACE&lightgreen=AGT,ACE,ACE2&orange=AGT,KNG1,CMA1,ACE</code>.</li>
 </ul>
+<p>The images below correspond to the first and last example in the list; nodes highlighted by label with one color; and nodes highlighted by label with multiple colors per node:</p>
+<table style="border:0px;"><tr>
+<td style="border:0px;"> <img src="/assets/img/help/WP554_ACE-Red.png" alt="Node Coloring Example Single" style="width: 100%;"/> </td>
+<td style="border:0px;"> <img src="/assets/img/help/WP554_multi.png" alt="Node Coloring Example Multiple" style="width: 100%;"/> </td>
+</tr></table>
 <p>If you want even more control over your pathway visualizations, like editing and adding objects, then refer to our <a href="https://cytoscape.org/cytoscape-tutorials/protocols/wikipathways-app/#/title" target="_blank">tutorial</a> describing data visualization on pathways in Cytoscape. From this workflow, you can get high-resolution images to include in manuscript, posters and other publications.</p>
 
 <h2>Embedding Pathway Visualizations in Web Pages</h2>
@@ -216,7 +222,6 @@ redirect_from:
 This code will produce the following iframe:</p>
 <br />
 <iframe src ="https://pathway-viewer.toolforge.org/embed/WP554?red=ACE&lightgreen=AGT" width="500px" height="350px" style="overflow:hidden;"></iframe>
-
 <br />
 </div></div>
 
