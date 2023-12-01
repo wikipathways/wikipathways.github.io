@@ -13,7 +13,8 @@ twitter: ~
 mastodon-url: ~
 meta: ~
 instagram: ~
-communities: AOP
+communities:
+- AOP
 redirect_from:
 - /index.php/User:Penny
 - /index.php/Special:Contributions/Penny

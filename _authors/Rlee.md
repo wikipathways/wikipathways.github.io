@@ -13,7 +13,8 @@ twitter: ~
 mastodon-url: ~
 meta: ~
 instagram: ~
-communities: SkeletalDysplasia
+communities:
+- SkeletalDysplasia
 redirect_from:
 - /index.php/User:Rlee
 - /index.php/Special:Contributions/Rlee
