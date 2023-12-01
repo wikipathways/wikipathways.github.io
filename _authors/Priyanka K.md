@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:Priyanka K
-- /index.php/Special:Contributions/Priyanka K
+- /index.php/User:Priyanka_K
+- /index.php/Special:Contributions/Priyanka_K
 email: ~
 
 ---

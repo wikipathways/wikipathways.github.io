@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:Paul Cavuoto
-- /index.php/Special:Contributions/Paul Cavuoto
+- /index.php/User:Paul_Cavuoto
+- /index.php/Special:Contributions/Paul_Cavuoto
 email: ~
 
 ---

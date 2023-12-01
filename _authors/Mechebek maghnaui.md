@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:Mechebek maghnaui
-- /index.php/Special:Contributions/Mechebek maghnaui
+- /index.php/User:Mechebek_maghnaui
+- /index.php/Special:Contributions/Mechebek_maghnaui
 email: ~
 
 ---

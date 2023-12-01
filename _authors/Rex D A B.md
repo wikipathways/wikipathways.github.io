@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:Rex D A B
-- /index.php/Special:Contributions/Rex D A B
+- /index.php/User:Rex_D_A_B
+- /index.php/Special:Contributions/Rex_D_A_B
 email: ~
 
 ---

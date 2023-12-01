@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:Bart Smeets
-- /index.php/Special:Contributions/Bart Smeets
+- /index.php/User:Bart_Smeets
+- /index.php/Special:Contributions/Bart_Smeets
 email: ~
 
 ---

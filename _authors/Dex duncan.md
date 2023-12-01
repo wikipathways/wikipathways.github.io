@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:Dex duncan
-- /index.php/Special:Contributions/Dex duncan
+- /index.php/User:Dex_duncan
+- /index.php/Special:Contributions/Dex_duncan
 email: ~
 
 ---

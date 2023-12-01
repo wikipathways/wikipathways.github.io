@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:Alvin kho
-- /index.php/Special:Contributions/Alvin kho
+- /index.php/User:Alvin_kho
+- /index.php/Special:Contributions/Alvin_kho
 email: ~
 
 ---

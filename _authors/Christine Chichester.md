@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:Christine Chichester
-- /index.php/Special:Contributions/Christine Chichester
+- /index.php/User:Christine_Chichester
+- /index.php/Special:Contributions/Christine_Chichester
 email: ~
 
 ---

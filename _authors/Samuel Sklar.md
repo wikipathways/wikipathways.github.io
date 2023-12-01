@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:Samuel Sklar
-- /index.php/Special:Contributions/Samuel Sklar
+- /index.php/User:Samuel_Sklar
+- /index.php/Special:Contributions/Samuel_Sklar
 email: ~
 
 ---

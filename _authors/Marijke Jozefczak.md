@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:Marijke Jozefczak
-- /index.php/Special:Contributions/Marijke Jozefczak
+- /index.php/User:Marijke_Jozefczak
+- /index.php/Special:Contributions/Marijke_Jozefczak
 email: ~
 
 ---

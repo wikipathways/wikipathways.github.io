@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:Asios Olia
-- /index.php/Special:Contributions/Asios Olia
+- /index.php/User:Asios_Olia
+- /index.php/Special:Contributions/Asios_Olia
 email: ~
 
 ---

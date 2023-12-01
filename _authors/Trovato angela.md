@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:Trovato angela
-- /index.php/Special:Contributions/Trovato angela
+- /index.php/User:Trovato_angela
+- /index.php/Special:Contributions/Trovato_angela
 email: ~
 
 ---

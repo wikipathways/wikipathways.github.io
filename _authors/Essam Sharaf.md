@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:Essam Sharaf
-- /index.php/Special:Contributions/Essam Sharaf
+- /index.php/User:Essam_Sharaf
+- /index.php/Special:Contributions/Essam_Sharaf
 email: ~
 
 ---

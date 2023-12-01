@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:S. Arnouts
-- /index.php/Special:Contributions/S. Arnouts
+- /index.php/User:S._Arnouts
+- /index.php/Special:Contributions/S._Arnouts
 email: ~
 
 ---

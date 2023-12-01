@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:Simon schmidt
-- /index.php/Special:Contributions/Simon schmidt
+- /index.php/User:Simon_schmidt
+- /index.php/Special:Contributions/Simon_schmidt
 email: ~
 
 ---

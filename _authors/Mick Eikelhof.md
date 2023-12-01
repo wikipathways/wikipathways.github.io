@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:Mick Eikelhof
-- /index.php/Special:Contributions/Mick Eikelhof
+- /index.php/User:Mick_Eikelhof
+- /index.php/Special:Contributions/Mick_Eikelhof
 email: ~
 
 ---

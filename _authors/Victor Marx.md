@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:Victor Marx
-- /index.php/Special:Contributions/Victor Marx
+- /index.php/User:Victor_Marx
+- /index.php/Special:Contributions/Victor_Marx
 email: ~
 
 ---

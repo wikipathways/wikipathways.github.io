@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:Bas Lahaije
-- /index.php/Special:Contributions/Bas Lahaije
+- /index.php/User:Bas_Lahaije
+- /index.php/Special:Contributions/Bas_Lahaije
 email: ~
 
 ---

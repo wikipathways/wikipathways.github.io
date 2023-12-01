@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:Aysegul Celik
-- /index.php/Special:Contributions/Aysegul Celik
+- /index.php/User:Aysegul_Celik
+- /index.php/Special:Contributions/Aysegul_Celik
 email: ~
 
 ---

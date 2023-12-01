@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:Kim de Nooijer
-- /index.php/Special:Contributions/Kim de Nooijer
+- /index.php/User:Kim_de_Nooijer
+- /index.php/Special:Contributions/Kim_de_Nooijer
 email: ~
 
 ---

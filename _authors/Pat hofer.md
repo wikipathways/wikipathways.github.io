@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:Pat hofer
-- /index.php/Special:Contributions/Pat hofer
+- /index.php/User:Pat_hofer
+- /index.php/Special:Contributions/Pat_hofer
 email: ~
 
 ---

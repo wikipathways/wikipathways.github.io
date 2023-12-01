@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:Tesic petra
-- /index.php/Special:Contributions/Tesic petra
+- /index.php/User:Tesic_petra
+- /index.php/Special:Contributions/Tesic_petra
 email: ~
 
 ---

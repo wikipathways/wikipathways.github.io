@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:Rik Lahaije
-- /index.php/Special:Contributions/Rik Lahaije
+- /index.php/User:Rik_Lahaije
+- /index.php/Special:Contributions/Rik_Lahaije
 email: ~
 
 ---

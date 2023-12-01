@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:Maria van de Meent
-- /index.php/Special:Contributions/Maria van de Meent
+- /index.php/User:Maria_van_de_Meent
+- /index.php/Special:Contributions/Maria_van_de_Meent
 email: ~
 
 ---

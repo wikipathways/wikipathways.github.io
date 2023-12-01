@@ -16,8 +16,8 @@ instagram: ~
 communities:
 - AOP
 redirect_from:
-- /index.php/User:Marvin M2
-- /index.php/Special:Contributions/Marvin M2
+- /index.php/User:Marvin_M2
+- /index.php/Special:Contributions/Marvin_M2
 email: ~
 
 ---

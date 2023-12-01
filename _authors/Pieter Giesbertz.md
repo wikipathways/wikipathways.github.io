@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:Pieter Giesbertz
-- /index.php/Special:Contributions/Pieter Giesbertz
+- /index.php/User:Pieter_Giesbertz
+- /index.php/Special:Contributions/Pieter_Giesbertz
 email: ~
 
 ---

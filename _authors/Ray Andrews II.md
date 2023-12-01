@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:Ray Andrews II
-- /index.php/Special:Contributions/Ray Andrews II
+- /index.php/User:Ray_Andrews_II
+- /index.php/Special:Contributions/Ray_Andrews_II
 email: ~
 
 ---

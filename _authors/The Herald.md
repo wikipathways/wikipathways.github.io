@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:The Herald
-- /index.php/Special:Contributions/The Herald
+- /index.php/User:The_Herald
+- /index.php/Special:Contributions/The_Herald
 email: ~
 
 ---

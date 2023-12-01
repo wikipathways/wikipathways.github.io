@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:Conroy lipids
-- /index.php/Special:Contributions/Conroy lipids
+- /index.php/User:Conroy_lipids
+- /index.php/Special:Contributions/Conroy_lipids
 email: ~
 
 ---

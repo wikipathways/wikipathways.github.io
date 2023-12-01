@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:Martin Urban
-- /index.php/Special:Contributions/Martin Urban
+- /index.php/User:Martin_Urban
+- /index.php/Special:Contributions/Martin_Urban
 email: ~
 
 ---

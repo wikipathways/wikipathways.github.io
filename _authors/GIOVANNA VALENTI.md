@@ -14,8 +14,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:GIOVANNA VALENTI
-- /index.php/Special:Contributions/GIOVANNA VALENTI
+- /index.php/User:GIOVANNA_VALENTI
+- /index.php/Special:Contributions/GIOVANNA_VALENTI
 email: ~
 
 ---
