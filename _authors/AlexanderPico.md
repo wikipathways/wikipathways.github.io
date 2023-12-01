@@ -23,6 +23,6 @@ communities:
 redirect_from:
 - /index.php/User:AlexanderPico
 - /index.php/Special:Contributions/AlexanderPico
-email: ~
+email: alex.pico@gladstone.ucsf.edu
 
 ---
