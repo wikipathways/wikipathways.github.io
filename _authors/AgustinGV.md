@@ -18,6 +18,6 @@ communities:
 redirect_from:
 - /index.php/User:AgustinGV
 - /index.php/Special:Contributions/AgustinGV
-email: ~
+email: agustin.gonvi@gmail.com
 
 ---

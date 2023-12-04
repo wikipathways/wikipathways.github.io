@@ -18,6 +18,6 @@ communities:
 redirect_from:
 - /index.php/User:Azankl
 - /index.php/Special:Contributions/Azankl
-email: ~
+email: andreas.zankl@sydney.edu.au
 
 ---
