@@ -16,14 +16,13 @@ logo-height: 80px
 
 support: "This work is supported by [The National Cancer Institute](https://www.cancer.gov/)."
 
-contribute: "The CPTAC set of pathways can be edited, updated and added to by anyone using PathVisio."
+contribute: "The CPTAC set of pathways can be edited, updated and added to by anyone with a [WikiPathways account](https://www.wikipathways.org/contribute.html)."
 
 community-tag: "CPTAC"
 
 editors:
 - Khanspers
-- AlexanderPico
-
+  
 collections-title: "Cancer Hallmark Categories"
 collections:
 - name: "Sustaining proliferative signaling"
