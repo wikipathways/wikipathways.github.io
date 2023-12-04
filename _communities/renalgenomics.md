@@ -13,7 +13,7 @@ logo-link:
 
 support:
 
-contribute: "You are invited to test and curate existing pathways as well as to create new ones. All suggestions and contributions are welcome. Contact Agustin Gonzalez-Vicente (agustin.gonvi[at]gmail.com) if interested in adding pathways. Suggested topics for new pathways are Membranoproliferative Glomerulonephritis type II, Acute Kidney Injury,, Chronic Kidney Disease, Diabetic Nephropathy, Kidney Transplants and Rejection, Mitochondria in Renal Disease, Membranous Nephropathy, Immune System and the Kidney, Renovascular Hypertension, Salt-Sensitive Hypertension. 
+contribute: "You are invited to test and curate existing pathways as well as to create new ones. All suggestions and contributions are welcome, contact Agustin Gonzalez-Vicente if interested in adding pathways. Suggested topics for new pathways are Membranoproliferative Glomerulonephritis type II, Acute Kidney Injury,, Chronic Kidney Disease, Diabetic Nephropathy, Kidney Transplants and Rejection, Mitochondria in Renal Disease, Membranous Nephropathy, Immune System and the Kidney, Renovascular Hypertension, Salt-Sensitive Hypertension. 
 
 Some useful resources related to kidney biology are 
 
