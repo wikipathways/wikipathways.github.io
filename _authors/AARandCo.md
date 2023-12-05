@@ -15,8 +15,8 @@ mastodon-url: ~
 meta: ~
 instagram: ~
 redirect_from:
-- /index.php/User:AARandCo
-- /index.php/Special:Contributions/AARandCo
+- /index.php/User:AAR&Co
+- /index.php/Special:Contributions/AAR&Co
 email: ~
 
 ---
