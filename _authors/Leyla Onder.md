@@ -1,5 +1,5 @@
 ---
-username: Leyla Önder
+username: Leyla Onder
 realname: Leyla Önder
 website: ~
 affiliation: ~
