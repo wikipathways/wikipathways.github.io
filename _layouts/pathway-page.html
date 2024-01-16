@@ -320,7 +320,7 @@ layout: default
     <thead>
         <th>Label</th>
         <th>Type</th>
-        <th>Compact Identifier</th>
+        <th>Compact URI</th>
         <th>Comment</th>
     </thead>
     <tbody>
@@ -363,6 +363,7 @@ layout: default
         {{ ref.Citation }}
       {% else %}
         {{ ref.Database }}:
+        {%- comment %}Are the mappings for each reference's database to a Bioregistry prefix in here? if so, use that{% endcomment %}
         {% if ref.Database == "URL" %}
           <a href="{{ ref.ID }}" target="_blank" class="external" rel="nofollow">{{ ref.ID }}</a>
         {% elsif ref.Database == "KEGG Pathway" %}
