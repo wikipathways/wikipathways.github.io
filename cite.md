@@ -8,7 +8,7 @@ redirect_from: /index.php/How_to_cite_WikiPathways
 <ul>
     <li>In general, we recommend citing either our latest <i>NAR</i> database article or the original 2008 <i>PLoS Biology</i> article:
     <ul>
-        <li><a href="https://doi.org/10.1093/nar/gkad960" target="_blank">Agrawal a, et al. <b>(2023)</b> WikiPathways 2024: next generation pathway database. <i>NAR</i></a>.</li>
+        <li><a href="https://doi.org/10.1093/nar/gkad960" target="_blank">Agrawal a, et al. <b>(2024)</b> WikiPathways 2024: next generation pathway database. <i>NAR</i></a>.</li>
         <li><a href="https://doi.org/10.1371/journal.pbio.0060184" target="_blank">Pico AR, et al. <b>(2008)</b> WikiPathways: Pathway Editing for the People. <i>PLoS Biol</i></a>. </li>
     </ul>
     </li>
