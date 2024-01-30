@@ -51,7 +51,7 @@ redirect_from:
 <p>TogoTV. Sep 21 2023, YouTube: <a href="https://youtu.be/oSyoDU2r4Q0" target="_blank">https://youtu.be/oSyoDU2r4Q0</a>, DOI: <a href="https://doi.org/10.7875/togotv.2023.063" target="_blank">https://doi.org/10.7875/togotv.2023</a>.</p>
 <div id="viewer">
 <h1>Interactive Pathway Viewer</h1>
-<p>Each pathway offers a dedicated page for interactive viewing. Click on the open icon <span title="Open in new tab" style="color: #FF8120; background-color: #FFFFFF; font-size: 1.0em;"><i class="fa fa-arrow-up-right-from-square"></i></span> or anywhere on the image to open the interactive in a new tab. Zoom in and out by scrollwheel, pan by click-n-drag, and click on genes, proteins and metabolites to open external pages in Scholia dedicated to each molecule. Here's a mini example:
+<p>Each pathway offers a dedicated page for interactive viewing. Click on the open icon <span title="Open in new tab" style="color: #FF8120; background-color: #FFFFFF; font-size: 1.0em;"><i class="fa fa-arrow-up-right-from-square"></i></span> or anywhere on the image to open the interactive in a new tab. Zoom in and out by scrollwheel, pan by click-n-drag, and click on genes, proteins and metabolites to open links to external resources dedicated to each molecule. Here's a mini example:
 </p>
 <iframe src ="https://pathway-viewer.toolforge.org/?id=WP554" width="500px" height="350px" style="overflow:hidden;margin-left:200px;"></iframe>
   <br/>
