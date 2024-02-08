@@ -2,6 +2,9 @@
 layout: home2
 title: Home
 reviewer_roster:
+- DeSl
+- IsabelWassink
+- Jmillanacosta
 - Madeomuga
 - Ash iyer
 - Elisson nl
@@ -12,9 +15,6 @@ reviewer_roster:
 - Mkutmon
 - Susan
 - Andra
-- DeSl
-- IsabelWassink
-- Jmillanacosta
 
 redirect_from: 
 - /index.php/WikiPathways
