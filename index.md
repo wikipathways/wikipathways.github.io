@@ -2,6 +2,7 @@
 layout: home2
 title: Home
 reviewer_roster:
+- Madeomuga
 - Ash iyer
 - Elisson nl
 - AlexanderPico
@@ -14,8 +15,6 @@ reviewer_roster:
 - DeSl
 - IsabelWassink
 - Jmillanacosta
-- Ddigles
-- Madeomuga
 
 redirect_from: 
 - /index.php/WikiPathways
