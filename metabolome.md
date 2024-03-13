@@ -180,7 +180,7 @@ where {
 
 <h3>Metabolites in the most Pathways</h3>
 
-With the remark that BridgeDB is not involved yet: the results are based on metabolite datanodes, not unique metabolites.
+With the remark that BridgeDb is not involved yet: the results are based on metabolite datanodes, not unique metabolites.
 
 ```sparql
 select ?mb count(distinct ?pathway) as ?pwCount
@@ -191,3 +191,28 @@ where {
 ```
 
 [Open](https://bit.ly/3YjqbDD)
+
+
+<h3>Enzymatic reactions</h3>
+
+```sparql
+SELECT DISTINCT ?wpid ?catalyst ?source ?sourceDb ?target ?targetDb WHERE {
+  ?pathway a wp:Pathway ;
+      dc:identifier / dcterms:identifier ?wpid .
+  # ?catalysis a wp:Catalysis .
+  ?catalysis dcterms:isPartOf ?pathway ;
+    wp:source / rdfs:label ?catalyst ;
+    wp:participants ?reaction .
+  ?reaction a wp:Interaction .
+  ?reaction wp:source ?source .
+  ?source a wp:Metabolite . 
+  OPTIONAL{?source wp:bdbWikidata ?sourceDb .}
+  
+  ?reaction wp:target ?target .
+  ?target a wp:Metabolite . 
+  OPTIONAL{?target wp:bdbWikidata ?targetDb .}
+} ORDER BY ASC(?source)
+```
+
+[Open](https://bit.ly/48RsJgW)
+
