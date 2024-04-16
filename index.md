@@ -2,6 +2,7 @@
 layout: home2
 title: Home
 reviewer_roster:
+- Susan
 - Andra
 - DeSl
 - Jmillanacosta
@@ -13,7 +14,6 @@ reviewer_roster:
 - Khanspers
 - Fehrhart
 - Mkutmon
-- Susan
 
 redirect_from: 
 - /index.php/WikiPathways
