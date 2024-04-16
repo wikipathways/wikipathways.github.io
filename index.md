@@ -2,8 +2,8 @@
 layout: home2
 title: Home
 reviewer_roster:
+- Andra
 - DeSl
-- IsabelWassink
 - Jmillanacosta
 - Madeomuga
 - Ash iyer
@@ -14,7 +14,6 @@ reviewer_roster:
 - Fehrhart
 - Mkutmon
 - Susan
-- Andra
 
 redirect_from: 
 - /index.php/WikiPathways
