@@ -10,8 +10,8 @@ reviewer_roster:
 - Ash iyer
 - Elisson nl
 - AlexanderPico
-- Tabbassidaloii
 - Khanspers
+- Tabbassidaloii
 - Fehrhart
 - Mkutmon
 
