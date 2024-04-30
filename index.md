@@ -2,6 +2,7 @@
 layout: home2
 title: Home
 reviewer_roster:
+- Fehrhart
 - Mkutmon
 - Susan
 - Andra
@@ -12,7 +13,7 @@ reviewer_roster:
 - AlexanderPico
 - Khanspers
 - Tabbassidaloii
-- Fehrhart
+
 
 redirect_from: 
 - /index.php/WikiPathways
