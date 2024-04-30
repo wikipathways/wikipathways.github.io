@@ -2,18 +2,17 @@
 layout: home2
 title: Home
 reviewer_roster:
+- Mkutmon
 - Susan
 - Andra
 - DeSl
 - Jmillanacosta
-- Madeomuga
 - Ash iyer
 - Elisson nl
 - AlexanderPico
 - Khanspers
 - Tabbassidaloii
 - Fehrhart
-- Mkutmon
 
 redirect_from: 
 - /index.php/WikiPathways
