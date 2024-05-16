@@ -21,6 +21,7 @@ redirect_from:
 <li>Read about the <a href="rdf.html">WikiPathways RDF model</a>.</li>
 <li>Query the WikiPathways content in <a href="https://sparql.wikipathways.org/" target="_blank">RDF format</a>.</li>
 <li>Download all pathways in <a href="http://data.wikipathways.org/current/rdf" target="_blank">Turtle syntax</a>.</li>
+<li>Download Reactome pathways in gpml and RDF format from the <a href="https://github.com/wikipathways/reactome-gpml" target="_blank">Reactome gpml repo</a>.</li>
 </ul>
 <h2>SVG: Scalable Vector Graphics</h2>
 <ul>
