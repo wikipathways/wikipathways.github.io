@@ -1,10 +1,14 @@
 ---
 username: Eweitz
 realname: Eric Weitz
-website: ~
+website: https://eweitz.github.io/ideogram/gene-leads
 affiliation: ~
-bio: ~
-github: ~
+bio: I refine pathways, and engineer them into tools for biological discovery.
+
+My contributions are mostly systematic graphical and data improvements.  Lately, I have created a number of new pathways, sourced directly from literature, [PFOCR](https://pfocr.wikipathways.org/), and other pathway databases.  The [quick and open](https://www.wikipathways.org/contribute.html) nature of WikiPathways is delightful.
+
+I also incorporate pathways into [Gene Leads Ideogram](https://eweitz.github.io/ideogram/gene-leads), a reuseable web component I've been developing to enrich gene search.
+github: eweitz
 orcid: ~
 linkedin: ~
 googlescholar: ~
