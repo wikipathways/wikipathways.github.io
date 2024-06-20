@@ -8,6 +8,7 @@ reviewer_roster:
 - Andra
 - DeSl
 - Jmillanacosta
+- Eweitz
 - Ash iyer
 - Elisson nl
 - AlexanderPico
