@@ -2,8 +2,6 @@
 layout: home2
 title: Home
 reviewer_roster:
-- Fehrhart
-- Mkutmon
 - Susan
 - Andra
 - DeSl
@@ -14,6 +12,8 @@ reviewer_roster:
 - AlexanderPico
 - Khanspers
 - Tabbassidaloii
+- Fehrhart
+- Mkutmon
 
 
 redirect_from: 
