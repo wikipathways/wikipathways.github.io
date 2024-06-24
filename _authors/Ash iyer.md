@@ -1,5 +1,5 @@
 ---
-username: Aishwarya Iyer
+username: Ash iyer
 realname: Aishwarya Iyer
 website: ~
 affiliation: Maastricht University
