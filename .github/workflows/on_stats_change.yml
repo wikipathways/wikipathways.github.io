@@ -13,12 +13,12 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
   cancel-in-progress: true
 
-jobs:      
+jobs:
   update-stats:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
           ref: main
@@ -39,7 +39,7 @@ jobs:
 
       - name: BiocManager installations
         run: |
-          BiocManager::install("RColorBrewer", ask = FALSE) 
+          BiocManager::install("RColorBrewer", ask = FALSE)
           BiocManager::install("rWikiPathways", ask = FALSE)
         shell: Rscript {0}
 

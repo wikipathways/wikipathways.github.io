@@ -6,7 +6,7 @@ on:
   schedule:
   - cron: "0 1 * * 1"
   push:
-    branches: 
+    branches:
       - main
     paths-ignore:
       - '.github/**'
@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup Ruby
         uses: ruby/setup-ruby@ee2113536afb7f793eed4ce60e8d3b26db912da4 # v1.127.0
         with:
