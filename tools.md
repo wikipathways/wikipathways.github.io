@@ -203,7 +203,13 @@ redirect_from: /index.php/Help:Tools_using_WikiPathways
     <tr>
     <th><a href="https://wikipedia.org" target="_blank" class="external " title="http://wikipedia.org" rel="nofollow">Wikipedia</a>
     </th><td>The free encyclopedia that anyone can edit. In collaboration with MCB and GeneWiki, we have added interactive pathway maps using WikiPathways (<a href="http://en.wikipedia.org/wiki/DPYD" target="_blank" class="external " title="http://en.wikipedia.org/wiki/DPYD" rel="nofollow">example</a>).
-    </td></tr></table>
+    </td></tr>
+    <tr>
+    <th><a href="https://github.com/YuLab-SMU/wikiprofiler" target="_blank" class="external " title="https://github.com/YuLab-SMU/wikiprofiler" rel="nofollow">wikiprofiler</a>
+    </th><td>Queries online 'WikiPathway' graphics and allows mapping user data (e.g., expression values) on the graph.
+        The package designs a grammar of graphic syntax that using pipe operator to add graphic layer.
+    </td></tr>
+</table>
 
 <p>
 <b>If you know of a tool or resource that makes use of our curated pathway content, announce them on <a href="http://groups.google.com/group/wikipathways-discuss" target="_blank" class="external " title="http://groups.google.com/group/wikipathways-discuss" rel="nofollow">our mailing list</a> and add them to the list below.</b>
