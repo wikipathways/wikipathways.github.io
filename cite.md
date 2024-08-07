@@ -7,10 +7,10 @@ redirect_from: /index.php/How_to_cite_WikiPathways
 <h2>Citing the WikiPathways project</h2>
 We recommend citing our latest <i>NAR</i> database article:
 <ul>
-        <li><a href="https://doi.org/10.1093/nar/gkad960" target="_blank">Agrawal a, et al. <b>(2024)</b> WikiPathways 2024: next generation pathway database. <i>NAR</i></a>.</li>
+        <li><b><a href="https://doi.org/10.1093/nar/gkad960" target="_blank">Agrawal a, et al. <b>(2024)</b> WikiPathways 2024: next generation pathway database. <i>NAR</i></a></b>.</li>
 </ul>
 
-<i>Potentially-relevant topics are highlighted in our other project articles:
+<i>Potentially-relevant topics are highlighted in our other project articles:</i>
 <ul>
             <li><a href="https://doi.org/10.1371/journal.pone.0263057" target="_blank">Miller RA, et al. <b>(2022)</b> Understanding signaling and metabolic paths using semantified and harmonized information about biological interactions. <i>PLoS ONE</i></a>.</li>
             <li><a href="https://doi.org/10.1093/NAR/gkx1064" target="_blank">Slenter DN, et al. <b>(2018)</b> WikiPathways: a multifaceted pathway database bridging metabolomics to other omics research. <i>NAR</i></a>.</li>
@@ -20,7 +20,6 @@ We recommend citing our latest <i>NAR</i> database article:
             <li><a href="https://doi.org/10.1093/nar/gkr1074" target="_blank">Kelder T, et al. <b>(2012)</b> WikiPathways: building research communities on biological pathways. <i>NAR</i></a> or <a href="https://doi.org/10.1093/NAR/gkaa1024" target="_blank">Martens M, et al. <b>(2021)</b> WikiPathways: connecting communities. <i>NAR</i></a>.</li>
             <li><a href="https://doi.org/10.1371%2Fjournal.pone.0006447" target="_blank">Kelder T, et al. <b>(2009)</b> Mining Biological Pathways Using WikiPathways Web Services. <i>PLoS One</i></a>.</li>
 </ul>
-</i>
 
 
 <div id="citepathway">
