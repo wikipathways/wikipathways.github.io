@@ -10,9 +10,7 @@ linkedin: ~
 googlescholar: u8SjMZ0AAAAJ
 wikidata: Q20895241
 twitter: ~
-mastodon-url:
-- https://social.edu.nl/@egonw
-- mastodon-url: https://mastodon.social/@egonw
+mastodon-url: https://social.edu.nl/@egonw
 meta: ~
 instagram: ~
 communities:
