@@ -7,7 +7,7 @@ redirect_from: /index.php/How_to_cite_WikiPathways
 <h2>Citing the WikiPathways project</h2>
 We recommend citing our latest <i>NAR</i> database article:
 <ul>
-        <li><b><a href="https://doi.org/10.1093/nar/gkad960" target="_blank">Agrawal a, et al. <b>(2024)</b> WikiPathways 2024: next generation pathway database. <i>NAR</i></a></b>.</li>
+        <li><b><a href="https://doi.org/10.1093/nar/gkad960" target="_blank">Agrawal A, et al. <b>(2024)</b> WikiPathways 2024: next generation pathway database. <i>NAR</i></a></b>.</li>
 </ul>
 
 <i>Potentially-relevant topics are highlighted in our other project articles:</i>
