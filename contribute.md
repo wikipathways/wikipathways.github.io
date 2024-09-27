@@ -63,6 +63,7 @@ All new pathways will be reviewed by a reviewer from our "Reviewer of the week" 
 </ul>
 <p>Anyone is welcome to join the Reviewer Roster. Please <a href="https://github.com/wikipathways/wikipathways-help/discussions" target="_blank">contact us</a> if you are interested.</p>
 <hr>
+<a name="content_requirements"></a>
 <h2>Requirements for Pathway Content</h2>
 <p>Pathway models published at WikiPathways must meet specific criteira for quality and completeness, to ensure that the content is useful, both for direct human consumption, and for computational analysis:</p>
 <ul>
