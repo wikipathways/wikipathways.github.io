@@ -18,6 +18,7 @@ communities:
 - Daphnia
 - Nanomaterials
 - Lipids
+- MetaKids
 redirect_from:
 - /index.php/User:Egonw
 - /index.php/Special:Contributions/Egonw
