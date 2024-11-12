@@ -16,6 +16,8 @@ instagram: ~
 communities:
 - COVID19
 - PancCanNet
+- lipids
+- sr24
 redirect_from:
 - /index.php/User:Mkutmon
 - /index.php/Special:Contributions/Mkutmon
