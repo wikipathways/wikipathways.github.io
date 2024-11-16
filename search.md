@@ -15,7 +15,7 @@ title: Search Results
   <span title="pro-tip" >
     <i class="fa fa-circle-info"></i>
   </span>
-  <i>Pro-tip:</i> Start typing any keywords for pathway titles, descriptions, genes or metabolites and the first 40 results will appear. You can include organisms, ontology annotations, WPIDs, and even last-edited dates in your query. Multi-term queries are processed as AND queries.
+  <i>Pro-tip:</i> Start typing any keywords for pathway titles, descriptions, genes or metabolites and the results will begin to appear. You can include organisms, ontology annotations, WPIDs, and even last-edited dates in your query. Multi-term queries are processed as AND queries.
 </div> 
 
 <div class="search">
@@ -81,6 +81,15 @@ SimpleJekyllSearch({
     const aNum = parseInt(a.wpid.match(/\d+/)[0]);
     const bNum = parseInt(b.wpid.match(/\d+/)[0]);
     return bNum - aNum;
+  },
+  searchResultsCallback: function(results) {
+    allResults = results;
+    const showMoreContainer = document.getElementById('show-more-container');
+    showMoreContainer.style.display = results.length > currentLimit ? 'block' : 'none';
+  },
+  inputCallback: function(query) {
+    currentQuery = query;
+    currentLimit = 40; // Reset limit when new search is performed
   }
 })
 </script>
