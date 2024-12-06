@@ -156,7 +156,7 @@ redirect_from:
 </div>
 <div id="review">
 <h1>Review Changes</h1>
-<p>To maintain WikiPathways as a high-quality pathway resource, a weekly rotation of reviwers from the community help to ensure the quality of new content and edits to existing content. Our <a href="https://wikipathways.org/academy/qaprotocol.html" target="_blank">Quality Assurance Protocol</a> checks for the following things:</p>
+<p>To maintain WikiPathways as a high-quality pathway resource, a weekly rotation of reviewers from the community help to ensure the quality of new content and edits to existing content. Our <a href="https://wikipathways.org/academy/qaprotocol.html" target="_blank">Quality Assurance Protocol</a> checks for the following things:</p>
 <ul>
 <li>Do pathway nodes have valid database identifiers?</li>
 <li>Are interactions properly connected to nodes?</li>
