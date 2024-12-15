@@ -19,6 +19,13 @@ layout: default
       <h2>Curation Table</h2>
       <div class="table-container">
       <table id="participants-table"> 
+        <thead>
+          {% for row in rows limit:1%}
+            {% for field in row %}
+              <th>{{ field[0] }}</th>
+            {% endfor %}  
+          {% endfor %}
+        </thead>
         <tbody>
           {% for row in rows %}
             <tr>
