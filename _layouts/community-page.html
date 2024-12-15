@@ -14,6 +14,10 @@ layout: default
       </a>
     </h2>
     <p>{{ page.description | markdownify }}</p>
+    {% if page.curation-table %}
+    {% assign parts=site.data[ page.curation-table] %}
+    <h2>Curation Table</h2>
+    {% endif %}
     <h2 id-contacts>Contact</h2>
   {% assign all_contacts = '' | split: '' %}
   {% if page.editors %}
