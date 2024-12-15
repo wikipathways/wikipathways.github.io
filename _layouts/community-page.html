@@ -15,16 +15,15 @@ layout: default
     </h2>
     <p>{{ page.description | markdownify }}</p>
     {% if page.curation-table %}
-      {% assign parts=site.data[ page.curation-table] %}
+      {% assign rows = site.data[ page.curation-table] %}
       <h2>Curation Table</h2>
       <div class="table-container">
       <table id="participants-table"> 
         <tbody>
-          {% for row in parts %}
+          {% for row in rows %}
             <tr>
-            {% assign row-fields = row | split: '\t' %}
-            {% for field in row-fields %}
-              <td>{{ field }}</td>
+            {% for field in row %}
+              <td>{{ field[1] }}</td>
             {% endfor %}  
             </tr>
           {% endfor %}
