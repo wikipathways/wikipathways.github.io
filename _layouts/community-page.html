@@ -15,8 +15,25 @@ layout: default
     </h2>
     <p>{{ page.description | markdownify }}</p>
     {% if page.curation-table %}
-    {% assign parts=site.data[ page.curation-table] %}
-    <h2>Curation Table</h2>
+      {% assign parts=site.data[ page.curation-table] %}
+      <h2>Curation Table</h2>
+      <div class="table-container">
+      <table id="participants-table"> 
+        <tbody>
+          {% for row in parts %}
+            <tr>
+            {% assign row-fields = row | split: '\t' %}
+            {% for field in row-fields %}
+              <td>{{ field }}</td>
+            {% endfor %}  
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <div class="table-gradient-overlay"></div>
+      </div>
+      <input type="button" class="badge badge-secondary" id="tableMore" value="more rows" style="float: left; margin: -8px 4px 0px 0px;">
+      <input type="button" class="badge badge-secondary" id="tableLess" value="fewer rows" style="float: left; margin-top: -8px;">
     {% endif %}
     <h2 id-contacts>Contact</h2>
   {% assign all_contacts = '' | split: '' %}
