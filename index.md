@@ -2,7 +2,6 @@
 layout: home2
 title: Home
 reviewer_roster:
-- Susan
 - Andra
 - DeSl
 - Jmillanacosta
@@ -12,9 +11,11 @@ reviewer_roster:
 - AlexanderPico
 - Khanspers
 - Tabbassidaloii
+- YuanyuanDuan1
 - Fehrhart
+- alexandra-valeanu
 - Mkutmon
-
+- Susan
 
 redirect_from: 
 - /index.php/WikiPathways
