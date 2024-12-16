@@ -2,13 +2,6 @@
 layout: home2
 title: Home
 reviewer_roster:
-- Andra
-- DeSl
-- Jmillanacosta
-- Eweitz
-- Ash iyer
-- Elisson nl
-- AlexanderPico
 - Khanspers
 - Tabbassidaloii
 - YuanyuanDuan1
@@ -16,6 +9,13 @@ reviewer_roster:
 - alexandra-valeanu
 - Mkutmon
 - Susan
+- Andra
+- DeSl
+- Jmillanacosta
+- Eweitz
+- Ash iyer
+- Elisson nl
+- AlexanderPico
 
 redirect_from: 
 - /index.php/WikiPathways
