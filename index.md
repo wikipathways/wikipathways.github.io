@@ -2,8 +2,8 @@
 layout: home2
 title: Home
 reviewer_roster:
-- Khanspers
 - Tabbassidaloii
+- Khanspers
 - YuanyuanDuan1
 - Fehrhart
 - alexandra-valeanu
