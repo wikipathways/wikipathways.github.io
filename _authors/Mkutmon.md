@@ -17,7 +17,7 @@ communities:
 - COVID19
 - PancCanNet
 - lipids
-- sr24
+- MetaKids
 redirect_from:
 - /index.php/User:Mkutmon
 - /index.php/Special:Contributions/Mkutmon

@@ -14,6 +14,8 @@ mastodon-url:
 meta:
 instagram:
 email:
+communities:
+- MetaKids
 redirect_from:
 - /index.php/User:Daanvanbeek
 - /index.php/Special:Contributions/Daanvanbeek
