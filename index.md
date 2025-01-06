@@ -2,6 +2,9 @@
 layout: home2
 title: Home
 reviewer_roster:
+- Ash iyer
+- Elisson nl
+- AlexanderPico
 - Tabbassidaloii
 - Khanspers
 - YuanyuanDuan1
@@ -13,9 +16,6 @@ reviewer_roster:
 - DeSl
 - Jmillanacosta
 - Eweitz
-- Ash iyer
-- Elisson nl
-- AlexanderPico
 
 redirect_from: 
 - /index.php/WikiPathways
