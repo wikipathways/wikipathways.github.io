@@ -13,6 +13,8 @@ twitter: ~
 mastodon-url: ~
 meta: ~
 instagram: ~
+communities:
+- ONTOX
 redirect_from:
 - /index.php/User:LLadeira
 - /index.php/Special:Contributions/LLadeira
