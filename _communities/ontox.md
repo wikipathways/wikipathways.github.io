@@ -13,7 +13,7 @@ logo:
 
 logo-link:
 
-support: "This work was performed in the context of the [ONTOX project](https://ontoxproject.eu/) that has received funding from the European Union’s Horizon 2020 Research and Innovation programme under grant agreement No 963845. ONTOX is part of the [ASPIS project cluster](https://aspiscluster.eu/)."
+support: "This work was performed in the context of the [ONTOX project](https://ontox-project.eu/) that has received funding from the European Union’s Horizon 2020 Research and Innovation programme under grant agreement No 963845. ONTOX is part of the [ASPIS project cluster](https://aspis-cluster.eu/)."
 
 contribute: "The list of pathways is not static and can be updated at any time. If you know of a pathway that should be added, please contact one of the administrators, Luiz Ladeira (lcladeira[AT]uliege.be) or Bernard Staumont (b.staumont[AT]uliege.be)."
 
