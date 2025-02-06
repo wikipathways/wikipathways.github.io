@@ -7,9 +7,9 @@ reviewer_roster:
 - AlexanderPico
 - Tabbassidaloii
 - Khanspers
-- YuanyuanDuan1
+- Duan
 - Fehrhart
-- alexandra-valeanu
+- Alval
 - Mkutmon
 - Susan
 - Andra
