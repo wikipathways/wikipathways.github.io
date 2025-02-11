@@ -4,7 +4,7 @@ realname: Alval
 website: 
 affiliation: 
 bio: 
-github: 
+github: alexandra-valeanu
 orcid: 
 linkedin: 
 googlescholar: 
