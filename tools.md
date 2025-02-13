@@ -165,8 +165,12 @@ redirect_from: /index.php/Help:Tools_using_WikiPathways
     </th><td>Combines biological pathways from KEGG, Reactome, WikiPathways, and HMDB. For consistent and comprehensive analysis, RaMP enables batch and complex queries (e.g. list all metabolites involved in glycolysis and lung cancer), can readily be integrated into pathway analysis tools, and supports pathway overrepresentation analysis given a list of genes and/or metabolites of interest.
     </td></tr>
     <tr>
+    <th><a href="https://github.com/bonohu/qpx" target="_blank" class="external " title="https://github.com/bonohu/qpx" rel="nofollow">QPX</a>
+    </th><td>Quest for Pathways with eXpression (QPX) is a tool that displays WikiPathways pathways and attribute tables for selected nodes in Jupyter notebook.
+    </td></tr>
+    <tr>
     <th><a href="https://cran.r-project.org/web/packages/rSEA/vignettes/rSEA_vignette.html" target="_blank" class="external " title="https://cran.r-project.org/web/packages/rSEA/vignettes/rSEA_vignette.html" rel="nofollow">rSEA</a>
-    </th><td>TBD.
+    </th><td>rSEA is a novel paradigm for simultaneous enrichment analysis of feature-sets. It combines the pre-existing self-contained and competitive approaches by defining a unified null hypothesis that includes the null hypotheses of both approaches as special cases.
     </td></tr>
     <tr>
     <th><a href="https://bioconductor.org/packages/release/bioc/html/rWikiPathways.html" target="_blank" class="external " title="https://bioconductor.org/packages/release/bioc/html/rWikiPathways.html" rel="nofollow">rWikiPathways</a>
