@@ -2,7 +2,7 @@
 username: LLadeira
 realname: Luiz C. M. Ladeira
 website: ~
-affiliation: Biomechanics Research Unit, University of Liège, Belgium
+affiliation: Biomechanics Research Unit, GIGA Institute, University of Liège, Belgium
 bio: ~
 github: luiz-ladeira
 orcid: 0000-0002-7152-2688
