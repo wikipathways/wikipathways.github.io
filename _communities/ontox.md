@@ -3,7 +3,7 @@ display-name: "ONTOX"
 
 title: "This is the ONTOX project's community at WikiPathways"
 
-description: "The ONTOX Community aims to list and highlight molecular interaction pathways related to hepato-, nephro-, and neurodevelopmental toxicities. This collection is curated and maintained by biocurators and domain experts from the [ONTOX project](https://ontox-project.eu/). The community features pathways involved in organ-specific toxicity responses. All pathway lists and related resources are publicly available and can be downloaded from dedicated GitHub repositories, with separate lists maintained for hepatotoxicity, nephrotoxicity, and neurodevelopmental toxicity pathways [https://github.com/ontox-maps/ontox_wikipathways](https://github.com/ontox-maps/ontox_wikipathways)."
+description: "The ONTOX Community aims to list and highlight molecular interaction pathways related to hepato-, nephro-, and neurodevelopmental toxicities. This collection is curated and maintained by biocurators and domain experts from the [ONTOX project](https://ontox-project.eu/). The community features pathways involved in organ-specific toxicity responses. All pathway lists and related resources are publicly available and can be downloaded from dedicated GitHub repositories, with separate lists maintained for hepatotoxicity, nephrotoxicity, and neurodevelopmental toxicity pathways [https://github.com/ontox-maps/ontox_wikipathways](https://github.com/ontox-maps/ontox_wikipathways). Editors: Luiz Ladeira, Bernard Staumont, Alessio Gamba, Liesbet Geris. Curators: Ramiro Jover, Anna Rapisarda, Julen Sanz-Serrano, Anouk Verhoeven, Annika Drees, Devon Barnes, Roos Masereeuw, Eliska Kuchovska, Malene Lislien, Tim Hofer, Oddvar Myhre, Job Berkhout, Harm Heusinkveld."
 
 short-description: "The ONTOX Community lists molecular interaction pathways related to hepato-, nephro-, and neurodevelopmental toxicities."
 
@@ -22,23 +22,6 @@ community-tag: "ONTOX"
 editors:
 - LLadeira
 - Bstaumont
-- Gamba
-- Liesbet Geris
-
-curators:
-- Ramiro Jover
-- Anna Rapisarda
-- Julen Sanz-Serrano
-- Anouk Verhoeven
-- Annika Drees
-- Devon Barnes
-- Roos Masereeuw
-- Eliska Kuchovska
-- Malene Lislien
-- Tim Hofer
-- Oddvar Myhre
-- Job Berkhout
-- Harm Heusinkveld
 
 collections-title: "ONTOX collection"
 collections:
