@@ -111,7 +111,7 @@ redirect_from:
 <li>Search for all human pathways that include ACE2 and aldosterone with the query "ace2 aldosterone human".</li>
 <li>Search for all cancer pathways updated in 2023 with the query "cancer 2023".</li>
 </ul> 
-
+<p>Note that for searches with many results, adding search terms will update the results. However, the updating of results may not be evident without scrolling to see the full list.</p>
 <p>The <a href="/browse/table.html">Table</a> view of the current collection offers a nice way to interactively explore pathways by searching for various parameters. The table displays all pathways, and offers search fields at the top of each column to filter the table. Additional sort options become available when the filtered set is fewer than 200 pathways. Example usage:</p>
 <ul>
 <li>To see all pathways related to adipogenesis in humans, type "adipogenesis" in the search field at the top of the <b>Pathway Title</b> column, and type "Homo sapiens" in the search field at the top of the <b>Organism</b> column.</li>
