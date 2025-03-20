@@ -1,6 +1,6 @@
 ---
 username: Hasanbalci
-realname: Hasanbalci
+realname: Hasan Balcı
 website: 
 affiliation: 
 bio: 
