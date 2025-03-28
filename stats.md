@@ -48,6 +48,7 @@ Collections to update the table using data sourced from GitHub repos.
 ## read saved data
 wpid.all.df.cnts <- read.csv("../_data/pathway_counts.csv", stringsAsFactors = F)
 edits.user.df <- read.csv("../_data/edit_counts.csv", stringsAsFactors = F)
+active.author.df.cnts <- read.csv("../_data/active_author_counts.csv", stringsAsFactors = F)
 
 ## add new row of data
 # TODO: count WP folders in _pathways/
@@ -82,6 +83,17 @@ tail(combo.df[,2:4],1)
 ```
 ##    edits pathways month
 ## 86  1297     1997 March
+```
+
+
+``` r
+# Calculate stats for data release: new pathways and active authors
+last.two.pw.counts <- tail(wpid.all.df.cnts$pathways, 2)
+# New pathways last month
+new.pws <- (last.two.pw.counts[2] - last.two.pw.counts[1])
+
+# Number of active authors in the last month
+active.authors <- tail(active.author.df.cnts$authors, 1)
 ```
 
 Next, let's plot a time series
