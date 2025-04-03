@@ -162,7 +162,7 @@ redirect_from: /index.php/Help:Tools_using_WikiPathways
     </td></tr>
     <tr>
     <th><a href="https://www.proteomicsdb.org/analytics/ptmNavigator" target="_blank" class="external " title="https://www.proteomicsdb.org/analytics/ptmNavigator" rel="nofollow">PTMNavigator</a>
-    </th><td>PTMNavigator is a tool for interactive visualization of differentially regulated post-translational modifications in cellular signaling pathways, including WikiPathways. It is part of <a href="https://www.proteomicsdb.org/" target="_blank" class="external title="https://www.proteomicsdb.org/" rel="nofollow">ProteomicsDB</a>. 
+    </th><td>PTMNavigator is a tool for interactive visualization of differentially regulated post-translational modifications in cellular signaling pathways, including WikiPathways. It is part of <a href="https://www.proteomicsdb.org/" target="_blank" class="external" title="https://www.proteomicsdb.org/" rel="nofollow">ProteomicsDB</a>. 
     </td></tr>
     <tr>
     <th><a href="https://github.com/kozo2/pywikipathways" target="_blank" class="external " title="https://github.com/kozo2/pywikipathways" rel="nofollow">pywikipathways</a>
