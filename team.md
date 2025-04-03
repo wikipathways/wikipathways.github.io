@@ -7,16 +7,12 @@ reviewers:
 - AlexanderPico
 - DeSl
 - Fehrhart
-- Ddigles
 - Susan
 - Andra
 - Elisson nl
-- Madeomuga
-- IsabelWassink
 - Jmillanacosta
 - Tabbassidaloii
 - aish181095
-- ElenaDR1
 
 architects:
 - Mkutmon
