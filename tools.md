@@ -97,6 +97,10 @@ redirect_from: /index.php/Help:Tools_using_WikiPathways
     </th><td>Tool for chromosome visualization that integrates interactions from WikiPathways. Used in <a href="https://singlecell.broadinstitute.org/single_cell" target="_blank" class="external " title="https://singlecell.broadinstitute.org/single_cell" rel="nofollow">Single Cell Portal</a>
     </td></tr>
     <tr>
+    <th> <a href="https://github.com/gladstone-institutes/Interactive-Enrichment-Analysis" target="_blank" class="external " title="https://github.com/gladstone-institutes/Interactive-Enrichment-Analysis" rel="nofollow">Interactive Enrichment Analysis</a>
+    </th><td>Interactive Enrichment Analysis provides user-friendly interactive tools to perform enrichment analysis for multiple datasets across multiple public databases. Databases are updated monthly, and the tool allows for analysis of multiple separate datasets at once. 
+    </td></tr>  
+    <tr>
     <th><a href="http://impala.molgen.mpg.de//" target="_blank" class="external " title="http://impala.molgen.mpg.de//" rel="nofollow">IMPaLA</a>
     </th><td>IMPaLA is a web tool, developed for integrated pathway analysis of metabolomics data alongside gene expression or protein abundance data. It works through extending over-representation and enrichment analyses to multiple data types. It uses pathway data from several different online pathway databases, including WikiPathways.
     </td></tr>
@@ -155,6 +159,10 @@ redirect_from: /index.php/Help:Tools_using_WikiPathways
     <tr>
     <th><a href="http://pcxn.org" target="_blank" class="external " title="http://pcxn.org" rel="nofollow">PCxN</a>
     </th><td>Generates a co-activity map across pathways, assessing the correlation based on gene content within and across pathway resources.
+    </td></tr>
+    <tr>
+    <th><a href="https://www.proteomicsdb.org/analytics/ptmNavigator" target="_blank" class="external " title="https://www.proteomicsdb.org/analytics/ptmNavigator" rel="nofollow">PTMNavigator</a>
+    </th><td>PTMNavigator is a tool for interactive visualization of differentially regulated post-translational modifications in cellular signaling pathways, including WikiPathways. It is part of <a href="https://www.proteomicsdb.org/" target="_blank" class="external title="https://www.proteomicsdb.org/" rel="nofollow">ProteomicsDB</a>. 
     </td></tr>
     <tr>
     <th><a href="https://github.com/kozo2/pywikipathways" target="_blank" class="external " title="https://github.com/kozo2/pywikipathways" rel="nofollow">pywikipathways</a>
@@ -216,5 +224,5 @@ redirect_from: /index.php/Help:Tools_using_WikiPathways
 </table>
 
 <p>
-<b>If you know of a tool or resource that makes use of our curated pathway content, announce them on <a href="http://groups.google.com/group/wikipathways-discuss" target="_blank" class="external " title="http://groups.google.com/group/wikipathways-discuss" rel="nofollow">our mailing list</a> and add them to the list below.</b>
+<b>If you know of a tool or resource that makes use of our curated pathway content, let us know via <a href="http://groups.google.com/group/wikipathways-discuss" target="_blank" class="external " title="http://groups.google.com/group/wikipathways-discuss" rel="nofollow">our helpdeskn</a> so we can add them to the list.</b>
 </p>
