@@ -224,5 +224,5 @@ redirect_from: /index.php/Help:Tools_using_WikiPathways
 </table>
 
 <p>
-<b>If you know of a tool or resource that makes use of our curated pathway content, let us know via <a href="http://groups.google.com/group/wikipathways-discuss" target="_blank" class="external " title="http://groups.google.com/group/wikipathways-discuss" rel="nofollow">our helpdeskn</a> so we can add them to the list.</b>
+<b>If you know of a tool or resource that makes use of our curated pathway content, let us know via our <a href="http://groups.google.com/group/wikipathways-discuss" target="_blank" class="external " title="http://groups.google.com/group/wikipathways-discuss" rel="nofollow">helpdesk</a> so we can add them to the list.</b>
 </p>
