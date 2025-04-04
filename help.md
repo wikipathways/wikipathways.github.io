@@ -104,7 +104,7 @@ redirect_from:
 </div>
 <div id="search">
 <h1>Search for Pathways</h1>
-<p>The WikiPathways collection can be searched by gene symbol, pathway name or other keywords, in the Search field at the top of each page. By default, the first 40 results will appear on the search results page. You can also include organism, ontology annotations, WPIDs, and even last-edited dates in your query. Multi-term queries are processed as AND queries. Here are some example queries:</p>
+<p>The WikiPathways collection can be searched by gene symbol, pathway name or other keywords, in the Search field at the top of each page. By default, the first 40 results will appear on the search results page. To view all results, click the <b>Show more</b> button at the end of the results list. You can also include organism, ontology annotations, WPIDs, and even last-edited dates in your query. Multi-term queries are processed as AND queries. Here are some example queries:</p>
 <ul>
 <li>Search for your favorite pathway by a word from the title, i.e. "Statin".</li>
 <li>Search your favorite gene by symbol, i.e. "BRCA1".</li>
