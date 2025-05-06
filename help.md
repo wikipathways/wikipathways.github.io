@@ -223,7 +223,9 @@ This code will produce the following iframe:</p>
 <br />
 <iframe src ="https://pathway-viewer.toolforge.org/embed/WP554?red=ACE&lightgreen=AGT" width="500px" height="350px" style="overflow:hidden;"></iframe>
 <br />
+<br />
 
+<h2>Styling Pathways for Published Pathway Figures</h2>
 <p>WikiPathways models are "plain" by design, to allow for optimal data visualization. However, for published materials, it is sometimes preferred to display a pathway (without data, typically) in a more decorated style, more typical of how pathway figures are commonly represented. Starting with a pathway model at WikiPathways, you can apply custom pathway styling in <a href="http://www.cytoscape.org/" target="_blank">Cytoscape</a> to produce a pathway figure that is visually more comparable to typical published pathway figures. For more information see <a href="styling.html">Styling WikiPathways Models</a>.</p>
 
 </div></div>
