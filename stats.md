@@ -82,7 +82,7 @@ tail(combo.df[,2:4],1)
 
 ```
 ##    edits pathways month
-## 87   454     2006 April
+## 88   491     2014   May
 ```
 
 
