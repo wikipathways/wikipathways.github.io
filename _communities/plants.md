@@ -8,6 +8,9 @@ contribute: "If you know of a pathway that should be added, please contact the a
 community-tag: "Plants"
 
 collections-title: "Plant Pathways"
+collections:
+- name: "Arabidopsis thaliana"
+  wpids: ["WP3628", "WP2944", "WP2945", "WP2279", "WP618", "WP622", "WP2941", "WP2579", "WP626", "WP2634", "WP2230", "WP2851", "WP1538", "WP2108"]
 
 redirect_from:
   - /index.php/Portal:Plants
