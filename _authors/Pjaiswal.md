@@ -1,8 +1,8 @@
 ---
 username: Pjaiswal
 realname: Pankaj Jaiswal
-website: ~
-affiliation: ~
+website: https://jaiswallab.cgrb.oregonstate.edu/
+affiliation: Oregon State University
 bio: ~
 github: ~
 orcid: ~
