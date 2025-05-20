@@ -13,6 +13,7 @@ reviewer_roster:
 - Mkutmon
 - Susan
 - Andra
+- Ddigles
 - DeSl
 - Jmillanacosta
 - Eweitz
