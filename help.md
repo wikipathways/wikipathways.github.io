@@ -57,7 +57,7 @@ redirect_from:
   <br/>
 <p><b><i>Pro-tip:</i></b> Use the orange icons on a pathway page to download <span title="Download pathway as..." style="color: #FF8120; background-color: #FFFFFF; font-size: 1.0em;"><i class="fa fa-download"></i></span> the pathway in one of a variety of formats, or to share <span title="Share pathway" style="color: #FF8120; background-color: #FFFFFF; font-size: 1.0em;"><i class="fa fa-share"></i></span> the pathway as a citation, permalink, or via social media. You can also get embed code so you can include this interactive viewer in your own web site.
 </p>
-<p>Refer to the Reference Card below to learn what the various objects in the pathway diagram represents:</p>
+<p id="reference">See the WikiPathways Legend below to learn what the various objects in the pathway diagram represent:</p>
 <img src="/assets/img/help/WikiPathwaysReferenceCard.png" alt="WikiPathways Reference Card" style="width: 90%;">
 </div>
 <div id="attributes">
