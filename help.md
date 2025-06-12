@@ -51,12 +51,14 @@ redirect_from:
 <p>TogoTV. Sep 21 2023, YouTube: <a href="https://youtu.be/oSyoDU2r4Q0" target="_blank">https://youtu.be/oSyoDU2r4Q0</a>, DOI: <a href="https://doi.org/10.7875/togotv.2023.063" target="_blank">https://doi.org/10.7875/togotv.2023</a>.</p>
 <div id="viewer">
 <h1>Interactive Pathway Viewer</h1>
-<p>Each pathway offers a dedicated page for interactive viewing. Click on the open icon <span title="Open in new tab" style="color: #FF8120; background-color: #FFFFFF; font-size: 1.0em;"><i class="fa fa-arrow-up-right-from-square"></i></span> or anywhere on the image to open the interactive in a new tab. Zoom in and out by scrollwheel, pan by click-n-drag, and click on genes, proteins and metabolites to open links to external resources dedicated to each molecule. Here's a mini example:
+<p>Each pathway page offers a dedicated page for interactive viewing. Click on the open icon <span title="Open in new tab" style="color: #FF8120; background-color: #FFFFFF; font-size: 1.0em;"><i class="fa fa-arrow-up-right-from-square"></i></span> or anywhere on the image to open the interactive in a new tab. Zoom in and out by scrollwheel, pan by click-n-drag, and click on genes, proteins and metabolites to open links to external resources dedicated to each molecule. Here's a mini example:
 </p>
 <iframe src ="https://pathway-viewer.toolforge.org/?id=WP554" width="500px" height="350px" style="overflow:hidden;margin-left:200px;"></iframe>
   <br/>
 <p><b><i>Pro-tip:</i></b> Use the orange icons on a pathway page to download <span title="Download pathway as..." style="color: #FF8120; background-color: #FFFFFF; font-size: 1.0em;"><i class="fa fa-download"></i></span> the pathway in one of a variety of formats, or to share <span title="Share pathway" style="color: #FF8120; background-color: #FFFFFF; font-size: 1.0em;"><i class="fa fa-share"></i></span> the pathway as a citation, permalink, or via social media. You can also get embed code so you can include this interactive viewer in your own web site.
 </p>
+<p>Refer to the Reference Card below to learn what the various objects in the pathway diagram represents:</p>
+<img src="/assets/img/help/WikiPathwaysReferenceCard.png" alt="WikiPathways Reference Card" style="width: 90%;">
 </div>
 <div id="attributes">
 <h1>Pathway Attributes</h1>
@@ -78,6 +80,7 @@ redirect_from:
 </p>
 <p><b><i>Pro-tip:</i></b> Click on the <b>Download as TSV</b> icon at the top of the table to download the complete table which includes mappings to many common identifiers. The <b>Query options</b> icon allows for querying external services, like <a href="https://drugst.one/">Drugst.One</a>, using the list of participants as the query input.
 </p>
+
 </div>
 <div id="references">
 <h1>Literature References</h1>
