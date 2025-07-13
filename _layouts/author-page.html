@@ -163,7 +163,7 @@ layout: default
       <div class="tab-pane fade" id="curation" role="tabpanel">
         <br/>
         <b>Possible curation tasks:</b>
-        {% assign wpid_first_search = wpid_fisrt_string | replace: "_|_", "%20OR%20" %} 
+        {% assign wpid_first_search = wpid_fisrt_string | split: "_|_" | join: "%20OR%20" %} 
         <br/>
         <ul>
           <li><a href="https://europepmc.org/search?query=WikiPathways%20AND%20%28{{wpid_first_search}}%29">Europe PMC: find articles citing first-authored pathways</a></li>
