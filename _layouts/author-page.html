@@ -87,6 +87,11 @@ layout: default
       <li class="nav-item">
         <a class="nav-link" data-toggle="tab" href="#list">List format</a>
       </li>
+      {% if page.curationui %}
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#curation">Curation</a>
+      </li>
+      {% endif %}
     </ul>
     <div class="tab-content" >
       {% assign gallery_tab_class = "show active" %}
@@ -154,5 +159,16 @@ layout: default
           </ul>
         </div>  
       </div>
+      {% if page.curationui %}
+      <div class="tab-pane fade" id="curation" role="tabpanel">
+        <br/>
+        <b>Possible curation tasks:</b>
+        {% assign wpid_first_search = wpid_fisrt_string | replace: "_|_", "%20OR%20" %} 
+        <br/>
+        <ul>
+          <li><a href="https://europepmc.org/search?query=WikiPathways%20AND%20%28{{wpid_first_search}}%29">Europe PMC: find articles citing first-authored pathways</a></li>
+        </ul>
+      </div>
+      {% endif %}
     </div>
 <br/><hr/>
