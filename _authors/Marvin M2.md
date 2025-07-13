@@ -10,7 +10,7 @@ linkedin: marvin-martens-451437131
 googlescholar: GvOHiicAAAAJ&hl
 wikidata: Q42369611
 twitter: mmarvinm2
-mastodon-url: ~
+mastodon-url: https://social.edu.nl/@Marvin
 meta: ~
 instagram: ~
 communities:
@@ -19,5 +19,5 @@ redirect_from:
 - /index.php/User:Marvin_M2
 - /index.php/Special:Contributions/Marvin_M2
 email: ~
-
+curationui: true
 ---
