@@ -13,6 +13,8 @@ twitter: ~
 mastodon-url: ~
 meta: ~
 instagram: ~
+communities:
+- Lipids
 redirect_from:
 - /index.php/User:Conroy_lipids
 - /index.php/Special:Contributions/Conroy_lipids
