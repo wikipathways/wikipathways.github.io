@@ -6,7 +6,7 @@ affiliation: Maastricht University
 bio: Studies the chemistry of life.
 github: egonw
 orcid: 0000-0001-7542-0286
-linkedin: https://www.linkedin.com/in/egon-willighagen/
+linkedin: egon-willighagen
 googlescholar: u8SjMZ0AAAAJ
 wikidata: Q20895241
 twitter: ~
