@@ -146,7 +146,7 @@ redirect_from:
 </div>
 <div id="authors">
 <h1>Get Recognition</h1>
-<p>Each of the <a href="/browse/authors.html">authors</a> who has contributed to WikiPathways has their own profile page. In addtion to a standard biographicial field and professional linkouts, these pages provide a gallery listing of all the pathways edited by a given author. Click on the pencil icons <span title="Edit cited in" style="color: #666; font-size: 1.0em;"><i class="fa fa-pencil"></i></span> next to your name to edit your user profile. See the sections below to learn more about how to contribute to WikiPathways while enabling your own research.</p>
+<p>Each of the <a href="/browse/authors.html">authors</a> who has contributed to WikiPathways has their own profile page. In addtion to a standard biographicial field and professional linkouts, these pages provide two gallery listing, one with of all the pathways edited by that author, and a second listing all pathways started by that author. Click on the pencil icons <span title="Edit cited in" style="color: #666; font-size: 1.0em;"><i class="fa fa-pencil"></i></span> next to your name to edit your user profile. See the sections below to learn more about how to contribute to WikiPathways while enabling your own research.</p>
 <p><b><i>Pro-tip:</i></b> Your profile picture comes directly from your associated GitHub account. Update your avatar on <a href="https://github.com/settings/profile">your GitHub settings page</a> to update the picture shown in your WikiPathways author profile.
 </p>
 </div></div>
