@@ -21,6 +21,9 @@ support: "Thanks to the [LIPID MAPS team](https://lipidmaps.org/) for sharing th
 contribute: "If you know of a pathway that should be added, please contact the administrator (denise.slenter[AT]maastrichtuniversity.nl)."
 community-tag: "Lipids"
 
+curationui: true
+curationrepo: lipidmaps-wp-curation
+
 editors: 
 - DeSl
 - Egonw
