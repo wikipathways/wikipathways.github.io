@@ -1,6 +1,6 @@
 ---
 title: JSON API
-#redirect_from: 
+redirect_from: 
  - /index.php/Help:WikiPathways_Webservice/API
  - /index.php/Help:WikiPathways_Webservice
 ---
