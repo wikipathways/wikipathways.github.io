@@ -1,0 +1,18 @@
+---
+layout: none
+---
+<ns1:listPathwaysResponse xmlns:ns1='http://www.wso2.org/php/xsd' xmlns:ns2='http://www.wikipathways.org/webservice'  >	
+  {% assign organisms = site.organisms | sort: 'latin' %}
+  {% for org in organisms %}
+    {% assign pathways = site.pathways | where_exp:"item", "item.organisms contains org.latin" | sort: 'title' %}
+    {% for pw in pathways %}
+	    <ns1:pathways>
+    		<ns2:id>{{ pw.wpid }}</ns2:id>
+    		<ns2:url>https://www.wikipathways.org/instance/{{ pw.wpid }}</ns2:url>
+    		<ns2:name>{{ pw.title }}</ns2:name>
+    		<ns2:species>{{ org.common }}</ns2:species>
+    		<ns2:revision>{{ pw.last-edited }}</ns2:revision>
+	    </ns1:pathways>
+    {% endfor %}
+  {% endfor %}
+</ns1:listPathwaysResponse>
