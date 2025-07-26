@@ -132,8 +132,8 @@ layout: default
                   <p class="card-text">
                     <!--This badge shows the curation status-->
                     <a id="badge-curation" target="_blank"
-                       href="https://www.wikipathways.org/{% if page.curationrepo %}{{ page.curationrepo }}{% else %}wikipathways-collection{% endif %}/reports/{{pw.wpid}}.html">
-                      <img alt="pathway curation" src="https://img.shields.io/endpoint?style=flat-square&url=https://www.wikipathways.org/{% if page.curationrepo %}{{ page.curationrepo }}{% else %}wikipathways-collection{% endif %}/reports/{{pw.wpid}}.json">
+                       href="{% if page.curationrepo %}{{ page.curationrepo }}{% else %}https://www.wikipathways.org/wikipathways-collection/reports/{% endif %}{{pw.wpid}}.html">
+                      <img alt="pathway curation" src="https://img.shields.io/endpoint?style=flat-square&url={% if page.curationrepo %}{{ page.curationrepo }}{% else %}https://www.wikipathways.org/wikipathways-collection/reports/{% endif %}{{pw.wpid}}.json">
                     </a>
                   </p>
                 {% endif %}

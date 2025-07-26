@@ -30,6 +30,8 @@ contribute: "We are helping to coordinate an international effort to build and c
 * [KG COVID-19](https://knowledge-graph-hub.github.io/kg-covid-19-dashboard/): a knowledge graph aggregating many sources as RDF"
 
 community-tag: "COVID19"
+curationui: true
+curationrepo: https://www.wikipathways.org/SARS-CoV-2-WikiPathways/reports/
 
 editors:
 - Mkutmon

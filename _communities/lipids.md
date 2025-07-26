@@ -22,7 +22,7 @@ contribute: "If you know of a pathway that should be added, please contact the a
 community-tag: "Lipids"
 
 curationui: true
-curationrepo: lipidmaps-wp-curation
+curationrepo: https://www.wikipathways.org/lipidmaps-wp-curation/reports/
 
 editors: 
 - DeSl
