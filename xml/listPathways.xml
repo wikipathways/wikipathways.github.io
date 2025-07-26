@@ -1,7 +1,8 @@
 ---
 layout: none
 ---
-<ns1:listPathwaysResponse xmlns:ns1='http://www.wso2.org/php/xsd' xmlns:ns2='http://www.wikipathways.org/webservice'  >	
+<ns1:listPathwaysResponse xmlns:ns1='http://www.wso2.org/php/xsd' xmlns:ns2='http://www.wikipathways.org/webservice'  >
+  <!-- IMPORTANT: this XML file is a temporary solution and not a stable API. Use the JSON instead. -->
   {% assign organisms = site.organisms | sort: 'latin' %}
   {% for org in organisms %}
     {% assign pathways = site.pathways | where_exp:"item", "item.organisms contains org.latin" | sort: 'title' %}
