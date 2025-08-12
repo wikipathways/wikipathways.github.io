@@ -12,7 +12,10 @@ reviewers:
 - Elisson nl
 - Jmillanacosta
 - Tabbassidaloii
-- aish181095
+- Ash iyer
+- Duan
+- Eweitz
+- Ddigles
 
 architects:
 - Mkutmon
