@@ -2,6 +2,10 @@
 layout: home2
 title: Home
 reviewer_roster:
+- Andra
+- Ddigles
+- DeSl
+- Jmillanacosta
 - Eweitz
 - Ash iyer
 - Khanspers
@@ -11,10 +15,6 @@ reviewer_roster:
 - Alval
 - Mkutmon
 - Susan
-- Andra
-- Ddigles
-- DeSl
-- Jmillanacosta
 
 redirect_from: 
 - /index.php/WikiPathways
