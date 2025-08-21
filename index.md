@@ -2,9 +2,9 @@
 layout: home2
 title: Home
 reviewer_roster:
-- Elisson nl
-- AlexanderPico
-- Tabbassidaloii
+- Eweitz
+- Ash iyer
+- Khanspers
 - Khanspers
 - Duan
 - Fehrhart
@@ -15,8 +15,6 @@ reviewer_roster:
 - Ddigles
 - DeSl
 - Jmillanacosta
-- Eweitz
-- Ash iyer
 
 redirect_from: 
 - /index.php/WikiPathways
