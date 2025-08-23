@@ -1,6 +1,6 @@
 ---
 username: Jmlohmann
-realname: Jmlohmann
+realname: Jorinde Lohmann
 website: 
 affiliation: 
 bio: 
