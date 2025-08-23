@@ -1,6 +1,6 @@
 ---
 username: Duan
-realname: Duan
+realname: Yuanyuan Duan
 website: 
 affiliation: 
 bio: 
