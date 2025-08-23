@@ -1,6 +1,6 @@
 ---
 username: PhilipErnst
-realname: PhilipErnst
+realname: Philip Ernst
 website: 
 affiliation: 
 bio: 

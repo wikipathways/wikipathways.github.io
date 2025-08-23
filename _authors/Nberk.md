@@ -1,8 +1,8 @@
 ---
 username: Nberk
-realname: Nberk
+realname: Niels Berk
 website: 
-affiliation: 
+affiliation: Maastricht University
 bio: 
 github: 
 orcid: 
@@ -13,7 +13,7 @@ twitter:
 mastodon-url: 
 meta:
 instagram:
-email:
+email: n.berk@student.maastrichtuniversity.nl
 redirect_from:
 - /index.php/User:Nberk
 - /index.php/Special:Contributions/Nberk

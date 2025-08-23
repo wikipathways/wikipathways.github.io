@@ -2,7 +2,7 @@
 username: Susan
 realname: Susan Coort
 website: ~
-affiliation: ~
+affiliation: Maastricht University
 bio: ~
 github: susancoort
 orcid: 0000-0003-1224-9690
@@ -18,6 +18,6 @@ communities:
 redirect_from:
 - /index.php/User:Susan
 - /index.php/Special:Contributions/Susan
-email: ~
+email: susan.coort@maastrichtuniversity.nl
 
 ---

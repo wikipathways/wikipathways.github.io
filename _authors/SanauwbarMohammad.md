@@ -1,6 +1,6 @@
 ---
 username: SanauwbarMohammad
-realname: SanauwbarMohammad
+realname: Sanauwbar Mohammad
 website: 
 affiliation: 
 bio: 

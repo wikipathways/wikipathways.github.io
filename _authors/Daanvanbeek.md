@@ -1,6 +1,6 @@
 ---
 username: Daanvanbeek
-realname: Daanvanbeek
+realname: Daan van Beek
 website: 
 affiliation: 
 bio: 

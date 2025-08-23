@@ -1,12 +1,12 @@
 ---
 username: JuliaUM
-realname: JuliaUM
+realname: Julia Bous
 website: 
 affiliation: 
 bio: 
 github: 
 orcid: 
-linkedin: 
+linkedin: julia-bous
 googlescholar: 
 wikidata: 
 twitter: 

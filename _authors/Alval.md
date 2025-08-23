@@ -1,8 +1,8 @@
 ---
 username: Alval
-realname: Alval
+realname: Alexandra Valeanu
 website: 
-affiliation: 
+affiliation: Maastricht University
 bio: 
 github: alexandra-valeanu
 orcid: 
@@ -13,7 +13,7 @@ twitter:
 mastodon-url: 
 meta:
 instagram:
-email:
+email: alexandra.valeanu@maastrichtuniversity.nl
 redirect_from:
 - /index.php/User:Alval
 - /index.php/Special:Contributions/Alval

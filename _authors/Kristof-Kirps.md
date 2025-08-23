@@ -1,6 +1,6 @@
 ---
 username: Kristof-Kirps
-realname: Kristof-Kirps
+realname: Kristof Kirps
 website: 
 affiliation: 
 bio: 

@@ -1,6 +1,6 @@
 ---
 username: Ninagerrekens
-realname: Ninagerrekens
+realname: Nina Gerrekens
 website: ~
 affiliation: ~
 bio: ~

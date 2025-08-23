@@ -1,6 +1,6 @@
 ---
 username: AyoubElHabchi
-realname: AyoubElHabchi
+realname: Ayoub El Habchi
 website: 
 affiliation: 
 bio: 

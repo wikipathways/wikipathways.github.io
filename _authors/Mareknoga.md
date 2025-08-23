@@ -1,6 +1,6 @@
 ---
 username: Mareknoga
-realname: Mareknoga
+realname: Marek Noga
 website: 
 affiliation: 
 bio: 

@@ -1,6 +1,6 @@
 ---
 username: Johidi2
-realname: Johidi2
+realname: Johidi Rog
 website: 
 affiliation: 
 bio: 

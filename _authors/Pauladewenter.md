@@ -1,6 +1,6 @@
 ---
 username: Pauladewenter
-realname: Pauladewenter
+realname: Paula Dewenter
 website: ~
 affiliation: ~
 bio: ~

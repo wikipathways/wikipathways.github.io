@@ -1,6 +1,6 @@
 ---
 username: AliHbdl
-realname: AliHbdl
+realname: Alicia Hobdell
 website: ~
 affiliation: ~
 bio: ~
