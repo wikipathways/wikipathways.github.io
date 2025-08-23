@@ -89,7 +89,7 @@ layout: default
       </li>
       {% if page.curationui %}
       <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#curation">Curation</a>
+        <a class="nav-link" data-toggle="tab" href="#curation">Citations</a>
       </li>
       {% endif %}
     </ul>
@@ -162,7 +162,7 @@ layout: default
       {% if page.curationui %}
       <div class="tab-pane fade" id="curation" role="tabpanel">
         <br/>
-        <b>Possible curation tasks:</b>
+        <b>Find citations to first-authored pathways:</b>
         {% assign wpid_first_search = wpid_fisrt_string | split: "_|_" | join: "%20OR%20" %} 
         <br/>
         <ul>
