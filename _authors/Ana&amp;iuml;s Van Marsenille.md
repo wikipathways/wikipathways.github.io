@@ -1,6 +1,6 @@
 ---
-username: Ana&amp;iuml;s Van Marsenille
-realname: Ana&amp;iuml;s Van Marsenille
+username: Anaïs Van Marsenille
+realname: Anaïs Van Marsenille
 website: 
 affiliation: 
 bio: 
@@ -15,6 +15,6 @@ meta:
 instagram:
 email:
 redirect_from:
-- /index.php/User:Ana&amp;iuml;s_Van_Marsenille
-- /index.php/Special:Contributions/Ana&amp;iuml;s_Van_Marsenille
+- /index.php/User:Anaïs_Van_Marsenille
+- /index.php/Special:Contributions/Anaïs_Van_Marsenille
 ---
