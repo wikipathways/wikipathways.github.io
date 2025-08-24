@@ -111,6 +111,11 @@ layout: default
         <a class="nav-link" data-toggle="tab" href="#list">List</a>
         {% endif %}
       </li>
+      {% if page.curationui %}
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#curation">Citations</a>
+      </li>
+      {% endif %}
     </ul>
     <b>This community helps to curate {{sorted_pathways.size}} pathways:</b>
     <div class="tab-content">
@@ -156,8 +161,19 @@ layout: default
               <li><a href="{{ pw.url }}">{{ pw.title }} - {{pw.wpid}} <em>({{ pw.organisms.first }})</em></a></li>
         {% endfor %}
       </ul>
-    </div>  
+    </div>
   </div>
+  {% if page.curationui %}
+  <div class="tab-pane fade" id="curation" role="tabpanel">
+    <br/>
+    <b>Find citations to community pathways:</b>
+    {% assign searchQuery = c.wpids | join: "%20OR%20" %} 
+    <br/>
+    <ul>
+      <li><a href="https://europepmc.org/search?query=WikiPathways%20AND%20%28{{searchQuery}}%29">Europe PMC: find articles citing community pathways</a></li>
+    </ul>
+  </div>
+  {% endif %}
 </div>
 
 <br/><hr/>
