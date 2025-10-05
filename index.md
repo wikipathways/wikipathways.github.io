@@ -9,7 +9,6 @@ reviewer_roster:
 - Eweitz
 - Ash iyer
 - Khanspers
-- Khanspers
 - Duan
 - Fehrhart
 - Alval
