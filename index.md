@@ -2,6 +2,9 @@
 layout: home2
 title: Home
 reviewer_roster:
+- Alval
+- Mkutmon
+- Susan
 - Andra
 - Ddigles
 - DeSl
@@ -11,9 +14,6 @@ reviewer_roster:
 - Khanspers
 - Duan
 - Fehrhart
-- Alval
-- Mkutmon
-- Susan
 
 redirect_from: 
 - /index.php/WikiPathways
