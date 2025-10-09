@@ -19,8 +19,9 @@ reviewers:
 - Alval
 
 architects:
-- Mkutmon
 - AlexanderPico
+- Mkutmon
+- Egonw
 
 coordination:
 - Khanspers
