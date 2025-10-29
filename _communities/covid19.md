@@ -34,12 +34,12 @@ curationui: true
 curationrepo: https://www.wikipathways.org/SARS-CoV-2-WikiPathways/reports/
 
 editors:
-- Mkutmon
 - Fehrhart
 - NhungP
 - DeSl
 - Egonw
 - AlexanderPico
+- Mkutmon
 
 redirect_from:
 - /index.php/Portal:COVID-19
