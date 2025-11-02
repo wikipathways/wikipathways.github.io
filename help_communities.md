@@ -55,3 +55,11 @@ redirect_from: /index.php/Help:WikiPathways_Portals
 <li><b>Making edits with write-access</b>: Access an existing Community pathway list from the WikiPathways website by clicking the <b>Edit community pathways</b> button (pencil icon) next to the Community Pathways section (requires write access).</li>
 </ol>
 </div>
+<hr>
+<div id="community curation">
+<h2>Community Pathway Curation Reports</h2>
+<p>By default, each community comes with curation reports in the <i>Gallery</i> of community pathways, identical to those reported on individual pathway pages. This provides a quick overview of the status
+  of the community pathways. It can be turned off by changing the <code>curationui: true</code>code> line to <code>curationui: false</code>.</p>
+<p>Second, you can change which tests results are shown. For example, the <a href="https://www.wikipathways.org/communities/lipids.html">Lipids Portal</a> uses custom tests, deviating from the general WikiPathways curation reports. This community does
+this with the following line in the .md file: <code>curationrepo: https://www.wikipathways.org/lipidmaps-wp-curation/reports/</code>.</p>
+</div>
