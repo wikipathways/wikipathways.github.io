@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Ulaganathan
 - /index.php/Special:Contributions/Ulaganathan
+curationui: true
 ---

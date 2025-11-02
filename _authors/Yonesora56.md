@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Yonesora56
 - /index.php/Special:Contributions/Yonesora56
+curationui: true
 ---

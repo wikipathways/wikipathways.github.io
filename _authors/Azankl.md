@@ -20,4 +20,5 @@ redirect_from:
 - /index.php/Special:Contributions/Azankl
 email: andreas.zankl@sydney.edu.au
 
+curationui: true
 ---

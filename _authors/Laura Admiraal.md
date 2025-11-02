@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Laura_Admiraal
 - /index.php/Special:Contributions/Laura_Admiraal
+curationui: true
 ---

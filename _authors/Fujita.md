@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Fujita
 - /index.php/Special:Contributions/Fujita
+curationui: true
 ---

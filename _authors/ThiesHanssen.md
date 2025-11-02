@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:ThiesHanssen
 - /index.php/Special:Contributions/ThiesHanssen
+curationui: true
 ---

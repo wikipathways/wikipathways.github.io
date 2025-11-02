@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:KimberleyBijl
 - /index.php/Special:Contributions/KimberleyBijl
+curationui: true
 ---

@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Jeffrey_Goessens
 - /index.php/Special:Contributions/Jeffrey_Goessens
+curationui: true
 ---

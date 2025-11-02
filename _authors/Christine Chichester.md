@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Christine_Chichester
 email: ~
 
+curationui: true
 ---

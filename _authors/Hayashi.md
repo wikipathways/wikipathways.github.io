@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Hayashi
 - /index.php/Special:Contributions/Hayashi
+curationui: true
 ---

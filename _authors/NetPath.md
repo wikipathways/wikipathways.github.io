@@ -21,4 +21,5 @@ redirect_from:
 - /index.php/Special:Contributions/NetPath
 email: ~
 
+curationui: true
 ---

@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Uday_as
 email: ~
 
+curationui: true
 ---

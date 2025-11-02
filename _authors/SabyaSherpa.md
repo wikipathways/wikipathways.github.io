@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:SabyaSherpa
 - /index.php/Special:Contributions/SabyaSherpa
+curationui: true
 ---

@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/A.C.Zambon
 email: ~
 
+curationui: true
 ---

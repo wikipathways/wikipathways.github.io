@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Maguirre1
 email: ~
 
+curationui: true
 ---

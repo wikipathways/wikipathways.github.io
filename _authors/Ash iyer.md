@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Ash_iyer
 email: aishwaryaiyer18@gmail.com
 
+curationui: true
 ---

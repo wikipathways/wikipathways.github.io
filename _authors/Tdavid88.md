@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Tdavid88
 - /index.php/Special:Contributions/Tdavid88
+curationui: true
 ---

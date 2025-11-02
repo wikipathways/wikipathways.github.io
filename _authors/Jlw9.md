@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Jlw9
 email: ~
 
+curationui: true
 ---

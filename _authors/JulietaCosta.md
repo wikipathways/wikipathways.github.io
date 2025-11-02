@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:JulietaCosta
 - /index.php/Special:Contributions/JulietaCosta
+curationui: true
 ---

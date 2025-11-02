@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Asios_Olia
 email: ~
 
+curationui: true
 ---

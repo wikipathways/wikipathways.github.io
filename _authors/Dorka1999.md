@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Dorka1999
 email: ~
 
+curationui: true
 ---

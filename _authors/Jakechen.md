@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Jakechen
 - /index.php/Special:Contributions/Jakechen
+curationui: true
 ---

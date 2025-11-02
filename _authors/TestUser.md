@@ -19,4 +19,5 @@ redirect_from:
 - /index.php/Special:Contributions/TestUser
 email: ~
 
+curationui: true
 ---

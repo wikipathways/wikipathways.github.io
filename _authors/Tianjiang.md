@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Tianjiang
 - /index.php/Special:Contributions/Tianjiang
+curationui: true
 ---

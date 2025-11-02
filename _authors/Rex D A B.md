@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Rex_D_A_B
 email: rexprem@gmail.com
 
+curationui: true
 ---

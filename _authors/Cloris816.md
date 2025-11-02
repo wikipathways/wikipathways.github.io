@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Cloris816
 - /index.php/Special:Contributions/Cloris816
+curationui: true
 ---

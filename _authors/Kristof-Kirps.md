@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Kristof-Kirps
 - /index.php/Special:Contributions/Kristof-Kirps
+curationui: true
 ---

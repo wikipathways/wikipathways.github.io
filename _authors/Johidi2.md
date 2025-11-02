@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Johidi2
 - /index.php/Special:Contributions/Johidi2
+curationui: true
 ---

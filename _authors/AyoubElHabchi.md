@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:AyoubElHabchi
 - /index.php/Special:Contributions/AyoubElHabchi
+curationui: true
 ---

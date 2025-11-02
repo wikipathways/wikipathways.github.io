@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Laurent
 email: ~
 
+curationui: true
 ---

@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Maiyu
 - /index.php/Special:Contributions/Maiyu
+curationui: true
 ---

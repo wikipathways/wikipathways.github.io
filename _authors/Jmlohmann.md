@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Jmlohmann
 - /index.php/Special:Contributions/Jmlohmann
+curationui: true
 ---

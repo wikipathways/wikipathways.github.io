@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Lu
 - /index.php/Special:Contributions/Lu
+curationui: true
 ---

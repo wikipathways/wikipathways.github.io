@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Chetan1
 email: ~
 
+curationui: true
 ---

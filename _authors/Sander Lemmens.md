@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Sander_Lemmens
 - /index.php/Special:Contributions/Sander_Lemmens
+curationui: true
 ---

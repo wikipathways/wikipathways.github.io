@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:KatelynCasseres
 - /index.php/Special:Contributions/KatelynCasseres
+curationui: true
 ---

@@ -19,4 +19,5 @@ communities:
 redirect_from:
 - /index.php/User:Daanvanbeek
 - /index.php/Special:Contributions/Daanvanbeek
+curationui: true
 ---

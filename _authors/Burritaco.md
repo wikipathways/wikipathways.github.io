@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Burritaco
 - /index.php/Special:Contributions/Burritaco
+curationui: true
 ---

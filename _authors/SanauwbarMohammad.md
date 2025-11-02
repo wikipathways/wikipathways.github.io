@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:SanauwbarMohammad
 - /index.php/Special:Contributions/SanauwbarMohammad
+curationui: true
 ---

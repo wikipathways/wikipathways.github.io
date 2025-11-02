@@ -8,4 +8,5 @@ wikidata: Q56868311
 communities:
 - MetaKids
 email: ~
+curationui: true
 ---

@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Mjh
 - /index.php/Special:Contributions/Mjh
+curationui: true
 ---

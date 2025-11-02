@@ -19,4 +19,5 @@ redirect_from:
 - /index.php/Special:Contributions/AAR&Co
 email: ~
 
+curationui: true
 ---

@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:PhilipErnst
 - /index.php/Special:Contributions/PhilipErnst
+curationui: true
 ---

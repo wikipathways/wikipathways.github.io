@@ -23,4 +23,5 @@ redirect_from:
 - /index.php/Special:Contributions/Mkutmon
 email: ~
 
+curationui: true
 ---

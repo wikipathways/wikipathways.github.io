@@ -20,4 +20,5 @@ redirect_from:
 - /index.php/Special:Contributions/Conroy_lipids
 email: ~
 
+curationui: true
 ---

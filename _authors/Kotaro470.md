@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Kotaro470
 - /index.php/Special:Contributions/Kotaro470
+curationui: true
 ---

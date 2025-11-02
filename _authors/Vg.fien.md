@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Vg.fien
 - /index.php/Special:Contributions/Vg.fien
+curationui: true
 ---

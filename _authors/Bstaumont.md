@@ -19,4 +19,5 @@ redirect_from:
 - /index.php/User:Bstaumont
 - /index.php/Special:Contributions/Bstaumont
 email: ~
+curationui: true
 ---

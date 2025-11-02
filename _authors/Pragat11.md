@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Pragat11
 - /index.php/Special:Contributions/Pragat11
+curationui: true
 ---

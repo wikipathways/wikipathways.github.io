@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Robatwiki
 - /index.php/Special:Contributions/Robatwiki
+curationui: true
 ---

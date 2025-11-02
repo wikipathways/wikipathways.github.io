@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:ReactomeTeam
 - /index.php/Special:Contributions/ReactomeTeam
+curationui: true
 ---

@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Duan
 - /index.php/Special:Contributions/Duan
+curationui: true
 ---

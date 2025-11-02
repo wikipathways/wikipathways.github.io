@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:DaraTsenova
 - /index.php/Special:Contributions/DaraTsenova
+curationui: true
 ---

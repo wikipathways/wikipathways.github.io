@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Zhangx888
 email: ~
 
+curationui: true
 ---

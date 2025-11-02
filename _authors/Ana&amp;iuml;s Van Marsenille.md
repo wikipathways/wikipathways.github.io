@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Anaïs_Van_Marsenille
 - /index.php/Special:Contributions/Anaïs_Van_Marsenille
+curationui: true
 ---

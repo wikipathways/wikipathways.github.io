@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Leyla_&amp;Ouml;nder
 - /index.php/Special:Contributions/Leyla_&amp;Ouml;nder
+curationui: true
 ---

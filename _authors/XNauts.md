@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:XNauts
 - /index.php/Special:Contributions/XNauts
+curationui: true
 ---

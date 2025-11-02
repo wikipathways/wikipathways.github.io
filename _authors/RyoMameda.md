@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:RyoMameda
 - /index.php/Special:Contributions/RyoMameda
+curationui: true
 ---

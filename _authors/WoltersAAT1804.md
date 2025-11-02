@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/WoltersAAT1804
 email: ~
 
+curationui: true
 ---

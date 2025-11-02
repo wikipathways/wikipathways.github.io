@@ -19,4 +19,5 @@ redirect_from:
 - /index.php/User:LLadeira
 - /index.php/Special:Contributions/LLadeira
 email: ~
+curationui: true
 ---

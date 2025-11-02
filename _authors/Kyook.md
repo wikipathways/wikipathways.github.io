@@ -20,4 +20,5 @@ redirect_from:
 - /index.php/Special:Contributions/Kyook
 email: ~
 
+curationui: true
 ---

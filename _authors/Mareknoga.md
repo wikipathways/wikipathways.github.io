@@ -19,4 +19,5 @@ communities:
 redirect_from:
 - /index.php/User:Mareknoga
 - /index.php/Special:Contributions/Mareknoga
+curationui: true
 ---

@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Julen_van_Ham
 - /index.php/Special:Contributions/Julen_van_Ham
+curationui: true
 ---

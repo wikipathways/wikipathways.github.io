@@ -20,4 +20,5 @@ redirect_from:
 - /index.php/Special:Contributions/Susan
 email: susan.coort@maastrichtuniversity.nl
 
+curationui: true
 ---

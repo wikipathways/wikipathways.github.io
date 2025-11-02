@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Thanos_Oikonomou
 email: ~
 
+curationui: true
 ---

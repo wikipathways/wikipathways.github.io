@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Shosui
 - /index.php/Special:Contributions/Shosui
+curationui: true
 ---

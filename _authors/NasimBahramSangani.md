@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:NasimBahramSangani
 - /index.php/Special:Contributions/NasimBahramSangani
+curationui: true
 ---

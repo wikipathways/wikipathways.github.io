@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Rajesh_Raj
 email: ~
 
+curationui: true
 ---

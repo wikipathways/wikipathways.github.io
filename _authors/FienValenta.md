@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:FienValenta
 - /index.php/Special:Contributions/FienValenta
+curationui: true
 ---

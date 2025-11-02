@@ -17,4 +17,5 @@ email: n.berk@student.maastrichtuniversity.nl
 redirect_from:
 - /index.php/User:Nberk
 - /index.php/Special:Contributions/Nberk
+curationui: true
 ---

@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Chris1330
 - /index.php/Special:Contributions/Chris1330
+curationui: true
 ---

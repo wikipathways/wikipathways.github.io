@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Hasanbalci
 - /index.php/Special:Contributions/Hasanbalci
+curationui: true
 ---

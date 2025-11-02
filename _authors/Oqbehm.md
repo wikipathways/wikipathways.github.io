@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Oqbehm
 - /index.php/Special:Contributions/Oqbehm
+curationui: true
 ---

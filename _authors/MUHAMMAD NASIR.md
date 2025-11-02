@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:MUHAMMAD_NASIR
 - /index.php/Special:Contributions/MUHAMMAD_NASIR
+curationui: true
 ---

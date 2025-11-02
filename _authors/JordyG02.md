@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:JordyG02
 - /index.php/Special:Contributions/JordyG02
+curationui: true
 ---
