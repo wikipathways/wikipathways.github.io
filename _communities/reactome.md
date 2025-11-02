@@ -7,4 +7,5 @@ redirect_from:
   - /index.php/Portal:Reactome 
 redirect_to:
   - https://github.com/wikipathways/reactome-gpml
+curationui: true
 ---

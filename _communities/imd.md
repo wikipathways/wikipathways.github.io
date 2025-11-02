@@ -24,4 +24,5 @@ redirect_from:
   - /index.php/Portal:IEM
   - /index.php/Portal:IMD
   - /index.php/Portal:Blau
+curationui: true
 ---

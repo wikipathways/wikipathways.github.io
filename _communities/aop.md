@@ -26,7 +26,8 @@ editors:
 
 redirect_from:
   - /index.php/Portal:AOP
----       
+curationui: true
+---
         
         
 

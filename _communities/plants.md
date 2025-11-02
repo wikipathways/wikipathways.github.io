@@ -42,4 +42,5 @@ collections:
 
 redirect_from:
   - /index.php/Portal:Plants
+curationui: true
 ---

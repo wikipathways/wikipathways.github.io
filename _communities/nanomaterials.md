@@ -41,8 +41,9 @@ editors:
 
 redirect_from:
   - /index.php/Portal:Nanomaterials
+curationui: true
 
----       
+---
         
         
 

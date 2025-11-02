@@ -16,4 +16,5 @@ editors:
 - Rlee
 redirect_from:
   - /index.php/Portal:SkeletalDysplasia
+curationui: true
 ---

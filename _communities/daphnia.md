@@ -29,4 +29,5 @@ editors:
 
 redirect_from:
   - /index.php/Portal:Daphnia 
+curationui: true
 ---

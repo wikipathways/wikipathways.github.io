@@ -15,4 +15,5 @@ editors:
 
 redirect_from:
   - /index.php/Portal:PancCanNet
+curationui: true
 ---

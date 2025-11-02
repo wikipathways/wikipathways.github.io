@@ -10,6 +10,6 @@ contribute:
 
 community-tag: "Mitochondrion"
 
-editors:
+curationui: true
 
 ---

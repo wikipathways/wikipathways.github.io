@@ -51,4 +51,5 @@ collections:
 
 redirect_from:
   - /index.php/Portal:CPTAC
+curationui: true
 ---
