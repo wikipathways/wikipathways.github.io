@@ -11,6 +11,8 @@ logo-link:
 support: 
 contribute: "If you know of a pathway that should be added, please contact Denise Slenter (denise.slenter[AT]maastrichtuniversity.nl)."
 
+curation-table: imd_chapters
+
 community-tag: "IEM"
 
 editors: 
@@ -22,4 +24,5 @@ redirect_from:
   - /index.php/Portal:IEM
   - /index.php/Portal:IMD
   - /index.php/Portal:Blau
+curationui: true
 ---

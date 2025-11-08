@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Marlen_m
 email: ~
 
+curationui: true
 ---

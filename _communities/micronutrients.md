@@ -19,4 +19,5 @@ editors:
 
 redirect_from:
   - /index.php/Portal:Micronutrient
+curationui: true
 ---

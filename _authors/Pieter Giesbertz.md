@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Pieter_Giesbertz
 email: ~
 
+curationui: true
 ---

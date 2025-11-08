@@ -16,6 +16,7 @@ instagram: ~
 redirect_from:
 - /index.php/User:Rex_D_A_B
 - /index.php/Special:Contributions/Rex_D_A_B
-email: ~
+email: rexprem@gmail.com
 
+curationui: true
 ---

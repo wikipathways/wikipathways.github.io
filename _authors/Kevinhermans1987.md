@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Kevinhermans1987
 email: ~
 
+curationui: true
 ---

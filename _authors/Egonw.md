@@ -3,10 +3,10 @@ username: Egonw
 realname: Egon Willighagen
 website: https://egonw.github.io/
 affiliation: Maastricht University
-bio: ~
+bio: Studies the chemistry of life.
 github: egonw
 orcid: 0000-0001-7542-0286
-linkedin: ~
+linkedin: egon-willighagen
 googlescholar: u8SjMZ0AAAAJ
 wikidata: Q20895241
 twitter: ~
@@ -18,9 +18,11 @@ communities:
 - Daphnia
 - Nanomaterials
 - Lipids
+- MetaKids
 redirect_from:
 - /index.php/User:Egonw
 - /index.php/Special:Contributions/Egonw
 email: ~
-
+curationui: true
+curationui: true
 ---

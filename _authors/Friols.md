@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Friols
 - /index.php/Special:Contributions/Friols
+curationui: true
 ---

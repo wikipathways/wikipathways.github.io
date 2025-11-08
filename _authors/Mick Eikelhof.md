@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Mick_Eikelhof
 email: ~
 
+curationui: true
 ---

@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Marcell_Levay
 - /index.php/Special:Contributions/Marcell_Levay
+curationui: true
 ---

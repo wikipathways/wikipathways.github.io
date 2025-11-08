@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/JPM_van_Rijn
 email: ~
 
+curationui: true
 ---

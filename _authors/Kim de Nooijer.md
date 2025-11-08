@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Kim_de_Nooijer
 email: ~
 
+curationui: true
 ---

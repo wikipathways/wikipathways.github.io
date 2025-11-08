@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Richard10
 email: ~
 
+curationui: true
 ---

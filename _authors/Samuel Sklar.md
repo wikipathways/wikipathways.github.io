@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Samuel_Sklar
 email: ~
 
+curationui: true
 ---

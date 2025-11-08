@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Andreaarias99
 email: ~
 
+curationui: true
 ---

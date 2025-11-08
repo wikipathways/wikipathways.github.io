@@ -1,6 +1,6 @@
 ---
 username: Ninagerrekens
-realname: Ninagerrekens
+realname: Nina Gerrekens
 website: ~
 affiliation: ~
 bio: ~
@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Ninagerrekens
 email: ~
 
+curationui: true
 ---

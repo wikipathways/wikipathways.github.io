@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/B.Lawlor
 email: ~
 
+curationui: true
 ---

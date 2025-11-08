@@ -30,8 +30,9 @@ editors:
 
 redirect_from:
   - /index.php/Portal:RenalGenomics
+curationui: true
 
----       
+---
         
         
 

@@ -97,6 +97,10 @@ redirect_from: /index.php/Help:Tools_using_WikiPathways
     </th><td>Tool for chromosome visualization that integrates interactions from WikiPathways. Used in <a href="https://singlecell.broadinstitute.org/single_cell" target="_blank" class="external " title="https://singlecell.broadinstitute.org/single_cell" rel="nofollow">Single Cell Portal</a>
     </td></tr>
     <tr>
+    <th> <a href="https://github.com/gladstone-institutes/Interactive-Enrichment-Analysis" target="_blank" class="external " title="https://github.com/gladstone-institutes/Interactive-Enrichment-Analysis" rel="nofollow">Interactive Enrichment Analysis</a>
+    </th><td>Interactive Enrichment Analysis provides user-friendly interactive tools to perform enrichment analysis for multiple datasets across multiple public databases. Databases are updated monthly, and the tool allows for analysis of multiple separate datasets at once. 
+    </td></tr>  
+    <tr>
     <th><a href="http://impala.molgen.mpg.de//" target="_blank" class="external " title="http://impala.molgen.mpg.de//" rel="nofollow">IMPaLA</a>
     </th><td>IMPaLA is a web tool, developed for integrated pathway analysis of metabolomics data alongside gene expression or protein abundance data. It works through extending over-representation and enrichment analyses to multiple data types. It uses pathway data from several different online pathway databases, including WikiPathways.
     </td></tr>
@@ -157,8 +161,16 @@ redirect_from: /index.php/Help:Tools_using_WikiPathways
     </th><td>Generates a co-activity map across pathways, assessing the correlation based on gene content within and across pathway resources.
     </td></tr>
     <tr>
+    <th><a href="https://www.proteomicsdb.org/analytics/ptmNavigator" target="_blank" class="external " title="https://www.proteomicsdb.org/analytics/ptmNavigator" rel="nofollow">PTMNavigator</a>
+    </th><td>PTMNavigator is a tool for interactive visualization of differentially regulated post-translational modifications in cellular signaling pathways, including WikiPathways. It is part of <a href="https://www.proteomicsdb.org/" target="_blank" class="external" title="https://www.proteomicsdb.org/" rel="nofollow">ProteomicsDB</a>. 
+    </td></tr>
+    <tr>
     <th><a href="https://github.com/kozo2/pywikipathways" target="_blank" class="external " title="https://github.com/kozo2/pywikipathways" rel="nofollow">pywikipathways</a>
     </th><td>Python client package for the WikiPathways webservice API.
+    </td></tr>
+    <tr>
+    <th><a href="https://github.com/bonohu/qpx" target="_blank" class="external " title="https://github.com/bonohu/qpx" rel="nofollow">QPX</a>
+    </th><td>Quest for Pathways with eXpression (QPX) is a tool that displays WikiPathways pathways and attribute tables for selected nodes in Jupyter notebook.
     </td></tr>
     <tr>
     <th><a href="https://github.com/Mathelab/RaMP-DB/" target="_blank" class="external " title="https://github.com/Mathelab/RaMP-DB/" rel="nofollow">RaMP</a>
@@ -166,7 +178,7 @@ redirect_from: /index.php/Help:Tools_using_WikiPathways
     </td></tr>
     <tr>
     <th><a href="https://cran.r-project.org/web/packages/rSEA/vignettes/rSEA_vignette.html" target="_blank" class="external " title="https://cran.r-project.org/web/packages/rSEA/vignettes/rSEA_vignette.html" rel="nofollow">rSEA</a>
-    </th><td>TBD.
+    </th><td>rSEA is a novel paradigm for simultaneous enrichment analysis of feature-sets. It combines the pre-existing self-contained and competitive approaches by defining a unified null hypothesis that includes the null hypotheses of both approaches as special cases.
     </td></tr>
     <tr>
     <th><a href="https://bioconductor.org/packages/release/bioc/html/rWikiPathways.html" target="_blank" class="external " title="https://bioconductor.org/packages/release/bioc/html/rWikiPathways.html" rel="nofollow">rWikiPathways</a>
@@ -203,8 +215,14 @@ redirect_from: /index.php/Help:Tools_using_WikiPathways
     <tr>
     <th><a href="https://wikipedia.org" target="_blank" class="external " title="http://wikipedia.org" rel="nofollow">Wikipedia</a>
     </th><td>The free encyclopedia that anyone can edit. In collaboration with MCB and GeneWiki, we have added interactive pathway maps using WikiPathways (<a href="http://en.wikipedia.org/wiki/DPYD" target="_blank" class="external " title="http://en.wikipedia.org/wiki/DPYD" rel="nofollow">example</a>).
-    </td></tr></table>
+    </td></tr>
+    <tr>
+    <th><a href="https://github.com/YuLab-SMU/wikiprofiler" target="_blank" class="external " title="https://github.com/YuLab-SMU/wikiprofiler" rel="nofollow">wikiprofiler</a>
+    </th><td>Queries online 'WikiPathway' graphics and allows mapping user data (e.g., expression values) on the graph.
+        The package designs a grammar of graphic syntax that using pipe operator to add graphic layer.
+    </td></tr>
+</table>
 
 <p>
-<b>If you know of a tool or resource that makes use of our curated pathway content, announce them on <a href="http://groups.google.com/group/wikipathways-discuss" target="_blank" class="external " title="http://groups.google.com/group/wikipathways-discuss" rel="nofollow">our mailing list</a> and add them to the list below.</b>
+<b>If you know of a tool or resource that makes use of our curated pathway content, let us know via our <a href="https://github.com/wikipathways/wikipathways-help/discussions" target="_blank" class="external " title="https://github.com/wikipathways/wikipathways-help/discussions" rel="nofollow">helpdesk</a> so we can add them to the list.</b>
 </p>

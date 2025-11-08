@@ -4,7 +4,7 @@ realname: Rianne Fijten
 website: ~
 affiliation: ~
 bio: ~
-github: ~
+github: riannefijten
 orcid: 0000-0002-1964-6317
 linkedin: ~
 googlescholar: ~
@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Riannefijten
 email: ~
 
+curationui: true
 ---

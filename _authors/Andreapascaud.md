@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Andreapascaud
 - /index.php/Special:Contributions/Andreapascaud
+curationui: true
 ---

@@ -1,6 +1,6 @@
 ---
 username: Cereno98
-realname: Cereno98
+realname: Ceren
 website: ~
 affiliation: ~
 bio: ~
@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Cereno98
 email: ~
 
+curationui: true
 ---

@@ -1,14 +1,14 @@
 ---
 username: NasimBahramSangani
-realname: NasimBahramSangani
+realname: Nasim Bahram Sangani
 website: 
 affiliation: 
 bio: 
 github: 
-orcid: 
+orcid: 0000-0002-3560-2058
 linkedin: 
 googlescholar: 
-wikidata: 
+wikidata: Q92590135
 twitter: 
 mastodon-url: 
 meta:
@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:NasimBahramSangani
 - /index.php/Special:Contributions/NasimBahramSangani
+curationui: true
 ---

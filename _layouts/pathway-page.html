@@ -53,6 +53,7 @@ layout: default
       {% if page.ndex %}
         <a class="dropdown-item" href="https://www.ndexbio.org/viewer/networks/{{page.ndex}}" target="_blank">Open in NDEx</a>
       {% endif %}
+      <a class="dropdown-item" href="https://web.newteditor.org/?URL=https://www.wikipathways.org/wikipathways-assets/pathways/{{page.wpid}}/{{page.wpid}}.gpml"  target="_blank">Open in Newt (SBGN)</a>
     </div>
   </div>
   <!-- SVG IMAGE -->
@@ -148,9 +149,13 @@ layout: default
 </div>
 <!-- DESCRIPTION-->
 <div id="description" style="margin-top: 10px;">
-  {{ page.description }}
+  {{ page.description | markdownify }}
 </div>
 
+<!-- LEGEND -->
+<div id="legend" style="margin-top: 10px;">
+<p>For a description of pathway objects, see the <a href="/help.html#reference" target="_blank">WikiPathways Legend</a>.</p>
+</div>
 <!-- AUTHORS -->
 <h2 id="authors">Authors</h2>
     {{ authList | array_to_sentence_string }}

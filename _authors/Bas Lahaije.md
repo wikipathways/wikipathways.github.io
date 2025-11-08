@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Bas_Lahaije
 email: ~
 
+curationui: true
 ---

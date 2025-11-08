@@ -1,6 +1,6 @@
 ---
 username: AliHbdl
-realname: AliHbdl
+realname: Alicia Hobdell
 website: ~
 affiliation: ~
 bio: ~
@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/AliHbdl
 email: ~
 
+curationui: true
 ---

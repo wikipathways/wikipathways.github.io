@@ -1,13 +1,13 @@
 ---
 annotations:
-- id: DOID:1287
-  parent: cardiovascular system disease
-  type: Disease Ontology
-  value: cardiovascular system disease
 - id: CL:0000182
   parent: native cell
   type: Cell Type Ontology
   value: hepatocyte
+- id: DOID:1287
+  parent: cardiovascular system disease
+  type: Disease Ontology
+  value: cardiovascular system disease
 - id: PW:0000724
   parent: drug pathway
   type: Pathway Ontology
@@ -41,22 +41,25 @@ citedin:
 - link: PMC4546821
   title: Automatically visualise and analyse data on pathways using PathVisioRPC from
     any programming environment (2015)
+- link: 10.3390/nu17050757
+  title: Isoschaftoside in Fig Leaf Tea Alleviates Nonalcoholic Fatty Liver Disease
+    in Mice via the Regulation of Macrophage Polarity (2025)
 communities: []
 description: 'Statins inhibit endogenous cholesterol production by competitive inhibition
   of HMG-CoA reductase (HMGCR), the enzyme that catalyzes conversion of HMG-CoA to
   mevalonate, an early rate-limiting step in cholesterol synthesis. This pathway delineates
   genes involved in statin pharmacogenomics, including genes involved in mediating
-  the effects of statins on plasma lipoprotein metabolism.   Sources: [https://www.pharmgkb.org/pathway/PA2031
-  PharmGKB] and [http://en.wikipedia.org/wiki/Statin Wikipedia]'
-last-edited: 2024-01-21
+  the effects of statins on plasma lipoprotein metabolism.   Sources: [PharmGKB](https://www.pharmgkb.org/pathway/PA2031)
+  and [Wikipedia](http://en.wikipedia.org/wiki/Statin).'
+last-edited: 2025-05-22
 ndex: null
 organisms:
 - Mus musculus
 redirect_from:
 - /index.php/Pathway:WP1
 - /instance/WP1
-- /instance/WP1_r127970
-revision: r127970
+- /instance/WP1_r137182
+revision: r137182
 schema-jsonld:
 - '@context': https://schema.org/
   '@id': https://wikipathways.github.io/pathways/WP1.html
@@ -69,8 +72,7 @@ schema-jsonld:
     to mevalonate, an early rate-limiting step in cholesterol synthesis. This pathway
     delineates genes involved in statin pharmacogenomics, including genes involved
     in mediating the effects of statins on plasma lipoprotein metabolism.   Sources:
-    [https://www.pharmgkb.org/pathway/PA2031 PharmGKB] and [http://en.wikipedia.org/wiki/Statin
-    Wikipedia]'
+    [PharmGKB](https://www.pharmgkb.org/pathway/PA2031) and [Wikipedia](http://en.wikipedia.org/wiki/Statin).'
   keywords:
   - Abca1
   - Acetyl-CoA
@@ -86,7 +88,7 @@ schema-jsonld:
   - Cholic acid
   - Cyp7a1
   - Dgat1
-  - Free FA
+  - Fatty acid
   - Hmgcr
   - Lcat
   - Ldlr

@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Shad4
 email: ~
 
+curationui: true
 ---

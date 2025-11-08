@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Artoria2e5
 email: ~
 
+curationui: true
 ---

@@ -13,4 +13,5 @@ editors:
 - Kyook
 redirect_from:
   - /index.php/Portal:WormBase
+curationui: true
 ---

@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Ishida-kazuya
 email: ~
 
+curationui: true
 ---

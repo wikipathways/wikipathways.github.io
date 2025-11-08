@@ -17,5 +17,6 @@ redirect_from:
 - /index.php/User:Jmillanacosta
 - /index.php/Special:Contributions/Jmillanacosta
 email: ~
-
+curationui: true
+curationui: true
 ---

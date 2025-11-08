@@ -17,9 +17,11 @@ communities:
 - COVID19
 - IEM
 - Lipids
+- MetaKids
 redirect_from:
 - /index.php/User:DeSl
 - /index.php/Special:Contributions/DeSl
 email: ~
-
+curationui: true
+curationui: true
 ---

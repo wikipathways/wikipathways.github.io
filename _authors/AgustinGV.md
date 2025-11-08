@@ -20,4 +20,5 @@ redirect_from:
 - /index.php/Special:Contributions/AgustinGV
 email: agustin.gonvi@gmail.com
 
+curationui: true
 ---

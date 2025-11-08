@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Noopur144
 email: ~
 
+curationui: true
 ---

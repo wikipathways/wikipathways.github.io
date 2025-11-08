@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Melrose2023
 email: ~
 
+curationui: true
 ---

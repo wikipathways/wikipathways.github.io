@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Akassoglou
 email: ~
 
+curationui: true
 ---

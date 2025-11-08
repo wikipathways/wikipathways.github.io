@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Bep3.14e
 email: ~
 
+curationui: true
 ---

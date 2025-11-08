@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/N.Cotte
 email: ~
 
+curationui: true
 ---

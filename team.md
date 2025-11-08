@@ -7,20 +7,21 @@ reviewers:
 - AlexanderPico
 - DeSl
 - Fehrhart
-- Ddigles
 - Susan
 - Andra
 - Elisson nl
-- Madeomuga
-- IsabelWassink
 - Jmillanacosta
 - Tabbassidaloii
-- aish181095
-- ElenaDR1
+- Ash iyer
+- Duan
+- Eweitz
+- Ddigles
+- Alval
 
 architects:
-- Mkutmon
 - AlexanderPico
+- Mkutmon
+- Egonw
 
 coordination:
 - Khanspers

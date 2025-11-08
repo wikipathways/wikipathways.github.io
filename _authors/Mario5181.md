@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Mario5181
 email: ~
 
+curationui: true
 ---

@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Annahoekstra1
 email: ~
 
+curationui: true
 ---

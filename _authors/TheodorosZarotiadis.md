@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:TheodorosZarotiadis
 - /index.php/Special:Contributions/TheodorosZarotiadis
+curationui: true
 ---

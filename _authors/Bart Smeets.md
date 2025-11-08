@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Bart_Smeets
 email: ~
 
+curationui: true
 ---

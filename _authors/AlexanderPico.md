@@ -25,4 +25,5 @@ redirect_from:
 - /index.php/Special:Contributions/AlexanderPico
 email: alex.pico@gladstone.ucsf.edu
 
+curationui: true
 ---

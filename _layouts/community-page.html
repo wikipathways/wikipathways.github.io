@@ -14,6 +14,33 @@ layout: default
       </a>
     </h2>
     <p>{{ page.description | markdownify }}</p>
+    {% if page.curation-table %}
+      {% assign rows = site.data[ page.curation-table] %}
+      <h2>Curation Table</h2>
+      <div class="table-container">
+      <table id="participants-table"> 
+        <thead>
+          {% for row in rows limit:1%}
+            {% for field in row %}
+              <th>{{ field[0] }}</th>
+            {% endfor %}  
+          {% endfor %}
+        </thead>
+        <tbody>
+          {% for row in rows %}
+            <tr>
+            {% for field in row %}
+              <td>{{ field[1] }}</td>
+            {% endfor %}  
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <div class="table-gradient-overlay"></div>
+      </div>
+      <input type="button" class="badge badge-secondary" id="tableMore" value="more rows" style="float: left; margin: -8px 4px 0px 0px;">
+      <input type="button" class="badge badge-secondary" id="tableLess" value="fewer rows" style="float: left; margin-top: -8px;">
+    {% endif %}
     <h2 id-contacts>Contact</h2>
   {% assign all_contacts = '' | split: '' %}
   {% if page.editors %}
@@ -84,6 +111,11 @@ layout: default
         <a class="nav-link" data-toggle="tab" href="#list">List</a>
         {% endif %}
       </li>
+      {% if page.curationui %}
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#curation">Citations</a>
+      </li>
+      {% endif %}
     </ul>
     <b>This community helps to curate {{sorted_pathways.size}} pathways:</b>
     <div class="tab-content">
@@ -101,6 +133,15 @@ layout: default
               <img class="card-img-top" loading="lazy" src="/assets/img/{{pw.wpid}}/{{pw.wpid}}-thumb.png" alt="{{ pw.title }}">
               <div class="card-body">
                 <p class="card-text">{{ pw.title }} <em>({{ pw.organisms.first }})</em></p>
+                {% if page.curationui %}
+                  <p class="card-text">
+                    <!--This badge shows the curation status-->
+                    <a id="badge-curation" target="_blank"
+                       href="{% if page.curationrepo %}{{ page.curationrepo }}{% else %}https://www.wikipathways.org/wikipathways-collection/reports/{% endif %}{{pw.wpid}}.html">
+                      <img alt="pathway curation" src="https://img.shields.io/endpoint?style=flat-square&url={% if page.curationrepo %}{{ page.curationrepo }}{% else %}https://www.wikipathways.org/wikipathways-collection/reports/{% endif %}{{pw.wpid}}.json">
+                    </a>
+                  </p>
+                {% endif %}
               </div>
               </a>
             </div>
@@ -120,8 +161,23 @@ layout: default
               <li><a href="{{ pw.url }}">{{ pw.title }} - {{pw.wpid}} <em>({{ pw.organisms.first }})</em></a></li>
         {% endfor %}
       </ul>
-    </div>  
+    </div>
   </div>
+  {% if page.curationui %}
+  <div class="tab-pane fade" id="curation" role="tabpanel">
+    <br/>
+    <b>Find citations to community pathways:</b>
+    {% assign searchQuery = "" %}
+    {% for pw in sorted_pathways %}
+      {% assign searchQuery = searchQuery | append: pw.wpid %}
+      {%- unless forloop.last -%}{% assign searchQuery = searchQuery | append: "%20OR%20" %}{%- endunless -%}
+    {% endfor %}
+    <br/>
+    <ul>
+      <li><a href="https://europepmc.org/search?query=WikiPathways%20AND%20%28{{searchQuery}}%29">Europe PMC: find articles citing community pathways</a></li>
+    </ul>
+  </div>
+  {% endif %}
 </div>
 
 <br/><hr/>
@@ -134,6 +190,7 @@ layout: default
 {% if page.contribute %}
 <h2>How to Contribute</h2>
 <p>{{ page.contribute | markdownify }}</p>
+<p>To start a discussion about topics relevant to this community, or to browse existing discussions, visit <a href="https://github.com/wikipathways/wikipathways-help/discussions" target="_blank">WikiPathways Discussions</a>.</p>
 {% endif %}
 
 {% if page.support %}

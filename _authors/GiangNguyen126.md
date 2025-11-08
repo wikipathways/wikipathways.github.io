@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/GiangNguyen126
 email: ~
 
+curationui: true
 ---

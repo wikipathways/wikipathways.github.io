@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Mshel016
 email: ~
 
+curationui: true
 ---

@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Txr24
 email: ~
 
+curationui: true
 ---

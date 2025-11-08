@@ -87,6 +87,11 @@ layout: default
       <li class="nav-item">
         <a class="nav-link" data-toggle="tab" href="#list">List format</a>
       </li>
+      {% if page.curationui %}
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#curation">Citations</a>
+      </li>
+      {% endif %}
     </ul>
     <div class="tab-content" >
       {% assign gallery_tab_class = "show active" %}
@@ -105,6 +110,15 @@ layout: default
               <img class="card-img-top" loading="lazy" src="/assets/img/{{pw.wpid}}/{{pw.wpid}}-thumb.png" alt="{{ pw.title }}">
               <div class="card-body">
                 <p class="card-text">{{ pw.title }}</p>
+                {% if page.curationui %}
+                  <p class="card-text">
+                    <!--This badge shows the curation status-->
+                    <a id="badge-curation" target="_blank"
+                        href="https://www.wikipathways.org/wikipathways-collection/reports/{{pw.wpid}}.html">
+                      <img alt="pathway curation" src="https://img.shields.io/endpoint?style=flat-square&url=https://www.wikipathways.org/wikipathways-collection/reports/{{pw.wpid}}.json">
+                    </a>
+                  </p>
+                {% endif %}
               </div>
               </a>
             </div>
@@ -145,5 +159,16 @@ layout: default
           </ul>
         </div>  
       </div>
+      {% if page.curationui %}
+      <div class="tab-pane fade" id="curation" role="tabpanel">
+        <br/>
+        <b>Find citations to first-authored pathways:</b>
+        {% assign wpid_first_search = wpid_fisrt_string | split: "_|_" | join: "%20OR%20" %} 
+        <br/>
+        <ul>
+          <li><a href="https://europepmc.org/search?query=WikiPathways%20AND%20%28{{wpid_first_search}}%29">Europe PMC: find articles citing first-authored pathways</a></li>
+        </ul>
+      </div>
+      {% endif %}
     </div>
 <br/><hr/>

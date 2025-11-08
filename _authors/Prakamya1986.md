@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Prakamya1986
 email: ~
 
+curationui: true
 ---

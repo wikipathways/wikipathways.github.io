@@ -28,11 +28,11 @@ collections:
 - name: "Sustaining proliferative signaling"
   wpids: ['WP3972','WP673','WP581','WP382','WP4223','WP4205','WP313','WP4553','WP4566','WP4541']
 - name: "Evading growth suppressors"
-  wpids: ['WP2446','WP179','WP45','WP560','WP366','WP4204','WP4284']
+  wpids: ['WP2446','WP179','WP45','WP560','WP4204','WP4284']
 - name: "Activating invasion and metastasis"
   wpids: ['WP3301','WP3859','WP3969','WP185','WP3932','WP4239','WP185','WP4565']
 - name: "Enabling replicative immortality"
-  wpids: ['WP268','WP3658','WP3664','WP428','WP61','WP363','WP4258','WP4336','WP4337']
+  wpids: ['WP268','WP3658','WP3664','WP428','WP61','WP4258','WP4336','WP4337']
 - name: "Inducing angiogenesis"
   wpids: ['WP1539','WP2526','WP4249','WP3888','WP4397']
 - name: "Resisting cell death"
@@ -51,4 +51,5 @@ collections:
 
 redirect_from:
   - /index.php/Portal:CPTAC
+curationui: true
 ---

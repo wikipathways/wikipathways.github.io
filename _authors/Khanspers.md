@@ -20,4 +20,6 @@ redirect_from:
 - /index.php/User:Khanspers
 - /index.php/Special:Contributions/Khanspers
 email: kristina.hanspers@gladstone.ucsf.edu
+curationui: true
+curationui: true
 ---

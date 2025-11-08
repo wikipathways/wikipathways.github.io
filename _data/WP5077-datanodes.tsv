@@ -1,0 +1,12 @@
+Label	Type	Identifier	Comment	Ensembl	NCBI gene	HGNC	UniProt	Wikidata	ChEBI	InChI	PubChem	ChemSpider	HMDB	KEGG	LipidMaps
+1,2 Diacylglycerol	Metabolite	chebi:49172	""					wikidata:Q74702938	chebi:49172						
+Phospahtidylcholine	Metabolite	chebi:64482	""					wikidata:Q650187	chebi:64482				hmdb:HMDB0062577		
+GlyP	GeneProduct	ensembl:APZ42_020436	""												
+amyA	GeneProduct	ensembl:APZ42_021009	""												
+Eno	GeneProduct	ensembl:APZ42_018388	""												
+MANA	GeneProduct	ensembl:APZ42_024669	""												
+Lip	GeneProduct	ensembl:APZ42_029151	""												
+ACS	GeneProduct	ensembl:APZ42_024578	""												
+GPX	GeneProduct	ensembl:APZ42_030648	""												
+FABP3	GeneProduct	ensembl:APZ42_014858	""												
+VDAC2	GeneProduct	ensembl:APZ42_018910	""												

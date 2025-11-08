@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Jessev1993
 email: ~
 
+curationui: true
 ---

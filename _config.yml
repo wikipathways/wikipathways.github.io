@@ -23,7 +23,6 @@ tagline: A community curated pathway database
 description: WikiPathways is a community curated pathway database dedicated to open science.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://wikipathways.org" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: wikipathways
 mastodon_username: wikipathways
 github_username: wikipathways
 discussion_forum: github.com/wikipathways/wikipathways-help/discussions

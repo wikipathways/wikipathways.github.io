@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:MysticArchers
 - /index.php/Special:Contributions/MysticArchers
+curationui: true
 ---

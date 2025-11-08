@@ -16,9 +16,12 @@ instagram: ~
 communities:
 - COVID19
 - PancCanNet
+- lipids
+- MetaKids
 redirect_from:
 - /index.php/User:Mkutmon
 - /index.php/Special:Contributions/Mkutmon
 email: ~
 
+curationui: true
 ---

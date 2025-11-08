@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Madhu_Rohini
 email: ~
 
+curationui: true
 ---

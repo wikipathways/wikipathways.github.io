@@ -1,12 +1,12 @@
 ---
 username: JuliaUM
-realname: JuliaUM
+realname: Julia Bous
 website: 
 affiliation: 
 bio: 
 github: 
 orcid: 
-linkedin: 
+linkedin: julia-bous
 googlescholar: 
 wikidata: 
 twitter: 
@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:JuliaUM
 - /index.php/Special:Contributions/JuliaUM
+curationui: true
 ---

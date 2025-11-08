@@ -6,6 +6,7 @@ redirect_from:
  - /index.php/Help:Guidelines
  - /index.php/Help:Guidelines_EditorPalette
  - /index.php/Help:DataVisualizationInCytoscape
+ - /index.php/Curation_Events
 ---
 <div style="background:#eee; padding:20px 0px 0px 50px">
 <h1>Help Topics</h1>
@@ -51,12 +52,14 @@ redirect_from:
 <p>TogoTV. Sep 21 2023, YouTube: <a href="https://youtu.be/oSyoDU2r4Q0" target="_blank">https://youtu.be/oSyoDU2r4Q0</a>, DOI: <a href="https://doi.org/10.7875/togotv.2023.063" target="_blank">https://doi.org/10.7875/togotv.2023</a>.</p>
 <div id="viewer">
 <h1>Interactive Pathway Viewer</h1>
-<p>Each pathway offers a dedicated page for interactive viewing. Click on the open icon <span title="Open in new tab" style="color: #FF8120; background-color: #FFFFFF; font-size: 1.0em;"><i class="fa fa-arrow-up-right-from-square"></i></span> or anywhere on the image to open the interactive in a new tab. Zoom in and out by scrollwheel, pan by click-n-drag, and click on genes, proteins and metabolites to open links to external resources dedicated to each molecule. Here's a mini example:
+<p>Each pathway page offers a dedicated page for interactive viewing. Click on the open icon <span title="Open in new tab" style="color: #FF8120; background-color: #FFFFFF; font-size: 1.0em;"><i class="fa fa-arrow-up-right-from-square"></i></span> or anywhere on the image to open the interactive in a new tab. Zoom in and out by scrollwheel, pan by click-n-drag, and click on genes, proteins and metabolites to open links to external resources dedicated to each molecule. Here's a mini example:
 </p>
 <iframe src ="https://pathway-viewer.toolforge.org/?id=WP554" width="500px" height="350px" style="overflow:hidden;margin-left:200px;"></iframe>
   <br/>
 <p><b><i>Pro-tip:</i></b> Use the orange icons on a pathway page to download <span title="Download pathway as..." style="color: #FF8120; background-color: #FFFFFF; font-size: 1.0em;"><i class="fa fa-download"></i></span> the pathway in one of a variety of formats, or to share <span title="Share pathway" style="color: #FF8120; background-color: #FFFFFF; font-size: 1.0em;"><i class="fa fa-share"></i></span> the pathway as a citation, permalink, or via social media. You can also get embed code so you can include this interactive viewer in your own web site.
 </p>
+<p id="reference">See the WikiPathways Legend below to learn what the various objects in the pathway diagram represent:</p>
+<img src="/assets/img/help/WikiPathwaysReferenceCard.png" alt="WikiPathways Reference Card" style="width: 90%;">
 </div>
 <div id="attributes">
 <h1>Pathway Attributes</h1>
@@ -78,6 +81,7 @@ redirect_from:
 </p>
 <p><b><i>Pro-tip:</i></b> Click on the <b>Download as TSV</b> icon at the top of the table to download the complete table which includes mappings to many common identifiers. The <b>Query options</b> icon allows for querying external services, like <a href="https://drugst.one/">Drugst.One</a>, using the list of participants as the query input.
 </p>
+
 </div>
 <div id="references">
 <h1>Literature References</h1>
@@ -104,14 +108,14 @@ redirect_from:
 </div>
 <div id="search">
 <h1>Search for Pathways</h1>
-<p>The WikiPathways collection can be searched by gene symbol, pathway name or other keywords, in the Search field at the top of each page. By default, the first 40 results will appear on the search results page. You can also include organism, ontology annotations, WPIDs, and even last-edited dates in your query. Multi-term queries are processed as AND queries. Here are some example queries:</p>
+<p>The WikiPathways collection can be searched by gene symbol, pathway name or other keywords, in the Search field at the top of each page. By default, the first 40 results will appear on the search results page. To view all results, click the <b>Show more</b> button at the end of the results list. You can also include organism, ontology annotations, WPIDs, and even last-edited dates in your query. Multi-term queries are processed as AND queries. Here are some example queries:</p>
 <ul>
 <li>Search for your favorite pathway by a word from the title, i.e. "Statin".</li>
 <li>Search your favorite gene by symbol, i.e. "BRCA1".</li>
 <li>Search for all human pathways that include ACE2 and aldosterone with the query "ace2 aldosterone human".</li>
 <li>Search for all cancer pathways updated in 2023 with the query "cancer 2023".</li>
 </ul> 
-
+<p>Note that for searches with many results, adding search terms will update the results. However, the updating of results may not be evident without scrolling to see the full list.</p>
 <p>The <a href="/browse/table.html">Table</a> view of the current collection offers a nice way to interactively explore pathways by searching for various parameters. The table displays all pathways, and offers search fields at the top of each column to filter the table. Additional sort options become available when the filtered set is fewer than 200 pathways. Example usage:</p>
 <ul>
 <li>To see all pathways related to adipogenesis in humans, type "adipogenesis" in the search field at the top of the <b>Pathway Title</b> column, and type "Homo sapiens" in the search field at the top of the <b>Organism</b> column.</li>
@@ -143,7 +147,7 @@ redirect_from:
 </div>
 <div id="authors">
 <h1>Get Recognition</h1>
-<p>Each of the <a href="/browse/authors.html">authors</a> who has contributed to WikiPathways has their own profile page. In addtion to a standard biographicial field and professional linkouts, these pages provide a gallery listing of all the pathways edited by a given author. Click on the pencil icons <span title="Edit cited in" style="color: #666; font-size: 1.0em;"><i class="fa fa-pencil"></i></span> next to your name to edit your user profile. See the sections below to learn more about how to contribute to WikiPathways while enabling your own research.</p>
+<p>Each of the <a href="/browse/authors.html">authors</a> who has contributed to WikiPathways has their own profile page. In addtion to a standard biographicial field and professional linkouts, these pages provide two gallery listing, one with of all the pathways edited by that author, and a second listing all pathways started by that author. Click on the pencil icons <span title="Edit cited in" style="color: #666; font-size: 1.0em;"><i class="fa fa-pencil"></i></span> next to your name to edit your user profile. See the sections below to learn more about how to contribute to WikiPathways while enabling your own research.</p>
 <p><b><i>Pro-tip:</i></b> Your profile picture comes directly from your associated GitHub account. Update your avatar on <a href="https://github.com/settings/profile">your GitHub settings page</a> to update the picture shown in your WikiPathways author profile.
 </p>
 </div></div>
@@ -156,7 +160,7 @@ redirect_from:
 </div>
 <div id="review">
 <h1>Review Changes</h1>
-<p>To maintain WikiPathways as a high-quality pathway resource, a weekly rotation of reviwers from the community help to ensure the quality of new content and edits to existing content. Our <a href="https://wikipathways.org/academy/qaprotocol.html" target="_blank">Quality Assurance Protocol</a> checks for the following things:</p>
+<p>To maintain WikiPathways as a high-quality pathway resource, a weekly rotation of reviewers from the community help to ensure the quality of new content and edits to existing content. Our <a href="https://wikipathways.org/academy/qaprotocol.html" target="_blank">Quality Assurance Protocol</a> checks for the following things:</p>
 <ul>
 <li>Do pathway nodes have valid database identifiers?</li>
 <li>Are interactions properly connected to nodes?</li>
@@ -192,8 +196,8 @@ redirect_from:
 <li><b>SVG:</b> The link to the SVG version of a pathway image has the URL pattern <code>https://www.wikipathways.org/wikipathways-assets/pathways/{WPID}/{WPID}.svg</code></li>
 <li><b>JSON:</b> The link to the JSON version of a pathway has the URL pattern <code>https://www.wikipathways.org/wikipathways-assets/pathways/{WPID}/{WPID}.json</code></li>
 <li><b>GPML:</b> Using the option <b>Dowbload GPML</b> will downloaded the GPML code for the pathway. The URL pattern to access this file is <code>https://www.wikipathways.org/wikipathways-assets/pathways/{WPID}/{WPID}.gpml</code></li>
-<li><b>Participants:</b> Using the option <b>Download TSV</b> option will downloaded a TSV-formatted table of the data nodes for the pathway. The URL pattern to access this file is <code>https://gitcdn.link/cdn/wikipathways/wikipathways.github.io/main/_data/{WPID}-datanodes.tsv</code></li>
-<li><b>References:</b> Using the option <b>Download TSV</b> will downloaded a TSV-formatted table of the literature for the pathway. The URL pattern to access this file is <code>https://gitcdn.link/cdn/wikipathways/wikipathways.github.io/main/_data/{WPID}-bibliography.tsv</code></li>
+<li><b>Participants:</b> Using the option <b>Download TSV</b> option will downloaded a TSV-formatted table of the data nodes for the pathway. The URL pattern to access this file is <code>https://www.wikipathways.org/wikipathways-assets/pathways/{WPID}/{WPID}-datanodes.tsv</code></li>
+<li><b>References:</b> Using the option <b>Download TSV</b> will downloaded a TSV-formatted table of the literature for the pathway. The URL pattern to access this file is <code>https://www.wikipathways.org/wikipathways-assets/pathways/{WPID}/{WPID}-bibliography.tsv</code></li>
 </ul>
 <a id="widget"/>
 <h2>Visualizing Data on Pathways</h2>
@@ -216,13 +220,18 @@ redirect_from:
 <h2>Embedding Pathway Visualizations in Web Pages</h2>
 <p>You can easily embed a simple pathway diagram in any web page using the embed code that is available in via the <b>Share</b> icon under the pathway image. This code has the following pattern:</p>
 <code>&lt;iframe src ="https://pathway-viewer.toolforge.org/?id={WPID}`" width="600px" height="300px" style="overflow:hidden;"&gt;&lt;/iframe&gt;</code>.
-<p>An example of embedding of a WikiPathways pathway diagram in a website can be found on the <a href="https://www.lipidmaps.org/resources/pathways/wikipathways/WP4345" target="_blank">LIPIDMAPS</a> website.</p>
+<p>An example of embedding of a WikiPathways pathway diagram in a website can be found on the <a href="https://www.lipidmaps.org/resources/pathways/wikipathways/WP4345" target="_blank">LIPID MAPS</a> website.</p>
 <p>It is also possible to embed a pathway with node visualization (described above) in a similar way, simply by adding the iframe tag and parameters like so: <br />
 <code>&lt;iframe src ="https://pathway-viewer.toolforge.org/embed/WP554?red=ACE&lightgreen=AGT" width="600px" height="300px" style="overflow:hidden;"&gt;&lt;/iframe&gt;</code> <br />
 This code will produce the following iframe:</p>
 <br />
 <iframe src ="https://pathway-viewer.toolforge.org/embed/WP554?red=ACE&lightgreen=AGT" width="500px" height="350px" style="overflow:hidden;"></iframe>
 <br />
+<br />
+
+<h2>Styling Pathways for Published Pathway Figures</h2>
+<p>WikiPathways models are "plain" by design, to allow for optimal data visualization. However, for published materials, it is sometimes preferred to display a pathway (without data, typically) in a more decorated style, more typical of how pathway figures are commonly represented. Starting with a pathway model at WikiPathways, you can apply custom pathway styling in <a href="http://www.cytoscape.org/" target="_blank">Cytoscape</a> to produce a pathway figure that is visually more comparable to typical published pathway figures. For more information see <a href="styling.html">Styling WikiPathways Models</a>.</p>
+
 </div></div>
 
 <hr>

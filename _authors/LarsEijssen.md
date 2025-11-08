@@ -2,9 +2,9 @@
 username: LarsEijssen
 realname: Lars Eijssen
 website: ~
-affiliation: ~
+affiliation: Maastricht University
 bio: ~
-github: ~
+github: drlrc
 orcid: 0000-0002-6473-2839
 linkedin: ~
 googlescholar: ~
@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/LarsEijssen
 email: ~
 
+curationui: true
 ---

@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Tesic_petra
 email: ~
 
+curationui: true
 ---

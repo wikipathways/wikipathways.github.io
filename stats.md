@@ -44,10 +44,11 @@ Collections to update the table using data sourced from GitHub repos.
 ### GitHub Collections
 
 
-```r
+``` r
 ## read saved data
 wpid.all.df.cnts <- read.csv("../_data/pathway_counts.csv", stringsAsFactors = F)
 edits.user.df <- read.csv("../_data/edit_counts.csv", stringsAsFactors = F)
+active.author.df.cnts <- read.csv("../_data/active_author_counts.csv", stringsAsFactors = F)
 
 ## add new row of data
 # TODO: count WP folders in _pathways/
@@ -62,7 +63,7 @@ Composite plot for main page: pathway count and number of edits per month.
 First, let's combine our data frames and make a proper date column and factor by 
 month
 
-```r
+``` r
 combo.df <- edits.user.df %>%
   full_join(wpid.all.df.cnts, by="date") %>%
   dplyr::filter(!is.na(edits)) %>%
@@ -75,18 +76,29 @@ combo.df$month <- factor(format(combo.df$date, "%B"),
 
 Next, let's display the latest data points
 
-```r
+``` r
 tail(combo.df[,2:4],1)
 ```
 
 ```
-##    edits pathways month
-## 76   110     1957   May
+##    edits pathways   month
+## 93   129     2069 October
+```
+
+
+``` r
+# Calculate stats for data release: new pathways and active authors
+last.two.pw.counts <- tail(wpid.all.df.cnts$pathways, 2)
+# New pathways last month
+new.pws <- (last.two.pw.counts[2] - last.two.pw.counts[1])
+
+# Number of active authors in the last month
+active.authors <- tail(active.author.df.cnts$authors, 1)
 ```
 
 Next, let's plot a time series
 
-```r
+``` r
 # RColorBrewer::display.brewer.all()
 bcols <- RColorBrewer::brewer.pal(3,"Set1")
 acols <- bcols
@@ -139,14 +151,14 @@ p
 ![plot of chunk plot](figure/plot-1.png)
 
 
-```r
+``` r
 ggsave("../assets/img/main_stats.png", plot = last_plot(), 
        width = 650, height = 450, units = "px", dpi = 250, bg='transparent')
 ```
 
 Now, let's make pngs per month for animation!
 
-```r
+``` r
 # plot per month
 for(i in seq(nrow(combo.df),1)){
   combo.df.anim<-combo.df[1:i,]
@@ -193,7 +205,7 @@ p <- ggplot(combo.df.anim) +
 ## ℹ Do you need to adjust the group aesthetic?
 ```
 
-```r
+``` r
 #make animated gif
 anim.img.list <- list.files(path='stats_files', pattern = '*.png', full.names = TRUE) 
 anim.img.list %>% 

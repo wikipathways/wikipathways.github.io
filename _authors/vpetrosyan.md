@@ -19,4 +19,5 @@ email: Varduhi.Petrosyan@bcm.edu
 redirect_from:
 - /index.php/User:vpetrosyan
 - /index.php/Special:Contributions/vpetrosyan
+curationui: true
 ---

@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Nikita_Krstevska
 - /index.php/Special:Contributions/Nikita_Krstevska
+curationui: true
 ---

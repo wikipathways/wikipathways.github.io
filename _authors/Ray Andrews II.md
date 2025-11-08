@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Ray_Andrews_II
 email: ~
 
+curationui: true
 ---

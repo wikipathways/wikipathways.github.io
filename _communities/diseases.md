@@ -38,4 +38,5 @@ editors:
 
 redirect_from:
   - /index.php/Portal:Disease 
+curationui: true
 ---

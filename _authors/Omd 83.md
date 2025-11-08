@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Omd 83
 email: ~
 
+curationui: true
 ---

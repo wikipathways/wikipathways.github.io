@@ -1,6 +1,6 @@
 ---
 username: Pauladewenter
-realname: Pauladewenter
+realname: Paula Dewenter
 website: ~
 affiliation: ~
 bio: ~
@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Pauladewenter
 email: ~
 
+curationui: true
 ---

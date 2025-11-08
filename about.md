@@ -19,8 +19,10 @@ redirect_from:
 <h2>Who is Involved</h2>
 <p>Find information about the <a href="/team.html">WikiPathways Team</a></p>
 <p>For questions, comments or suggestions, please post a message to the <a href="https://github.com/wikipathways/wikipathways-help/discussions" target="_blank">discussion board</a>.</p>
-<p>Additional contact:</p>
+<p><b>Additional contact</b></p>
+Feel free to reach out to our architects:
 <ul>
 <li>Alex Pico: <a href="mailto:alex.pico@gladstone.ucsf.edu">alex.pico@gladstone.ucsf.edu</a></li>
-<li>Martina Kutmon: <a href="mailto:mkutmon@gmail.com">mkutmon@gmail.com</a></li>
+<li>Martina Summer-Kutmon: <a href="mailto:martina.kutmon@maastrichtuniversity.nl">martina.kutmon@maastrichtuniversity.nl</a></li>
+<li>Egon Willighagen: <a href="mailto:egon.willighagen@maastrichtuniversity.nl">egon.willighagen@maastrichtuniversity.nl</a></li>
 </ul>

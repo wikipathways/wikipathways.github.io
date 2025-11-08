@@ -18,4 +18,5 @@ redirect_from:
 - /index.php/Special:Contributions/Martin_Urban
 email: ~
 
+curationui: true
 ---

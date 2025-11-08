@@ -13,22 +13,31 @@ authors:
 - Mkutmon
 - DeSl
 - Eweitz
+- Khanspers
 citedin:
 - link: PMC9033237
   title: Postnatal Smad3 Inactivation in Murine Smooth Muscle Cells Elicits a Temporally
     and Regionally Distinct Transcriptional Response (2022)
+- link: 10.1038/mtm.2014.7
+  title: Proteomic profiling of salivary gland after nonviral gene transfer mediated
+    by conventional plasmids and minicircles (2014)
+- link: 10.1016/j.forsciint.2016.06.027
+  title: Simultaneous time course analysis of multiple markers based on DNA microarray
+    in incised wound in skeletal muscle for wound aging (2016)
+communities: []
 description: 'Integrins are receptors that mediate attachment between a cell and the
   tissues surrounding it, which may be other cells or the extracellular matrix (ECM).
   They also play a role in cell signaling and thereby define cellular shape, mobility,
-  and regulate the cell cycle.  Source: [[wikipedia:Integrins|Wikipedia]]'
-last-edited: 2021-05-11
+  and regulate the cell cycle.  Source: [Wikipedia](https://en.wikipedia.org/wiki/Integrin) '
+last-edited: 2025-02-27
+ndex: null
 organisms:
 - Mus musculus
 redirect_from:
 - /index.php/Pathway:WP6
 - /instance/WP6
-- /instance/WP6_r116713
-revision: r116713
+- /instance/WP6_r136997
+revision: r136997
 schema-jsonld:
 - '@context': https://schema.org/
   '@id': https://wikipathways.github.io/pathways/WP6.html
@@ -39,7 +48,7 @@ schema-jsonld:
   description: 'Integrins are receptors that mediate attachment between a cell and
     the tissues surrounding it, which may be other cells or the extracellular matrix
     (ECM). They also play a role in cell signaling and thereby define cellular shape,
-    mobility, and regulate the cell cycle.  Source: [[wikipedia:Integrins|Wikipedia]]'
+    mobility, and regulate the cell cycle.  Source: [Wikipedia](https://en.wikipedia.org/wiki/Integrin) '
   keywords:
   - Actn1
   - Akt1

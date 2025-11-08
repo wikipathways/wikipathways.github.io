@@ -16,4 +16,5 @@ editors:
 
 redirect_from:
   - /index.php/Portal:RareDisease 
+curationui: true
 ---

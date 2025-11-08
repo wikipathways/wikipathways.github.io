@@ -17,4 +17,5 @@ email:
 redirect_from:
 - /index.php/User:Shi
 - /index.php/Special:Contributions/Shi
+curationui: true
 ---
