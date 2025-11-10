@@ -18,5 +18,4 @@ redirect_from:
 - /index.php/Special:Contributions/Jmillanacosta
 email: ~
 curationui: true
-curationui: true
 ---
