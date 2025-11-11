@@ -20,5 +20,4 @@ redirect_from:
 - /index.php/Special:Contributions/Marvin_M2
 email: ~
 curationui: true
-curationui: true
 ---

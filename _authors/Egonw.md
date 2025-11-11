@@ -24,5 +24,4 @@ redirect_from:
 - /index.php/Special:Contributions/Egonw
 email: ~
 curationui: true
-curationui: true
 ---

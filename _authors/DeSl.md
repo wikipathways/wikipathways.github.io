@@ -23,5 +23,4 @@ redirect_from:
 - /index.php/Special:Contributions/DeSl
 email: ~
 curationui: true
-curationui: true
 ---

@@ -20,5 +20,4 @@ redirect_from:
 - /index.php/User:Alval
 - /index.php/Special:Contributions/Alval
 curationui: true
-curationui: true
 ---
