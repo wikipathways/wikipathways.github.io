@@ -2,18 +2,18 @@
 layout: home2
 title: Home
 reviewer_roster:
-- Alval
-- Mkutmon
-- Susan
-- Andra
-- Ddigles
-- DeSl
 - Jmillanacosta
 - Eweitz
 - Ash iyer
 - Khanspers
 - Duan
 - Fehrhart
+- Alval
+- Mkutmon
+- Susan
+- Andra
+- Ddigles
+- DeSl
 
 redirect_from: 
 - /index.php/WikiPathways
