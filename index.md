@@ -2,10 +2,6 @@
 layout: home2
 title: Home
 reviewer_roster:
-- Jmillanacosta
-- Eweitz
-- Ash iyer
-- Khanspers
 - Duan
 - Fehrhart
 - Alval
@@ -14,6 +10,10 @@ reviewer_roster:
 - Andra
 - Ddigles
 - DeSl
+- Jmillanacosta
+- Eweitz
+- Ash iyer
+- Khanspers
 
 redirect_from: 
 - /index.php/WikiPathways
