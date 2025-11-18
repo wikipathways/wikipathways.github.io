@@ -2,8 +2,6 @@
 layout: home2
 title: Home
 reviewer_roster:
-- Duan
-- Fehrhart
 - Alval
 - Mkutmon
 - Susan
@@ -14,6 +12,8 @@ reviewer_roster:
 - Eweitz
 - Ash iyer
 - Khanspers
+- Duan
+- Fehrhart
 
 redirect_from: 
 - /index.php/WikiPathways
