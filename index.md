@@ -1,4 +1,10 @@
 ---
+# Selection of the weekly reviewer from the roster below is controlled by modulo math. Here's how to figure out which slot on the roster is chosen.
+# Find the current date formatted as the ISO week number of the year (00–53), for example from Google
+# Subtract 1 from ISO week number
+# Get the reviewer roster length (from list below). 
+# Find the remainder of ISO week number divided by roster length. 
+# Example: ISO week is 41, subtract 1 => 40. Roster length is 12. This can be represented as 40/12 = 36 R 4 OR 40 = 3x12 + 4, thus the remainder is 4 => the 4th name on the list will be displayed.
 layout: home2
 title: Home
 reviewer_roster:
