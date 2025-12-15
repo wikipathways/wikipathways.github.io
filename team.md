@@ -1,17 +1,14 @@
 ---
 title: Team
 reviewers:
-- Egonw
 - Khanspers
 - Mkutmon
-- AlexanderPico
 - DeSl
 - Fehrhart
 - Susan
 - Andra
 - Elisson nl
 - Jmillanacosta
-- Tabbassidaloii
 - Ash iyer
 - Duan
 - Eweitz
