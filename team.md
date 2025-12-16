@@ -7,7 +7,6 @@ reviewers:
 - Fehrhart
 - Susan
 - Andra
-- Elisson nl
 - Jmillanacosta
 - Ash iyer
 - Duan
