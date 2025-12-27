@@ -7,4 +7,5 @@ title: "Zebrafish pathways"
 description:
 homology: Human
 group: "Vertebrates"
+curationui: true
 ---

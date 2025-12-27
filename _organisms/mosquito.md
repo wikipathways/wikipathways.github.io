@@ -7,4 +7,5 @@ title: "Mosquito pathways"
 description:
 homology: 
 group: "Invertebrates"
+curationui: true
 ---
