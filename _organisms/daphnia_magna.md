@@ -7,4 +7,5 @@ title: "Daphnia magna pathways"
 description:
 homology: 
 group: "Invertebrates"
+curationui: true
 ---

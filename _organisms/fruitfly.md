@@ -7,4 +7,5 @@ title: "Fruitfly pathways"
 description:
 homology: 
 group: "Invertebrates"
+curationui: true
 ---

@@ -7,4 +7,5 @@ title: "Ecoli pathways"
 description:
 homology: 
 group: "Bacteria"
+curationui: true
 ---

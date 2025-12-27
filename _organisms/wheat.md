@@ -6,4 +6,5 @@ title: "Common wheat pathways"
 description:
 homology: 
 group: "Plants"
+curationui: true
 ---

@@ -7,4 +7,5 @@ title: "Bsubtilis pathways"
 description:
 homology: 
 group: "Bacteria"
+curationui: true
 ---

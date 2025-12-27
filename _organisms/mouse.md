@@ -7,4 +7,5 @@ title: "Mouse pathways"
 description:
 homology: Human
 group: "Vertebrates"
+curationui: true
 ---
