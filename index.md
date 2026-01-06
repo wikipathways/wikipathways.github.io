@@ -8,8 +8,6 @@
 layout: home2
 title: Home
 reviewer_roster:
-- Alval
-- Mkutmon
 - Susan
 - Andra
 - Ddigles
@@ -20,6 +18,8 @@ reviewer_roster:
 - Khanspers
 - Duan
 - Fehrhart
+- Alval
+- Mkutmon
 
 redirect_from: 
 - /index.php/WikiPathways
