@@ -7,4 +7,5 @@ title: "Theobroma cacao pathways"
 description:
 homology: 
 group: "Plants"
+curationui: true
 ---

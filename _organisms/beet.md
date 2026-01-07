@@ -7,4 +7,5 @@ title: "Beta vulgaris pathways"
 description:
 homology: 
 group: "Plants"
+curationui: true
 ---

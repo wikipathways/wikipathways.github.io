@@ -7,4 +7,5 @@ title: "Yeast pathways"
 description:
 homology: 
 group: "Fungi"
+curationui: true
 ---

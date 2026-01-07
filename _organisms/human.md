@@ -7,4 +7,5 @@ title: "Human pathways"
 description:
 homology: 
 group: "Vertebrates"
+curationui: true
 ---

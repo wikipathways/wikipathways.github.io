@@ -7,4 +7,5 @@ title: "Arabidopsis pathways"
 description:
 homology: 
 group: "Plants"
+curationui: true
 ---

@@ -7,4 +7,5 @@ title: "Japanese rice pathways"
 description:
 homology: 
 group: "Plants"
+curationui: true
 ---
