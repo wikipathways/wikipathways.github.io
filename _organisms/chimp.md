@@ -7,4 +7,5 @@ title: "Chimp pathways"
 description:
 homology: 
 group: "Vertebrates"
+curationui: true
 ---

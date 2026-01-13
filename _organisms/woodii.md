@@ -7,4 +7,5 @@ title: "Acetobacterium woodii pathways"
 description:
 homology: 
 group: "Bacteria"
+curationui: true
 ---

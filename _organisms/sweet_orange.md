@@ -7,4 +7,5 @@ title: "Citrus sinensis pathways"
 description:
 homology: 
 group: "Plants"
+curationui: true
 ---

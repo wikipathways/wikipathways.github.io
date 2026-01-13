@@ -7,4 +7,5 @@ title: "Maize pathways"
 description:
 homology: 
 group: "Plants"
+curationui: true
 ---

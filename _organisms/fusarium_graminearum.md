@@ -7,4 +7,5 @@ title: "Fusarium graminearum pathways"
 description:
 homology: 
 group: "Fungi"
+curationui: true
 ---
