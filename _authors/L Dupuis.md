@@ -5,7 +5,7 @@ website: ~
 affiliation: ~
 bio: ~
 github: LaurenDupuis
-orcid: ~
+orcid: 0000-0003-2606-3045
 linkedin: ~
 googlescholar: ~
 wikidata: ~
