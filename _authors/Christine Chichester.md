@@ -4,11 +4,11 @@ realname: Christine Chichester
 website: ~
 affiliation: ~
 bio: ~
-github: ~
-orcid: ~
+github: ChristineChichester
+orcid: 0000-0001-6818-334X
 linkedin: ~
 googlescholar: ~
-wikidata: ~
+wikidata: Q19845665
 twitter: ~
 mastodon-url: ~
 meta: ~
