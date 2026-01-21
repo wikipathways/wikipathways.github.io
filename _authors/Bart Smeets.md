@@ -2,10 +2,10 @@
 username: Bart Smeets
 realname: Bart Smeets
 website: ~
-affiliation: ~
+affiliation: Maastricht University
 bio: ~
 github: ~
-orcid: ~
+orcid: 0000-0001-6370-6965
 linkedin: ~
 googlescholar: ~
 wikidata: ~
