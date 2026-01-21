@@ -2,7 +2,7 @@
 username: MirellaKalafati
 realname: Marianthi Kalafati
 website: ~
-affiliation: ~
+affiliation: Maastricht University
 bio: ~
 github: ~
 orcid: ~
