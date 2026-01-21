@@ -1,11 +1,11 @@
 ---
 username: Kyook
 realname: Karen Yook
-website: ~
-affiliation: ~
+website: https://www.wormbase.org/
+affiliation: WormBase
 bio: ~
 github: ~
-orcid: ~
+orcid: 0000-0002-4457-6787
 linkedin: ~
 googlescholar: ~
 wikidata: ~
