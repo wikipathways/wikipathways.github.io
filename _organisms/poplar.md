@@ -7,4 +7,5 @@ title: "Poplar pathways"
 description:
 homology: 
 group: "Plants"
+curationui: true
 ---

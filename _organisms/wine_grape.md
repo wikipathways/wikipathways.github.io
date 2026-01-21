@@ -7,4 +7,5 @@ title: "Wine grape pathways"
 description:
 homology: 
 group: "Plants"
+curationui: true
 ---

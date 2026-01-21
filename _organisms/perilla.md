@@ -7,4 +7,5 @@ title: "Perilla frutescens pathways"
 description:
 homology: 
 group: "Plants"
+curationui: true
 ---

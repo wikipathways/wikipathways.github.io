@@ -7,4 +7,5 @@ title: "Mtuberculosis pathways"
 description:
 homology: 
 group: "Bacteria"
+curationui: true
 ---

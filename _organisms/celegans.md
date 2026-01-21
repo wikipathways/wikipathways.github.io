@@ -7,4 +7,5 @@ title: "Celegans pathways"
 description:
 homology: 
 group: "Invertebrates"
+curationui: true
 ---
