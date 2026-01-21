@@ -2,10 +2,10 @@
 username: Pieter Giesbertz
 realname: Pieter Giesbertz
 website: ~
-affiliation: ~
+affiliation: Ludwig-Maximilians-Universität München
 bio: ~
 github: ~
-orcid: ~
+orcid: 0000-0001-7461-8602
 linkedin: ~
 googlescholar: ~
 wikidata: ~
