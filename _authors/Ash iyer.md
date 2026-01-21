@@ -5,7 +5,7 @@ website: ~
 affiliation: Maastricht University
 bio: ~
 github: ashviyer
-orcid: https://orcid.org/0000-0003-2878-4049
+orcid: 0000-0003-2878-4049
 linkedin: ~
 googlescholar: https://scholar.google.com/citations?user=_NcxvCAAAAAJ&hl=en
 wikidata: ~
