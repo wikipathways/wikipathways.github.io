@@ -2,10 +2,10 @@
 username: Jildau
 realname: Jildau Bouwman
 website: ~
-affiliation: ~
+affiliation: Leiden University
 bio: ~
 github: ~
-orcid: ~
+orcid: 0000-0002-9396-0646
 linkedin: ~
 googlescholar: ~
 wikidata: ~
