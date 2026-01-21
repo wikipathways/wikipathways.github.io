@@ -2,10 +2,10 @@
 username: BruceConklin
 realname: Bruce Conklin
 website: ~
-affiliation: ~
+affiliation: University of California San Francisco
 bio: ~
 github: ~
-orcid: ~
+orcid: 0000-0003-1463-6061
 linkedin: ~
 googlescholar: ~
 wikidata: ~
