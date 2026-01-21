@@ -2,10 +2,10 @@
 username: Eoinfahy
 realname: Eoin Fahy
 website: ~
-affiliation: ~
+affiliation: University of California San Diego
 bio: ~
 github: ~
-orcid: ~
+orcid: 0000-0003-3196-522X
 linkedin: ~
 googlescholar: ~
 wikidata: ~
