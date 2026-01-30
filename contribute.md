@@ -10,7 +10,7 @@ redirect_from: /index.php/Help:Authors
 <ol>
     <li style="margin-bottom: 10px;"><a href="https://www.github.com" target="_blank"><b>Create a GitHub Account</b></a>
         <br />A free GitHub account is required to create or edit pathways at WikiPathways.</li>
-    <li style="margin-bottom: 10px;"><a href="https://classic.wikipathways.org/index.php?title=Special:UserLogin&type=signup" target="_blank"><b>Create a WikiPathways account</b></a>
+    <li style="margin-bottom: 10px;"><a href="https://academy.wikipathways.org/stages/wp-account/" target="_blank"><b>Create a WikiPathways account</b></a>
         <br />A free WikiPathways account is required to create or edit pathways at WikiPathways during our <a href="/help.html#move_from_classic">move from the classic WikiPathways site</a>.</li>
     <li style="margin-bottom: 10px;"><a href="https://academy.wikipathways.org/stages/wp-custom-user-page/" target="_blank"><b>Customize your WikiPathways user page</b></a>
         <br />Customize your WikiPathways user page with relevant information about yourself, including websites, social media and more!</li>
