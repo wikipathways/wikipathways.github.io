@@ -22,7 +22,6 @@ redirect_from:
 <p><b>Additional contact</b></p>
 Feel free to reach out to our architects:
 <ul>
-<li>Alex Pico: <a href="mailto:alex.pico@gladstone.ucsf.edu">alex.pico@gladstone.ucsf.edu</a></li>
 <li>Martina Summer-Kutmon: <a href="mailto:martina.kutmon@maastrichtuniversity.nl">martina.kutmon@maastrichtuniversity.nl</a></li>
 <li>Egon Willighagen: <a href="mailto:egon.willighagen@maastrichtuniversity.nl">egon.willighagen@maastrichtuniversity.nl</a></li>
 </ul>
