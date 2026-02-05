@@ -15,7 +15,6 @@ reviewers:
 - Alval
 
 architects:
-- AlexanderPico
 - Mkutmon
 - Egonw
 
