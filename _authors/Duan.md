@@ -4,8 +4,8 @@ realname: Yuanyuan Duan
 website: 
 affiliation: Maastricht University
 bio: 
-github: https://github.com/YuanyuanDuan1
-orcid: https://orcid.org/0009-0008-6317-213X
+github: YuanyuanDuan1
+orcid: 0009-0008-6317-213X
 linkedin: 
 googlescholar: 
 wikidata: 
