@@ -9,6 +9,9 @@ logo-height: 50px
 support:
 contribute: "If you have authored a pathway relevant to this community, please submit it for review and approval [here](http://tazendra.caltech.edu/~azurebrd/cgi-bin/forms/pathway.cgi)."
 community-tag: "WormBase_Approved"
+
+reference: "[Harris T.W. et al. (2014) WormBase 2014: new views of curated biology. Nucleic Acids Research]([https://doi.org/10.1007/s12263-010-0192-8](https://doi.org/10.1093/nar/gkt1063))."
+
 editors:
 - Kyook
 redirect_from:
