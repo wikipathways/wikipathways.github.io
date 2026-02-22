@@ -20,9 +20,21 @@ _Reactome_ pathways. The RDF is split in two parts, the GPMLRDF part which conta
 translation of the content in the GPML files, and a WPRDF part which contains the biology
 represented in the GPML
 
+## Contents
+
+- [The WikiPathways Vocabularies](#the-wikipathways-vocabularies)
+- [How to cite](#how-to-cite)
+- [Snorql Interface](#snorql-interface)
+- [IRI Resolver](#iri-resolver)
+- [Notification](#notification)
+- [SPARQL Examples](#sparql-examples)
+- [Downloads](#downloads)
+- [Code examples](#code-examples)
+- [Support](#support)
+
 <h2>The WikiPathways Vocabularies</h2>
 
-The [WikiPathways vocabularies](http://vocabularies.wikipathways.org/) are for the semantic
+The [WikiPathways vocabularies](https://vocabularies.wikipathways.org/) are for the semantic
 information about the pathway, data nodes, and interactions and the GPML vocabulary is for
 the graphical information about how the pathway diagram is laid out and represented.
 
@@ -39,15 +51,34 @@ For the pathway content, please follow these [How to cite](cite.md) WikiPathways
 
 <h2>Snorql Interface</h2>
 
-Visit our new Snorql interface at [sparql.wikipathways.org](https://sparql.wikipathways.org).
-The image below explains which steps you can take:
+The Snorql interface at [sparql.wikipathways.org](https://sparql.wikipathways.org) provides a
+CodeMirror-based SPARQL query editor with syntax highlighting and a searchable panel of example
+queries organized by topic.
 
-1: Select a query from the list
-2: Press the green query button to execute your selected query
-3: View the results on the same page
-4: You can select your own list of example queries from github, by adding the link.
+1. Browse or search the example query panel on the right side to find a pre-built query
+2. Select a query to load it into the editor, or write your own SPARQL
+3. Press the Query button to run the query against the WikiPathways SPARQL endpoint
+4. View results directly on the page; use the permalink button to share your query
 
-![Snorql UI with the 4 steps indicated by red arrows](/assets/img/NewSnorqlInterface.png "NEW Snorql Interface for SPARQL Endpoint")
+[![Snorql UI with the example query tree and SPARQL editor](/assets/img/WPSnorql2026.png "Snorql Interface for SPARQL Endpoint")](https://sparql.wikipathways.org)
+
+<h2>IRI Resolver</h2>
+
+WikiPathways provides an IRI resolver at `https://rdf.wikipathways.org/` that makes WikiPathways
+RDF IRIs dereferenceable. When you request a WikiPathways IRI, the resolver forwards a DESCRIBE
+query to the WikiPathways SPARQL endpoint and returns the result. See the
+[about page](https://rdf.wikipathways.org/about) for full documentation.
+
+Example IRIs you can resolve:
+
+- **Pathway:** `https://rdf.wikipathways.org/Pathway/WP4846_r140186`
+- **Interaction:** `https://rdf.wikipathways.org/Pathway/WP4846_r140186/WP/Interaction/a273b`
+- **Complex:** `https://rdf.wikipathways.org/Pathway/WP4846_r140186/Complex/a4fdf`
+
+The resolver supports content negotiation via Accept headers or file extensions. Append `.ttl`
+for Turtle, `.jsonld` for JSON-LD, `.rdf` for RDF/XML, `.nt` for N-Triples, or `.html` for a
+human-readable view. For example:
+`https://rdf.wikipathways.org/Pathway/WP4846_r140186.ttl`
 
 <h2>Notification</h2>
 
@@ -60,7 +91,7 @@ Please remove the `^^xsd:string suffix`, as shown in the example below.
 
 <h2>SPARQL Examples</h2>
 
-We provide [a SPARQL endpoint](http://sparql.wikipathways.org/sparql/) where data queries can be done.
+We provide [a SPARQL endpoint](https://sparql.wikipathways.org/sparql/) where data queries can be done.
 
 <h3>WikiPathways Example SPARQL Queries</h3>
 
@@ -94,7 +125,7 @@ WHERE {
 The Semantic Web WikiPathways comes in two flavors: as RDF (beta) and as nanopublications (very experimental).
 
 <h3>The RDF</h3>
-You can download the WikiPathways RDF from [here](http://data.wikipathways.org/current/rdf/).
+You can download the WikiPathways RDF from [here](https://data.wikipathways.org/current/rdf/).
 
 The WikiPathways RDF is split in two parts, the GPMLRDF part which contains a direct translation of the content in the GPML files, and a WPRDF part which contains harmonized biological information present in the GPML.
 
@@ -102,7 +133,7 @@ The WikiPathways RDF is split in two parts, the GPMLRDF part which contains a di
 
 <h3>Perl</h3>
 
-There is an [RDF api](http://www.perlrdf.org/) available. Below is an example that
+There is an RDF API available for Perl. Below is an example that
 extracts the data by converting the query into a url and extracts the data as CSV.
 
 ```perl

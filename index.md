@@ -325,6 +325,7 @@ redirect_from:
                 <div class="col-3" style="display:flex; margin-left:40px;">
                   <div style="width:150px;">
                   <a class="btn btn-sm btn-front w-100 my-2" href="/json/index.html">API</a>
+                  <a class="btn btn-sm btn-front w-100 my-2" href="/rdf.html">Linked Data</a>
                   <a class="btn btn-sm btn-front w-100 my-2" href="https://sparql.wikipathways.org/" target="_blank">SPARQL</a>
                   <a class="btn btn-sm btn-front w-100 my-2" href="https://bioconductor.org/packages/rWikiPathways/" target="_blank">R</a>
                   <a class="btn btn-sm btn-front w-100 my-2" href="https://github.com/kozo2/pywikipathways" target="_blank">Python</a>
