@@ -7,4 +7,5 @@ title: "Brassica napus pathways"
 description:
 homology: 
 group: "Plants"
+curationui: true
 ---

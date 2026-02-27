@@ -7,4 +7,5 @@ title: "Coffea arabica pathways"
 description:
 homology: 
 group: "Plants"
+curationui: true
 ---

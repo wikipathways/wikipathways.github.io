@@ -7,4 +7,5 @@ title: "Malaria parasite pathways"
 description:
 homology: 
 group: "Parasites"
+curationui: true
 ---

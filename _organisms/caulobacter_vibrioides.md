@@ -7,4 +7,5 @@ title: "Caulobacter vibrioides pathways"
 description:
 homology: 
 group: "Bacteria"
+curationui: true
 ---

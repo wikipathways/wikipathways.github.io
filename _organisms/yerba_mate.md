@@ -7,4 +7,5 @@ title: "Ilex paraguariensis pathways"
 description:
 homology: 
 group: "Plants"
+curationui: true
 ---
