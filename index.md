@@ -314,7 +314,7 @@ redirect_from:
               <div class="container">
               <h1 style="font-family:Linux Libertine; ">Download and Access</h1><h2 style="font-family:Poppins; line-height:1.4; color: #6c757d; font-weight: normal;">Get pathway information in the format you need, including GPML (XML), GMT, SVG, <a href="download.html">and more</a>.  Programmatically access our content in multiple ways.</h2>
               <div class="row mx-auto" style="display:flex; flex-wrap: wrap;">
-                <div class="col-2 px-0" style="display:flex;">
+                <div class="col-3 px-0" style="display:flex;">
                   <div style="width:150px;">
                   <a class="btn btn-sm btn-front w-100 my-2" href="https://data.wikipathways.org/current/gpml" target="_blank">GPML</a>
                   <a class="btn btn-sm btn-front w-100 my-2" href="https://data.wikipathways.org/current/gmt" target="_blank">GMT</a>
@@ -323,13 +323,15 @@ redirect_from:
                   <a class="btn btn-sm btn-front w-100 my-2" href="/rdf.html">Linked Data</a>
                   </div>
                 </div>              
-                <div class="col-2" style="display:flex; margin-left:25px;">
+                <div class="col-3" style="display:flex; margin-left:60px;">
                   <div style="width:150px;">
                   <a class="btn btn-sm btn-front w-100 my-2" href="/json/index.html">API</a>
                   <a class="btn btn-sm btn-front w-100 my-2" href="https://sparql.wikipathways.org/" target="_blank">SPARQL</a>
                   <a class="btn btn-sm btn-front w-100 my-2" href="https://bioconductor.org/packages/rWikiPathways/" target="_blank">R</a>
                   <a class="btn btn-sm btn-front w-100 my-2" href="https://github.com/kozo2/pywikipathways" target="_blank">Python</a>
                    </div>
+                </div>
+                <div class="col-3 mx-auto" style="display:flex;">
                 </div>
               </div>
               </div>
