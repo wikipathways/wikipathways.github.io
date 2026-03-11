@@ -30,7 +30,7 @@ collections:
 - name: "Evading growth suppressors"
   wpids: ['WP2446','WP179','WP45','WP560','WP4204','WP4284']
 - name: "Activating invasion and metastasis"
-  wpids: ['WP3301','WP3859','WP3969','WP185','WP3932','WP4239','WP4565','WP5469','WP3303']
+  wpids: ['WP3301','WP3859','WP3969','WP185','WP3932','WP4239','WP4565','WP5469','WP3303','WP4400','WP2249']
 - name: "Enabling replicative immortality"
   wpids: ['WP268','WP3658','WP3664','WP428','WP4258','WP4336','WP4337']
 - name: "Inducing angiogenesis"
@@ -46,7 +46,7 @@ collections:
 - name: "Avoiding immune destruction"
   wpids: ['WP619','WP4480','WP5284','WP5092','WP5078']
 - name: "Therapeutics"
-  wpids: ['WP3672','WP3640','WP3614','WP3617','WP3879','WP1601','WP3','WP4301','WP3844','WP3593','WP4585','WP4582','WP4559','WP229','WP2263','WP5518','WP5497','WP4806','WP5490','WP3611','WP3612','WP3613','WP5215','WP5496']
+  wpids: ['WP3672','WP3640','WP3614','WP3617','WP3879','WP1601','WP3','WP4301','WP3844','WP3593','WP4585','WP4582','WP4559','WP229','WP2263','WP5518','WP5497','WP4806','WP5490','WP3611','WP3612','WP3613','WP5215','WP5496','WP5494','WP5495']
   
 
 redirect_from:
