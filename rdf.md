@@ -26,6 +26,7 @@ represented in the GPML
 - [How to cite](#how-to-cite)
 - [Snorql Interface](#snorql-interface)
 - [IRI Resolver](#iri-resolver)
+- [Data Quality](#data-quality)
 - [Notification](#notification)
 - [SPARQL Examples](#sparql-examples)
 - [Downloads](#downloads)
@@ -79,6 +80,16 @@ The resolver supports content negotiation via Accept headers or file extensions.
 for Turtle, `.jsonld` for JSON-LD, `.rdf` for RDF/XML, `.nt` for N-Triples, or `.html` for a
 human-readable view. For example:
 `https://rdf.wikipathways.org/Pathway/WP4846_r140186.ttl`
+
+<h2>Data Quality</h2>
+
+[YummyData](https://yummydata.org/endpoint/18) evaluates the quality of public SPARQL endpoints
+across six categories: Availability, Freshness, Operation, Usefulness, Validity, and Performance.
+The WikiPathways SPARQL endpoint currently holds an overall score of **95 (A rank)**.
+
+[![YummyData category scores for the WikiPathways SPARQL endpoint](/assets/img/YummyData_WP_2026.png "YummyData quality scores for WikiPathways")](https://yummydata.org/endpoint/18)
+
+*Score retrieved: March 2026*
 
 <h2>Notification</h2>
 
