@@ -161,6 +161,10 @@ redirect_from: /index.php/Help:Tools_using_WikiPathways
     </th><td>Generates a co-activity map across pathways, assessing the correlation based on gene content within and across pathway resources.
     </td></tr>
     <tr>
+    <th><a href="https://synum-lab.github.io/PinPath/" target="_blank" class="external " title="https://synum-lab.github.io/PinPath/" rel="nofollow">PinPath</a>
+    </th><td>R package for visualizing (omics) data onto WikiPathways pathways diagrams.
+    </td></tr>
+    <tr>
     <th><a href="https://www.proteomicsdb.org/analytics/ptmNavigator" target="_blank" class="external " title="https://www.proteomicsdb.org/analytics/ptmNavigator" rel="nofollow">PTMNavigator</a>
     </th><td>PTMNavigator is a tool for interactive visualization of differentially regulated post-translational modifications in cellular signaling pathways, including WikiPathways. It is part of <a href="https://www.proteomicsdb.org/" target="_blank" class="external" title="https://www.proteomicsdb.org/" rel="nofollow">ProteomicsDB</a>. 
     </td></tr>
