@@ -85,9 +85,10 @@ human-readable view. For example:
 
 [YummyData](https://yummydata.org/endpoint/18) evaluates the quality of public SPARQL endpoints
 across six categories: Availability, Freshness, Operation, Usefulness, Validity, and Performance.
-The WikiPathways SPARQL endpoint currently holds an overall score of **95 (A rank)**.
+The WikiPathways SPARQL endpoint currently holds an overall score of **95 (A rank)** and is
+consistently ranked in the top 5 endpoints.
 
-[![YummyData category scores for the WikiPathways SPARQL endpoint](/assets/img/YummyData_WP_2026.png "YummyData quality scores for WikiPathways")](https://yummydata.org/endpoint/18)
+<a href="https://yummydata.org/endpoint/18"><img src="/assets/img/YummyData_WP_2026.png" alt="YummyData category scores for the WikiPathways SPARQL endpoint" title="YummyData quality scores for WikiPathways" width="400"></a>
 
 *Score retrieved: March 2026*
 
