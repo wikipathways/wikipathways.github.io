@@ -3,6 +3,7 @@ title: JSON API
 redirect_from: 
  - /index.php/Help:WikiPathways_Webservice/API
  - /index.php/Help:WikiPathways_Webservice
+ - /ui/
 ---
 
 <h1>JSON API for WikiPathways</h1>
