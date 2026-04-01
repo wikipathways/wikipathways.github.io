@@ -348,7 +348,7 @@ redirect_from:
   </ol>
   <div class="carousel-inner" style="width:76%; margin-left: 12%;">
     <div class="carousel-item active">
-      <a href="https://webservice.wikipathways.org/" target="_blank">
+      <a href="https://www.wikipathways.org/json/index.html" target="_blank">
       <img class="d-block w-100" src="/assets/img/slideshow/download-1.png" alt="Web service API">
       </a>
     </div>
