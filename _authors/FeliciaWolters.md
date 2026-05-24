@@ -1,6 +1,6 @@
 ---
 username: FeliciaWolters
-realname: FeliciaWolters
+realname: Felicia Wolters
 website: 
 affiliation: 
 bio: 
