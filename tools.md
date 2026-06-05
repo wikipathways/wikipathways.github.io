@@ -30,7 +30,7 @@ redirect_from: /index.php/Help:Tools_using_WikiPathways
     </td></tr>
     <tr>
     <th><a href="https://bioconductor.org/packages/clusterProfiler/" target="_blank" class="external " title="https://bioconductor.org/packages/clusterProfiler/" rel="nofollow">clusterProfiler</a>
-    </th><td>The clusterProfiler R package supports GO and pathway analysis performed as overrepresentation or GSEA. The package includes identifier mapping functionality and handy plot functions customized for these analyses. The <a href="https://yulab-smu.top/biomedical-knowledge-mining-book/wikipathways-analysis.html" target="_blank" class="external " title="https://yulab-smu.top/biomedical-knowledge-mining-book/wikipathways-analysis.html" rel="nofollow">main vignette</a> describes how to use the latest WikiPathways GMT file in a pathway analysis.
+    </th><td>The clusterProfiler R package supports GO and pathway analysis performed as overrepresentation or GSEA. The package includes identifier mapping functionality and handy plot functions customized for these analyses. The <a href="https://yulab-smu.top/biomedical-knowledge-mining-book/023-other-dbs.html" target="_blank" class="external " title="https://yulab-smu.top/biomedical-knowledge-mining-book/023-other-dbs.html" rel="nofollow">main vignette</a> describes how to use the latest WikiPathways GMT file in a pathway analysis.
     </td></tr>
     <tr>
     <th><a href="https://compath.scai.fraunhofer.de/" target="_blank" class="external " title="https://compath.scai.fraunhofer.de/" rel="nofollow">ComPath</a>
