@@ -237,7 +237,7 @@ This code will produce the following iframe:</p>
 <hr>
 <a id="move_from_classic"/>
 <h1>Classic WikiPathways</h1>
-<p>The Classic WikiPathways site is now <b>read-only</b> and the old web service has been turned off. <b>From 1 May 2026, the Classic site will be fully retired</b> and the transition to the new GitHub-based system will be complete. If you need help transitioning, please <a href="https://github.com/wikipathways/wikipathways-help/discussions" target="_blank">contact us</a>.</p>
+<p>The Classic WikiPathways site has now been retired and that includes the old web service. If you need help transitioning, please <a href="https://github.com/wikipathways/wikipathways-help/discussions" target="_blank">contact us</a>.</p>
 
 <hr>
 <div id="faq">
