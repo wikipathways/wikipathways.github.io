@@ -1,6 +1,6 @@
 ---
 username: ManzeYu
-realname: ManzeYu
+realname: Manze Yu
 website: 
 affiliation: 
 bio: 
