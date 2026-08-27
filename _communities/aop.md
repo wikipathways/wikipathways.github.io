@@ -23,6 +23,8 @@ editors:
 - Marvin M2
 - Fehrhart
 - Penny
+- Egonw
+- SidraAdil
 
 redirect_from:
   - /index.php/Portal:AOP
