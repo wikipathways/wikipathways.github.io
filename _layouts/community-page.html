@@ -96,6 +96,43 @@ layout: default
     <a class="btn btn-sm btn-front my-2" style="float:right;" href="/browse/table.html?Community={{ page.community-tag }}">Table</a>
     <a class="btn btn-sm btn-front my-2" style="float:right; margin-right: 4px;" href="/browse/filters.html?Community={{ page.community-tag }}">Filters</a>
     <br/>
+{% if page.filterable %}
+    <!-- In-page filtering. Opt-in: a community page sets filterable, and
+         optionally facets, and gets a search box, sort and facet chips over the
+         pathways already on the page. Nothing here runs for a community that
+         does not ask for it. -->
+    <div class="wp-filter">
+      <div class="wp-filter-row">
+        <label class="wp-filter-search">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <input type="search" id="wp-filter-q" autocomplete="off"
+                 placeholder="{{ page.filter-placeholder | default: 'Filter by title or WPID' }}">
+        </label>
+        <label class="wp-filter-sort">
+          Sort
+          <select id="wp-filter-sort">
+            <option value="title-asc">Title A&ndash;Z</option>
+            <option value="title-desc">Title Z&ndash;A</option>
+            <option value="wpid-desc">Newest WPID first</option>
+          </select>
+        </label>
+      </div>
+      {% for f in page.facets %}
+      <div class="wp-facet-row" data-facet="{{ f.name }}">
+        <span class="wp-facet-label">{{ f.name }}</span>
+        {% for v in f.values %}
+        <button type="button" class="wp-chip" data-facet="{{ f.name }}" data-value="{{ v.name }}">
+          {{ v.name }} <span class="wp-chip-n">{{ v.wpids.size }}</span>
+        </button>
+        {% endfor %}
+      </div>
+      {% endfor %}
+      <div class="wp-filter-active" id="wp-filter-active" hidden>
+        <span id="wp-filter-tokens"></span>
+        <button type="button" class="wp-clear" id="wp-filter-clear">Clear all</button>
+      </div>
+    </div>
+{% endif %}
     <ul class="nav nav-tabs" style="margin-left: 0px;">
       <li class="nav-item">
         {% if page.collections-title %}
@@ -117,7 +154,12 @@ layout: default
       </li>
       {% endif %}
     </ul>
+{% if page.filterable %}
+    <b>This community helps to curate <span id="wp-filter-count">{{sorted_pathways.size}}</span> of {{sorted_pathways.size}} pathways:</b>
+    <span id="wp-filter-empty" hidden>&mdash; nothing matches these filters.</span>
+{% else %}
     <b>This community helps to curate {{sorted_pathways.size}} pathways:</b>
+{% endif %}
     <div class="tab-content">
       {% if page.collections-title %}
       <div class="tab-pane fade" id="gallery" role="tabpanel">
@@ -127,12 +169,19 @@ layout: default
         <br/>
     <div class="row" style="margin-right: 0px; margin-left: 0px;">
       {% for pw in sorted_pathways %}
-          <div class="col-sm-auto">
+          {%- if page.filterable -%}{%- capture pwfacets -%}{%- for f in page.facets -%}{%- for v in f.values -%}{%- if v.wpids contains pw.wpid -%}{{ f.name }}:{{ v.name }}|{%- endif -%}{%- endfor -%}{%- endfor -%}{%- endcapture -%}{%- endif -%}
+          <div class="col-sm-auto{% if page.filterable %} wp-item{% endif %}"{% if page.filterable %} data-wpid="{{ pw.wpid }}" data-title="{{ pw.title | escape }}" data-facets="{{ pwfacets }}"{% endif %}>
             <div class="card" style="width: 10rem;">
               <a class="card-link" href="{{ pw.url }}">
               <img class="card-img-top" loading="lazy" src="/assets/img/{{pw.wpid}}/{{pw.wpid}}-thumb.png" alt="{{ pw.title }}">
               <div class="card-body">
                 <p class="card-text">{{ pw.title }} <em>({{ pw.organisms.first }})</em></p>
+                {%- if page.filterable and pwfacets != '' %}
+                <p class="card-text wp-card-tags">
+                  {%- assign pairs = pwfacets | split: '|' -%}
+                  {% for pair in pairs %}<span class="wp-tag">{{ pair | split: ':' | last }}</span>{% endfor %}
+                </p>
+                {%- endif %}
                 {% if page.curationui %}
                   <p class="card-text">
                     <!--This badge shows the curation status-->
@@ -158,7 +207,8 @@ layout: default
     <div class="row" style="margin-left: 0px;">
       <ul style="list-style-type: none; margin-left: 0px;">
         {% for pw in sorted_pathways %}
-              <li><a href="{{ pw.url }}">{{ pw.title }} - {{pw.wpid}} <em>({{ pw.organisms.first }})</em></a></li>
+              {%- if page.filterable -%}{%- capture pwfacets -%}{%- for f in page.facets -%}{%- for v in f.values -%}{%- if v.wpids contains pw.wpid -%}{{ f.name }}:{{ v.name }}|{%- endif -%}{%- endfor -%}{%- endfor -%}{%- endcapture -%}{%- endif -%}
+              <li{% if page.filterable %} class="wp-item" data-wpid="{{ pw.wpid }}" data-title="{{ pw.title | escape }}" data-facets="{{ pwfacets }}"{% endif %}><a href="{{ pw.url }}">{{ pw.title }} - {{pw.wpid}} <em>({{ pw.organisms.first }})</em></a></li>
         {% endfor %}
       </ul>
     </div>
@@ -228,3 +278,176 @@ layout: default
   {% endunless %}
 {% endfor %}
 <p>{{ all_authors | uniq | array_to_sentence_string }}.</p>
+
+{% if page.filterable %}
+<style>
+/* Scoped to the opt-in filter bar. Colours are main.scss's: #3955E7 links,
+   #eeeeee page furniture, #424242 body. */
+.wp-filter { border: 1px solid #dcdcdc; margin: 12px 0 6px 0; }
+.wp-filter-row { display: flex; align-items: center; gap: 14px;
+  padding: 10px 12px; border-bottom: 1px solid #ececec; flex-wrap: wrap; }
+.wp-filter-search { display: flex; align-items: center; gap: 8px; flex-grow: 1;
+  min-width: 240px; border: 1px solid #cfcfcf; border-radius: 3px; padding: 5px 10px;
+  margin-bottom: 0; color: #8a8a8a; }
+.wp-filter-search input { border: 0; outline: 0; flex-grow: 1; min-width: 0;
+  font-size: 0.9rem; color: #424242; background: transparent; }
+.wp-filter-search:focus-within { border-color: #3955E7; color: #3955E7; }
+.wp-filter-sort { display: flex; align-items: center; gap: 7px; margin-bottom: 0;
+  font-size: 0.9rem; color: #6c6c6c; }
+.wp-filter-sort select { border: 1px solid #cfcfcf; border-radius: 3px;
+  padding: 5px 8px; font-size: 0.9rem; color: #424242; background: #fff; }
+.wp-facet-row { display: flex; align-items: center; gap: 8px; padding: 9px 12px;
+  flex-wrap: wrap; }
+.wp-facet-row + .wp-facet-row { padding-top: 0; }
+.wp-facet-label { font-size: 0.7rem; text-transform: uppercase;
+  letter-spacing: 0.07em; color: #8a8a8a; margin-right: 2px; }
+.wp-chip { border: 1px solid #cfcfcf; background: #fff; color: #424242;
+  border-radius: 50rem; padding: 4px 12px; font-size: 0.85rem; line-height: 1.3; }
+.wp-chip:hover { border-color: #3955E7; color: #3955E7; }
+.wp-chip[aria-pressed="true"] { background: #3955E7; border-color: #3955E7; color: #fff; }
+.wp-chip-n { font-size: 0.75rem; opacity: 0.72; }
+.wp-filter-active { display: flex; align-items: center; gap: 8px;
+  padding: 9px 12px; border-top: 1px solid #ececec; flex-wrap: wrap; }
+.wp-token { display: inline-flex; align-items: center; gap: 6px; background: #f2f4fe;
+  border: 1px solid #d8ddfa; color: #1E3199; border-radius: 50rem;
+  padding: 3px 10px; font-size: 0.8rem; }
+.wp-token button { border: 0; background: transparent; color: inherit;
+  line-height: 1; padding: 0; font-size: 0.95rem; }
+.wp-clear { border: 0; background: transparent; color: #3955E7; font-size: 0.8rem;
+  text-decoration: underline; padding: 0; }
+.wp-card-tags { margin-bottom: 0; }
+.wp-tag { display: inline-block; background: #eeeeee; color: #6c6c6c;
+  border-radius: 50rem; padding: 1px 8px; font-size: 0.7rem; margin-right: 4px; }
+.wp-item[hidden] { display: none !important; }
+</style>
+<script>
+(function () {
+  // Filtering is client-side over the pathways Jekyll already rendered, so it
+  // works without a build step and degrades to "everything visible" if this
+  // script does not run.
+  var q = document.getElementById('wp-filter-q');
+  var sort = document.getElementById('wp-filter-sort');
+  var clear = document.getElementById('wp-filter-clear');
+  var countEl = document.getElementById('wp-filter-count');
+  var emptyEl = document.getElementById('wp-filter-empty');
+  var activeEl = document.getElementById('wp-filter-active');
+  var tokensEl = document.getElementById('wp-filter-tokens');
+  var chips = [].slice.call(document.querySelectorAll('.wp-chip'));
+  var items = [].slice.call(document.querySelectorAll('.wp-item'));
+  if (!items.length) { return; }
+
+  chips.forEach(function (c) { c.setAttribute('aria-pressed', 'false'); });
+
+  function selected() {
+    // facet name -> [values]; OR within a facet, AND across facets
+    var by = {};
+    chips.forEach(function (c) {
+      if (c.getAttribute('aria-pressed') !== 'true') { return; }
+      var f = c.dataset.facet;
+      (by[f] = by[f] || []).push(c.dataset.value);
+    });
+    return by;
+  }
+
+  function matches(item, needle, by) {
+    if (needle) {
+      var hay = (item.dataset.title + ' ' + item.dataset.wpid).toLowerCase();
+      if (hay.indexOf(needle) === -1) { return false; }
+    }
+    var facets = (item.dataset.facets || '').split('|').filter(Boolean);
+    for (var name in by) {
+      if (!Object.prototype.hasOwnProperty.call(by, name)) { continue; }
+      var ok = by[name].some(function (v) { return facets.indexOf(name + ':' + v) !== -1; });
+      if (!ok) { return false; }
+    }
+    return true;
+  }
+
+  function renderTokens(needle, by) {
+    var parts = [];
+    if (needle) { parts.push({ label: '“' + q.value.trim() + '”', kind: 'q' }); }
+    Object.keys(by).forEach(function (name) {
+      by[name].forEach(function (v) {
+        parts.push({ label: name + ': ' + v, kind: 'chip', facet: name, value: v });
+      });
+    });
+    tokensEl.innerHTML = '';
+    parts.forEach(function (p) {
+      var t = document.createElement('span');
+      t.className = 'wp-token';
+      t.appendChild(document.createTextNode(p.label));
+      var x = document.createElement('button');
+      x.type = 'button';
+      x.setAttribute('aria-label', 'Remove ' + p.label);
+      x.innerHTML = '&times;';
+      x.addEventListener('click', function () {
+        if (p.kind === 'q') { q.value = ''; }
+        else {
+          chips.forEach(function (c) {
+            if (c.dataset.facet === p.facet && c.dataset.value === p.value) {
+              c.setAttribute('aria-pressed', 'false');
+            }
+          });
+        }
+        apply();
+      });
+      t.appendChild(x);
+      tokensEl.appendChild(t);
+    });
+    activeEl.hidden = parts.length === 0;
+  }
+
+  function reorder() {
+    var mode = sort.value;
+    // Sort within each container separately: the same pathway appears in the
+    // gallery and in the list, and moving a node re-parents it.
+    var byParent = new Map();
+    items.forEach(function (it) {
+      if (!byParent.has(it.parentNode)) { byParent.set(it.parentNode, []); }
+      byParent.get(it.parentNode).push(it);
+    });
+    byParent.forEach(function (list, parent) {
+      list.sort(function (a, b) {
+        if (mode === 'wpid-desc') {
+          return (+b.dataset.wpid.slice(2)) - (+a.dataset.wpid.slice(2));
+        }
+        var cmp = a.dataset.title.localeCompare(b.dataset.title);
+        return mode === 'title-desc' ? -cmp : cmp;
+      }).forEach(function (it) { parent.appendChild(it); });
+    });
+  }
+
+  function apply() {
+    var needle = q.value.trim().toLowerCase();
+    var by = selected();
+    // Count distinct WPIDs, not nodes: the same pathway is rendered in the
+    // gallery and in the list, and again in every collection it belongs to.
+    var shown = {};
+    items.forEach(function (it) {
+      var ok = matches(it, needle, by);
+      it.hidden = !ok;
+      if (ok) { shown[it.dataset.wpid] = true; }
+    });
+    var n = Object.keys(shown).length;
+    countEl.textContent = n;
+    emptyEl.hidden = n !== 0;
+    renderTokens(needle, by);
+  }
+
+  chips.forEach(function (c) {
+    c.addEventListener('click', function () {
+      c.setAttribute('aria-pressed', c.getAttribute('aria-pressed') === 'true' ? 'false' : 'true');
+      apply();
+    });
+  });
+  q.addEventListener('input', apply);
+  sort.addEventListener('change', function () { reorder(); apply(); });
+  clear.addEventListener('click', function () {
+    q.value = '';
+    chips.forEach(function (c) { c.setAttribute('aria-pressed', 'false'); });
+    apply();
+  });
+  apply();
+}());
+</script>
+{% endif %}
