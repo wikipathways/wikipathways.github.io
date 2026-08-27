@@ -32,6 +32,7 @@ redirect_from: /index.php/Help:WikiPathways_Portals
 <li><b>contribute</b>: Text describing how to contribute to the community (optional).</li>
 <li><b>community-tag</b>: The relevant community tag. This should match the filename of the text file with the list of Community pathways. The pathway display on the Community page is automatically generated based on this tag.</li>
 <li><b>editors</b>: Community editors listed under <b>Contact</b>.</li>
+<li><b>members</b>: Community members listed under <b>Community members</b>, separate from the editors who act as the point of contact (optional).</li>
 <li><b>redirect_from</b>: Partial URL on the old WikiPathways site to redirect from.</li>
 </ul>
 <p>As an example, the below image shows the markdown for the <a href="https://wikipathways.org/communities/aop.html" target=_blank>Adverse Outcome Pathways</a> Community.<br /><br />

@@ -21,6 +21,8 @@ community-tag: "AOP"
 
 editors:
 - Marvin M2
+
+members:
 - Fehrhart
 - Penny
 - Egonw
