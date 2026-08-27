@@ -21,12 +21,14 @@ community-tag: "AOP"
 
 editors:
 - Marvin M2
+- SidraAdil
 
 members:
+- Marvin M2
+- SidraAdil
 - Fehrhart
 - Penny
 - Egonw
-- SidraAdil
 
 redirect_from:
   - /index.php/Portal:AOP
