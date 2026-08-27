@@ -1,6 +1,6 @@
 ---
 username: SidraAdil
-realname: SidraAdil
+realname: Sidra Adil
 website: 
 affiliation: 
 bio: 
