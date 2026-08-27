@@ -23,13 +23,6 @@ editors:
 - Marvin M2
 - SidraAdil
 
-members:
-- Marvin M2
-- SidraAdil
-- Fehrhart
-- Penny
-- Egonw
-
 redirect_from:
   - /index.php/Portal:AOP
 curationui: true

@@ -14,6 +14,7 @@ mastodon-url: https://social.edu.nl/@egonw
 meta: ~
 instagram: ~
 communities:
+- AOP
 - COVID19
 - Daphnia
 - Nanomaterials

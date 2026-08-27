@@ -56,21 +56,6 @@ layout: default
   <p>{{ all_contacts | array_to_sentence_string}}.</p>
   {% endif %} 
 
-  {% if page.members %}
-    <h2 id-members>Community members</h2>
-  {% assign all_members = '' | split: '' %}
-  {% assign members = page.members %}
-  {% for auth in site.authors %}
-   {% if members contains auth.username %}
-      {% capture thisMember %}
-        <a href="{{site.url}}/authors/{{auth.username}}.html" title="View author profile">{{auth.realname}}</a>
-      {% endcapture %}
-      {% assign all_members = all_members | push: thisMember %}
-    {% endif %} 
-   {% endfor %}
-  <p>{{ all_members | array_to_sentence_string}}.</p>
-  {% endif %} 
-
     {% assign sorted_pathways = site.pathways | where: "communities", page.community-tag | sort: "title" %}
     {% if page.collections-title %}
       <h2> {{ page.collections-title }}</h2>
