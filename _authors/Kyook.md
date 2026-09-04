@@ -4,11 +4,11 @@ realname: Karen Yook
 website: https://www.wormbase.org/
 affiliation: WormBase
 bio: ~
-github: ~
+github: kyook
 orcid: 0000-0002-4457-6787
 linkedin: ~
-googlescholar: ~
-wikidata: ~
+googlescholar: Gk11ouIAAAAJ
+wikidata: Q57316841
 twitter: ~
 mastodon-url: ~
 meta: ~
