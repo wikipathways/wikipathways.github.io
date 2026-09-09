@@ -2,10 +2,10 @@
 username: Zari
 realname: Zahra Roudbari
 website: ~
-affiliation: ~
+affiliation: University of Jiroft
 bio: ~
 github: ~
-orcid: ~
+orcid: 0000-0002-3357-3126
 linkedin: ~
 googlescholar: ~
 wikidata: ~
