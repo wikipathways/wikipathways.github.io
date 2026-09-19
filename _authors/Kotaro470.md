@@ -1,6 +1,6 @@
 ---
 username: Kotaro470
-realname: Kotaro470
+realname: Kotaro Uchida
 website: 
 affiliation: 
 bio: 
