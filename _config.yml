@@ -122,4 +122,6 @@ collections:
     output: true
   rmd:
     output: true
+  news:
+    output: true
 
