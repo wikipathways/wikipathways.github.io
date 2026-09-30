@@ -97,6 +97,11 @@ defaults:
       layout: "pathway-page"
   - scope:
       path: ""
+      type: "news"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
     values:
       layout: "default"
       sitemap: false
