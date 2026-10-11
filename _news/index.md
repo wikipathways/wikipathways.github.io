@@ -22,8 +22,8 @@ should be properly cited. Only CC-BY-licensed material is published.
 
 ## Editorial team
 
-* Martina Kutmon
-* Egon Willighagen
+* [Martina Kutmon](https://orcid.org/0000-0002-7699-8191)
+* [Egon Willighagen](https://orcid.org/0000-0001-7542-0286)
 
 ## Issues
 
