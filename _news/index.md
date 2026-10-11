@@ -9,7 +9,7 @@ btn-class: "btn-front"
 
 **WikiPathways News** is a newsletter for WikiPathways. It is published as one volume per year, several issues per volume.
 All content of WikiPathways News is written by people. Originality is more important than volume. Articles will get DOIs via
-Zenodo and are submitted using a well-defined LaTeX or Markdown template.
+a [Zenodo community](https://zenodo.org/communities/wikipathways-news/) and are submitted using a well-defined LaTeX or Markdown template.
 
 ## Editorial policy
 
@@ -22,3 +22,7 @@ should be properly cited. Only CC-BY-licensed material is published.
 
 * Martina Kutmon
 * Egon Willighagen
+
+## Issues
+
+The first issue is planned for January 2027. If interested in submitting a contribution, please email the editors.
