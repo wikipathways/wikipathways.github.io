@@ -9,7 +9,9 @@ btn-class: "btn-front"
 
 **WikiPathways News** is a newsletter for WikiPathways. It is published as one volume per year, several issues per volume.
 All content of WikiPathways News is written by people. Originality is more important than volume. Articles will get DOIs via
-a [Zenodo community](https://zenodo.org/communities/wikipathways-news/) and are submitted using a well-defined LaTeX or Markdown template.
+a [Zenodo community](https://zenodo.org/communities/wikipathways-news/) and are submitted using a well-defined
+[LaTeX](https://github.com/wikipathways/wikipathways-news/tree/main/template/article1) or
+[Markdown](https://github.com/wikipathways/wikipathways-news/tree/main/template/article2) template.
 
 ## Editorial policy
 
