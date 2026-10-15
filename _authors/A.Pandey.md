@@ -1,14 +1,14 @@
 ---
 username: A.Pandey
 realname: Akhilesh Pandey
-website: ~
-affiliation: ~
+website: https://www.mayo.edu/research/labs/systems-biology-translational-medicine/overview
+affiliation: Mayo Clinic Rochester
 bio: ~
 github: ~
-orcid: ~
+orcid: 0000-0001-9943-6127
 linkedin: ~
-googlescholar: ~
-wikidata: ~
+googlescholar: OhuG0FcAAAAJ
+wikidata: Q28359569
 twitter: ~
 mastodon-url: ~
 meta: ~
