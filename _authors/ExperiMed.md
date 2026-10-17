@@ -2,13 +2,13 @@
 username: ExperiMed
 realname: Maximilian Saller
 website: ~
-affiliation: ~
+affiliation: Musculoskeletal University Center Munich
 bio: ~
 github: ~
-orcid: ~
+orcid: 0000-0001-8774-7892
 linkedin: ~
 googlescholar: ~
-wikidata: ~
+wikidata: Q61314273
 twitter: ~
 mastodon-url: ~
 meta: ~
