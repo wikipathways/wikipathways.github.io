@@ -28,7 +28,7 @@ redirect_from:
 revision: r134130
 schema-jsonld:
 - '@context': https://schema.org/
-  '@id': https://wikipathways.github.io/pathways/WP7.html
+  '@id': https://www.wikipathways.org/pathways/WP7.html
   '@type': Dataset
   creator:
     '@type': Organization

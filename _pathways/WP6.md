@@ -40,7 +40,7 @@ redirect_from:
 revision: r136997
 schema-jsonld:
 - '@context': https://schema.org/
-  '@id': https://wikipathways.github.io/pathways/WP6.html
+  '@id': https://www.wikipathways.org/pathways/WP6.html
   '@type': Dataset
   creator:
     '@type': Organization
