@@ -48,7 +48,7 @@
       {% endfor %}
 
       <!-- the next is for search engines and sharing: canonical URL, description, Open Graph and Twitter cards -->
-      {%- assign canonical = "https://www.wikipathways.org/instance/" | append: page.wpid -%}
+      {%- assign canonical = "https://www.wikipathways.org/pathway/" | append: page.wpid | append: ".html" -%}
       {%- assign pw_desc = page.description | strip_html | normalize_whitespace | truncate: 200 -%}
       {%- assign pw_img = "https://www.wikipathways.org/wikipathways-assets/pathways/" | append: page.wpid | append: "/" | append: page.wpid | append: ".png" -%}
       {%- assign pw_alt = "Pathway diagram: " | append: page.title -%}
